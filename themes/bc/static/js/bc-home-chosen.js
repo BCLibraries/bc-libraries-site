@@ -17,7 +17,7 @@ $('document').ready(function () {
             width: "100%"
         }).change(function (event, params) {
             var urlPath = jQuery(this).val();
-            window.location.href = "http://libguides.bc.edu/sb.php?subject_id=" + urlPath;
+            window.location.href = "http://libguides.bc.edu/subjects/" + urlPath;
         });
     });
 });

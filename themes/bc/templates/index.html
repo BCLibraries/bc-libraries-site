@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- SEARCH ROW -->
+<div class="row">
+
+    <div id="block_search">
+        <h2>Begin Your Search Here</h2>
+
+        <!-- SOME SEARCH BAR I FOUND -->
+        <div id="newsearch" class="row">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul id="myTab" class="nav nav-tabs test">
+                        <li class="active"><a href="#">Tab One</a></li>
+                        <li><a href="#">Tab Two</a></li>
+                        <li><a href="#">Tab Three</a></li>
+                        <li><a href="#">Tab Four</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="input-group input-group-md">
+                    <input type="text" class="form-control" placeholder="Begin Your Search Here">
+
+                    <!-- /btn-group --> <span class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span>
+
+        </button>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="block_hours">
+        <h2>Today's Hours</h2>
+
+        <p>O'Neill Library: 8:00am - 10:00pm<br>
+            Burns Library: 8:00am - 10:00pm<br>
+            TML: 8:00am - 10:00pm<br>
+            <a href="#">All library hours</a></p>
+    </div>
+
+
+    <div id="block_databases">
+        <h2>Databases</h2>
+        <!-- must include -->
+        <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
+                data-placeholder="By title...">
+            <option></option>
+        </select>
+
+        <!-- must include -->
+        <select name="resources" style="width: 100%;" id="dbs-by-subject" class="chosen-box"
+                data-placeholder="By subject...">
+            <option></option>
+            <option value="12900">African &amp; African Diaspora Studies</option>
+            <option value="12918">Archives &amp; Special Collections</option>
+            <option value="12914">Area &amp; Cultural Studies</option>
+            <option value="12881">Art &amp; Architecture</option>
+            <option value="12916">Asian Studies</option>
+            <option value="12893">Biology</option>
+            <option value="12901">Business &amp; Management</option>
+            <option value="12894">Chemistry</option>
+            <option value="12882">Classical Studies</option>
+            <option value="12902">Communication</option>
+            <option value="12895">Computer Science</option>
+            <option value="12917">Course Guides</option>
+            <option value="12903">Data/Statistics/GIS</option>
+            <option value="12896">Earth &amp; Environmental Sciences</option>
+            <option value="12904">Economics</option>
+            <option value="12905">Education</option>
+            <option value="12883">Film</option>
+            <option value="12906">Gender Studies</option>
+            <option value="12912">General</option>
+            <option value="12884">German Language &amp; Literature</option>
+            <option value="7886">History</option>
+            <option value="12879">Irish Studies</option>
+            <option value="12885">Language &amp; Literature in English</option>
+            <option value="12880">Latin American Studies</option>
+            <option value="12907">Law</option>
+            <option value="12886">Library Science</option>
+            <option value="12887">Linguistics</option>
+            <option value="12897">Mathematics</option>
+            <option value="12888">Music</option>
+            <option value="12899">Nursing &amp; Health Sciences</option>
+            <option value="12889">Philosophy</option>
+            <option value="12898">Physics</option>
+            <option value="12908">Political Science &amp; Government</option>
+            <option value="12909">Psychology</option>
+            <option value="12890">Romance Languages &amp; Literatures</option>
+            <option value="12913">Science</option>
+            <option value="12915">Slavic &amp; Eastern Languages</option>
+            <option value="12910">Social Work</option>
+            <option value="12911">Sociology &amp; Anthropology</option>
+            <option value="12891">Theater &amp; Dance</option>
+            <option value="12892">Theology</option>
+        </select>
+
+        <!-- END DROPDOWNS -->
+
+    </div>
+
+</div>
+
+<!-- CAROUSEL -->
+<div class="row">
+    <!-- Carousel
+      ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            {% for article in articles[:3] %}
+
+            {% if loop.index == 1 %}
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            {% else %}
+            <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
+            {% endif %}
+
+            {% endfor %}
+        </ol>
+
+        <div class="carousel-inner">
+            {% if articles %}
+
+            {% for article in articles[:3] %}
+
+            {% if loop.index == 1 %}
+            <div class="item active">
+                {% else %}
+                <div class="item">
+                    {% endif %}
+
+
+                    <img src="/theme/img/news/{{ article.image }}"
+                         alt="{{ article.image_alt }}">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+
+                            <p>{{ article.summary }}</p>
+
+                            <p><a class="more" href="{{ article.url }}">Click here to learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
+                    class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
+                    class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        <!-- /.carousel -->
+
+
+    </div>
+
+    <!-- BADGES -->
+    <div class="row_badges">
+        <a href="#" alt="Link"><img
+                src="/theme/img/Badge01.png"
+                title="Badge"/></a>
+        <a href="#" alt="Link"><img
+                src="/theme/img/Badge02.png"
+                title="Badge"/></a>
+        <a href="#" alt="Link"><img
+                src="/theme/img/Badge03.png"
+                title="Badge"/></a>
+        <a href="#" alt="Link"><img
+                src="/theme/img/Badge04.png"
+                title="Badge"/></a>
+        <a href="#" alt="Link"><img
+                src="/theme/img/Badge05.png"
+                title="Badge"/></a>
+    </div>
+    {% endblock %}
+
+    {% block pagescripts %}
+    <!-- REPLACE THE JAVASCRIPT AT END WITH -->
+    <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+    {% endblock %}

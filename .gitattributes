@@ -1,0 +1,8 @@
+# These files are text and should be normalized (convert crlf =&gt; lf)
+*         text=auto
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png     binary
+*.jepg    binary
+*.jpg     binary

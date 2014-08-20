@@ -1,0 +1,1 @@
+This is the new Boston College Libraries Web site, created with [Pelican](https://github.com/getpelican/pelican).

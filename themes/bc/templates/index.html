@@ -8,7 +8,7 @@
         <h2>Begin Your Search Here</h2>
 
         <!-- SOME SEARCH BAR I FOUND -->
-        <div id="newsearch" class="row">
+        <div id="newsearch" class="row" ng-app="myApp" ng-controller="AutoComplete">
             <div class="row">
                 <div class="col-xs-12">
                     <ul id="myTab" class="nav nav-tabs test">
@@ -21,8 +21,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="input-group input-group-md">
-                    <input type="text" class="form-control" placeholder="Begin Your Search Here">
-
+                    <div ng-view></div>
                     <!-- /btn-group --> <span class="input-group-btn">
         <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span>
 
@@ -184,5 +183,15 @@
 
     {% block pagescripts %}
     <!-- REPLACE THE JAVASCRIPT AT END WITH -->
+    <script>
+        var search_server = 'localhost';
+    </script>
     <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="theme/js/app.js"></script>
+    <script src="theme/js/controllers.js"></script>
+
+
     {% endblock %}

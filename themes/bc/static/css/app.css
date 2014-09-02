@@ -72,11 +72,12 @@
 ----------------------------*/
 
 /** Script default styles. **/
-.dropdown-menu {
+#newsearch .dropdown-menu {
+    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 101;
     display: none;
     float: left;
     min-width: 160px;
@@ -92,14 +93,14 @@
     background-clip: padding-box;
 }
 
-.dropdown-menu li a {
+#newsearch  .dropdown-menu li a {
     display: block;
     padding: 3px 20px;
     color: #333333;
     white-space: nowrap;
 }
 
-.dropdown-menu .active a, .dropdown-menu .active a:hover, .dropdown-menu .active a:focus {
+#newsearch .dropdown-menu .active a,#newsearch  .dropdown-menu .active a:hover,#newsearch .dropdown-menu .active a:focus {
     color: #ffffff;
     text-decoration: none;
     background-color: #428bca;
@@ -128,10 +129,6 @@ form {
 
 .active .typeahead-subject {
     color: #ddd;
-}
-
-.dropdown-menu {
-    width: 36em;
 }
 
 /** End typeahead stuff **/

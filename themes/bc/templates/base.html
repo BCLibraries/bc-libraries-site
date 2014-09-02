@@ -897,34 +897,29 @@
 <!-- /#contentinfo -->
 <!-- MEGA MENU SCRIPT -->
 <script>
-$(function() {
-        window.prettyPrint && prettyPrint()
-        $(document).on('click', '.yamm .dropdown-menu', function(e) {
-          e.stopPropagation()
-        })
+    $(function () {
+        $(document).on('click', '.yamm .dropdown-menu', function (e) {
+            e.stopPropagation()
+        });
 
-
-  // Slide effect lifted from http://stackoverflow.com/a/19339162/122629.
-  $('.dropdown').on('hide.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(50);
-  });
-
-  $('.dropdown').on('show.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
-  });
-
-});
+        // Slide effect lifted from http://stackoverflow.com/a/19339162/122629.
+        $('.dropdown').on('show.bs.dropdown', function (e) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+        }).on('hide.bs.dropdown', function (e) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(50);
+        });
+    });
 </script>
 
 <!-- SCROLL TO TOP SCRIPT -->
 <script>
-(function($) {
-    jQuery('#todayshours').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: $('body').height()}, 750);
-        return false;
-    });
-})(jQuery);
+    (function ($) {
+        jQuery('#todayshours').click(function (event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: $('body').height()}, 750);
+            return false;
+        });
+    })(jQuery);
 </script>
 
 

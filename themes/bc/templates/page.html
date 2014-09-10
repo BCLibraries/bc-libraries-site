@@ -8,10 +8,6 @@
 
 
 {% block pagescripts %}
-<script>
-    var search_server = 'localhost';
-</script>
-
 {% for script in page.scriptlist %}
 <script src="{{script}}"></script>
 {% endfor %}

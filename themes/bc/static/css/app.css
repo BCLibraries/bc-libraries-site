@@ -93,14 +93,14 @@
     background-clip: padding-box;
 }
 
-#newsearch  .dropdown-menu li a {
+#newsearch .dropdown-menu li a {
     display: block;
     padding: 3px 20px;
     color: #333333;
     white-space: nowrap;
 }
 
-#newsearch .dropdown-menu .active a,#newsearch  .dropdown-menu .active a:hover,#newsearch .dropdown-menu .active a:focus {
+#newsearch .dropdown-menu .active a, #newsearch .dropdown-menu .active a:hover, #newsearch .dropdown-menu .active a:focus {
     color: #ffffff;
     text-decoration: none;
     background-color: #428bca;
@@ -132,7 +132,6 @@ form {
 }
 
 /** End typeahead stuff **/
-
 
 /** Start results stuff **/
 
@@ -186,6 +185,7 @@ form {
 .librarian-subject, .guide-description {
     color: #666;
 }
+
 /** End Librarian result. **/
 
 /** More results link **/

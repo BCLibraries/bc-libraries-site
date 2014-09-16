@@ -1547,6 +1547,12 @@ nav select {
     }
 }
 
+#megamenu .navbar-nav > li > a:focus {
+    background: #430000 !important;
+    color: #fff;
+    outline: 0;
+}
+
 #megamenu .navbar-nav > li > a:hover {
     background: #430000 !important;
     color: #fff;
@@ -1702,23 +1708,39 @@ nav select {
 
 .library-list {
     list-style: none outside none;
-    padding: 10px 0 0 0;
+    margin: 0;
+    padding: 10px 0 0 25px;
+    position: relative;
+    border-right: 1px solid #DADADA;
+}
+
+.yamm .dropdown-menu li .library-list > li a:hover, .yamm .dropdown-menu li .library-list > li a:focus {
+    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    color: #990000;
+    text-decoration: none;
+}
+
+.library-list .selected a {
+    color: #990000 !important;
+    font-weight: bold !important;
+    text-decoration: none;
+    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
 }
 
 #bapst_pane, #burns_pane, #erc_pane, #law_pane, #oconnor_pane, #oneill_pane, #swl_pane, #tml_pane {
-    width: 75%;
-    height: 100%;
+    width: 58%;
+    height: auto;
     color: #666;
-    background: #E0E0E0;
-    float: right;
-    padding: 0px;
+    padding: 25px 0 0 0;
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0%;
 }
 
 /* NEW LIBARY PANE CODE */
 
 .library_pane p {
-    font-size: 12px;
     line-height: inherit;
     text-align: left;
 }
@@ -1749,6 +1771,12 @@ nav select {
     padding: 15px;
 }
 
+.pane_info h3 a {
+    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
+    padding: 0 35px 0 0;
+
+}
+
 .libraryinfo-content #hours-col-l, .libraryinfo-content .hours-col-loc, .libraryinfo-content #hours-col-t {
     display: none !important;
 }
@@ -1757,7 +1785,7 @@ nav select {
     width: 98%;
 }
 
-.libraryinfo-content .s-lc-time {
+.libraryinfo-content .hours-col-time {
     background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
     font-size: 15px;
     height: 30px;

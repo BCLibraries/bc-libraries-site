@@ -8,6 +8,6 @@ Authors: Alexis Metaireau, Conan Doyle
 Summary: Short version for index and feeds
 CSS: foo, bar, baz, bib
 
-<div ng-app="myApp" ng-controller="AutoComplete">
-<div ng-view></div>
-</div>
+<div data-searchbox id="block_search"></div>
+
+<div data-results></div>

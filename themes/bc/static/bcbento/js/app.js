@@ -5,11 +5,10 @@
     angular.module('myApp', [
             'ngRoute',
             'myApp.controllers',
+            'myApp.directives',
             'ui.bootstrap'
         ]).
-        config(function ($routeProvider,  $locationProvider) {
-            $routeProvider.when('/search', {templateUrl: 'theme/partials/bento.html', controller: 'bento'});
-            $routeProvider.otherwise({templateUrl: 'theme/partials/typeahead.html', controller: 'bento'});
+        config(function ($routeProvider, $locationProvider) {
             $locationProvider.html5Mode(true);
         });
 })();

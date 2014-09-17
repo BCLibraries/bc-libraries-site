@@ -93,14 +93,14 @@
     background-clip: padding-box;
 }
 
-#newsearch .dropdown-menu li a {
+#newsearch  .dropdown-menu li a {
     display: block;
     padding: 3px 20px;
     color: #333333;
     white-space: nowrap;
 }
 
-#newsearch .dropdown-menu .active a, #newsearch .dropdown-menu .active a:hover, #newsearch .dropdown-menu .active a:focus {
+#newsearch .dropdown-menu .active a,#newsearch  .dropdown-menu .active a:hover,#newsearch .dropdown-menu .active a:focus {
     color: #ffffff;
     text-decoration: none;
     background-color: #428bca;
@@ -110,7 +110,12 @@
 /** Locally customized stuff. **/
 form {
     float: left;
-    width: 100%;
+    margin-top: 3px;
+    margin-left: 1em;
+}
+
+#searchbox {
+    width: 46em;
 }
 
 .typeahead-subject {
@@ -131,7 +136,20 @@ form {
     color: #ddd;
 }
 
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
+
 /** End typeahead stuff **/
+
 
 /** Start results stuff **/
 
@@ -182,10 +200,14 @@ form {
     clear: left;
 }
 
+/** Librarian/Subject guide results. **/
+h4 {
+    margin: 0;
+}
+
 .librarian-subject, .guide-description {
     color: #666;
 }
-
 /** End Librarian result. **/
 
 /** More results link **/

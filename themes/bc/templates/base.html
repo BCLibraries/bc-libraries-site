@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/theme/css/style.css"/>
     <link rel="stylesheet" href="/theme/css/fonts.css"/>
     <link rel="stylesheet" href="/theme/css/chosen.css"/>
-    <link rel="stylesheet" href="/theme/css/app.css"/>
+    <link rel="stylesheet" href="/theme/bcbento/css/app.css"/>
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -31,7 +31,7 @@
     {% endblock head %}
 </head>
 
-<body id="index" class="s-lg-guide-body mainhomepage">
+<body id="index" class="s-lg-guide-body mainhomepage" data-ng-app="myApp">
 
 <div id="header">
 
@@ -841,11 +841,12 @@
     // Search server for typeahead.
     var search_server = 'libdev.bc.edu';
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-<script src="/theme/js/app.js"></script>
-<script src="/theme/js/controllers.js"></script>
+<script src="/theme/bcbento/js/angular.min.js"></script>
+<script src="/theme/bcbento/js/angular-route.min.js"></script>
+<script src="/theme/bcbento/js/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+<script src="/theme/bcbento/js/app.js"></script>
+<script src="/theme/bcbento/js/controllers.js"></script>
+<script src="/theme/bcbento/js/directives.js"></script>
 
 {% block pagescripts %}
 {% endblock %}

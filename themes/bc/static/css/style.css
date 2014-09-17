@@ -111,7 +111,7 @@ img.center {
 }
 
 #cke_12, #cke_13
-/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */   {
+/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */    {
     display: none;
 }
 
@@ -292,7 +292,7 @@ img.center {
 }
 
 .pad-top-med
-/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/   {
+/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/    {
     padding-top: 0px;
 }
 
@@ -755,7 +755,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 .carousel-inner > .item
-/*THIS CHANGES THE TIME OF THE SLIDE SHOW. MAKING WILD EDITS TO SLOW IT WAAAAY DOWN. FIX AFTER CHANGES ARE MADE */   {
+/*THIS CHANGES THE TIME OF THE SLIDE SHOW. MAKING WILD EDITS TO SLOW IT WAAAAY DOWN. FIX AFTER CHANGES ARE MADE */    {
     transition: left .6s ease-in-out 0s;
 }
 
@@ -956,19 +956,19 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 
 /*OVERWRITING LIBGUIDES 2.0 */
 
-#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */   {
+#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */    {
     float: right;
     margin: 20px;
 }
 
 #s-lg-add-page-icon
-/*I GUESS THIS IS TOO, NOT SURE*/   {
+/*I GUESS THIS IS TOO, NOT SURE*/    {
     margin: 0px;
     display: inline;
     font-size: 12px;
 }
 
-#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */   {
+#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */    {
     padding: 4px;
     margin: 0px;
     border: 2px solid #B29D6C;
@@ -984,15 +984,15 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
     color: #fff;
 }
 
-.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */   {
+.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */    {
     float: left;
 }
 
-.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */  {
+.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */   {
     float: right;
 }
 
-.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/  {
+.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/   {
     background-color: transparent;
     border: 0px;
     border-radius: 0;
@@ -1016,18 +1016,18 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
 .row
-/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	  {
+/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	   {
     margin: 0;
 }
 
 #s-lg-box-top
-/* TOP BOX, IF IN USE */   {
+/* TOP BOX, IF IN USE */    {
     margin: 0px;
     padding: 0 10px;
 }
 
 .s-lib-box
-/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */   {
+/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */    {
     box-shadow: none;
     border: 0px;
     margin: 0px;
@@ -1035,7 +1035,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 .edit-mode .s-lib-box-title
-/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */   {
+/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */    {
     border-bottom: 1px solid #CCC;
     padding: 3px 8px;
     font-size: 13px;
@@ -1044,7 +1044,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 .view-mode .s-lib-box .s-lib-box-title
-/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */   {
+/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */    {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
     color: #990000;
@@ -1058,7 +1058,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 .view-mode .libhomepage .s-lib-box-title
-/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */   {
+/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */    {
     display: none !important;
 }
 
@@ -1090,7 +1090,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 .libhomepage #s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */   {
+/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */    {
     font-size: 14px;
     margin: 1px 0 1px 0;
     padding: 0;
@@ -1149,7 +1149,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
     text-decoration: none;
 }
 
-.libhomepage #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */  {
+.libhomepage #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
     background-clip: padding-box;
     background-color: transparent;
     border: 0px;
@@ -1169,7 +1169,7 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 
 .libhomepage #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
 .libhomepage #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/   {
+ /*THIS IS THE DROP DOWN TAB ITSELF*/    {
     clear: both;
     color: #990000;
     display: block;
@@ -1235,7 +1235,7 @@ nav select {
 }
 
 .fullcontentwidth #s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */   {
+/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */    {
     font-size: 14px;
     margin: 0 -15px 20px;
     padding: 0 20px;
@@ -1285,13 +1285,13 @@ nav select {
     text-decoration: none;
 }
 
-.fullcontentwidth #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */  {
+.fullcontentwidth #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
 
 }
 
 .fullcontentwidth #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
 .fullcontentwidth #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/   {
+ /*THIS IS THE DROP DOWN TAB ITSELF*/    {
 
 }
 
@@ -1900,4 +1900,13 @@ nav select {
 .libhours {
     border: 1px solid black;
     width: 150px;
+}
+
+.accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }

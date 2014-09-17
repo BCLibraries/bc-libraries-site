@@ -52,6 +52,7 @@
 <!-- MENU BEGINS HERE -->
 
 <div id="megamenu">
+<h2 class="accesibility-text">Site navigation</h2>
 <div class="navbar yamm">
 <div class="container">
 
@@ -664,13 +665,13 @@
 
                         <ul class="col-sm-4">
                             <div class="form_section">
-                                <label for="feedback-name">Page URL:</label>
-                                <input class="menu_input" type="text" value="" id="feedback-name" name="page_url"><br>
+                                <label for="feedback-url">Page URL:</label>
+                                <input class="menu_input" type="text" value="" id="feedback-url" name="page_url"><br>
                             </div>
 
                             <div class="form_section">
-                                <label for="feedback-name">I am a:</label>
-                                <select name="Info">
+                                <label for="feedback-info">I am a:</label>
+                                <select name="Info" id="feedback-info">
                                     <option value="student">Student</option>
                                     <option value="faculty">Faculty</option>
                                     <option value="staff">Staff</option>
@@ -685,7 +686,8 @@
                                 <br>
                                 <textarea name="feedback" id="feedback-text"></textarea>
                             </div>
-                            <input class="feedback_button" type="submit">
+                            <label class="accessibility-text" for="feedback-button">Submit feedback</label>
+                            <input class="feedback_button" id="feedback-button" type="submit">
                         </ul>
                         <!-- END form fields -->
 

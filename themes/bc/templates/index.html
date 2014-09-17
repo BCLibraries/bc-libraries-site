@@ -8,7 +8,7 @@
         <h2>Begin Your Search Here</h2>
 
         <!-- SOME SEARCH BAR I FOUND -->
-        <div id="newsearch" class="row" ng-app="myApp" ng-controller="AutoComplete">
+        <div id="newsearch" class="row" data-ng-app="myApp" data-ng-controller="AutoComplete">
             <div class="row">
                 <div class="col-xs-12">
                     <ul id="myTab" class="nav nav-tabs test">
@@ -21,7 +21,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="input-group input-group-md">
-                    <div ng-view></div>
+                    <div data-ng-view></div>
                     <!-- /btn-group --> <span class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span>
 
         </button></span>
@@ -46,14 +46,14 @@
         <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
         <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
                 data-placeholder="By title...">
-            <option></option>
+            <option> </option>
         </select>
 
         <!-- must include -->
         <label for="dbs-by-subject" class="accessibility-text">Find database by subject</label>
         <select name="resources" style="width: 100%;" id="dbs-by-subject" class="chosen-box"
                 data-placeholder="By subject...">
-            <option></option>
+            <option> </option>
             <option value="african-african-diaspora-studies">African & African Diaspora Studies</option>
             <option value="archives-special-collections">Archives & Special Collections</option>
             <option value="area-cultural-studies">Area & Cultural Studies</option>
@@ -141,7 +141,7 @@
                         <div class="carousel-caption">
                             <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
 
-                            <p>{{ article.summary }}</p>
+                            {{ article.summary }}
 
                             <p><a class="more" href="{{ article.url }}">Click here to learn more</a></p>
                         </div>
@@ -163,19 +163,19 @@
 
     <!-- BADGES -->
     <div class="row_badges">
-        <a href="#" alt="Link"><img
+        <a href="#"><img
                 src="/theme/img/Badge01.png"
                 title="Badge"/></a>
-        <a href="#" alt="Link"><img
+        <a href="#"><img
                 src="/theme/img/Badge02.png"
                 title="Badge"/></a>
-        <a href="#" alt="Link"><img
+        <a href="#"><img
                 src="/theme/img/Badge03.png"
                 title="Badge"/></a>
-        <a href="#" alt="Link"><img
+        <a href="#"><img
                 src="/theme/img/Badge04.png"
                 title="Badge"/></a>
-        <a href="#" alt="Link"><img
+        <a href="#"><img
                 src="/theme/img/Badge05.png"
                 title="Badge"/></a>
     </div>

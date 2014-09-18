@@ -108,14 +108,9 @@
 }
 
 /** Locally customized stuff. **/
-form {
+#block_search form {
     float: left;
-    margin-top: 3px;
-    margin-left: 1em;
-}
-
-#searchbox {
-    width: 46em;
+    width: 100%;
 }
 
 .typeahead-subject {

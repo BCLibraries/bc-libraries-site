@@ -1657,6 +1657,10 @@ nav select {
     float: left;
 }
 
+.libhelp-link {
+    cursor: pointer;
+}
+
 .end {
     border: 0px;
 }

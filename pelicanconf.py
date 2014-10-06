@@ -39,3 +39,12 @@ DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['custom-scripts']
+
+STATIC_PATHS = [
+    'extra/favicon.ico',
+]
+
+    #path-specific metadata
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}

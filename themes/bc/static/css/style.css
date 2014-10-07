@@ -94,7 +94,7 @@ h4, h5, h6 {
     color: #990000;
     font-size: 16px;
     font-weight: normal;
-    margin: 5px 0 10px;
+    margin: 5px 0 10px !important;
     padding: 0;
     text-transform: none;
 }
@@ -139,7 +139,7 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-    #header {
+#header {
         border-bottom: 1px solid #DADADA;
         height: 100%;
         padding: 0 0 10px;
@@ -312,11 +312,27 @@ img.center {
 }
 
 .mainhomepage #midlevelcontainer {
-    margin: -20px auto 0;
+    margin: -40px auto 0;
+}
+
+    @media ( max-width: 768px ) {
+.mainhomepage #midlevelcontainer {
+    margin: 0px auto 0;
+    }
+}
+
+.mainhomepage hr {
+    border-color: #DADADA;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* SEARCH BAR
-I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
+THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
 
 #tempsearch {
     float: right;
@@ -410,81 +426,140 @@ I'M HIDING THE SEARCH BAR FOR NOW, SWAPPING WITH A IMAGE. JUST A TEMP. */
 }
 
 #block_search {
-    height: 115px;
-    width: 49%;
-    padding: 0px;
-    margin: 0px 0px 20px 0px;
+    background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
+    height: 115px;
+    margin: 0 0 20px;
+    padding: 10px;
+    width: 65%;
 }
 
 @media ( max-width: 768px ) {
     #block_search {
-        height: 115px;
-        width: 100%;
-        padding: 0px;
-        margin: 0 0 10px 0;
-        display: inline-block;
+        height: 115px; 
+        width: 100%; 
+        padding: 0px; 
+        margin: 0 0 10px 0; 
+        display:inline-block;
     }
 }
 
-#block_databases, #block_hours {
-    height: 115px;
-    width: 24%;
-    padding: 0px;
-    margin: 0px 5px;
+#block_databases {
+    background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
     float: right;
+    height: 115px;
+    padding: 10px;
+    width: 35%;
+    border-left: 5px solid #FFFFFF;
+}
+    @media ( max-width: 768px ) { 
+#block_databases, #block_hours {
+    height: 115px; 
+    width: 100%; 
+    padding: 0px; 
+    margin: 0px 0px 15px 0px; 
+    display:inline-block;
+    float: none;
+    border-left: 0px solid #FFFFFF;
+}}
+
+.hoursbar {
+    background: none repeat scroll 0 0 #EAEAEA;
+    float: right;
+    padding: 5px 10px;
+    width: 35%;
+    text-align: center;
+    border-left: 5px solid #FFFFFF;
+
+}
+    @media ( max-width: 1199px ) {
+.hoursbar {
+    text-align: left;
+    }}
+.hoursbar ul {
+    margin: 0px;
+    padding: 0px;   
 }
 
-@media ( max-width: 768px ) {
-    #block_databases, #block_hours {
-        height: 115px;
-        width: 100%;
-        padding: 0px;
-        margin: 0px 0px 15px 0px;
-        display: inline-block;
-        float: none;
-    }
+.hoursbar li {
+    display: inline;
+    list-style: none;   
 }
+    @media ( max-width: 1199px ) {
+.hoursbar li {
+    display: list-item;
+    list-style: none;   
+    padding: 0px 0 0 10px;
+}}
+
+.hoursbar .today {
+    background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    font-size: 15px;
+    height: 30px;
+    padding: 7px 0 7px 32px;
+    text-align: left;
+    width: 100%;
+}
+
+.hoursbar .all {
+    background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    font-size: 15px;
+    height: 30px;
+    margin: 0 0 0 25px;
+    padding: 7px 0 7px 32px;
+    text-align: left;
+    width: 100%;
+}
+    @media ( max-width: 1199px ) {
+.hoursbar .all {
+    margin: 0px;
+    }}
 
 .row_badges {
     width: 100%;
     margin: 0px 0px 20px 0px;
     text-align: center;
 }
-
-@media ( max-width: 768px ) {
-    .row_badges {
-        text-align: justify;
-    }
-}
+    @media ( max-width: 768px ) {
+.row_badges {
+    text-align: justify;
+}}
 
 .row_badges a img {
-    height: auto;
-    width: 19%;
-    padding: 0px;
+    height: auto; 
+    width: 24%; 
+    padding: 0px; 
     margin: 0 4px;
-    display: inline-block;
+    display:inline-block;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid #B5B5B5;
 }
-
-@media ( max-width: 1199px ) {
-    .row_badges a img {
-        margin: 0 2px;
-    }
-}
-
-@media ( max-width: 768px ) {
-    .row_badges a img {
-        margin: 0 1% 2%;
-        width: 45%;
-    }
-}
+    @media ( max-width: 1199px ) {
+.row_badges a img {
+    margin: 0 2px;
+}}
+    @media ( max-width: 768px ) {
+.row_badges a img {
+    margin: 0;
+    float: left;
+    width: 45%;
+}}
 
 .row_badges a img:hover {
     border: 1px solid #990000;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.news {
+    margin: 0 0 10px 0 !important;
+}
+
+.news h2 a {
+    background: url("/theme/img/h2rss.png") no-repeat scroll 100% 57% rgba(0, 0, 0, 0);
+    padding: 0 35px 0 0;
+    float: left;
+    margin-top: 5px;
 }
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
@@ -1372,14 +1447,14 @@ nav select {
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-    left: 0px;
-    right: 0px;
+    left: 2px;
+    right: 8px;
 }
 
 @media ( max-width: 1199px ) {
     .yamm .dropdown.yamm-fw .dropdown-menu {
-        left: 0%;
-        right: 0%;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -1505,9 +1580,10 @@ nav select {
 }
 
 #megamenu .navbar-nav > li {
+    border-left: 2px solid #FFFFFF;
     display: inline-block;
-    float: none;
-    width: 193px;
+    float: left;
+    width: 195px;
 }
 
 @media ( max-width: 1199px ) {
@@ -1719,7 +1795,7 @@ nav select {
 }
 
 .yamm .dropdown-menu li .library-list > li a:hover, .yamm .dropdown-menu li .library-list > li a:focus {
-    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    background: url("/theme/img/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
     color: #990000;
     text-decoration: none;
 }
@@ -1728,7 +1804,7 @@ nav select {
     color: #990000 !important;
     font-weight: bold !important;
     text-decoration: none;
-    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    background: url("/theme/img/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
 }
 
 #bapst_pane, #burns_pane, #erc_pane, #law_pane, #oconnor_pane, #oneill_pane, #swl_pane, #tml_pane {
@@ -1776,7 +1852,7 @@ nav select {
 }
 
 .pane_info h3 a {
-    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
+    background: url("/theme/img/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
     padding: 0 35px 0 0;
 
 }

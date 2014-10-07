@@ -35,24 +35,14 @@
 
     <noscript>Javascript disabled</noscript>
 
-    <div id="block_hours">
-        <h2>Today's Hours</h2>
-
-        <p>O'Neill Library: 8:00am - 10:00pm<br>
-            Burns Library: 8:00am - 10:00pm<br>
-            TML: 8:00am - 10:00pm<br>
-            <a href="#">All library hours</a></p>
-    </div>
-
-
     <div id="block_databases">
-        <h2>Databases</h2>
-        <!-- must include -->
+<h2>Databases</h2>
+<!-- must include -->
         <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
         <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
                 data-placeholder="By title...">
             <option></option>
-        </select>
+            </select>
 
         <!-- must include -->
         <label for="dbs-by-subject" class="accessibility-text">Find database by subject</label>
@@ -108,6 +98,20 @@
     </div>
 
 </div>
+
+    <div class="row news">
+
+  <!-- BEGIN HOURS BLOCK -->
+  <div class="hoursbar">
+  <ul>
+  <li><a href="#" class="today">Today's Library hours</a></li> 
+  <li><a href="#" class="all"> All Library hours</a></li>
+  </ul>
+  </div>
+
+  <h2><a href="#">Library News</a></h2>
+ 
+  </div>
 
 <!-- CAROUSEL -->
 <div class="row">
@@ -180,10 +184,8 @@
         <a href="#"><img
                 src="/theme/img/Badge04.png"
                 title="Badge"/></a>
-        <a href="#"><img
-                src="/theme/img/Badge05.png"
-                title="Badge"/></a>
     </div>
+    
     {% endblock %}
 
     {% block pagescripts %}

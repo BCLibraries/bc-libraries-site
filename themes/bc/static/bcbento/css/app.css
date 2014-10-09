@@ -1,9 +1,5 @@
-#bentoboxresults {
-
-}
-
 /** Accessible hide class. **/
-#bentoboxresults .hidden {
+.hidden {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -13,59 +9,59 @@
 }
 
 /** Full screen. **/
-#bentoboxresults #primary, #bentoboxresults #secondary, #bentoboxresults #tertiary {
+#primary, #secondary, #tertiary {
     float: left;
     padding: .5em;
 }
 
-#bentoboxresults #primary {
+#primary {
     width: 45%;
     clear: left;
 }
 
-#bentoboxresults #secondary {
+#secondary {
     width: 35%;
 }
 
-#bentoboxresults #tertiary {
+#tertiary {
     width: 20%;
 }
 
-#bentoboxresults #primary .result-container h3, #bentoboxresults #secondary .result-container h3 {
+#primary .result-container h3, #secondary .result-container h3 {
     float: left;
     width: 60%;
 }
 
 /* Medium break */
 @media screen and (max-width: 1020px) and (min-width: 767px) {
-    #bentoboxresults #primary {
+    #primary {
         width: 50%;
     }
 
-   #bentoboxresults  #secondary {
+    #secondary {
         width: 50%;
     }
 
-    #bentoboxresults #tertiary {
+    #tertiary {
         width: 100%;
     }
 }
 
 /* Small break. */
 @media screen and (max-width: 766px) {
-   #bentoboxresults  #primary {
+    #primary {
         width: 100%;
     }
 
-   #bentoboxresults  #secondary {
+    #secondary {
         width: 100%;
     }
 
-    #bentoboxresults #tertiary {
+    #tertiary {
         width: 100%;
     }
 
-   #bentoboxresults  .result-container {
+    .result-container {
         min-height: 0;
     }
 }
@@ -76,7 +72,7 @@
 ----------------------------*/
 
 /** Script default styles. **/
-#newsearch .dropdown-menu {
+.bcbento-typeahead .dropdown-menu {
     width: 100%;
     position: absolute;
     top: 100%;
@@ -97,14 +93,14 @@
     background-clip: padding-box;
 }
 
-#newsearch  .dropdown-menu li a {
+.bcbento-typeahead  .dropdown-menu li a {
     display: block;
     padding: 3px 20px;
     color: #333333;
     white-space: nowrap;
 }
 
-#newsearch .dropdown-menu .active a,#newsearch  .dropdown-menu .active a:hover,#newsearch .dropdown-menu .active a:focus {
+.bcbento-typeahead .dropdown-menu .active a,#newsearch  .dropdown-menu .active a:hover,#newsearch .dropdown-menu .active a:focus {
     color: #ffffff;
     text-decoration: none;
     background-color: #428bca;
@@ -112,9 +108,14 @@
 }
 
 /** Locally customized stuff. **/
-#block_search form {
+form {
     float: left;
-    width: 100%;
+    margin-top: 3px;
+    margin-left: 1em;
+}
+
+#searchbox {
+    width: 46em;
 }
 
 .typeahead-subject {
@@ -141,72 +142,76 @@
     box-sizing: border-box;
 }
 
-
+body {
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
 
 /** End typeahead stuff **/
 
 
 /** Start results stuff **/
 
-#bentoboxresults .loading {
+.loading {
     background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
-#bentoboxresults .result-container {
+.result-container {
     min-height: 200px;
     padding: 0 2em 0 0;
     background-color: #fff;
 }
 
-#bentoboxresults .result-container ul {
+.result-container ul {
     padding: 0;
     margin: 0;
     clear: left;
 }
 
-#bentoboxresults .result-container ul li {
+.result-container ul li {
     list-style: none;
     margin-bottom: 1em;
     font-size: .92857em;
 }
 
-#bentoboxresults .result-container li .title, .result-container li a {
+.result-container li .title, .result-container li a {
     text-decoration: none;
     color: #0075b0;
     font-weight: bold;
 }
 
-#bentoboxresults .result-container .creator {
+.result-container .creator {
     display: block;
     color: #666;
 }
 
-#bentoboxresults .result-container .publisher {
+.result-container .publisher {
     display: block;
     color: #888;
 }
 
-#bentoboxresults .outside-result a, #bentoboxresults .more-results-link a {
+.outside-result a, .more-results-link a {
     text-decoration: none;
     color: #0075b0;
 }
 
-#bentoboxresults .outside-result {
+.outside-result {
     clear: left;
 }
 
 /** Librarian/Subject guide results. **/
-#bentoboxresults h4 {
+h4 {
     margin: 0;
 }
 
-#bentoboxresults .librarian-subject, #bentoboxresults .guide-description {
+.librarian-subject, .guide-description {
     color: #666;
 }
 /** End Librarian result. **/
 
 /** More results link **/
-#bentoboxresults .more-results-link {
+.more-results-link {
     float: left;
     width: 40%;
     margin-top: 1.64em;

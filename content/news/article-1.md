@@ -1,10 +1,10 @@
-Title: My super title
-Date: 2014-07-03 10:20
+Title: The Fall Libraries' Newsletter!
+Date: 2014-10-09 10:20
 Tags: pelican, publishing
 Slug: custom-slugs-are-possible
-Summary: Short version for index and feeds
-Image: slider01.png
+Summary: Read Tom Wall on the Library’s support for the digital scholarship of faculty and students; Dr. Sylvia Sellers-Garcia on her Spring 2014 "Making History Public" class and its collaboration with Burns Library; These articles & more from the [Boston College Libraries Newsletter](www.bc.edu/sites/libraries/newsletter/2014fall/index.html).
+Image: slider03.jpg
+Image_alt: Bapst Library from outside
 
-This is the first article. Here is its content.
-
-I can do multiple paragraphs by skipping lines. I can also [add links](http://www.google.com).
+Read Tom Wall on the Library’s support for the digital scholarship of faculty and students; Dr. Sylvia Sellers-Garcia on her Spring 2014 "Making History Public" class and its collaboration with Burns Library; Emily Toner on the move of eScholarship@BC, BC's institutional repository, to a new online platform later this fall. These articles & more from the 
+[Boston College Libraries Newsletter](www.bc.edu/sites/libraries/newsletter/2014fall/index.html).

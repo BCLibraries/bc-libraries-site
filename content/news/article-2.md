@@ -1,8 +1,8 @@
-Title: Second article
-Date: 2014-07-13 10:20
+Title: O'Neill 24/5 Study Space
+Date: 2014-10-09 10:21
 Slug: another-custom-slug
-Summary: This is the second article. It has text too.
+Summary: O'Neill Library will replace Gargan Hall in the Bapst Library as the BC Libraries’ 24/5 study space. The O'Neill Library will be open continuously Sundays - Thursdays. It will close at 10pm on Fridays & Saturdays. This change will provide late-night access to a variety of study spaces as well as our extensive collections & services. 
 Image: slider02.jpg
 Image_alt: Students walking in front of O'Neill Library
 
-Here is some more stuff from the second article.
+O'Neill Library will replace Gargan Hall in the Bapst Library as the BC Libraries’ 24/5 study space. The O'Neill Library will be open continuously Sundays - Thursdays. It will close at 10pm on Fridays & Saturdays. This change will provide late-night access to a variety of study spaces as well as our extensive collections & services. 

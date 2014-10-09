@@ -30,7 +30,6 @@ body {
         background: url("/theme/img/background_general.jpg") no-repeat #fff 0% 0%;
         background-size: cover;
         background-attachment: fixed;
-
     }
 }
 
@@ -788,7 +787,7 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
 }
 
 .carousel-caption {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.45);
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.55);
     bottom: 0;
     color: #fff;
     height: 100%;
@@ -810,9 +809,10 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
 }
 
 .carousel-caption h4 a {
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     padding: 10px 0 0 0;
+    text-decoration: none;
 }
 
 @media ( max-width: 1199px ) {
@@ -837,7 +837,17 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     }
 }
 
+.carousel-caption a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.carousel-caption a:hover {
+    color: #990000;
+}
+
 .carousel-caption .more {
+    color: #990000;
     font-size: 13px;
     padding: 10px;
     background: rgba(255, 255, 255, .5);

@@ -8,13 +8,15 @@ $('document').ready(function () {
         $('#dbs-by-title').append(options);
 
         $('#dbs-by-title').chosen({
-            width: "100%"
+            width: "100%",
+            search_contains: true
         }).change(function (event, params) {
             window.location = params.selected;
         });
 
         $('#dbs-by-subject').chosen({
-            width: "100%"
+            width: "100%",
+            search_contains: true
         }).change(function (event, params) {
             var urlPath = jQuery(this).val();
             window.location.href = "http://libguides.bc.edu/subjects/" + urlPath + "?t=db";

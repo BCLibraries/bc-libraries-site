@@ -11,7 +11,7 @@
                 var base_url, search, search_services;
 
                 // Add new services here.
-                search_services = ['catalog', 'articles', 'dpla', 'services', 'guides'];
+                search_services = ['catalog', 'articles', 'dpla', 'librarians', 'guides'];
 
                 // Always update once on load.
                 update_results();
@@ -47,6 +47,8 @@
                         function (data) {
                             var element = document.createElement('div');
 
+                            console.log("got back "+search_service);
+
                             // Fix strange HTML embeds in article results.
                             if (data.items) {
                                 for (var i = 0; i < data.items.length; i++) {
@@ -71,7 +73,7 @@
             }])
         .controller('AutoComplete', ['$scope', '$http', '$location', '$window',
             function ($scope, $http, $location, $window) {
-                $scope.search = function ($item) {
+                $scope.select = function ($item) {
                     $scope.asyncSelected = $item.text;
 
                     if ($window.location.href.indexOf('search') > -1) {
@@ -81,10 +83,20 @@
                     }
                 };
 
+                $scope.search = function ($item) {
+                    var text = $('#searchbox').val();
+
+                    if ($window.location.href.indexOf('search') > -1) {
+                        $location.search('any=' + text);
+                    } else {
+                        $window.location.href = '/search?any=' + text;
+                    }
+                };
+
                 $scope.getLocation = function (val) {
                     var truncate_length = 50;
 
-                    return $http.jsonp(location.protocol + '//' + search_server + '/search-services/suggest?callback=JSON_CALLBACK&text=' + val, {'cache': true}).then(function (res) {
+                    return $http.jsonp(location.protocol + '//' + search_server + '/search-services/typeahead?callback=JSON_CALLBACK&any=' + val, {'cache': true}).then(function (res) {
 
                         // Autopopulate first item
                         var first_item = document.getElementById('searchbox').value;

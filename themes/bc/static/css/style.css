@@ -133,6 +133,7 @@ img.center {
     #header {
         width: 100%;
         height: 100%;
+        display: inline-block;
 
     }
 }
@@ -342,21 +343,181 @@ img.center {
     margin-top: 20px;
 }
 
-/* SEARCH BAR
-THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
-
-#tempsearch {
-    float: right;
-    margin-top: -40px;
+    /* SPECIFIC LIBGUIDE HEADER TITLE & SEARCH BAR, TOP RIGHT CORNER */
+    
+#lg_headertitle {
+    clear: both;
+    display: inline-block;
+}
+@media ( max-width: 1199px ) {
+    #lg_headertitle {
+        clear: both;
+        display: inline;
+    }
+}
+#lg_headertitle a {
+    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title.png") no-repeat;
+    height: 40px;
+    width: 600px;
+    display: inline-block;
 }
 
-@media ( max-width: 768px ) {
-    #tempsearch {
-        float: none;
-        margin-top: 0px;
+@media ( max-width: 1199px ) {
+    #lg_headertitle a {
+        background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title.png") no-repeat;
+        background-size: 100% auto;
+        width: 45%;
+        height: 40%;
+        display: inline-block;
+        margin: 0 0 0 5px;
     }
 }
 
+@media ( max-width: 768px ) {
+    #lg_headertitle a {
+        background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title_small.png") no-repeat;
+        background-size: auto;
+        height: 48px;
+        width: 100%;
+    }
+}
+
+#lg_headertitle h1 {
+    text-indent: -9999px;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+}   
+
+#top_search {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0px;
+    width: 35%;
+}
+@media ( max-width: 1199px ) {
+    #top_search {
+        margin: 0 0 5px 0;
+    }
+}
+@media ( max-width: 768px ) {
+    #top_search {
+        margin: 10px 5px;
+        float: none;
+        width: 90%;
+    }
+}
+
+#top_search .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#top_search .nav > li {
+    margin-bottom: -3px;
+    height: 30px;
+    background: #B5B5B5;
+    margin-right: 2px;
+}
+
+#top_search .nav-tabs {
+    border-bottom: 0;
+}
+
+#top_search .nav-tabs > li > a {
+    border: 1px solid transparent;
+    border-radius: 0;
+    line-height: 1;
+    margin-right: 0px;
+    color: #666;
+}
+
+#top_search .nav > li > a {
+    display: block;
+    padding: 7px 15px;
+    position: relative;
+}
+
+@media ( max-width: 400px ) {
+    #top_search .nav > li > a {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+}
+
+#top_search .nav > li > a:hover, .nav > li > a:focus {
+    background-color: #eee;
+    text-decoration: none;
+}
+
+#top_search .nav-tabs > li.active > a,
+#top_search .nav-tabs > li.active > a:hover,
+#top_search .nav-tabs > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #939393;
+    border: 0;
+    color: #fff;
+    cursor: default;
+}
+
+#top_search .input-group {
+    border-collapse: separate;
+    display: table;
+    position: relative;
+    background: #939393;
+    border: 0;
+    padding: 2px;
+}
+
+#top_search .input-group .form-control:first-child {
+    border-radius: 0;
+    background: #fff;
+    border: 0px;
+    border-bottom: 2px solid #B5B5B5;
+}
+
+#top_search .input-group-btn:last-child > .btn {
+  background: none repeat scroll 0 0 #990000;
+    border-color: -moz-use-text-color #710000 -moz-use-text-color #C50000;
+    border-radius: 0 0 0 0;
+    border-style: none solid;
+    border-width: 0 2px;
+    height: 25px;
+    margin-left: 0;
+    width: 60px;
+}
+
+#top_search .input-group-btn:last-child > .btn:hover {
+    background: #710000;
+    border-left: 3px solid #990000;
+    border-right: 3px solid #510000;
+}
+
+#top_search .input-group .form-control {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 rgba(0, 0, 0, 0.0) inset;
+    color: #555555;
+    display: block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+#top_search .glyphicon {
+    color: #fff;
+    top: 0;
+}
 /* CONTENT  */
 
 #content_container {
@@ -890,10 +1051,8 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     }
 }
 
-#footer_dividingline {
-    border-top: 1px solid #DADADA;
-    padding: 10px 0 0 0;
-    width: 99%;
+#footer p {
+    line-height: 16px;
 }
 
 #footer h1 {
@@ -914,6 +1073,16 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     list-style: none;
     margin: 0 -10px;
     padding: 0px 0 0 10px;
+}
+
+#footer hr {
+    border-color: #DADADA;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .f_column {
@@ -1185,23 +1354,23 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
 
 /* HACKED SIDE NAVIGATION  */
 
-.libhomepage #s-lg-guide-tabs .nav-tabs {
+#s-lg-guide-tabs .nav-tabs {
     border-bottom: 0px;
 }
 
 @media ( max-width: 768px ) {
-    .libhomepage #s-lg-guide-tabs .nav-tabs {
+#s-lg-guide-tabs .nav-tabs {
         display: none;
     }
 }
 
-.libhomepage #s-lg-guide-tabs .nav {
+#s-lg-guide-tabs .nav {
     list-style: none outside none;
     margin-bottom: 0;
     padding-left: 0;
 }
 
-.libhomepage #s-lg-guide-tabs
+#s-lg-guide-tabs
 /*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */    {
     font-size: 14px;
     margin: 1px 0 1px 0;
@@ -1211,23 +1380,23 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
 }
 
 @media ( max-width: 1199px ) {
-    .libhomepage #s-lg-guide-tabs {
+#s-lg-guide-tabs {
         width: 15%;
     }
 }
 
 @media ( max-width: 768px ) {
-    .libhomepage #s-lg-guide-tabs {
+#s-lg-guide-tabs {
         width: 100%;
     }
 }
 
-.libhomepage #s-lg-guide-tabs ul {
+#s-lg-guide-tabs ul {
     margin: 0;
     padding: 0;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs li {
+#s-lg-guide-tabs .nav-tabs li {
     display: list-item;
     list-style: none;
     margin: 0px 0px;
@@ -1236,7 +1405,7 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     line-height: 1.75;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs li a {
+#s-lg-guide-tabs .nav-tabs li a {
     border-bottom: 1px solid #fff;
     border-top: none;
     border-right: none;
@@ -1251,17 +1420,17 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     margin-right: 0px;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs li a:hover {
+#s-lg-guide-tabs .nav-tabs li a:hover {
     background: #B29D6C;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs .active a {
+#s-lg-guide-tabs .nav-tabs .active a {
     background: #990000;
     color: #fff;
     text-decoration: none;
 }
 
-.libhomepage #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
+#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
     background-clip: padding-box;
     background-color: transparent;
     border: 0px;
@@ -1275,12 +1444,12 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     min-width: 160px;
     position: relative;
     top: 100%;
-    z-index: 1000;
+    z-index: 10;
     padding: 0 0 0 25px;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
-.libhomepage #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
+#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
  /*THIS IS THE DROP DOWN TAB ITSELF*/    {
     clear: both;
     color: #990000;
@@ -1297,19 +1466,19 @@ THIS IS FOR THE UPPER LEFT CORNER SEARCH BAR. HIDDEN CURRENTLY.*/
     box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.15);
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
-.libhomepage #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
+#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
     background: #B29D6C;
 }
 
 /* THIS CONTROLS THE SUBNAVS WHEN ACTIVE */
-.libhomepage #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active {
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active {
     background: #990000;
     color: #fff;
     text-decoration: none;
 }
 
-.libhomepage #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active:hover {
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active:hover {
     background: #B29D6C;
 }
 
@@ -1327,101 +1496,6 @@ nav select {
     }
 }
 
-/* TYPICAL TABS FOR 100% CONTENT, PROBABLY WON'T BE USED */
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs {
-
-}
-
-@media ( max-width: 768px ) {
-    .fullcontentwidth #s-lg-guide-tabs .nav-tabs {
-        display: none;
-    }
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav {
-    list-style: none outside none;
-    margin-bottom: 0;
-    padding-left: 0;
-    border-bottom: 0px;
-}
-
-.fullcontentwidth #s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */    {
-    font-size: 14px;
-    margin: 0 -15px 20px;
-    padding: 0 20px;
-    background: #eaeaea;
-}
-
-@media ( max-width: 1199px ) {
-    .fullcontentwidth #s-lg-guide-tabs {
-        font-size: 14px;
-        margin: 0 0 20px 0;
-        padding: 0;
-        background: #eaeaea;
-    }
-}
-
-@media ( max-width: 768px ) {
-    .fullcontentwidth #s-lg-guide-tabs {
-        width: 100%;
-    }
-}
-
-.fullcontentwidth #s-lg-guide-tabs ul {
-    margin: 0;
-    padding: 0;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs li {
-    min-width: 150px;
-    text-align: center;
-    margin: 0;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs li a {
-    border-radius: 0;
-    border: 0px;
-    background: #dadada;
-    margin: 2px;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs li a:hover {
-    background: #999;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .active a {
-    background: #B29D6C;
-    color: #fff;
-    text-decoration: none;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
-
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/    {
-
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
-    background: #B29D6C;
-}
-
-/* THIS CONTROLS THE SUBNAVS WHEN ACTIVE */
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active {
-    background: #990000;
-    color: #fff;
-    text-decoration: none;
-}
-
-.fullcontentwidth #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active:hover {
-    background: #B29D6C;
-}
 
 /* ALL THE MEGA MENU STUFF */
 

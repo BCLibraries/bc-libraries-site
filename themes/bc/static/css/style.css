@@ -826,7 +826,7 @@ img.center {
     float: left;
     margin-bottom: 0;
     position: relative;
-    width: 87%;
+    width: 85%;
     z-index: 2;
 }
 
@@ -845,7 +845,7 @@ img.center {
     border-width: 0 3px;
     height: 34px;
     margin-left: 0;
-    width: 90px;
+    width: 100%;
 }
 
 #block_search .input-group-btn:last-child > .btn:hover {

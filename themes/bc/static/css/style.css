@@ -349,7 +349,7 @@ img.center {
 }
 
     /* SPECIFIC LIBGUIDE HEADER TITLE & SEARCH BAR, TOP RIGHT CORNER */
-    
+
 #lg_headertitle {
     clear: both;
     display: inline-block;
@@ -392,7 +392,7 @@ img.center {
     margin: 0px;
     padding: 0px;
     color: #333;
-}   
+}
 
 #top_search {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -613,10 +613,10 @@ img.center {
 
 @media ( max-width: 768px ) {
     #block_search {
-        height: 130px; 
-        width: 100%; 
-        padding: 0px; 
-        margin: 0 0 10px 0; 
+        height: 130px;
+        width: 100%;
+        padding: 0px;
+        margin: 0 0 10px 0;
         display:inline-block;
     }
 }
@@ -630,12 +630,12 @@ img.center {
     width: 35%;
     border-left: 5px solid #FFFFFF;
 }
-    @media ( max-width: 768px ) { 
+    @media ( max-width: 768px ) {
 #block_databases, #block_hours {
-    height: 130px; 
-    width: 100%; 
-    padding: 0px; 
-    margin: 0px 0px 15px 0px; 
+    height: 130px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
     display:inline-block;
     float: none;
     border-left: 0px solid #FFFFFF;
@@ -714,9 +714,9 @@ img.center {
 }
 
 .row_badges a img {
-    height: auto; 
-    width: 24%; 
-    padding: 0px; 
+    height: auto;
+    width: 24%;
+    padding: 0px;
     margin: 0 4px;
     display:inline-block;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
@@ -1978,7 +1978,7 @@ nav select {
 
 @media ( max-width: 768px ) {
     .pane_info .col-sm-6 {
-        width: 50%;    
+        width: 50%;
         float: left;
     }
 }
@@ -2175,4 +2175,20 @@ nav select {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+#beta-ribbon {
+    font-size: 1.15em;
+    position: absolute;
+    top: 34px;
+    right: -65px;
+    width:280px;
+    margin-left: 5em;
+    padding: 18px;
+    text-align: center;
+    background-color:yellow;
+    z-index:99999;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
 }

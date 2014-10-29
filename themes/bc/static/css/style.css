@@ -16,7 +16,7 @@ asapbold
 */
 
 body {
-    background: url("/theme/img/background_general.jpg") no-repeat #fff 50% 50%;
+    background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     font-family: asapregular !important;
@@ -27,7 +27,7 @@ body {
 
 @media ( max-width: 1199px ) {
     body {
-        background: url("/theme/img/background_general.jpg") no-repeat #fff 0% 0%;
+        background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 0% 0%;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -349,8 +349,8 @@ img.center {
     border-right: 0 none;
     border-style: solid none none;
     border-width: 1px 0 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
     /* SPECIFIC LIBGUIDE HEADER TITLE & SEARCH BAR, TOP RIGHT CORNER */
@@ -715,7 +715,11 @@ img.center {
 .row_badges {
     width: 100%;
     margin: 0px 0px 20px 0px;
-    text-align: center;
+    text-align: left;
+}
+
+.row_badges h2 {
+    margin: 5px 0 10px 10px;
 }
 
 .row_badges a img {
@@ -800,7 +804,7 @@ img.center {
 }
 
 #block_search .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #eee;
+    background-color: #939393;
     text-decoration: none;
 }
 
@@ -844,7 +848,8 @@ img.center {
 
 #block_search .input-group-btn:last-child > .btn {
   background: none repeat scroll 0 0 #990000;
-    border-color: -moz-use-text-color #710000 -moz-use-text-color #C50000;
+    border-left: #C50000;
+    border-right: #710000;
     border-radius: 0 0 0 0;
     border-style: none solid;
     border-width: 0 3px;
@@ -1915,13 +1920,20 @@ nav select {
 
 .more {
     float: right;
+    margin: 0 20px;
 }
 
 .more a {
-    background: none repeat scroll 0 0 #EAEAEA;
+    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% 385% #d6d6d6;
     display: block;
-    padding: 14px;
+    margin: 0 5px;
+    padding: 15px 25px;
     width: 100%;
+}
+
+.more a:hover {
+    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% -275% #a3a3a3;
+    text-decoration: none;
 }
 
 /* LIBRARY INFO DROP DOWN */
@@ -1961,7 +1973,7 @@ nav select {
     width: 58%;
     height: auto;
     color: #666;
-    padding: 25px 0 0 0;
+    padding: 0;
     display: none;
     position: absolute;
     right: 0;
@@ -2002,6 +2014,10 @@ nav select {
 .library_pane p {
     line-height: inherit;
     text-align: left;
+}
+
+.library_pane .address {
+    font-size: 11px;
 }
 
 .library_pane ul {
@@ -2136,7 +2152,8 @@ nav select {
 
 .feedback_button {
     background: none repeat scroll 0 0 #990000;
-    border-color: -moz-use-text-color #710000 -moz-use-text-color #C50000;
+    border-left: #C50000;
+    border-right: #710000;
     border-radius: 0 0 0 0;
     border-style: none solid;
     border-width: 0 3px;

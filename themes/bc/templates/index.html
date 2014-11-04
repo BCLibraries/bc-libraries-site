@@ -1,111 +1,120 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- SEARCH ROW -->
-<div class="row">
+<div class="clear">
+    <!-- SEARCH ROW -->
+    <div class="row" id="blocks_left">
+        <div id="block_search">
+            <h2>Begin Your Search Here</h2>
 
-    <div id="block_search">
-        <h2>Begin Your Search Here</h2>
-
-        <!-- FRONT PAGE TABBED SEARCH -->
-        <div id="newsearch" class="row" data-ng-app="myApp" data-ng-controller="AutoComplete">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul id="myTab" class="nav nav-tabs test">
-                        <li class="active"><a href="#">All</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Articles</a></li>
-                        <li><a href="#">Web site</a></li>
-                        <a style="padding: 10px; font-size: 15px;" href="#">Advanced Search</a>
-                    </ul>
+            <!-- FRONT PAGE TABBED SEARCH -->
+            <div id="newsearch" class="row" data-ng-app="myApp" data-ng-controller="AutoComplete">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul id="myTab" class="nav nav-tabs test">
+                            <li class="active"><a href="#">All</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Web site</a></li>
+                            <a style="padding: 10px; font-size: 15px;" href="#">Advanced Search</a>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="input-group input-group-md">
-                    <div data-searchbox></div>
+                <div class="col-xs-12">
+                    <div class="input-group input-group-md">
+                        <div data-searchbox></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <noscript>Javascript disabled</noscript>
-
-    <div id="block_databases">
-<h2>Databases</h2>
-<!-- must include -->
-        <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
-        <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
-                data-placeholder="By title...">
-            <option></option>
+        <noscript>Javascript disabled</noscript>
+        <div id="block_databases">
+            <h2>Databases</h2>
+            <!-- must include -->
+            <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
+            <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
+                    data-placeholder="By title...">
+                <option></option>
             </select>
 
-        <!-- must include -->
-        <label for="dbs-by-subject" class="accessibility-text">Find database by subject</label>
-        <select name="resources" style="width: 100%;" id="dbs-by-subject" class="chosen-box"
-                data-placeholder="By subject...">
-            <option></option>
-            <option value="african-african-diaspora-studies">African & African Diaspora Studies</option>
-            <option value="archives-special-collections">Archives & Special Collections</option>
-            <option value="area-cultural-studies">Area & Cultural Studies</option>
-            <option value="art-architecture">Art & Architecture</option>
-            <option value="asian-studies">Asian Studies</option>
-            <option value="biology">Biology</option>
-            <option value="business-management">Business & Management</option>
-            <option value="chemistry">Chemistry</option>
-            <option value="classical-studies">Classical Studies</option>
-            <option value="communication">Communication</option>
-            <option value="computer-science">Computer Science</option>
-            <option value="course-guides">Course Guides</option>
-            <option value="data-statistics-gis">Data/Statistics/GIS</option>
-            <option value="earth-environmental-sciences">Earth & Environmental Sciences</option>
-            <option value="economics">Economics</option>
-            <option value="education">Education</option>
-            <option value="film">Film</option>
-            <option value="gender-studies">Gender Studies</option>
-            <option value="general">General</option>
-            <option value="german-language-literature">German Language & Literature</option>
-            <option value="history">History</option>
-            <option value="irish-studies">Irish Studies</option>
-            <option value="english">Language & Literature in English</option>
-            <option value="latin-american-studies">Latin American Studies</option>
-            <option value="law">Law</option>
-            <option value="library-science">Library Science</option>
-            <option value="linguistics">Linguistics</option>
-            <option value="mathematics">Mathematics</option>
-            <option value="music">Music</option>
-            <option value="nursing-health-sciences">Nursing & Health Sciences</option>
-            <option value="philosophy">Philosophy</option>
-            <option value="physics">Physics</option>
-            <option value="political-science-government">Political Science & Government</option>
-            <option value="psychology">Psychology</option>
-            <option value="romance-languages-literatures">Romance Languages & Literatures</option>
-            <option value="science">Science</option>
-            <option value="slavic-eastern-languages">Slavic & Eastern Languages</option>
-            <option value="social-work">Social Work</option>
-            <option value="sociology-anthropology">Sociology & Anthropology</option>
-            <option value="theater-dance">Theater & Dance</option>
-            <option value="theology">Theology</option>
-
-        </select>
-
-        <!-- END DROPDOWNS -->
-
+            <!-- must include -->
+            <!--
+            <label for="dbs-by-subject" class="accessibility-text">Find database by subject</label>
+            <select name="resources" style="width: 100%;" id="dbs-by-subject" class="chosen-box"
+                    data-placeholder="By subject...">
+                <option></option>
+                <option value="african-african-diaspora-studies">African & African Diaspora Studies</option>
+                <option value="archives-special-collections">Archives & Special Collections</option>
+                <option value="area-cultural-studies">Area & Cultural Studies</option>
+                <option value="art-architecture">Art & Architecture</option>
+                <option value="asian-studies">Asian Studies</option>
+                <option value="biology">Biology</option>
+                <option value="business-management">Business & Management</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="classical-studies">Classical Studies</option>
+                <option value="communication">Communication</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="course-guides">Course Guides</option>
+                <option value="data-statistics-gis">Data/Statistics/GIS</option>
+                <option value="earth-environmental-sciences">Earth & Environmental Sciences</option>
+                <option value="economics">Economics</option>
+                <option value="education">Education</option>
+                <option value="film">Film</option>
+                <option value="gender-studies">Gender Studies</option>
+                <option value="general">General</option>
+                <option value="german-language-literature">German Language & Literature</option>
+                <option value="history">History</option>
+                <option value="irish-studies">Irish Studies</option>
+                <option value="english">Language & Literature in English</option>
+                <option value="latin-american-studies">Latin American Studies</option>
+                <option value="law">Law</option>
+                <option value="library-science">Library Science</option>
+                <option value="linguistics">Linguistics</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="music">Music</option>
+                <option value="nursing-health-sciences">Nursing & Health Sciences</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="physics">Physics</option>
+                <option value="political-science-government">Political Science & Government</option>
+                <option value="psychology">Psychology</option>
+                <option value="romance-languages-literatures">Romance Languages & Literatures</option>
+                <option value="science">Science</option>
+                <option value="slavic-eastern-languages">Slavic & Eastern Languages</option>
+                <option value="social-work">Social Work</option>
+                <option value="sociology-anthropology">Sociology & Anthropology</option>
+                <option value="theater-dance">Theater & Dance</option>
+                <option value="theology">Theology</option>
+            </select>
+            -->
+            <!-- END DROPDOWNS -->
+        </div>
     </div>
 
+    <!-- BEGIN HOURS BLOCK -->
+    <div class="row" id="blocks_right">
+        <div id="block_quick_links" class="clear">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">Contact us</a></li>
+                <li><a href="#" title="LINK" target="_self">Feedback</a></li>
+                <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
+                <li><a href="#" title="LINK" target="_self">Library Hours</a></li>
+                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
+            </ul>
+        </div>
+        <!--div class="hoursbar">
+            <a href="#" class="hoursbar_left">Today's Library hours</a>
+            <a href="#" class="hoursbar_right">All Library hours</a>
+        </div-->
+    </div>
 </div>
 
-    <div class="row news">
-
-  <!-- BEGIN HOURS BLOCK -->
-  <div class="hoursbar">
-        <a href="#" class="hoursbar_left">Today's Library hours</a>
-        <a href="#" class="hoursbar_right">All Library hours</a>
-  </div> 
-
-  <h2><a href="#">Library News</a></h2>
- 
-  </div>
+<div class="row news">
+    <h2><a href="#">Library News</a></h2>
+</div>
 
 <!-- CAROUSEL -->
 <div class="row">
@@ -115,44 +124,35 @@
         <!-- Indicators -->
         <ol class="carousel-indicators">
             {% for article in articles[:3] %}
-
             {% if loop.index == 1 %}
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             {% else %}
             <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
             {% endif %}
-
             {% endfor %}
         </ol>
 
         <div class="carousel-inner">
             {% if articles %}
-
             {% for article in articles[:3] %}
-
             {% if loop.index == 1 %}
             <div class="item active">
                 {% else %}
                 <div class="item">
                     {% endif %}
-
-
                     <img src="/theme/img/news/{{ article.image }}"
                          alt="{{ article.image_alt }}">
 
                     <div class="container">
                         <div class="carousel-caption">
                             <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
-
                             {{ article.summary }}
-
                             <p><a class="more" href="{{ article.url }}">Click here to learn more</a></p>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
                 {% endif %}
-
             </div>
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
                     class="glyphicon glyphicon-chevron-left"></span></a>
@@ -160,35 +160,31 @@
                     class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
         <!-- /.carousel -->
-
-
     </div>
-
+</div>
 <hr> 
 
-    <!-- BADGES -->
-    <div class="row_badges">
-
-<h2>Library Highlights</h2>
-
-        <a href="https://www.flickr.com/photos/bc-burnslibrary/sets/72157643221257694/" target="_blank">
-        <img src="/theme/img/Badge01.png" title="Love that Dirty Water"/></a>
-        <a href="http://wp.me/pZMf2-20q" target="_blank">
-        <img src="/theme/img/Badge02.png" title="Charles Knight: Publisher and Author"/></a>
-        <a href="http://hdl.handle.net/2345/3002" target="_blank">
-        <img src="/theme/img/Badge03.png" title="First hoops team at BC"/></a>
-        <a href="http://johnjburnslibrary.wordpress.com/2014/07/07/georgevhiggins/" target="_blank">
-        <img src="/theme/img/Badge04.png" title="George V. Higgins: An Ear for Dialogue"/></a>
-    </div>
+<!-- BADGES -->
+<div class="row_badges">
+    <h2>Library Highlights</h2>
+    <a href="https://www.flickr.com/photos/bc-burnslibrary/sets/72157643221257694/" target="_blank">
+    <img src="/theme/img/Badge01.png" title="Love that Dirty Water"/></a>
+    <a href="http://wp.me/pZMf2-20q" target="_blank">
+    <img src="/theme/img/Badge02.png" title="Charles Knight: Publisher and Author"/></a>
+    <a href="http://hdl.handle.net/2345/3002" target="_blank">
+    <img src="/theme/img/Badge03.png" title="First hoops team at BC"/></a>
+    <a href="http://johnjburnslibrary.wordpress.com/2014/07/07/georgevhiggins/" target="_blank">
+    <img src="/theme/img/Badge04.png" title="George V. Higgins: An Ear for Dialogue"/></a>
+</div>
     
-    {% endblock %}
+{% endblock %}
 
-    {% block pagescripts %}
-    <script>
-        // Carousel speed (ms).
-        $('.carousel').carousel({
-            interval: 10000
-        });
-    </script>
-    <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
-    {% endblock %}
+{% block pagescripts %}
+<script>
+    // Carousel speed (ms).
+    $('.carousel').carousel({
+        interval: 10000
+    });
+</script>
+<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+{% endblock %}

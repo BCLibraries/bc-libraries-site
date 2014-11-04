@@ -124,6 +124,16 @@ img.center {
     display: none;
 }
 
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
 /*HEADER CODE */
 
 #header {
@@ -607,13 +617,35 @@ img.center {
     text-transform: uppercase;
 }
 
+#blocks_left {
+    width:83%;
+    margin:0 0 10px 0;
+    float:left;
+}
+
+#blocks_right{
+    width:17%;
+    height:100%;
+    margin:0 0 10px 0;
+    float:right;
+}
+
+@media ( max-width: 768px ) {
+    #blocks_left,
+    #blocks_right {
+        width:100%;
+        margin:0px;
+        float:none;
+    }
+}
+
 #block_search {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
     min-height: 130px;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     padding: 10px;
-    width: 65%;
+    width: 100%;
 }
 
 @media ( max-width: 768px ) {
@@ -626,64 +658,98 @@ img.center {
     }
 }
 
+#block_quick_links {
+    padding: 10px 0 0 0;
+    width: 80%;
+    margin-left: auto;
+    font-size: 14px;
+}
+
+#block_quick_links ul {
+    margin:0;
+    padding:0;
+}
+
+#block_quick_links ul li {
+    list-style: none;
+    padding: 0 0 8px;
+    line-height: 1.2;
+}
+
+@media ( max-width: 768px ) {
+    #block_quick_links {
+        width: 100%;
+        padding: 0px;
+        margin: 0 0 10px 0;
+    }
+    #block_quick_links ul {
+        width: 50%;
+        padding: 0px;
+        margin: 0 0 10px 0;
+        display: inline-block;
+        float:left;
+    }
+}
+
 #block_databases {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
-    float: right;
-    min-height: 130px;
+    min-height: 88px;
     padding: 7px;
-    width: 35%;
-    border-left: 5px solid #FFFFFF;
-}
-    @media ( max-width: 768px ) {
-#block_databases, #block_hours {
-    height: 130px;
     width: 100%;
-    padding: 0px;
-    margin: 0px 0px 15px 0px;
-    display:inline-block;
-    float: none;
-    border-left: 0px solid #FFFFFF;
+}
+
+@media ( max-width: 768px ) {
+    #block_databases, #block_hours {
+        height: 88px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0px 10px 0px;
+        display:inline-block;
+        border-left: 0px solid #FFFFFF;
     }
 }
 
 .hoursbar {
     float: right;
     padding: 0 ;
-    width: 35%;
-    border-left: 5px solid #FFFFFF;
+    width: 16.3%;
+    border: none;
     font-size: 15px;
-
+    box-sizing: border-box;
 }
-    @media ( max-width: 1199px ) {
-.hoursbar {
-    text-align: left;
+
+@media ( max-width: 1199px ) {
+    .hoursbar {
+        text-align: left;
     }
 }
+
 @media ( max-width: 768px ) {
-        .hoursbar {
-            float: none;
-            width: 100%;
-            border: 0px;
-            padding: 5px 2px;
-            margin: 0 0 10px 0;
-        }
+    .hoursbar {
+        float: none;
+        width: 100%;
+        border: 0px;
+        padding: 5px 2px;
+        margin: 0 0 10px 0;
+    }
 }
 
 .hoursbar .hoursbar_left {
     background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 #eaeaea;
-    height: 35px;
+    height: 40px;
     padding: 4px 0 4px 32px;
+    margin-bottom:8px;
     text-align: center;
-    width: 50%;
+    width: 100%;
     border-right: 1px solid #eaeaea;
     display: inline-block;
 }
-    @media ( max-width: 1199px ) {
-        .hoursbar .hoursbar_left {
-            width: 100%;
-            border: 0px;
-            margin: 0 0 5px 0;
+@media ( max-width: 1199px ) {
+    .hoursbar .hoursbar_left {
+        width: 100%;
+        border: 0px;
+        margin: 0 0 5px 0;
     }
 }
 .hoursbar .hoursbar_left:hover {
@@ -692,17 +758,17 @@ img.center {
 
 .hoursbar .hoursbar_right {
     background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #eaeaea;
-    height: 35px;
+    height: 40px;
     padding: 4px 0 4px 32px;
     text-align: center;
-    width: 49%;
+    width: 100%;
     border-left: 1px solid #eaeaea;
     display: inline-block;
 }
-    @media ( max-width: 1199px ) {
-        .hoursbar .hoursbar_right {
-            width: 100%;
-            border: 0px;
+@media ( max-width: 1199px ) {
+    .hoursbar .hoursbar_right {
+        width: 100%;
+        border: 0px;
     }
 }
 
@@ -1686,6 +1752,7 @@ nav select {
     margin: 0;
     text-align: center;
     width: 100%;
+    background: #990000;
 }
 
 #megamenu .navbar-toggle {
@@ -1715,17 +1782,17 @@ nav select {
 }
 
 #megamenu .navbar-nav > li {
-    border-left: 2px solid #FFFFFF;
+    bo rder-left: 2px solid #FFFFFF;
     display: inline-block;
     float: left;
-    width: 195px;
+    width: auto;
 }
 
 @media ( max-width: 1199px ) {
     #megamenu .navbar-nav > li {
         border: 0 none;
-        float: none;
-        width: 16%;
+        /*float: none;
+        width: 16%;*/
     }
 }
 
@@ -1744,7 +1811,7 @@ nav select {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 14px;
-    padding: 10px 0 0 0;
+    padding: 10px 30px;
     height: 40px;
     margin: 0 0 0 0;
     text-align: center;

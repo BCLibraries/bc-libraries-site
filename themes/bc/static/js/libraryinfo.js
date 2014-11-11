@@ -1,22 +1,25 @@
-/* SCRIPT TO CHANGE THE LIBRARY DROPDOWN PANE */
+/* SCRIPT TO CHANGE THE VARIOUS ITEM DROPDOWN PANES */
 
       $(document).ready(function(){
         /* takes in a single class/id name
          note, the parameter should be stripped of . or # chars  */
         var updateMenu = function(className){
+          /* find topmost parent selector for this className */
+          var topParent = $("." + className).parents(".iteminfo-content")
           /* toggle the "selected" class value for the li
           // element that was selected */
-          $("ul.library-list li").not($("." + className).addClass("selected")).removeClass("selected")
-          /* toggle the display of the library_pane element
+          $(topParent).find("ul.item-list li").not($("." + className).addClass("selected")).removeClass("selected")
+          /* toggle the display of the item_pane element
           // to be shown */
-          $(".library_pane").not($("#" + className).show()).hide();
+          $(topParent).find(".item_pane").not($("#" + className).show()).hide();
         };
 
         /* set up which menu to show as default */
         updateMenu('oneill_pane');
+        updateMenu('faq_pane');
 
         /* when menu li element gets clicked */
-        $("ul.library-list li").click(function(){
+        $("ul.item-list li").click(function(){
           /* get list of class values and split them into an array */
           var myClasses = $(this).attr("class").split(/\s+/);
           var myClassPane;

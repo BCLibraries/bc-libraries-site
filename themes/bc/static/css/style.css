@@ -140,6 +140,7 @@ img.center {
     height: 55px;
     margin: 5px auto 0px;
     padding: 0;
+    position: relative;
 }
 
 @media ( max-width: 1199px ) {
@@ -406,6 +407,32 @@ img.center {
     margin: 0px;
     padding: 0px;
     color: #333;
+}
+
+#my_accounts {
+    position:absolute;
+    top:0;
+    right:5px;
+    pad ding-right:200px;
+}
+
+#my_accounts ul {
+    list-style: none;
+    margin:0;
+    padding:10px;
+}
+
+#my_accounts li a {
+    font-weight: bold;
+    padding:10px;
+    color:#fff;
+    background-color:#990000;
+    text-decoration: none;
+    transition: background-color 1s ease-out 0s;
+}
+
+#my_accounts li a:hover {
+    background-color:#430000;
 }
 
 #top_search {
@@ -1224,22 +1251,36 @@ img.center {
 .column_hours {
     font-size: 12px;
     border-right: 0px;
+    width:50%;
 }
 
 @media ( max-width: 1110px ) {
     .column_hours {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
 @media ( max-width: 1050px ) {
     .column_hours {
         font-size: 12px;
+        width:100%;
     }
 }
 
-.column_hours tr {
-    border-bottom: 1px solid #DADADA;
+.column_hours tr td {
+    padding: 1px 0;
+}
+
+.column_hours tr td {
+    padding: 1px 0;
+}
+
+.column_hours tr.hours-alt {
+   background-color: #EAEAEA;
+}
+
+.column_hours tr.hours-library td.hours-col-loc {
+    width:50%;
 }
 
 #copyright {
@@ -2015,7 +2056,7 @@ nav select {
     text-align: left;
 }
 
-.library-list {
+.item-list {
     list-style: none outside none;
     margin: 0;
     padding: 10px 0 0 25px;
@@ -2023,18 +2064,23 @@ nav select {
     border-right: 1px solid #DADADA;
 }
 
-@media ( max-width: 768px ) {
-        .library-list {
-            display: none;}
+.get-help-menu .item-list {
+    padding: 0 0 0 25px;
 }
 
-.yamm .dropdown-menu li .library-list > li a:hover, .yamm .dropdown-menu li .library-list > li a:focus {
+@media ( max-width: 768px ) {
+    .item-list {
+        display: none;
+    }
+}
+
+.yamm .dropdown-menu li .item-list > li a:hover, .yamm .dropdown-menu li .item-list > li a:focus {
     background: url("/theme/img/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
     color: #990000;
     text-decoration: none;
 }
 
-.library-list .selected a {
+.item-list .selected a {
     color: #990000 !important;
     font-weight: bold !important;
     text-decoration: none;
@@ -2083,21 +2129,21 @@ nav select {
 
 /* NEW LIBARY PANE CODE */
 
-.library_pane p {
+.item_pane p {
     line-height: inherit;
     text-align: left;
 }
 
-.library_pane .address {
+.item_pane .address {
     font-size: 11px;
 }
 
-.library_pane ul {
+.item_pane ul {
     padding: 0px 0 5px 0;
     margin: 0px;
 }
 
-.library_pane li {
+.item_pane li {
     list-style: none;
 }
 
@@ -2122,12 +2168,19 @@ nav select {
     width: 75%;
     padding: 15px;
 }
+
+.get-help-menu .pane_info {
+    float: none;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
 @media ( max-width: 768px ) {
     .pane_info {
         float: none;
         width: 100%;
         padding: 0px;
-}
+    }
 }
 
 .pane_info h3 a {

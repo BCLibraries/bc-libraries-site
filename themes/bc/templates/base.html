@@ -21,6 +21,8 @@
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/theme/js/chosen.jquery.min.js?version=1.1.0"></script>
 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,12 +38,17 @@
 
 <!-- BEGIN HEADER -->
 <div id="header">
-    <div id="headertitle">
+    <div id="lg_headertitle">
         <a href="/"><h1>Boston College University Libraries </h1></a>
+        <div id="motto">
+            <p>Value Beyond Discovery</p>
+        </div>
     </div>
 
-    <div id="motto">
-        <p>Value Beyond Discovery</p>
+    <div id="my_accounts" style="right:100px;">
+        <ul>
+            <li><a href="http://library.bc.edu/my-accounts"><i class="fa fa-user"></i> My Accounts</a></li>
+        </ul>
     </div>
 </div>
 <!-- END HEADER -->
@@ -61,7 +68,8 @@
                 <!-- BEGIN NAVBAR-COLLAPSE -->
                 <div id="navbar-collapse-1" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <!-- Find button list -->
+
+                        <!-- Find list -->
                         <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Find</a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -93,7 +101,7 @@
                                             </ul>
 
                                             <!-- Special Collections -->
-                                            <ul class="col-sm-3 menu_list">
+                                            <ul class="col-sm-3 menu_list end">
                                                 <li><h4>Special Collections</h4></li>
                                                 <li><a href="#" class="grayed">Special Collections &amp; Rare Manuscripts</a></li>
                                                 <li><a href="#" class="grayed">Theses &amp; Dissertations</a></li>
@@ -110,111 +118,8 @@
                             </ul>
                         </li>
 
-                        <!-- Research Support button list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Subjects</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <!-- Content container to add padding -->
-                                    <div class="yamm-content">
-                                    <!-- HIDING TOP-HALF OF SUBJECTS MENU -->
-                                        <!--
-                                        <div class="row">
-                                            <ul class="col-sm-4 menu_list">
-                                                <li><h4>Help Yourself</h4></li>
-                                                <li><a href="http://library.bc.edu/sb.php">Guides by Subject</a></li>
-                                                <li><a href="#" class="grayed">Guides by Course</a></li>
-                                                <li><a href="#" class="grayed">How to... (use Holmes, cite sources, etc.)</a></li>
-                                                <li><a href="#" class="grayed">Finding... (newspapers, images, etc.)</a></li>
-                                                <li><a href="http://answers.bc.edu/index.php">FAQ</a></li>
-                                                <li><a href="#" class="grayed">Video Tutorials</a></li>
-                                            </ul>
-
-                                            <ul class="col-sm-4 menu_list">
-                                                <li><h4>Personalized Help for...</h4></li>
-                                                <li><a href="#" class="grayed">Undergraduates</a></li>
-                                                <li><a href="#" class="grayed">Graduate Students</a></li>
-                                                <li><a href="#" class="grayed">Faculty</a></li>
-                                                <li><a href="#" class="grayed">Staff</a></li>
-                                                <li><a href="#" class="grayed">Alumni</a></li>
-                                                <li><a href="#" class="grayed">Guests</a></li>
-                                            </ul>
-
-                                            <ul class="col-sm-4 menu_list">
-                                                <li><h4>Additional Resources</h4></li>
-                                                <li><a href="#" class="grayed">Library Instruction</a></li>
-                                                <li><a href="#" class="grayed">Digital Scholarship</a></li>
-                                                <li><a href="#" class="grayed">RefWorks</a></li>
-                                            </ul>
-                                        </div>
-                                        -->
-                                    
-                                        <!-- CONVERT BOTTOM_ROW TO TOP ROW -->
-                                        <!--div class="row bottom_row"-->
-                                        <div class="row">
-                                            <h4 style="padding: 0 0 0 25px;">Research Subjects</h4>
-                                            <ul class="col-sm-3 menu_list">
-                                                <li><a href="http://library.bc.edu/africanportal">African &amp; African Diaspora Studies</a></li>
-                                                <!--li><a href="#" class="grayed">American Studies</a></li-->
-                                                <li><a href="http://library.bc.edu/biologyportal">Biology </a></li>
-                                                <!--li><a href="#" class="grayed">Catholic Studies</a></li-->
-                                                <li><a href="http://library.bc.edu/chemistryportal">Chemistry</a></li>
-                                                <li><a href="http://library.bc.edu/classicalportal">Classics</a></li>
-                                                <li><a href="http://library.bc.edu/computerscienceportal">Computer Science</a></li>
-                                                <li><a href="http://library.bc.edu/dataportal">Data &amp; Statistics</a></li>
-                                                <li><a href="http://library.bc.edu/geologyportal">Earth &amp; Environmental Sciences</a></li>
-                                                <li><a href="http://library.bc.edu/economicsportal">Economics</a></li>
-                                                <li><a href="http://library.bc.edu/educationportal">Education</a></li>
-                                            </ul>
-
-                                            <ul class="col-sm-3 menu_list">
-                                                <li><a href="http://library.bc.edu/englishportal">English</a></li>
-                                                <li><a href="http://library.bc.edu/enviro-studiesportal">Environmental Studies</a></li>
-                                                <!--li><a href="#" class="grayed">Faith, Peace, &amp; Justice</a></li-->
-                                                <li><a href="http://library.bc.edu/artportal">Fine Arts</a></li>
-                                                <li><a href="http://library.bc.edu/germanportal">German Studies</a></li>
-                                                <li><a href="http://library.bc.edu/historyportal">History</a></li>
-                                                <!--li><a href="#" class="grayed">International Studies</a></li-->
-                                                <!--li><a href="#" class="grayed">Irish Literature &amp; Culture</a></li-->
-                                                <li><a href="http://library.bc.edu/irishportal">Irish Studies</a></li>
-                                                <li><a href="http://library.bc.edu/islamicportal">Islamic Civilization &amp; Societies</a></li>
-                                                <li><a href="http://library.bc.edu/latinamericanportal">Latin American Studies</a></li>
-                                                <li><a href="http://library.bc.edu/lawportal">Law</a></li>
-                                            </ul>
-
-                                            <ul class="col-sm-3 menu_list">
-                                                <li><a href="http://library.bc.edu/managementportal">Management</a></li>
-                                                <li><a href="http://library.bc.edu/mathematicsportal">Mathematics</a></li>
-                                                <li><a href="http://library.bc.edu/musicportal">Music</a></li>
-                                                <li><a href="http://library.bc.edu/nursingportal">Nursing</a></li>
-                                                <li><a href="http://library.bc.edu/philosophyportal">Philosophy</a></li>
-                                                <li><a href="http://library.bc.edu/physicsportal">Physics</a></li>
-                                                <li><a href="http://library.bc.edu/polisciportal">Political Science</a></li>
-                                                <!--li><a href="#" class="grayed">Programs</a></li-->
-                                                <li><a href="http://library.bc.edu/psychologyportal">Psychology</a></li>
-                                                <li><a href="http://library.bc.edu/romanceportal">Romance Languages &amp; Literatures</a></li>
-                                            </ul>
-
-                                            <ul class="col-sm-3 menu_list">
-                                                <!--li><a href="#" class="grayed">Scientific Computation</a></li-->
-                                                <li><a href="http://library.bc.edu/slavicportal">Slavic &amp; Eastern Languages &amp; Literatures</a></li>
-                                                <li><a href="http://library.bc.edu/socialworkportal">Social Work</a></li>
-                                                <li><a href="http://library.bc.edu/sociologyportal">Sociology</a></li>
-                                                <li><a href="http://library.bc.edu/theatreanddanceportal">Theatre</a></li>
-                                                <li><a href="http://library.bc.edu/theologyportal">Theology</a></li>
-                                                <li><a href="http://library.bc.edu/theologyportal">Theology &amp; Ministry</a></li>
-                                                <li><a href="http://library.bc.edu/genderportal">Women's &amp; Gender Studies</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="row bottom_row">
-                                            <div class="more"><a href="#">Find a Subject Librarian</a></div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Services list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Services</a>
+                        <!-- Using the Library list -->
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Using the Library</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- Content container to add padding -->
@@ -223,12 +128,13 @@
                                             <!-- Services -->
                                             <ul class="col-sm-3 menu_list">
                                                 <li><h4><a href="http://library.bc.edu/services" title="Services">Services</a></h4></li>
-                                                <li><a href="http://library.bc.edu/borrowing-renewing" title="Borrowing &amp; Renewing">Borrowing &amp; Renewing</a></li>
-                                                <li><a href="http://library.bc.edu/request-materials" title="Request">Request</a></li>
+                                                <li><a href="http://library.bc.edu/borrowing-renewing" title="Borrowing">Borrowing</a></li>
+                                                <li><a href="http://library.bc.edu/request-materials" title="Requesting">Requesting</a></li>
                                                 <li><a href="http://library.bc.edu/course-reserves" title="Course Reserves">Course Reserves</a></li>
                                                 <li><a href="#" class="grayed" title="Library Instruction">Library Instruction</a></li>
                                                 <li><a href="http://libguides.bc.edu/media-services" title="Media Services">Media Services</a></li>
-                                                <li><a href="http://library.bc.edu/proxy-borrowers" title="Proxy Borrowers">Proxy Borrowers</a></li>
+                                                <li><a href="#" class="grayed" title="Digital Scholarship">Digital Scholarship</a></li>
+                                                <!--li><a href="http://library.bc.edu/proxy-borrowers" title="Proxy Borrowers">Proxy Borrowers</a></li-->
                                                 <!--li><a href="#" class="grayed" title="Purchase Requests">Purchase Requests</a></li-->
                                             </ul>
 
@@ -247,28 +153,116 @@
                                                 <li><!--a href="http://library.bc.edu/software">Software in the library</a--><a href="#" class="grayed" title="Software in the library">Software in the library</a></li>
                                                 <li><a href="http://library.bc.edu/laptops-ipads-more" title="Laptops, iPads, &amp; More">Laptops, iPads, &amp; More</a></li>
                                                 <li><a href="http://library.bc.edu/computers-and-printers" title="Computers &amp; Printers">Computers &amp; Printers</a></li>
-                                                <li><a href="http://library.bc.edu/refworks" title="RefWorks">RefWorks</a></li>
+                                                <li><a href="#" class="grayed" title="ITS Tech">ITS Tech</a></li>
+                                                <!--li><a href="http://library.bc.edu/refworks" title="RefWorks">RefWorks</a></li-->
                                             </ul>
 
                                             <!-- Spaces -->
-                                            <ul class="col-sm-3 menu_list">
+                                            <ul class="col-sm-3 menu_list end">
                                                 <li><h4><a href="http://library.bc.edu/spaces" title="Spaces">Spaces</a></h4></li>
                                                 <li><!--a href="http://library.bc.edu/reserve-study-room" title="Reserve a Study Room">Reserve a Study Room</a--><a href="#" class="grayed" title="Reserve a Study Room">Reserve a Study Room</a></li>
                                                 <li><a href="http://library.bc.edu/study-spaces" title="Study Spaces">Study Spaces</a></li>
                                                 <li><a href="http://library.bc.edu/digitalstudio" title="205 – Digital Studio">205 – Digital Studio</a></li>
-                                                <li><!--a href="http://library.bc.edu/advertise-your-event" title="Advertise Your Event">Advertise Your Event</a--><a href="#" class="grayed" title="Advertise Your Event">Advertise Your Event</a></li>
+                                                <li><a href="#" class="grayed" title="ADA-related provisitons">ADA-related provisions</a></li>
                                             </ul>
                                         </div>
                                         
                                         <div class="row bottom_row">
-                                            <div class="more"><a href="http://library.bc.edu/all-services" title="More Services">More Services</a></div>
+                                            <div class="more"><a href="http://library.bc.edu/all-services" title="More Services">All Library Services</a></div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </li>
 
-                        <!-- About Us list -->
+                        <!-- Get Help list -->
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Get Help</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <!-- Content container to add padding -->
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <ul class="col-sm-3 menu_list">
+                                                <li><h4>Research Help</h4></li>
+                                                <li><a href="http://library.bc.edu/sb.php">Guides by Subject</a></li>
+                                                <li><a href="http://library.bc.edu/sb.php?subject_id=12917">Guides by Course</a></li>
+                                                <li><a href="#" class="grayed">How to... (use Holmes, cite sources, etc.)</a></li>
+                                            </ul>
+
+                                            <ul class="col-sm-3 menu_list">
+                                                <li><h4>Help while on campus</h4></li>
+                                                <li><a href="http://library.bc.edu/prf.php?">Subject Specialists</a></li>
+                                                <li><a href="#" class="grayed">Libraries</a></li>
+                                            </ul>
+
+                                            <div class="iteminfo-content get-help-menu">
+                                                <ul class="col-sm-3 item-list">
+                                                    <li><h4>Help from anywhere</h4></li>
+                                                    <li class="faq_pane"><a href="#">Frequently Asked Questions</a></li>
+                                                    <li class="text_pane"><a href="#">Text a Librarian</a></li>
+                                                    <li class="chat_pane"><a href="#">Chat with a Librarian</a></li>
+                                                    <li class="email_pane"><a href="#">Send an Email</a></li>
+                                                    <li class="call_pane"><a href="#">Call a Librarian</a></li>
+                                                </ul>
+
+                                                <h4 id="h4mobile">Help from anywhere</h4>
+                                                <!-- FAQ PANE BEGINS HERE -->
+                                                <div id="faq_pane" class="item_pane col-sm-3">
+                                                    <div class="pane_info">
+                                                        <h3>Frequently Asked Questions</h3>
+                                                        <p>Get answers to frequenly asked questions on the <a href="http://answers.bc.edu/index.php">Library's FAQ</a>.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- END FAQ PANE. RIGHT UP THERE-->
+
+                                                <!-- TEXT PANE BEGINS HERE -->
+                                                <div id="text_pane" class="item_pane col-sm-3">
+                                                    <div class="pane_info">
+                                                        <h3>Text a Librarian</h3>
+                                                        <p>Text 617-229-5222 for quick questions during weekday reference service hours.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- END TEXT PANE. RIGHT UP THERE-->
+
+                                                <!-- CHAT PANE BEGINS HERE -->
+                                                <div id="chat_pane" class="item_pane col-sm-3">
+                                                    <div class="pane_info">
+                                                        <h3>Chat with a Librarian</h3>
+                                                        <p>24/7 research help from Librarians at BC and at participating Jesuit institutions across the country. <a onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll',     'chat', 'resizable=1,width=320,height=300'); return false;">Click here to chat with a Librarian.</a> </p>
+                                                    </div>
+                                                </div>
+                                                <!-- END CHAT PANE. RIGHT UP THERE-->
+
+                                                <!-- EMAIL PANE BEGINS HERE -->
+                                                <div id="email_pane" class="item_pane col-sm-3">
+                                                    <div class="pane_info">
+                                                        <h3>Send an Email</h3>
+                                                        <p>Get an <a href="http://answers.bc.edu/q.php">answer by email</a> within one day, Monday-Friday.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- END EMAIL PANE. RIGHT UP THERE-->
+
+                                                <!-- CALL PANE BEGINS HERE -->
+                                                <div id="call_pane" class="item_pane col-sm-3">
+                                                    <div class="pane_info">
+                                                        <h3>Call a Librarian</h3>
+                                                        <p>(617) 552-4472</p>
+                                                        <p>Call a Reference Librarian during regular reference service hours.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- END CALL PANE. RIGHT UP THERE-->
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row bottom_row">
+                                            <div class="more"><a href="#">All Help</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- About The Libraries list -->
                         <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">About the Libraries</a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -284,15 +278,16 @@
                                             <li><a href="http://library.bc.edu/gifts" title="Gift Policy">Gift Policy</a></li>
                                             <li><a href="http://library.bc.edu/mission" title="Mission">Mission</a></li>
                                             <li><a href="http://library.bc.edu/employment" title="Employment">Employment</a></li>
-                                            <li><a href="#" class="grayed" title="Faculty Publications">Faculty Publications</a></li>
+                                            <li><a href="#" class="grayed" title="Publications">Publications</a></li>
                                             <li><a href="#" class="grayed" title="Exhibits">Exhibits</a></li>
+                                            <li><!--a href="http://library.bc.edu/advertise-your-event" title="Advertise Your Event">Advertise Your Event</a--><a href="#" class="grayed" title="Advertise Your Event">Advertise Your Event</a></li>
                                         </ul>
 
                                         <!-- LIBRARY INFO CAN GO HERE -->
 
                                         <!--Libraryinfo-content class exists to hide hours info that appears elsewhere.-->
-                                        <div class="libraryinfo-content">
-                                            <ul class="col-sm-3 library-list">
+                                        <div class="iteminfo-content">
+                                            <ul class="col-sm-3 item-list">
                                                 <li><h4>Libraries</h4></li>
                                                 <li class="bapst_pane"><a href="#">Bapst Art Library</a></li>
                                                 <li class="burns_pane"><a href="#">Burns Library</a></li>
@@ -308,7 +303,7 @@
 
                                             <h4 id="h4mobile">Libraries</h4>
                                             <!-- BAPST PANE BEGINS HERE -->
-                                            <div id="bapst_pane" class="library_pane">
+                                            <div id="bapst_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/bapst">Bapst Art Library</a></h3>
                                                     <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -334,7 +329,7 @@
                                             <!-- END BAPST PANE. RIGHT UP THERE-->
 
                                             <!-- BURNS PANE BEGINS HERE -->
-                                            <div id="burns_pane" class="library_pane">
+                                            <div id="burns_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/burns-library">Burns Library</a></h3>
                                                      <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -361,7 +356,7 @@
                                             <!-- END BURNS PANE. RIGHT UP THERE-->
 
                                             <!-- ERC PANE BEGINS HERE -->
-                                            <div id="erc_pane" class="library_pane">
+                                            <div id="erc_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/erc">Educational Resource Center</a></h3>
                                                      <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -388,7 +383,7 @@
                                             <!-- END ERC PANE. RIGHT UP THERE-->
 
                                             <!-- LAW PANE BEGINS HERE -->
-                                            <div id="law_pane" class="library_pane">
+                                            <div id="law_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://www.bc.edu/schools/law/library">Law Library</a></h3>
                                                      <p class="address">Boston College Law School<br>885 Centre St<br>Newton Center, MA 02459</p>
@@ -415,7 +410,7 @@
                                             <!-- END LAW PANE. RIGHT UP THERE-->
 
                                             <!-- O'CONNOR PANE BEGINS HERE -->
-                                            <div id="oconnor_pane" class="library_pane">
+                                            <div id="oconnor_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/oconnor">Catherine O'Connor Library</a></h3>
                                                      <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -441,7 +436,7 @@
                                             <!-- END O'CONNOR PANE. RIGHT UP THERE-->
 
                                             <!-- O'NEILL PANE BEGINS HERE -->
-                                            <div id="oneill_pane" class="library_pane">
+                                            <div id="oneill_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/oneill">O'Neill Library</a></h3>
                                                      <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -468,7 +463,7 @@
                                             <!-- END O'NEILL PANE. RIGHT UP THERE-->
 
                                             <!-- SWL PANE BEGINS HERE -->
-                                            <div id="swl_pane" class="library_pane">
+                                            <div id="swl_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/socialwork">Social Work Library</a></h3>
                                                      <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
@@ -495,7 +490,7 @@
                                             <!-- END SWL PANE. RIGHT UP THERE-->
 
                                             <!-- TML PANE BEGINS HERE -->
-                                            <div id="tml_pane" class="library_pane">
+                                            <div id="tml_pane" class="item_pane">
                                                 <div class="pane_info">
                                                     <h3><a href="http://library.bc.edu/tml">Theology & Ministry Library</a></h3>
                                                      <p class="address">Boston College Theology and Ministry Library <br>117 Lake Street <br>Brighton, MA  02135 </p>
@@ -523,17 +518,16 @@
                                         </div>
                                     </div>
                                     <div class="row bottom_row">
-                                        <div class="more"><a href="http://library.bc.edu/about-us" title="About Us">More About Us</a></div>
+                                        <div class="more"><a href="http://library.bc.edu/about-us" title="About Us">More About the Libraries</a></div>
                                     </div>
                                 </li>
                             </ul>
                         </li>
 
                         <!-- Ask a lib button -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Ask a Librarian</a>
+                        <!--li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Ask a Librarian</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <!-- Content container to add padding -->
                                     <div class="yamm-content">
                                         <div class="row">
                                             <h3 style="padding:0 0 0 23px;">Ask a Librarian</h3>
@@ -565,9 +559,9 @@
                                   </div>
                                 </li>
                             </ul>
-                        </li>
+                        </li-->
 
-                        <!-- FEEDBACK FORM EMAIL MAYBE -->
+                        <!-- FEEDBACK FORM EMAIL -->
                         <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle buttonone">Feedback</a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -697,22 +691,10 @@
             <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
             <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
         </ul>
-    </div>   
+    </div>
     
-    <!-- My Accounts -->
-    <div class="f_column no_bottom_border">
-        <h1>My Accounts</h1>
-        <ul>
-            <li><a href="#" title="ACCOUNTS">Holmes Account</a></li>
-            <li><a href="#" title="ACCOUNTS">Interlibrary Loan/Document Delivery</a></li>
-            <li><a href="#" title="ACCOUNTS">RefWorks</a></li>
-            <li><a href="#" title="ACCOUNTS">WorldCat Local</a></li>
-            <li><a href="#" title="LINK" target="_self">Course Reserves</a></li>
-        </ul>
-    </div> 
-
     <!-- Hours -->
-    <div class="f_column column_hours  no_bottom_border no_right_border">
+    <div class="f_column column_hours no_bottom_border no_right_border">
         <h1><a href="#">Today's Library Hours</a></h1>
         <!-- LIBCAL HOURS API-->
         <div id="api_hours_today_iid609_lid0"></div>

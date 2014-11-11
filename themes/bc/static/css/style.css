@@ -2286,3 +2286,66 @@ nav select {
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
 }
+
+/* Slideshow */
+.image-display {
+    float: left;
+    width: 66%;
+    max-width: 480px;
+    height: 100px;
+}
+
+.story-image {
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.story-image.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.story-image img {
+    width: 100%;
+}
+
+#bclib-viewer .image-chooser .image-selection {
+    display: block;
+    height: 100px;
+}
+
+#bclib-viewer .image-chooser {
+    height: 300px;
+    float: left;
+    width: 33%;
+}
+
+#bclib-viewer .image-chooser .image-selection.active {
+
+}
+
+#bclib-viewer .image-chooser .image-selection {
+    color: #999;
+    padding-left: 1em;
+}
+
+.image-selection a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #999;
+}
+
+.active.image-selection a {
+    font-weight: bold;
+    color: #000;
+}
+
+.bclib-viewer, .image-display {
+    position: relative;
+}

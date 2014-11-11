@@ -92,58 +92,51 @@
         </div>
 
         <div class="row news">
-            <h2><a href="#">Library News</a></h2>
+            <h2><a href="#">News</a></h2>
         </div>
 
         <!-- CAROUSEL -->
         <div class="row">
-            <!-- Carousel
-              ================================================== -->
-            <div id="myCarousel" class="carousel slide_BREAK_SLIDESHOW_SCRIPT" data-ride="carousel">
-                <!-- Indicators -->
-                <!--ol class="carousel-indicators">
-                    {% for article in articles[:3] %}
-                    {% if loop.index == 1 %}
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    {% else %}
-                    <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
-                    {% endif %}
-                    {% endfor %}
-                </ol-->
 
-                <div class="carousel-inner">
-                    <!--{% if articles %}
-                    {% for article in articles[:3] %}
-                    {% if loop.index == 1 %}-->
-                    <div class="item active">
-                        <!--{% else %}-->
-                        <div class="item">
-                            <!--{% endif %}-->
-                            <!--img src="/theme/img/news/{{ article.image }}"
-                                 alt="{{ article.image_alt }}"-->
-                            <img src="/theme/img/news/slider03.jpg"
-                                 alt="alt text for this image">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <!--h4><a href="{{ article.url }}">{{ article.title }}</a></h4-->
-                                    <h4><a href="http://libsite.dev/news/2014/Oct/09/third-slug/">Latest Faculty Publication Highlight</a></h4>
-                                    <h4><a href="http://libsite.dev/news/2014/Oct/09/another-custom-slug/">O'Neill 24/5 Study Space</a></h4>
-                                    <h4><a href="http://libsite.dev/news/2014/Oct/09/custom-slugs-are-possible/">The Fall Libraries' Newsletter!</a></h4>
-                                    <h4><a href="http://wp.me/pZMf2-20q">Charles Knight: Publisher and Author</a></h4>
-                                    <!--{{ article.summary }}-->
-                                    <!--p><a class="more" href="{{ article.url }}">Click here to learn more</a></p-->
-                                </div>
+            <div id="myCarousel">
+
+                <div id="bclib-viewer">
+                    <div class="image-display">
+
+                        {% if articles %}
+
+                        {% for article in articles[:3] %}
+                        {% if loop.index == 1 %}
+                        <div class="story-image active">
+                            {% else %}
+                            <div class="story-image">
+                                {% endif %}
+
+                            <a href="{{article.url}}">
+                                <img src="/theme/img/news/{{article.image}}" alt="{{article.image_alt}}"></a>
                             </div>
-                        </div>
-                        <!--{% endfor %}
-                        {% endif %}-->
+                            {% endfor %}
+                            {% endif %}
                     </div>
-                    <!--a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
-                            class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
-                            class="glyphicon glyphicon-chevron-right"></span></a-->
+
+                    <div class="image-chooser">
+
+                        {% if articles %}
+
+                        {% for article in articles[:3] %}
+                        {% if loop.index == 1 %}
+                        <div class="active image-selection">
+                            {% else %}
+                            <div class="image-selection">
+                                {% endif %}
+                            <a class="active" href="" data-choice="{{loop.index}}">{{ article.title }}</a>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+
+                        </div>
+                    </div>
                 </div>
-                <!-- /.carousel -->
             </div>
         </div>
     </div>
@@ -195,15 +188,42 @@
     <a href="http://johnjburnslibrary.wordpress.com/2014/07/07/georgevhiggins/" target="_blank">
     <img src="/theme/img/Badge04.png" title="George V. Higgins: An Ear for Dialogue"/></a>
 </div-->
-    
+
 {% endblock %}
 
 {% block pagescripts %}
 <script>
-    // Carousel speed (ms).
-    $('.carousel').carousel({
-        interval: 10000
-    });
+    $(document).ready(function () {
+                'use strict';
+
+                var selected = 1, rotate_interval = 30000, wait_after_select = 60000,
+                        num_stories = $('.image-selection').length, rotate_story, advanceSelector, changeStory;
+
+                advanceSelector = function () {
+                    selected = selected === num_stories ? 1 : selected + 1;
+                    changeStory(selected);
+                };
+
+                changeStory = function (selected) {
+                    $('.active').toggleClass('active');
+                    $('.story-image:nth-of-type(' + selected + ')').toggleClass('active');
+                    $('.image-selection:nth-of-type(' + selected + ')').toggleClass('active');
+                };
+
+                $('.image-chooser a').click(function () {
+                    selected = parseInt($(this).attr('data-choice'));
+                    changeStory(selected);
+                    window.clearInterval(rotate_story);
+                    setTimeout(function () {
+                        window.clearInterval(rotate_story);
+                        rotate_story = window.setInterval(advanceSelector, rotate_interval);
+                    }, wait_after_select);
+                    return false;
+                });
+
+                rotate_story = window.setInterval(advanceSelector, rotate_interval);
+            }
+    );
 </script>
 <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
 {% endblock %}

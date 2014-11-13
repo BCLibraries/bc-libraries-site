@@ -376,7 +376,7 @@ img.center {
     }
 }
 #lg_headertitle a {
-    background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title.png") no-repeat;
+    background: url("/theme/img/title.png") no-repeat;
     height: 40px;
     width: 600px;
     display: inline-block;
@@ -384,7 +384,7 @@ img.center {
 
 @media ( max-width: 1199px ) {
     #lg_headertitle a {
-        background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title.png") no-repeat;
+        background: url("/theme/img/title.png") no-repeat;
         background-size: 100% auto;
         width: 45%;
         height: 40%;
@@ -395,7 +395,7 @@ img.center {
 
 @media ( max-width: 768px ) {
     #lg_headertitle a {
-        background: url("https://dl.dropboxusercontent.com/u/4841356/LG_final/images/title_small.png") no-repeat;
+        background: url("/theme/img/title_small.png") no-repeat;
         background-size: auto;
         height: 48px;
         width: 100%;
@@ -1265,22 +1265,6 @@ img.center {
         font-size: 12px;
         width:100%;
     }
-}
-
-.column_hours tr td {
-    padding: 1px 0;
-}
-
-.column_hours tr td {
-    padding: 1px 0;
-}
-
-.column_hours tr.hours-alt {
-   background-color: #EAEAEA;
-}
-
-.column_hours tr.hours-library td.hours-col-loc {
-    width:50%;
 }
 
 #copyright {
@@ -2197,7 +2181,8 @@ nav select {
     width: 98%;
 }
 
-.libraryinfo-content .hours-col-time {
+.mini_hours_container,
+#oconnor_hours_container {
     background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
     font-size: 15px;
     height: 30px;
@@ -2205,6 +2190,59 @@ nav select {
     padding: 7px 0 7px 32px;
     text-align: left;
     width: 100%;
+}
+
+.mini_hours_container:hover {
+    background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 -39px rgba(0, 0, 0, 0) !important;
+}
+
+.mini_hours_container ul.lib_hours li.name,
+.mini_hours_container ul.lib_hours li.day,
+.mini_hours_container ul.lib_hours li.date {
+    display:none;
+}
+
+.mini_hours_container ul.lib_hours li.status,
+.mini_hours_container ul.lib_hours li.hours {
+    display: inline-block;
+}
+
+.mini_hours_container ul.lib_hours li.status {
+    text-transform: capitalize;
+}
+
+.mini_hours_container ul.lib_hours li.status:after {
+    content: "\00A0";
+}
+
+#oconnor_hours_row ul.lib_hours,
+#all_hours_container ul.lib_hours {
+    padding:2px 0;
+    font-size: 13px;
+}
+
+#all_hours_container ul.lib_hours:nth-child(odd) {
+    background-color:#EAEAEA;
+}
+
+
+#all_hours_container ul.lib_hours li.day,
+#all_hours_container ul.lib_hours li.date {
+    display:none;
+}
+
+#oconnor_hours_row ul.lib_hours li,
+#all_hours_container ul.lib_hours li.status,
+#all_hours_container ul.lib_hours li.name,
+#all_hours_container ul.lib_hours li.hours {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 2px;
+    width:40%;
+}
+
+#all_hours_container ul.lib_hours li.status {
+    width:20%;
 }
 
 .megamenucalendar {

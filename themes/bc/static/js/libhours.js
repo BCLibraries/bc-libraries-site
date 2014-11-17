@@ -13,7 +13,6 @@ $(document).ready(function(){
         $.each(libs, function(index, value){
             var libList = $(data["out"]).find("ul#" + value);
             if (libList && libList.length > 0){
-                console.log(value);
                 $("div#" + value).append(libList);
                 $("div#all_hours_container").append(libList.clone());
             }

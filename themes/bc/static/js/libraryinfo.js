@@ -16,7 +16,7 @@
 
         /* set up which menu to show as default */
         updateMenu('oneill_pane');
-        updateMenu('faq_pane');
+        updateMenu('chat_pane');
 
         /* when menu li element gets clicked */
         $("ul.item-list li").click(function(){

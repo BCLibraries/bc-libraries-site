@@ -2418,7 +2418,7 @@ nav select {
 
 #bclib-viewer .image-chooser .image-selection {
     display: block;
-    height: 100px;
+    margin-bottom: 2em
 }
 
 #bclib-viewer .image-chooser {
@@ -2443,7 +2443,6 @@ nav select {
 }
 
 .active.image-selection a {
-    font-weight: bold;
     color: #000;
 }
 

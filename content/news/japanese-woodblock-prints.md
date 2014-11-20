@@ -1,6 +1,6 @@
-Title: Latest Faculty Publication Highlight 
+Title: Japanese Woodblock Prints at Burns
 Date: 2014-10-09 10:22
-Slug: third-slug
+Slug: japanese-woodblock-prints-at-burns
 Summary: The Credo Series, by Professor Thomas Groome, comprises eleven textbooks – seven already published and four in progress – that together constitute a comprehensive presentation of the Catholic faith for use in high schools and youth ministry programs. [Click here to learn more!](http://www.bc.edu/sites/libraries/facpub/groome-credo/)
 Image: winter-in-aizu-01.jpg
 Image_alt: Stack of Books

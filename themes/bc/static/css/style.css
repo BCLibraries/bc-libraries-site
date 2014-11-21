@@ -411,15 +411,13 @@ img.center {
 
 #my_accounts {
     position:absolute;
-    top:0;
-    right:5px;
-    pad ding-right:200px;
+    top: 25px;
+    right:0px;
 }
 
 #my_accounts ul {
     list-style: none;
     margin:0;
-    padding:10px;
 }
 
 #my_accounts li a {
@@ -644,21 +642,23 @@ img.center {
 }
 
 #blocks_left {
-    width:63%;
-    margin:0 0 10px 0;
-    float:left;
+    width: 60%;
+    margin :0 0 10px 0;
+    float: left;
 }
 
-#blocks_right{
-    width:37%;
-    height:100%;
-    margin:0 0 10px 0;
-    float:right;
+#block_right {
+    width: 40%;
+    height: 100%;
+    margin: 0 0 10px 0;
+    float: right;
+    border-left: 5px solid #FFFFFF;
+    background: none repeat scroll 0 0 #eaeaea;
 }
 
 @media ( max-width: 768px ) {
-    #blocks_left,
-    #blocks_right {
+    #block_left,
+    #block_right {
         width:100%;
         margin:0px;
         float:none;
@@ -671,7 +671,7 @@ img.center {
     min-height: 130px;
     margin: 0 0 10px;
     padding: 10px;
-    width: 100%;
+    width: 60%;
 }
 
 @media ( max-width: 768px ) {
@@ -684,27 +684,47 @@ img.center {
     }
 }
 
-#block_quick_links {
-    padding: 10px 0 0 0;
-    width: 90%;
-    margin-left: auto;
-    font-size: 14px;
+#block_databases {
+    background: none repeat scroll 0 0 #EAEAEA;
+    display: inline-block;
+    min-height: 103px;
+    padding: 7px;
+    width: 60%;
+    margin-bottom: 20px;
 }
 
-#block_quick_links ul {
+@media ( max-width: 768px ) {
+    #block_databases, #block_hours {
+        height: 88px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0px 10px 0px;
+        display:inline-block;
+        border-left: 0px solid #FFFFFF;
+    }
+}
+
+#block_databases h2 {
+    margin: 0 0 15px 0;
+}
+
+#block_quick_links, #block_my_accounts {
+    padding: 10px 0 0px 10px;
+    margin-left: auto;
+    font-size: 14px;
+    width: 49%;
+    float: left;
+}
+
+#block_quick_links ul, #block_my_accounts ul {
     margin:0;
     padding:0;
 }
 
-#block_quick_links ul li {
+#block_quick_links ul li, #block_my_accounts ul li {
     list-style: none;
     padding: 0 0 14px;
     line-height: 1.2;
-}
-
-#block_quick_links ul li a img.icon {
-    padding: 0 4px 0 0;
-    vertical-align: middle;
 }
 
 @media ( max-width: 768px ) {
@@ -722,27 +742,11 @@ img.center {
     }
 }
 
-#block_databases {
-    background: none repeat scroll 0 0 #EAEAEA;
-    display: inline-block;
-    min-height: 88px;
-    padding: 7px;
-    width: 100%;
-    margin-bottom:20px;
+.block_white_left_border {
+    border-left: 5px #fff solid;
 }
 
-@media ( max-width: 768px ) {
-    #block_databases, #block_hours {
-        height: 88px;
-        width: 100%;
-        padding: 0px;
-        margin: 0px 0px 10px 0px;
-        display:inline-block;
-        border-left: 0px solid #FFFFFF;
-    }
-}
-
-.hoursbar {
+/*.hoursbar {
     float: right;
     padding: 0 ;
     width: 16.3%;
@@ -806,7 +810,7 @@ img.center {
 
 .hoursbar .hoursbar_right:hover {
     background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #d6d6d6;
-}
+} */
 
     /* BADGES CSS */
 
@@ -1678,8 +1682,8 @@ nav select {
 }
 
 .yamm .dropdown.yamm-fw .dropdown-menu {
-    left: 2px;
-    right: 8px;
+    left: 0px;
+    right: 0px;
 }
 
 @media ( max-width: 1199px ) {
@@ -2389,43 +2393,60 @@ nav select {
 }
 
 /* Slideshow */
+
+#myCarousel {
+    background: none repeat scroll 0 0 #eaeaea;
+    padding: 5px;
+    width: 60%;
+}
+
+#bclib-viewer {
+    height: 310px;
+}
+
 .image-display {
     float: left;
-    width: 66%;
+    width: 65%;
     max-width: 480px;
-    height: 100px;
+    height: 310px;
 }
 
 .story-image {
     visibility: hidden;
     opacity: 0;
-    transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+    transition: visibility 0s linear 0.2s,opacity 0.2s linear;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border: 5px solid #eaeaea;
+    background: #eaeaea;
 }
 
 .story-image.active {
+    width: 100%;
     visibility: visible;
     opacity: 1;
     transition: opacity .2s ease-in-out;
 }
 
 .story-image img {
-    max-width: 100%;
-    max-height: 300px
+    width: 100%;
 }
 
 #bclib-viewer .image-chooser .image-selection {
     display: block;
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
 #bclib-viewer .image-chooser {
     height: 300px;
     float: left;
-    width: 33%;
+    width: 35%;
+    padding: 10px 0 0 0;
 }
 
 #bclib-viewer .image-chooser .image-selection.active {
@@ -2444,7 +2465,8 @@ nav select {
 }
 
 .active.image-selection a {
-    color: #000;
+    color: #990000;
+    font-weight: bold;
 }
 
 .bclib-viewer, .image-display {

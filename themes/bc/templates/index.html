@@ -1,9 +1,40 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="clear">
-    <!-- SEARCH ROW -->
-    <div class="row" id="blocks_left">
+    <!-- TOP ROW -->
+    <div class="row">
+
+    <!-- BEGIN QUICK LINKS BLOCK -->
+    <div id="block_right">
+         <div id="block_quick_links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">Contact us</a></li>
+                <li><a href="#" title="LINK" target="_self">Feedback</a></li>
+                <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
+                <li><a href="#" title="LINK" target="_self">Library Hours</a></li>
+                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
+            </ul>
+        </div>
+
+        <div id="block_my_accounts" class="block_white_left_border">
+            <h2>My Accounts</h2>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">Holmes Account</a></li>
+                <li><a href="#" title="LINK" target="_self">Interlibrary Loan/Document Delivery</a></li>
+                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" title="LINK" target="_self">WorldCat Local</a></li>
+                <li><a href="#" title="LINK" target="_self">Course Reserves</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+
         <div id="block_search">
             <h2>Begin Your Search Here</h2>
 
@@ -20,6 +51,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-xs-12">
                     <div class="input-group input-group-md">
                         <div data-searchbox></div>
@@ -38,15 +70,18 @@
                     data-placeholder="By title...">
                 <option></option>
             </select>
-
         </div>
+    
+    
+</div>
+<!-- END TOP ROW -->
 
         <div class="row news">
             <h2><a href="#">News</a></h2>
         </div>
 
         <!-- CAROUSEL -->
-        <div class="row">
+    <div class="row">
 
             <div id="myCarousel">
 
@@ -62,8 +97,9 @@
                             <div class="story-image">
                                 {% endif %}
 
-                            <a href="{{article.url}}">
+                                <a href="{{article.url}}">
                                 <img src="/theme/img/news/{{article.image}}" alt="{{article.image_alt}}"></a>
+
                             </div>
                             {% endfor %}
                             {% endif %}
@@ -79,6 +115,7 @@
                             {% else %}
                             <div class="image-selection">
                                 {% endif %}
+                                
                             <a class="active" href="" data-choice="{{loop.index}}">{{ article.title }}</a>
                         </div>
                         {% endfor %}
@@ -90,27 +127,6 @@
             </div>
         </div>
     </div>
-
-    <!-- BEGIN HOURS BLOCK -->
-    <div class="row" id="blocks_right">
-         <div id="block_quick_links" class="clear">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="#" title="LINK" target="_self">Contact us</a></li>
-                <li><a href="#" title="LINK" target="_self">Feedback</a></li>
-                <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
-            </ul>
-            <ul>
-                <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
-                <li><a href="#" title="LINK" target="_self">Library Hours</a></li>
-                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
-            </ul>
-            <br/>
-
-        </div>
-    </div>
-</div>
-
 
 
 {% endblock %}

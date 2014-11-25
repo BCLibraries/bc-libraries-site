@@ -650,7 +650,7 @@ img.center {
 #block_right {
     width: 40%;
     height: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     float: right;
     border-left: 5px solid #FFFFFF;
     background: none repeat scroll 0 0 #eaeaea;
@@ -690,7 +690,7 @@ img.center {
     min-height: 103px;
     padding: 7px;
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 @media ( max-width: 768px ) {
@@ -854,14 +854,13 @@ img.center {
     margin: 0 0 10px 0 !important;
 }
 
-.news h2 a {
+#myCarousel h2 a {
     background: url("/theme/img/h2rss.png") no-repeat scroll 100% 57% rgba(0, 0, 0, 0);
     padding: 0 35px 0 0;
-    float: left;
-    margin: 5px 0 0 10px;
+    margin: 5px 0 0 5px;
 }
 @media ( max-width: 768px ) {
-    .news h2 a {
+    #myCarousel h2 a {
         margin: 10px 0 0 0;
     }
 }
@@ -2435,6 +2434,18 @@ nav select {
 
 .story-image img {
     width: 100%;
+}
+
+.story-image a {
+    background: #000;
+}
+
+.story-image a:hover {
+    opacity: .7;
+     background: #000;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 
 #bclib-viewer .image-chooser .image-selection {

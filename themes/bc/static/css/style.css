@@ -19,7 +19,7 @@ body {
     background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 50% 50%;
     background-size: cover;
     background-attachment: fixed;
-    font-family: asapregular !important;
+    font-family: 'Asap', sans-serif;
     color: #666;
     font-size: 13px;
     padding: 0;
@@ -40,7 +40,7 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    font-family: asapregular !important;
+    font-weight: normal !important;
 }
 
 a, a:visited {
@@ -64,12 +64,11 @@ a:hover, a:active {
 }
 
 b, strong {
-    font-family: asapbold;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 i, italics {
-    font-family: asapitalic;
+    font-style: italic;
 }
 
 h1 {
@@ -120,7 +119,7 @@ img.center {
 }
 
 #cke_12, #cke_13
-/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */    {
+/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */     {
     display: none;
 }
 
@@ -159,7 +158,7 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-#header {
+    #header {
         border-bottom: 1px solid #DADADA;
         height: 100%;
         padding: 0 0 10px;
@@ -208,21 +207,21 @@ img.center {
 
 @media ( max-width: 1199px ) {
     #motto p {
-         background: url("/theme/img/value.png") no-repeat;
-         background-size: 100% auto;
-         height: 25px;
-         width: 25%;
-         margin-left: 5px;
-   }
+        background: url("/theme/img/value.png") no-repeat;
+        background-size: 100% auto;
+        height: 25px;
+        width: 25%;
+        margin-left: 5px;
+    }
 }
 
 @media ( max-width: 768px ) {
     #motto p {
-         background: url("/theme/img/value_small.png") no-repeat;
-         background-size: auto;
-         height: 25px;
-         width: 100%;
-         margin-left: 5px;
+        background: url("/theme/img/value_small.png") no-repeat;
+        background-size: auto;
+        height: 25px;
+        width: 100%;
+        margin-left: 5px;
     }
 }
 
@@ -324,7 +323,7 @@ img.center {
 }
 
 .pad-top-med
-/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/    {
+/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/     {
     padding-top: 0px;
 }
 
@@ -347,9 +346,9 @@ img.center {
     margin: -40px auto 0;
 }
 
-    @media ( max-width: 768px ) {
-.mainhomepage #midlevelcontainer {
-    margin: 0px auto 0;
+@media ( max-width: 768px ) {
+    .mainhomepage #midlevelcontainer {
+        margin: 0px auto 0;
     }
 }
 
@@ -363,18 +362,20 @@ img.center {
     margin-top: 0px;
 }
 
-    /* SPECIFIC LIBGUIDE HEADER TITLE & SEARCH BAR, TOP RIGHT CORNER */
+/* SPECIFIC LIBGUIDE HEADER TITLE & SEARCH BAR, TOP RIGHT CORNER */
 
 #lg_headertitle {
     clear: both;
     display: inline-block;
 }
+
 @media ( max-width: 1199px ) {
     #lg_headertitle {
         clear: both;
         display: inline;
     }
 }
+
 #lg_headertitle a {
     background: url("/theme/img/title.png") no-repeat;
     height: 40px;
@@ -410,27 +411,27 @@ img.center {
 }
 
 #my_accounts {
-    position:absolute;
+    position: absolute;
     top: 25px;
-    right:0px;
+    right: 0px;
 }
 
 #my_accounts ul {
     list-style: none;
-    margin:0;
+    margin: 0;
 }
 
 #my_accounts li a {
     font-weight: bold;
-    padding:10px;
-    color:#fff;
-    background-color:#990000;
+    padding: 10px;
+    color: #fff;
+    background-color: #990000;
     text-decoration: none;
     transition: background-color 1s ease-out 0s;
 }
 
 #my_accounts li a:hover {
-    background-color:#430000;
+    background-color: #430000;
 }
 
 #top_search {
@@ -441,11 +442,13 @@ img.center {
     padding: 0px;
     width: 35%;
 }
+
 @media ( max-width: 1199px ) {
     #top_search {
         margin: 0 0 5px 0;
     }
 }
+
 @media ( max-width: 768px ) {
     #top_search {
         margin: 10px 5px;
@@ -526,7 +529,7 @@ img.center {
 }
 
 #top_search .input-group-btn:last-child > .btn {
-  background: none repeat scroll 0 0 #990000;
+    background: none repeat scroll 0 0 #990000;
     border-color: -moz-use-text-color #710000 -moz-use-text-color #C50000;
     border-radius: 0 0 0 0;
     border-style: none solid;
@@ -562,6 +565,7 @@ img.center {
     color: #fff;
     top: 0;
 }
+
 /* CONTENT  */
 
 #content_container {
@@ -643,7 +647,7 @@ img.center {
 
 #blocks_left {
     width: 60%;
-    margin :0 0 10px 0;
+    margin: 0 0 10px 0;
     float: left;
 }
 
@@ -659,9 +663,9 @@ img.center {
 @media ( max-width: 768px ) {
     #block_left,
     #block_right {
-        width:100%;
-        margin:0px;
-        float:none;
+        width: 100%;
+        margin: 0px;
+        float: none;
     }
 }
 
@@ -680,7 +684,7 @@ img.center {
         width: 100%;
         padding: 0px;
         margin: 0 0 10px 0;
-        display:inline-block;
+        display: inline-block;
     }
 }
 
@@ -699,7 +703,7 @@ img.center {
         width: 100%;
         padding: 0px;
         margin: 0px 0px 10px 0px;
-        display:inline-block;
+        display: inline-block;
         border-left: 0px solid #FFFFFF;
     }
 }
@@ -717,8 +721,8 @@ img.center {
 }
 
 #block_quick_links ul, #block_my_accounts ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 #block_quick_links ul li, #block_my_accounts ul li {
@@ -733,12 +737,13 @@ img.center {
         padding: 0px;
         margin: 0 0 10px 0;
     }
+
     #block_quick_links ul {
         width: 50%;
         padding: 0px;
         margin: 0 0 10px 0;
         display: inline-block;
-        float:left;
+        float: left;
     }
 }
 
@@ -812,7 +817,7 @@ img.center {
     background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #d6d6d6;
 } */
 
-    /* BADGES CSS */
+/* BADGES CSS */
 
 .row_badges {
     width: 100%;
@@ -829,15 +834,17 @@ img.center {
     width: 24%;
     padding: 0px;
     margin: 0 4px;
-    display:inline-block;
+    display: inline-block;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid #B5B5B5;
 }
+
 @media ( max-width: 1199px ) {
     .row_badges a img {
         margin: 0 2px;
     }
 }
+
 @media ( max-width: 768px ) {
     .row_badges a img {
         margin: 1%;
@@ -859,6 +866,7 @@ img.center {
     padding: 0 35px 0 0;
     margin: 5px 0 0 5px;
 }
+
 @media ( max-width: 768px ) {
     #myCarousel h2 a {
         margin: 10px 0 0 0;
@@ -948,7 +956,7 @@ img.center {
 }
 
 #block_search .input-group-btn:last-child > .btn {
-  background: none repeat scroll 0 0 #990000;
+    background: none repeat scroll 0 0 #990000;
     border-left: #C50000;
     border-right: #710000;
     border-radius: 0 0 0 0;
@@ -1153,7 +1161,7 @@ img.center {
 }
 
 .carousel-inner > .item
-/*THIS CHANGES THE TIME OF THE SLIDE SHOW. MAKING WILD EDITS TO SLOW IT WAAAAY DOWN. FIX AFTER CHANGES ARE MADE */    {
+/*THIS CHANGES THE TIME OF THE SLIDE SHOW. MAKING WILD EDITS TO SLOW IT WAAAAY DOWN. FIX AFTER CHANGES ARE MADE */     {
     transition: left .6s ease-in-out 0s;
 }
 
@@ -1254,7 +1262,7 @@ img.center {
 .column_hours {
     font-size: 12px;
     border-right: 0px;
-    width:50%;
+    width: 50%;
 }
 
 @media ( max-width: 1110px ) {
@@ -1266,7 +1274,7 @@ img.center {
 @media ( max-width: 1050px ) {
     .column_hours {
         font-size: 12px;
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -1360,19 +1368,19 @@ img.center {
 
 /*OVERWRITING LIBGUIDES 2.0 */
 
-#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */    {
+#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */     {
     float: right;
     margin: 20px;
 }
 
 #s-lg-add-page-icon
-/*I GUESS THIS IS TOO, NOT SURE*/    {
+/*I GUESS THIS IS TOO, NOT SURE*/     {
     margin: 0px;
     display: inline;
     font-size: 12px;
 }
 
-#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */    {
+#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */     {
     padding: 4px;
     margin: 0px;
     border: 2px solid #B29D6C;
@@ -1388,15 +1396,15 @@ img.center {
     color: #fff;
 }
 
-.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */    {
+.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */     {
     float: left;
 }
 
-.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */   {
+.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */    {
     float: right;
 }
 
-.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/   {
+.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/    {
     background-color: transparent;
     border: 0px;
     border-radius: 0;
@@ -1420,18 +1428,18 @@ img.center {
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
 .row
-/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	   {
+/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	    {
     margin: 0;
 }
 
 #s-lg-box-top
-/* TOP BOX, IF IN USE */    {
+/* TOP BOX, IF IN USE */     {
     margin: 0px;
     padding: 0 10px;
 }
 
 .s-lib-box
-/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */    {
+/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */     {
     box-shadow: none;
     border: 0px;
     margin: 0px;
@@ -1439,7 +1447,7 @@ img.center {
 }
 
 .edit-mode .s-lib-box-title
-/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */    {
+/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */     {
     border-bottom: 1px solid #CCC;
     padding: 3px 8px;
     font-size: 13px;
@@ -1448,7 +1456,7 @@ img.center {
 }
 
 .view-mode .s-lib-box .s-lib-box-title
-/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */    {
+/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */     {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
     color: #990000;
@@ -1462,7 +1470,7 @@ img.center {
 }
 
 .view-mode .libhomepage .s-lib-box-title
-/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */    {
+/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */     {
     display: none !important;
 }
 
@@ -1482,7 +1490,7 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-#s-lg-guide-tabs .nav-tabs {
+    #s-lg-guide-tabs .nav-tabs {
         display: none;
     }
 }
@@ -1494,7 +1502,7 @@ img.center {
 }
 
 #s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */    {
+/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */     {
     font-size: 14px;
     margin: 1px 0 1px 0;
     padding: 0;
@@ -1503,13 +1511,13 @@ img.center {
 }
 
 @media ( max-width: 1199px ) {
-#s-lg-guide-tabs {
+    #s-lg-guide-tabs {
         width: 15%;
     }
 }
 
 @media ( max-width: 768px ) {
-#s-lg-guide-tabs {
+    #s-lg-guide-tabs {
         width: 100%;
     }
 }
@@ -1553,7 +1561,7 @@ img.center {
     text-decoration: none;
 }
 
-#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */   {
+#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */    {
     background-clip: padding-box;
     background-color: transparent;
     border: 0px;
@@ -1573,7 +1581,7 @@ img.center {
 
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
 #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/    {
+ /*THIS IS THE DROP DOWN TAB ITSELF*/     {
     clear: both;
     color: #990000;
     display: block;
@@ -1618,7 +1626,6 @@ nav select {
         margin: 0 0 20px 0;
     }
 }
-
 
 /* ALL THE MEGA MENU STUFF */
 
@@ -1976,12 +1983,14 @@ nav select {
     width: 20%;
     float: left;
 }
+
 @media ( max-width: 1199px ) {
     .ask_list {
         width: 100%;
         float: none;
     }
 }
+
 @media ( max-width: 768px ) {
     .ask_list {
         width: 100%;
@@ -2118,9 +2127,10 @@ nav select {
 #h4mobile {
     display: none;
 }
+
 @media ( max-width: 768px ) {
     #h4mobile {
-    display: inline-block;
+        display: inline-block;
     }
 }
 
@@ -2149,6 +2159,7 @@ nav select {
     width: 25%;
     padding: 15px 10px;
 }
+
 @media ( max-width: 768px ) {
     .pane_pic {
         display: none;
@@ -2212,7 +2223,7 @@ nav select {
 .mini_hours_container ul.lib_hours li.name,
 .mini_hours_container ul.lib_hours li.day,
 .mini_hours_container ul.lib_hours li.date {
-    display:none;
+    display: none;
 }
 
 .mini_hours_container ul.lib_hours li.status,
@@ -2230,18 +2241,17 @@ nav select {
 
 #oconnor_hours_row ul.lib_hours,
 #all_hours_container ul.lib_hours {
-    padding:2px 0;
+    padding: 2px 0;
     font-size: 13px;
 }
 
 #all_hours_container ul.lib_hours:nth-child(odd) {
-    background-color:#EAEAEA;
+    background-color: #EAEAEA;
 }
-
 
 #all_hours_container ul.lib_hours li.day,
 #all_hours_container ul.lib_hours li.date {
-    display:none;
+    display: none;
 }
 
 #oconnor_hours_row ul.lib_hours li,
@@ -2251,11 +2261,11 @@ nav select {
     display: inline-block;
     margin: 0;
     padding: 0 0 0 2px;
-    width:40%;
+    width: 40%;
 }
 
 #all_hours_container ul.lib_hours li.status {
-    width:20%;
+    width: 20%;
 }
 
 .megamenucalendar {
@@ -2380,12 +2390,12 @@ nav select {
     position: absolute;
     top: 34px;
     right: -65px;
-    width:280px;
+    width: 280px;
     margin-left: 5em;
     padding: 18px;
     text-align: center;
-    background-color:yellow;
-    z-index:99999;
+    background-color: yellow;
+    z-index: 99999;
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
@@ -2413,7 +2423,7 @@ nav select {
 .story-image {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s linear 0.2s,opacity 0.2s linear;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear;
     display: block;
     position: absolute;
     left: 0;
@@ -2442,7 +2452,7 @@ nav select {
 
 .story-image a:hover {
     opacity: .7;
-     background: #000;
+    background: #000;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;

@@ -22,7 +22,7 @@ $(document).ready(function(){
     // call to the hours api
     $.ajax({
         type: "GET",
-        url: "http://arc.bc.edu/libhours/libhours.php",
+        url: "//arc.bc.edu/libhours/libhours.php",
         jsonp: "callback",
         dataType: "jsonp",
         cache: true,

@@ -2,7 +2,7 @@
 {% block content %}
 
     <!-- TOP ROW -->
-    <div class="row">
+<div class="row">
 
     <!-- BEGIN QUICK LINKS BLOCK -->
     <div id="block_right">
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-        <div id="block_search">
+    <div id="block_search">
             <h2>Begin Your Search Here</h2>
 
             <!-- FRONT PAGE TABBED SEARCH -->
@@ -45,16 +45,16 @@
                             <li><a href="#">Web site</a></li>
                             <a style="padding: 10px; font-size: 15px;" href="#">Advanced Search</a>
                         </ul>
-                    </div>
                 </div>
+            </div>
 
                 <div class="col-xs-12">
                     <div class="input-group input-group-md">
                         <div data-searchbox></div>
-                    </div>
                 </div>
-            </div>
-        </div>
+                    </div>
+                    </div>
+    </div>
 
         <noscript>Javascript disabled</noscript>
 
@@ -72,55 +72,53 @@
 <!-- END TOP ROW -->
 
         <!-- CAROUSEL -->
-    <div class="row">
+<div class="row">
 
-            <div id="myCarousel">
+    <div id="myCarousel">
     
-    <h2><a href="#">News</a></h2>
+        <h2><a href="#">News</a></h2>
     
-                <div id="bclib-viewer">
-                    <div class="image-display">
+            <div id="bclib-viewer">
+                <div class="image-display">
 
-                        {% if articles %}
+                    {% if articles %}
 
-                        {% for article in articles[:5] %}
-                        {% if loop.index == 1 %}
-                        <div class="story-image active">
-                            {% else %}
-                            <div class="story-image">
-                                {% endif %}
+                    {% for article in articles[:5] %}
+                    {% if loop.index == 1 %}
+                <div class="story-image active">
+                    {% else %}
+                        <div class="story-image">
+                    {% endif %}
 
-                                <a href="{{article.url}}">
-                                <img src="/theme/img/news/{{article.image}}" alt="{{article.image_alt}}"></a>
-
-                            </div>
-                            {% endfor %}
-                            {% endif %}
-                    </div>
-
-                    <div class="image-chooser">
-
-                        {% if articles %}
-
-                        {% for article in articles[:5] %}
-                        {% if loop.index == 1 %}
-                        <div class="active image-selection">
-                            {% else %}
-                            <div class="image-selection">
-                                {% endif %}
-                                
-                            <a class="active" href="" data-choice="{{loop.index}}">{{ article.title }}</a>
-                        </div>
-                        {% endfor %}
-                        {% endif %}
+                        <a href="{{article.url}}">
+                        <img src="/theme/img/news/{{article.image}}" alt="{{article.image_alt}}"></a>
 
                         </div>
-                    </div>
+                    {% endfor %}
+                    {% endif %}
                 </div>
+
+        <div class="image-chooser">
+
+                    {% if articles %}
+
+                    {% for article in articles[:5] %}
+                    {% if loop.index == 1 %}
+            <div class="active image-selection">
+                    {% else %}
+                        <div class="image-selection">
+                    {% endif %}
+                                
+                        <a class="active" href="" data-choice="{{loop.index}}">{{ article.title }}</a>
+                        
+                        </div>
+                    {% endfor %}
+                    {% endif %}
+
             </div>
         </div>
     </div>
-
+</div>
 
 {% endblock %}
 

@@ -2419,7 +2419,7 @@ nav select {
     width: 60%;
 }
 
-@media ( max-width: 768px ) {
+@media (  max-width: 1199px ) {
     #myCarousel {
     background: none repeat scroll 0 0 #eaeaea;
     padding: 5px;

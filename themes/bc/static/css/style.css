@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 a, a:visited {
     color: #990000;
-    font-weight: normal;
+    font-weight: normal !important;
 }
 
 a:hover, a:active {
@@ -698,7 +698,7 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-    #block_databases, #block_hours {
+    #block_databases {
         height: 88px;
         width: 100%;
         padding: 0px;
@@ -718,6 +718,16 @@ img.center {
     font-size: 14px;
     width: 49%;
     float: left;
+}
+
+@media ( max-width: 768px ) {
+    #block_quick_links, #block_my_accounts {
+        display: none;
+    }
+}
+
+@media ( max-width: 1199px ) {
+    #block_quick_links, #block_my_accounts {}
 }
 
 #block_quick_links ul, #block_my_accounts ul {
@@ -817,7 +827,7 @@ img.center {
     background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #d6d6d6;
 } */
 
-/* BADGES CSS */
+/* BADGES CSS
 
 .row_badges {
     width: 100%;
@@ -855,23 +865,7 @@ img.center {
 .row_badges a img:hover {
     border: 1px solid #990000;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
-}
-
-.news {
-    margin: 0 0 10px 0 !important;
-}
-
-#myCarousel h2 a {
-    background: url("/theme/img/h2rss.png") no-repeat scroll 100% 57% rgba(0, 0, 0, 0);
-    padding: 0 35px 0 0;
-    margin: 5px 0 0 5px;
-}
-
-@media ( max-width: 768px ) {
-    #myCarousel h2 a {
-        margin: 10px 0 0 0;
-    }
-}
+} */
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
 
@@ -2401,13 +2395,36 @@ nav select {
     transform: rotate(45deg);
 }
 
-/* Slideshow */
+    /* Slideshow */
+
+.news {
+    margin: 0 0 10px 0 !important;
+}
+
+#myCarousel h2 a {
+    background: url("/theme/img/h2rss.png") no-repeat scroll 100% 57% rgba(0, 0, 0, 0);
+    padding: 0 35px 0 0;
+    margin: 5px 0 0 5px;
+}
+
+@media ( max-width: 768px ) {
+    #myCarousel h2 a {
+        margin: 10px 0 0 0;
+    }
+}
 
 #myCarousel {
     background: none repeat scroll 0 0 #eaeaea;
     padding: 5px;
     width: 60%;
 }
+
+@media ( max-width: 768px ) {
+    #myCarousel {
+    background: none repeat scroll 0 0 #eaeaea;
+    padding: 5px;
+    width: 100%;
+}}
 
 #bclib-viewer {
     height: 310px;

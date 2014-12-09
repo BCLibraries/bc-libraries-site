@@ -23,6 +23,7 @@ body {
     color: #666;
     font-size: 13px;
     padding: 0;
+    line-height: 1.4;
 }
 
 @media ( max-width: 1199px ) {

@@ -2530,3 +2530,17 @@ nav select {
         margin: 10px 0 0 0;
     }
 }
+
+#myCarousel {
+    background: none repeat scroll 0 0 #eaeaea;
+    padding: 5px;
+    width: 60%;
+    height: 300px;
+}
+
+@media (  max-width: 1199px ) {
+    #myCarousel {
+    background: none repeat scroll 0 0 #eaeaea;
+    padding: 5px;
+    width: 100%;
+}}

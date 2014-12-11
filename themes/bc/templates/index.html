@@ -8,7 +8,16 @@
     <div id="block_right">
          <div id="block_quick_links">
             <h2>Quick Links</h2>
-            <ul>
+            <ul style="float: left; padding: 0 25px;">
+                <li><a href="#" title="LINK" target="_self">Contact us</a></li>
+                <li><a href="#" title="LINK" target="_self">Feedback</a></li>
+                <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
+                <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
+                <li><a href="#" title="LINK" target="_self">Library Hours</a></li>
+                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
+            </ul>
+
+            <ul style="float: right; padding: 0 25px;">
                 <li><a href="#" title="LINK" target="_self">Contact us</a></li>
                 <li><a href="#" title="LINK" target="_self">Feedback</a></li>
                 <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
@@ -17,18 +26,7 @@
                 <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
             </ul>
         </div>
-
-        <div id="block_my_accounts" class="block_white_left_border">
-            <h2>My Accounts</h2>
-            <ul>
-                <li><a href="#" title="LINK" target="_self">Holmes Account</a></li>
-                <li><a href="#" title="LINK" target="_self">Interlibrary Loan/Document Delivery</a></li>
-                <li><a href="#" title="LINK" target="_self">RefWorks</a></li>
-                <li><a href="#" title="LINK" target="_self">WorldCat Local</a></li>
-                <li><a href="#" title="LINK" target="_self">Course Reserves</a></li>
-                <li>&nbsp;</li>
-            </ul>
-        </div>
+        
     </div>
 
     <div id="block_search">
@@ -73,12 +71,14 @@
 
 <!-- CAROUSEL -->
 <div class="row">
-    <!-- Carousel
-      ================================================== -->
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <h2><a href="#">News</a></h2>
+        
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            {% for article in articles[:3] %}
+            {% for article in articles[:5] %}
 
             {% if loop.index == 1 %}
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -100,9 +100,7 @@
                 <div class="item">
                     {% endif %}
 
-
-                    <img src="/theme/img/news/{{ article.image }}"
-                         alt="{{ article.image_alt }}">
+                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
 
                     <div class="container">
                         <div class="carousel-caption">
@@ -123,7 +121,7 @@
         <!-- /.carousel -->
 
     <div style="float: right;">
-    <img src="theme/img/rightbox_001.png">
+    <img src="theme/img/rightbox_001.png" style="width: 463px;">
     </div>
 
 </div>
@@ -136,7 +134,7 @@
     $(document).ready(function () {
                 'use strict';
 
-                var selected = 1, rotate_interval = 30000, wait_after_select = 60000,
+                var selected = 1, rotate_interval = 3000000, wait_after_select = 60000,
                         num_stories = $('.image-selection').length, rotate_story, advanceSelector, changeStory;
 
                 advanceSelector = function () {

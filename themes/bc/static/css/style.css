@@ -2396,7 +2396,8 @@ nav select {
     transform: rotate(45deg);
 }
 
-    /* Slideshow */
+    /* Slideshow
+    HIDING FOR NOW TO MAKE EDITS TO BRANCH 
 
 .news {
     margin: 0 0 10px 0 !important;
@@ -2510,4 +2511,22 @@ nav select {
 
 .bclib-viewer, .image-display {
     position: relative;
+} */
+
+ /* SLIDESHOW EDITS */
+
+ .news {
+    margin: 0 0 10px 0 !important;
+}
+
+#myCarousel h2 a {
+    background: url("/theme/img/h2rss.png") no-repeat scroll 100% 57% rgba(0, 0, 0, 0);
+    padding: 0 35px 0 0;
+    margin: 5px 0 0 5px;
+}
+
+@media ( max-width: 768px ) {
+    #myCarousel h2 a {
+        margin: 10px 0 0 0;
+    }
 }

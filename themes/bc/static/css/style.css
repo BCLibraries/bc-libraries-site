@@ -1855,7 +1855,7 @@ nav select {
 }
 
 .more a {
-    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% 385% #d6d6d6;
+    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% 370% #d6d6d6;
     display: block;
     margin: 0 5px;
     padding: 15px 25px;
@@ -1863,7 +1863,7 @@ nav select {
 }
 
 .more a:hover {
-    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% -275% #a3a3a3;
+    background: url("/theme/img/arrow_right.png") no-repeat scroll 95% -260% #a3a3a3;
     text-decoration: none;
 }
 
@@ -2356,10 +2356,8 @@ nav select {
     float: left;
 }
 
-@media (  max-width: 1199px ) {
+@media ( max-width: 768px ) {
     #myCarousel {
-    background: none repeat scroll 0 0 #eaeaea;
-    padding: 5px;
     width: 100%;
     float: none;
 }}
@@ -2431,15 +2429,13 @@ nav select {
     display: block;
     height: auto;
     max-width: 100%;
-    opa city: 0.6;
 }
 
 @media ( max-width: 768px ) {
     .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         display: block;
-        height: auto;
+        width: 100%;
         max-width: none;
-        opac ity: 0.6;
     }
 }
 
@@ -2478,7 +2474,7 @@ nav select {
 
 .carousel-caption {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.55);
-    bottom: 0;
+    top: 0;
     color: #fff;
     height: 25%;
     padding: 0 10px;
@@ -2489,12 +2485,12 @@ nav select {
     text-shadow: none;
     width: 100%;
     z-index: 10;
+    overflow: hidden;
 }
 
 @media ( max-width: 768px ) {
     .carousel-caption {
         width: 100%;
-        padding: 5% 9%;
     }
 }
 
@@ -2507,7 +2503,7 @@ nav select {
 
 @media ( max-width: 1199px ) {
     .carousel-caption h4 a {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -2556,4 +2552,25 @@ nav select {
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+.block_temporary {
+    float: right;
+    border-left: 5px solid #fff;
+    width: 40%;
+}
+
+@media ( max-width: 768px ) {
+    .block_temporary {
+     width: 100%;
+     float: none;
+     border-left: 0px;
+     border-top: 5px solid #fff;
+    }
+}
+
+.block_temporary img {
+    width: 100%;
+    position: relative;
+    top: 0;
 }

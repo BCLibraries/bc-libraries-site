@@ -1879,7 +1879,7 @@ nav select {
     margin: 0;
     padding: 10px 0 0 25px;
     position: relative;
-    border-right: 1px solid #DADADA;
+    border-right: 5px solid #DADADA;
 }
 
 .get-help-menu .item-list {
@@ -1892,8 +1892,8 @@ nav select {
     }
 }
 
-.yamm .dropdown-menu li .item-list > li > a:hover, .yamm .dropdown-menu li .item-list > li > a:focus {
-    background: url("/theme/img/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+.yamm .dropdown-menu li .item-list > li > a:hover, .yamm .dropdown-menu li .item-list > li > a:hover {
+    background: #eaeaea;
     color: #990000;
     text-decoration: none;
 }
@@ -1902,7 +1902,7 @@ nav select {
     color: #990000 !important;
     font-weight: bold !important;
     text-decoration: none;
-    background: url("/theme/img/pane_arrow_selected.png") no-repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    background: #dadada;
 }
 
 #bapst_pane, #burns_pane, #erc_pane, #law_pane, #oconnor_pane, #oneill_pane, #swl_pane, #tml_pane {
@@ -1934,6 +1934,11 @@ nav select {
         width: 50%;
         float: left;
     }
+}
+
+.item_pane img {
+    float: left;
+    margin-right: 10px;
 }
 
 #h4mobile {

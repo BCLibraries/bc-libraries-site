@@ -1900,7 +1900,7 @@ nav select {
 
 .item-list .selected a {
     color: #990000 !important;
-    font-weight: bold !important;
+    font-weight: normal !important;
     text-decoration: none;
     background: #dadada;
 }

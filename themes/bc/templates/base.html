@@ -36,7 +36,6 @@
 <!-- TEMPORARY RIBBON TO DENOTE BETA-NESS -->
 <div id="beta-ribbon"><a href="http://www.bc.edu/libraries/about/new-site.html"><strong>Development site</strong><br>Tell us how you like it!</a></div>
 
-
 <!-- BEGIN HEADER -->
 <div id="header">
     <div id="lg_headertitle">
@@ -54,9 +53,8 @@
 </div>
 <!-- END HEADER -->
 
+<!-- FULL PAGE WRAPPER -->
 <div id="fullpagewrapper">
-<!-- BEGIN MENU -->
-
     <!-- MENU BEGINS HERE -->
     <div id="megamenu">
         <!-- BEGIN NAVBAR -->
@@ -582,11 +580,8 @@
                             </ul>
                         </li>
 
- <!-- MY ACCOUNTS BUTTON -->
-         <li style="float: right;"><a href="http://library.bc.edu/my-accounts"><i class="fa fa-user"></i> My Accounts</a></li>
-                         
-                                </li>
-                            </ul>
+                        <!-- MY ACCOUNTS BUTTON -->
+                        <li style="float: right;"><a href="http://library.bc.edu/my-accounts"><i class="fa fa-user"></i> My Accounts</a>
                         </li>
                     </ul>
                 </div>
@@ -602,121 +597,122 @@
         </div>
         {{breadcrumbs}}
         -->
-
     </div>
     <!-- END MEGAMENU -->
 
-<!-- BEGIN MIDLEVELCONTAINER -->
-<div id="midlevelcontainer">
-    <div id="content_container">
-        {% block content %}
-        {% endblock %}
+    <!-- BEGIN MIDLEVELCONTAINER -->
+    <div id="midlevelcontainer">
+        <div id="content_container">
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
-</div>
-<!-- END MIDLEVELCONTAINER -->
+    <!-- END MIDLEVELCONTAINER -->
 
-<!-- BEGIN FOOTER -->
-<div id="footer">
-    <hr>
-    <div class="f_column">
-    <!-- Address -->
-        <div id="f_address">
-            <h1>Boston College Libraries</h1>
-            <p>140 Commonwealth Avenue <br/>
-            Chestnut Hill, MA 02467 <br/>
-            <strong>Administration:</strong> 617-552-4470 <br/>
-            <strong>Reference:</strong> 617-552-4472 <br/>
-            <strong>Circulation:</strong> 617-552-8038</p>
+    <!-- BEGIN FOOTER -->
+    <div id="footer">
+        <hr>
+        <div class="f_column">
+        <!-- Address -->
+            <div id="f_address">
+                <h1>Boston College Libraries</h1>
+                <p>140 Commonwealth Avenue <br/>
+                Chestnut Hill, MA 02467 <br/>
+                <strong>Administration:</strong> 617-552-4470 <br/>
+                <strong>Reference:</strong> 617-552-4472 <br/>
+                <strong>Circulation:</strong> 617-552-8038</p>
+            </div>
+
+            <!-- Media -->
+            <div id="f_media">
+                <ul>
+                    <li><a href="#" title="Blogs"><span id="icon_blogs">Blogs</span></a></li>
+                    <li><a href="https://www.facebook.com/bostoncollegelibraries" title="Facebook"><span id="icon_facebook">Facebook</span></a></li>
+                    <li><a href="https://www.flickr.com/photos/bc-burnslibrary/" title="Flickr"><span id="icon_flickr">Flickr</span></a></li>
+                    <li><a href="https://twitter.com/bclibraries" title="Twitter"><span id="icon_twitter">Twitter</span></a></li>
+                    <li><a href="https://www.youtube.com/user/BostonCollegeLib" title="YouTube"><span id="icon_youtube">YouTube</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <p>&copy; 2014 The Trustees of Boston College. <a href="http://www.bc.edu/gn-legal" title="legal">Legal</a></p>
+                <p><a href="http://bc.edu" target="_self" title="Boston College homepage">Boston College</a></p>
+            </div>
         </div>
 
-        <!-- Media -->
-        <div id="f_media">
+        <!-- Quick Links -->
+        <div class="f_column no_right_border">
+            <h1>Quick Links</h1>
             <ul>
-                <li><a href="#" title="Blogs"><span id="icon_blogs">Blogs</span></a></li>
-                <li><a href="https://www.facebook.com/bostoncollegelibraries" title="Facebook"><span id="icon_facebook">Facebook</span></a></li>
-                <li><a href="https://www.flickr.com/photos/bc-burnslibrary/" title="Flickr"><span id="icon_flickr">Flickr</span></a></li>
-                <li><a href="https://twitter.com/bclibraries" title="Twitter"><span id="icon_twitter">Twitter</span></a></li>
-                <li><a href="https://www.youtube.com/user/BostonCollegeLib" title="YouTube"><span id="icon_youtube">YouTube</span></a></li>
+                <li><a href="http://library.bc.edu/my-accounts" title="My Accounts" target="_self">My Accounts</a></li>
+                <li><a href="#" title="LINK" target="_self">Contact us</a></li>
+                <li><a href="#" title="LINK" target="_self">Feedback</a></li>
+                <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
+                <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
             </ul>
         </div>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            <p>&copy; 2014 The Trustees of Boston College. <a href="http://www.bc.edu/gn-legal" title="legal">Legal</a></p>
-            <p><a href="http://bc.edu" target="_self" title="Boston College homepage">Boston College</a></p>
+        
+        <!-- Hours -->
+        <div class="f_column column_hours no_bottom_border no_right_border">
+            <h1><a href="#">Today's Library Hours</a></h1>
+            <!-- LIBCAL HOURS API-->
+            <div id="all_hours_container"></div>
+            <div id="oconnor_hours_row"><ul class="lib_hours"><li class="name">O'Connor Library</li><li class="hours"><a href="mailto:karre@bc.edu">by appointment</a> only</li></ul></div>
         </div>
     </div>
+    <!-- END FOOTER -->
 
-    <!-- Quick Links -->
-    <div class="f_column no_right_border">
-        <h1>Quick Links</h1>
-        <ul>
-            <li><a href="http://library.bc.edu/my-accounts" title="My Accounts" target="_self">My Accounts</a></li>
-            <li><a href="#" title="LINK" target="_self">Contact us</a></li>
-            <li><a href="#" title="LINK" target="_self">Feedback</a></li>
-            <li><a href="#" title="LINK" target="_self">Book a Study Room</a></li>
-            <li><a href="#" title="LINK" target="_self">Ask a Librarian</a></li>
-        </ul>
-    </div>
-    
-    <!-- Hours -->
-    <div class="f_column column_hours no_bottom_border no_right_border">
-        <h1><a href="#">Today's Library Hours</a></h1>
-        <!-- LIBCAL HOURS API-->
-        <div id="all_hours_container"></div>
-        <div id="oconnor_hours_row"><ul class="lib_hours"><li class="name">O'Connor Library</li><li class="hours"><a href="mailto:karre@bc.edu">by appointment</a> only</li></ul></div>
-    </div>
+    <script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
+    <script type="text/javascript" src="/theme/js/breadcrumbs.js"></script>
+
+    <!-- /#contentinfo -->
+    <!-- MEGA MENU SCRIPT -->
+    <script>
+        $(function () {
+            $(document).on('click', '.yamm .dropdown-menu', function (e) {
+                e.stopPropagation()
+            });
+
+            // Slide effect lifted from http://stackoverflow.com/a/19339162/122629.
+            $('.dropdown').on('show.bs.dropdown', function (e) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+            }).on('hide.bs.dropdown', function (e) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(50);
+            });
+        });
+    </script>
+
+    <!-- SCROLL TO TOP SCRIPT -->
+    <script>
+        (function ($) {
+            jQuery('#todayshours').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: $('body').height()}, 750);
+                return false;
+            });
+        })(jQuery);
+    </script>
+
+    <!-- Script to block spam-bots. Requires JQuery. -->
+    <script src="/theme/js/nospam.js"></script>
+
+    <script>
+        // Search server for typeahead.
+        var search_server = 'libdev.bc.edu';
+    </script>
+    <script src="/theme/bcbento/js/angular.min.js"></script>
+    <script src="/theme/bcbento/js/angular-route.min.js"></script>
+    <script src="/theme/bcbento/js/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+    <script src="/theme/bcbento/js/app.js"></script>
+    <script src="/theme/bcbento/js/controllers.js"></script>
+    <script src="/theme/bcbento/js/directives.js"></script>
+    <script src="/theme/js/libhours.js"></script>
+
+    {% block pagescripts %}
+    {% endblock %}
 </div>
-<!-- END FOOTER -->
-
-<script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
-<script type="text/javascript" src="/theme/js/breadcrumbs.js"></script>
-
-<!-- /#contentinfo -->
-<!-- MEGA MENU SCRIPT -->
-<script>
-    $(function () {
-        $(document).on('click', '.yamm .dropdown-menu', function (e) {
-            e.stopPropagation()
-        });
-
-        // Slide effect lifted from http://stackoverflow.com/a/19339162/122629.
-        $('.dropdown').on('show.bs.dropdown', function (e) {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
-        }).on('hide.bs.dropdown', function (e) {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(50);
-        });
-    });
-</script>
-
-<!-- SCROLL TO TOP SCRIPT -->
-<script>
-    (function ($) {
-        jQuery('#todayshours').click(function (event) {
-            event.preventDefault();
-            jQuery('html, body').animate({scrollTop: $('body').height()}, 750);
-            return false;
-        });
-    })(jQuery);
-</script>
-
-<!-- Script to block spam-bots. Requires JQuery. -->
-<script src="/theme/js/nospam.js"></script>
-
-<script>
-    // Search server for typeahead.
-    var search_server = 'libdev.bc.edu';
-</script>
-<script src="/theme/bcbento/js/angular.min.js"></script>
-<script src="/theme/bcbento/js/angular-route.min.js"></script>
-<script src="/theme/bcbento/js/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
-<script src="/theme/bcbento/js/app.js"></script>
-<script src="/theme/bcbento/js/controllers.js"></script>
-<script src="/theme/bcbento/js/directives.js"></script>
-<script src="/theme/js/libhours.js"></script>
-
-{% block pagescripts %}
-{% endblock %}
+<!-- END FULL PAGE WRAPPER -->
 
 </body>
 </html>

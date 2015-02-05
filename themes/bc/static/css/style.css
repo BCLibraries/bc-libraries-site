@@ -983,7 +983,7 @@ img.center {
     background: url("/theme/img/footer_bg.png") no-repeat 0 0;
     width: 1236px;
     min-height: 270px;
-    padding: 0 20px;
+    padding: 10px 20px 0 20px;
     margin: 0 auto;
     color: #666;
 }
@@ -1018,16 +1018,6 @@ img.center {
     list-style: none;
     margin: 0 -10px;
     padding: 0px 0 0 10px;
-}
-
-#footer hr {
-    border-color: #DADADA;
-    border-image: none;
-    border-right: 0 none;
-    border-style: solid none none;
-    border-width: 1px 0 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .f_column {

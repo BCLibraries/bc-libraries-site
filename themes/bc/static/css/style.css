@@ -16,7 +16,7 @@ asapbold
 */
 
 body {
-    background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 50% 50%;
+    background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 0% 0%;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Asap', sans-serif;
@@ -138,7 +138,7 @@ img.center {
 #header {
     width: 1200px;
     height: 55px;
-    margin: 5px auto 0px;
+    margin: 0 auto;
     padding: 0;
     position: relative;
 }
@@ -237,6 +237,8 @@ img.center {
 #fullpagewrapper {
     width: 1236px;
     margin: 0 auto;
+    position: relative;
+    z-index: 100;
 }
 
 @media ( max-width: 1199px ) {
@@ -369,6 +371,8 @@ img.center {
 #lg_headertitle {
     clear: both;
     display: inline-block;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, .4);
+    padding: 10px;
 }
 
 @media ( max-width: 1199px ) {
@@ -381,7 +385,7 @@ img.center {
 #lg_headertitle a {
     background: url("/theme/img/title_stacked.png") no-repeat;
     height: 70px;
-    width: 340px;
+    width: 240px;
     display: inline-block;
 }
 

@@ -16,9 +16,7 @@ asapbold
 */
 
 body {
-    background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 0% 0%;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url("../img/backgrounds/bg_gray_looped.png") repeat-x #fff 0% 0%;
     font-family: 'Asap', sans-serif;
     color: #666;
     font-size: 13px;
@@ -28,7 +26,7 @@ body {
 
 @media ( max-width: 1199px ) {
     body {
-        background: url("../img/backgrounds/bg_generic.png") no-repeat #fff 0% 0%;
+        background: url("../img/backgrounds/bg_gray.png") no-repeat #fff 0% 0%;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -235,8 +233,8 @@ img.center {
 }
 
 #fullpagewrapper {
-    width: 1236px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 25px auto 0;
     position: relative;
     z-index: 100;
 }
@@ -371,7 +369,6 @@ img.center {
 #lg_headertitle {
     clear: both;
     display: inline-block;
-    background: none repeat scroll 0 0 rgba(255, 255, 255, .4);
     padding: 10px;
 }
 
@@ -383,9 +380,9 @@ img.center {
 }
 
 #lg_headertitle a {
-    background: url("/theme/img/title_stacked.png") no-repeat;
-    height: 70px;
-    width: 240px;
+    background: url("/theme/img/title_gray.png") no-repeat;
+    height: 65px;
+    width: 755px;
     display: inline-block;
 }
 
@@ -982,8 +979,8 @@ img.center {
 /* FOOTER */
 
 #footer {
-    background: url("/theme/img/footer_bg.png") no-repeat 0 0;
-    width: 1236px;
+    background: #fff;
+    width: 1200px;
     min-height: 270px;
     padding: 10px 20px 0 20px;
     margin: 0 auto;
@@ -1506,7 +1503,7 @@ nav select {
 /* HACKS AND EDITS TO BOOTSTRAP  */
 
 #megamenu .container {
-    width: 1178px;
+    width: 1200px;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -1739,11 +1736,11 @@ nav select {
 /* CUSTOM MENU STYLING */
 
 #megamenu {
-    width: 1236px;
-    height: 139px;
+    width: 1200px;
+    height: 95px;
     margin: 0px auto;
-    padding: 40px 29px 0;
-    background: url("/theme/img/menu_bg.png") no-repeat 1px 0;
+    padding:  0;
+    background: #fff;
 }
 
 @media ( max-width: 1199px ) {

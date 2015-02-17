@@ -2208,7 +2208,7 @@ nav select {
 }
 
     /* Slideshow
-    HIDING FOR NOW TO MAKE EDITS TO BRANCH 
+    HIDING FOR NOW TO MAKE EDITS TO BRANCH
 
 .news {
     margin: 0 0 10px 0 !important;
@@ -2542,7 +2542,6 @@ nav select {
 }
 
 .carousel-inner > .next, .carousel-inner > .prev {
-    height: 290px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -2567,4 +2566,40 @@ nav select {
     width: 100%;
     position: relative;
     top: 0;
+}
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 290px;
+}
+.item:nth-child(1) {
+    background: darkred;
+}
+.item:nth-child(2) {
+    background: red;
+}
+.item:nth-child(3) {
+    background: orange;
 }

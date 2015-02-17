@@ -131,38 +131,13 @@
 
 {% block pagescripts %}
 
-<script>
-    $(document).ready(function () {
-                'use strict';
-
-                var selected = 1, rotate_interval = 3000000, wait_after_select = 60000,
-                        num_stories = $('.image-selection').length, rotate_story, advanceSelector, changeStory;
-
-                advanceSelector = function () {
-                    selected = selected === num_stories ? 1 : selected + 1;
-                    changeStory(selected);
-                };
-
-                changeStory = function (selected) {
-                    $('.active').toggleClass('active');
-                    $('.story-image:nth-of-type(' + selected + ')').toggleClass('active');
-                    $('.image-selection:nth-of-type(' + selected + ')').toggleClass('active');
-                };
-
-                $('.image-chooser a').click(function () {
-                    selected = parseInt($(this).attr('data-choice'));
-                    changeStory(selected);
-                    window.clearInterval(rotate_story);
-                    setTimeout(function () {
-                        window.clearInterval(rotate_story);
-                        rotate_story = window.setInterval(advanceSelector, rotate_interval);
-                    }, wait_after_select);
-                    return false;
-                });
-
-                rotate_story = window.setInterval(advanceSelector, rotate_interval);
-            }
-    );
-</script>
+    <script>
+        $(document).ready(function () {
+                    $('.carousel').carousel({
+                        interval: 20000
+                    });
+                }
+        );
+    </script>
 <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
 {% endblock %}

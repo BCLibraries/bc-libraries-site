@@ -2569,7 +2569,7 @@ nav select {
 }
 .carousel-fade .carousel-inner .item {
     opacity: 0;
-    transition-property: opacity;
+    transition: opacity 2.5s;
 }
 .carousel-fade .carousel-inner .active {
     opacity: 1;
@@ -2593,13 +2593,4 @@ body,
 .carousel-inner,
 .carousel-inner .item {
     height: 290px;
-}
-.item:nth-child(1) {
-    background: darkred;
-}
-.item:nth-child(2) {
-    background: red;
-}
-.item:nth-child(3) {
-    background: orange;
 }

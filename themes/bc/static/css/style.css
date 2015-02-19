@@ -2594,3 +2594,18 @@ body,
 .carousel-inner .item {
     height: 290px;
 }
+
+/*TABLE STYLES*/
+
+.softwaretable {
+}
+
+.softwaretable td {
+    padding: 10px; 
+    border: 1px solid black;
+}
+
+.softwaretable tr {
+    border: 1px solid black;
+}
+

@@ -24,34 +24,69 @@
                 <li><a href="http://bclib.bc.edu/a-to-z" title="Journals" target="_self">Journals</a></li>
             </ul>
         </div>
-        
+
     </div>
 
     <div id="block_search">
-            <h2>Begin Your Search Here</h2>
+        <h2>Begin Your Search Here</h2>
 
-            <!-- FRONT PAGE TABBED SEARCH -->
-            <div id="newsearch" class="row" data-ng-app="myApp" data-ng-controller="AutoComplete">
-                <div class="row">
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
+                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="all">
                     <div class="col-xs-12">
-                        <ul id="myTab" class="nav nav-tabs test">
-                            <li class="active"><a href="#">All</a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">Articles</a></li>
-                            <li><a href="#">Web site</a></li>
-                            <a style="padding: 10px; font-size: 15px;" href="#">Advanced Search</a>
-                        </ul>
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search" id="bcbento-search">
+                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="books">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
+                                <input type="text" class="" name="any" placeholder="Find books, media, & more">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="articles">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search-services/primo-articles" id="bcbento-search">
+                                <input type="text" name="any" placeholder="Find journal articles">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-                <div class="col-xs-12">
-                    <div class="input-group input-group-md">
-                        <form method="get" action="/search" id="bcbento-search">
-                            <input type="text" id="typeahead" name="any">
-                        </form>
-                </div>
-                    </div>
-                    </div>
+        </div>
+
     </div>
 
         <noscript>Javascript disabled</noscript>
@@ -65,7 +100,7 @@
                 <option></option>
             </select>
         </div>
-            
+
 </div>
 <!-- END TOP ROW -->
 
@@ -77,7 +112,7 @@
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
     <h2><a href="#">News</a></h2>
-        
+
         <!-- Indicators -->
         <ol class="carousel-indicators">
             {% for article in articles[:5] %}
@@ -107,7 +142,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
-               
+
                         </div>
                     </div>
                 </div>

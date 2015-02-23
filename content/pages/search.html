@@ -5,31 +5,68 @@
 </head>
 <body>
 <div data-ng-app="myApp">
-    <div id="block_search" data-ng-app="myApp">
+    <div id="block_search">
         <h2>Begin Your Search Here</h2>
 
-        <!-- SOME SEARCH BAR I FOUND -->
-        <div id="newsearch" class="row" data-ng-controller="AutoComplete">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul id="myTab" class="nav nav-tabs test">
-                        <li class="active"><a href="#">All</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Articles</a></li>
-                        <li><a href="#">Web site</a></li>
-                    </ul>
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
+                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="all">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search" id="bcbento-search">
+                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="books">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
+                                <input type="text" class="" name="any" placeholder="Find books, media, & more">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="articles">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-md">
+                            <form method="get" action="/search-services/primo-articles" id="bcbento-search">
+                                <input type="text" name="any" placeholder="Find journal articles">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12">
-                <div class="input-group input-group-md">
-                    <form method="get" action="/search" id="bcbento-search">
-                        <input type="text" id="typeahead" name="any">
-                        <input type="submit">
-                    </form>
-                </div>
-            </div>
+
         </div>
+
     </div>
+
 
     <div id="bentoboxresults">
 
@@ -108,12 +145,8 @@
 
             {{#items}}
             <li class="bento-result">
-                {{#if covers.[0]}}
-                <img src="{{covers.[0]}}" class="cover-image">
-                {{/if}}
 
                 <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}}">
-
 
                     <a href="{{link}}" class="title">
                         {{truncate '100' title}}
@@ -156,6 +189,11 @@
                         </ul>
                     </div>
                 </div>
+
+                {{#if covers.[0]}}
+                <img src="{{covers.[0]}}" class="cover-image">
+                {{/if}}
+
             </li>
             {{/items}}
         </ul>

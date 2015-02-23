@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+#all-results {
+    margin-top: 1em;
+}
+
 /** Layout **/
 
 #all-results #primary, #all-results #secondary, #all-results #tertiary {
@@ -158,6 +162,7 @@
 }
 
 .librarians img {
+    min-height: 1px;
     width: 30%;
     float: left
 }
@@ -178,12 +183,12 @@
 
 #all-results .cover-image {
     width: 20%;
-    float: right;
+    float: left;
 }
 
 #all-results .catalog-text.has-cover {
     width: 80%;
-    float: right;
+    float: left;
     padding-right: 1em
 }
 
@@ -214,6 +219,10 @@
 
 #all-results .type {
     color: #666;
+}
+
+#all-results .result-container .title {
+    font-size: 16px;
 }
 
 .result-tools {
@@ -290,6 +299,17 @@
     color: #ddd;
 }
 
-#typeahead {
-    width: 400px;
+.twitter-typeahead {
+    float: left;
+    width: 90%;
+}
+
+#block_search input[type=text] {
+    width: 90%;
+    height: 33px;
+    float: left
+}
+
+#block_search input[type=text]#typeahead {
+    width: 100%;
 }

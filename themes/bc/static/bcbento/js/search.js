@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    console.log('called');
-
     var search_string, engine, services, templates, source, loading_timers;
 
     services = [

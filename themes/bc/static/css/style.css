@@ -2664,8 +2664,7 @@ body,
     width: 20%;
     background: url("/theme/img/results_book.png") no-repeat 50% 50%;
 }
-}
 
 #all-results .loading {
-    background: #eaeaea url(../img/gif-load.gif) no-repeat center center;
+    background: #eaeaea url(../img/gif-load.gif) no-repeat center 80px;
 }

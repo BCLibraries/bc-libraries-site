@@ -904,6 +904,7 @@ img.center {
 #block_search .nav > li > a:hover, .nav > li > a:focus {
     background-color: #939393;
     text-decoration: none;
+    outline: 0 none;
 }
 
 #block_search .nav-tabs > li.active > a,
@@ -917,6 +918,7 @@ img.center {
     border: 0;
     color: #fff;
     cursor: default;
+    outline: 0 none;
 }
 
 #block_search .input-group {

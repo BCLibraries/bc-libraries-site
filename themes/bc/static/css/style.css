@@ -531,7 +531,7 @@ img.center {
     border-bottom: 2px solid #B5B5B5;
 }
 
-#top_search .input-group-btn:last-child > .btn {
+#top_search .input-group-btn > .btn {
     background: none repeat scroll 0 0 #990000;
     border-color: -moz-use-text-color #710000 -moz-use-text-color #C50000;
     border-radius: 0 0 0 0;
@@ -542,7 +542,7 @@ img.center {
     width: 60px;
 }
 
-#top_search .input-group-btn:last-child > .btn:hover {
+#top_search .input-group-btn > .btn:hover {
     background: #710000;
     border-left: 3px solid #990000;
     border-right: 3px solid #510000;
@@ -953,7 +953,7 @@ img.center {
     border-bottom: 2px solid #B5B5B5;
 }
 
-#block_search .input-group-btn:last-child > .btn {
+#block_search .input-group-btn > .btn {
     background: none repeat scroll 0 0 #990000;
     border-left: #C50000;
     border-right: #710000;
@@ -965,7 +965,7 @@ img.center {
     width: 100%;
 }
 
-#block_search .input-group-btn:last-child > .btn:hover {
+#block_search .input-group-btn > .btn:hover {
     background: #710000;
     border-left: 3px solid #990000;
     border-right: 3px solid #510000;

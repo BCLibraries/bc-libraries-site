@@ -715,7 +715,7 @@ img.center {
     margin: 0 0 15px 0;
 }
 
-#block_quick_links, #block_my_accounts {
+#block_quick_links {
     padding: 10px;
     margin-left: auto;
     font-size: 14px;
@@ -725,21 +725,21 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-    #block_quick_links, #block_my_accounts {
+    #block_quick_links {
         display: none;
     }
 }
 
 @media ( max-width: 1199px ) {
-    #block_quick_links, #block_my_accounts {}
+    #block_quick_links  {}
 }
 
-#block_quick_links ul, #block_my_accounts ul {
+#block_quick_links ul {
     margin: 0;
     padding: 0;
 }
 
-#block_quick_links ul li, #block_my_accounts ul li {
+#block_quick_links ul li {
     list-style: none;
     padding: 0 0 14px;
     line-height: 1.2;
@@ -765,111 +765,87 @@ img.center {
     border-left: 5px #fff solid;
 }
 
-/*.hoursbar {
+.highlight {
+    border-bottom: 5px solid #fff;
+    padding: 10px;
+    min-height: 180px;
+}
+
+.highlight img {
+    float: left;
+    height: 120px;
+    border: 1px solid #666;
+    padding: 2px;
+    margin: 0 10px 0 0;
+}
+
+.find {
+    background: url("/theme/img/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
+    padding: 0 35px 0 0;
+}
+
+.realestate {
+    padding: 10px 10px 10px 10px;
+    min-height: 170px;
+}
+
+.realestate .left {
+    float: left;
+    width: 50%;
+}
+
+.realestate .right {
     float: right;
-    padding: 0 ;
-    width: 16.3%;
-    border: none;
+    width: 50%;
+}
+
+.realestate .button a {
+    background: #990000;
+    color: #fff;
+    width: 95%;
+    height: 65px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 20px 20px 20px 10px;
     font-size: 15px;
-    box-sizing: border-box;
+    line-height: 20px;
+    transition: background-color 1s ease-out 0s;
 }
 
-@media ( max-width: 1199px ) {
-    .hoursbar {
-        text-align: left;
-    }
+.realestate .button a:hover {
+    background: #430000;
+    text-decoration: none;
 }
 
-@media ( max-width: 768px ) {
-    .hoursbar {
-        float: none;
-        width: 100%;
-        border: 0px;
-        padding: 5px 2px;
-        margin: 0 0 10px 0;
-    }
+.realestate .button a img {
+    float: left;
+    margin-right: 5px;
+    margin-top: -5px;
 }
 
-.hoursbar .hoursbar_left {
-    background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 #eaeaea;
-    height: 40px;
-    padding: 4px 0 4px 32px;
-    margin-bottom:8px;
-    text-align: center;
-    width: 100%;
-    border-right: 1px solid #eaeaea;
-    display: inline-block;
-}
-@media ( max-width: 1199px ) {
-    .hoursbar .hoursbar_left {
-        width: 100%;
-        border: 0px;
-        margin: 0 0 5px 0;
-    }
-}
-.hoursbar .hoursbar_left:hover {
-    background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 #d6d6d6;
-}
-
-.hoursbar .hoursbar_right {
-    background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #eaeaea;
-    height: 40px;
-    padding: 4px 0 4px 32px;
-    text-align: center;
-    width: 100%;
-    border-left: 1px solid #eaeaea;
-    display: inline-block;
-}
-@media ( max-width: 1199px ) {
-    .hoursbar .hoursbar_right {
-        width: 100%;
-        border: 0px;
-    }
-}
-
-.hoursbar .hoursbar_right:hover {
-    background: url("/theme/img/megabutton_monthly.png") no-repeat scroll 0 0 #d6d6d6;
-} */
-
-/* BADGES CSS
-
-.row_badges {
-    width: 100%;
-    margin: 0px 0px 20px 0px;
-    text-align: left;
-}
-
-.row_badges h2 {
-    margin: 5px 0 10px 10px;
-}
-
-.row_badges a img {
-    height: auto;
-    width: 24%;
-    padding: 0px;
-    margin: 0 4px;
-    display: inline-block;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid #B5B5B5;
-}
-
-@media ( max-width: 1199px ) {
-    .row_badges a img {
-        margin: 0 2px;
-    }
+/*
+.block_temporary {
+    float: right;
+    border-left: 5px solid #fff;
+    width: 40%;
 }
 
 @media ( max-width: 768px ) {
-    .row_badges a img {
-        margin: 1%;
-        width: 45%;
+    .block_temporary {
+     width: 100%;
+     float: none;
+     border-left: 0px;
+     border-top: 5px solid #fff;
     }
 }
 
-.row_badges a img:hover {
-    border: 1px solid #990000;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9);
-} */
+.block_temporary img {
+    width: 100%;
+    position: relative;
+    top: 0;
+}*/
+
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
 
@@ -2547,26 +2523,6 @@ nav select {
     width: 100%;
 }
 
-.block_temporary {
-    float: right;
-    border-left: 5px solid #fff;
-    width: 40%;
-}
-
-@media ( max-width: 768px ) {
-    .block_temporary {
-     width: 100%;
-     float: none;
-     border-left: 0px;
-     border-top: 5px solid #fff;
-    }
-}
-
-.block_temporary img {
-    width: 100%;
-    position: relative;
-    top: 0;
-}
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     transition: opacity 2.5s;
@@ -2594,47 +2550,4 @@ body,
 .carousel-inner .item {
     height: 290px;
 }
-
-/*TABLE STYLES*/
-
-.softwaretable {
-}
-
-.softwaretable td {
-    padding: 10px; 
-    border: 1px solid black;
-}
-
-.softwaretable tr {
-    border: 1px solid black;
-}
-
-/* STYLES FOR LIBRARY SOFTWARE PAGE */
-
-#software {
-    background: #fff;
-    font-family: 'Asap', sans-serif;
-    color: #666;
-    font-size: 13px;
-    padding: 0;
-    line-height: 1.4;
-    margin: 0;
-}
-
-@media ( max-width: 1199px ) {
-    #software {
-        background: #fff 0% 0%;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #software {
-        background: #fff;
-    }
-}
-
-#software a {
-    font-size: 1px;
-}
-
 

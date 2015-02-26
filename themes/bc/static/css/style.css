@@ -2571,3 +2571,88 @@ body,
     height: 290px;
 }
 
+/* BENTO BOX SEARCH RESULTS PAGE STYLE */
+
+#all-results {
+    margin-top: 5px;
+}
+
+#all-results img {
+    padding: 2px;
+    border: 1px solid #666;
+}
+
+#articles-results h3, #catalog-results h3, #librarians-results h3, #guides-results h3  {
+    margin-top: 0;
+    padding: 10px 7px;
+    width: 50%;
+    height: 30px;   
+    border-bottom: 1px solid #939393;
+}
+
+#librarians-results h3, #guides-results h3 {
+    width: 100%;
+}
+
+#all-results .result-container li .title, .result-container li a, 
+#all-results .outside-result a, #all-results .more-results-link a {
+    color: #990000;
+    font-weight: normal !important;
+}
+
+#all-results .result-container li .title:hover, .result-container li a:hover,
+#all-results .outside-result a:hover, #all-results .more-results-link a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+#all-results .result-container {
+    min-height: 200px;
+    background: none repeat scroll 0 0 #eaeaea;
+    display: inline-block;
+    width: 100%;
+}
+
+#all-results .more-results-link {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 50%;
+    margin-top: 0;
+    padding: 9px 7px;
+    height: 30px;  
+    border-bottom: 1px solid #939393;
+}
+
+#all-results .result-container ul {
+    clear: left;
+    margin: 0;
+    padding: 0;
+}
+
+#all-results .result-container ul li {
+    clear: left;
+    margin: 0;
+    padding: 5px 7px;
+}
+
+#all-results .result-container > ul li:nth-child(even) {
+    background: #dbdbdb;
+}
+
+#all-results #secondary {
+    margin: 0;
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+#all-results #primary {
+    margin: 0;
+    width: 40%;
+    border-left: 5px solid #fff;
+}
+
+#all-results #tertiary {
+    width: 20%;
+    border-left: 5px solid #fff;
+}

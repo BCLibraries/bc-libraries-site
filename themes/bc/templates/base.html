@@ -697,6 +697,19 @@
         })(jQuery);
     </script>
 
+    <!-- Control search tab switch. -->
+    <script>
+        $(function () {
+            console.log('loaded');
+            $('#block_search *[role=presentation]').click(
+                    function() {
+                        var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                        $('#block_search .tab-pane input[type=text]').val(current_text);
+                    }
+            );
+        });
+    </script>
+
     <!-- Script to block spam-bots. Requires JQuery. -->
     <script src="/theme/js/nospam.js"></script>
     <script src="/theme/js/libhours.js"></script>

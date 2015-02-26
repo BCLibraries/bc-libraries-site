@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     if (!!window.history && history.pushState) {
 
-        history.replaceState({search_string: search_string});
+        history.replaceState({search_string: search_string}, null, '?any=' + search_string);
 
         window.onpopstate = function (event) {
             search(event.state.search_string);

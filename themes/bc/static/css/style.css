@@ -2609,3 +2609,32 @@ body,
     border: 1px solid black;
 }
 
+/* STYLES FOR LIBRARY SOFTWARE PAGE */
+
+#software {
+    background: #fff;
+    font-family: 'Asap', sans-serif;
+    color: #666;
+    font-size: 13px;
+    padding: 0;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media ( max-width: 1199px ) {
+    #software {
+        background: #fff 0% 0%;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #software {
+        background: #fff;
+    }
+}
+
+#software a {
+    font-size: 1px;
+}
+
+

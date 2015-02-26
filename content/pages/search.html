@@ -228,5 +228,19 @@
         </ul>
     </script>
 </div>
+
+<!-- Control search tab switch. -->
+<script>
+    $(function () {
+        console.log('loaded');
+        $('#block_search *[role=presentation]').click(
+                function() {
+                    var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                    $('#block_search .tab-pane input[type=text]').val(current_text);
+                }
+        );
+    });
+</script>
+
 </body>
 </html>

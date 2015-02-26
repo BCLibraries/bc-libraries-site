@@ -2658,3 +2658,7 @@ body,
     width: 20%;
     border-left: 5px solid #fff;
 }
+
+#all-results .loading {
+    background: #eaeaea url(../img/gif-load.gif) no-repeat center center;
+}

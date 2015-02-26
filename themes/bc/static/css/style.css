@@ -2658,3 +2658,9 @@ body,
     width: 20%;
     border-left: 5px solid #fff;
 }
+
+#all-results .cover-image {
+    float: left;
+    width: 20%;
+    background: url("/theme/img/results_book.png") no-repeat 50% 50%;
+}

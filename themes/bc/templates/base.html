@@ -14,6 +14,7 @@
     <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic" type="text/css">
     <link rel="stylesheet" href="/theme/css/chosen.css"/>
     <link rel="stylesheet" href="/theme/bcbento/css/app.css"/>
+    <link rel="stylesheet" href="/theme/bcbento/css/local.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -27,6 +28,10 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    {% block pagestyles %}
+    {% endblock %}
+
     <![endif]-->
     {% endblock head %}
 </head>

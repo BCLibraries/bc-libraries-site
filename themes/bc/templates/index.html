@@ -20,7 +20,7 @@
                 <li><a href="http://library.bc.edu/research_guides" title="Research Guides" target="_self">Research Guides</a></li>
                 <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" title="Interlibrary Loan" target="_self">Interlibrary Loan</a></li>
                 <li><a href="http://arc.bc.edu/reserves" title="Course Reserves" target="_self">Course Reserves</a></li>
-                <li><a href="http://bc.worldcat.edu/" title="WorldCat" target="_self">WorldCat</a></li>
+                <li><a href="http://bc.worldcat.org/" title="WorldCat" target="_self">WorldCat</a></li>
                 <li><a href="http://bclib.bc.edu/a-to-z" title="Journals" target="_self">Journals</a></li>
             </ul>
         </div>
@@ -113,72 +113,68 @@
 
     <h2><a href="#">News</a></h2>
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            {% for article in articles[:5] %}
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        {% for article in articles[:5] %}
 
-            {% if loop.index == 1 %}
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        {% if loop.index == 1 %}
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        {% else %}
+        <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
+        {% endif %}
+
+        {% endfor %}
+    </ol>
+
+    <div class="carousel-inner">
+        {% if articles %}
+
+        {% for article in articles[:5] %}
+
+        {% if loop.index == 1 %}
+        <div class="item active">
             {% else %}
-            <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
-            {% endif %}
-
-            {% endfor %}
-        </ol>
-
-        <div class="carousel-inner">
-            {% if articles %}
-
-            {% for article in articles[:5] %}
-
-            {% if loop.index == 1 %}
-            <div class="item active">
-                {% else %}
-                <div class="item">
-                    {% endif %}
-
-                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
-
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
-
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
+            <div class="item">
                 {% endif %}
 
+                <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+
+                    </div>
+                </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
-                    class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
-                    class="glyphicon glyphicon-chevron-right"></span></a>
+            {% endfor %}
+            {% endif %}
+
         </div>
-        <!-- /.carousel -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
+                class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!-- /.carousel -->
 
     <div id="block_right">
-       
        <div class="highlight">
             <h2>Featured Academic Highlight</h2>
-
             <img src="/theme/img/cover.jpg" alt="Book Title">
             <a href="http://www.bc.edu/sites/libraries/facpub/bloom-minaret/">The Minaret</a>
             <p>By Jonathan M. Bloom, <em>Fine Arts Department</em></p>
             <a href="http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21431263870001021" class="find">Find this book in the Library</a>
-
        </div>
        <div class="realestate">
-                <div class="left">
-            <div class="button"><a href="#"><img src="/theme/img/rightbutton_icon03.png" alt="icon">eScholarship@BC</a></div>
-            <div class="button"><a href="#"><img src="/theme/img/rightbutton_icon02.png" alt="icon">Library FAQs</a></div>
-                </div>
-                <div class="right">
-            <div class="button"><a href="#"><img src="/theme/img/rightbutton_icon01.png" alt="icon">Popular Reading eBooks</a></div>
-            <div class="button"><a href="#"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Open Access Resources</a></div>
-                </div>
+            <div class="left">
+                <div class="button"><a href="http://escholarship.bc.edu/"><img src="/theme/img/rightbutton_icon03.png" alt="icon">eScholarship@BC</a></div>
+                <div class="button"><a href="http://answers.bc.edu/index.php"><img src="/theme/img/rightbutton_icon02.png" alt="icon">Library FAQs</a></div>
+            </div>
+            <div class="right">
+                <div class="button"><a href="http://bclib.bc.edu/libsearch/bc/collection/o+neill+popular"><img src="/theme/img/rightbutton_icon01.png" alt="icon">Popular Reading</a></div>
+                <div class="button"><a href="http://libguides.bc.edu/openaccess"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Open Access Resources</a></div>
+            </div>
        </div>
-
 
     </div>
 

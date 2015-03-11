@@ -16,7 +16,7 @@ asapbold
 */
 
 body {
-    background: url("../img/backgrounds/bg_gray_looped.png") repeat-x #fff 0% 0%;
+    background: #fff 0% 0%;
     font-family: 'Asap', sans-serif;
     color: #666;
     font-size: 13px;
@@ -37,6 +37,38 @@ body {
         background: #fff;
     }
 }
+
+    /* TEMPORARY CSS TO CREATE BC MANDATED HEADER/FOOTER */
+
+#bcheader {
+    height: 45px;
+    display: inline-block;
+    width: 100%;
+    background: #790009 url("../img/bcsearch.png") no-repeat 100% 0%;
+    border-bottom: 1px solid #B29D6C;
+}
+
+#bcheader img {
+    padding: 0;
+    margin: 0 0 0 50px;
+}
+
+#bcfooter {
+    height: 45px;
+    display: inline-block;
+    width: 100%;
+    background: #790009;
+    padding: 0;
+    margin: 0;
+}
+
+#bcfooter img {
+    padding: 0;
+    margin: 0 0 0 50px;
+}
+
+
+    /* THE BASICS */
 
 p, h1, h2, h3, h4, h5, h6 {
     font-weight: normal !important;
@@ -134,8 +166,8 @@ img.center {
 /*HEADER CODE */
 
 #header {
-    width: 1200px;
-    height: 55px;
+    width: 100%;
+    height: 85px;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -164,76 +196,49 @@ img.center {
     }
 }
 
-#headertitle {
-    clear: both;
+#librarytitle {
+    position: absolute;
+    left: 50px;
+    top: 10px;
 }
 
-#headertitle a {
-    background: url("/theme/img/title_gray.png") no-repeat;
-    height: 40px;
-    width: 600px;
+#librarytitle a h1 {
+    background: url("/theme/img/ul.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 70px;
+    text-indent: -9999px;
+    width: 222px;
+}
+
+#header_search {
+    width: 50px;
+    height: 50px;
+    background: #990000;
     display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 10px;
 }
 
-@media ( max-width: 1199px ) {
-    #headertitle a {
-        background: url("/theme/img/title_gray_smaller.png") no-repeat;
-        background-size: 100% auto;
-        width: 45%;
-        height: 40%;
-        display: inline-block;
-        margin: 0 0 0 5px;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #headertitle a {
-        background: url("/theme/img/title_gray_smallest.png") no-repeat;
-        background-size: auto;
-        height: 25px;
-        width: 100%;
-    }
+#motto {
+    position: absolute;
+    display: block;
+    right: 42px;
+    bottom: 0;
 }
 
 #motto p {
     background: url("/theme/img/value.png") no-repeat;
-    height: 40px;
-    width: 600px;
-    display: inline-block;
+    height: 20px;
+    width: 228px;
+    margin: 0;
     text-indent: -9999px;
-    display: none;
-}
-
-@media ( max-width: 1199px ) {
-    #motto p {
-        background: url("/theme/img/value.png") no-repeat;
-        background-size: 100% auto;
-        height: 25px;
-        width: 25%;
-        margin-left: 5px;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #motto p {
-        background: url("/theme/img/value_small.png") no-repeat;
-        background-size: auto;
-        height: 25px;
-        width: 100%;
-        margin-left: 5px;
-    }
-}
-
-#headertitle h1 {
-    text-indent: -9999px;
-    margin: 0px;
-    padding: 0px;
-    color: #333;
 }
 
 #fullpagewrapper {
     width: 1200px;
-    margin: 25px auto 0;
+    margin: 0px auto;
     position: relative;
     z-index: 100;
 }

@@ -8,16 +8,12 @@ MAROON: #990000
 GOLD: #B29D6C
 BC GRAY: #444444
 
-WEBFONTS:
-asapregular
-asapitalic
-asapbold
 
 */
 
 body {
     background: #fff 0% 0%;
-    font-family: 'Asap', sans-serif;
+    font-family: Arial, sans-serif;
     color: #666;
     font-size: 13px;
     padding: 0;
@@ -60,6 +56,7 @@ body {
     background: #790009;
     padding: 0;
     margin: 0;
+    border-top: 1px solid #B29D6C;
 }
 
 #bcfooter img {
@@ -71,12 +68,12 @@ body {
     /* THE BASICS */
 
 p, h1, h2, h3, h4, h5, h6 {
-    font-weight: normal !important;
+    font-weight: normal;
 }
 
 a, a:visited {
     color: #990000;
-    font-weight: normal !important;
+    font-weight: normal;
 }
 
 a:hover, a:active {
@@ -1763,7 +1760,7 @@ nav select {
 
 #megamenu .navbar-nav > li > a {
     color: #fff;
-    font-weight: normal;
+    font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 14px;

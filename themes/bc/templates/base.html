@@ -669,7 +669,7 @@
     <!-- END FOOTER -->
 
     <script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
-    <script type="text/javascript" src="/theme/js/breadcrumbs.js"></script>
+    <!--script type="text/javascript" src="/theme/js/breadcrumbs.js"></script-->
 
     <!-- /#contentinfo -->
     <!-- MEGA MENU SCRIPT -->
@@ -688,26 +688,15 @@
         });
     </script>
 
-    <!-- SCROLL TO TOP SCRIPT -->
-    <script>
-        (function ($) {
-            jQuery('#todayshours').click(function (event) {
-                event.preventDefault();
-                jQuery('html, body').animate({scrollTop: $('body').height()}, 750);
-                return false;
-            });
-        })(jQuery);
-    </script>
-
     <!-- Control search tab switch. -->
     <script>
         $(function () {
             console.log('loaded');
             $('#block_search *[role=presentation]').click(
-                    function() {
-                        var current_text = $('#block_search .tab-pane.active input[type=text]').val();
-                        $('#block_search .tab-pane input[type=text]').val(current_text);
-                    }
+                function() {
+                    var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                    $('#block_search .tab-pane input[type=text]').val(current_text);
+                }
             );
         });
     </script>

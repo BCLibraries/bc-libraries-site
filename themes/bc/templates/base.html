@@ -21,6 +21,7 @@
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/theme/js/chosen.jquery.min.js?version=1.1.0"></script>
+    <script src="/theme/js/modernizr.custom.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -53,12 +54,23 @@
         <a href="http://libguides.bc.edu/"><h1>University Libraries</h1></a>
     </div>
 
-    <div id="header_search">
+    <!--<div id="header_search">
     Library Search
-    </div>
+    </div>-->
+
     <div id="motto">
     <p>Value Beyond Discovery</p>
     </div>
+
+    <div id="sb-search" class="sb-search">
+                        <form>
+                            <input class="sb-search-input" placeholder="Search the BC Libraries" type="text" value="" name="search" id="search">
+                            <input class="sb-search-submit" type="submit" value="">
+                            <span class="sb-icon-search"></span>
+                        </form>
+    </div>
+
+</div>
 
 </div>
 <!-- END HEADER -->
@@ -728,6 +740,13 @@
     <script src="/theme/js/libhours.js"></script>
     <script src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
     <script src="/theme/bcbento/js/bclib-typeahead.js"></script>
+    
+    <!-- JS for expanding search bar -->
+    <script src="/theme/js/classie.js"></script>
+    <script src="/theme/js/uisearch.js"></script>
+    <script>
+        new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
 
     {% block pagescripts %}
     {% endblock %}

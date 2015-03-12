@@ -251,7 +251,118 @@ img.center {
     }
 }
 
-/* UNDER HEADER */
+   /* EXPANDING SEARCH CSS */
+
+.sb-search {
+    position: absolute;
+    width: 0%;
+    min-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    top: 10px;
+    right: 50px;
+}
+
+.sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid #B29D6C;
+    outline: none;
+    background: #fff;
+    width: 25%;
+    height: 50px;
+    margin: 0;
+    z-index: 10;
+    padding: 0 0px 0px 10px;
+    font-family: inherit;
+    font-size: 20px;
+    color: #666;
+}
+
+.sb-search-input::-webkit-input-placeholder {
+    color: #666;
+}
+
+.sb-search-input:-moz-placeholder {
+    color: #666;
+}
+
+.sb-search-input::-moz-placeholder {
+    color: #666;
+}
+
+.sb-search-input:-ms-input-placeholder {
+    color: #666;
+}
+
+.sb-icon-search,
+.sb-search-submit  {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sb-search-submit {
+    background: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.sb-icon-search {
+    color: #fff;
+    background: #B29D6C url("/theme/img/librarysearch.png") no-repeat 0 0;
+    z-index: 90;
+    font-size: 22px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+    /*content: "";*/
+}
+
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+    width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+    background: #B29D6C url("/theme/img/librarysearch_hover.png") no-repeat 0 0;
+    color: #fff;
+    z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+    z-index: 90;
+}
+
+
+    /* UNDER HEADER */
 
 .breadcrumb {
     background-color: transparent;

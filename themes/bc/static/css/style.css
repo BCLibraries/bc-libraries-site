@@ -59,6 +59,13 @@ body {
     border-top: 1px solid #B29D6C;
 }
 
+#fakebctitle {
+    position: absolute;
+    right: -5px;
+    top: -55px;
+    z-index: 999;
+}
+
 #bcfooter img {
     padding: 0;
     margin: 0 0 0 50px;
@@ -163,7 +170,7 @@ img.center {
 
 #header {
     width: 100%;
-    height: 72px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -194,7 +201,7 @@ img.center {
 
 #librarytitle {
     position: absolute;
-    left: 60px;
+    left: 15px;
     top: 5px;
 }
 
@@ -210,9 +217,8 @@ img.center {
 #motto {
     position: absolute;
     display: block;
-    left: 60px;
+    left: 15px;
     top: 75px;
-    z-index: 99999;
 }
 
 #motto p {
@@ -250,8 +256,8 @@ img.center {
     -moz-transition: width 0.3s;
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
-    top: 5px;
-    right: 60px;
+    bottom: 5px;
+    right: 15px;
 }
 
 .sb-search-input {
@@ -447,7 +453,7 @@ img.center {
 }
 
 .mainhomepage #midlevelcontainer {
-    margin: -40px auto 0;
+    margin: 0px auto;
 }
 
 @media ( max-width: 768px ) {
@@ -750,13 +756,13 @@ img.center {
     text-transform: uppercase;
 }
 
-#blocks_left {
+.blocks_left {
     width: 60%;
     margin: 0 0 10px 0;
     float: left;
 }
 
-#block_right {
+.block_right {
     width: 40%;
     height: 100%;
     margin: 0 0 5px 0;
@@ -766,8 +772,8 @@ img.center {
 }
 
 @media ( max-width: 768px ) {
-    #block_left,
-    #block_right {
+    .block_left,
+    .block_right {
         width: 100%;
         margin: 0px;
         float: none;
@@ -820,7 +826,7 @@ img.center {
 #block_quick_links {
     padding: 10px;
     margin-left: auto;
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
     float: left;
     height: 234px;
@@ -838,7 +844,9 @@ img.center {
 
 #block_quick_links ul {
     margin: 0;
-    padding: 0 25px;
+    padding: 0;
+    width: 50%;
+    float: left;
 }
 
 @media ( max-width: 1199px ) {
@@ -1840,7 +1848,7 @@ nav select {
 
 #megamenu {
     width: 1200px;
-    height: 85px;
+    height: 100px;
     margin: 0px auto;
     padding:  0;
     background: #fff;

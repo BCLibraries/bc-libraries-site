@@ -1788,9 +1788,9 @@ nav select {
     outline: 0;
 }
 
-#megamenu .navbar-nav > .open > a {
+#megamenu .navbar-nav > .open > a, #megamenu .navbar-nav > .open > a:hover {
     background: #666 !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 #megamenu .navbar-nav > li > .dropdown-menu {

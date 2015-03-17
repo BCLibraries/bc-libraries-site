@@ -40,7 +40,7 @@ body {
     height: 45px;
     display: inline-block;
     width: 100%;
-    background: #790009 url("../img/bcsearch.png") no-repeat 100% 0%;
+    background: #790009 no-repeat 100% 0%;
     border-bottom: 1px solid #B29D6C;
 }
 
@@ -51,7 +51,7 @@ body {
 
 #bcfooter {
     height: 45px;
-    display: inline-block;
+    display:none;
     width: 100%;
     background: #790009;
     padding: 0;

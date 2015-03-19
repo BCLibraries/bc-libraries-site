@@ -2108,9 +2108,7 @@ nav select {
 }
 
 .pane_info h3 a {
-    background: url("/theme/img/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
     padding: 0 35px 0 0;
-
 }
 
 .libraryinfo-content #hours-col-l, .libraryinfo-content .hours-col-loc, .libraryinfo-content #hours-col-t {

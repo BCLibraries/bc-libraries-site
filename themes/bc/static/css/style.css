@@ -1108,7 +1108,7 @@ th {
 #footer {
     background: #fff;
     width: 1200px;
-    min-height: 270px;
+    min-height: 285px;
     padding: 10px 20px 0 20px;
     margin: 0 auto;
     color: #666;
@@ -1454,6 +1454,7 @@ th {
     text-align: center;
     float: none;
     line-height: 1.75;
+    padding: 0;
 }
 
 #s-lg-guide-tabs .nav-tabs li a {
@@ -1469,7 +1470,6 @@ th {
     background: #E9E9E9;
     border-radius: 0;
     margin-right: 0px;
-    padding:0;
 }
 
 #s-lg-guide-tabs .nav-tabs li a:hover {

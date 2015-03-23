@@ -2,7 +2,7 @@ Title: Faculty publication: Régine Michelle Jean-Charles <em>Conflict Bodies</e
 Date: 2014-10-08 10:20
 Slug: conflict-bodies
 Summary: This is some text that is longer than it needs to be...
-Image: conflict-bodies-01.png
+Image: conflict-bodies-01.jpg
 Image_alt: Students studying in Bapst Library
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac tempor elit. Ut tempus pretium odio, vel placerat eros euismod vel. Nullam egestas non neque id gravida. Vestibulum mattis metus et arcu condimentum dapibus. Nullam sollicitudin diam justo, at dapibus elit tempor et. Cras hendrerit ante sit amet nunc mattis porttitor. Suspendisse at tortor nisl. Sed et nulla condimentum, sollicitudin massa in, aliquet libero. Mauris vestibulum lorem nisl, ac eleifend dolor sagittis ac. Donec pharetra malesuada risus, non pretium lectus ornare a. Aenean viverra id justo vitae dictum. Proin venenatis dui dictum nisi vulputate porttitor. Mauris sed enim sed neque dictum euismod viverra at turpis. In hac habitasse platea dictumst. Ut in enim justo.

@@ -1,6 +1,9 @@
 /* MAKES SUBNAV MENU ITEM ACTIVE & APPEAR IN BREADCRUMBS */
 
 $(document).ready(function(){
+    // replace href attribute for first breadcrumb
+    $("#s-lib-bc-list #s-lib-bc-customer a").attr("href", "/");
+
     // check to see if there is an active tab
     var activeLI = $("#s-lg-guide-tabs ul.nav-tabs li.active > a");
     if (activeLI && activeLI.length > 0) {
@@ -19,10 +22,9 @@ $(document).ready(function(){
             var subpageATag = subpageDOM.find("li a");
 
             subpageATag.each(function(index,element){
-                // grab the subnav menu's link
+                // grab the subnav menu's link and text
                 var subpageHREF = $(element).attr("href");
                 subpageHREF = subpageHREF.replace(/^.*\.bc\.edu/,"");
-
                 // compare the subnav menu to the page location
                 if (loc == subpageHREF) {
                     // make sure the true active subnav menu is set as active
@@ -43,7 +45,7 @@ $(document).ready(function(){
     }
 
     // remove href and title attributes from page-level breadcrumb when in edit-mode
-    if ($(".edit-mode") && $(".edit-mode").length > 0) {
-        $("#s-lib-bc-list #s-lib-bc-guide a").removeAttr("href title");
+    if ($(".edit-mode") && $(".edit-mode").length > 0){
+        $("#s-lib-bc-list #s-lib-bc-guide a").removeAttr("href").removeAttr("title");
     }
 });

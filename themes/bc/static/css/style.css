@@ -1819,24 +1819,30 @@ nav select {
 
 #megamenu .navbar-nav > li > .dropdown-menu {
     border: 1px solid #dadada;
-    border-top: 3px solid #666;
+    border-top: none;
     border-radius: 0;
     margin-top: 0;
 }
 
+#megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+    border-top: 3px solid #666;
+}
+
 @media ( max-width: 1199px ) {
     #megamenu .navbar-nav > li > .dropdown-menu {
-        border: 0px;
-        border-top: 3px solid #430000;
+        border: 0;
         border-radius: 0;
         margin-top: 0;
         font-size: 12px;
+    }
+    #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+        border-top: 3px solid #430000;
     }
 }
 
 @media ( max-width: 768px ) {
     #megamenu .navbar-nav > li > .dropdown-menu {
-        border: 0px;
+        border: 0;
         font-size: 14px;
     }
 }

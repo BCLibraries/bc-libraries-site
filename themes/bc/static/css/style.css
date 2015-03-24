@@ -2455,7 +2455,7 @@ nav select {
 }
 
 .carousel-indicators {
-    bottom: 3px;
+    bottom: 10px;
     height: 5%;
     left: 0;
     list-style: none outside none;
@@ -2489,15 +2489,16 @@ nav select {
 
 .carousel-caption {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.55);
-    bottom: 0;
     font-style: italic;
+    bottom: auto;
+    top: 0;
     left: 0;
     color: #fff;
     padding: 0 10px;
     text-align: left;
     text-shadow: none;
     overflow: hidden;
-    right: inherit;
+    right: 0;
 }
 
 @media ( max-width: 768px ) {
@@ -2507,7 +2508,7 @@ nav select {
 }
 
 .carousel-caption h4 a {
-    font-size: 14px;
+    font-size: 20px;
     font-style: italic;
     color: #fff;
 }

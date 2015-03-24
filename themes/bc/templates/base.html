@@ -20,6 +20,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/theme/js/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="/theme/js/jquery.hoverIntent.minified.js"></script>
     <script src="/theme/js/chosen.jquery.min.js?version=1.1.0"></script>
     <script src="/theme/js/modernizr.custom.js"></script>
 
@@ -207,10 +209,10 @@
                                             <div class="iteminfo-content get-help-menu">
                                                 <ul class="col-sm-3 item-list">
                                                     <li><h4><a href="http://libguides.bc.edu/ask-a-librarian">Ask A Librarian</a></h4></li>
-                                                    <li class="faq_pane"><a href="#">Frequently Asked Questions</a></li>
+                                                    <li class="faq_pane"><a href="http://answers.bc.edu/index.php">Frequently Asked Questions</a></li>
                                                     <li class="text_pane"><a href="#">Text us</a></li>
-                                                    <li class="chat_pane"><a href="#">Chat with us</a></li>
-                                                    <li class="email_pane"><a href="#">Send us an Email</a></li>
+                                                    <li class="chat_pane"><a href="#" onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll',     'chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;">Chat with us</a></li>
+                                                    <li class="email_pane"><a href="http://answers.bc.edu/q.php">Send us an Email</a></li>
                                                     <li class="call_pane"><a href="#">Call us</a></li>
                                                 </ul>
 
@@ -239,7 +241,7 @@
                                                 <div id="chat_pane" class="item_pane col-sm-4">
                                                     <div class="pane_info">
                                                         <h2>Chat with us</h2>
-                                                        <a onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll','chat','resizable=1,width=320,height=300'); return false;" style="cursor: pointer;"><img src="/theme/img/askicon_lib.png" alt="Chat With Us icon"></a>
+                                                        <a href="#" onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll','chat','resizable=1,width=320,height=300'); return false;" style="cursor: pointer;"><img src="/theme/img/askicon_lib.png" alt="Chat With Us icon"></a>
                                                         <p>24/7 research help from Librarians at BC and at participating Jesuit institutions across the country. <a onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll',     'chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;">Click here to chat with a Librarian.</a> </p>
                                                     </div>
                                                 </div>
@@ -305,14 +307,14 @@
                                             <div class="iteminfo-content">
                                                 <ul class="col-sm-3 item-list">
                                                     <li><h4>Libraries</h4></li>
-                                                    <li class="bapst_pane"><a href="#">Bapst Art Library</a></li>
-                                                    <li class="burns_pane"><a href="#">Burns Library</a></li>
-                                                    <li class="erc_pane"><a href="#">Educational Resource Center</a></li>
-                                                    <li class="law_pane"><a href="#">Law Library</a></li>
-                                                    <li class="oconnor_pane"><a href="#">O'Connor Library</a></li>
-                                                    <li class="oneill_pane"><a href="#">O'Neill Library</a></li>
-                                                    <li class="swl_pane"><a href="#">Social Work Library</a></li>
-                                                    <li class="tml_pane"><a href="#">Theology &amp; Ministry Library</a></li> 
+                                                    <li class="bapst_pane"><a href="http://libguides.bc.edu/bapst">Bapst Art Library</a></li>
+                                                    <li class="burns_pane"><a href="http://libguides.bc.edu/burns">Burns Library</a></li>
+                                                    <li class="erc_pane"><a href="http://libguides.bc.edu/erc">Educational Resource Center</a></li>
+                                                    <li class="law_pane"><a href="http://www.bc.edu/schools/law/library">Law Library</a></li>
+                                                    <li class="oconnor_pane"><a href="http://libguides.bc.edu/oconnor">O'Connor Library</a></li>
+                                                    <li class="oneill_pane"><a href="http://libguides.bc.edu/oneill">O'Neill Library</a></li>
+                                                    <li class="swl_pane"><a href="http://libguides.bc.edu/socialwork">Social Work Library</a></li>
+                                                    <li class="tml_pane"><a href="http://libguides.bc.edu/tml">Theology &amp; Ministry Library</a></li>
                                                     <li><!--THIS IS A MESSY WAY TO MAKE SPACE-->&nbsp;</li>
                                                     <li><!--THIS IS A MESSY WAY TO MAKE SPACE-->&nbsp;</li>
                                                     <li><!--THIS IS A MESSY WAY TO MAKE SPACE-->&nbsp;</li>
@@ -699,6 +701,8 @@
             $(document).on('click', '.yamm .dropdown-menu', function (e) {
                 e.stopPropagation()
             });
+
+            $('.dropdown-toggle').dropdownHover({delay: "1000",hoverDelay: "100"});
 
             // Slide effect lifted from http://stackoverflow.com/a/19339162/122629.
             $('.dropdown').on('show.bs.dropdown', function (e) {

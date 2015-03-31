@@ -92,16 +92,21 @@
         </div>
 
     </div>
-    
-        <div id="block_databases">
+
+    <div id="block_databases" class="row">
+        <div class="col-md-6">
             <h2>Databases</h2>
             <!-- must include -->
             <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
-            <select name="resources" style="width: 100%;" id="dbs-by-title" class="chosen-box"
-                    data-placeholder="By title...">
+            <select name="resources" id="dbs-by-title" class="chosen-box"
+                    data-placeholder="Select a database…">
                 <option></option>
             </select>
         </div>
+        <div class="col-md-6">
+            {% include "research-guide-chooser.html" %}
+        </div>
+    </div>
 
 </div>
 <!-- END TOP ROW -->
@@ -165,16 +170,16 @@
 
         <ul>
         <li><a href="#">Pellentesque Gravida</a></li>
-        <li><a href="#">Sit Amet Consectetur Adipiscing Elit</a></li> 
+        <li><a href="#">Sit Amet Consectetur Adipiscing Elit</a></li>
         <li><a href="#">Et Lacinia Isus Interdum</a></li>
         <li><a href="#"> Donec vitae lacus lobortis</a></li>
         <li><a href="#">Pellentesque Gravida</a></li>
-        <li><a href="#">Sit Amet Consectetur Adipiscing Elit</a></li> 
+        <li><a href="#">Sit Amet Consectetur Adipiscing Elit</a></li>
         <li><a href="#">Et Lacinia Isus Interdum</a></li>
         <li><a href="#"> Donec vitae lacus lobortis</a></li>
         </ul>
 
-        </div>   
+        </div>
 
     </div>
 
@@ -215,7 +220,6 @@
 {% endblock %}
 
 {% block pagescripts %}
-
     <script>
         $(document).ready(function () {
                     $('.carousel').carousel({

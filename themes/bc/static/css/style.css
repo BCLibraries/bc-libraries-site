@@ -34,7 +34,7 @@ body {
     }
 }
 
-    /* TEMPORARY CSS TO CREATE BC MANDATED HEADER/FOOTER */
+/* TEMPORARY CSS TO CREATE BC MANDATED HEADER/FOOTER */
 
 #bcheader {
     height: 45px;
@@ -51,7 +51,7 @@ body {
 
 #bcfooter {
     height: 45px;
-    display:none;
+    display: none;
     width: 100%;
     background: #790009;
     padding: 0;
@@ -71,7 +71,7 @@ body {
     margin: 0 0 0 50px;
 }
 
-    /* THE BASICS */
+/* THE BASICS */
 
 p, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
@@ -153,12 +153,12 @@ img.center {
 }
 
 table, table.ckeditor-table {
-    width:100%;
+    width: 100%;
     border-collapse: collapse;
 }
 
 table.ckeditor-table {
-    width:100% !important;
+    width: 100% !important;
 }
 
 table, th, td {
@@ -166,7 +166,7 @@ table, th, td {
 }
 
 td, th {
-    padding:3px;
+    padding: 3px;
 }
 
 th {
@@ -174,7 +174,7 @@ th {
 }
 
 #cke_12, #cke_13
-/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */     {
+/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */       {
     display: none;
 }
 
@@ -265,7 +265,7 @@ th {
     }
 }
 
-   /* EXPANDING SEARCH CSS */
+/* EXPANDING SEARCH CSS */
 
 .sb-search {
     position: absolute;
@@ -315,7 +315,7 @@ th {
 }
 
 .sb-icon-search,
-.sb-search-submit  {
+.sb-search-submit {
     width: 50px;
     height: 50px;
     display: block;
@@ -375,8 +375,7 @@ th {
     z-index: 90;
 }
 
-
-    /* UNDER HEADER */
+/* UNDER HEADER */
 
 .breadcrumb {
     background-color: transparent;
@@ -454,7 +453,7 @@ th {
 }
 
 .pad-top-med
-/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/     {
+/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/       {
     padding-top: 0px;
 }
 
@@ -743,8 +742,8 @@ th {
 
 #content_container ul li {
     line-height: 1.5;
-    padding-top:2px;
-    padding-bottom:2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /* THE BC LIBRARY FRONT HOMEPAGE */
@@ -862,7 +861,8 @@ th {
 }
 
 @media ( max-width: 1199px ) {
-    #block_quick_links  {}
+    #block_quick_links {
+    }
 }
 
 #block_quick_links ul {
@@ -874,8 +874,8 @@ th {
 
 @media ( max-width: 1199px ) {
     #block_quick_links ul {
-    margin: 0;
-    padding: 0 10px;
+        margin: 0;
+        padding: 0 10px;
     }
 }
 
@@ -964,10 +964,10 @@ th {
 }
 
 @media ( max-width: 1199px ) {
-        .realestate .button a {
-            font-size: 12px;
-            line-height: 17px;
-        }
+    .realestate .button a {
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
 
 .realestate .button a:hover {
@@ -980,8 +980,6 @@ th {
     margin-right: 5px;
     margin-top: -5px;
 }
-
-
 
 /*
 .block_temporary {
@@ -1004,7 +1002,6 @@ th {
     position: relative;
     top: 0;
 }*/
-
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
 
@@ -1111,7 +1108,6 @@ th {
 #block_search .glyphicon {
     color: #fff;
 }
-
 
 /* FOOTER */
 
@@ -1298,19 +1294,19 @@ th {
 
 /*OVERWRITING LIBGUIDES 2.0 */
 
-#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */     {
+#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */       {
     float: right;
     margin: 20px;
 }
 
 #s-lg-add-page-icon
-/*I GUESS THIS IS TOO, NOT SURE*/     {
+/*I GUESS THIS IS TOO, NOT SURE*/       {
     margin: 0px;
     display: inline;
     font-size: 12px;
 }
 
-#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */     {
+#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */       {
     padding: 4px;
     margin: 0px;
     border: 2px solid #B29D6C;
@@ -1326,15 +1322,15 @@ th {
     color: #fff;
 }
 
-.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */     {
+.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */       {
     float: left;
 }
 
-.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */    {
+.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */      {
     float: right;
 }
 
-.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/    {
+.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/      {
     background-color: transparent;
     border: 0px;
     border-radius: 0;
@@ -1358,18 +1354,18 @@ th {
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
 .row
-/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	    {
+/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	      {
     margin: 0;
 }
 
 #s-lg-box-top
-/* TOP BOX, IF IN USE */     {
+/* TOP BOX, IF IN USE */       {
     margin: 0px;
     padding: 0 10px;
 }
 
 .s-lib-box
-/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */     {
+/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */       {
     box-shadow: none;
     border: 0px;
     margin: 0px;
@@ -1377,7 +1373,7 @@ th {
 }
 
 .edit-mode .s-lib-box-title
-/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */     {
+/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */       {
     border-bottom: 1px solid #CCC;
     padding: 3px 8px;
     font-size: 13px;
@@ -1386,7 +1382,7 @@ th {
 }
 
 .view-mode .s-lib-box .s-lib-box-title
-/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */     {
+/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */       {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
     color: #990000;
@@ -1400,7 +1396,7 @@ th {
 }
 
 .view-mode .libhomepage .s-lib-box-title
-/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */     {
+/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */       {
     display: none !important;
 }
 
@@ -1432,7 +1428,7 @@ th {
 }
 
 #s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */     {
+/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */       {
     font-size: 14px;
     margin: 1px 0 1px 0;
     padding: 0;
@@ -1492,7 +1488,7 @@ th {
     text-decoration: none;
 }
 
-#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */    {
+#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */      {
     background-clip: padding-box;
     background-color: transparent;
     border: 0px;
@@ -1512,7 +1508,7 @@ th {
 
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
 #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/     {
+ /*THIS IS THE DROP DOWN TAB ITSELF*/       {
     clear: both;
     color: #990000;
     display: block;
@@ -1845,6 +1841,7 @@ nav select {
         margin-top: 0;
         font-size: 12px;
     }
+
     #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
         border-top: 3px solid #430000;
     }
@@ -1882,7 +1879,7 @@ nav select {
     width: 1200px;
     height: 100px;
     margin: 0px auto;
-    padding:  0;
+    padding: 0;
     background: #fff;
 }
 
@@ -2376,7 +2373,8 @@ nav select {
     #myCarousel {
         width: 100%;
         float: none;
-    }}
+    }
+}
 
 .carousel {
     position: relative;
@@ -2563,24 +2561,29 @@ nav select {
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
-    transition: opacity 2.5s;
+    transition: opacity .3s;
 }
+
 .carousel-fade .carousel-inner .active {
     opacity: 1;
 }
+
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1;
 }
+
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
     opacity: 1;
 }
+
 .carousel-fade .carousel-control {
     z-index: 2;
 }
+
 html,
 body,
 .carousel,
@@ -2600,7 +2603,7 @@ body,
     border: 1px solid #666;
 }
 
-#articles-results h3, #catalog-results h3, #librarians-results h3, #guides-results h3  {
+#articles-results h3, #catalog-results h3, #librarians-results h3, #guides-results h3 {
     margin-top: 0;
     padding: 10px 7px;
     width: 50%;
@@ -2684,3 +2687,31 @@ body,
 #all-results .loading {
     background: #eaeaea url(../img/gif-load.gif) no-repeat center 80px;
 }
+
+.chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {
+    background: #fff;
+}
+
+#subject_guides_chosen li {
+    padding-left: 15px
+}
+
+#subject_guides_chosen li.optgroup, #subject_guides_chosen li.group-result {
+    padding: 1em 0 0 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.1
+}
+
+#subject_guides_chosen li.optgroup:first-child {
+    padding: .5em 0 0 0;
+}
+
+.chosen-container-single .chosen-single span {
+    color: #aaa
+}
+
+.chosen-container-single .chosen-single {
+    border-radius: 0;
+}
+

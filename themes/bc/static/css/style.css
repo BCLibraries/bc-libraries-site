@@ -61,7 +61,7 @@ body {
 
 #fakebctitle {
     position: absolute;
-    right: -5px;
+    left: -5px;
     top: -55px;
     z-index: 999;
 }
@@ -227,12 +227,12 @@ th {
 }
 
 #librarytitle a h1 {
-    background: url("/theme/img/ul.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("/theme/img/title_beta.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     float: left;
     height: 70px;
     text-indent: -9999px;
-    width: 222px;
+    width: 325px;
 }
 
 #motto {
@@ -1014,7 +1014,6 @@ th {
 #block_search .nav > li {
     margin-bottom: -3px;
     height: 30px;
-    background: #B5B5B5;
     border-right: 3px solid #eee;
 }
 
@@ -1028,6 +1027,8 @@ th {
     line-height: 1;
     margin-right: 0px;
     color: #666;
+    background: #B5B5B5;
+    border-top: 2px solid #d8d8d8;
 }
 
 #block_search .nav > li > a {
@@ -1061,6 +1062,7 @@ th {
     color: #fff;
     cursor: default;
     outline: 0 none;
+    border-top: 2px solid #B5B5B5;
 }
 
 #block_search .input-group {
@@ -1071,6 +1073,7 @@ th {
     border: 0;
     padding: 5px;
     width: 100%;
+    border-bottom: 2px solid #B5B5B5;
 }
 
 #block_search .input-group .form-control {

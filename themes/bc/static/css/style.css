@@ -912,10 +912,9 @@ th {
 }
 
 .highlight {
-    border-left: 5px solid #fff;
     padding: 10px;
     min-height: 180px;
-    width: 40%;
+    width: 100%;
     float: right;
     position: relative;
 }
@@ -940,6 +939,7 @@ th {
     width: 60%;
     text-align: center;
     display: inline-block;
+    margin: 10px 0 0 0;
 }
 
 .realestate .column {
@@ -2719,3 +2719,8 @@ body,
     border-radius: 0;
 }
 
+/* EDITS FOR TWITTER WIDGET */
+
+.timeline-header, .timeline-footer {
+    display: none;
+}

@@ -805,9 +805,9 @@ th {
 #block_search {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
-    min-height: 130px;
+    min-height: 110px;
     margin: 0;
-    padding: 10px;
+    padding: 19px 10px 10px 10px;
     width: 60%;
 }
 
@@ -825,7 +825,7 @@ th {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
     min-height: 103px;
-    padding: 7px;
+    padding: 20px 7px 7px 7px;
     width: 60%;
     margin-bottom: 5px;
 }
@@ -842,16 +842,17 @@ th {
 }
 
 #block_databases h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
+    font-size: 14px;
 }
 
 #block_quick_links {
-    padding: 10px;
+    padding: 33px 20px 10px 38px;
     margin-left: auto;
     font-size: 15px;
     width: 100%;
     float: left;
-    height: 234px;
+    height: 219px;
 }
 
 @media ( max-width: 768px ) {

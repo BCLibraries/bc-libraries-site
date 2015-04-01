@@ -914,9 +914,10 @@ th {
 .highlight {
     padding: 10px;
     min-height: 180px;
-    width: 100%;
+    width: 40%;
     float: right;
     position: relative;
+    border-left: 5px solid #fff;
 }
 
 .highlight img {
@@ -2717,10 +2718,4 @@ body,
 
 .chosen-container-single .chosen-single {
     border-radius: 0;
-}
-
-/* EDITS FOR TWITTER WIDGET */
-
-.timeline-header, .timeline-footer {
-    display: none;
 }

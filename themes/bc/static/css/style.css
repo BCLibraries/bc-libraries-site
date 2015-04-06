@@ -1011,7 +1011,7 @@ th {
     margin: 0 0 2px 0;
     padding: 20px 20px 20px 10px;
     font-size: 15px;
-    transition: background-color 1s ease-out 0s;
+    transition: background-color .2s ease-out 0s;
 }
 
 @media ( max-width: 1199px ) {
@@ -1879,7 +1879,7 @@ nav select {
     text-align: center;
     outline: 0;
     background: #fff;
-    transition: background-color .5s ease-out 0s;
+    transition: background-color 0.1s ease-out .0s;
 }
 
 @media ( max-width: 1199px ) {
@@ -2635,7 +2635,7 @@ nav select {
 
 .carousel-inner > .item
 /*THIS CHANGES THE TIME OF THE SLIDE SHOW. MAKING WILD EDITS TO SLOW IT WAAAAY DOWN. FIX AFTER CHANGES ARE MADE */     {
-    transition: left .6s ease-in-out 0s;
+    transition: left .3s ease-in-out 0s;
 }
 
 .carousel-inner > .active {
@@ -2656,7 +2656,7 @@ nav select {
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity .1s;
 }
 
 .carousel-fade .carousel-inner .active {

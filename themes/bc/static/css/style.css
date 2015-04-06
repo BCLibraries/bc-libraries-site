@@ -204,7 +204,7 @@ th {
 }
 @media ( max-width: 768px ) {
     #librarytitle {
-        left: 75px;
+        left: 5px;
 }}
 
 #librarytitle a h1 {
@@ -224,7 +224,7 @@ th {
 }
 @media ( max-width: 768px ) {
     #motto {
-        left: 75px;
+        left: 5px;
 }}
 
 #motto p {
@@ -265,6 +265,10 @@ th {
     top: 0px;
     right: 15px;
 }
+@media ( max-width: 1199px ) {
+    .sb-search {
+        z-index: 100;
+}}
 
 .sb-search-input {
     position: absolute;
@@ -1728,6 +1732,7 @@ nav select {
     border-radius: 0;
     background: transparent;
     z-index: 99;
+    margin: 0;
 }
 
 @media ( max-width: 1199px ) {
@@ -1757,7 +1762,7 @@ nav select {
 
 @media ( max-width: 768px ) {
     #megamenu .navbar-collapse {
-        margin: 0;
+        margin: 100px 0 0 0;
     }
 }
 
@@ -1793,10 +1798,10 @@ nav select {
     background-color: #990000;
     background-image: none;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 4px 4px 4px 4px;
-    float: none;
-    margin: 8px 15px;
-    padding: 9px 10px;
+    border-radius: 0;
+    float: right;
+    margin: 55px 15px 0;
+    padding: 13px;
     position: relative;
 }
 

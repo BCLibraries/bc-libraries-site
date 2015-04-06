@@ -1727,6 +1727,7 @@ nav select {
     position: relative;
     border-radius: 0;
     background: transparent;
+    z-index: 99;
 }
 
 @media ( max-width: 1199px ) {
@@ -1750,7 +1751,7 @@ nav select {
 
 @media ( max-width: 1199px ) {
     #megamenu .navbar-collapse {
-        margin: 92px 0 0 0;
+        margin: 0;
     }
 }
 

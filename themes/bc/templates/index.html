@@ -141,8 +141,9 @@
             {% else %}
             <div class="item">
                 {% endif %}
-
-                <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
+                <a href="{{ article.url }}">
+                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
+                </a>
 
                 <div class="container">
                     <div class="carousel-caption">
@@ -163,7 +164,7 @@
     <!-- /.carousel -->
 
     <div class="block_right">
-     
+
              <div class="twitterwidget">
 
        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/bclibraries" data-widget-id="379769077352263680"
@@ -196,7 +197,7 @@
 
         <div class="highlight">
             <h2><a href="http://www.bc.edu/sites/libraries/facpub/index.html" target="_blank">Faculty Publications</a></h2>
-            <img src="/theme/img/cover.jpg" alt="Book Title">
+            <a href="http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21431263870001021" class="find"><img src="/theme/img/cover.jpg" alt="Book Title"></a>
             <a href="http://www.bc.edu/sites/libraries/facpub/bloom-minaret/">The Minaret</a>
             <p>By Jonathan M. Bloom, <em>Fine Arts Department</em></p>
             <a href="http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21431263870001021" class="find">Find this book in the Library</a>

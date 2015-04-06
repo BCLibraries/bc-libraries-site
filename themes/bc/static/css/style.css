@@ -2280,6 +2280,7 @@ nav select {
     margin: 0;
     padding: 1px 0 1px 4px;
     width: 40%;
+    vertical-align: middle;
 }
 
 #all_hours_container ul.lib_hours li.status {

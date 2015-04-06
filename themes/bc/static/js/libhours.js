@@ -3,7 +3,7 @@
 $(document).ready(function(){
     // list of library names as reported by the hours api
     var libs = ["ONeillLibrary",
-                "BapstLibrary",
+                "BapstArtLibrary",
                 "BurnsLibrary",
                 "EducationalResourceCenter",
                 "TheologyandMinistryLibrary",

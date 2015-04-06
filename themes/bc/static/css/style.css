@@ -1751,6 +1751,12 @@ nav select {
 
 @media ( max-width: 1199px ) {
     #megamenu .navbar-collapse {
+        margin: 92px 0 0 0;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #megamenu .navbar-collapse {
         margin: 0;
     }
 }
@@ -1865,6 +1871,7 @@ nav select {
     #megamenu .navbar-nav > li > a {
         background: #990000;
         border-bottom: 1px solid #FFFFFF;
+        color: #fff;
     }
 }
 

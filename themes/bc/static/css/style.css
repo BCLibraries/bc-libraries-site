@@ -192,7 +192,6 @@ th {
 @media ( max-width: 768px ) {
     #header {
         border-bottom: 1px solid #DADADA;
-        height: 35px;
         padding: 0 0 10px;
         width: 100%;
     }
@@ -203,6 +202,10 @@ th {
     left: 15px;
     top: 5px;
 }
+@media ( max-width: 768px ) {
+    #librarytitle {
+        left: 75px;
+}}
 
 #librarytitle a h1 {
     background: url("/theme/img/title_beta.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -219,6 +222,10 @@ th {
     left: 15px;
     top: 75px;
 }
+@media ( max-width: 768px ) {
+    #motto {
+        left: 75px;
+}}
 
 #motto p {
     background: url("/theme/img/value.png") no-repeat;
@@ -275,6 +282,10 @@ th {
     font-size: 20px;
     color: #666;
 }
+@media ( max-width: 1199px ) {
+    .sb-search-input {
+        width: 50%;
+}}
 
 .sb-search-input::-webkit-input-placeholder {
     color: #666;
@@ -770,6 +781,10 @@ th {
     border-left: 5px solid #FFFFFF;
     background: none repeat scroll 0 0 #eaeaea;
 }
+@media ( max-width: 768px ) {
+    .block_right {
+        display: none;
+ }}
 
 @media ( max-width: 768px ) {
     .block_left,
@@ -791,10 +806,10 @@ th {
 
 @media ( max-width: 768px ) {
     #block_search {
-        height: 130px;
+        height: auto;
         width: 100%;
-        padding: 0px;
-        margin: 0 0 10px 0;
+        padding: 10px 0;
+        margin: 0;
         display: inline-block;
     }
 }
@@ -807,10 +822,15 @@ th {
     width: 60%;
     margin-bottom: 5px;
 }
+@media ( max-width: 1199px ) {
+    #block_databases {
+        padding: 5px;
+    }
+}
 
 @media ( max-width: 768px ) {
     #block_databases {
-        height: 88px;
+        height: auto;
         width: 100%;
         padding: 0px;
         margin: 0px 0px 10px 0px;
@@ -838,9 +858,12 @@ th {
     padding: 30px;
     margin-left: auto;
     font-size: 13px;
-    height: 219px;
     }
 }
+@media ( max-width: 991px ) {
+    #block_quick_links {
+        min-height: 262px;
+}}
 @media ( max-width: 768px ) {
     #block_quick_links {
         display: none;
@@ -887,6 +910,10 @@ th {
     border-left: 5px #fff solid;
 }
 
+.twitterwidget {
+
+}
+
 #twitter-widget-0 {
     width: 455px !important;
     height: 343px !important;
@@ -907,6 +934,10 @@ th {
     position: relative;
     border-left: 5px solid #fff;
 }
+@media ( max-width: 768px ) {
+    .highlight {
+        width: 100%;
+}}
 
 .highlight img {
     float: left;
@@ -935,6 +966,11 @@ th {
     display: inline-block;
     margin: 10px 0 0 0;
 }
+
+@media ( max-width: 768px ) {
+    .realestate {
+        width: 100%;
+}}
 
 .realestate .column {
     float: left;
@@ -1168,11 +1204,13 @@ th {
     height: 230px;
 }
 
+
 @media ( max-width: 1050px ) {
     .f_column {
         width: 50%;
         border-bottom: 1px solid #dadada;
         margin: 0 0 15px 0;
+        font-size: 13px;
     }
 }
 

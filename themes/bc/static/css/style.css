@@ -918,13 +918,7 @@ th {
 
 .twitterwidget {
     height: 350px;
-}
-
-#twitter-widget-0 {
-    width: 455px !important;
-    height: 343px !important;
-}
-@media ( max-width: 1199px ) {
+    padding: 10px 20px 50px 15px;
 }
 
 .addlnews {

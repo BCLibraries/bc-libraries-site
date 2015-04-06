@@ -958,6 +958,26 @@ th {
     }
 }
 
+.highlight cite {
+    display: block;
+}
+
+.highlight cite, .highlight cite a, .highlight cite a:visited {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.highlight .author {
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+.highlight p {
+    line-height: 1.4;
+    color: #333;
+}
+
 .find {
     background: url("/theme/img/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
     padding: 0 35px 0 0;
@@ -1071,7 +1091,7 @@ th {
     border-radius: 0;
     line-height: 1;
     margin-right: 0px;
-    color: #666;
+    color: #555;
     background: #B5B5B5;
     border-top: 2px solid #d8d8d8;
 }

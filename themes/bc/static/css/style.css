@@ -2305,6 +2305,10 @@ nav select {
     vertical-align: middle;
 }
 
+#oconnor_hours_row ul.lib_hours li.hours {
+    width: 60%;
+}
+
 #all_hours_container ul.lib_hours li.status {
     width: 20%;
 }

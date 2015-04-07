@@ -73,7 +73,7 @@ $(document).ready(function () {
 
         $.ajax({
                 type: 'GET',
-                url: 'http://libdev.bc.edu/search-services/' + service + '?any=' + keyword,
+                url: 'http://library.bc.edu/search-services/' + service + '?any=' + keyword,
                 dataType: 'jsonp',
                 cache: true,
                 success: function (data, status, xhr) {

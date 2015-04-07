@@ -2,7 +2,7 @@ $(document).ready(function() {
     /* console.log("here"); */
     /* first things first, add in custom updated total containers that we'll be using to display 
     // the updated number of records retrieved. */
-    $("#s-lg-az-search-reset").prepend("<div id='updated-total-container' class='s-lib-text-lg pull-left col-md-3'></div>");
+    $("#s-lg-az-search-reset").prepend("<div id='updated-total-container' class='s-lib-text-lg pull-left col-md-4'></div>");
     $("#updated-total-container").prepend("<div id='updated-total' style='display: none;' class='bold s-lib-text-lg'></div>");
     $("#updated-total-container").prepend("<div id='updated-total-loading' style='text-align: center;' class='bold s-lib-text-lg'>Loading...</div>");
     $("#s-lg-az-cols #col1").append("<div id='cloned-content-container'></div>");
@@ -62,7 +62,7 @@ $(document).ready(function() {
             remaining-=1;
             $(this).parents(".s-lg-az-result").hide();
         });
-        console.log(remaining);
+        /* console.log(remaining); */
 
         /* update total number of databases available */
         $("#updated-total-loading").hide();

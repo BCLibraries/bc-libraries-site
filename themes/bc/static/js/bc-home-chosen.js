@@ -7,7 +7,7 @@ $('document').ready(function () {
         window.location = 'http://libguides.bc.edu/' + params.selected;
     });
 
-    $.getJSON("//libdev.bc.edu/db/resources?callback=?", function (msg) {
+    $.getJSON("//library.bc.edu/db/resources?callback=?", function (msg) {
         var options = '';
         var $by_title = $('#dbs-by-title');
         jQuery.each(msg, function (index, value) {

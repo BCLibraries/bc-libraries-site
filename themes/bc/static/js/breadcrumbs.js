@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     // replace href attribute for first breadcrumb
-    $("#s-lib-bc-list #s-lib-bc-customer a").attr("href", "/");
+    $("#s-lib-bc-list #s-lib-bc-customer a").attr("href", "http://library.bc.edu/");
 
     // check to see if there is an active tab
     var activeLI = $("#s-lg-guide-tabs ul.nav-tabs li.active > a");

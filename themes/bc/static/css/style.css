@@ -201,6 +201,7 @@ th {
     position: absolute;
     left: 15px;
     top: 5px;
+    z-index: 999;
 }
 @media ( max-width: 768px ) {
     #librarytitle {

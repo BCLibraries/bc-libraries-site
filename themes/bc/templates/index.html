@@ -109,70 +109,12 @@
 </div>
 <!-- END TOP ROW -->
 
-<!-- CAROUSEL -->
+<!-- SECOND ROW, NEWS ROW -->
 <div class="row">
 
-<!--IMAGES FOR CAROUSEL MUST BE AT LEAST 625x290px -->
+news
 
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-    <h2 class="accessibility-text">News</h2>
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        {% for article in articles[:5] %}
-
-        {% if loop.index == 1 %}
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        {% else %}
-        <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
-        {% endif %}
-
-        {% endfor %}
-    </ol>
-
-    <div class="carousel-inner">
-        {% if articles %}
-
-        {% for article in articles[:5] %}
-
-        {% if loop.index == 1 %}
-        <div class="item active">
-            {% else %}
-            <div class="item">
-                {% endif %}
-                <a href="{{ article.url }}">
-                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
-                </a>
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            {% endif %}
-
-        </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
-                class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
-                class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-    <!-- /.carousel -->
-
-    <div class="block_right">
-
-             <div class="twitterwidget">
-
-       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/bclibraries" data-widget-id="379769077352263680"
-       data-link-color="#990000" width="455" height="333"   data-chrome="noheader nofooter noborders transparent" >Tweets by @bclibraries</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-    </div>
-
+   
 </div>
 
 <!-- ROW THREE, THE THIRD ROW -->

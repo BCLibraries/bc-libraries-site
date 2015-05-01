@@ -27,26 +27,13 @@
 
 
     <!-- CAROUFREDSEL JS UNDER HERE -->
-    <script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
 <!-- fire plugin onDocumentReady -->
         <script type="text/javascript" language="javascript">
             $(function() {
 
-                //  Basic carousel, no options
-                $('#foo0').carouFredSel();
-
-                //  Basic carousel + timer, using CSS-transitions
-                $('#foo1').carouFredSel({
-                    auto: {
-                        pauseOnHover: 'resume',
-                        progress: '#timer1'
-                    }
-                }, {
-                    transition: true
-                });
-
                 //  Scrolled by user interaction
-                $('#foo2').carouFredSel({
+                $('#newsslider').carouFredSel({
                     auto: true,
                     prev: '#prev2',
                     next: '#next2',

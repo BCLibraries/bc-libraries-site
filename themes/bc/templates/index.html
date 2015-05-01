@@ -110,31 +110,36 @@
 <!-- END TOP ROW -->
 
 <!-- SECOND ROW, NEWS ROW -->
-<div class="row">
+<div class="row newsrow">
 
-<div class="list_carousel">
-                <ul id="foo2">
-                    <li>c</li>
-                    <li>a</li>
-                    <li>r</li>
-                    <li>o</li>
-                    <li>u</li>
-                    <li>F</li>
-                    <li>r</li>
-                    <li>e</li>
-                    <li>d</li>
-                    <li>S</li>
-                    <li>e</li>
-                    <li>l</li>
-                    <li> </li>
-                </ul>
-                <div class="clearfix"></div
->                <a id="prev2" class="prev" href="#">&lt;</a>
+    <div class="list_carousel">
+             
+        {% if articles %}
+
+        {% for article in articles[:5] %}
+
+        {% if loop.index == 1 %}
+          
+        <ul id="foo2">
+            {% else %}
+            
+            <li>
+                {% endif %}
+                <a href="{{ article.url }}">
+                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
+                </a>
+
+                <a href="{{ article.url }}">{{ article.title }}</a>
+            </li>
+         
+            {% endfor %}
+            {% endif %}
+        </ul>
+                <div class="clearfix"></div>
+                <a id="prev2" class="prev" href="#">&lt;</a>
                 <a id="next2" class="next" href="#">&gt;</a>
                 <div id="pager2" class="pager"></div>
-            </div>
-
-   
+    </div>
 </div>
 
 <!-- ROW THREE, THE THIRD ROW -->

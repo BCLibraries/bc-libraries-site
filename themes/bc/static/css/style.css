@@ -2466,10 +2466,13 @@ body,
 
 /* NEW CAROUSEL CSS */
 
-#intro {
-                width: 580px;
-                margin: 0 auto;
-            }
+.newsrow {
+    min-height: 250px;
+    display: block;
+    position: relative;
+    border: 1px blue solid;
+}
+
             .wrapper {
                 background-color: white;
                 width: 480px;

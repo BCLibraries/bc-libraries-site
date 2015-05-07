@@ -2715,7 +2715,7 @@
 		},
 		'scroll'		: {
 			'easing'		: 'swing',
-			'duration'		: 5000, //THIS IS WHERE THE TIME CAN CHANGE
+			'duration'		: 500, //THIS IS WHERE THE TIME CAN CHANGE
 			'pauseOnHover'	: false,
 			'event'			: 'click',
 			'queue'			: false

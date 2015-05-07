@@ -2467,10 +2467,9 @@ body,
 /* NEW CAROUSEL CSS */
 
 .newsrow {
-    min-height: 350px;
+    min-height: 265px;
     display: block;
     position: relative;
-    border: 1px blue solid;
 }
 
 #newsslider {
@@ -2478,8 +2477,8 @@ body,
 }
 
 .caroufredsel_wrapper {
-    min-height: 250px;
-    width: 100% !important;
+    min-height: 265px;
+    width: 95% !important;
 }
 
 .wrapper {
@@ -2491,10 +2490,9 @@ body,
 }
 
 .list_carousel {
-    background: #eaeaea;
+    background: transparent;
     margin: 00px;
-    width: 60%;
-    border: 1px solid green;
+    width: 100%;
 }
 .list_carousel ul {
     margin: 0;
@@ -2503,17 +2501,15 @@ body,
     display: block;
 }
 .list_carousel li {
-    font-size: 40px;
     color: #999;
     text-align: center;
-    background-color: #eee;
-    border: 5px solid #999;
     width: 250px;
-    height: 250px;
+    height: 265px;
     padding: 0;
     margin: 6px;
     display: block;
     float: left;
+    background: #eaeaea;
 }
 .list_carousel.responsive {
     width: auto;
@@ -2523,28 +2519,36 @@ body,
     float: none;
     clear: both;
 }
-.prev {
-    float: left;
-    margin-left: 10px;
+
+.list_carousel img {
+    border: 1px solid #666;
+    padding: 1px;
+    margin: 5px 0 0 0;
 }
-.next {
-    float: right;
-    margin-right: 10px;
-}
-.pager {
+
+.list_carousel .prev {
+    color: #990000;
+    display: block;
     float: left;
-    width: 300px;
+    font-size: 25px;
+    height: 50px;
+    padding: 2px 0;
     text-align: center;
+    width: 25px;
 }
-.pager a {
-    margin: 0 5px;
+.list_carousel .prev:hover, 
+.list_carousel .prev:focus {
+    color: #430000 !important;
     text-decoration: none;
 }
-.pager a.selected {
-    text-decoration: underline;
-}
-.timer {
-    background-color: #999;
-    height: 6px;
-    width: 0px;
+
+.next {
+      color: #990000 ;
+    display: block;
+    float: right;
+    font-size: 25px;
+    height: 50px;
+    padding: 2px 0;
+    text-align: center;
+    width: 25px;
 }

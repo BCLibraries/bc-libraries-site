@@ -2542,7 +2542,7 @@ body,
     text-decoration: none;
 }
 
-.next {
+.list_carousel .next {
       color: #990000 ;
     display: block;
     float: right;
@@ -2551,4 +2551,10 @@ body,
     padding: 2px 0;
     text-align: center;
     width: 25px;
+}
+
+.list_carousel .next:hover, 
+.list_carousel .next:focus {
+    color: #430000 !important;
+    text-decoration: none;
 }

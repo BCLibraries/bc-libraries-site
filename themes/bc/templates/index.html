@@ -112,11 +112,11 @@
 <!-- SECOND ROW, NEWS ROW -->
 <div class="row newsrow">
     
-<!--THUMBNAILS ARE 200x200px-->
+<!-- THUMBNAILS ARE 150xp x 150p -->
 
     <div class="list_carousel">
-          <a id="prev" class="prev" href="#">&lt;</a>
-          <a id="next" class="next" href="#">&gt;</a>
+        <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
         <ul id="newsslider">
                     
@@ -127,16 +127,14 @@
             <li>
                 <a href="{{ article.url }}">
                 <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                </a>
+                
 
-                <p><a href="{{ article.url }}">{{ article.title }}</a></p>
+                <p class="newslink">{{ article.title }}</p></a>
             </li>
                 {% endfor %}
                 {% endif %}
         </ul>
-                <div class="clearfix"></div>
-              
-    </div>
+     </div>
 
 </div>
 

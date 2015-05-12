@@ -2478,7 +2478,7 @@ body,
 
 .caroufredsel_wrapper {
     min-height: 265px;
-    width: 95% !important;
+    width: 1120px !important;
 }
 
 .wrapper {
@@ -2495,21 +2495,22 @@ body,
     width: 100%;
 }
 .list_carousel ul {
-    margin: 0;
+    margin: 0 0 0 -10px !important;
     padding: 0;
     list-style: none;
     display: block;
 }
 .list_carousel li {
+    background: #eaeaea;
     color: #999;
-    text-align: center;
-    width: 250px;
-    height: 265px;
-    padding: 0;
-    margin: 6px;
     display: block;
     float: left;
-    background: #eaeaea;
+    height: 245px;
+    margin: 10px 5px 0;
+    padding: 5px !important;
+    text-align: center;
+    width: 230px;
+    overflow: hidden;
 }
 .list_carousel.responsive {
     width: auto;
@@ -2524,37 +2525,59 @@ body,
     border: 1px solid #666;
     padding: 1px;
     margin: 5px 0 0 0;
+    width: 150px;
+    height: 150px;
+}
+
+.list_carousel img:hover {
+    border: 1px solid #990000;
 }
 
 .list_carousel .prev {
-    color: #990000;
-    display: block;
+    border-right: 1px solid #eaeaea;
     float: left;
-    font-size: 25px;
-    height: 50px;
-    padding: 2px 0;
-    text-align: center;
-    width: 25px;
-}
-.list_carousel .prev:hover, 
-.list_carousel .prev:focus {
-    color: #430000 !important;
-    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    -webkit-box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
+    box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
 }
 
 .list_carousel .next {
-      color: #990000 ;
-    display: block;
+    border-left: 1px solid #eaeaea;
     float: right;
+    position: relative;
+    z-index: 9;
+    -webkit-box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
+    box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
+
+}
+
+.newsbutton {
+    color: #990000;
+    display: block;
     font-size: 25px;
-    height: 50px;
-    padding: 2px 0;
+    height: 265px;
+    padding: 110px 0;
     text-align: center;
     width: 25px;
 }
 
-.list_carousel .next:hover, 
-.list_carousel .next:focus {
+.list_carousel #prev:hover, 
+.list_carousel #prev:focus {
     color: #430000 !important;
     text-decoration: none;
+}
+
+.list_carousel #next:hover, 
+.list_carousel #next:focus {
+    color: #430000 !important;
+    text-decoration: none;
+}
+
+p.newslink {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1.1;
 }

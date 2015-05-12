@@ -749,12 +749,13 @@ th {
     padding: 0 35px 0 0;
 }
 
+/* REAL ESTATE SECTION CSS */
+
 .realestate {
     background: none repeat scroll 0 0 #EAEAEA;
     padding: 10px 10px 10px 20px;
     min-height: 170px;
     width: 60%;
-    text-align: center;
     display: inline-block;
     margin: 10px 0 0 0;
 }
@@ -763,11 +764,6 @@ th {
         width: 100%;
 }}
 
-.realestate .column {
-    float: left;
-    width: 33%;
-}
-
 .realestate .button {
     position: relative;
 }
@@ -775,14 +771,19 @@ th {
 .realestate .button a {
     background: #990000;
     color: #fff;
-    width: 99%;
+    width: 33%;
     height: 65px;
+    text-align: left;
     display: inline-block;
     float: left;
-    margin: 0 0 2px 0;
+    margin: 0;
     padding: 20px 20px 20px 10px;
     font-size: 15px;
+    width: 33%;
+    border-left: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
     transition: background-color .2s ease-out 0s;
+    content: "\e685";
 }
 @media ( max-width: 1199px ) {
     .realestate .button a {

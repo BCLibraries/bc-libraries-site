@@ -2478,7 +2478,12 @@ body,
 
 .caroufredsel_wrapper {
     min-height: 265px;
-    width: 1120px !important;
+    width: 98% !important;
+}
+@media ( max-width: 1199px ) {
+    .caroufredsel_wrapper {
+        width: 95% !important;
+    }
 }
 
 .wrapper {
@@ -2494,6 +2499,14 @@ body,
     margin: 00px;
     width: 100%;
 }
+@media ( max-width: 1199px ) {
+    .list_carousel {
+       background: transparent;
+        margin: 0 auto;
+        width: 98%;
+    }
+}
+
 .list_carousel ul {
     margin: 0 0 0 -10px !important;
     padding: 0;
@@ -2509,12 +2522,18 @@ body,
     margin: 10px 5px 0;
     padding: 5px !important;
     text-align: center;
-    width: 220px;
+    width: 230px;
     overflow: hidden;
 }
-.list_carousel.responsive {
-    width: auto;
-    margin-left: 0;
+@media ( max-width: 768px ) {
+    .list_carousel li {
+        margin: 10px 2px 0;
+        padding: 5px !important;
+        text-align: center;
+        width: 185px;
+        overflow: hidden;
+}
+
 }
 .clearfix {
     float: none;
@@ -2536,44 +2555,49 @@ body,
 .list_carousel .prev {
     border-right: 1px solid #eaeaea;
     float: left;
-    position: relative;
-    z-index: 9;
-    -webkit-box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
-    -moz-box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
-    box-shadow: 11px 0px 23px -7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+    box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
 }
 
 .list_carousel .next {
     border-left: 1px solid #eaeaea;
     float: right;
-    position: relative;
-    z-index: 9;
-    -webkit-box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
-    -moz-box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
-    box-shadow: -11px 0px 23px -7px rgba(0,0,0,0.6);
-
+    -webkit-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+    box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
 }
 
 .newsbutton {
+    position: relative;
+    z-index: 9;
     color: #990000;
+    background: #fff;
     display: block;
     font-size: 25px;
     height: 265px;
     padding: 110px 0;
     text-align: center;
-    width: 25px;
+    width: 2%;
+}
+@media ( max-width: 1199px ) {
+    .newsbutton {
+        width: 5%;
+    }
 }
 
 .list_carousel #prev:hover, 
 .list_carousel #prev:focus {
     color: #430000 !important;
     text-decoration: none;
+    outline: 0 none;
 }
 
 .list_carousel #next:hover, 
 .list_carousel #next:focus {
     color: #430000 !important;
     text-decoration: none;
+    outline: 0 none;
 }
 
 p.newslink {

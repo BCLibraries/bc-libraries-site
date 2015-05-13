@@ -773,23 +773,24 @@ th {
     color: #fff;
     width: 33%;
     height: 65px;
-    text-align: left;
     display: inline-block;
     float: left;
     margin: 0;
-    padding: 20px 20px 20px 10px;
-    font-size: 15px;
     width: 33%;
+    font-size: 35px;
     border-left: 2px solid #eaeaea;
     border-bottom: 2px solid #eaeaea;
     transition: background-color .2s ease-out 0s;
-    content: "\e685";
+
 }
 @media ( max-width: 1199px ) {
     .realestate .button a {
-        font-size: 12px;
-        line-height: 17px;
-        padding: 20px 10px;
+        font-size: 25px;
+    }
+}
+@media ( max-width: 950px ) {
+    .realestate .button a {
+        width: 50%;
     }
 }
 
@@ -798,18 +799,227 @@ th {
     text-decoration: none;
 }
 
-.realestate .button a img {
-    float: left;
-    margin-right: 5px;
-    margin-top: -5px;
+.realestate .button a p {
+    text-align: left;
+    font-size: 15px;
+    padding: 20px 10px;
 }
-@media ( max-width: 1199px ) {
-    .realestate .button a img {
+
+
+/* REAL ESTATE ICON CSS */
+
+.icon_rss:before { /* RSS FEED ICON */
+    font-family: "icomoon";
+    content: "\e684";  
+    margin: 0 10px;
     float: left;
-    margin-right: 0px;
-    margin-top: -5px;
-    height: 30px;
-}}
+}
+
+.icon_video:before { /* VIDEO ICON */
+    font-family: "icomoon";
+    content: "\e630";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_picture:before { /* PHOTOGRAPH ICON */
+    font-family: "icomoon";
+    content: "\e62f";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_book:before { /* CLOSED BOOK ICON */
+    font-family: "icomoon";
+    content: "\e626";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_openbook:before { /* AN OPEN BOOK ICON */
+    font-family: "icomoon";
+    content: "\e649";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_document:before { /* DOCUMENT ICON */
+    font-family: "icomoon";
+    content: "\e635";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+    font-family: "icomoon";
+    content: "\e63c";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_file:before { /* FILE ICON */
+    font-family: "icomoon";
+    content: "\e60a";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_files:before { /* TWO FILES ICON */
+    font-family: "icomoon";
+    content: "\e636";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_map:before { /* MAP ICON */
+    font-family: "icomoon";
+    content: "\e60d";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_pie:before { /* PIECHART ICON */
+    font-family: "icomoon";
+    content: "\e610";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_plus:before { /* PLUS SIGN ICON */
+    font-family: "icomoon";
+    content: "\e669";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_bookmark:before { /* BOOKMARK ICON */
+    font-family: "icomoon";
+    content: "\e67b";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_newspaper:before { /* NEWSPAPER ICON */
+    font-family: "icomoon";
+    content: "\e600";  
+    margin: 0 10px;
+    float: left;
+}
+
+@media ( max-width: 1199px ) {
+    .icon_rss:before { /* RSS FEED ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_video:before { /* VIDEO ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_picture:before { /* PHOTOGRAPH ICON */
+       margin: 10px 5px;
+    }
+
+    .icon_book:before { /* CLOSED BOOK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_openbook:before { /* AN OPEN BOOK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_document:before { /* DOCUMENT ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+        margin: 10px 5px;
+    }
+
+    .icon_file:before { /* FILE ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_files:before { /* TWO FILES ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_map:before { /* MAP ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_pie:before { /* PIECHART ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_plus:before { /* PLUS SIGN ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_bookmark:before { /* BOOKMARK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_newspaper:before { /* NEWSPAPER ICON */
+        margin: 10px 5px;
+    }
+}
+@media ( max-width: 399px ) {
+    .icon_rss:before { /* RSS FEED ICON */
+        display: none;
+    }
+
+    .icon_video:before { /* VIDEO ICON */
+        display: none;
+    }
+
+    .icon_picture:before { /* PHOTOGRAPH ICON */
+       display: none;
+    }
+
+    .icon_book:before { /* CLOSED BOOK ICON */
+        display: none;
+    }
+
+    .icon_openbook:before { /* AN OPEN BOOK ICON */
+        display: none;
+    }
+
+    .icon_document:before { /* DOCUMENT ICON */
+        display: none;
+    }
+
+    .icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+        display: none;
+    }
+
+    .icon_file:before { /* FILE ICON */
+        display: none;
+    }
+
+    .icon_files:before { /* TWO FILES ICON */
+        display: none;
+    }
+
+    .icon_map:before { /* MAP ICON */
+        display: none;
+    }
+
+    .icon_pie:before { /* PIECHART ICON */
+        display: none;
+    }
+
+    .icon_plus:before { /* PLUS SIGN ICON */
+        display: none;
+    }
+
+    .icon_bookmark:before { /* BOOKMARK ICON */
+        display: none;
+    }
+
+    .icon_newspaper:before { /* NEWSPAPER ICON */
+        display: none;
+    }
+}
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
 

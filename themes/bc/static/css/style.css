@@ -84,7 +84,7 @@ a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
     font-weight: normal;
 }
 
-a:hover, a:active, .ui-widget-content a, .ui-widget-content a:active {
+a:hover, a:active, a:focus, .ui-widget-content a, .ui-widget-content a:active {
     color: #990000;
     text-decoration: underline;
 }
@@ -2689,11 +2689,11 @@ body,
 
 .caroufredsel_wrapper {
     min-height: 265px;
-    width: 98% !important;
+    width: 96% !important;
 }
 @media ( max-width: 1199px ) {
     .caroufredsel_wrapper {
-        width: 95% !important;
+        width: 90% !important;
     }
 }
 

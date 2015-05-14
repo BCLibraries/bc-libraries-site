@@ -5,9 +5,11 @@
 
 COLORS:
 MAROON: #990000
+DARK MAROON: #430000
 GOLD: #B29D6C
 BC GRAY: #444444
-
+BLUE: #05506d 
+LITE BLUE: #32758f
 
 */
 
@@ -108,7 +110,7 @@ i, italics {
 }
 
 h1 {
-    color: #444;
+    color: #05506d;
     font-size: 25px;
     font-weight: normal;
     margin: 0 0 10px;
@@ -117,7 +119,7 @@ h1 {
 }
 
 h2 {
-    color: #444;
+    color: #05506d;
     font-size: 20px;
     font-weight: normal;
     margin: 5px 0 10px 0;
@@ -126,7 +128,7 @@ h2 {
 }
 
 h3 {
-    color: #444;
+    color: #05506d;
     font-size: 18px;
     font-weight: normal;
     margin: 5px 0 10px 0;
@@ -135,7 +137,7 @@ h3 {
 }
 
 h4, h5, h6 {
-    color: #444;
+    color: #05506d;
     font-size: 16px;
     font-weight: normal;
     margin: 5px 0 10px !important;
@@ -769,7 +771,7 @@ th {
 }
 
 .realestate .button a {
-    background: #990000;
+    background: #05506d;
     color: #fff;
     width: 33%;
     height: 65px;
@@ -795,7 +797,7 @@ th {
 }
 
 .realestate .button a:hover {
-    background: #430000;
+    background: #32758f;
     text-decoration: none;
 }
 
@@ -1148,7 +1150,6 @@ th {
 }
 
 #footer h1 {
-    color: #444;
     font-size: 15px;
     font-weight: normal;
     margin: 0 0 10px;
@@ -1396,7 +1397,7 @@ th {
 /* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */       {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
-    color: #990000;
+    color: #05506d;
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
@@ -1819,26 +1820,26 @@ nav select {
 }
 @media ( max-width: 768px ) {
     #megamenu .navbar-nav > li > a {
-        background: #990000;
+        background: #05506d;
         border-bottom: 1px solid #FFFFFF;
         color: #fff;
     }
 }
 
 #megamenu .navbar-nav > li > a:focus {
-    background: #666 !important;
+    background: #05506d !important;
     color: #fff;
     outline: 0;
 }
 
 #megamenu .navbar-nav > li > a:hover {
-    background: #dadada !important;
-    color: #990000;
+    background: #05506d !important;
+    color: #fff;
     outline: 0;
 }
 
 #megamenu .navbar-nav > .open > a, #megamenu .navbar-nav > .open > a:hover {
-    background: #666 !important;
+    background: #05506d !important;
     color: #fff !important;
 }
 
@@ -1850,7 +1851,7 @@ nav select {
 }
 
 #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-    border-top: 3px solid #666;
+    border-top: 3px solid #05506d;
 }
 @media ( max-width: 1199px ) {
     #megamenu .navbar-nav > li > .dropdown-menu {

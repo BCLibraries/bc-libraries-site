@@ -5,9 +5,11 @@
 
 COLORS:
 MAROON: #990000
+DARK MAROON: #430000
 GOLD: #B29D6C
 BC GRAY: #444444
-
+BLUE: #05506d 
+LITE BLUE: #32758f
 
 */
 
@@ -84,7 +86,7 @@ a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
     font-weight: normal;
 }
 
-a:hover, a:active, .ui-widget-content a, .ui-widget-content a:active {
+a:hover, a:active, a:focus, .ui-widget-content a, .ui-widget-content a:active {
     color: #990000;
     text-decoration: underline;
 }
@@ -108,7 +110,7 @@ i, italics {
 }
 
 h1 {
-    color: #444;
+    color: #05506d;
     font-size: 25px;
     font-weight: normal;
     margin: 0 0 10px;
@@ -117,7 +119,7 @@ h1 {
 }
 
 h2 {
-    color: #444;
+    color: #05506d;
     font-size: 20px;
     font-weight: normal;
     margin: 5px 0 10px 0;
@@ -126,7 +128,7 @@ h2 {
 }
 
 h3 {
-    color: #444;
+    color: #05506d;
     font-size: 18px;
     font-weight: normal;
     margin: 5px 0 10px 0;
@@ -135,7 +137,7 @@ h3 {
 }
 
 h4, h5, h6 {
-    color: #444;
+    color: #05506d;
     font-size: 16px;
     font-weight: normal;
     margin: 5px 0 10px !important;
@@ -749,12 +751,13 @@ th {
     padding: 0 35px 0 0;
 }
 
+/* REAL ESTATE SECTION CSS */
+
 .realestate {
     background: none repeat scroll 0 0 #EAEAEA;
     padding: 10px 10px 10px 20px;
     min-height: 170px;
     width: 60%;
-    text-align: center;
     display: inline-block;
     margin: 10px 0 0 0;
 }
@@ -763,52 +766,262 @@ th {
         width: 100%;
 }}
 
-.realestate .column {
-    float: left;
-    width: 33%;
-}
-
 .realestate .button {
     position: relative;
 }
 
 .realestate .button a {
-    background: #990000;
+    background: #05506d;
     color: #fff;
-    width: 99%;
+    width: 33%;
     height: 65px;
     display: inline-block;
     float: left;
-    margin: 0 0 2px 0;
-    padding: 20px 20px 20px 10px;
-    font-size: 15px;
+    margin: 0;
+    width: 33%;
+    font-size: 35px;
+    border-left: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
     transition: background-color .2s ease-out 0s;
+
 }
 @media ( max-width: 1199px ) {
     .realestate .button a {
-        font-size: 12px;
-        line-height: 17px;
-        padding: 20px 10px;
+        font-size: 25px;
+    }
+}
+@media ( max-width: 950px ) {
+    .realestate .button a {
+        width: 50%;
     }
 }
 
 .realestate .button a:hover {
-    background: #430000;
+    background: #32758f;
     text-decoration: none;
 }
 
-.realestate .button a img {
-    float: left;
-    margin-right: 5px;
-    margin-top: -5px;
+.realestate .button a p {
+    text-align: left;
+    font-size: 15px;
+    padding: 20px 10px;
 }
-@media ( max-width: 1199px ) {
-    .realestate .button a img {
+
+
+/* REAL ESTATE ICON CSS */
+
+.icon_rss:before { /* RSS FEED ICON */
+    font-family: "icomoon";
+    content: "\e684";  
+    margin: 0 10px;
     float: left;
-    margin-right: 0px;
-    margin-top: -5px;
-    height: 30px;
-}}
+}
+
+.icon_video:before { /* VIDEO ICON */
+    font-family: "icomoon";
+    content: "\e630";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_picture:before { /* PHOTOGRAPH ICON */
+    font-family: "icomoon";
+    content: "\e62f";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_book:before { /* CLOSED BOOK ICON */
+    font-family: "icomoon";
+    content: "\e626";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_openbook:before { /* AN OPEN BOOK ICON */
+    font-family: "icomoon";
+    content: "\e649";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_document:before { /* DOCUMENT ICON */
+    font-family: "icomoon";
+    content: "\e635";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+    font-family: "icomoon";
+    content: "\e63c";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_file:before { /* FILE ICON */
+    font-family: "icomoon";
+    content: "\e60a";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_files:before { /* TWO FILES ICON */
+    font-family: "icomoon";
+    content: "\e636";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_map:before { /* MAP ICON */
+    font-family: "icomoon";
+    content: "\e60d";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_pie:before { /* PIECHART ICON */
+    font-family: "icomoon";
+    content: "\e610";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_plus:before { /* PLUS SIGN ICON */
+    font-family: "icomoon";
+    content: "\e669";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_bookmark:before { /* BOOKMARK ICON */
+    font-family: "icomoon";
+    content: "\e67b";  
+    margin: 0 10px;
+    float: left;
+}
+
+.icon_newspaper:before { /* NEWSPAPER ICON */
+    font-family: "icomoon";
+    content: "\e600";  
+    margin: 0 10px;
+    float: left;
+}
+
+@media ( max-width: 1199px ) {
+    .icon_rss:before { /* RSS FEED ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_video:before { /* VIDEO ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_picture:before { /* PHOTOGRAPH ICON */
+       margin: 10px 5px;
+    }
+
+    .icon_book:before { /* CLOSED BOOK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_openbook:before { /* AN OPEN BOOK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_document:before { /* DOCUMENT ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+        margin: 10px 5px;
+    }
+
+    .icon_file:before { /* FILE ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_files:before { /* TWO FILES ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_map:before { /* MAP ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_pie:before { /* PIECHART ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_plus:before { /* PLUS SIGN ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_bookmark:before { /* BOOKMARK ICON */
+        margin: 10px 5px;
+    }
+
+    .icon_newspaper:before { /* NEWSPAPER ICON */
+        margin: 10px 5px;
+    }
+}
+@media ( max-width: 399px ) {
+    .icon_rss:before { /* RSS FEED ICON */
+        display: none;
+    }
+
+    .icon_video:before { /* VIDEO ICON */
+        display: none;
+    }
+
+    .icon_picture:before { /* PHOTOGRAPH ICON */
+       display: none;
+    }
+
+    .icon_book:before { /* CLOSED BOOK ICON */
+        display: none;
+    }
+
+    .icon_openbook:before { /* AN OPEN BOOK ICON */
+        display: none;
+    }
+
+    .icon_document:before { /* DOCUMENT ICON */
+        display: none;
+    }
+
+    .icon_layers:before { /* LAYERED ICON, LOOKS LIKE A BLOCK OF LASAGNA */
+        display: none;
+    }
+
+    .icon_file:before { /* FILE ICON */
+        display: none;
+    }
+
+    .icon_files:before { /* TWO FILES ICON */
+        display: none;
+    }
+
+    .icon_map:before { /* MAP ICON */
+        display: none;
+    }
+
+    .icon_pie:before { /* PIECHART ICON */
+        display: none;
+    }
+
+    .icon_plus:before { /* PLUS SIGN ICON */
+        display: none;
+    }
+
+    .icon_bookmark:before { /* BOOKMARK ICON */
+        display: none;
+    }
+
+    .icon_newspaper:before { /* NEWSPAPER ICON */
+        display: none;
+    }
+}
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */
 
@@ -937,7 +1150,6 @@ th {
 }
 
 #footer h1 {
-    color: #444;
     font-size: 15px;
     font-weight: normal;
     margin: 0 0 10px;
@@ -1185,7 +1397,7 @@ th {
 /* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */       {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
-    color: #990000;
+    color: #05506d;
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
@@ -1608,26 +1820,26 @@ nav select {
 }
 @media ( max-width: 768px ) {
     #megamenu .navbar-nav > li > a {
-        background: #990000;
+        background: #05506d;
         border-bottom: 1px solid #FFFFFF;
         color: #fff;
     }
 }
 
 #megamenu .navbar-nav > li > a:focus {
-    background: #666 !important;
+    background: #05506d !important;
     color: #fff;
     outline: 0;
 }
 
 #megamenu .navbar-nav > li > a:hover {
-    background: #dadada !important;
-    color: #990000;
+    background: #05506d !important;
+    color: #fff;
     outline: 0;
 }
 
 #megamenu .navbar-nav > .open > a, #megamenu .navbar-nav > .open > a:hover {
-    background: #666 !important;
+    background: #05506d !important;
     color: #fff !important;
 }
 
@@ -1639,7 +1851,7 @@ nav select {
 }
 
 #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-    border-top: 3px solid #666;
+    border-top: 3px solid #05506d;
 }
 @media ( max-width: 1199px ) {
     #megamenu .navbar-nav > li > .dropdown-menu {
@@ -2462,4 +2674,146 @@ body,
 
 .chosen-container-single .chosen-single {
     border-radius: 0;
+}
+
+/* NEW CAROUSEL CSS */
+
+.newsrow {
+    min-height: 265px;
+    display: block;
+    position: relative;
+}
+
+#newsslider {
+    min-height: 50px;
+}
+
+.caroufredsel_wrapper {
+    min-height: 265px;
+    width: 96% !important;
+}
+@media ( max-width: 1199px ) {
+    .caroufredsel_wrapper {
+        width: 90% !important;
+    }
+}
+
+.wrapper {
+    background-color: white;
+    width: 480px;
+    margin: 40px auto;
+    padding: 50px;
+    box-shadow: 0 0 5px #999;
+}
+
+.list_carousel {
+    background: transparent;
+    margin: 00px;
+    width: 100%;
+}
+@media ( max-width: 1199px ) {
+    .list_carousel {
+       background: transparent;
+        margin: 0 auto;
+        width: 98%;
+    }
+}
+
+.list_carousel ul {
+    margin: 0 0 0 -10px !important;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.list_carousel li {
+    background: #eaeaea;
+    color: #999;
+    display: block;
+    float: left;
+    height: 245px;
+    margin: 10px 5px 0;
+    padding: 5px !important;
+    text-align: center;
+    width: 230px;
+    overflow: hidden;
+}
+@media ( max-width: 768px ) {
+    .list_carousel li {
+        margin: 10px 2px 0;
+        padding: 5px !important;
+        text-align: center;
+        width: 185px;
+        overflow: hidden;
+}
+
+}
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.list_carousel img {
+    border: 1px solid #666;
+    padding: 1px;
+    margin: 5px 0 0 0;
+    width: 150px;
+    height: 150px;
+}
+
+.list_carousel img:hover {
+    border: 1px solid #990000;
+}
+
+.list_carousel .prev {
+    border-right: 1px solid #eaeaea;
+    float: left;
+    -webkit-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+    box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+}
+
+.list_carousel .next {
+    border-left: 1px solid #eaeaea;
+    float: right;
+    -webkit-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+    box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+}
+
+.newsbutton {
+    position: relative;
+    z-index: 9;
+    color: #990000;
+    background: #fff;
+    display: block;
+    font-size: 25px;
+    height: 265px;
+    padding: 110px 0;
+    text-align: center;
+    width: 2%;
+}
+@media ( max-width: 1199px ) {
+    .newsbutton {
+        width: 5%;
+    }
+}
+
+.list_carousel #prev:hover, 
+.list_carousel #prev:focus {
+    color: #430000 !important;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+.list_carousel #next:hover, 
+.list_carousel #next:focus {
+    color: #430000 !important;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+p.newslink {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1.1;
 }

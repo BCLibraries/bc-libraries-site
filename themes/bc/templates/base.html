@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/theme/bcbento/css/app.css"/>
     <link rel="stylesheet" href="/theme/bcbento/css/local.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
+    <link rel="stylesheet" href="/theme/css/icomoon.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
@@ -25,7 +27,29 @@
     <script src="/theme/js/chosen.jquery.min.js?version=1.1.0"></script>
     <script src="/theme/js/modernizr.custom.js"></script>
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CAROUFREDSEL JS UNDER HERE -->
+    <script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
+<!-- fire plugin onDocumentReady -->
+        <script type="text/javascript" language="javascript">
+            $(function() {
+
+                //  Scrolled by user interaction
+                $('#newsslider').carouFredSel({
+                    auto: false,
+                    prev: '#prev',
+                    next: '#next',
+                    pagination: "#pager2",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    }
+                });
+
+            });
+        </script>
+<!-- END CAROUFREDSEL JS-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

@@ -109,114 +109,72 @@
 </div>
 <!-- END TOP ROW -->
 
-<!-- CAROUSEL -->
-<div class="row">
+<!-- SECOND ROW, NEWS ROW -->
+<div class="row newsrow">
+    
+<!-- THUMBNAILS ARE 150xp x 150p -->
 
-<!--IMAGES FOR CAROUSEL MUST BE AT LEAST 625x290px -->
+    <div class="list_carousel">
+        <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ul id="newsslider">
+                    
+                {% if articles %}
 
-    <h2 class="accessibility-text">News</h2>
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        {% for article in articles[:5] %}
-
-        {% if loop.index == 1 %}
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        {% else %}
-        <li data-target="#myCarousel" data-slide-to="{{ loop.index - 1 }}"></li>
-        {% endif %}
-
-        {% endfor %}
-    </ol>
-
-    <div class="carousel-inner">
-        {% if articles %}
-
-        {% for article in articles[:5] %}
-
-        {% if loop.index == 1 %}
-        <div class="item active">
-            {% else %}
-            <div class="item">
-                {% endif %}
+                {% for article in articles[:5] %}
+                 
+            <li>
                 <a href="{{ article.url }}">
-                    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}">
-                </a>
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
-
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            {% endif %}
-
-        </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
-                class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span
-                class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-    <!-- /.carousel -->
-
-    <div class="block_right">
-
-             <div class="twitterwidget">
-
-       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/bclibraries" data-widget-id="379769077352263680"
-       data-link-color="#990000" width="455" height="333"   data-chrome="noheader nofooter noborders transparent" >Tweets by @bclibraries</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-    </div>
+                <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+                
+                <p class="newslink">{{ article.title }}</p></a>
+            </li>
+                {% endfor %}
+                {% endif %}
+        </ul>
+     </div>
 
 </div>
 
 <!-- ROW THREE, THE THIRD ROW -->
 <div class="row">
 
-       <div class="realestate">
+        <!-- REAL ESTATE SECTION CONTAINS 6 BUTTONS THAT LINK TO PRIORITY LIBRARY SITES.
+        SWAP OUT <A> CLASS TO CHANGE ICONS. ICONS LISTED IN STYLE SHEET. SEARCH FOR "REAL ESTATE ICON CSS" -->
+        <div class="realestate">
 
-            <div class="column">
-                <div class="button"><a href="http://escholarship.bc.edu/"><img src="/theme/img/rightbutton_icon04.png" alt="icon">eScholarship@BC</a></div>
-                <div class="button"><a href="/digschol/"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Digital Scholarship</a></div>
-            </div>
-            <div class="column">
-                <div class="button"><a href="http://libguides.bc.edu/popcollection"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Popular Reading</a></div>
-                <div class="button"><a href="http://libguides.bc.edu/openaccess"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Open Access</a></div>
-            </div>
-            <div class="column">
-                <div class="button"><a href="http://dcollections.bc.edu/R/?func=search"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Digital Collections</a></div>
-                <div class="button"><a href="http://www.bc.edu/libraries/about/exhibits-new.html"><img src="/theme/img/rightbutton_icon04.png" alt="icon">Exhibits</a></div>
-            </div>
+                <div class="button"><a href="http://escholarship.bc.edu/" class="icon_document"><p>eScholarship@BC</p></a></div>
+                <div class="button"><a href="/digschol/" class="icon_book"><p>Digital Scholarship</p></a></div>
+                <div class="button"><a href="http://libguides.bc.edu/popcollection" class="icon_openbook"><p>Popular Reading</p></a></div>
+                <div class="button"><a href="http://libguides.bc.edu/openaccess" class="icon_file"><p>Open Access</p></a></div>
+                <div class="button"><a href="http://dcollections.bc.edu/R/?func=search" class="icon_files"><p>Digital Collections</p></a></div>
+                <div class="button"><a href="http://www.bc.edu/libraries/about/exhibits-new.html" class="icon_picture"><p>Exhibits</p></a></div>
 
        </div>
 
+       <!-- FACULTY PUBLICATION HIGHLIGHT CAN GO HERE -->
+        
         <div class="highlight">
+
+            <!-- TITLE OF HIGHLIGHT -->
             <h2><a href="http://www.bc.edu/sites/libraries/facpub/index.html">Faculty Publications</a></h2>
+            
+            <!-- HIGHLIGHT URL -->
             <a href="http://www.bc.edu/sites/libraries/facpub/bloom-minaret/">
                 <img src="/theme/img/cover.jpg" alt="The Minaret book cover">
                 <cite>The Minaret</cite>
             </a>
-            <div class="author"> Jonathan M. Bloom, Fine Arts</div>
+            <div class="author">Jonathan M. Bloom, Fine Arts</div>
             <p>A lavishly illustrated history of this iconic element of Islamic architecture</p>
        </div>
+
 </div>
 
 
 {% endblock %}
 
 {% block pagescripts %}
-    <script>
-        $(document).ready(function () {
-                    $('.carousel').carousel({
-                        interval: 20000
-                    });
-                }
-        );
-    </script>
+    
 <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
 {% endblock %}

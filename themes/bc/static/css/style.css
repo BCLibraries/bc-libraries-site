@@ -562,14 +562,14 @@ th {
 
 .blocks_left {
     width: 60%;
-    margin: 0 0 10px 0;
+    margin: 0;
     float: left;
 }
 
 .block_right {
     width: 40%;
     height: 100%;
-    margin: 0 0 5px 0;
+    margin: 0;
     float: right;
     border-left: 5px solid #FFFFFF;
     background: none repeat scroll 0 0 #eaeaea;
@@ -613,7 +613,6 @@ th {
     min-height: 103px;
     padding: 20px 7px 7px 7px;
     width: 60%;
-    margin-bottom: 5px;
 }
 @media ( max-width: 1199px ) {
     #block_databases {
@@ -694,6 +693,27 @@ th {
         float: left;
     }
 }
+
+.block_whatam {
+    width: 40%;
+    min-height: 110px;
+    margin: 0;
+    padding: 5px 10px;
+    float: right;
+    border-left: 5px solid #FFFFFF;
+    background: none repeat scroll 0 0 #eaeaea;
+}
+@media ( max-width: 768px ) {
+    .block_whatam  {
+        height: auto;
+        min-height: 50px;
+        width: 100%;
+        margin: 0;
+        border-left: 0px;
+        display: inline-block;
+    }
+}
+
 
 .twitterwidget {
     height: 350px;
@@ -2520,7 +2540,7 @@ body,
 /* BENTO BOX SEARCH RESULTS PAGE STYLE */
 
 #all-results {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 #all-results img {

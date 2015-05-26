@@ -70,7 +70,7 @@
 
     <!-- BRIEF EXPLANATION OF BENTO SEARCH BOX CAN GO HERE. -->
     <div class="block_whatam">
-        <p><strong>What am I Searching?</strong></p>
+        <p><strong>What am I Searching?</strong> <span class="questionball"></span></p>
         <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search tool.</a></p>
     </div>
 
@@ -83,24 +83,24 @@
             <!-- Secondary results box. -->
             <div id="secondary">
                 <div id="articles-results" class="result-container">
-                    <h3>Articles</h3>
+                    <h3 id="articleh3">Articles</h3>
                 </div>
             </div>
 
             <!-- The primary results box. -->
             <div id="primary">
                 <div id="catalog-results" class="result-container">
-                    <h3>Books & more</h3>
+                    <h3 id="booksh3">Books & more</h3>
                 </div>
             </div>
 
             <!-- Tertiary results box.-->
             <div id="tertiary">
                 <div id="librarians-results" class="result-container librarians">
-                    <h3>Librarians</h3>
+                    <h3 id="librarianh3">Librarians</h3>
                 </div>
                 <div id="guides-results" class="result-container guides">
-                    <h3>Subject guides</h3>
+                    <h3 id="subjecth3">Subject guides</h3>
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
 
         <div class="more-results-link">
             <a href="{{search_link}}">
-                see all {{total_results}} results…
+                see all {{total_results}} results
             </a>
         </div>
 
@@ -229,7 +229,7 @@
     <script id="articles-template" type="text/x-template">
         <div class="more-results-link">
             <a href="{{search_link}}">
-                see all {{total_results}} results…
+                see all {{total_results}} results
             </a>
         </div>
 

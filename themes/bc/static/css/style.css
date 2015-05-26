@@ -2554,12 +2554,40 @@ body,
     padding: 10px 7px;
     width: 50%;
     height: 30px;
-    border-bottom: 1px solid #939393;
+    /*border-bottom: 1px solid #939393;*/
 }
 
 #librarians-results h3, #guides-results h3 {
     width: 100%;
 }
+
+    /* SPECIFIC GUIDE H3 ICONS */
+
+#articleh3:before {
+    font-family: "icomoon";
+    content: "\e603";
+    margin: 0 5px 0 0; 
+}
+
+#booksh3:before {
+    font-family: "icomoon";
+    content: "\e643";
+    margin: 0 5px 0 0; 
+}
+
+#librarianh3:before {
+    font-family: "icomoon";
+    content: "\e627";
+    margin: 0 5px 0 0; 
+}
+
+#subjecth3:before {
+    font-family: "icomoon";
+    content: "\e638";
+    margin: 0 5px 0 0; 
+}
+
+/* RESULTS CSS */
 
 #all-results .result-container li .title, .result-container li a,
 #all-results .outside-result a, #all-results .more-results-link a {
@@ -2571,6 +2599,11 @@ body,
 #all-results .outside-result a:hover, #all-results .more-results-link a:hover {
     color: #990000;
     text-decoration: underline;
+}
+
+#all-results .more-results-link a:after {
+font-family: "icomoon";
+    content: "\e655";
 }
 
 #all-results .result-container {
@@ -2588,7 +2621,7 @@ body,
     margin-top: 0;
     padding: 9px 7px;
     height: 30px;
-    border-bottom: 1px solid #939393;
+    /*border-bottom: 1px solid #939393;*/
 }
 
 #all-results .result-container ul {
@@ -2695,6 +2728,26 @@ body,
 
 .chosen-container-single .chosen-single {
     border-radius: 0;
+}
+
+.questionball {
+    width: 20px;
+    height: 20px;
+    background: #32758f;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.questionball:after {
+        content: "?";
+}
+
+.questionball:hover {
+    background: #05506d;
 }
 
 /* NEW CAROUSEL CSS */

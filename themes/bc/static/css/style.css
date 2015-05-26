@@ -1570,6 +1570,7 @@ th {
     background: #B29D6C;
 }
 
+        /* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
 nav select {
     display: none;
 }

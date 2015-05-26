@@ -1812,14 +1812,6 @@ nav select {
     }
 }
 
-#megamenu .navbar-nav > li#accounts {
-    float: right;
-}
-@media ( max-width: 1199px ) {
-    #megamenu .navbar-nav > li#accounts {
-    float: none;
-}}
-
 #megamenu .navbar-nav > li > a {
     color: #990000;
     font-weight: bold;

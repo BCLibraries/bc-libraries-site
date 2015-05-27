@@ -44,21 +44,6 @@ body {
     z-index: 999;
 }
 
-#bcfooter {
-    height: 45px;
-    display: none;
-    width: 100%;
-    background: #790009;
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid #B29D6C;
-}
-
-#bcfooter img {
-    padding: 0;
-    margin: 0 0 0 50px;
-}
-
 #beta-ribbon {
     font-size: 1.15em;
     position: absolute;
@@ -714,12 +699,6 @@ th {
     }
 }
 
-
-.twitterwidget {
-    height: 350px;
-    padding: 10px 20px 50px 15px;
-}
-
 .highlight {
     padding: 10px;
     min-height: 180px;
@@ -1243,86 +1222,61 @@ th {
     line-height: 1;
 }
 
-/* SOCIAL MEDIA ICONS */
+/* SOCIAL MEDIA CSS */
 
-#f_media {
-    margin: 0 0 15px 0;
-    padding: 0;
-    text-align: center;
+#socialmedia {
+    margin: 10px 0;
 }
 
-#f_media ul {
-    margin: 0 0px 0 0;
-    padding: 0 0 0 0;
-    display: inline;
-}
-
-#f_media ul li {
+#socialmedia ul li {
     display: inline-block;
-    list-style: none;
-    margin: 0 0px 0 0;
-    padding: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0px 3px;
+}
+#socialmedia ul li:first-child {
+    padding: 0 3px 0 0;
 }
 
-#icon_blogs {
-    background: url("/theme/img/icon_blogs.png") no-repeat -10px 0px;
-    text-indent: -9999px;
+.mediablock {
+    font-family: 'icomoon';
     height: 40px;
     width: 40px;
     display: block;
+    background: #32758f;
+    text-align: center;
+    padding: 6px 0;
+    color: #fff !important;
+    font-size: 20px;
+    float: left;
+    border-bottom: 3px solid #05506d;
 }
 
-#icon_blogs:hover {
-    background: url("/theme/img/icon_blogs.png") no-repeat -10px -40px;
+.mediablock:hover {
+    background: #05506d; 
+    text-decoration: none; 
+    border-bottom: 2px solid #04394e; 
 }
 
-#icon_facebook {
-    background: url("/theme/img/icon_facebook.png") no-repeat -10px 0px;
-    text-indent: -9999px;
-    height: 40px;
-    width: 40px;
-    display: block;
-}
+#media_news:after {
+    content: "\e684";
+}   
 
-#icon_facebook:hover {
-    background: url("/theme/img/icon_facebook.png") no-repeat -10px -40px;
-}
+#media_facebook:after {
+    content: "\e63f";
+}   
 
-#icon_flickr {
-    background: url("/theme/img/icon_flickr.png") no-repeat -10px 0px;
-    text-indent: -9999px;
-    height: 40px;
-    width: 40px;
-    display: block;
-}
+#media_flickr:after {
+    content: "\e641";
+}   
 
-#icon_flickr:hover {
-    background: url("/theme/img/icon_flickr.png") no-repeat -10px -40px;
-}
+#media_twitter:after {
+    content: "\e640";
+}   
 
-#icon_twitter {
-    background: url("/theme/img/icon_twitter.png") no-repeat -10px 0px;
-    text-indent: -9999px;
-    height: 40px;
-    width: 40px;
-    display: block;
-}
-
-#icon_twitter:hover {
-    background: url("/theme/img/icon_twitter.png") no-repeat -10px -40px;
-}
-
-#icon_youtube {
-    background: url("/theme/img/icon_youtube.png") no-repeat -10px 0px;
-    text-indent: -9999px;
-    height: 40px;
-    width: 40px;
-    display: block;
-}
-
-#icon_youtube:hover {
-    background: url("/theme/img/icon_youtube.png") no-repeat -10px -40px;
-}
+#media_youtube:after {
+    content: "\e645";
+}   
 
 /*OVERWRITING LIBGUIDES 2.0 */
 

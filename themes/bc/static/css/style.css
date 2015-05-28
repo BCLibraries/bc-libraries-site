@@ -19,7 +19,7 @@ body {
     color: #666;
     font-size: 14px;
     padding: 0;
-    line-height: 1.4;
+    line-height: 1.75;
 }
 
 /* TEMPORARY CSS TO CREATE BC MANDATED HEADER/FOOTER */
@@ -508,7 +508,6 @@ th {
     padding: 0;
     width: 1170px;
     display: inline-block;
-    line-height: 1.75;
 }
 
 @media ( max-width: 1199px ) {
@@ -580,6 +579,7 @@ th {
     margin: 0;
     padding: 19px 10px 10px 10px;
     width: 60%;
+    border-bottom: 5px solid #fff;
 }
 
 @media ( max-width: 768px ) {
@@ -595,7 +595,7 @@ th {
 #block_databases {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
-    min-height: 103px;
+    min-height: 100px;
     padding: 20px 7px 7px 7px;
     width: 60%;
 }
@@ -627,7 +627,7 @@ th {
     font-size: 15px;
     width: 100%;
     float: left;
-    min-height: 219px;
+    min-height: 210px;
 }
 @media ( max-width: 1199px ) {
     #block_quick_links {
@@ -700,7 +700,7 @@ th {
 }
 
 .highlight {
-    padding: 10px;
+    padding: 0px 10px;
     min-height: 180px;
     width: 40%;
     float: right;
@@ -711,6 +711,10 @@ th {
     .highlight {
         width: 100%;
 }}
+
+.highlight h2 {
+    margin: 0 0 10px 0;
+}
 
 .highlight img {
     float: left;
@@ -754,11 +758,11 @@ th {
 
 .realestate {
     background: none repeat scroll 0 0 #EAEAEA;
-    padding: 10px 10px 10px 20px;
+    padding: 20px 10px 10px 10px;
     min-height: 170px;
     width: 60%;
     display: inline-block;
-    margin: 10px 0 0 0;
+    margin: 0;
 }
 @media ( max-width: 768px ) {
     .realestate {
@@ -776,11 +780,10 @@ th {
     height: 65px;
     display: inline-block;
     float: left;
-    margin: 0;
+    margin: 0 0 2px 2px;
     width: 33%;
     font-size: 35px;
-    border-left: 2px solid #eaeaea;
-    border-bottom: 2px solid #eaeaea;
+    border-bottom: 4px solid #04394e;
     transition: background-color .2s ease-out 0s;
 
 }
@@ -798,6 +801,7 @@ th {
 .realestate .button a:hover {
     background: #32758f;
     text-decoration: none;
+    border-bottom: 2px solid #05506d;
 }
 
 .realestate .button a p {
@@ -1115,7 +1119,8 @@ th {
     border-right: #710000;
     border-radius: 0 0 0 0;
     border-style: none solid;
-    border-width: 0 3px;
+    border-bottom: 3px solid #510000;
+    border-width: 3px 0px;
     height: 34px;
     margin-left: 0;
     width: 100%;
@@ -1123,8 +1128,8 @@ th {
 
 #block_search .input-group-btn > .btn:hover {
     background: #710000;
-    border-left: 3px solid #990000;
-    border-right: 3px solid #510000;
+    border-left: 0px solid #990000;
+    border-right: 0px solid #510000;
 }
 
 #block_search .glyphicon {
@@ -2756,6 +2761,7 @@ font-family: "icomoon";
     text-align: center;
     width: 230px;
     overflow: hidden;
+    border-bottom: 3px solid #dadada;
 }
 @media ( max-width: 768px ) {
     .list_carousel li {

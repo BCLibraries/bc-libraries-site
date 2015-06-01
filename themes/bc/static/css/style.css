@@ -790,11 +790,7 @@ th {
 @media ( max-width: 1199px ) {
     .realestate .button a {
         font-size: 25px;
-    }
-}
-@media ( max-width: 950px ) {
-    .realestate .button a {
-        width: 50%;
+        width: 49%;
     }
 }
 

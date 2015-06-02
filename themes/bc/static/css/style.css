@@ -11,6 +11,14 @@ BC GRAY: #444444
 BLUE: #05506d 
 LITE BLUE: #32758f
 
+MAIN MEDIA QUERY SIZES:;
+
+@media ( max-width: 1199px ) {
+}
+
+@media ( max-width: 768px ) { 
+}
+
 */
 
 body {
@@ -804,6 +812,11 @@ th {
     text-align: left;
     font-size: 15px;
     padding: 20px 10px;
+}
+@media ( max-width: 768px ) { 
+    .realestate .button a p {
+        text-align: center;
+    }
 }
 
 

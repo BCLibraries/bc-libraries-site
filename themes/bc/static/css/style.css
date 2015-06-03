@@ -1105,8 +1105,16 @@ th {
     background: #939393;
     border: 0;
     padding: 5px;
-    width: 100%;
+    width: 680px;
     border-bottom: 2px solid #B5B5B5;
+}
+
+@media ( max-width: 1199px ) {
+   #block_search .input-group {
+       width: 100%;
+}}
+
+@media ( max-width: 768px ) {
 }
 
 #block_search .input-group .form-control {
@@ -1124,6 +1132,10 @@ th {
     border-bottom: 2px solid #B5B5B5;
 }
 
+#block_search .input-group-addon, .input-group-btn {
+    width: 70px;
+}
+
 #block_search .input-group-btn > .btn {
     background: none repeat scroll 0 0 #990000;
     border-left: #C50000;
@@ -1134,7 +1146,27 @@ th {
     border-width: 3px 0px;
     height: 34px;
     margin-left: 0;
-    width: 100%;
+    width: 70px;
+}
+
+@media ( max-width: 1199px ) {
+    #block_search .input-group-addon, .input-group-btn {
+     width: 1%;
+}
+    #block_search .input-group-btn > .btn {
+        background: none repeat scroll 0 0 #990000;
+        border-left: #C50000;
+        border-right: #710000;
+        border-radius: 0 0 0 0;
+        border-style: none solid;
+        border-bottom: 3px solid #510000;
+        border-width: 3px 0px;
+        height: 34px;
+        margin-left: 0;
+        width: 100%;
+}}
+
+@media ( max-width: 768px ) {
 }
 
 #block_search .input-group-btn > .btn:hover {
@@ -1146,6 +1178,8 @@ th {
 #block_search .glyphicon {
     color: #fff;
 }
+
+
 
 /* FOOTER */
 
@@ -1731,11 +1765,12 @@ nav select {
     float: right;
     margin: 0;
     text-align: center;
-    width: 56%;
+    max-width: 56%;
     background: #fff;
 }
 @media ( max-width: 1199px ) {
     #megamenu .navbar-nav {
+        max-width: 100%;
         width: 100%;
 }}
 @media ( max-width: 768px ) {

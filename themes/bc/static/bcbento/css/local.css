@@ -1,3 +1,11 @@
+/*
+@media ( max-width: 1199px ) {
+}
+
+@media ( max-width: 768px ) {
+}
+*/
+
 /** Layout **/
 
 #all-results {
@@ -171,23 +179,47 @@
     background-color: #430000;
 }
 
+input#typeahead {
+    line-height: 20px;
+}
+
 .typeahead-type {
     color: #ddd;
 }
 
 .twitter-typeahead {
     float: left;
-    width: 90%;
+    width: 600px;
 }
 
 #block_search input[type=text] {
-    width: 90%;
+    width: 600px;
     height: 33px;
     float: left
 }
 
 #block_search input[type=text]#typeahead {
-    width: 100%;
+    width: 610px;
+}
+
+@media ( max-width: 1199px ) {
+    .twitter-typeahead {
+        float: left;
+        width: 90%;
+}
+    #block_search input[type=text] {
+        width: 100%;
+        height: 33px;
+        float: left
+}
+    #block_search input[type=text]#typeahead {
+        width: 100%;
+}}
+
+@media ( max-width: 768px ) {
+     .twitter-typeahead {
+        float: none;
+        width: 100%;
 }
 
 /* End typeahead */

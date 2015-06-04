@@ -1180,13 +1180,13 @@ th {
 }
 
 
-
 /* FOOTER */
 
-#footer {
+ {
     background: #fff;
     width: 1200px;
     min-height: 285px;
+    overflow: auto;
     padding: 10px 20px 0 20px;
     margin: 0 auto;
     color: #666;
@@ -1195,8 +1195,11 @@ th {
     #footer {
         width: 100%;
         padding: 0px;
-        overflow: auto;
     }
+}
+
+.libhomepage #footer {
+    padding: 0 20px;
 }
 
 #footer h1 {
@@ -1336,6 +1339,13 @@ th {
     margin: 20px;
 }
 
+#s-lg-guide-header-meta {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0;
+    border-top: 1px solid #dadada;
+}
+
 #s-lg-add-page-icon
 /*I GUESS THIS IS TOO, NOT SURE*/       {
     margin: 0px;
@@ -1390,8 +1400,8 @@ th {
 
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
-.row
-/*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	      {
+.row /*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */	      
+{
     margin: 0;
 }
 

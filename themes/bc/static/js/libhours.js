@@ -6,9 +6,10 @@ $(document).ready(function(){
                 "BapstArtLibrary",
                 "BurnsLibrary",
                 "EducationalResourceCenter",
-                "TheologyandMinistryLibrary",
+                "LawLibrary",
                 "SocialWorkLibrary",
-                "LawLibrary"];
+                "TheologyandMinistryLibrary"
+                ];
 
     // grab each library's data from the output and place it where it needs to go
     function setHours(data){

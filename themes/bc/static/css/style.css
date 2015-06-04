@@ -138,6 +138,15 @@ h4, h5, h6 {
     text-transform: none;
 }
 
+hr {
+    border-color: #DADADA;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+ ;
+}
+
 ul, ol {
     margin: 0 0 10px 0;
     padding: 0 0 0 30px;
@@ -505,7 +514,7 @@ th {
     border-image: none;
     border-right: 0 none;
     border-style: solid none none;
-    border-width: 1px 0 0;
+    border-width: 2px 0 0;
     margin-bottom: 15px;
     margin-top: 0px;
 }
@@ -1343,7 +1352,10 @@ th {
     width: 1200px;
     padding: 0 15px;
     margin: 0;
-    border-top: 1px solid #dadada;
+}
+
+#s-lg-guide-header-meta hr {
+    margin: 5px 0;
 }
 
 #s-lg-add-page-icon

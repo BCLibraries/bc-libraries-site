@@ -1182,7 +1182,7 @@ th {
 
 /* FOOTER */
 
- {
+#footer {
     background: #fff;
     width: 1200px;
     min-height: 285px;

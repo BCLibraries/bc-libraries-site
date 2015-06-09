@@ -369,9 +369,10 @@ th {
 
 .sb-icon-search {
     color: #fff;
-    background: #B29D6C url("/theme/img/librarysearch.png") no-repeat 0 0;
+    background: #B29D6C;
+    border-bottom: 4px solid #9a885d;
     z-index: 90;
-    font-size: 22px;
+    font-size: 18px;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -381,7 +382,13 @@ th {
 }
 
 .sb-icon-search:before {
-    /*content: "";*/
+    content: "\e653";
+    display: inline-block;
+    font-family: 'icomoon';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -5px;
 }
 
 /* Open state */
@@ -392,8 +399,7 @@ th {
 
 .sb-search.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
-    background: #B29D6C url("/theme/img/librarysearch_hover.png") no-repeat 0 0;
-    color: #fff;
+    color: #990000;
     z-index: 11;
 }
 
@@ -2458,10 +2464,8 @@ nav select {
     background: none repeat scroll 0 0 #990000;
     border-left: transparent;
     border-right: transparent;
-    border-bottom: #510000;
+    border-bottom: 3px solid #510000;
     border-radius: 0 0 0 0;
-    border-style: none solid;
-    border-width: 0 0 3px 0;
     height: 34px;
     margin-left: 0;
     width: 100%;
@@ -2923,6 +2927,7 @@ font-family: "icomoon";
     min-height: 265px;
     display: block;
     position: relative;
+    margin: 10px 0 0;
 }
 
 #newsslider {

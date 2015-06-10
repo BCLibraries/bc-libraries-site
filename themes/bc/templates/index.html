@@ -121,16 +121,14 @@
         <ul id="newsslider">
                     
                 {% if articles %}
-
-                {% for article in articles[:5] %}
-                 
-            <li>
-                <a href="{{ article.url }}">
+                {% for article in articles[:6] if article.destination %}
+                           <li>
+                <a href="{{ article.destination }}">
                 <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
                 
                 <p class="newslink">{{ article.title }}</p></a>
             </li>
-                {% endfor %}
+                              {% endfor %}
                 {% endif %}
         </ul>
      </div>
@@ -153,20 +151,28 @@
 
        </div>
 
-       <!-- FACULTY PUBLICATION HIGHLIGHT CAN GO HERE -->
-        
-        <div class="highlight">
+       <!-- LIBRARY ANNOUNCEMENTS CAN GO HERE -->
 
-            <!-- TITLE OF HIGHLIGHT -->
-            <h2><a href="http://www.bc.edu/sites/libraries/facpub/index.html">Faculty Publications</a></h2>
-            
-            <!-- HIGHLIGHT URL -->
-            <a href="http://www.bc.edu/sites/libraries/facpub/bloom-minaret/">
-                <img src="/theme/img/cover.jpg" alt="The Minaret book cover">
-                <cite>The Minaret</cite>
-            </a>
-            <div class="author">Jonathan M. Bloom, Fine Arts</div>
-            <p>A lavishly illustrated history of this iconic element of Islamic architecture</p>
+       <!-- NEEDS MAJOR CLEAN UP -->
+        
+        <div class="announcements">
+        <h2>Library Announcements</h2>
+                  
+                 {% if articles %}   
+                {% for article in articles[:2] if not article.destination %}
+              
+                <div>
+                <a href="{{ article.url }}">
+                               
+                <p>{{ article.title }}</p></a>
+
+                <p>{{ article.summary }}</p>
+                </div>
+             
+                {% endfor %}
+   {% endif %}
+        
+
        </div>
 
 </div>

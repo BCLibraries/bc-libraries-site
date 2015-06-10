@@ -1,4 +1,5 @@
-Title: Summer BC Library Newsletter
+Title: Read the Summer BC Library Newsletter
+Destination: http://www.bc.edu/libraries/newsletter/2015summer/
 Date: 2015-05-13 10:20 
 Tags: news, tags 
 Slug: summer-bc-newsletter

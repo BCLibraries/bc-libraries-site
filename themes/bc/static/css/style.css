@@ -724,7 +724,7 @@ th {
     }
 }
 
-.highlight {
+.announcements {
     padding: 0px 10px;
     min-height: 180px;
     width: 40%;
@@ -733,50 +733,12 @@ th {
     border-left: 5px solid #fff;
 }
 @media ( max-width: 768px ) {
-    .highlight {
+    .announcements {
         width: 100%;
 }}
 
-.highlight h2 {
+.announcements h2 {
     margin: 0 0 10px 0;
-}
-
-.highlight img {
-    float: left;
-    height: 120px;
-    border: 1px solid #666;
-    padding: 2px;
-    margin: 0 10px 0 0;
-}
-@media ( max-width: 1199px ) {
-    .highlight img {
-        height: 100px;
-    }
-}
-
-.highlight cite {
-    display: block;
-}
-
-.highlight cite, .highlight cite a, .highlight cite a:visited {
-    font-style: italic;
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-.highlight .author {
-    line-height: 1.4;
-    margin-bottom: 1em;
-}
-
-.highlight p {
-    line-height: 1.4;
-    color: #333;
-}
-
-.find {
-    background: url("/theme/img/pane_offsite.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0) !important;
-    padding: 0 35px 0 0;
 }
 
 /* REAL ESTATE SECTION CSS */
@@ -3071,16 +3033,22 @@ p.newslink {
     margin: 25px 0;
 }
 
+.article_meta {
+    width: 35%;
+    float: left;
+    border: 1px solid red;
+}
+
 .article_page img {
     border: 1px solid #666;
     margin: 0 10px 10px 0;
     padding: 1px;
-    float: left;
 }
 
 .article_content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+        border: 1px solid blue;
 }
 @media ( max-width: 1199px ) {
     .article_content {

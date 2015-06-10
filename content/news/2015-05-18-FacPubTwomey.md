@@ -1,4 +1,5 @@
 Title: Faculty Publication Highlight: Professor Twomey 
+Destination: http://www.bc.edu/sites/libraries/facpub/twomey-publishing
 Date: 2015-05-18 01:00 
 Tags: faculty publication highlight, news 
 Slug: facpub-twomey 

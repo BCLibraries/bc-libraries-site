@@ -7,15 +7,17 @@
 <h3>{{ article.title }}</h3>
 
 	<div class="article_meta">
-	{{ article.date }}
+	{{ article.date|strftime('%B %d, %Y') }}
+    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}" >
 	</div>
 
 	<div class="article_content">
-
- 		<img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}" >
-
         <div>{{ article.content }}</div>
     </div>
+
+
+    {{ articles_previous_page }}
+
 </div>
 
 {% endblock %}

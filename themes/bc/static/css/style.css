@@ -1317,13 +1317,21 @@ th {
 }
 
 #s-lg-guide-header-meta {
-    width: 1200px;
-    padding: 0 15px;
+    width: auto;
+    padding: 0 20px;
     margin: 0;
 }
 
 #s-lg-guide-header-meta hr {
     margin: 5px 0;
+}
+
+#s-lg-guide-header-meta #s-lg-guide-header-attributes {
+    padding: 0 0 0 25px;
+}
+
+#s-lib-footer-login-link {
+    float: right;
 }
 
 #s-lg-add-page-icon

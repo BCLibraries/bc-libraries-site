@@ -1316,6 +1316,10 @@ th {
     margin: 20px;
 }
 
+#s-lg-public-skiplink /*DUE TO LINE HEIGHT CHANGES, SPRINGSHARE'S SKIPLINK SECTION WAS BLEEDING INTO OUR HEADER */ {
+    top: -55px;
+}
+
 .s-lib-profile-email .label-info {
     background: #05506d;
     border-bottom: 4px solid #04394e;   
@@ -2171,6 +2175,7 @@ nav select {
 .item_pane img {
     float: left;
     margin-right: 10px;
+    padding: 0 0 75px 0;
 }
 
 @media ( max-width: 768px ) {
@@ -2204,7 +2209,7 @@ nav select {
 }
 
 @media ( max-width: 768px ) {
-    #faq_pane, #text_pane, #chat_pane, #email_pane, #call_pane {
+    #ref_pane, #faq_pane, #text_pane, #chat_pane, #email_pane, #call_pane {
         display: inline-block !important;
         width: 100%;
         margin: 5px 0;

@@ -1316,6 +1316,41 @@ th {
     margin: 20px;
 }
 
+.s-lib-profile-email .label-info {
+    background: #05506d;
+    border-bottom: 4px solid #04394e;   
+}
+
+.label-info[href]:focus, .label-info[href]:hover {
+    background-color: #32758f;
+    border-bottom: 2px solid #05506d;
+}
+
+.s-lib-profile-email .label {
+    border-radius: 0;
+    color: #fff;
+    display: inline;
+    font-size: 14px !important;
+    font-weight: normal;
+    line-height: 1;
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.s-lib-profile-image img {
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    box-shadow: 3px 3px 4px #aaa;
+    max-width: 95%;
+    padding: 4px;
+}
+@media ( max-width: 768px ) {
+    .s-lib-profile-image img {
+        max-width: 300px;
+}}
+
 #s-lg-guide-header-meta {
     width: auto;
     padding: 0 20px;

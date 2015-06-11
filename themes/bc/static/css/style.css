@@ -1333,6 +1333,10 @@ th {
 #s-lib-footer-login-link {
     float: right;
 }
+@media ( max-width: 768px ) {
+    #s-lib-footer-login-link {
+    float: none;
+}}
 
 #s-lg-add-page-icon
 /*I GUESS THIS IS TOO, NOT SURE*/       {

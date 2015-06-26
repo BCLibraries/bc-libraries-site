@@ -3126,3 +3126,57 @@ p.newslink {
     width: 100%;
     }
 }
+
+
+/* CUSTOM LIBGUIDES PAGE CSS */
+
+/* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
+
+.s-lib-box-content {padding: 0 0 inherit 0;}
+.view-mode #s-lg-guide-tabs {display:none;}
+.view-mode #content {width:100%;}
+.view-mode #s-lg-guide-tabs {display:none;}
+.view-mode #guidetitle h2, 
+.view-mode #guidetitle .colon {display:none;}
+.view-mode .s-lib-box-title {display:none;}
+#s-lg-content-12755569 img {height:auto!important;}
+#s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
+.column-container { width:100%; background-color:#eee;}
+.column-container-inner {padding:20px 10px 20px 20px}
+.column-container .column {padding:0; background-color:#eee;}
+.column .inner {min-height:172px; padding:0 10px 10px 0;}
+.column .column-content {padding:0px; min-height: inherit; margin-bottom:0px;}
+.column .inner.first {}
+.column .inner.last {}
+.inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
+.inner .image {position: relative; width: 100%; /* for IE 6 */}
+.image img {height:auto!important;}
+.inner h2 { 
+   position: absolute; 
+   top: 150px; 
+   left: 0; 
+   width: 100%; 
+}
+.inner .image h2 span { 
+   color: white; 
+   font: bold 24px/45px Arial, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+.inner .image p span { 
+   color: white; 
+   font: bold 24px/45px Arial, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+#s-lg-box-wrapper-7568497,
+#s-lg-box-wrapper-7613059 {margin-bottom:20px;}
+.s-lib-box-content {padding-bottom:0px;}
+.searchbox-container {height:70px;}
+.searchbox-container .sb-search {right:0px;}
+.searchbox-container input.sb-search-input {width:100%;}

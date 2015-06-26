@@ -3144,13 +3144,14 @@ p.newslink {
 .inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
 .inner .image {position: relative; width: 100%; /* for IE 6 */}
 .image img {height:auto!important;}
-.inner h2 { 
+
+.inner h2, .inner p { 
    position: absolute; 
    top: 150px; 
    left: 0; 
    width: 100%; 
 }
-.inner .image h2 span { 
+.inner .image h2 span, .inner .image p span { 
    color: white; 
    font: bold 24px/45px Arial, Sans-Serif; 
    letter-spacing: -1px;  
@@ -3158,15 +3159,6 @@ p.newslink {
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
 }
-.inner .image p span { 
-   color: white; 
-   font: bold 24px/45px Arial, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
-}
-
 #s-lg-box-wrapper-7568497,
 #s-lg-box-wrapper-7613059 {margin-bottom:20px;}
 .s-lib-box-content {padding-bottom:0px;}

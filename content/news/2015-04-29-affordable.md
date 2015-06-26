@@ -1,5 +1,5 @@
 Title: Affordable Course Materials Deadline
-Destination: https://libguides.bc.edu/affordable 
+Destination: http://libguides.bc.edu/affordable 
 Date: 2015-04-29 01:01 
 Tags: news 
 Slug: affordable-course-materials

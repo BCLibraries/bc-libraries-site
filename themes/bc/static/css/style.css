@@ -3132,13 +3132,6 @@ p.newslink {
 
 /* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
 
-.s-lib-box-content {padding: 0 0 inherit 0;}
-.view-mode #s-lg-guide-tabs {display:none;}
-.view-mode #content {width:100%;}
-.view-mode #s-lg-guide-tabs {display:none;}
-.view-mode #guidetitle h2, 
-.view-mode #guidetitle .colon {display:none;}
-.view-mode .s-lib-box-title {display:none;}
 #s-lg-content-12755569 img {height:auto!important;}
 #s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
 .column-container { width:100%; background-color:#eee;}

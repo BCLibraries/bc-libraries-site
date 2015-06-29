@@ -2279,6 +2279,7 @@ nav select {
 .pane_pic img {
     border: 2px solid #990000;
     width: 100%;
+    padding: 0;
 }
 
 .pane_info {

@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% if article.category == "news" %}
 
 <div class="article_page">
+
 
 <h3>{{ article.title }}</h3>
 
@@ -19,5 +21,12 @@
     {{ articles_previous_page }}
 
 </div>
+{% endif %}
+
+{% if article.category == "rabbits" %}
+{% endif %}
+
+{% if article.category == "other-rodents" %}
+{% endif %}
 
 {% endblock %}

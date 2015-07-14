@@ -21,8 +21,10 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-ARTICLE_URL = 'news/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'news/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+USE_FOLDER_AS_CATEGORY = True
+
+ARTICLE_URL = '{category}/{date:%Y}/{date:%b}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{date:%Y}/{date:%b}/{slug}/index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'

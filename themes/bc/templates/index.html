@@ -121,7 +121,7 @@
         <ul id="newsslider">
                     
                 {% if articles %}
-                {% for article in articles[:6] if article.destination %}
+                {% for article in articles[:8] if article.destination %}
                            <li>
                 <a href="{{ article.destination }}">
                 <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
@@ -154,26 +154,33 @@
        <!-- LIBRARY ANNOUNCEMENTS CAN GO HERE -->
 
        <!-- NEEDS MAJOR CLEAN UP -->
-        
-        <div class="announcements">
+
+    <div class="announcements">
         <h2>Library Announcements</h2>
-                  
-                 {% if articles %}   
-                {% for article in articles[:2] if not article.destination %}
-              
+
+
+        {% set count = 0 %}
+
+        {% for article in articles[:15] if article.announcement %}
+
+            {% set count = count + 1 %}
+
+            {% if count < 3 %}
+
                 <div>
-                <a href="{{ article.url }}">
-                               
-                <p>{{ article.title }}</p></a>
+                    <a href="{{ article.url }}">
 
-                <p>{{ article.summary }}</p>
+                        <p>{{ article.title }}</p></a>
+
+                    <p>{{ article.summary }}</p>
                 </div>
-             
-                {% endfor %}
-   {% endif %}
-        
 
-       </div>
+            {% endif %}
+
+        {% endfor %}
+
+
+    </div>
 
 </div>
 

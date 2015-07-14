@@ -3186,3 +3186,10 @@ p.newslink {
 .searchbox-container {height:70px;}
 .searchbox-container .sb-search {right:0px;}
 .searchbox-container input.sb-search-input {width:100%;}
+
+
+/* FACULTY PUBLICATION HIGHLIGHTS STYLES */ 
+
+.facpub #content {
+    width: 100%;
+}

@@ -741,6 +741,19 @@ th {
     margin: 0 0 10px 0;
 }
 
+a.announcelink {
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.announcements p {
+    line-height: 1.2;
+}
+
+.announcements div {
+    margin: 0 0 10px 0;
+}
+
 /* REAL ESTATE SECTION CSS */
 
 .realestate {

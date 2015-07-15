@@ -120,16 +120,20 @@
 
         <ul id="newsslider">
                     
-                {% if articles %}
-                {% for article in articles[:8] if article.destination %}
-                           <li>
-                <a href="{{ article.destination }}">
-                <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+            {% if articles %}
+            {% for article in articles[:8] if article.category == "news" %}
+                          
+                <li>
+                    <a href="{{ article.destination }}">
+                    <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
                 
-                <p class="newslink">{{ article.title }}</p></a>
-            </li>
-                              {% endfor %}
-                {% endif %}
+                    <p class="newslink">{{ article.title }}</a> </p>
+                    <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
+                </li>
+            
+            {% endfor %}
+            {% endif %}
+        
         </ul>
      </div>
 
@@ -158,27 +162,19 @@
     <div class="announcements">
         <h2>Library Announcements</h2>
 
-
         {% set count = 0 %}
-
-        {% for article in articles[:15] if article.announcement %}
+        {% for article in articles[:15] if article.category == "announcements" %}
 
             {% set count = count + 1 %}
-
             {% if count < 3 %}
 
                 <div>
-                    <a href="{{ article.url }}">
-
-                        <p>{{ article.title }}</p></a>
-
-                    <p>{{ article.summary }}</p>
+                    <a href="{{ article.url }}" class="announcelink">{{ article.title }}</a> - <em>{{ article.date|strftime('%m/%d/%y') }}</em><br />
+                    {{ article.summary }}
                 </div>
 
             {% endif %}
-
         {% endfor %}
-
 
     </div>
 

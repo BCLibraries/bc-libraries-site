@@ -1,5 +1,4 @@
 Title: New BC Libraries Website
-Announcement: yes
 Date: 2015-06-09 01:01 
 Tags: announcement, tags 
 Slug: new-bc-site 

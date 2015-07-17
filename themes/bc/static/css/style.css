@@ -748,10 +748,32 @@ a.announcelink {
 
 .announcements p {
     line-height: 1.2;
+    margin: 0;
 }
 
 .announcements div {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.announcements .readmore {
+    font-size: 12px;
+    float: right;
+}
+
+.announcements .arrow:after {
+    font-family: 'icomoon';
+    content: "\e658";
+    font-size: 10px;
+    padding: 0 0 0 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.announcements .offscreen {
+    text-indent: -9999px;
+    position: absolute;
 }
 
 /* REAL ESTATE SECTION CSS */
@@ -2324,6 +2346,8 @@ nav select {
     font-family: 'icomoon';
     content: "\e682";
     padding: 0 0  0 5px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 
@@ -3118,10 +3142,9 @@ p.newslink {
     margin: 25px 0;
 }
 
-.article_meta {
-    width: 35%;
-    float: left;
-    border: 1px solid red;
+.article_page h3 {
+    font-size: 25px;
+    margin: 5px 0 0;
 }
 
 .article_page img {
@@ -3131,9 +3154,8 @@ p.newslink {
 }
 
 .article_content {
-    width: 100%;
-    margin: 0 auto;
-        border: 1px solid blue;
+    width: 65%;
+    margin: 10px 0 0;
 }
 @media ( max-width: 1199px ) {
     .article_content {
@@ -3203,6 +3225,99 @@ p.newslink {
 
 /* FACULTY PUBLICATION HIGHLIGHTS STYLES */ 
 
-.facpub #content {
+.facpub .article_page {
+    margin: 15px 0 0;
+}
+
+.facpub #header { /* MAKE A HEADER IMAGE */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#05506d+0,32758f+100 */
+background: #05506d; /* Old browsers */
+background: -moz-linear-gradient(top,  #05506d 0%, #32758f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#05506d), color-stop(100%,#32758f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #05506d 0%,#32758f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #05506d 0%,#32758f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #05506d 0%,#32758f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #05506d 0%,#32758f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', endColorstr='#32758f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.facpub #fullpagewrapper {
+    width: 1080px;
+    -webkit-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
+}
+
+.facpub #titleauthor {
+    padding: 0 0 0 10px;
+}
+
+.facpub .youtube {
     width: 100%;
+    background: none repeat scroll 0 0 #eaeaea;
+    border-bottom: 3px solid #dadada;
+    color: #000;
+    display: block;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+}
+
+.facpub .youtube .left {
+    float: left;
+    width: 65%;
+    border-right: 1px solid #dadada;
+    margin: 0 10px 0 0;
+}
+
+.facpub .youtube .right {
+    float: right;
+    width: 30%;
+}
+
+.facpub #content_container {
+    width: 100%;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-top: 0px;
+}
+
+.facpub .article_content {
+    width: 65%;
+    padding: 10px;
+}
+
+.facpub .librarian {
+    text-align: center;
+}
+
+.facpub #footer {
+    background: #eaeaea;
+    border-top: 1px solid #dadada;
+    min-height: 50px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.facpub #footer ul {
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.facpub #footer ul li {
+    list-style: none outside none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.facpub #footer ul li:after {
+    content: "|";
+    padding: 0 10px;
+}
+
+.facpub #footer ul li:last-child:after {
+    content: "";
 }

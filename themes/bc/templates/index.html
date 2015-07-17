@@ -170,9 +170,14 @@
 
                 <div>
                     <a href="{{ article.url }}" class="announcelink">{{ article.title }}</a> - <em>{{ article.date|strftime('%m/%d/%y') }}</em><br />
-                    {{ article.summary }}
-                </div>
+                    {{ article.summary|truncate(140) }}
+                
 
+                    <div class="readmore">
+                    <a href="{{ article.url }}"><span class="arrow">Read more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                    </div>
+                    
+                </div>
             {% endif %}
         {% endfor %}
 

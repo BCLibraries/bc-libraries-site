@@ -2503,6 +2503,64 @@ nav select {
     color: #32758f;
 }
 
+ /* ASK A LIBRARIAN ICON STYLES */
+
+.askicon {
+    font-family: 'icomoon';
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #32758f;
+    text-align: center;
+    padding: 6px 0;
+    margin: 0 10px 50px 0;
+    color: #fff !important;
+    float: left;
+    border-bottom: 3px solid #05506d;
+}
+
+.askicon:hover {
+    background: #05506d; 
+    text-decoration: none; 
+    border-bottom: 2px solid #04394e; 
+}
+
+.ask_ref:after {
+    content:"\e688";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.ask_faq:after {
+    content:"\e687";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.ask_txt:after {
+    content:"\e689";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.ask_chat:after {
+    content:"\e61f";
+    font-size: 30px;
+    line-height: 1;
+}
+
+.ask_email:after {
+    content:"\e67c";
+    font-size: 30px;
+    line-height: 1;
+}
+
+.ask_call:after {
+    content:"\e686";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
 
 
 /*FEED BACK BUTTON EDITS */

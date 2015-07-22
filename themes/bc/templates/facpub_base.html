@@ -5,7 +5,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %} {{ article.title }} | {{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8"/>
 
     <link rel="shortcut icon" href="/favicon.ico?v=0" />
@@ -76,6 +76,8 @@
 </head>
 
 <body id="index" class="s-lg-guide-body facpub">
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55afed5b21acc7c0" async="async"></script>
 
 <a href="#content_container" class="accessibility-text">Skip to main content</a>
 
@@ -84,9 +86,17 @@
 
 <!-- BEGIN HEADER -->
 <div id="header">
+
+    <span class="book"></span>
+    <div class="pagetitle">
+    <a href="#"><h2>
+        <span class="top">Faculty</span> <br />
+        <span class="middle">Publication</span> <br /> 
+        <span class="bottom">Highlights</span></h2> </a>
+    </div>
+
     <div id="librarytitle">
-    <img src="/theme/img/bcheader_title.png" id="fakebctitle" alt="Boston College">
-        <a href="http://library.bc.edu/"><h1>University Libraries</h1></a>
+        <a href="http://library.bc.edu/"><h1>Boston College University Libraries</h1></a>
     </div>
      
 </div>

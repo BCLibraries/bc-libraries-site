@@ -2513,7 +2513,7 @@ nav select {
     background: #32758f;
     text-align: center;
     padding: 6px 0;
-    margin: 0 10px 50px 0;
+    margin: 0 10px 75px 0;
     color: #fff !important;
     float: left;
     border-bottom: 3px solid #05506d;
@@ -3287,24 +3287,88 @@ p.newslink {
     margin: 15px 0 0;
 }
 
-.facpub #header { /* MAKE A HEADER IMAGE */
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#05506d+0,32758f+100 */
-background: #05506d; /* Old browsers */
-background: -moz-linear-gradient(top,  #05506d 0%, #32758f 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#05506d), color-stop(100%,#32758f)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #05506d 0%,#32758f 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #05506d 0%,#32758f 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #05506d 0%,#32758f 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #05506d 0%,#32758f 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', endColorstr='#32758f',GradientType=0 ); /* IE6-9 */
-
-}
-
 .facpub #fullpagewrapper {
     width: 1080px;
     -webkit-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
+    margin: 0px auto 0;
+}
+
+.facpub #header { 
+    width: 100%;
+    height: 110px;
+    background: #fff;
+    border-bottom: 1px solid #dadada;
+}
+
+.facpub #header .pagetitle {
+    position: absolute;
+    bottom: 0px;
+    left: 105px;
+}
+
+.facpub #header .pagetitle a:hover {
+    text-decoration: none;
+}
+
+.facpub #header .pagetitle h2 {
+    color: #990000;
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+}
+
+.facpub #header .pagetitle h2:hover {
+    color: #05506d;
+}
+
+.facpub #header .pagetitle .top {
+    font-size: 35px;
+    letter-spacing: 2pt;
+}
+
+.facpub #header .pagetitle .middle {
+    font-size: 35px;    
+    letter-spacing: -1pt;
+}
+
+.facpub #header .pagetitle .bottom {
+    font-size: 35px;    
+    letter-spacing: .4pt;
+}
+
+.facpub #header .book {
+     height: 70px;
+    left: 15px;
+    position: absolute;
+    top: 25px;
+}
+
+.facpub #header .book:before {
+    font-family: 'icomoon';
+    content:"\e650";
+    color: #990000;
+    font-size: 85px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.facpub #librarytitle {
+    position: absolute;
+    right: 0px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+}
+
+.facpub #librarytitle h1 {
+    background: url("/theme/img/facpub_title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 21px;
+    width: 500px;
+    text-indent: -9999px;
 }
 
 .facpub #titleauthor {
@@ -3319,44 +3383,78 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', end
     display: block;
     margin: 5px 0;
     overflow: hidden;
-    padding: 10px;
-    text-align: left;
-}
-
-.facpub .youtube .left {
-    float: left;
-    width: 65%;
-    border-right: 1px solid #dadada;
-    margin: 0 10px 0 0;
-}
-
-.facpub .youtube .right {
-    float: right;
-    width: 30%;
+    padding: 20px;
+    text-align: center;
 }
 
 .facpub #content_container {
     width: 100%;
     border-top: 0px;
     border-bottom: 0px;
-    margin-top: 0px;
+    margin: 20px 0 0;
 }
 
 .facpub .article_content {
-    width: 65%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.facpub .article_content .left {
+    float: left;
+    border-right: 1px solid #dadada;
+    padding: 0 20px 0 0;
+    width: 645px;
+}
+
+.facpub .article_content .right {
+    float: right;
+    width: 375px;
+}
+
+.facpub .article_content .right p {
+    line-height: 1.5;
+}
+
+.facpub .article_content .right img {
+    float: left;
+    width: ;
+    border: 1px solid #666;
+    margin: 0 10px 10px 0;
+    padding: 1px;
+    width: 150px;
+    height: auto;
+}
+
+.facpub .sample:after {
+    font-family:'FontAwesome';
+    content:"\f1c1";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.facpub .location:after {
+    font-family: 'icomoon';
+    content: "\e682";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
 .facpub .librarian {
+    margin: 10px 0 0 0;
+    padding: 10px 0 0;
     text-align: center;
+    border-top: 1px solid #dadada;
+    background: #eaeaea;
 }
 
 .facpub #footer {
     background: #eaeaea;
-    border-top: 1px solid #dadada;
     min-height: 50px;
     margin: 0 auto;
     width: 100%;
+    padding: 10px 20px 0;
 }
 
 .facpub #footer ul {
@@ -3378,4 +3476,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', end
 
 .facpub #footer ul li:last-child:after {
     content: "";
+}
+
+/* RESPONSIVE PORTION */
+@media ( max-width: 1199px ) {
+
+
+}
+
+/* RESPONSIVE YOUTUBE EMBED CODE -
+COULD BE USEFUL ELSEWHERE  */
+
+.video-container {
+    position: relative;
+    max-width: 853px;
+    max-height: 480px;
+    margin: 0 auto;
+}
+ 
+@media ( max-width: 1199px ) {
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0;
+    overflow: hidden;
+    max-width: 853px;
+    max-height: 480px;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+@media ( max-width: 768px ) { 
 }

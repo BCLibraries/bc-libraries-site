@@ -3283,6 +3283,13 @@ p.newslink {
 
 /* FACULTY PUBLICATION HIGHLIGHTS STYLES */ 
 
+.facpub {
+background: url("/theme/img/facpub_bg.png") no-repeat scroll top center rgba(0, 0, 0, 0);
+background-size: fill;
+background-attachment: fixed;
+
+}
+
 .facpub .article_page {
     margin: 15px 0 0;
 }
@@ -3293,6 +3300,7 @@ p.newslink {
     -moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     margin: 0px auto 0;
+    background: #fff;
 }
 
 .facpub #header { 
@@ -3326,6 +3334,7 @@ p.newslink {
 .facpub #header .pagetitle .top {
     font-size: 35px;
     letter-spacing: 2pt;
+    color: #444;
 }
 
 .facpub #header .pagetitle .middle {
@@ -3336,6 +3345,7 @@ p.newslink {
 .facpub #header .pagetitle .bottom {
     font-size: 35px;    
     letter-spacing: .4pt;
+    color: #444 ;
 }
 
 .facpub #header .book {
@@ -3417,7 +3427,6 @@ p.newslink {
 
 .facpub .article_content .right img {
     float: left;
-    width: ;
     border: 1px solid #666;
     margin: 0 10px 10px 0;
     padding: 1px;
@@ -3479,10 +3488,94 @@ p.newslink {
 }
 
 /* RESPONSIVE PORTION */
+
 @media ( max-width: 1199px ) {
 
+    .facpub {
+        background: none;
+    }
+
+    .facpub #fullpagewrapper {
+        width: 100%;
+        min-width: 300px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        margin: 0px auto 0;
+    }
+
+    .facpub #header { 
+        width: 100%;
+        min-height: 110px;
+    }
+
+    .facpub #librarytitle {
+        position: absolute;
+        right: 10px;
+        left: auto;
+        top: auto;
+        bottom: 0;
+}
+
+    .facpub #librarytitle h1 {
+        background: url("/theme/img/title_small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        display: block;
+        height: 76px;
+        width: 185px;
+        text-indent: -9999px;
+    }
+
+    .facpub .article_content .left {
+        float: left;
+        border-right: 1px solid #dadada;
+        padding: 0 20px 0 0;
+        width: 60%;
+    }
+
+    .facpub .article_content .right {
+        float: right;
+        width: 35%;
+    }
+
+    .facpub .article_content .right p {
+        line-height: 1.5;
+    }
+
+    .facpub .article_content .right img {
+        float: left;
+        border: 1px solid #666;
+        margin: 0 10px 10px 0;
+        padding: 1px;
+        width: 150px;
+        height: auto;
+    }
 
 }
+
+@media ( max-width: 850px ) { 
+
+    .facpub #librarytitle {
+        display: none;
+        }
+    
+    .facpub .article_content .left {
+        float: none;
+        border-right: 0px solid #dadada;
+        padding: 0 20px 0 0;
+        width: 100%;
+    }
+
+    .facpub .article_content .right {
+        border-top: 1px solid #dadada;
+        float: none;
+        width: 100%;
+        padding:;
+    }
+    .facpub .article_content .right p {
+        width: 50%;
+    }
+}
+
 
 /* RESPONSIVE YOUTUBE EMBED CODE -
 COULD BE USEFUL ELSEWHERE  */
@@ -3516,5 +3609,3 @@ COULD BE USEFUL ELSEWHERE  */
 }
 }
 
-@media ( max-width: 768px ) { 
-}

@@ -30,57 +30,65 @@
 
     <!-- CAROUFREDSEL JS UNDER HERE -->
     <script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
-<!-- fire plugin onDocumentReady -->
-        <script type="text/javascript" language="javascript">
-            $(function() {
+    <!-- fire plugin onDocumentReady -->
+    <script type="text/javascript" language="javascript">
+        $(function() {
 
-                //  Scrolled by user interaction
-                $('#newsslider').carouFredSel({
-                    auto: false,
-                    prev: '#prev',
-                    next: '#next',
-                    pagination: "#pager2",
-                    mousewheel: true,
-                    swipe: {
-                        onMouse: true,
-                        onTouch: true
-                    }
+            //  Scrolled by user interaction
+            $('#newsslider').carouFredSel({
+                auto: false,
+                prev: '#prev',
+                next: '#next',
+                pagination: "#pager2",
+                mousewheel: true,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
+
+        });
+    </script>
+
+    <!-- SCRIPT TO TURN SIDE NAVIGATION INTO DROPDOWNS ON MOBILE -->
+    <script>
+        /* DOM ready*/
+        $(function() {
+            /* For each nav menu, create a corresponding drop down menu */
+            $("nav").each(function(){
+                var myNavID = "nav";
+                if ($(this).attr("id")) {
+                    myNavID = "nav#" + $(this).attr("id");
+                }
+                console.log(myNavID);
+            
+                /* Create the dropdown base*/
+                $("<select />").appendTo(myNavID);
+
+                /* Create default option "Go to..." */
+                $("<option />", {
+                    "selected": "selected",
+                    "value"   : "",
+                    "text"    : "Go to..."
+                }).appendTo(myNavID + " select");
+
+                /* Populate dropdown with menu items */
+                $(myNavID + " a").each(function() {
+                    var el = $(this);
+                    $("<option />", {
+                        "value"   : el.attr("href"),
+                        "text"    : el.text()
+                    }).appendTo(myNavID + " select");
                 });
 
+                /* To make dropdown actually work
+                To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/ */
+                $(myNavID + " select").change(function() {
+                    window.location = $(this).find("option:selected").val();
+                });
             });
-        </script>
 
-<!-- SCRIPT TO TURN SIDE NAVIGATION INTO DROPDOWNS ON MOBILE -->
-    <script>
-     /* DOM ready*/
-     $(function() {
-       
-      /* Create the dropdown base*/
-      $("<select />").appendTo("nav");
-      
-      /* Create default option "Go to..." */
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Go to..."
-      }).appendTo("nav select");
-      
-      /* Populate dropdown with menu items */
-      $("nav a").each(function() {
-       var el = $(this);
-       $("<option />", {
-           "value"   : el.attr("href"),
-           "text"    : el.text()
-       }).appendTo("nav select");
-      });
-      
-       /* To make dropdown actually work
-        To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/ */
-      $("nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
-     
-     });
+        });
     </script>
 
 <!-- END CAROUFREDSEL JS-->
@@ -746,7 +754,7 @@
         <!-- Quick Links -->
         <div class="f_column no_right_border">
             <h2>Quick Links</h2>
-            <nav>
+            <nav id="quick_links">
             <ul class="nav">
                 <li><a href="http://libguides.bc.edu/contact" title="Contact Us" target="_self">Contact us</a></li>
                 <li><a href="https://arc.bc.edu:8443/BookIt30/ShowTable30.do" title="Reserve a Study Room" target="_self">Reserve a Study Room</a></li>

@@ -1,4 +1,4 @@
-Title: Faculty Publication Highlight: Professor Twomey 
+Title: Faculty Publication Highlight: David P. Twomey 
 Destination: http://www.bc.edu/sites/libraries/facpub/twomey-publishing
 Date: 2015-05-18 01:00 
 Tags: faculty publication highlight, news 

@@ -1,4 +1,4 @@
-Title: Faculty Publication Highlight: Professor Maryks
+Title: Faculty Publication Highlight: Robert Aleksander Maryks
 Destination: http://www.bc.edu/sites/libraries/facpub/maryks-companion/
 Date: 2015-05-05 01:01 
 Tags: faculty publication highlight, tags 

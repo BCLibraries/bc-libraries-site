@@ -616,6 +616,10 @@ th {
     }
 }
 
+#block_search input[type=text] {
+ line-height: 1;
+}
+
 #block_databases {
     background: none repeat scroll 0 0 #EAEAEA;
     display: inline-block;
@@ -2074,7 +2078,6 @@ nav select {
     clear: both;
     font-weight: normal;
     line-height: 20px;
-    text-transform: capitalize !important;
     word-break: normal;
     outline: none;
     color: #666;

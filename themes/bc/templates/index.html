@@ -112,7 +112,7 @@
 <!-- SECOND ROW, NEWS ROW -->
 <div class="row newsrow">
     
-<!-- THUMBNAILS ARE 150xp x 150p -->
+<!-- THUMBNAILS ARE 150xp x 150p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT. -->
 
     <div class="list_carousel">
         <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -121,7 +121,11 @@
         <ul id="newsslider">
                     
             {% if articles %}
-            {% for article in articles[:8] if article.category == "news" %}
+            {% set count = 0 %}
+            {% for article in articles[:15] if article.category == "news" %}
+
+                {% set count = count + 1 %}
+                {% if count < 12 %}
                           
                 <li>
                     <a href="{{ article.destination }}">
@@ -131,6 +135,7 @@
                     <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
                 </li>
             
+                {% endif %}
             {% endfor %}
             {% endif %}
         
@@ -156,8 +161,6 @@
        </div>
 
        <!-- LIBRARY ANNOUNCEMENTS CAN GO HERE -->
-
-       <!-- NEEDS MAJOR CLEAN UP -->
 
     <div class="announcements">
         <h2>Announcements</h2>

@@ -1,5 +1,5 @@
 Title: The Medical Texts of Nicholas Culpeper
-Destination: URL
+Destination: http://wp.me/pZMf2-2B5
 Date: 2015-05-19 01:01 
 Tags: news, tags 
 Slug: nicholas-culpeper 

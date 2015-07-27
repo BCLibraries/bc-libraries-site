@@ -3143,6 +3143,7 @@ font-family: "icomoon";
     border: 2px solid #05506d;
     border-bottom: 5px solid #05506d;
     transition: border-color 0.2s ease-out 0s;
+    transition: opacity 0.2s ease-out 0s;
 }
 
 .newsitem:hover {

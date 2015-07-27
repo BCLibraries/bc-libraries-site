@@ -242,9 +242,10 @@ th {
     background: url("/theme/img/title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     float: left;
-    height: 70px;
+    height: 90px;
     text-indent: -9999px;
     width: 223px;
+    margin: -10px 0 0;
 }
 
 #motto {
@@ -253,13 +254,8 @@ th {
     left: 15px;
     top: 75px;
 }
-@media ( max-width: 768px ) {
-    #motto {
-        left: 5px;
-}}
 
 #motto p {
-    background: url("/theme/img/value.png") no-repeat;
     height: 20px;
     width: 228px;
     margin: 0;

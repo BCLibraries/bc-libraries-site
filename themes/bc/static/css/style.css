@@ -3059,7 +3059,7 @@ font-family: "icomoon";
     min-height: 265px;
     display: block;
     position: relative;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 
 #newsslider {
@@ -3103,18 +3103,16 @@ font-family: "icomoon";
     list-style: none;
     display: block;
 }
+
 .list_carousel li {
-    background: #eaeaea;
     color: #999;
-    display: block;
     float: left;
     height: 245px;
-    margin: 10px 5px 0;
-    padding: 5px !important;
+    margin: 0px 3px 0;
+    padding: 0 !important;
     text-align: center;
     width: 230px;
     overflow: hidden;
-    border-bottom: 3px solid #dadada;
 }
 @media ( max-width: 768px ) {
     .list_carousel li {
@@ -3123,24 +3121,60 @@ font-family: "icomoon";
         text-align: center;
         width: 185px;
         overflow: hidden;
+    }
 }
 
+.list_carousel li.yes {
+    display: block;
 }
-.clearfix {
-    float: none;
-    clear: both;
+
+.list_carousel li.no {
+    display: none;
 }
 
 .list_carousel img {
-    border: 1px solid #666;
-    padding: 1px;
-    margin: 5px 0 0 0;
-    width: 150px;
-    height: 150px;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.list_carousel img:hover {
-    border: 1px solid #990000;
+.newsitem {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 5px auto 0;
+    border: 2px solid #05506d;
+    border-bottom: 5px solid #05506d;
+    transition: border-color 0.2s ease-out 0s;
+}
+
+.newsitem:hover {
+    border: 2px solid #32758f;
+    border-bottom: 5px solid #32758f;
+    opacity: .8;
+}
+
+.newsitem .yes {
+    margin: 0 ;
+}
+
+.newsitem .no {
+    margin: -9999px;
+}
+
+.newstext {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    color: #444;
+}
+
+p.newslink {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1.1;
 }
 
 .list_carousel .prev {
@@ -3166,7 +3200,7 @@ font-family: "icomoon";
     background: #fff;
     display: block;
     font-size: 25px;
-    height: 265px;
+    height: 245px;
     padding: 110px 0;
     text-align: center;
     width: 2%;
@@ -3191,10 +3225,9 @@ font-family: "icomoon";
     outline: 0 none;
 }
 
-p.newslink {
-    margin: 10px 0 0 0;
-    font-size: 16px;
-    line-height: 1.1;
+.clearfix {
+    float: none;
+    clear: both;
 }
 
 /* ARTICLE PAGE STYLES */

@@ -112,7 +112,7 @@
 <!-- SECOND ROW, NEWS ROW -->
 <div class="row newsrow">
     
-<!-- THUMBNAILS ARE 150xp x 150p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT. -->
+<!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
 
     <div class="list_carousel">
         <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -127,12 +127,16 @@
                 {% set count = count + 1 %}
                 {% if count < 12 %}
                           
-                <li>
-                    <a href="{{ article.destination }}">
-                    <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                
-                    <p class="newslink">{{ article.title }}</a> </p>
-                    <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
+                <li class="{{ article.onhomepage }}">
+                    <div class="newsitem">
+                        <a href="{{ article.destination }}">
+                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+                        
+                        <div class="newstext {{ article.showtext }}">
+                            <p class="newslink">{{ article.title }}</a> </p>
+                            <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
+                        </div>
+                    </div>
                 </li>
             
                 {% endif %}

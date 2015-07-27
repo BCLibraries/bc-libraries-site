@@ -3,6 +3,8 @@ Destination: http://www.bc.edu/sites/libraries/facpub/waddock-intellectual/
 Date: 2015-07-06 01:01 
 Tags: news, faculty publication highlight 
 Slug: facpub-waddock
+OnHomepage: yes
+ShowText: yes
 Image: imagename.png
 Image_alt: Sandra Waddock during her interview
 Image_thumb: 2015-06/waddock-thumb.png

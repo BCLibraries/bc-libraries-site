@@ -1514,15 +1514,15 @@ a.announcelink {
 }
 
 .view-mode .s-lib-box .s-lib-box-title
-/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. GUIDE GROUP ONLY. */       {
+/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. */       {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
     color: #05506d;
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
-    margin: 0 0 10px;
-    padding: 0 8px;
+    margin: 15px 0 5px;
+    padding: 0 10px;
     text-transform: uppercase;
     background: none;
 }
@@ -1606,6 +1606,7 @@ a.announcelink {
     background: #E9E9E9;
     border-radius: 0;
     margin-right: 0px;
+    outline: 0 none;
 }
 
 #s-lg-guide-tabs .nav-tabs li a:hover {
@@ -3307,11 +3308,25 @@ p.newslink {
 }
 
 #s-lg-box-wrapper-7568497,
-#s-lg-box-wrapper-7613059 {margin-bottom:20px;}
-.s-lib-box-content {padding-bottom:0px;}
-.searchbox-container {height:70px;}
-.searchbox-container .sb-search {right:0px;}
-.searchbox-container input.sb-search-input {width:100%;}
+#s-lg-box-wrapper-7613059 {
+    margin-bottom:20px;
+}
+
+.s-lib-box-content {
+    padding-bottom:0px; margin: 0 0 15px;
+}
+
+.searchbox-container {
+    height:70px;
+}
+
+.searchbox-container .sb-search {
+    right: 0px;
+}
+
+.searchbox-container input.sb-search-input {
+    width:100%;
+}
 
 
 /* FACULTY PUBLICATION HIGHLIGHTS STYLES */ 

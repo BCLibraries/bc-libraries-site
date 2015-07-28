@@ -3053,10 +3053,9 @@ font-family: "icomoon";
 /* NEW CAROUSEL CSS */
 
 .newsrow {
-    min-height: 265px;
     display: block;
     position: relative;
-    margin: 20px 0 0;
+    margin: 25px 0;
 }
 
 #newsslider {
@@ -3064,8 +3063,8 @@ font-family: "icomoon";
 }
 
 .caroufredsel_wrapper {
-    min-height: 265px;
-    width: 96% !important;
+    min-height: 230px;
+    width: 95% !important;
 }
 @media ( max-width: 1199px ) {
     .caroufredsel_wrapper {
@@ -3085,17 +3084,11 @@ font-family: "icomoon";
     background: transparent;
     margin: 00px;
     width: 100%;
-}
-@media ( max-width: 1199px ) {
-    .list_carousel {
-       background: transparent;
-        margin: 0 auto;
-        width: 98%;
-    }
+    height: 230px;
 }
 
 .list_carousel ul {
-    margin: 0 0 0 -10px !important;
+    margin: 0 0 0 0px !important;
     padding: 0;
     list-style: none;
     display: block;
@@ -3104,21 +3097,12 @@ font-family: "icomoon";
 .list_carousel li {
     color: #999;
     float: left;
-    height: 245px;
+    width: 230px;
+    height: 230px;
     margin: 0px 3px 0;
     padding: 0 !important;
     text-align: center;
-    width: 230px;
     overflow: hidden;
-}
-@media ( max-width: 768px ) {
-    .list_carousel li {
-        margin: 10px 2px 0;
-        padding: 5px !important;
-        text-align: center;
-        width: 185px;
-        overflow: hidden;
-    }
 }
 
 .list_carousel li.yes {
@@ -3140,7 +3124,7 @@ font-family: "icomoon";
     position: relative;
     width: 225px;
     height: 225px;
-    margin: 5px auto 0;
+    margin: 0px auto;
     border: 2px solid #05506d;
     border-bottom: 5px solid #05506d;
     transition: border-color 0.2s ease-out 0s;
@@ -3176,20 +3160,33 @@ p.newslink {
 }
 
 .list_carousel .prev {
-    border-right: 1px solid #eaeaea;
     float: left;
-    -webkit-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
-    box-shadow: 11px 0 15px -7px rgba(0, 0, 0, 0.6);
+    background: #eaeaea;
+    transition: background-color 0.2s ease-out 0s;
 }
 
 .list_carousel .next {
-    border-left: 1px solid #eaeaea;
     float: right;
-    -webkit-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
-    -moz-box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
-    box-shadow: -11px 0px 15px -7px rgba(0,0,0,0.6);
+    background: #eaeaea;
+    transition: background-color 0.2s ease-out 0s;
 }
+
+.list_carousel #prev:hover, 
+.list_carousel #prev:focus {
+    color: #fff !important;
+    text-decoration: none;
+    outline: 0 none;
+    background: #b5b5b5;
+}
+
+.list_carousel #next:hover, 
+.list_carousel #next:focus {
+    color: #fff !important;
+    text-decoration: none;
+    outline: 0 none;
+    background: #b5b5b5;
+}
+
 
 .newsbutton {
     position: relative;
@@ -3198,10 +3195,9 @@ p.newslink {
     background: #fff;
     display: block;
     font-size: 25px;
-    height: 245px;
-    padding: 110px 0;
+    height: 225px;
     text-align: center;
-    width: 2%;
+    width: 2.5%;
 }
 @media ( max-width: 1199px ) {
     .newsbutton {
@@ -3209,18 +3205,14 @@ p.newslink {
     }
 }
 
-.list_carousel #prev:hover, 
-.list_carousel #prev:focus {
-    color: #430000 !important;
-    text-decoration: none;
-    outline: 0 none;
-}
-
-.list_carousel #next:hover, 
-.list_carousel #next:focus {
-    color: #430000 !important;
-    text-decoration: none;
-    outline: 0 none;
+.newsbutton .glyphicon {
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0;
+    position: relative;
+    top: calc(50% - 10px);
 }
 
 .clearfix {

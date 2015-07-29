@@ -1575,7 +1575,7 @@ a.announcelink {
     font-weight: normal;
     line-height: 1;
     margin: 15px 0 5px;
-    padding: 0 10px;
+    padding: 0px;
     text-transform: uppercase;
     background: none;
 }

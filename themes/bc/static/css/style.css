@@ -710,6 +710,7 @@ th {
     padding: 5px 10px;
     float: right;
     border-left: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
     background: none repeat scroll 0 0 #eaeaea;
 }
 @media ( max-width: 768px ) {
@@ -1213,6 +1214,12 @@ a.announcelink {
     font-size: 16px;
 }
 
+.searchpage li:first-child:after {
+    color: #b5b5b5;
+    content: "";
+    font-size: 16px;
+}
+
 .advanced-search-link {
 }
 
@@ -1680,7 +1687,7 @@ a.announcelink {
     background-clip: padding-box;
     background-color: transparent;
     border: 0px;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 0px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
     display: none;
     float: left;
@@ -1688,10 +1695,11 @@ a.announcelink {
     left: 0;
     list-style: none outside none;
     min-width: 160px;
+    width: 100%;
     position: relative;
     top: 100%;
     z-index: 10;
-    padding: 0 0 0 25px;
+    padding: 0;
 }
 
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
@@ -1700,21 +1708,21 @@ a.announcelink {
     clear: both;
     color: #990000;
     display: block;
-    width: 160px;
+    width: 100%;
     padding: 5px 20px;
     white-space: nowrap;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
-    background: #E9E9E9;
+    background: #b29d6c;
     height: 30px;
     margin: 0px;
-    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0;
 }
 
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
 #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
-    background: #B29D6C;
+    color: #fff;
 }
 
 /* THIS CONTROLS THE SUBNAVS WHEN ACTIVE */
@@ -2961,6 +2969,8 @@ body,
 #all-results .more-results-link a:after {
 font-family: "icomoon";
     content: "\e655";
+    display: inline-block;
+    text-decoration: none;
 }
 
 #all-results .result-container {
@@ -2993,7 +3003,7 @@ font-family: "icomoon";
     padding: 5px 7px;
 }
 
-#all-results .result-container > ul li:nth-child(even) {
+#all-results .result-container > ul li.bento-result:nth-child(2n) {
     background: #dbdbdb;
 }
 

@@ -6,15 +6,18 @@
 <body>
 <div class="row">
 
-    <div id="block_search">
+     <div id="block_search">
 
-        <div role="tabpanel">
+        <div role="tabpanel" id="tabpanel">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
                 <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
                 <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a></li>
+                    <ul class="search_float searchpage">
+                    <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced search</a></li>
+                    </ul>
             </ul>
 
             <!-- Tab panes -->
@@ -23,7 +26,7 @@
                     <div class="col-xs-12">
                         <div class="input-group input-group-md">
                             <form method="get" action="/search" id="bcbento-search">
-                                <label for="typeahead" class="accessibility-text">Search articles, books, journals and more</label>
+                                <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
                                 <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
@@ -38,7 +41,8 @@
                     <div class="col-xs-12">
                         <div class="input-group input-group-md">
                             <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
-                                <input type="text" class="" name="any" placeholder="Find books, media, & more">
+                                <label for="book-search" class="accessibility-text">Search books, media, and more</label>
+                                <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, & more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
                                         <span class="glyphicon glyphicon-search"></span>
@@ -52,7 +56,8 @@
                     <div class="col-xs-12">
                         <div class="input-group input-group-md">
                             <form method="get" action="/search-services/primo-articles" id="bcbento-search">
-                                <input type="text" name="any" placeholder="Find journal articles">
+                                <label for="article-search" class="accessibility-text">Search journal articles</label>
+                                <input type="text" id="article-search" name="any" placeholder="Find journal articles">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
                                         <span class="glyphicon glyphicon-search"></span>

@@ -3362,7 +3362,7 @@ p.newslink {
 }
 
 .s-lib-box-content {
-    padding: 0px;
+    padding: 0 15px 0 0;
     margin: 0 0 15px;
 }
 

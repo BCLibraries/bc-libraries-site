@@ -2,7 +2,7 @@ $(document).ready(function () {
     engine = new Bloodhound({
         name: 'holmes-typeahead',
         remote: {
-            url: 'http://library.bc.edu/search-services/typeahead?any=%QUERY&callback=?',
+            url: '/search-services/typeahead?any=%QUERY&callback=?',
             rateLimitWait: 100,
             rateLimitBy: 'throttle'
         },

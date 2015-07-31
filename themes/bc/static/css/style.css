@@ -3164,12 +3164,16 @@ font-family: "icomoon";
 .list_carousel li {
     color: #999;
     float: left;
-    width: 230px;
-    height: 230px;
+    width: 225px;
+    height: 225px;
     margin: 0px 3px 0;
     padding: 0 !important;
     text-align: center;
     overflow: hidden;
+}
+
+.list_carousel li:first-child {
+    margin-left: 0;
 }
 
 .list_carousel li.yes {

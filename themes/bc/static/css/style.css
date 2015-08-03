@@ -763,7 +763,8 @@ a.announcelink {
     float: right;
 }
 
-.announcements .readmore.no {
+.announcements .readmore.no /* HIDES READMORE LINK, WHEN "NO" IS PUT INTO MARKDOWN FILE.*/
+            {
     display: none;
 }
 
@@ -3180,7 +3181,7 @@ font-family: "icomoon";
     display: block;
 }
 
-.list_carousel li.no {
+.list_carousel li.no /* HIDES ARTICLE TITLE AND DATE WHEN "NO" IS PUT INTO MARKDOWN FILE. USED MOSTLY FOR EXHIBITS OR BLOG LINKS */ {
     display: none;
 }
 

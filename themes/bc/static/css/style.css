@@ -52,22 +52,6 @@ body {
     z-index: 999;
 }
 
-#beta-ribbon {
-    font-size: 1.15em;
-    position: absolute;
-    top: 34px;
-    right: -65px;
-    width: 280px;
-    margin-left: 5em;
-    padding: 18px;
-    text-align: center;
-    background-color: yellow;
-    z-index: 99999;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-}
-
 /* THE BASICS */
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -173,6 +157,10 @@ table, th, td {
 
 td, th {
     padding: 3px;
+}
+
+td {
+    vertical-align:top;
 }
 
 th {
@@ -411,7 +399,6 @@ th {
     list-style: none outside none;
     margin: 11px 0 0 0;
     padding: 0px 5px;
-    max-width: 599px;
 }
 
 .breadcrumb > .active {
@@ -436,20 +423,21 @@ th {
 
 #guidetitle {
     padding: 0 0 0 0px;
-    margin: 0px 0 15px 0;
+    margin: 0px 0 20px 0;
 }
 
 #guidetitle h1 {
     font-size: 30px;
     text-transform: uppercase;
     padding: 0px;
-    margin: 5px 0px;
+    margin:  0px;
     display: inline-block;
 }
 
 #guidetitle h2 {
     font-size: 30px;
     display: inline-block;
+    margin: 0;
 }
 
 #guidetitle p {

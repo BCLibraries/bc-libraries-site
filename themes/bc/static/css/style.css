@@ -2908,7 +2908,6 @@ body,
     padding: 10px 7px;
     width: 50%;
     height: 30px;
-    /*border-bottom: 1px solid #939393;*/
 }
 
 #librarians-results h3, #guides-results h3 {
@@ -2956,15 +2955,22 @@ body,
 }
 
 #all-results .more-results-link a:after {
-font-family: "icomoon";
+    font-family: "icomoon";
     content: "\e655";
     display: inline-block;
     text-decoration: none;
 }
 
+#primary .title, #secondary .title {
+    font-size: 18px;
+}
+
+#primary .creator, #secondary .creator {
+    font-size: 16px;
+}
+
 #all-results .result-container {
     min-height: 200px;
-    background: none repeat scroll 0 0 #eaeaea;
     display: inline-block;
     width: 100%;
 }
@@ -2977,7 +2983,6 @@ font-family: "icomoon";
     margin-top: 0;
     padding: 9px 7px;
     height: 30px;
-    /*border-bottom: 1px solid #939393;*/
 }
 
 #all-results .result-container ul {
@@ -2986,37 +2991,37 @@ font-family: "icomoon";
     padding: 0;
 }
 
-#all-results .result-container ul li {
+#all-results .result-container ul li.bento-result {
     clear: left;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding: 5px 7px;
 }
 
 #all-results .result-container > ul li.bento-result:nth-child(2n) {
-    background: #dbdbdb;
 }
 
 #all-results #secondary {
-    margin: 0;
     width: 40%;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
+    padding: 0 2em;
 }
 
 #all-results #primary {
     margin: 0;
     width: 40%;
     border-left: 5px solid #fff;
+    padding-right: 2em;
 }
 
 #all-results #tertiary {
     width: 20%;
     border-left: 5px solid #fff;
+    padding-left: 2em;
 }
 @media ( max-width: 1199px ) {
     #all-results #secondary {
-    margin: 0;
-    width: 50%;
-    margin-bottom: 5px;
+        width: 50%;
+        margin: 0 0 5px;
     }
 
     #all-results #primary {
@@ -3032,20 +3037,22 @@ font-family: "icomoon";
 }
 @media ( max-width: 768px ) {
     #all-results #secondary {
-    margin: 0;
-    width: 100%;
-    margin-bottom: 5px;
+        width: 100%;
+        margin: 0 0 5px;
+        padding: 0
     }
 
     #all-results #primary {
-    margin: 0;
-    width: 100%;
-    border-left: 5px solid #fff;
+        margin: 0;
+        width: 100%;
+        border-left: 5px solid #fff;
+        padding: 0
     }
 
     #all-results #tertiary {
-    width: 100%;
-    border-left: 5px solid #fff;
+        width: 100%;
+        border-left: 5px solid #fff;
+        padding: 0
     }
 }
 
@@ -3056,7 +3063,12 @@ font-family: "icomoon";
 }
 
 #all-results .loading {
-    background: #eaeaea url(../img/gif-load.gif) no-repeat center 80px;
+    background: #ffffff url(../img/gif-load.gif) no-repeat center 80px;
+}
+
+#tertiary .loading {
+    background: none;
+    padding-left: 3em
 }
 
 .chosen-container-single .chosen-single, .chosen-container-active.chosen-with-drop .chosen-single {

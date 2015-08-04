@@ -85,13 +85,6 @@
 
         <div id="all-results">
 
-            <!-- Secondary results box. -->
-            <div id="secondary">
-                <div id="articles-results" class="result-container">
-                    <h3 id="articleh3">Articles</h3>
-                </div>
-            </div>
-
             <!-- The primary results box. -->
             <div id="primary">
                 <div id="catalog-results" class="result-container">
@@ -99,13 +92,21 @@
                 </div>
             </div>
 
-            <!-- Tertiary results box.-->
-            <div id="tertiary">
-                <div id="librarians-results" class="result-container librarians">
-                    <h3 id="librarianh3">Librarians</h3>
+            <!-- Secondary results box. -->
+            <div id="secondary">
+                <div id="articles-results" class="result-container">
+                    <h3 id="articleh3">Articles</h3>
                 </div>
-                <div id="guides-results" class="result-container guides">
-                    <h3 id="subjecth3">Subject guides</h3>
+            </div>
+
+            <!-- Tertiary results box.-->
+            <div id="tertiary" style="background-color: none">
+                <h4>Also try</h4>
+                <div id="guides-results" class="result-container guides" style="background-color: inherit">
+                    <h3 id="subjecth3" style="display: none">Subject guides</h3>
+                </div>
+                <div id="librarians-results" class="result-container librarians" style="background-color: inherit">
+                    <h3 id="librarianh3" style="display: none;">Librarians</h3>
                 </div>
             </div>
 
@@ -192,6 +193,10 @@
 
                         <div class="type">{{type}}</div>
                         <ul class="available-items">
+                            {{#if getit}}
+                            <a href="{{getit}}">Available online</a>
+                            {{/if}}
+
                             {{#avail}}
                             <li class="item-info">
                                 <span class="availability">{{availability}}</span>
@@ -240,7 +245,7 @@
 
         <ul>
             {{#items}}
-            <li>
+            <li class="bento-result">
 
                 <a href="{{link}}" class="title">
                     {{truncate '100' title}}
@@ -252,8 +257,6 @@
                 <div class="creator">{{truncate '80' creator}}</div>
                 {{/if}}
                 <div class="publisher">{{{part_of}}}</div>
-                <div class="source">{{{source}}}</div>
-                <div class="type">{{{type}}}</div>
             </li>
             {{/items}}
         </ul>

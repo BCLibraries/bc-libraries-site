@@ -1507,6 +1507,10 @@ a.announcelink {
     color: #fff;
 }
 
+.s-lg-link-list {
+    margin-bottom: 0;
+}
+
 .pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */       {
     float: left;
 }

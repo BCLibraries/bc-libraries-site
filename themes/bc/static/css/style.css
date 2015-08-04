@@ -1691,6 +1691,10 @@ a.announcelink {
     padding: 0;
 }
 
+#s-lg-guide-tabs .dropdown-menu {
+    margin: 0 !important;
+}
+
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
 #s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
  /*THIS IS THE DROP DOWN TAB ITSELF*/       {
@@ -1698,7 +1702,7 @@ a.announcelink {
     color: #990000;
     display: block;
     width: 100%;
-    padding: 5px 20px;
+    padding: 5px 0px;
     white-space: nowrap;
     border-top: 0px;
     border-right: 0px;

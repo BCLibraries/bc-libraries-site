@@ -3056,6 +3056,11 @@ body,
     }
 }
 
+#bentoboxresults h3 {
+    text-transform: none;
+    font-size: 16px;
+}
+
 #all-results .cover-image {
     float: left;
     width: 20%;

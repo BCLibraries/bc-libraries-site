@@ -1743,6 +1743,12 @@ nav select {
     }
 }
 
+    /* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
 /* ALL THE MEGA MENU STUFF */
 
 /* menu styes */

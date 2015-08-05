@@ -30,8 +30,6 @@ body {
     line-height: 1.75;
 }
 
-/* TEMPORARY CSS TO CREATE BC MANDATED HEADER/FOOTER */
-
 #bcheader {
     height: 45px;
     display: inline-block;
@@ -50,6 +48,32 @@ body {
     left: -5px;
     top: -55px;
     z-index: 999;
+}
+
+/* TEMPORARY RETURN TO OLD SITE LINK */
+
+a.returntoold {
+    color: #fff; position: absolute; right: 5%; top: 10px;
+}
+a.returntoold:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.returntoold:after {
+    font-family: 'icomoon';
+    content: "\e658";
+    display: inline-block;
+    text-decoration: none;
+     font-size: 12px;
+    padding: 0 0 0 5px;
+}
+
+
+@media ( max-width: 768px ) { 
+    a.returntoold {
+        display: none;
+    }
 }
 
 /* THE BASICS */

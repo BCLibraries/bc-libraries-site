@@ -50,3 +50,6 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }
+
+DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index' ))
+PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index' ))

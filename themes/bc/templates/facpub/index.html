@@ -1,0 +1,67 @@
+{% extends "facpub_base.html" %}
+{% block content %}
+
+
+
+<div class="row">
+
+
+    <div class="latest-highlight">
+    
+        <div class="left">
+
+        <h2>Latest Highlight</h2>
+            <img src="http://libsite.dev/theme/img/facpub/2015/06/savage-cover.jpg" alt="alt">
+
+                <div id="titleauthor">
+                    <h3><a href="#">Title tile tile tilel</a></h3>
+                    by First and Last
+                </div>
+
+                <a href="#">View interview and more</a>
+        </div>
+
+        <div class="right">
+            <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
+
+            <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:rappleb@bc.edu">Brendan Rapple</a>, Collection Development Librarian or <a href="mailto:bogdanon@bc.edu">Nina Bogdanovsky</a>, Reference & Collection Development Librarian.</p>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+{% if articles %}
+            {% set count = 0 %}
+            {% for article in articles[:15] if article.category == "facpub" %}
+
+                          
+                
+                    <div class="newsitem">
+                        <a href="{{ article.destination }}">
+                        <img src="/theme/img/facpub/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+                        
+                        <div class="newstext {{ article.showtext }}">
+                            <p class="newslink">{{ article.title }}</a> </p>
+                            <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
+                        </div>
+                    </div>
+                
+            
+          
+            {% endfor %}
+{% endif %}
+
+
+{% endblock %}
+
+{% block pagescripts %}
+    
+<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+{% endblock %}

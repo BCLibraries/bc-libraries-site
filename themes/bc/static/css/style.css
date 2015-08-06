@@ -53,11 +53,11 @@ body {
 /* TEMPORARY RETURN TO OLD SITE LINK */
 
 a.returntoold {
-    color: #fff; position: absolute; right: 5%; top: 10px;
+    color: #fff !important; position: absolute; right: 5%; top: 10px;
 }
 a.returntoold:hover {
-    color: #fff;
-    text-decoration: underline;
+    color: #fff !important;
+    text-decoration: underline !important;
 }
 
 a.returntoold:after {

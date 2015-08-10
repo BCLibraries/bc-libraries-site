@@ -1,4 +1,4 @@
-Title: Join the BC Library Team! 
+Title: NEW! Library Employment Site Launched
 Destination: http://libguides.bc.edu/employment
 Date: 2015-08-10 01:01 
 Tags: news, tags 

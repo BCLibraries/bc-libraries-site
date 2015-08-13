@@ -1,0 +1,101 @@
+
+HOW TO USE THE NEWS 
+ON THE NEW BOSTON COLLEGE 
+BC UNIVERSITY LIBRARIES WEBSITE DOT EDU
+
+
+                              /T /I
+                              / |/ | .-~/
+                          T\ Y  I  |/  /  _
+         /T               | \I  |  I  Y.-~/
+        I l   /I       T\ |  |  l  |  T  /
+     T\ |  \ Y l  /T   | \I  l   \ `  l Y
+ __  | \l   \l  \I l __l  l   \   `  _. |
+ \ ~-l  `\   `\  \  \\ ~\  \   `. .-~   |
+  \   ~-. "-.  `  \  ^._ ^. "-.  /  \   |
+.--~-._  ~-  `  _  ~-_.-"-." ._ /._ ." ./
+ &gt;--.  ~-.   ._  ~&gt;-"    "\\   7   7   ]
+^.___~"--._    ~-{  .-~ .  `\ Y . /    |
+ &lt;__ ~"-.  ~       /_/   \   \I  Y   : |
+   ^-.__           ~(_/   \   &gt;._:   | l______
+       ^--.,___.-~"  /_/   !  `-.~"--l_ /     ~"-.
+              (_/ .  ~(   /'     "~"--,Y   -=b-. _)
+               (_/ .  \  :           / l      c"~o \
+                \ /    `.    .     .^   \_.-~"~--.  )
+                 (_/ .   `  /     /       !       )/
+                  / / _.   '.   .':      /        '
+                  ~(_/ .   /    _  `  .-&lt;_
+                    /_/ . ' .-~" `.  / \  \          ,z=.
+                    ~( /   '  :   | K   "-.~-.______//
+                      "-,.    l   I/ \_    __{---&gt;._(==.
+                       //(     \  &lt;    ~"~"     //
+                      /' /\     \  \     ,v=.  ((
+                    .^. / /\     "  }__ //===-  `
+                   / / ' '  "-.,__ {---(==-
+                 .^ '       :  T  ~"   ll       
+                / .  .  . : | :!        \\
+               (_/  /   | | j-"          ~^
+                 ~-&lt;_(_.^-~"
+
+================================================================================================================
+
+THE NEWS IS BROKEN INTO 4 SECTIONS THAT DISPLAY DIFFERENTLY, IN DIFFERENT AREAS, USING DIFFERENT MARKDOWN FILES. 
+	- THE NEWS MARKDOWN FILES ARE LOCATED IN "./content/news"
+  - EACH SECTION HAS A FILE CALLED "00_COPYTHIS" WHICH CAN BE USED TO START ANOTHER MARKDOWN FILE.
+	- EACH FILE IS NAMED AS SUCH: "YYYY-MM-DD-EASY-TO-FIND-NAME.md"
+
+================================================================================================================
+
+	//  ANNOUNCEMENTS  \\
+
+THESE WILL APPEAR ON THE HOMEPAGE OF THE LIBRARY WEBSITE. ONLY TEXT IS REQUIRED. KEEP IT SHORT AND SIMPLE.
+ALL SECTIONS ARE REQUIRED.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+	
+		+MARKDOWN+
+
+Title: News Title ( FAIRLY STRAIGHT FORWARD )
+Date: 2010-10-01 01:01 ( FORMAT IS ALWAYS YYYY-MM-DD. THE TIME DOESN'T MATTER FOR OUR PURPOSES )
+Tags: news, announcement ( THIS CAN BE LEFT ALONE )
+Readmore: yes or no ( SUPPRESSES "READMORE" LINK IF "no" IS SELECTED )
+Slug: announcement-friendly-url ( NO CAPS, NO SPACES, USE HYPHENS. KEEP IT SIMPLE, PELICAN WILL NOT LOAD THE FILE IF THE SAME FRIENDLY-URL IS IN USE )
+Summary: ( THIS IS WHAT APPEARS ON THE HOMEPAGE. KEEP IT SHORT, IF POSSIBLE. )
+
+Article content will go on this line. This is for longer text on individual news page. FYI to link: [linked text](http://www.google.com). 
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+	//  EXHIBITS  \\
+
+DON'T WORRY ABOUT THESE FOR NOW.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+	//  FACPUB  \\
+
+DON'T WORRY ABOUT THESE FOR NOW.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+	//  NEWS  \\
+
+THESE WILL APPEAR ON THE SLIDESHOW ON HOMEPAGE OF THE LIBRARY WEBSITE. THEY REQUIRE AN IMAGE AND TEXT.
+	- IMAGES ARE LOCATED IN: /themes/bc/static/img/news
+	- FOLDERS ARE BROKEN DOWN BY MONTH.
+	- IMG SIZE IS 230x230.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+		+MARKDOWN+
+
+Title: News Title ( THIS WILL APPEAR HOVERING OVER THE IMAGE )
+Destination: URL ( REQUIRED TO DIRECT USERS, NEEDS FULL URL )
+Date: 2010-10-01 01:01 ( YYYY-MM-DD )
+Tags: news, tags ( CAN BE LEFT ALONE )
+Slug: friendly-url ( REQUIRED EVEN THOUGH IT'S NOT BEING USED. )
+OnHomepage: yes ( LEAVE AS YES. IF "no" IT WILL HIDE THE PAGE. IT'S NOT USEFUL NOW, WILL BE LATER)
+ShowText: yes ( THIS SHOWS TITLE + DATE OVER IMAGE. IF IMAGE HAS TEXT EMBEDED, SELECT "no" TO SUPRESS TITLE AND DATE )
+Image_alt: image description ( REQUIRED FOR ACCESIBILITY )
+Image_thumb: folder/imagename.png ( YYYY-MM/IMAGENAME.png )
+Summary: Article summary [linked text](http://www.google.com). ( IS NOT USED AT THIS TIME, BUT IT MIGHT BE USEFUL TO FILL OUT FOR NEWS RSS FEED LATER )

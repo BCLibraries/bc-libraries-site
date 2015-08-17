@@ -147,12 +147,10 @@ h4, h5, h6 {
 }
 
 hr {
-    border-color: #DADADA;
     border-image: none;
-    border-right: 0 none;
-    border-style: solid none none;
-    border-width: 2px 0 0;
- ;
+    border: 0 none #DADADA;
+    border-top: 2px solid;
+    margin-top: 0;
 }
 
 ul, ol {
@@ -1488,8 +1486,8 @@ a.announcelink {
 
 #s-lg-guide-header-meta {
     width: auto;
-    padding: 0 20px;
-    margin: 0;
+    margin: 5em 0 0 0;
+    font-size:.85em;
 }
 
 #s-lg-guide-header-meta hr {
@@ -1502,6 +1500,7 @@ a.announcelink {
 
 #s-lib-footer-login-link {
     float: right;
+    padding-right: 20px
 }
 @media ( max-width: 768px ) {
     #s-lib-footer-login-link {

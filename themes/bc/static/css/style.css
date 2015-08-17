@@ -419,12 +419,13 @@ th {
 .breadcrumb {
     background-color: transparent;
     list-style: none outside none;
-    margin: 11px 0 0 0;
-    padding: 0px 5px;
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: .9em;
 }
 
 .breadcrumb > .active {
-    color: #666;
+    color: #aaaaaa;
     font-weight: normal;
 }
 

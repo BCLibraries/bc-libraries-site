@@ -2690,18 +2690,6 @@ nav select {
     padding: 5px;
 }
 
-.feedback_button {
-    background: none repeat scroll 0 0 #990000;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: 3px solid #510000;
-    border-radius: 0 0 0 0;
-    height: 34px;
-    margin-left: 0;
-    width: 100%;
-    color: #fff;
-}
-
 @media ( max-width: 768px ) {
     .feedback_button {
         margin: 0 0 5px 0;
@@ -3805,3 +3793,102 @@ COULD BE USEFUL ELSEWHERE  */
 }
 }
 
+/* Feedback Form */
+
+#bcl-feedback {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: none;
+    opacity:0;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+}
+
+
+#bcl-feedback:target {
+    opacity:1;
+    pointer-events: auto;
+    display: block
+}
+
+#bcl-feedback > .visible-form {
+    width: 600px;
+    max-width: 100%;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.bcl-modal-header {
+    height: 2em;
+    margin-bottom: 1.5em
+}
+
+.bcl-modal-header h3 {
+    float: left;
+    height: 1em;
+    width: 95%;
+    margin: 1em 0;
+}
+
+.bcl-modal-body {
+    clear: both;
+}
+
+.bcl-modal-body p {
+    line-height: 1.5;
+    margin-bottom: 1.5em
+}
+
+.bcl-modal-header .close-modal {
+    float: left;
+    width: 5%;
+    height: 1em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.bcl-modal-header .close-modal:hover {
+    text-decoration: none;
+}
+
+.website-feedback p {
+    margin-bottom: 1em;
+}
+
+.website-feedback p label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.website-feedback p input, .website-feedback p textarea {
+    width: 100%;
+    border: 1px solid #cecfca;
+}
+
+#feedback-text {
+    height: 8em
+}
+
+.website-feedback p input.feedback_button {
+    background: none repeat scroll 0 0 #990000;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 3px solid #510000;
+    border-radius: 0 0 0 0;
+    height: 34px;
+    width: 25%;
+    min-width: 100px;
+    color: #fff;
+    float: right;
+}

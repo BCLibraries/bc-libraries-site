@@ -63,7 +63,7 @@
                 if ($(this).attr("id")) {
                     myNavID = "nav#" + $(this).attr("id");
                 }
-            
+
                 /* Create the dropdown base*/
                 $("<select />").appendTo(myNavID);
 
@@ -289,7 +289,7 @@
                                                 </ul>
 
                                                 <h4 id="h4mobile">Help from anywhere</h4>
-                                                
+
                                                 <!-- REFERENCE PANE BEGINS HERE -->
                                                 <div id="ref_pane" class="item_pane col-sm-5">
                                                     <div class="pane_info">
@@ -468,7 +468,7 @@
                                                     <div class="pane_info">
                                                         <h3><a href="http://libguides.bc.edu/erc" title="Educational Resource Center">Educational Resource Center</a></h3>
                                                          <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
-                                                        <p>The Educational Resource Center, located in Campion Hall, serves the specialized resource needs of the Lynch School of Education faculty and students. </p>  
+                                                        <p>The Educational Resource Center, located in Campion Hall, serves the specialized resource needs of the Lynch School of Education faculty and students. </p>
 
                                                         <ul class="col-sm-6">
                                                             <li><h4>Contact Info</h4></li>
@@ -520,7 +520,7 @@
                                                     <div class="pane_info">
                                                         <h3><a href="http://libguides.bc.edu/oconnor" title="Catherine O'Connor Library">Catherine O'Connor Library</a></h3>
                                                          <p class="address">381 Concord Road <br /> Weston, MA 02493</p>
-                                                        <p>Located at Weston Observatory, this library contains a specialized collection of earth sciences monographs, periodicals, and maps, particularly in the areas of seismology, geology, and geophysics.</p>  
+                                                        <p>Located at Weston Observatory, this library contains a specialized collection of earth sciences monographs, periodicals, and maps, particularly in the areas of seismology, geology, and geophysics.</p>
 
                                                         <ul class="col-sm-6">
                                                             <li><h4>Contact Info</h4></li>
@@ -546,7 +546,7 @@
                                                     <div class="pane_info">
                                                         <h3><a href="http://libguides.bc.edu/oneill" title="O'Neill Library">O'Neill Library</a></h3>
                                                          <p class="address">140 Commonwealth Avenue<br>Chestnut Hill, MA 02467-3810</p>
-                                                        <p>The main research library, the Thomas P. O'Neill, Jr. Library, is located in the center of the main campus, adjoining the O'Neill Plaza.</p>  
+                                                        <p>The main research library, the Thomas P. O'Neill, Jr. Library, is located in the center of the main campus, adjoining the O'Neill Plaza.</p>
 
                                                         <ul class="col-sm-6">
                                                             <li><h4>Contact Info</h4></li>
@@ -629,68 +629,14 @@
                         </li>
 
                         <!-- FEEDBACK FORM EMAIL -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle buttonone">Feedback</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <div class="yamm-content">
-                                        <div class="row row_feedback">
-                                            <h4>Feedback</h4>
-                                            <!-- The action and class are required. -->
-                                            <form method="post" class="website-feedback remail-form" action="website-feedback">
-                                                <ul class="col-sm-4">
-                                                    <div class="form_section">
-                                                        <label for="feedback-name">Name:</label>
-                                                        <input class="menu_input" type="text" value="" id="feedback-name" name="name" />
-                                                    </div>
-                                                    <div class="form_section">
-                                                        <label for="feedback-email">Email:</label>
-                                                        <input class="menu_input" type="text" value="" id="feedback-email" name="email" /><br>
-                                                    </div>
-                                                </ul>
-
-                                                <ul class="col-sm-4">
-                                                    <div class="form_section">
-                                                        <label for="feedback-name">Page URL:</label>
-                                                        <input class="menu_input" type="text" value="" id="feedback-name" name="page_url" /><br>
-                                                    </div>
-
-                                                    <div class="form_section">
-                                                        <label for="feedback-name">I am a:</label>
-                                                        <select name="Info">
-                                                            <option value="student">Student</option>
-                                                            <option value="faculty">Faculty</option>
-                                                            <option value="staff">Staff</option>
-                                                            <option value="guest">Guest</option>
-                                                        </select>
-                                                    </div>
-                                                </ul>
-
-                                                <ul class="col-sm-4">
-                                                    <div class="form_section">
-                                                        <label for="feedback-text">Your question or comment</label>
-                                                        <br>
-                                                        <textarea name="feedback" id="feedback-text"></textarea>
-                                                    </div>
-                                                    <input class="feedback_button" type="submit">
-                                                </ul>
-                                                <!-- END form fields -->
-
-                                                <!-- REQUIRED -->
-                                                <input type="hidden" value="website-feedback" name="form-to[]">
-
-                                                <!-- END REQUIRED -->
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <li class="dropdown yamm-fw"><a href="#bcl-feedback">Feedback</a>
                         </li>
 
                         <!-- MY ACCOUNTS BUTTON -->
                         <li class="dropdown yamm-fw" id="accounts"><a href="http://libguides.bc.edu/my-accounts" title="My Accounts">
                         <i class="fa fa-user"></i> My Accounts</a>
                         </li>
-                                           
+
                     </ul>
                 </div>
                 <!-- END NAVBAR-COLLAPSE -->
@@ -766,7 +712,7 @@
             </ul>
             </nav>
         </div>
-        
+
         <!-- Hours -->
         <div class="f_column column_hours no_bottom_border no_right_border">
             <h2><a href="http://libguides.bc.edu/hours">Hours</a></h2>
@@ -776,6 +722,10 @@
         </div>
     </div>
     <!-- END FOOTER -->
+
+    <!-- FEEDBACK FORM -->
+    {% include "feedback-form.html" %}
+    <!-- END FEEDBACK FORM -->
 
     <script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
     <!--script type="text/javascript" src="/theme/js/breadcrumbs.js"></script-->

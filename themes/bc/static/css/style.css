@@ -1276,7 +1276,7 @@ a.announcelink {
     min-height: 285px;
     overflow: auto;
     padding: 10px 20px 0 20px;
-    margin: 0 auto;
+    margin: 0 auto 48px;
     color: #666;
 }
 @media ( max-width: 1199px ) {

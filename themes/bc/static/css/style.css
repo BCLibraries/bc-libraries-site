@@ -1962,7 +1962,7 @@ nav select {
     float: right;
     margin: 0;
     text-align: center;
-    max-width: 56%;
+    max-width: 65%;
     background: #fff;
 }
 @media ( max-width: 1199px ) {
@@ -2253,13 +2253,27 @@ nav select {
     font-family: 'icomoon';
     content: "\e655";
     color: #a3a3a3;
+    display: block;
+    float: right;
+    font-size: 15px;
+    line-height: 1;
     padding: 5px 0 0 10px;
+    font-weight: normal;
 }
 
 .more a:hover:after {
-    color: #bbbbbb;
+    color: #fff;
 }
 
+.feedback:before {
+    font-family: 'icomoon';
+    content: "\e628";
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    padding: 0 5px 0 0;
+    font-weight: normal;
+}
 
 /* LIBRARY INFO DROP DOWN */
 

@@ -2290,13 +2290,31 @@ nav select {
     border-right: 5px solid #DADADA;
 }
 
-.get-help-menu .item-list {
-    padding: 0 0 0 25px;
+.item-desktop {
+    display: inline-block;
 }
+
+.item-tablet {
+    display: none;
+}
+
+@media ( max-width: 1199px ) {
+    .item-desktop {
+        display: none;
+    }
+    .item-tablet {
+    display: inline-block;
+    }
+}
+
 @media ( max-width: 768px ) {
     .item-list {
         display: none;
     }
+}
+
+.get-help-menu .item-list {
+    padding: 0 0 0 25px;
 }
 
 .yamm .dropdown-menu li .item-list > li > a:hover, .yamm .dropdown-menu li .item-list > li > a:hover {

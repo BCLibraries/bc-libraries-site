@@ -3,11 +3,12 @@
 
 
 
-    <h2>Library News</h2>
+    <h2>Library News & Announcements </h2>
 
 <div class="news_archives">
     
-                     
+<h3>2015</h3>                     
+
     {% if articles %}
            
         {% set count = 0 %}
@@ -15,24 +16,28 @@
 
             {% if article.date|strftime('%Y') == "2015" %}
             
+                
+
                     {% set count = count + 1 %}
                     {% if count < 50 %}
                
                         {% if article.category == "news" %}              
                     
                         <div class="news_listing">
-
-                            <h3><a href="{{ article.destination }}">{{ article.title }}</a></h3>
-                            
-                            <p><em> {{ article.date|strftime('%B %d, %Y') }}</em></p>
-                                                 
                             <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                            
-                            <p>{{ article.content|striptags|truncate(250) }}</p>
 
+                            <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
+                            
+                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+                                                        
+                            <div class="archive_content">
+                                <p>{{ article.content|striptags|truncate(200) }}</p>
+                            </div>
+
+                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
                             <span class="readmore">
-                            <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                            </span>
+                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                            </span>-->
                                 
                             
                         </div>
@@ -41,15 +46,21 @@
                  
                         {% if article.category == "announcements" %}  
 
-                        <div class="anouncement_listing">
-                        <a href="{{ article.url }}" class="announcelink">{{ article.title }}</a> - <em>{{ article.date|strftime('%m/%d/%y') }}</em><br />
-                        <span>{{ article.summary|striptags }}
-                        </span>
-                        <div class="readmore {{ article.readmore }}">
-                        <a href="{{ article.url }}"><span class="arrow">Read more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                         <div class="news_listing">
+
+                            <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
+                            
+                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+                                                        
+                            <div class="archive_content">
+                                <p>{{ article.summary|striptags|truncate(250) }}</p>
+                            </div>
+
+                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
+                            <span class="readmore">
+                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                            </span> -->
                         </div>
-                        
-                    </div>
 
                         {% endif %}
 
@@ -60,8 +71,10 @@
         {% endfor %}
           
     {% endif %}
-        
+
 </div>
+
+<p>For news prior to 2015, please review the <a href="http://www.bc.edu/libraries/about/news">old Libraries website news archives</a>.</p> 
 
 {% endblock %}
 

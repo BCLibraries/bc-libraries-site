@@ -160,7 +160,7 @@
                     <ul class="nav navbar-nav">
 
                         <!-- Find list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Find</a>
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option">Find</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- Content container to add padding -->
@@ -210,7 +210,7 @@
                         </li>
 
                         <!-- Using the Libraries list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Using the Libraries">Using the Libraries</a>
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" title="Using the Libraries">Using the Libraries</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- Content container to add padding -->
@@ -264,7 +264,7 @@
                         </li>
 
           <!-- Get Help list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Get Help</a>
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option">Get Help</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- Content container to add padding -->
@@ -383,7 +383,7 @@
                         </li>
 
                         <!-- About The Libraries list -->
-                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle" title="About the Libraries">About the Libraries</a>
+                        <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" title="About the Libraries">About the Libraries</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <!-- Content container to add padding -->
@@ -658,12 +658,12 @@
                         </li>
 
                         <!-- FEEDBACK FORM EMAIL -->
-                        <li class="dropdown yamm-fw"><a href="#bcl-feedback">
+                        <li class="dropdown yamm-fw"><a href="#bcl-feedback" class="menu-option">
                         <span class="feedback"></span>Feedback</a>
                         </li>
 
                         <!-- MY ACCOUNTS BUTTON -->
-                        <li class="dropdown yamm-fw" id="accounts"><a href="http://libguides.bc.edu/my-accounts" title="My Accounts">
+                        <li class="dropdown yamm-fw" id="accounts"><a href="http://libguides.bc.edu/my-accounts" title="My Accounts" class="menu-option">
                         <span class="fa fa-user"></span> My Accounts</a>
                         </li>
 
@@ -814,6 +814,14 @@
 
           ga('create', 'UA-3008279-16', 'auto');
           ga('send', 'pageview');
+
+          $(function () {
+            $('#megamenu ul.nav li.dropdown').hover(function() {
+                var myText = $(this).find("a.dropdown-toggle").text();
+                //console.log("got event for: " + myText);
+                ga('send', 'event', 'megamenu', 'hover', 'test_' + myText);
+            });
+          });
     </script>
 
     {% block pagescripts %}

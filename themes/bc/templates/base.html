@@ -790,7 +790,7 @@
         new UISearch( document.getElementById( 'sb-search' ) );
     </script>
 
-<!-- Google Analytics script -->
+    <!-- Google Analytics script -->
     <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -799,14 +799,6 @@
 
           ga('create', 'UA-3008279-16', 'auto');
           ga('send', 'pageview');
-
-          $(function () {
-            $('#megamenu ul.nav li.dropdown').hover(function() {
-                var myText = $(this).find("a.dropdown-toggle").text();
-                //console.log("got event for: " + myText);
-                ga('send', 'event', 'megamenu', 'hover', 'test_' + myText);
-            });
-          });
     </script>
 
     {% block pagescripts %}

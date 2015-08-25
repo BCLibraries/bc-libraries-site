@@ -1,50 +1,67 @@
 {% extends "base.html" %}
 {% block content %}
 
- <h2>Library News</h2>
 
 
-<!-- SECOND ROW, NEWS ROW -->
-<div class="row newsrow">
+    <h2>Library News</h2>
+
+<div class="news_archives">
     
-<!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
-                    
-            {% if articles %}
-<ul>            
-            {% set count = 0 %}
-            {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
-
+                     
+    {% if articles %}
+           
+        {% set count = 0 %}
+        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
 
             {% if article.date|strftime('%Y') == "2015" %}
+            
+                    {% set count = count + 1 %}
+                    {% if count < 50 %}
+               
+                        {% if article.category == "news" %}              
+                    
+                        <div class="news_listing">
 
-                {% set count = count + 1 %}
-                {% if count < 50 %}
-                          
-                <li class="{{ article.onhomepage }}">
-                    <div class="newsitem">
-                        <a href="{{ article.destination }}">
-                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                        
-                        <div class="newstext {{ article.showtext }}">
-                            <p class="newslink">{{ article.title }}</a> </p>
-                            <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
+                            <h3><a href="{{ article.destination }}">{{ article.title }}</a></h3>
+                            
+                            <p><em> {{ article.date|strftime('%B %d, %Y') }}</em></p>
+                                                 
+                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+                            
+                            <p>{{ article.content|striptags|truncate(250) }}</p>
+
+                            <span class="readmore">
+                            <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                            </span>
+                                
+                            
                         </div>
-                        </a>
+                 
+                        {% endif %}
+                 
+                        {% if article.category == "announcements" %}  
+
+                        <div class="anouncement_listing">
+                        <a href="{{ article.url }}" class="announcelink">{{ article.title }}</a> - <em>{{ article.date|strftime('%m/%d/%y') }}</em><br />
+                        <span>{{ article.summary|striptags }}
+                        </span>
+                        <div class="readmore {{ article.readmore }}">
+                        <a href="{{ article.url }}"><span class="arrow">Read more</span> <span class="offscreen">about {{ article.title }}</span></a>
+                        </div>
+                        
                     </div>
-                </li>
-            {% endif %}
-                {% endif %}
-            {% endfor %}
 
+                        {% endif %}
 
-</ul>            
+                    {% endif %}                
+           
             {% endif %}
+
+        {% endfor %}
+          
+    {% endif %}
         
-
-
 </div>
-
-
 
 {% endblock %}
 

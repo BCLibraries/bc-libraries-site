@@ -8,4 +8,5 @@ ShowText: yes
 Image: imagename.png
 Image_alt: Sandra Waddock during her interview
 Image_thumb: 2015-06/waddock-thumb.png
-Summary: <em>Intellectual Shamans</em> by Sandra Waddock, based on the work and lives of 28 very well-known management academics, describes what it means to be an intellectual shaman. It provides insight into the career paths and the sometimes maverick behavior that has allowed these individuals to achieve success. [Click here to read more about <em>Intellectual Shamans</em>](http://www.bc.edu/sites/libraries/facpub/waddock-intellectual/).
+
+<em>Intellectual Shamans</em> by Sandra Waddock, based on the work and lives of 28 very well-known management academics, describes what it means to be an intellectual shaman. It provides insight into the career paths and the sometimes maverick behavior that has allowed these individuals to achieve success. [Click here to read more about <em>Intellectual Shamans</em>](http://www.bc.edu/sites/libraries/facpub/waddock-intellectual/).

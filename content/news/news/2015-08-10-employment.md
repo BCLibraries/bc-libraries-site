@@ -7,4 +7,5 @@ OnHomepage: yes
 ShowText: yes
 Image_alt: University Librarian Tom Wall shakes hands with Baldwin Eagle.
 Image_thumb: 2015-08/employment-thumb.png
-Summary: Article summary [linked text](http://www.google.com).
+
+Be a part of the Boston College University Libraries team! Check out our open positions now!

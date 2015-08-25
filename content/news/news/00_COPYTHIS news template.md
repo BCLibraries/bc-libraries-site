@@ -7,4 +7,5 @@ OnHomepage: yes
 ShowText: yes
 Image_alt: image description
 Image_thumb: folder/imagename.png
-Summary: Article summary [linked text](http://www.google.com).
+
+Article summary [linked text](http://www.google.com).

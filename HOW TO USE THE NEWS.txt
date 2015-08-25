@@ -51,8 +51,6 @@ THE NEWS IS BROKEN INTO 4 SECTIONS THAT DISPLAY DIFFERENTLY, IN DIFFERENT AREAS,
 THESE WILL APPEAR ON THE HOMEPAGE OF THE LIBRARY WEBSITE. ONLY TEXT IS REQUIRED. KEEP IT SHORT AND SIMPLE.
 ALL SECTIONS ARE REQUIRED.
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-	
 		+MARKDOWN+
 
 Title: News Title ( FAIRLY STRAIGHT FORWARD )
@@ -85,8 +83,6 @@ THESE WILL APPEAR ON THE SLIDESHOW ON HOMEPAGE OF THE LIBRARY WEBSITE. THEY REQU
 	- FOLDERS ARE BROKEN DOWN BY MONTH.
 	- IMG SIZE IS 230x230.
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
 		+MARKDOWN+
 
 Title: News Title ( THIS WILL APPEAR HOVERING OVER THE IMAGE )
@@ -98,4 +94,5 @@ OnHomepage: yes ( LEAVE AS YES. IF "no" IT WILL HIDE THE PAGE. IT'S NOT USEFUL N
 ShowText: yes ( THIS SHOWS TITLE + DATE OVER IMAGE. IF IMAGE HAS TEXT EMBEDED, SELECT "no" TO SUPRESS TITLE AND DATE )
 Image_alt: image description ( REQUIRED FOR ACCESIBILITY )
 Image_thumb: folder/imagename.png ( YYYY-MM/IMAGENAME.png )
-Summary: Article summary [linked text](http://www.google.com). ( IS NOT USED AT THIS TIME, BUT IT MIGHT BE USEFUL TO FILL OUT FOR NEWS RSS FEED LATER )
+
+Article content goes on the last line. [linked text](http://www.google.com). ( WILL BE USED TO PULL IN GENERAL INFO INTO THE ARCHIVE PAGE. )

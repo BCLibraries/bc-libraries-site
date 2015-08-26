@@ -63,7 +63,7 @@
 		        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
 		            
 		                    {% set count = count + 1 %}
-		                    {% if count < 14 %}
+		                    {% if count < 16 %}
 		               
 		                        {% if article.category == "news" %}              
 		                    
@@ -73,9 +73,6 @@
 		                            
 		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
 		                                                        
-		                            <div class="archive_content">
-		                                <p>{{ article.content|striptags|truncate(100) }}</p>
-		                            </div>
 		                                
 		                        </div>
 		                 
@@ -89,9 +86,7 @@
 		                            
 		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
 		                                                        
-		                            <div class="archive_content">
-		                                <p>{{ article.summary|striptags|truncate(150) }}</p>
-		                            </div>
+	
 
 		                        </div>
 

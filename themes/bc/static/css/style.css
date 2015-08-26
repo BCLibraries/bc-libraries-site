@@ -779,7 +779,7 @@ a.announcelink {
     display: none;
 }
 
-.announcements .arrow:after {
+.arrow:after {
     font-family: 'icomoon';
     content: "\e658";
     font-size: 10px;
@@ -788,7 +788,7 @@ a.announcelink {
     text-decoration: none;
 }
 
-.announcements .offscreen {
+.offscreen {
     text-indent: -9999px;
     position: absolute;
 }
@@ -3515,10 +3515,10 @@ p.newslink {
 /* ARTICLE PAGE MINI ARCHIVE CODE */
 
 .article_page .news_listing {
-    width: 25%;
+    width: 20%;
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
-    height: 120px;
+    height: 85px;
 }
 @media ( max-width: 1199px ) {
         .article_page .news_listing {
@@ -3532,13 +3532,13 @@ p.newslink {
        }
 }
 
-.article_page .news_listing:nth-child(4n+2) {
+.article_page .news_listing:nth-child(5n+2) {
     border-right: 0px solid #fff;
 } 
 
 .article_page .news_listing h5 {
     margin: 0 !important;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .article_page .morenews {
@@ -3849,26 +3849,96 @@ background-attachment: fixed;
 
 .latest-highlight {
     width: 100%;
-    background: none repeat scroll 0 0 #eaeaea;
-    border-bottom: 3px solid #dadada;
     color: #000;
     display: block;
     margin: 10px 0;
     overflow: hidden;
-    padding: 20px;
-    text-align: center;
+    padding: 0px;
     position: relative;
+    height: 200px;
+    border-bottom: 3px solid #dadada;
 }
 
 .latest-highlight .left {
     float: left;
     width: 50%;
+    height: 100%;
+    position: relative;
+    background: #eaeaea;
+    border-right: #fff solid 5px;
+    padding: 10px;
 }
 
 .latest-highlight .right {
     float: right;
-    text-align: left;
     width: 50%;
+    height: 100%;
+    position: relative;
+    background: #eaeaea;
+    padding: 10px;
+}
+
+.latest-highlight .left img {
+    border: 2px solid #05506d;
+    float: left;
+    height: 135px;
+    margin: 0 10px 0 0;
+    padding: 1px;
+}
+
+.facpub .latest-highlight #titleauthor {
+    font-size: 15px;
+    line-height: 1;
+    padding: 0px;
+}
+
+.view-interview {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+
+.facpub_archives {
+    margin: 5px 0 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.old_facpub {
+    width: 50%;
+    height: 135px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+}
+
+.old_facpub:nth-child(odd) {
+    border-right: 1px solid #dadada;
+}
+
+.old_facpub:last-child, .old_facpub:nth-last-child(2) {
+    border-bottom: 0px;
+}
+
+.old_facpub .bookinfo {
+
+}
+
+.old_facpub .bookinfo p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.old_facpub img {
+    width: 75px;
+    float: left;
+    border: 2px solid #05506d;
+    padding: 1px;
+    margin: 0 5px 0 0;
 }
 
 /* RESPONSIVE PORTION */

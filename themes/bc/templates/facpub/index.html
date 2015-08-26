@@ -2,23 +2,28 @@
 {% block content %}
 
 
-
 <div class="row">
 
+{% if articles %}
+            {% set count = 0 %}
+            {% for article in articles[:15] if article.category == "facpub" %}
+
+                {% set count = count + 1 %}
+                {% if count < 2 %}      
 
     <div class="latest-highlight">
     
         <div class="left">
 
-        <h2>Latest Highlight</h2>
-            <img src="http://libsite.dev/theme/img/facpub/2015/06/savage-cover.jpg" alt="alt">
+        <h2>Current Highlight</h2>
+            <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
 
                 <div id="titleauthor">
-                    <h3><a href="#">Title tile tile tilel</a></h3>
-                    by First and Last
+                    <h3><a href="../{{ article.url }}">{{ article.title }}</a></h3>
+                    by {{ article.author_firstname}} {{ article.author_lastname}}
                 </div>
 
-                <a href="#">View interview and more</a>
+                <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
         </div>
 
         <div class="right">
@@ -32,32 +37,32 @@
     </div>
 
 
-
-
-
 </div>
 
-{% if articles %}
-            {% set count = 0 %}
-            {% for article in articles[:15] if article.category == "facpub" %}
+<div class="facpub_archives">
 
-                          
+<h2>Past Highlights</h2>
+
+<h3>2015 Highlights</h3>
+
+    {% else %} 
                 
-                    <div class="newsitem">
-                        <a href="{{ article.destination }}">
-                        <img src="/theme/img/facpub/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                        
-                        <div class="newstext {{ article.showtext }}">
-                            <p class="newslink">{{ article.title }}</a> </p>
-                            <p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>
-                        </div>
-                    </div>
+            <div class="old_facpub">
+
+                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+                <div class="bookinfo">
+                <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
+                    by {{ article.author_firstname}} {{ article.author_lastname}}</p>
+                </div>
+                                
+            </div>
                 
-            
+                {% endif %}
           
             {% endfor %}
 {% endif %}
 
+</div>
 
 {% endblock %}
 

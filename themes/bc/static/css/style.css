@@ -3377,6 +3377,7 @@ p.newslink {
 
 .article_page  {
     margin: 25px 0;
+    min-height: 300px;
 }
 
 .article_page h3 {

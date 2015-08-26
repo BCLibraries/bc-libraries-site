@@ -31,19 +31,83 @@
 <!-- TEMPLATE FOR ANNOUNCEMENTS -->
 {% if article.category == "announcements" %}
 
+	<ol class="breadcrumb" id="s-lib-bc-list">
+		<li id="s-lib-bc-customer">
+		<a href="http://library.bc.edu" title="Libraries">Libraries
+		</a>
+		</li>
+		<li id="s-lib-bc-site">
+		<a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements 
+		</a>
+		</li>
+	</ol>
+
 	<div class="article_page">
 
-		<h3>{{ article.title }}</h3>
-		<em>{{ article.date|strftime('%B %d, %Y') }}</em>
-			
+			<h3>{{ article.title }}</h3>
+			<em>{{ article.date|strftime('%B %d, %Y') }}</em>
+				
 			<div class="article_content">
-		        <div>{{ article.summary }}</div>
-		    </div>
+				<div>{{ article.summary }}</div>
+			</div>
 
-		    {{ articles_previous_page }}
+		<div class="row">
+		
+		<hr>
 
+		<h4>More News From the Boston College Libraries</h4>	
+
+		  {% if articles %}
+		           
+		        {% set count = 0 %}
+		        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
+		            
+		                    {% set count = count + 1 %}
+		                    {% if count < 14 %}
+		               
+		                        {% if article.category == "news" %}              
+		                    
+		                        <div class="news_listing">
+		                           
+		                            <h5><a href="{{ article.destination }}">{{ article.title }}</a></h5>
+		                            
+		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+		                                                        
+		                            <div class="archive_content">
+		                                <p>{{ article.content|striptags|truncate(100) }}</p>
+		                            </div>
+		                                
+		                        </div>
+		                 
+		                        {% endif %}
+		                 
+		                        {% if article.category == "announcements" %}  
+
+		                         <div class="news_listing">
+
+		                            <h5><a href="../../../../{{ article.url }}">{{ article.title }}</a></h5>
+		                            
+		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+		                                                        
+		                            <div class="archive_content">
+		                                <p>{{ article.summary|striptags|truncate(150) }}</p>
+		                            </div>
+
+		                        </div>
+
+		                        {% endif %}
+
+		                    {% endif %}                
+
+		        {% endfor %}
+		          
+		    {% endif %}
+
+		</div>
 	</div>
 {% endif %}
+
+
 
 <!-- TEMPLATE FOR EXHIBITS -->
 {% if article.category == "exhibits" %}

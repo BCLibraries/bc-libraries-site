@@ -3779,7 +3779,7 @@ background-attachment: fixed;
     line-height: 1.5;
 }
 
-.facpub .article_content .right p.no /* USES MARKDOWN TO HIDE PARAGRPAH IS THERE IS NO ENTRY */
+.facpub .article_content .right p.no /* USES MARKDOWN TO HIDE PARAGRPAH IF IS THERE IS NO ENTRY */
     {
    display: none;
 }
@@ -3957,24 +3957,8 @@ background-attachment: fixed;
     }
 
     .facpub #header {
-        width: 100%;
-        min-height: 110px;
-    }
-
-    .facpub #librarytitle {
-        position: absolute;
-        right: 10px;
-        left: auto;
-        top: auto;
-        bottom: 0;
-}
-
-    .facpub #librarytitle h1 {
-        background: url("/theme/img/title_small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-        display: block;
-        height: 76px;
-        width: 185px;
-        text-indent: -9999px;
+        min-height: 75px;
+        height: 75px;
     }
 
     .facpub .article_content .left {
@@ -4002,29 +3986,94 @@ background-attachment: fixed;
         height: auto;
     }
 
+    .facpub #header h1 {
+        font-size: 30px;
+    }
+
+    .facpub #librarylink {
+        position: absolute;
+        bottom: 30px;
+        left: 55px;
+    }
+
+    .facpub #librarylink a {
+        background: none;
+        display: block;
+        height: auto;
+        width: auto;
+        text-indent: -0px;
+        color: #000;
+    }
+  
+
+    .facpub #header .book:before {
+        font-size: 30px;
+    }
+
+    .facpubtitle {
+    bottom: 5px;
+    left: 55px;
+    }
+
 }
 
 @media ( max-width: 850px ) {
 
-    .facpub #librarytitle {
+    .facpub #header {
+        height: 95px;
+    }
+    .facpub #header h1 {
+        font-size: 25px;
+    }
+    .facpub #header .book:before {
+        font-size: 25px;
+    }
+     .facpub #librarylink {
         display: none;
-        }
+    }
 
     .facpub .article_content .left {
         float: none;
         border-right: 0px solid #dadada;
-        padding: 0 20px 0 0;
+        padding: 0;
         width: 100%;
     }
-
     .facpub .article_content .right {
         border-top: 1px solid #dadada;
         float: none;
         width: 100%;
-        padding:;
+        padding: 10px 0 0 0;
     }
     .facpub .article_content .right p {
         width: 50%;
+    }
+    .latest-highlight {
+        height: auto;
+    }
+    .latest-highlight .left {
+        border-bottom: 5px solid #fff;
+        height: auto;
+        padding: 5px;
+        width: 100%;
+    }
+    .latest-highlight .right {
+        height: auto;
+        width: 100%;
+        padding: 5px;
+    }
+    .view-interview {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+    .old_facpub:nth-child(2n+1) {
+        border-right: 0px solid #dadada;
+    }
+    .old_facpub:nth-last-child(2) {
+        border-bottom: 1px solid #dadada;
+    }
+    .old_facpub {
+        width: 100%;
     }
 }
 

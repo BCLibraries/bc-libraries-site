@@ -1,5 +1,5 @@
 Title: "It Is I Myself That I Remake": Yeats at 150
-Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLthreeExhibits/yeats-at-150.html
+Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExhibits/yeats-at-150.html
 Date: 2015-08-24 01:01 
 Tags: news, tags 
 Slug: yeats-reinvent

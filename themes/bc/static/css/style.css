@@ -3519,6 +3519,7 @@ p.newslink {
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
     height: 85px;
+    text-align: center;
 }
 @media ( max-width: 1199px ) {
         .article_page .news_listing {

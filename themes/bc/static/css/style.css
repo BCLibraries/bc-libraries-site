@@ -3515,11 +3515,12 @@ p.newslink {
 /* ARTICLE PAGE MINI ARCHIVE CODE */
 
 .article_page .news_listing {
-    width: 20%;
     border-bottom: 5px solid #fff;
     border-right: 5px solid #fff;
-    height: 85px;
+    height: 75px;
+    overflow: hidden;
     text-align: center;
+    width: 20%;
 }
 @media ( max-width: 1199px ) {
         .article_page .news_listing {
@@ -3645,7 +3646,7 @@ background-attachment: fixed;
 }
 
 .facpub .article_page {
-    margin: 15px 0 0;
+    margin: 0;
 }
 
 .facpub #fullpagewrapper {
@@ -3660,85 +3661,82 @@ background-attachment: fixed;
 .facpub #header {
     width: 100%;
     height: 110px;
-    background: #fff;
-    border-bottom: 1px solid #dadada;
+    position: relative;
+    border-bottom: 5px solid #05506d;
+    background: rgba(5,80,109,1);
+    background: -moz-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,80,109,1)), color-stop(100%, rgba(50,117,143,1)));
+    background: -webkit-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
+    background: -o-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
+    background: -ms-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
+    background: linear-gradient(to bottom, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', endColorstr='#32758f', GradientType=0 );
 }
 
-.facpub #header .pagetitle {
-    position: absolute;
-    bottom: 0px;
-    left: 105px;
-}
-
-.facpub #header .pagetitle a:hover {
+.facpub #header  a:hover {
     text-decoration: none;
 }
 
-.facpub #header .pagetitle h2 {
-    color: #990000;
+.facpub #header h1 {
+    color: #fff;
     line-height: 1;
     margin: 0;
     text-align: left;
+    font-size: 50px;
+    transition: color .6s;
 }
 
-.facpub #header .pagetitle h2:hover {
-    color: #05506d;
-}
-
-.facpub #header .pagetitle .top {
-    font-size: 35px;
-    letter-spacing: 2pt;
-    color: #444;
-}
-
-.facpub #header .pagetitle .middle {
-    font-size: 35px;
-    letter-spacing: -1pt;
-}
-
-.facpub #header .pagetitle .bottom {
-    font-size: 35px;
-    letter-spacing: .4pt;
-    color: #444 ;
-}
-
-.facpub #header .book {
-     height: 70px;
-    left: 15px;
-    position: absolute;
-    top: 25px;
-}
-
-.facpub #header .book:before {
-    font-family: 'icomoon';
-    content:"\e650";
+.facpub #header h1:hover {
     color: #990000;
-    font-size: 85px;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
 }
 
-.facpub #librarytitle {
+.facpub #librarylink {
     position: absolute;
-    right: 0px;
-    left: auto;
-    top: auto;
-    bottom: 0;
+    bottom: 50px;
+    left: 77px;
 }
 
-.facpub #librarytitle h1 {
+.facpub #librarylink a {
     background: url("/theme/img/facpub_title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     height: 21px;
     width: 500px;
     text-indent: -9999px;
+    transition: opacity .6s;
+}
+
+.facpub #librarylink a:hover {
+    opacity: .4;
+}
+
+.facpubtitle {
+    position: absolute;
+    bottom: 3px;
+    left: 75px;
+}
+
+.facpub #header .book {
+    left: 15px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.facpub #header .book:before {
+    font-family: 'icomoon';
+    content:"\e650";
+    color: #fff;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .facpub #titleauthor {
     font-size: 20px;
     line-height: 1;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0px;
+    text-align: left;
+    margin: 0 0 15px 0;
 }
 
 .facpub .youtube {
@@ -3747,7 +3745,7 @@ background-attachment: fixed;
     border-bottom: 3px solid #dadada;
     color: #000;
     display: block;
-    margin: 10px 0;
+    margin: 0px 0 10px;
     overflow: hidden;
     padding: 20px;
     text-align: center;
@@ -3757,7 +3755,7 @@ background-attachment: fixed;
     width: 100%;
     border-top: 0px;
     border-bottom: 0px;
-    margin: 20px 0 0;
+    margin: 0px 0 0;
 }
 
 .facpub .article_content {
@@ -3852,31 +3850,30 @@ background-attachment: fixed;
     width: 100%;
     color: #000;
     display: block;
-    margin: 10px 0;
+    margin: 0;
     overflow: hidden;
     padding: 0px;
     position: relative;
-    height: 200px;
-    border-bottom: 3px solid #dadada;
+    height: 300px;
 }
 
 .latest-highlight .left {
+ background: #eaeaea none repeat scroll 0 0;
+    border-right: 5px solid #fff;
     float: left;
-    width: 50%;
     height: 100%;
+    padding: 55px 10px 0;
     position: relative;
-    background: #eaeaea;
-    border-right: #fff solid 5px;
-    padding: 10px;
+    width: 50%;
 }
 
 .latest-highlight .right {
+   background: #eaeaea none repeat scroll 0 0;
     float: right;
-    width: 50%;
     height: 100%;
+    padding: 35px 10px 0;
     position: relative;
-    background: #eaeaea;
-    padding: 10px;
+    width: 50%;
 }
 
 .latest-highlight .left img {

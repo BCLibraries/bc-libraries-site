@@ -131,12 +131,12 @@
 
 	<div class="article_page">
 
-		<div id="titleauthor">
-		<h3>{{ article.title }}</h3>
-		by {{ article.author_firstname }} {{ article.author_lastname }}
-		</div>
-
 		<div class="youtube">
+
+			<div id="titleauthor">
+				<h3>{{ article.title }}</h3>
+				by {{ article.author_firstname }} {{ article.author_lastname }}
+			</div>
 
 			<div class="video-container">
 				<iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>

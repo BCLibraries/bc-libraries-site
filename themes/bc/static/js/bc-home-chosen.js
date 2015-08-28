@@ -11,7 +11,14 @@ $('document').ready(function () {
         var options = '';
         var $by_title = $('#dbs-by-title');
         jQuery.each(msg, function (index, value) {
-            var url = 'http://databases.bc.edu/V?func=native-link&resource=' + value.number;
+            var url;
+            if (value.number) {
+                url = 'http://databases.bc.edu/V?func=native-link&resource=' + value.number;
+            } else if (value.url) {
+                url = value.url;
+            } else {
+                url = '';
+            }
             options = options + '<option value="' + url + '">' + value.short_name + '</option>'
         });
 

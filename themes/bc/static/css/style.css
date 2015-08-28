@@ -3687,7 +3687,7 @@ background-attachment: fixed;
 }
 
 .facpub #header h1:hover {
-    color: #990000;
+    color: #000;
 }
 
 .facpub #librarylink {
@@ -3702,11 +3702,10 @@ background-attachment: fixed;
     height: 21px;
     width: 500px;
     text-indent: -9999px;
-    transition: opacity .6s;
 }
 
 .facpub #librarylink a:hover {
-    opacity: .4;
+        background: url("/theme/img/facpub_title_white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .facpubtitle {

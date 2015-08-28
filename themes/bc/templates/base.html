@@ -800,6 +800,13 @@
 
           ga('create', 'UA-3008279-16', 'auto');
           ga('send', 'pageview');
+
+          $(function () {
+            $('#megamenu ul.nav li.dropdown').mouseenter(function() {
+                var myText = $(this).find("a.menu-option").text();
+                ga('send', 'event', 'megamenu', 'hover', myText.trim());
+            });
+          });
     </script>
 
     {% block pagescripts %}

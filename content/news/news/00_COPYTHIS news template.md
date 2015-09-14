@@ -6,6 +6,6 @@ Slug: friendly-url
 OnHomepage: yes
 ShowText: yes
 Image_alt: image description
-Image_thumb: folder/imagename.png
+Image_thumb: 2015-xx/FILENAME-thumbs.png
 
 Article summary [linked text](http://www.google.com).

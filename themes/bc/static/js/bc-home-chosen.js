@@ -2,7 +2,7 @@ $('document').ready(function () {
 
     $('#subject-guides').chosen({
         width: "100%",
-        search_contains: true
+        search_contains: false
     }).change(function (event, params) {
         window.location = 'http://libguides.bc.edu/' + params.selected;
     });
@@ -24,7 +24,7 @@ $('document').ready(function () {
 
         $by_title.append(options).chosen({
             width: "100%",
-            search_contains: true
+            search_contains: false
         }).change(function (event, params) {
             window.location = params.selected;
         });

@@ -203,6 +203,30 @@
 {% endblock %}
 
 {% block pagescripts %}
+<!-- CAROUFREDSEL JS UNDER HERE -->
+<script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
+<!-- fire plugin onDocumentReady -->
+<script type="text/javascript" language="javascript">
+    $(function() {
+
+        //  Scrolled by user interaction
+        $('#newsslider').carouFredSel({
+            auto: false,
+            items: 1,
+            prev: '#prev',
+            next: '#next',
+            pagination: "#pager2",
+            mousewheel: true,
+            swipe: {
+                onMouse: true,
+                onTouch: true
+            }
+        });
+
+    });
+</script>
+
+<!-- END CAROUFREDSEL JS-->
     
 <script src="/theme/js/bc-home-chosen.js?version=0.0.2"></script>
 {% endblock %}

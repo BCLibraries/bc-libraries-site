@@ -1218,6 +1218,7 @@ a.announcelink {
 .search_float li {
     display: inline-block;
     list-style-type: none;
+    margin-right: 1px /* Fix for IE8 inline-block bug */
 }
 
 .search_float li:first-child:after {

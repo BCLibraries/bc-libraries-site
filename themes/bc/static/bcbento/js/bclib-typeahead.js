@@ -24,4 +24,33 @@ $(document).ready(function () {
             }
         }
     });
+
+    /** Track search submissions */
+    $('#block_search form').submit(function () {
+        var search_type = 'all', source = '';
+        search_type = $('#block_search ul.nav li.active a').attr('href').substring(1);
+
+        if (search_type == '#articles') {
+            search_type = 'pci';
+        }
+        if (search_type == '#books') {
+            search_type = 'bc';
+        }
+
+        if (document.URL.indexOf('/search') > -1) {
+            source = 'search';
+        } else {
+            source = 'home';
+        }
+
+        if (search_type) {
+            source = source + ' ' + search_type;
+        }
+
+        $.ajax({
+            'url': "http://arc.bc.edu/quick-logger/log?src=" + source + "&query=" + $('#typeahead').val(),
+            'dataType': 'JSONP'
+        });
+        return true;
+    });
 });

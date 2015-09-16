@@ -1,0 +1,56 @@
+{% extends "newsletter_base.html" %}
+{% block content %}
+
+    
+<div class="NOTHING">
+    
+<h3>2015</h3>                     
+
+    {% if articles %}
+           
+        {% set count = 0 %}
+        {% for article in articles[:50] if article.category|selectattr("newsletter") %}
+
+            {% if article.date|strftime('%Y') == "2015" %}
+            
+                
+
+                    {% set count = count + 1 %}
+                    {% if count < 50 %}
+               
+                        {% if article.category == "newsletter" %}              
+                    
+                        <div class="news_listing">
+                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                            <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
+                            
+                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+                                                        
+                            <div class="archive_content">
+                                <p>{{ article.content|striptags|truncate(200) }}</p>
+                            </div>
+                                                
+                            
+                        </div>
+                 
+                        {% endif %}
+                 
+                       
+                    {% endif %}                
+           
+            {% endif %}
+
+        {% endfor %}
+          
+    {% endif %}
+
+</div>
+
+
+{% endblock %}
+
+{% block pagescripts %}
+    
+<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+{% endblock %}

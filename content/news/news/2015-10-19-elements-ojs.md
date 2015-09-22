@@ -1,8 +1,8 @@
 Title: <em>Elements</em> is now published as an online Open Access journal.  
 Destination: http://ejournals.bc.edu/ojs/index.php/elements
-Date: 2015-09-22 01:01 
+Date: 2015-10-19 01:01 REMOVE ALL THIS TO POST
 Tags: news, tags 
-Slug: friendly-url 
+Slug: elements-ojs 
 OnHomepage: yes
 ShowText: yes
 Image_alt: image description

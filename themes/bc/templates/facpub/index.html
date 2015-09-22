@@ -36,8 +36,14 @@
 
     </div>
 
-
 </div>
+
+
+                {% endif %}
+          
+            {% endfor %}
+{% endif %}
+
 
 <div class="facpub_archives">
 
@@ -45,8 +51,15 @@
 
 <h3>2015 Highlights</h3>
 
-    {% else %} 
-                
+{% if articles %}
+            {% set count = 0 %}
+            {% for article in articles[:100] if article.category == "facpub" %}
+
+                {% if article.date|strftime('%Y') == "2015" %}
+
+                    {% set count = count + 1 %}
+                    {% if count < 100 %}  
+
             <div class="old_facpub">
 
                 <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
@@ -57,6 +70,8 @@
                                 
             </div>
                 
+                   {% endif %}
+
                 {% endif %}
           
             {% endfor %}

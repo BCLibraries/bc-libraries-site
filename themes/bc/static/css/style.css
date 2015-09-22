@@ -3922,6 +3922,10 @@ background-attachment: fixed;
     border-bottom: 0px;
 }
 
+.old_facpub:nth-child(0n+2) {
+    display: none;
+}
+
 .old_facpub .bookinfo {
 
 }

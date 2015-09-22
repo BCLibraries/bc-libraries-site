@@ -1,6 +1,6 @@
 Title: Banned Books Week <br> Sept. 27 - Oct. 03
 Destination: https://www.facebook.com/events/118507438502613/?action_history=null
-Date: 2015-09-14 01:01 
+Date: 2015-09-27 01:01 
 Tags: news, tags 
 Slug: banned-book 
 OnHomepage: yes

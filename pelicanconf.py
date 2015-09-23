@@ -40,7 +40,9 @@ DEFAULT_PAGINATION = 10
 
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['custom-scripts']
+PLUGINS = []
+
+WITH_FUTURE_DATES = False
 
 STATIC_PATHS = [
     'extra/favicon.ico',

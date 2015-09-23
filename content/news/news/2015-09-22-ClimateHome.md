@@ -1,6 +1,6 @@
 Title: Our Common Home Conference
 Destination: http://library.bc.edu/CommonHomeLibraryGuide
-Date: 2015-09-26 06:01 
+Date: 2015-09-23 06:01 
 Tags: news, tags 
 Slug: common-home 
 OnHomepage: yes

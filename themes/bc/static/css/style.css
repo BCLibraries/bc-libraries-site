@@ -3303,12 +3303,12 @@ body,
     width: 100%;
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
     color: #444;
-    min-height: 78px;
+    min-height: 55px;
     padding: 0 5px;
 }
 
 p.newslink {
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     font-size: 16px;
     line-height: 1.1;
 }
@@ -3394,12 +3394,37 @@ p.newslink {
 .article_content {
     width: 65%;
     margin: 10px 0 0;
+    line-height: 1.5;
 }
 @media ( max-width: 1199px ) {
     .article_content {
     width: 100%;
     }
 }
+
+.article_content p {
+    margin: 0px 0px 15px;
+}
+
+.article_content .float_left {
+    float: left;
+}
+
+.article_content .float_right {
+    float: right;
+}
+
+@media ( max-width: 768px ) {
+    .article_content .float_left {
+    float: none;
+    width: 100%;
+    }
+    .article_content .float_right {
+        float: none;
+    width: 100%;
+    }
+}
+
 
 /* NEWS AND ANNOUNCEMENTS ARCHIVES STYLING */
 

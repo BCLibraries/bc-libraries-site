@@ -6,18 +6,23 @@
 <body>
 <div class="row">
 
-     <div id="block_search">
+    <div id="block_search">
 
         <div role="tabpanel" id="tabpanel">
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
-                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
-                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a></li>
-                    <ul class="search_float searchpage">
-                    <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced search</a></li>
-                    </ul>
+                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
+                </li>
+                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a>
+                </li>
+                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a>
+                </li>
+                <ul class="search_float searchpage">
+                    <li>
+                        <a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced
+                            search</a></li>
+                </ul>
             </ul>
 
             <!-- Tab panes -->
@@ -26,7 +31,8 @@
                     <div class="col-xs-12">
                         <div class="input-group input-group-md">
                             <form method="get" action="/search" id="bcbento-search">
-                                <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
+                                <label for="typeahead" class="accessibility-text">Search articles, books, journals, and
+                                    more</label>
                                 <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
@@ -41,7 +47,8 @@
                     <div class="col-xs-12">
                         <div class="input-group input-group-md">
                             <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
-                                <label for="book-search" class="accessibility-text">Search books, media, and more</label>
+                                <label for="book-search" class="accessibility-text">Search books, media, and
+                                    more</label>
                                 <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, & more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
@@ -76,176 +83,95 @@
     <!-- BRIEF EXPLANATION OF BENTO SEARCH BOX CAN GO HERE. -->
     <div class="block_whatam">
         <p><strong>What am I searching?</strong> <span class="questionball"></span></p>
-        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search tool.</a></p>
+
+        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search
+            tool.</a></p>
     </div>
 
 </div>
 
-    <div id="bentoboxresults">
+<div id="bentoboxresults">
 
-        <div id="all-results">
+    <div id="all-results">
 
-            <!-- The primary results box. -->
-            <div id="primary">
-                <div id="catalog-results" class="result-container">
-                    <h3 id="booksh3">Books & more</h3>
-                </div>
+        <!-- The primary results box. -->
+        <div id="primary">
+            <div id="catalog-results" class="result-container">
+                <h3 id="booksh3">Books & more</h3>
             </div>
+        </div>
 
-            <!-- Secondary results box. -->
-            <div id="secondary">
-                <div id="articles-results" class="result-container">
-                    <h3 id="articleh3">Articles</h3>
-                </div>
+        <!-- Secondary results box. -->
+        <div id="secondary">
+            <div id="articles-results" class="result-container">
+                <h3 id="articleh3">Articles</h3>
             </div>
+        </div>
 
-            <!-- Tertiary results box.-->
-            <div id="tertiary" style="background-color: none">
-                <h4>Also try</h4>
-                <div id="guides-results" class="result-container guides" style="background-color: inherit">
-                    <h3 id="subjecth3" style="display: none">Subject guides</h3>
-                </div>
-                <div id="librarians-results" class="result-container librarians" style="background-color: inherit">
-                    <h3 id="librarianh3" style="display: none;">Librarians</h3>
-                </div>
+        <!-- Tertiary results box.-->
+        <div id="tertiary" style="background-color: none">
+            <h4>Also try</h4>
+
+            <div id="guides-results" class="result-container guides" style="background-color: inherit">
+                <h3 id="subjecth3" style="display: none">Subject guides</h3>
             </div>
-
+            <div id="librarians-results" class="result-container librarians" style="background-color: inherit">
+                <h3 id="librarianh3" style="display: none;">Librarians</h3>
+            </div>
         </div>
 
     </div>
-    <script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
-    <script src="/theme/bcbento/js/search.js"></script>
+
+</div>
+<script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
+<script src="/theme/bcbento/js/search.js"></script>
 
 
-    <!-- Search result templates -->
-    <script id="librarians-template" type="text/x-template">
-        <ul>
-            {{#.}}
-            <li>
-                <img src="//{{image}}" alt="picture of {{name}}">
+<!-- Search result templates -->
+<script id="librarians-template" type="text/x-template">
+    <ul>
+        {{#.}}
+        <li>
+            <img src="//{{image}}" alt="picture of {{name}}">
 
-                <div class="librarian-info">
-                    <h4 class="librarian-name">{{name}}</h4>
-                    {{#subjects}}
-                    <div class="librarian-subject">{{term}}</div>
-                    {{/subjects}}
-                </div>
-            </li>
-            {{/.}}
-        </ul>
-    </script>
+            <div class="librarian-info">
+                <h4 class="librarian-name">{{name}}</h4>
+                {{#subjects}}
+                <div class="librarian-subject">{{term}}</div>
+                {{/subjects}}
+            </div>
+        </li>
+        {{/.}}
+    </ul>
+</script>
 
-    <script id="guides-template" type="text/x-template">
-        <ul>
-            {{#.}}
-            <li>
-                <div><a href="{{url}}">{{title}}</a></div>
-                <div class="guide-description">{{description}}</div>
-            </li>
-            {{/.}}
-        </ul>
+<script id="guides-template" type="text/x-template">
+    <ul>
+        {{#.}}
+        <li>
+            <div><a href="{{url}}">{{title}}</a></div>
+            <div class="guide-description">{{description}}</div>
+        </li>
+        {{/.}}
+    </ul>
 
-    </script>
+</script>
 
-    <script id="catalog-template" type="text/x-template">
+<script id="catalog-template" type="text/x-template">
 
-        <div class="more-results-link">
-            <a href="{{search_link}}">
-                see all {{total_results}} results
-            </a>
-        </div>
+    <div class="more-results-link">
+        <a href="{{search_link}}">
+            see all {{total_results}} results…
+        </a>
+    </div>
 
-        <ul id="catalog-results">
+    <ul id="catalog-results bento-results">
 
-            {{#items}}
-            <li class="bento-result">
+        {{#items}}
+        <li class="bento-result">
 
-                <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}}">
+            <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}}">
 
-                    <a href="{{link}}" class="title">
-                        {{truncate '100' title}}
-                    </a>
-
-                    {{date}}
-
-                    <div class="catalog-metadata">
-                        {{#if creator}}
-                        <div class="creator">
-                            {{truncate '40' creator}}
-                        </div>
-                        {{/if}}
-
-                        {{^creator}}
-                        {{#if contributors.[0]}}
-                        <div class="creator">
-                            {{truncate '40' contributors.[0]}}
-                        </div>
-                        {{/if}}
-                        {{/creator}}
-
-                        {{^creator}}
-                        {{^contributor}}
-                        <div class="publisher">
-                            {{publisher}} {{date}}
-                        </div>
-                        {{/contributor}}
-                        {{/creator}}
-
-                        <div class="type">{{type}}</div>
-                        <ul class="available-items">
-                            {{#if getit}}
-                            <a href="{{getit}}">Available online</a>
-                            {{/if}}
-
-                            {{#avail}}
-                            <li class="item-info">
-                                <span class="availability">{{availability}}</span>
-                                <span class="library">{{library}}</span>
-                                <span class="callno">{{call_number}}</span>
-                            </li>
-                            {{/avail}}
-                        </ul>
-                    </div>
-                </div>
-
-                {{#if covers.[0]}}
-                <img src="{{covers.[0]}}" class="cover-image">
-                {{/if}}
-
-            </li>
-            {{/items}}
-        </ul>
-
-        {{#if worldcat_results}}
-        <div class="worldcat-results">
-            <p>No matching items were found at the BC Libraries, but the following items were found at other libraries:</p>
-            <ul>
-                {{#worldcat_results}}
-                <li>
-                    <a href="{{url}}" class="title">
-                        {{truncate '100' name}}
-                    </a>
-
-                    <div class="creator">
-                        {{truncate '40' creator}}
-                    </div>
-                </li>
-                {{/worldcat_results}}
-            </ul>
-        </div>
-        {{/if}}
-    </script>
-
-    <script id="articles-template" type="text/x-template">
-        <div class="more-results-link">
-            <a href="{{search_link}}">
-                see all {{total_results}} results
-            </a>
-        </div>
-
-        <ul>
-            {{#items}}
-            <li class="bento-result">
 
                 <a href="{{link}}" class="title">
                     {{truncate '100' title}}
@@ -253,21 +179,109 @@
 
                 {{date}}
 
-                {{#if creator}}
-                <div class="creator">{{truncate '80' creator}}</div>
-                {{/if}}
-                <div class="publisher">{{{part_of}}}</div>
+                <div class="catalog-metadata">
+                    {{#if creator}}
+                    <div class="creator">
+                        {{truncate '40' creator}}
+                    </div>
+                    {{/if}}
+
+                    {{^creator}}
+                    {{#if contributors.[0]}}
+                    <div class="creator">
+                        {{truncate '40' contributors.[0]}}
+                    </div>
+                    {{/if}}
+                    {{/creator}}
+
+                    {{^creator}}
+                    {{^contributor}}
+                    <div class="publisher">
+                        {{publisher}} {{date}}
+                    </div>
+                    {{/contributor}}
+                    {{/creator}}
+
+                    <div class="type">{{type}}</div>
+                    <ul class="available-items">
+                        {{#avail}}
+                        <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
+                            <span class="library">{{lib_display}}</span>
+                            {{#if in_library_only }}
+                            <span class="location">{{full/location}}</span>
+                            {{/if}}
+                            <span class="callno">{{call_number}}</span>
+                            <span class="availability">{{availability}}</span>
+                        </li>
+                        {{/avail}}
+                    </ul>
+                    {{#if getit}}
+                    <div class="available-online"><a href="{{link}}">Available online</a></div>
+                    {{/if}}
+                </div>
+            </div>
+
+            {{#if covers.[0]}}
+            <img src="{{covers.[0]}}" class="cover-image">
+            {{/if}}
+
+        </li>
+        {{/items}}
+    </ul>
+
+    {{#if worldcat_results}}
+    <div class="worldcat-results">
+        <p>The following items were found at other libraries:</p>
+        <ul>
+            {{#worldcat_results}}
+            <li>
+                <a href="{{url}}" class="title">
+                    {{truncate '100' name}}
+                </a>
+
+                <div class="creator">
+                    {{truncate '40' creator}}
+                </div>
             </li>
-            {{/items}}
+            {{/worldcat_results}}
         </ul>
-    </script>
-</div>
+    </div>
+    {{/if}}
+
+
+</script>
+
+<script id="articles-template" type="text/x-template">
+    <div class="more-results-link">
+        <a href="{{search_link}}">
+            see all {{total_results}} results
+        </a>
+    </div>
+
+    <ul>
+        {{#items}}
+        <li class="bento-result">
+
+            <a href="{{link}}" class="title">
+                {{truncate '100' title}}
+            </a>
+
+            {{date}}
+
+            {{#if creator}}
+            <div class="creator">{{truncate '80' creator}}</div>
+            {{/if}}
+            <div class="publisher">{{{part_of}}}</div>
+        </li>
+        {{/items}}
+    </ul>
+</script>
 
 <!-- Control search tab switch. -->
 <script>
     $(function () {
         $('#block_search *[role=presentation]').click(
-                function() {
+                function () {
                     var current_text = $('#block_search .tab-pane.active input[type=text]').val();
                     $('#block_search .tab-pane input[type=text]').val(current_text);
                 }

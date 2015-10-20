@@ -1,4 +1,4 @@
-Date: 2015-09-22 01:01
+Date: 2015-10-20 01:01
 Title: The Bigamy Plot: Sensation and Convention in the Victorian Novel
 Author_firstname: Maia
 Author_lastname: McAleavey

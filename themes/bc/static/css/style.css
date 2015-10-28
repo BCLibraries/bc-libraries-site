@@ -3422,10 +3422,12 @@ p.newslink {
     .article_content .float_left {
     float: none;
     width: 100%;
+    margin: 5px 0px;
     }
     .article_content .float_right {
         float: none;
     width: 100%;
+    margin: 5px 0px;
     }
 }
 

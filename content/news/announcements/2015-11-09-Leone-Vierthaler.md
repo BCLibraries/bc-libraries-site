@@ -1,4 +1,4 @@
-Title: The Building Industry of Baroque Rome & Network Analysis 
+Title: Informal Workshop: The Building Industry of Baroque Rome & Network Analysis 
 Date: 2015-11-09 01:01 
 Tags: news, announcement 
 Readmore: yes

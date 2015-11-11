@@ -1,0 +1,34 @@
+#downtime-notification {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fde073;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2em;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+}
+
+@-webkit-keyframes slideDown {
+    0%, 100% { -webkit-transform: translateY(-50px); }
+    1%, 99% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0%, 100% { -moz-transform: translateY(-50px); }
+    1%, 99% { -moz-transform: translateY(0px); }
+}
+
+#downtime-notification {
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 30s .5s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 30s .5s 1 ease forwards;
+}
+
+#close {
+    display: none;
+}

@@ -4,7 +4,7 @@ $(document).ready(function () {
         var the_forms = document.querySelectorAll('.remail-form');
         for (i = 0; i < the_forms.length; i++) {
             var form = the_forms[i].action.split("/").pop();
-            the_forms[i].action = "http://libstaff.bc.edu/remail-slim/" + form;
+            the_forms[i].action = "http://arc.bc.edu/jforms/webfeedback/webform.php";
         }
         setFeedbackUrl();
     }
@@ -65,7 +65,7 @@ $(document).ready(function () {
         $loading_img.show();
 
         var respond = function (message) {
-            $form.before('<p class="feedback-response"><strong>' + message + '</strong></p>');
+            $form.before('<div class="feedback-response">' + message + '</div>');
             $form.find("input[type=text], textarea").val("");
         };
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
             data: $(this).serialize(), // serializes the form's elements.
             success: function (data) {
                 $loading_img.hide();
-                respond('Your feedback has been sent.');
+                respond(data);
             },
             error: function (foo, bar, baz) {
                 $loading_img.hide();

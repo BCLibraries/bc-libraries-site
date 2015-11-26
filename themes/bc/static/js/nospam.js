@@ -4,7 +4,7 @@ $(document).ready(function () {
         var the_forms = document.querySelectorAll('.remail-form');
         for (i = 0; i < the_forms.length; i++) {
             var form = the_forms[i].action.split("/").pop();
-            the_forms[i].action = "http://arc.bc.edu/jforms/webfeedback/webform.php";
+            the_forms[i].action = "http://arc.bc.edu/jforms/webfeedback/webform.moved.php";
         }
         setFeedbackUrl();
     }

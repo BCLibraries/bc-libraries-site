@@ -3683,7 +3683,7 @@ background-attachment: fixed;
 }
 
 .facpub #fullpagewrapper {
-    width: 1080px;
+    width: 920px;
     -webkit-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
     box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.5);
@@ -3694,16 +3694,10 @@ background-attachment: fixed;
 .facpub #header {
     width: 100%;
     height: 110px;
+    min-height: 110px;
     position: relative;
-    border-bottom: 5px solid #05506d;
-    background: rgba(5,80,109,1);
-    background: -moz-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,80,109,1)), color-stop(100%, rgba(50,117,143,1)));
-    background: -webkit-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
-    background: -o-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
-    background: -ms-linear-gradient(top, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
-    background: linear-gradient(to bottom, rgba(5,80,109,1) 0%, rgba(50,117,143,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05506d', endColorstr='#32758f', GradientType=0 );
+    border-bottom: 1px solid #666;
+    background: url("/theme/img/facpub_header.png") no-repeat scroll top left #000000; 
 }
 
 .facpub #header  a:hover {
@@ -3715,36 +3709,44 @@ background-attachment: fixed;
     line-height: 1;
     margin: 0;
     text-align: left;
-    font-size: 50px;
-    transition: color .6s;
+    font-size: 35px;
+    font-size: italic;
 }
 
 .facpub #header h1:hover {
-    color: #000;
+}
+
+.facpub .article_page h3 {
+    color: #990000;
+    text-transform: capitalize;
 }
 
 .facpub #librarylink {
     position: absolute;
-    bottom: 50px;
-    left: 77px;
+    bottom: 5px;
+    right: 0;
+    padding: 0 25px 0 0;
 }
 
 .facpub #librarylink a {
     background: url("/theme/img/facpub_title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
-    height: 21px;
-    width: 500px;
+    height: 24px;
+    width: 388px;
     text-indent: -9999px;
 }
 
-.facpub #librarylink a:hover {
-        background: url("/theme/img/facpub_title_white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+.facpub #librarylink:hover {
+    border-bottom: 1px solid #fff;
+    bottom: 4px;
 }
 
 .facpubtitle {
-    position: absolute;
-    bottom: 3px;
-    left: 75px;
+position: absolute;
+top: 35px;
+right: 0px;
+border-bottom: 1px solid white;
+padding: 0 25px 0 0;
 }
 
 .facpub #header .book {
@@ -3774,7 +3776,7 @@ background-attachment: fixed;
 .facpub .youtube {
     width: 100%;
     background: none repeat scroll 0 0 #eaeaea;
-    border-bottom: 3px solid #dadada;
+    border-bottom: 1px solid #dadada;
     color: #000;
     display: block;
     margin: 0px 0 10px;
@@ -3799,12 +3801,12 @@ background-attachment: fixed;
     float: left;
     border-right: 1px solid #dadada;
     padding: 0 20px 0 0;
-    width: 645px;
+    width: 525px;
 }
 
 .facpub .article_content .right {
     float: right;
-    width: 375px;
+    width: 340px;
 }
 
 .facpub .article_content .right p, .facpub .article_content .right p.yes {
@@ -3817,12 +3819,12 @@ background-attachment: fixed;
 }
 
 .facpub .article_content .right img {
+    margin: 0px 10px 10px 0px;
+    padding: 1px;
+    width: 124px;
+    height: auto;
     float: left;
     border: 1px solid #666;
-    margin: 0 10px 10px 0;
-    padding: 1px;
-    width: 150px;
-    height: auto;
 }
 
 .facpub .sample:after {
@@ -3847,12 +3849,13 @@ background-attachment: fixed;
     text-align: center;
     border-top: 1px solid #dadada;
     background: #eaeaea;
+    font-size: 12px;
 }
 
 .facpub #footer {
     background: #eaeaea;
     min-height: 50px;
-    margin: 0 auto;
+    margin: -1px auto 0;
     width: 100%;
     padding: 10px 20px 0;
 }
@@ -3977,7 +3980,7 @@ background-attachment: fixed;
 
 /* RESPONSIVE PORTION */
 
-@media ( max-width: 1199px ) {
+@media ( max-width: 919px ) {
 
     .facpub {
         background: none;
@@ -3985,7 +3988,7 @@ background-attachment: fixed;
 
     .facpub #fullpagewrapper {
         width: 100%;
-        min-width: 300px;
+        min-width: 575px;
         -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
@@ -3993,8 +3996,8 @@ background-attachment: fixed;
     }
 
     .facpub #header {
-        min-height: 75px;
-        height: 75px;
+        min-height: 95px;
+        height: 95px;
     }
 
     .facpub .article_content .left {
@@ -4026,47 +4029,13 @@ background-attachment: fixed;
         font-size: 30px;
     }
 
-    .facpub #librarylink {
-        position: absolute;
-        bottom: 30px;
-        left: 55px;
-    }
-
-    .facpub #librarylink a {
-        background: none;
-        display: block;
-        height: auto;
-        width: auto;
-        text-indent: -0px;
-        color: #000;
-    }
-  
-
-    .facpub #header .book:before {
-        font-size: 30px;
-    }
-
-    .facpubtitle {
-    bottom: 5px;
-    left: 55px;
-    }
-
 }
 
 @media ( max-width: 850px ) {
 
     .facpub #header {
-        height: 95px;
-    }
-    .facpub #header h1 {
-        font-size: 25px;
-    }
-    .facpub #header .book:before {
-        font-size: 25px;
-    }
-     .facpub #librarylink {
-        display: none;
-    }
+      background: url("/theme/img/facpub_header.png") no-repeat scroll top right #000000; 
+}
 
     .facpub .article_content .left {
         float: none;

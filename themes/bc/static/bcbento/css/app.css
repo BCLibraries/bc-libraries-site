@@ -114,9 +114,6 @@
     background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
-#all-results .result-container {
-    min-height: 200px;
-}
 
 #all-results .result-container ul {
     padding: 0;
@@ -155,12 +152,6 @@
 .librarians img {
     width: 30%;
     float: left
-}
-
-.librarian-info {
-    float: left;
-    width: 70%;
-    padding-left: .5em
 }
 
 #all-results .librarian-subject, #all-results .guide-description {
@@ -311,4 +302,17 @@
 
 li.bento-result {
     margin-bottom: 1.5em;
+}
+
+.dym-notice {
+    display: inline-block;
+    zoom: 1;
+    background-color:lightyellow;
+    padding: .3em .5em;
+    border: 1px dotted gray;
+}
+
+div#didyoumean-holder {
+    text-align: center;
+    height: 3em;
 }

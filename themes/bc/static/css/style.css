@@ -2978,7 +2978,7 @@ body,
     border: 1px solid #666;
 }
 
-#articles-results h3, #catalog-results h3, #librarians-results h3, #guides-results h3 {
+#articles-results h3, #catalog-results h3 {
     margin-top: 0;
     padding: 10px 7px;
     width: 50%;
@@ -3017,18 +3017,6 @@ body,
 
 /* RESULTS CSS */
 
-#all-results .result-container li .title, .result-container li a,
-#all-results .outside-result a, #all-results .more-results-link a {
-    color: #990000;
-    font-weight: normal !important;
-}
-
-#all-results .result-container li .title:hover, .result-container li a:hover,
-#all-results .outside-result a:hover, #all-results .more-results-link a:hover {
-    color: #990000;
-    text-decoration: underline;
-}
-
 #all-results .more-results-link a:after {
     font-family: "icomoon";
     content: "\e655";
@@ -3045,7 +3033,6 @@ body,
 }
 
 #all-results .result-container {
-    min-height: 200px;
     display: inline-block;
     width: 100%;
 }
@@ -3056,7 +3043,7 @@ body,
     float: right;
     width: 50%;
     margin-top: 0;
-    padding: 9px 7px;
+    padding: 3px 7px;
     height: 30px;
 }
 
@@ -3132,8 +3119,10 @@ body,
 }
 
 #bentoboxresults h3 {
+    font-weight: bold;
     text-transform: none;
-    font-size: 16px;
+    font-size: 14px;
+    color: #790009;
 }
 
 #all-results .cover-image {
@@ -3144,6 +3133,7 @@ body,
 
 #all-results .loading {
     background: #ffffff url(../img/gif-load.gif) no-repeat center 80px;
+    min-height: 250px;
 }
 
 #tertiary .loading {

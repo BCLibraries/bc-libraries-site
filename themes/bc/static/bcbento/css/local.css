@@ -10,8 +10,6 @@
 
 /** End layout **/
 
-
-
 /** All results **/
 
 #all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
@@ -24,11 +22,7 @@
 }
 
 #all-results .loading {
-    background: #fff url(../img/loading-circle.gif) no-repeat center center;
-}
-
-#all-results .result-container {
-    min-height: 200px;
+    background: #000 url(../img/loading-circle.gif) no-repeat center center;
 }
 
 #all-results .result-container ul {
@@ -72,8 +66,6 @@
 
 /** end all results **/
 
-
-
 /** Catalog results **/
 
 #all-results .cover-image {
@@ -93,31 +85,35 @@
 
 /** end catalog results **/
 
-
-
 /** Librarian & guide results. **/
 #all-results h4 {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .librarians img {
-    width: 30%;
+    width: 50%;
     float: left
 }
 
 .librarian-info {
     float: left;
-    width: 70%;
-    padding-left: .5em
+    width: 100%;
 }
 
-#all-results .librarian-subject, #all-results .guide-description {
-    color: #666;
+.librarian-info p {
+    font-size: 14px;
+}
+
+#all-results #librarian-info p, #all-results .guide-description {
+    color: #333;
+    font-size: 13px;
+}
+
+#tertiary .visible-also-try a {
+    font-size: 16px;
 }
 
 /** End Librarian & guide result. **/
-
-
 
 /* Typeahead */
 /* See https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md#user-content-look-and-feel */
@@ -179,20 +175,49 @@ input#typeahead {
     .twitter-typeahead {
         float: left;
         width: 90%;
-}
+    }
+
     #block_search input[type=text] {
         width: 100%;
         height: 33px;
         float: left
-}
+    }
+
     #block_search input[type=text]#typeahead {
         width: 100%;
-}}
+    }
+}
 
 @media ( max-width: 768px ) {
-     .twitter-typeahead {
+    .twitter-typeahead {
         float: none;
         width: 100%;
+    }
+}
+
+#bentoboxresults h3.visible-also-try {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#guides-results {
+    margin-bottom: 1em;
 }
 
 /* End typeahead */
+
+#midlevelcontainer {
+    min-height: 400px;
+}
+
+#catalog-results {
+    min-height: 500px;
+}
+
+.librarian-name a {
+    font-size: 14px;
+}
+
+.dym-notice a {
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-Title: Happy Thanksgiving! Here are the Libraries' Holiday Hours
+Title: Happy Thanksgiving! Here were the Libraries' Holiday Hours
 Destination: http://libguides.bc.edu/hours
 Date: 2015-11-23 01:01 
 Tags: news, tags 

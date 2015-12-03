@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExh
 Date: 2015-10-02 01:01 
 Tags: news, tags 
 Slug: data-is-the-new 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Image reads: Data is the New Oil
 Image_thumb: 2015-10/data-thumbs.png

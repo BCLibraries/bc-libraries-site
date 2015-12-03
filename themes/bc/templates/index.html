@@ -125,14 +125,14 @@
 
         <ul id="newsslider">
                     
-            {% if articles %}
-            {% set count = 0 %}
-            {% for article in articles[:15] if article.category == "news" %}
 
+            {% set count = 0 %}
+            {% for article in articles[:30] if article.category == "news" and article.expired != "yes" %}
+             
                 {% set count = count + 1 %}
-                {% if count < 15 %}
+                {% if count < 11 %}
                           
-                <li class="{{ article.onhomepage }}">
+                <li>
                     <div class="newsitem">
                         <a href="{{ article.destination }}">
                         <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
@@ -145,9 +145,10 @@
                     </div>
                 </li>
             
+
                 {% endif %}
             {% endfor %}
-            {% endif %}
+
         
         </ul>
      </div>
@@ -163,7 +164,7 @@
         <h2>Announcements</h2>
 
         {% set count = 0 %}
-        {% for article in articles[:15] if article.category == "announcements" %}
+        {% for article in articles[:10] if article.category == "announcements" %}
 
             {% set count = count + 1 %} 
             {% if count < 3 %}

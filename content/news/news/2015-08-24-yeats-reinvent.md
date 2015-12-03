@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExh
 Date: 2015-08-24 01:01 
 Tags: news, tags 
 Slug: yeats-reinvent
-OnHomepage: yes
+Expired: no
 ShowText: no
 Image_alt: Poster for exhibit reads: It Is I Myself That I Remake: Yeats at 150. August through September 2015, O'Neill Library Reading Room
 Image_thumb: 2015-08/yeats-thumb.png

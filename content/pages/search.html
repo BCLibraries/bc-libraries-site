@@ -25,6 +25,8 @@
                 </ul>
             </ul>
 
+
+
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="all">
@@ -89,6 +91,7 @@
     </div>
 
 </div>
+<div id="didyoumean-holder"></div>
 
 <div id="bentoboxresults">
 
@@ -110,7 +113,7 @@
 
         <!-- Tertiary results box.-->
         <div id="tertiary" style="background-color: none">
-            <h4>Also try</h4>
+            <h3>Also try</h3>
 
             <div id="guides-results" class="result-container guides" style="background-color: inherit">
                 <h3 id="subjecth3" style="display: none">Subject guides</h3>
@@ -129,23 +132,26 @@
 
 <!-- Search result templates -->
 <script id="librarians-template" type="text/x-template">
+    {{#if .}}
+    <h3 class="visible-also-try">Librarians</h3>
     <ul>
         {{#.}}
         <li>
-            <img src="//{{image}}" alt="picture of {{name}}">
+            <a href="http://libguides.bc.edu/prf.php?account_id={{id}}"><img src="//{{image}}" alt="picture of {{name}}"></a>
 
             <div class="librarian-info">
-                <h4 class="librarian-name">{{name}}</h4>
-                {{#subjects}}
-                <div class="librarian-subject">{{term}}</div>
-                {{/subjects}}
+                <h4 class="librarian-name"><a href="http://libguides.bc.edu/prf.php?account_id={{id}}">{{name}}</a></h4>
+                <p>{{display_subjects}}</p>
             </div>
         </li>
         {{/.}}
     </ul>
+    {{/if}}
 </script>
 
 <script id="guides-template" type="text/x-template">
+    {{#if .}}
+    <h3 class="visible-also-try">Subject guides</h3>
     <ul>
         {{#.}}
         <li>
@@ -154,6 +160,7 @@
         </li>
         {{/.}}
     </ul>
+    {{/if}}
 
 </script>
 
@@ -275,6 +282,15 @@
         </li>
         {{/items}}
     </ul>
+</script>
+
+<script id="dym-template" type="text/x-template">
+    {{#if dym}}
+    <div class="dym-notice">
+        Did you mean <a href="/search?any={{dym}}">{{dym}}</a>?
+    </div>
+    {{/if}}
+
 </script>
 
 <!-- Control search tab switch. -->

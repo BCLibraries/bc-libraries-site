@@ -3,6 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/twomey-publishing
 Date: 2015-05-18 01:00 
 Tags: faculty publication highlight, news 
 Slug: facpub-twomey 
+Expired: no
 Image: 2015-05-18/twomey_thumb.png
 Image_alt: Screengrab of Professor Twomey's interview
 Image_thumb: 2015-05-18/twomey_thumb.png

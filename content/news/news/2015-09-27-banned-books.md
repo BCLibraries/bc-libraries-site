@@ -3,7 +3,7 @@ Destination: https://www.facebook.com/events/118507438502613/?action_history=nul
 Date: 2015-09-27 01:01 
 Tags: news, tags 
 Slug: banned-book 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Image reads Caution, Books may contain dangerous thought-provoking ideas
 Image_thumb: 2015-09/bannedbooks-thumbs.png

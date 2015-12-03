@@ -2,7 +2,8 @@ Title: Faculty Publication Highlight: Marek Domin
 Destination: http://www.bc.edu/sites/libraries/facpub/domin-ambient/
 Date: 2015-05-27 01:01 
 Tags: news, faculty publication highlight 
-Slug: facpub-domin 
+Slug: facpub-domin
+Expired: no 
 Image: imagename.png
 Image_alt: Dr. Marek Domin during his interview.
 Image_thumb: 2015-05-27/thumb.png

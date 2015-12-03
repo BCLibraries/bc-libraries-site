@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/jiang-liberal/
 Date: 2015-10-06 01:01 
 Tags: news, tags 
 Slug: facpub-jiang-liberal
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Book cover of Liberal Arts Education in a Changing Society: A New Perspective on Chinese Higher Education by You Guo Jiang, S.J.
 Image_thumb: 2015-10/jiang-thumbs.png

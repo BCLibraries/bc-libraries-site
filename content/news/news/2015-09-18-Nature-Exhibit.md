@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLthreeExhibits/nat
 Date: 2015-09-18 01:01 
 Tags: news, tags 
 Slug: nature-of-culture 
-OnHomepage: yes
+Expired: no
 ShowText: no
 Image_alt: Exhibit poster reads: The Nature of Culture, an exhibit of prints by Andrew Tavarelli, professor in the Fine Arts Department. Level Three Gallery, O'Neill Library, September - December, 2015.
 Image_thumb: 2015-09/nature-thumbs.png

@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/newsletter/2015fall/
 Date: 2015-09-17 01:01 
 Tags: news, tags 
 Slug: fall-2015-newsletter 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: image description
 Image_thumb: 2015-09/newsletter-thumbs.png

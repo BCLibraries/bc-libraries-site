@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/TMLExhibits/fragile.
 Date: 2015-09-17 05:01 
 Tags: news, tags 
 Slug: fragile-world
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Image of the Earth from the A Fragile World Belonging to All exhibit poster
 Image_thumb: 2015-09/fragile-thumbs.png

@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/blair-text/
 Date: 2015-09-08 10:01 
 Tags: news, tags 
 Slug: facpub-blair
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: A screencap from Sheila S. Blair video interview
 Image_thumb: 2015-09/blair-thumbs.png

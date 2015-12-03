@@ -3,6 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/baden-work/
 Date: 2015-06-08 01:01 
 Tags: news, faculty publication highlight 
 Slug: facpub-baden
+Expired: no
 Image: imagename.png
 Image_alt: The cover from Karl Baden's latest book, Work from Two Bodies
 Image_thumb: 2015-06/baden-thumb.png

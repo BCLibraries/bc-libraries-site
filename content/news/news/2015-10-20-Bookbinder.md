@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingExhibits/ea
 Date: 2015-10-20 01:01 
 Tags: news, tags 
 Slug: bookbinders-apprentices-history-craft 
-OnHomepage: yes
+Expired: no
 ShowText: no
 Image_alt: Poster reads: The Bookbinder's Apprentices: Early Printed Books, October 15 - November 19, O'Neill Level Three Reading Room 
 Image_thumb: 2015-10/earlyprinted-thumbs.png

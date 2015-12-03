@@ -1,19 +1,161 @@
-$(document).ready(function () {
+/*jslint browser:true */
+/*globals $, Handlebars */
 
-    var search_string, engine, services, templates, source, loading_timers;
+$(document).ready(function () {
+    'use strict';
+
+    var search_string, services, templates, source, loading_timers, i, max, api_version;
+
+    api_version = '0.0.7';
+
+    /**
+     * Call a single search service
+     * @param service the name of the service
+     * @param keyword the
+     */
+    function callSearchService(service, keyword) {
+        var $target, $heading;
+
+        $target = $('#' + service.name + '-results');
+        $heading = $('#' + service.name + '-results h3');
+        $heading.nextAll().remove();
+
+        loading_timers[service.name] = setTimeout(function () {
+            console.log('loading is set');
+            $target.addClass('loading');
+        }, 150);
+
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/search-services/v' + api_version + '/' + service.name + '?any=' + keyword,
+                dataType: 'jsonp',
+                cache: true,
+                success: function (data, status, xhr) {
+                    service.postprocess(data);
+                    if (data.length > service.max_results) {
+                        data.splice(service.max_results, 100);
+                    }
+                    var html = templates[service.name](data);
+                    clearTimeout(loading_timers[service.name]);
+                    $target.removeClass('loading');
+                    $heading.after(html);
+                },
+                error: function (xhr, status) {
+                    clearTimeout(loading_timers[service.name]);
+                    $target.removeClass('loading');
+                }
+            }
+        );
+    }
+
+    /**
+     * Search all services
+     * @param keyword
+     */
+    function search(keyword) {
+        var $typeahead = $('#typeahead');
+        $('#didyoumean-holder').empty();
+        setTitle(keyword);
+        $typeahead.typeahead('close');
+        for (i = 0, max = services.length; i < max; i += 1) {
+            callSearchService(services[i], keyword);
+        }
+        $typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
+    }
+
+    /**
+     * Set page title
+     * @param keyword
+     */
+    function setTitle(keyword) {
+        var display_keyword = keyword.replace(/\+/g, ' ');
+        if (keyword) {
+            document.title = 'Search BC Libraries for "' + truncate(display_keyword, 40) + '"';
+        }
+    }
+
+    /**
+     * Get a parameter from the query string
+     * @param name
+     * @returns {string}
+     */
+    function getQueryStringParam(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    /**
+     * Render the search results
+     * @param services
+     */
+    function renderSearchResults(services) {
+        for (i = 0, max = services.length; i < max; i += 1) {
+            source = $('#' + services[i].name + '-template').html();
+            templates[services[i].name] = Handlebars.compile(source);
+        }
+    }
+
+
+    /**
+     * Truncate string and add ellipses
+     * @param str
+     * @param length
+     * @returns string
+     */
+    function truncate(str, length) {
+        var too_long, s_;
+        too_long = str.length > length;
+        s_ = too_long ? str.substr(0, length - 1) : str;
+        s_ = too_long ? s_.substr(0, s_.lastIndexOf(' ')) : s_;
+        return too_long ? s_ + '…' : s_;
+    }
 
     services = [
-        'catalog',
-        'articles',
-        'librarians',
-        'guides'
+        {
+            name: 'catalog',
+            max_results: 8,
+            postprocess: function (data) {
+                var html;
+                source = $('#dym-template').html();
+                html = Handlebars.compile(source)(data);
+                $('#didyoumean-holder').append(html);
+                console.log('DYM');
+            }
+        },
+        {
+            name: 'articles',
+            max_results: 8,
+            postprocess: emptyProcess
+        },
+        {
+            name: 'librarians',
+            max_results: 2,
+            postprocess: function (data) {
+                data.forEach(function (librarian) {
+                        librarian.display_subjects = librarian.subjects.sort().join(', ');
+                    }
+                );
+            }
+        },
+        {
+            name: 'guides',
+            max_results: 2,
+            postprocess: emptyProcess
+        }
     ];
+
+    function emptyProcess(result) {
+        return result;
+    }
 
     templates = [];
 
     loading_timers = [];
 
-    search_string = getParameterByName('any');
+    search_string = getQueryStringParam('any');
 
     if (!!window.history && history.pushState) {
 
@@ -24,77 +166,28 @@ $(document).ready(function () {
         };
 
         $('#bcbento-search').submit(function () {
-            var search_string = $('#typeahead').val();
-            search_string = search_string.replace(/\s/g, '+');
-            history.pushState({search_string: search_string}, null, '?any=' + search_string);
-            search(search_string);
+            var new_search = $('#typeahead').val();
+            new_search = new_search.replace(/\s/g, '+');
+            history.pushState({search_string: new_search}, null, '?any=' + new_search);
+            search(new_search);
             return false;
         });
     }
 
     Handlebars.registerHelper('truncate', function (max_length, text) {
-        var too_long, s_;
+        var too_long, string;
         too_long = text.length > max_length;
         if (too_long) {
-            s_ = text.substr(0, max_length - 1);
-            s_ = s_.substr(0, s_.lastIndexOf(' ')) + '…';
+            string = text.substr(0, max_length - 1);
+            string = string.substr(0, string.lastIndexOf(' ')) + '…';
         } else {
-            s_ = text;
+            string = text;
         }
-        return s_;
+        return string;
     });
 
-    for (var i = 0; i < services.length; i++) {
-        source = $('#' + services[i] + '-template').html();
-        templates[services[i]] = Handlebars.compile(source);
-    }
-
+    renderSearchResults(services);
     search(search_string);
-
     $('#typeahead').val(search_string);
-
-    function search(keyword) {
-        $('#typeahead').typeahead('close');
-        for (var i = 0; i < services.length; i++) {
-            callSearchService(services[i], keyword);
-        }
-        $('#typeahead').typeahead('val', keyword.replace(/\+/g, ' '));
-    }
-
-    function callSearchService(service, keyword) {
-        var $target, $heading;
-        $target = $('#' + service + '-results');
-        $heading = $('#' + service + '-results h3');
-        $heading.nextAll().remove();
-
-        loading_timers[service] = setTimeout(function () {
-            $target.addClass('loading');
-        }, 150);
-
-        $.ajax({
-                type: 'GET',
-                url: '/search-services/' + service + '?any=' + keyword,
-                dataType: 'jsonp',
-                cache: true,
-                success: function (data, status, xhr) {
-                    var html = templates[service](data);
-                    clearTimeout(loading_timers[service]);
-                    $target.removeClass('loading');
-                    $heading.after(html);
-                },
-                error: function (xhr, status) {
-                    clearTimeout(loading_timers[service]);
-                    $target.removeClass('loading');
-                }
-            }
-        );
-    }
-
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
 
 });

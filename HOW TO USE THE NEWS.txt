@@ -41,7 +41,7 @@ BC UNIVERSITY LIBRARIES WEBSITE DOT EDU
 
 THE NEWS IS BROKEN INTO 4 SECTIONS THAT DISPLAY DIFFERENTLY, IN DIFFERENT AREAS, USING DIFFERENT MARKDOWN FILES. 
 	- THE NEWS MARKDOWN FILES ARE LOCATED IN "./content/news"
-  - EACH SECTION HAS A FILE CALLED "00_COPYTHIS" WHICH CAN BE USED TO START ANOTHER MARKDOWN FILE.
+	- EACH SECTION HAS A FILE CALLED "00_COPYTHIS" WHICH CAN BE USED TO START ANOTHER MARKDOWN FILE.
 	- EACH FILE IS NAMED AS SUCH: "YYYY-MM-DD-EASY-TO-FIND-NAME.md"
 
 ================================================================================================================
@@ -64,17 +64,20 @@ Article content will go on this line. This is for longer text on individual news
 
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+
 	//  EXHIBITS  \\
 
 DON'T WORRY ABOUT THESE FOR NOW.
 
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+
 	//  FACPUB  \\
 
 DON'T WORRY ABOUT THESE FOR NOW.
 
 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 
 	//  NEWS  \\
 
@@ -90,7 +93,7 @@ Destination: URL ( REQUIRED TO DIRECT USERS, NEEDS FULL URL )
 Date: 2010-10-01 01:01 ( YYYY-MM-DD )
 Tags: news, tags ( CAN BE LEFT ALONE )
 Slug: friendly-url ( REQUIRED EVEN THOUGH IT'S NOT BEING USED. )
-OnHomepage: yes ( LEAVE AS YES. IF "no" IT WILL HIDE THE PAGE. IT'S NOT USEFUL NOW, WILL BE LATER)
+Expired: yes or no ( IF "YES" IT WILL HIDE THE ITEM, BUT IT WILL STILL APPEAR IN ARCHIVES)
 ShowText: yes ( THIS SHOWS TITLE + DATE OVER IMAGE. IF IMAGE HAS TEXT EMBEDED, SELECT "no" TO SUPRESS TITLE AND DATE )
 Image_alt: image description ( REQUIRED FOR ACCESIBILITY )
 Image_thumb: folder/imagename.png ( YYYY-MM/IMAGENAME.png )

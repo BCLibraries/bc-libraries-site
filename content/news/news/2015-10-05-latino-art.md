@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLoneExhibits/latin
 Date: 2015-10-05 01:01 
 Tags: news, tags 
 Slug: latinos-races-through-art 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Select works from Latinos, Races, Traditions, & Pride Through Art
 Image_thumb: 2015-10/latino-thumbs.png

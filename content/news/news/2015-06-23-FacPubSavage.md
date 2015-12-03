@@ -3,6 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/savage-sean/
 Date: 2015-06-23 01:01 
 Tags: news, faculty publication highlight  
 Slug: facpub-savage 
+Expired: no
 Image: imagename.png
 Image_alt: Cover of Sean Lemass book, by Robert Savage
 Image_thumb: 2015-06/savage-thumb.png

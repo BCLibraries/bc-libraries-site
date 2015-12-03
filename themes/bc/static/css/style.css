@@ -3250,14 +3250,6 @@ body,
     margin-left: 0;
 }
 
-.list_carousel li.yes {
-    display: block;
-}
-
-.list_carousel li.no /* HIDES ARTICLE TITLE AND DATE WHEN "NO" IS PUT INTO MARKDOWN FILE. USED MOSTLY FOR EXHIBITS OR BLOG LINKS */ {
-    display: none;
-}
-
 .list_carousel img {
     padding: 0px;
     margin: 0;

@@ -3,7 +3,7 @@ Destination: http://ejournals.bc.edu/ojs/index.php/elements
 Date: 2015-10-19 01:01
 Tags: news, tags 
 Slug: elements-ojs 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: image description
 Image_thumb: 2015-09/elements-thumbs.png

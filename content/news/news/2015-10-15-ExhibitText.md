@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/BurnsExhibits/textan
 Date: 2015-10-12 01:01 
 Tags: news, tags 
 Slug: text-and-context
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Edited photo of Nathaniel Hawthorne and Frederick Douglass 
 Image_thumb: 2015-10/context-thumbs.png

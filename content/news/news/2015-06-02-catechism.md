@@ -3,7 +3,7 @@ Destination: http://wp.me/pZMf2-2E5
 Date: 2015-06-02 01:01 
 Tags: news, burns 
 Slug: catechisms-and-prayer  
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image: imagename.png
 Image_alt: Prayer books laying on a table

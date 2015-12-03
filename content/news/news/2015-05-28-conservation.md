@@ -3,7 +3,7 @@ Destination: http://wp.me/pZMf2-2EJ
 Date: 2015-05-28 01:01 
 Tags: news, burns 
 Slug: conservation-burns
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image: imagename.png
 Image_alt: A student reading at the Burns Library

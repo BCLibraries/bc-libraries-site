@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLoneExhibits/world
 Date: 2015-11-16 01:01 
 Tags: news, tags 
 Slug: exhibit-world-on-move 
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: image description
 Image_thumb: 2015-11/worldmove-thumbs.png

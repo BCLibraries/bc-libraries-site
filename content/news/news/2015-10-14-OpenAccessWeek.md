@@ -3,7 +3,7 @@ Destination: http://libguides.bc.edu/openaccess/oaweek2015
 Date: 2015-10-14 01:01 
 Tags: news, tags 
 Slug: oa-week-2015
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Image reads: International Open Access Week
 Image_thumb: 2015-10/oa-thumbs.png

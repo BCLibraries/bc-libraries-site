@@ -3,7 +3,7 @@ Destination: URL
 Date: 2010-10-01 01:01 
 Tags: news, tags 
 Slug: friendly-url 
-OnHomepage: yes
+Expired: yes or no
 ShowText: yes
 Image_alt: image description
 Image_thumb: 2015-xx/FILENAME-thumbs.png

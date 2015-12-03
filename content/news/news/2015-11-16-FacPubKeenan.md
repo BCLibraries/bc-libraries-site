@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/sites/libraries/facpub/keenan-university/
 Date: 2015-11-16 01:01 
 Tags: news, tags 
 Slug: facpub-keenan
-OnHomepage: yes
+Expired: no
 ShowText: yes
 Image_alt: Screencap of James F. Keenan's interview.
 Image_thumb: 2015-11/keenan-thumbs.png

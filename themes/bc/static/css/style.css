@@ -3093,8 +3093,9 @@ body,
     }
 
     #all-results #tertiary {
-    width: 50%;
-    border-left: 5px solid #fff;
+        width: 100%;
+        clear:left;
+        border-left: 5px solid #fff;
     }
 }
 @media ( max-width: 768px ) {

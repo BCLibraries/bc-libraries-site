@@ -92,6 +92,7 @@
 
 .librarians img {
     width: 50%;
+    max-width: 200px;
     float: left
 }
 
@@ -220,4 +221,36 @@ input#typeahead {
 
 .dym-notice a {
     font-weight: bold;
+}
+
+@media ( max-width: 1199px ) {
+    #all-results #tertiary #guides-results {
+        float: left;
+        width: 33%;
+    }
+
+    #all-results #tertiary #librarians-results {
+        float: left;
+        width: 66%;
+    }
+
+    #all-results #tertiary #librarians-results li {
+        display: inline-block
+    }
+}
+
+@media ( max-width: 768px ) {
+    #all-results #tertiary #guides-results {
+        float: none;
+        width: 100%%;
+    }
+
+    #all-results #tertiary #librarians-results {
+        float: none;
+        width: 100%;
+    }
+
+    #all-results #tertiary #librarians-results li {
+        display: block
+    }
 }

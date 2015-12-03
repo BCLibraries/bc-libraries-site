@@ -149,11 +149,6 @@
     margin: 0;
 }
 
-.librarians img {
-    width: 30%;
-    float: left
-}
-
 #all-results .librarian-subject, #all-results .guide-description {
     color: #666;
 }

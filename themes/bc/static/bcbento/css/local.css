@@ -235,7 +235,14 @@ input#typeahead {
     }
 
     #all-results #tertiary #librarians-results li {
-        display: inline-block
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+
+    #all-results #tertiary #librarians-results img {
+        height: 150px;
+        width: auto;
     }
 }
 
@@ -251,6 +258,12 @@ input#typeahead {
     }
 
     #all-results #tertiary #librarians-results li {
-        display: block
+        display: block;
+        width: 100%;
+    }
+
+    #all-results #tertiary #librarians-results img {
+        height: 200px;
+        height: auto;
     }
 }

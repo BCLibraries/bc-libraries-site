@@ -164,7 +164,7 @@
         <h2>Announcements</h2>
 
         {% set count = 0 %}
-        {% for article in articles[:10] if article.category == "announcements" %}
+        {% for article in articles[:10] if article.category == "announcements" and article.expired != "yes" %}
 
             {% set count = count + 1 %} 
             {% if count < 3 %}

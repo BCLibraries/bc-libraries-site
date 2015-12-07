@@ -1,6 +1,7 @@
 Title: News Title 
 Date: 2010-10-01 01:01 
-Tags: news, announcement 
+Tags: news, announcement
+Expired: yes or no 
 Readmore: yes or no
 Slug: announcement-friendly-url 
 Summary: Will appear on homepage.

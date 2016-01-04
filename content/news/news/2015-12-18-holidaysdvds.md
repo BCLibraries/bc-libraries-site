@@ -8,4 +8,4 @@ ShowText: yes
 Image_alt: Screencap of the film A Charlie Brown Christmas
 Image_thumb: 2015-12/holidaydvds-thumbs.png
 
-Need some holiday cheer, a Christmas classic, or a wintery tale? Why not check out a DVD from the library? We have a great collection of films just waiting to be seen. goo.gl/HDHSFl
+Need some holiday cheer, a Christmas classic, or a wintery tale? Why not check out a DVD from the library? We have a <a href="http://goo.gl/HDHSFl">great collection of films</a> just waiting to be seen.

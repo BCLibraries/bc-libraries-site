@@ -95,25 +95,51 @@
 
 <a href="#midlevelcontainer" class="accessibility-text">Skip to main content</a>
 
-<!-- TEMPORARY CODE TO MIMIC PROPOSED BC HEADER-->
+<!-- MIMICS PROPOSED BC HEADER-->
         <div id="bcheader">
-            <a href="/old-site" class="returntoold" title="Return to the old Boston College Libraries' Website">Return to the old Boston College Libraries' Website</a>
+
+            
         </div>
+<!-- END PROPOSED BC HEADER-->
 
 <!-- FULL PAGE WRAPPER -->
 <div id="fullpagewrapper">
+
+<div id="bcheader_info">
+
+                <ul>
+                <li><a href="http://www.bc.edu/gn-bcinfo"  title="BCInfo">BCInfo</a></li>
+                <li><a href="http://www.bc.edu/gn-directories" title="Directories">Directories</a></li>
+                </ul>
+
+                <div id="bcheader_search">
+                    <form action="//bc.edu/googlesearch/results.html" id="cse-search-box">
+                    <div>
+                        <input type="hidden" name="cx" value="017979566303760088717:i5wjadpvu2w" />
+                        <input type="hidden" name="cof" value="FORID:11" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <label for="q"><span class="offscreen">Search BC</span></label>
+                        <input type="text" value="Search BC" onblur="if(this.value=='') this.value='Search BC';" onclick="if(this.value=='Search BC') this.value='';" name="q" id="searchbox" size="27" autocomplete="off"   />
+                       <input type="button" id="searchsubmit" name="sa" value="Go" alt="search" />
+                    </div>
+                </form>
+                <script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+                </div><!-- /Search -->
+
+            </div>
 
 <!-- BEGIN HEADER -->
 <div id="header">
     <div id="librarytitle">
     <a href="http://bc.edu" title="Go to Boston College"><img src="/theme/img/bcheader_title.png" id="fakebctitle" alt="Boston College"></a>
-        <a href="http://library.bc.edu/" title="To the University Libraries"><h1>University Libraries</h1></a>
+        <a href="http://library.bc.edu/" title="To the University Libraries"><h1>Boston College University Libraries</h1></a>
     </div>
 
     <div id="motto">
     <p>Value Beyond Discovery</p>
     </div>
 
+<!-- HIDING ON HOMEPAGE, AS THERE ARE NOW 2 OTHER SEARCH BOXES. 
     <div id="sb-search" class="sb-search">
         <form method="get" action="http://library.bc.edu/search">
             <label for="search" class="accessibility-text">Search the BC Libraries</label>
@@ -121,7 +147,7 @@
             <input class="sb-search-submit" type="submit" value="Submit" name="submit">
             <span class="sb-icon-search"></span>
         </form>
-    </div>
+    </div> -->
 
     <!-- MENU BEGINS HERE -->
     <div id="megamenu">

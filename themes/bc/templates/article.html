@@ -60,19 +60,16 @@
 		  {% if articles %}
 		           
 		        {% set count = 0 %}
-		        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
+		        {% for article in articles[:15] if article.category|selectattr("news", "announcements") %}
 		            
 		                    {% set count = count + 1 %}
-		                    {% if count < 14 %}
+		                    {% if count < 12 %}
 		               
 		                        {% if article.category == "news" %}              
 		                    
 		                        <div class="news_listing">
-		                           
+		                        	<span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
 		                            <h5><a href="{{ article.destination }}">{{ article.title }}</a></h5>
-		                            
-		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-		                                                        
 		                                
 		                        </div>
 		                 
@@ -80,14 +77,10 @@
 		                 
 		                        {% if article.category == "announcements" %}  
 
-		                         <div class="news_listing">
-
+		                        <div class="news_listing">
+		                         	<span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
 		                            <h5><a href="../../../../{{ article.url }}">{{ article.title }}</a></h5>
-		                            
-		                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-		                                                        
-	
-
+		                        
 		                        </div>
 
 		                        {% endif %}

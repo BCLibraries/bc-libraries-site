@@ -3699,7 +3699,7 @@ background-attachment: fixed;
 .facpub #header h1:hover {
 }
 
-.facpub .article_page h3 {
+.facpub h3 {
     color: #990000;
     text-transform: capitalize;
 }

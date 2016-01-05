@@ -8,6 +8,12 @@ Summary: Will appear on homepage.
 
 Article content will go on this line. This is for longer text on individual news page. FYI to link: [linked text](http://www.google.com).
 
-IMG classes 
-class="float_right"
-class="float_left"
+<!-- USEFUL CUT AND PASTE STUFF.
+
+<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_left">
+
+<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
+
+<a href="#" target="_blank">
+
+-->

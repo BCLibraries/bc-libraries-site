@@ -215,8 +215,8 @@ th {
 
 #bcheader_info {
     width: 445px;
-    right: 60px;
-    float: right;
+    right: 15px;
+    top: -55px;
     position: absolute;
     height: 45px;
     overflow: hidden;
@@ -230,7 +230,7 @@ th {
 
 #bcheader_info ul {
     display: inline-block;
-    font-size: 11px;
+        font-size: 11px;
     letter-spacing: 2px;
 }
 
@@ -268,7 +268,7 @@ th {
     position: relative;
     float: right;
     padding: 0;
-    margin: 3px 0 0 0;
+    margin: 5px 0 0 0;
     line-height: 1px;
     text-align: center;
     cursor: pointer;
@@ -279,6 +279,47 @@ th {
     border-bottom: 2px solid #9A885D;
     z-index: 90;
     font-size: 14px;
+}
+
+@media ( max-width: 768px ) {
+    #bcheader {
+    height: 65px;
+    }
+
+    #bcheader_info ul {
+    display: none;
+    }
+
+    #bcheader_info {
+    width: 100%;
+    right: auto;
+    left: 0;
+    top: -80px;
+    position: absolute;
+    height: 45px;
+    overflow: hidden;
+    padding: 10px 0;    
+    }
+
+    #bcheader_search {
+    width: 225px;
+    margin: 0;
+    position: relative;
+    float: left;
+    }
+
+    #bcheader_search #searchbox {
+    position: relative;
+    border: 1px solid #B29D6C !important;
+    outline: none;
+    background: #fff;
+    width: 175px;
+    height: 20px;
+    margin: 0;
+    z-index: 10;
+    font-size: 12px;
+    color: #666;
+}
 }
 
 /*HEADER CODE */

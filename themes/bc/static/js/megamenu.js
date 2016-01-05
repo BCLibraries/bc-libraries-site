@@ -4,7 +4,7 @@ $(function () {
         e.stopPropagation()
     });
 
-    $('.dropdown-toggle').dropdownHover({delay: "300",hoverDelay: "50"});
+    $('.dropdown-toggle').dropdownHover({delay: "300",hoverDelay: "400"});
 
     /* Slide effect lifted from http://stackoverflow.com/a/19339162/122629. */
     $('.dropdown').on('show.bs.dropdown', function (e) {

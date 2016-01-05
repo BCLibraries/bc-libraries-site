@@ -214,13 +214,13 @@ th {
 }
 
 #bcheader_info {
-    width: 445px;
+    width: 460px;
     right: 15px;
     top: -55px;
     position: absolute;
     height: 45px;
     overflow: hidden;
-    padding: 10px 0;    
+    padding: 15px 0;    
 }
 
 #bcheader_info a {
@@ -249,8 +249,8 @@ th {
 }
 
 #bcheader_search #searchbox {
-    position: relative;
-    border: 1px solid #B29D6C !important;
+    position: absolute;
+    border: 0px solid #B29D6C !important;
     outline: none;
     background: #fff;
     width: 200px;
@@ -268,7 +268,7 @@ th {
     position: relative;
     float: right;
     padding: 0;
-    margin: 5px 0 0 0;
+    margin: 0;
     line-height: 1px;
     text-align: center;
     cursor: pointer;
@@ -296,9 +296,6 @@ th {
     left: 0;
     top: -80px;
     position: absolute;
-    height: 45px;
-    overflow: hidden;
-    padding: 10px 0;    
     }
 
     #bcheader_search {

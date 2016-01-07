@@ -1,0 +1,39 @@
+{% extends "facpub_base.html" %}
+{% block content %}
+
+
+
+{% if articles %} 
+
+                    {% for article in articles if article.category == "facpub" and article.oneoff == "yes" %}
+ 
+    <div class="article_page">
+        <div class="article_content">
+
+        <h3>Credits & Contact</h3>
+
+        <h4>Editor</h4>
+        <p>{{ article.editor_name }}, {{ article.editor_title }}</p>
+
+        <h4>Web Presentation</h4>
+        <p>{{ article.web_name }}, {{ article.web_title }}</p>
+
+        <h4>Video Production & Editing</h4>
+        <p>{{ article.video_name }}</p>
+
+        <p><em>Comments or suggestions, please contact <a href="mailto:">{{ article.editor_email }}</a>, {{ article.editor_title }}</em></p>
+
+        </div>
+    </div>
+
+          
+            {% endfor %}
+{% endif %}
+
+
+{% endblock %}
+
+{% block pagescripts %}
+    
+<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+{% endblock %}

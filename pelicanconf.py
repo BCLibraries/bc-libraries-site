@@ -53,5 +53,10 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
 }
 
-DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'newsletter/index' ))
-PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'newsletter/index' ))
+DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'newsletter/index' ))
+PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'newsletter/index' ))
+
+TEMPLATE_PAGES = {
+	'facpub/index.html': 'facpub/index.html',
+	'facpub/contact/index.html': 'facpub/contact/index.html'
+}

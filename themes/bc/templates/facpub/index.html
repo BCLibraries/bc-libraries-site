@@ -54,7 +54,7 @@
 
 {% if articles %}
             {% set count = 0 %}
-            {% for article in articles[:100] if article.category == "facpub" and article.oneoff != "yes" %}
+            {% for article in articles[:100] if article.category == "facpub" %}
 
                 {% if article.date|strftime('%Y') == "2016" %}
 

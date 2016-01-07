@@ -879,7 +879,6 @@ a.announcelink {
 
 .announcements .readmore, .announcements .readmore.yes {
     font-size: 12px;
-    float: right;
 }
 
 .announcements .readmore.no /* HIDES READMORE LINK, WHEN "NO" IS PUT INTO MARKDOWN FILE.*/
@@ -4013,7 +4012,7 @@ padding: 0 25px 0 0;
     margin: 5px 0 0;
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px 0;
 }
 
 .old_facpub {
@@ -4054,6 +4053,16 @@ padding: 0 25px 0 0;
     border: 2px solid #05506d;
     padding: 1px;
     margin: 0 5px 0 0;
+}
+
+.older_archives {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 0;
+    border-top: 1px solid #dadada;
+    text-align: center;
 }
 
 /* RESPONSIVE PORTION */

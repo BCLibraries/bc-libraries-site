@@ -27,6 +27,7 @@
 
 	</div>
 {% endif %}
+<!-- END NEWS -->
 
 <!-- TEMPLATE FOR ANNOUNCEMENTS -->
 {% if article.category == "announcements" %}
@@ -94,7 +95,7 @@
 		</div>
 	</div>
 {% endif %}
-
+<!-- END ANNOUNCEMENTS -->
 
 
 <!-- TEMPLATE FOR EXHIBITS -->
@@ -117,10 +118,10 @@
 
 	</div>
 {% endif %}
+<!-- END EXHIBITS -->
 
 <!-- TEMPLATE FOR FACULTY PUBLICATION HIGHLIGHTS  -->
-
-{% if article.category == "facpub" %}
+{% if article.category == "facpub" and article.oneoff != "yes"%}
 
 	<div class="article_page">
 
@@ -164,8 +165,6 @@
 		    	<em>{{ article.librarian_position }}</em>.
 		    </div>
 
-
-
 	      <!-- <div id="socialmedia">
             <ul>
             <li><a href="http://library.bc.edu/feeds/bc-libraries.rss.xml" title="News RSS feed" class="mediablock" id="media_news"></a></li>
@@ -179,7 +178,32 @@
 
 	</div>
 
+{% endif %}
+<!--END FACPUB -->
 
+<!-- TEMPLATE FOR FACULTY PUBLICATION HIGHLIGHTS ONE OFF PAGES  -->
+{% if article.category == "facpub" and article.oneoff == "yes" %}
+
+	<div class="article_page">
+		<div class="article_content">
+
+		<h3>Credits & Contact</h3>
+
+		<h4>Editor</h4>
+		<p>{{ article.editor_name }}, {{ article.editor_title }}</p>
+
+		<h4>Web Presentation</h4>
+		<p>{{ article.web_name }}, {{ article.web_email }}</p>
+
+		<h4>Video Production & Editing</h4>
+		<p>{{ article.video_name }}</p>
+
+		<p><em>Comments or suggestions, please contact <a href="mailto:">{{ article.editor_email }}</a>, {{ article.editor_title }}</em></p>
+
+		</div>
+	</div>
 
 {% endif %}
+
+
 {% endblock %}

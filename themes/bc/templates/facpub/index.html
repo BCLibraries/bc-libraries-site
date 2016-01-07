@@ -6,7 +6,7 @@
 
 {% if articles %}
             {% set count = 0 %}
-            {% for article in articles[:15] if article.category == "facpub" %}
+            {% for article in articles[:15] if article.category == "facpub" and article.oneoff != "yes" %}
 
                 {% set count = count + 1 %}
                 {% if count < 2 %}      
@@ -49,11 +49,41 @@
 
 <h2>Past Highlights</h2>
 
+<!-- START 2016 ARCHIVES 
+<h3>2016 Highlights</h3>
+
+{% if articles %}
+            {% set count = 0 %}
+            {% for article in articles[:100] if article.category == "facpub" and article.oneoff != "yes" %}
+
+                {% if article.date|strftime('%Y') == "2016" %}
+
+                    {% set count = count + 1 %}
+                    {% if count < 100 %}  
+
+            <div class="old_facpub">
+
+                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+                <div class="bookinfo">
+                <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
+                    by {{ article.author_firstname}} {{ article.author_lastname}}</p>
+                </div>
+                                
+            </div>
+                
+                   {% endif %}
+
+                {% endif %}
+          
+            {% endfor %}
+{% endif %}-->
+
+<!-- START 2015 ARCHIVES -->
 <h3>2015 Highlights</h3>
 
 {% if articles %}
             {% set count = 0 %}
-            {% for article in articles[:100] if article.category == "facpub" %}
+            {% for article in articles[:100] if article.category == "facpub" and article.oneoff != "yes" %}
 
                 {% if article.date|strftime('%Y') == "2015" %}
 
@@ -76,7 +106,10 @@
           
             {% endfor %}
 {% endif %}
+</div>
 
+<div class="older_archives">
+    <p><em>Here are the <a href="http://www.bc.edu/sites/libraries/facpub/archives/index.html">archives for Faculty Publication Highlights from 2006-2014</a>.</em></p>
 </div>
 
 {% endblock %}

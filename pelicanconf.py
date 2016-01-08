@@ -33,7 +33,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 00
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -54,10 +54,9 @@ EXTRA_PATH_METADATA = {
 }
 
 DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))
-PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))
+#PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))#
 
 TEMPLATE_PAGES = {
 	'facpub/index.html': 'facpub/index.html',
-	'facpub/contact/index.html': 'facpub/contact/index.html',
-	'facpub/mailer/index.html': 'facpub/mailer/{slug}/facpub-mailer.html'
+	'facpub/contact/index.html': 'facpub/contact/index.html'
 }

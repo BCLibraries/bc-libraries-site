@@ -1411,6 +1411,10 @@ a.announcelink {
     position: relative;
 }
 
+#footer .nav > li > a:hover {
+    outline: 0px;
+}
+
 @media ( max-width: 768px ) {
     #footer ul.nav {
         display: none;
@@ -2314,7 +2318,7 @@ nav select {
 .bottom_row {
     background: #EAEAEA;
     border-top: 1px solid #DADADA;
-    margin: 10px 0 -20px;
+    margin: 0px;
     padding: 10px 0 10px;
 }
 @media ( max-width: 768px ) {

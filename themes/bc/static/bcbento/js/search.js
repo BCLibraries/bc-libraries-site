@@ -28,7 +28,7 @@ $(document).ready(function () {
         $.ajax(
             {
                 type: 'GET',
-                url: 'http://libdev.bc.edug/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword),
+                url: 'http://libdev.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword),
                 dataType: 'jsonp',
                 cache: true,
                 success: function (data, status, xhr) {

@@ -4305,5 +4305,78 @@ COULD BE USEFUL ELSEWHERE  */
     float: right;
 }
 
-/* LIBRARY NEWSLETTER 2K15 STYLING */
+/* LIBRARY EXHIBITS STYLES */
 
+html {
+    overflow-x: hidden;
+}
+
+#exhibitpage {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.blackband {
+    display: inline-block;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    min-height: 150px;
+    height: 290px;
+    background: #101010;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    color: #fff;
+    padding: 30px 0;
+    z-index: 2;
+}
+
+.blackband h2 {
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 20px 0;
+}
+
+.blackband .bandcenter {
+    width: 50%;
+    max-width: 610px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    text-align: justify;
+}
+
+.latest_exhibit {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 290px 0 0;
+}
+
+#exhibitpage .latest_exhibit h3 {
+    font-size: 22px;
+}
+
+#exhibitpage .latest_exhibit .left h3 {
+    text-align: center;
+}
+
+#exhibitpage .latest_exhibit .left {
+    float: left;
+    width: 25%;
+    background: #eaeaea;
+    border-bottom: 5px solid #dadada;
+    padding: 10px 20px 0;
+}
+
+#exhibitpage .latest_exhibit .right {
+    float: right;
+    width: 75%;
+    padding: 10px 20px 0;
+}

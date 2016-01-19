@@ -31,31 +31,305 @@
         <div class="right">
             <h3>Latest Exhibits</h3>
 
+<!-- SET IT UP FOR THAT IF LIBRARY, THEN THIS IMAGE PATH & ARCHIVE PATH. IF ANOTHE LIBRARY, DIFFERENT PATH. ETC -->
+    <ul>
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category == "facpub" and article.oneoff != "yes" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
 
-                    {% if article.date|strftime('%Y') == "2015" %}
-
+                    
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
 
-                <div class="old_facpub1">
+                          
+                            {% if article.location == "burns" %}
+                            <!-- BURNS LATEST EXHIBIT -->
+                                <li class="holder">
 
-                    <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-                    <div class="bookinfo">
-                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                        by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                    </div>
-                                    
-                </div>
-                    
-                       {% endif %}
+                                    <div class="archives">
+                                    <h4>Burns Library</h4>
+                                    <p>Click here for <a href="#">Burns Library Archives</a></p>
+                                    </div>
 
-                    {% endif %}
-              
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                             {% endif %}                        
+                        {% endif %}
+                                  
                 {% endfor %}
             {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                            {% if article.location == "tml" %}
+                            <!-- TML LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>Theology & Ministry Library</h4>
+                                    <p>Click here for <a href="#">Theology & Ministry Library Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}                        
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                            {% if article.location == "lvl1" %}
+                            <!-- O'NEILL LEVEL ONE LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>O'Neill Level One Gallery</h4>
+                                    <p>Click here for <a href="#">O'Neill Level One Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/oneilllevelone/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}                       
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                           {% if article.location == "lvl3" %}
+                            <!-- O'NEILL LEVEL THREE LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>O'Neill Level Three Gallery</h4>
+                                    <p>Click here for <a href="#">O'Neill Level Three Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/oneilllevelthree/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}          
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                            {% if article.location == "reading" %}
+                            <!-- O'NEILL READING ROOM LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>O'Neill Reading Room</h4>
+                                    <p>Click here for <a href="#">O'Neill Reading Room Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/oneillreadingroom/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}         
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                            {% if article.location == "backwall" %}
+                            <!-- O'NEILL READING ROOM BACK WALL LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>O'Neill Reading Room Back Wall</h4>
+                                    <p>Click here for <a href="#">Reading Room Back Wall Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/oneillreadingroombackwall/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}        
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+                         
+                            {% if article.location == "lobby" %}
+                            <!-- O'NEILL LEVEL 3 LOBBY LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>O'Neill Library Lobby</h4>
+                                    <p>Click here for <a href="#">O'Neill Library Lobby Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/oneilllobby/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}        
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.active == "yes" %}
+
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+                         
+                            {% if article.location == "stokes" %}
+                            <!-- HISTORY DEPT, STOKE HALL LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="archives">
+                                    <h4>History Dept, Stokes Hall</h4>
+                                    <p>Click here for <a href="#">History Dept, Stokes Hall Archives</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/stokes/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                                                     
+                            {% endif %}      
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
+    </ul>
+
+
+            <!-- AREA FOR PERMANENT EXHIBITS, TIP O'NEILL AND VIRTUAL. LEAVING THIS HERE UNTIL SECTIONS ARE BUILT -->
 
 
         </div>

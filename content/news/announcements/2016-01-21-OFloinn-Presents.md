@@ -22,5 +22,5 @@ Thompson Room, John J. Burns Library</p>
 
 <p><em>Please join us in the Burns Library's Irish Room for a beer and wine reception immediately following the lecture.</em></p>
 
-<p>Sponsored by the Boston College University Libraries and the McMullen Museum of Art</p>
+<p>Sponsored by the Boston College University Libraries in collaboration with the McMullen Museum of Art and the Center for Irish Programs</p>
 

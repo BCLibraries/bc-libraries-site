@@ -3512,6 +3512,19 @@ p.newslink {
     }
 }
 
+span.expiredno {
+    display: none;
+}
+
+span.expiredyes {
+    color: #05506D;
+    font-style: italic;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    margin: 15px 0;
+}
 
 /* NEWS AND ANNOUNCEMENTS ARCHIVES STYLING */
 
@@ -4380,3 +4393,83 @@ html {
     width: 75%;
     padding: 10px 20px 0;
 }
+
+#exhibitpage .latest_exhibit .right ul {
+    margin: 0;
+    padding: 0;
+}
+
+#exhibitpage .latest_exhibit .holder {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 50px 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+
+}
+
+#exhibitpage .latest_exhibit .holder:nth-child(odd) {
+   float: left;
+}
+
+#exhibitpage .latest_exhibit .holder:nth-child(even) {
+   float: right;
+}
+
+#exhibitpage .latest_exhibit .holder .archives {
+    position: relative;
+}
+
+#exhibitpage .latest_exhibit .holder .archives h4 {
+    border-bottom: 1px solid #05506D;
+    text-transform: uppercase;
+    margin: 5px 0 0 !important;
+}
+
+#exhibitpage .latest_exhibit .holder .archives p {
+    font-size: 12px;
+}
+
+#exhibitpage .latest_exhibit .holder .frame {
+    border: 2px solid #05506D;
+    position: relative;
+    color: #444;
+    height: 300px;
+    width: 300px;
+}
+
+#exhibitpage .latest_exhibit .holder .frame:hover {
+    border: 2px solid #32758F;
+}
+
+#exhibitpage .latest_exhibit .holder .frame img {
+    height: 100%;
+    width: 100%;
+}
+
+#exhibitpage .latest_exhibit .holder .frame .info {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    min-height: 55px;
+    padding: 5px;
+}
+
+#exhibitpage .latest_exhibit .holder .frame .info .date {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    color: #444;
+}
+
+#exhibitpage .latest_exhibit .holder .frame .info .title {
+    font-weight: bold;
+    line-height: 1;
+    font-size: 15px;
+}
+
+#exhibitpage .latest_exhibit .holder .frame:hover .info .title {
+    color: #32758F;
+}  

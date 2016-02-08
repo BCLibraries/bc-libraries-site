@@ -4081,6 +4081,14 @@ padding: 0 25px 0 0;
     text-align: center;
 }
 
+.yearlyblock {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
 /* RESPONSIVE PORTION */
 
 @media ( max-width: 919px ) {

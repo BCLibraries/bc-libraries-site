@@ -1,6 +1,6 @@
 Title: Romance Review Archives Digitized
 Destination: http://ejournals.bc.edu/ojs/index.php/romance/index
-Date: 2016-02-22 01:01 
+Date: 2016-02-22 01:02 
 Tags: news, tags 
 Slug: romance-review-news 
 Expired: no

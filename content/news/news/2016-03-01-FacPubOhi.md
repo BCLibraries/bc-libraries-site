@@ -1,5 +1,5 @@
 Title: New Faculty Publication Highlight: Dr. Kevin Ohi 
-Destination: http://library.bc.edu/facpub/2016/Feb/ohi-dead/
+Destination: https://library.bc.edu/facpub/2016/Feb/ohi-dead/
 Date: 2016-03-01 01:02 
 Tags: news, tags 
 Slug: facpub-news-ohi 

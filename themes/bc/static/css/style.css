@@ -4054,6 +4054,10 @@ padding: 0 25px 0 0;
     display: none;
 }
 
+.archived .old_facpub:nth-child(0n+2) {
+    display: inline-block;
+}
+
 .old_facpub .bookinfo {
 
 }

@@ -1,7 +1,7 @@
 Title: Pizza and Databases – All Graduate Students Invited!
-Date: 2016-03-07 01:01 
+Date: 2016-03-30 01:01 
 Tags: news, announcement
-Expired: yes 
+Expired: no 
 Readmore: no
 Slug: announcement-scopus-wos-pizza 
 Summary: <p><a href="http://www-scopus-com.proxy.bc.edu/" target="_blank">Scopus</a> and <a href="http://apps.webofknowledge.com.proxy.bc.edu/" target="_blank">Web of Science</a>, two major multidisciplinary databases that can help your research.</p>

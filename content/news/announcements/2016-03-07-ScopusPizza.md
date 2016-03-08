@@ -33,6 +33,8 @@ Wed., March 30 (12 Noon) – McElroy Commons, Room 237 (Social Sciences, Humanit
 
 <p>To <a href="http://libguides.bc.edu/BC2016Scopus" target="_blank">Learn More</a></p>
 
+<!-- HEY -->
+
 <!-- USEFUL CUT AND PASTE STUFF.
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_left">

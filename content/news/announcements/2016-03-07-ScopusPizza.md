@@ -1,5 +1,5 @@
 Title: Pizza and Databases – All Graduate Students Invited!
-Date: 2016-03-29 01:02
+Date: 2016-03-07 01:02
 Tags: news, announcement
 Expired: no 
 Readmore: no
@@ -32,8 +32,6 @@ Wed., March 30 (12 Noon) – McElroy Commons, Room 237 (Social Sciences, Humanit
 </ul>
 
 <p>To <a href="http://libguides.bc.edu/BC2016Scopus" target="_blank">Learn More</a></p>
-
-<!-- HEY -->
 
 <!-- USEFUL CUT AND PASTE STUFF.
 

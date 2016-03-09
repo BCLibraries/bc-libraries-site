@@ -11,14 +11,11 @@ Slug: serazio-articles
 Youtube: https://www.youtube.com/embed/5B1oXtj41UQ
 Sample_pages: 2016/xx/NAME-book.pdf
 ShowSample_pages: no
-Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21343382900001021
+Book_location: http://onlinelibrary.wiley.com/doi/10.1111/jcom.12078/full
 Bookcover: 2016/03/serazio-cover.png
 Image_alt: Cover of Volume 64, Issue 4 of the Journal of Communication 
 
 <strong>Selected Related Articles</strong>
-
-<a href="http://onlinelibrary.wiley.com/doi/10.1111/jcom.12078/full" target="_blank">
-The New Media Designs of Political Consultants: Campaign Production in a Fragmented Era</a>
 
 <a href="http://ijoc.org/index.php/ijoc/article/view/3379" target="_blank">Qualitative Political Communication| Managing the Digital News Cyclone: Power, Participation, and Political Production Strategies</a>
 

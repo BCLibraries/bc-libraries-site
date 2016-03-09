@@ -1,5 +1,6 @@
 Date: 2010-10-01 01:01
 Title: Book title
+By: leave blank or add
 Author_firstname: Name
 Author_lastname: Surname
 Author_position: dept, etc

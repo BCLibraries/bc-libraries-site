@@ -1804,13 +1804,23 @@ a.announcelink {
     outline: 0 none;
 }
 
+#s-lg-guide-tabs .nav-tabs li.dropdown {
+    background: #E9E9E9;
+}
+
+#s-lg-guide-tabs .nav-tabs li.dropdown:hover {
+    background: #B29D6C;
+}
+
 #s-lg-guide-tabs .nav-tabs li a.dropdown-toggle {
     width: 20%;
     float: right;
+    background: transparent;
 }
 
 #s-lg-guide-tabs .nav-tabs li a.pull-left {
     width: 80%;
+    background: transparent;
 }
 
 #s-lg-guide-tabs .nav-tabs li a:hover {

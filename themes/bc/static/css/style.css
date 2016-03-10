@@ -1804,6 +1804,15 @@ a.announcelink {
     outline: 0 none;
 }
 
+#s-lg-guide-tabs .nav-tabs li a.dropdown-toggle {
+    width: 20%;
+    float: right;
+}
+
+#s-lg-guide-tabs .nav-tabs li a.pull-left {
+    width: 80%;
+}
+
 #s-lg-guide-tabs .nav-tabs li a:hover {
     background: #B29D6C;
 }

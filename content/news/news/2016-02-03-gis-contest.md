@@ -1,6 +1,6 @@
-Title: Enter the 7th Annual BC GIS Contest
+Title: Enter the 7th Annual BC GIS Contest (PDF)
 Destination: http://www.bc.edu/giscontest
-Date: 2016-02-03 01:01 
+Date: 2016-03-14 01:01 
 Tags: news, tags 
 Slug: news-gis-day-spring-2016
 Expired: no

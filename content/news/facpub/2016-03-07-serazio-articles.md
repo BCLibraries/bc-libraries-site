@@ -17,6 +17,8 @@ Image_alt: Cover of Volume 64, Issue 4 of the Journal of Communication
 
 <strong>Selected Related Articles</strong>
 
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/jcom.12078/full">The New Media Designs of Political Consultants: Campaign Production in a Fragmented Era</a>
+
 <a href="http://ijoc.org/index.php/ijoc/article/view/3379" target="_blank">Qualitative Political Communication| Managing the Digital News Cyclone: Power, Participation, and Political Production Strategies</a>
 
 <a href="http://joc.sagepub.com/content/early/2015/05/18/1469540515586868.abstract" target="_blank">Branding politics: Emotion, authenticity, and the marketing culture of American political communication</a>

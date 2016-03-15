@@ -11,7 +11,7 @@ Slug: serazio-articles
 Youtube: https://www.youtube.com/embed/5B1oXtj41UQ
 Sample_pages: 2016/xx/NAME-book.pdf
 ShowSample_pages: no
-Book_location: 
+Book_location: http://onlinelibrary.wiley.com/doi/10.1111/jcom.12078/full
 Bookcover: 2016/03/serazio-cover.png
 Image_alt: Cover of Volume 64, Issue 4 of the Journal of Communication 
 

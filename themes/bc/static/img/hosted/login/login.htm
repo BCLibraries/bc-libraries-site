@@ -5,7 +5,10 @@
     <title>Boston College Libraries Login</title>
 
     <link rel="stylesheet" href="http://library.bc.edu/theme/css/style.css"/>
-    <link rel="stylesheet" href="http://library.bc.edu/theme/img/hosted/login/proxy.css"/>
+    <!--<link rel="stylesheet" href="http://library.bc.edu/theme/img/hosted/login/proxy.css"/>-->
+
+    <link rel="stylesheet" href="./proxy.css"/>
+
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
     </script>
     <script type="text/javascript">
@@ -16,13 +19,24 @@
 </head>
 <body>
 
-<header class="title">
-    <img src="http://databases.bc.edu/INS02/icon_eng/v-Header2.gif" alt="Boston College Online Databases and e-Journals logo">
+<header>
+    <div class="constraint">
+        <a href="http://www.bc.edu/libraries/"><div id="title">Boston College University Libraries </div></a>
 
-    <h1 class="hidden">Boston College Databases and Journals</h1>
+
+        <div class="headertext">
+            <strong><a href="http://www.bc.edu/libraries/">Boston College University Libraries</a></strong>
+            <h1>Databases and Journals</h1>
+            <em>Articles, Abstracts, Reference Sources, and More</em>
+        </div>
+    </div>
 </header>
-<main>
+
+
+<main class="container">
     <p>Current Boston College Faculty, Students, and Staff can access Online Resources.</p>
+
+
 
 
     <form name="form1" action="^L" method="post">
@@ -45,6 +59,8 @@
         <input type="submit" name value="Login">
 
     </form>
+
+
 
     <p>Your BC username is the same username that you use to log into the BC
         Portal (<i>username</i>@bc.edu). Don't enter @bc.edu.

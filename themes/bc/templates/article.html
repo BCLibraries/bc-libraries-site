@@ -10,20 +10,70 @@
 <!-- TEMPLATE FOR NEWS ITEMS GOES HERE. THIS WILL NOT BE USED VERY OFTEN, AS MOST NEWS LINKS OUT -->
 {% if article.category == "news" %}
 
+	<ol class="breadcrumb" id="s-lib-bc-list">
+		<li id="s-lib-bc-customer">
+		<a href="http://library.bc.edu" title="Libraries">Libraries
+		</a>
+		</li>
+		<li id="s-lib-bc-site">
+		<a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements 
+		</a>
+		</li>
+	</ol>
+
 	<div class="article_page">
 
-		<h3>{{ article.title }}</h3>
 
-			<div class="article_meta">
-			{{ article.date|strftime('%B %d, %Y') }}
-		    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}" >
+		<h3>{{ article.title }}</h3>
+			<em>{{ article.date|strftime('%B %d, %Y') }}</em>
+				
+			<div class="article_content">
+
+		    <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}" style="float: left;">
+				<div>{{ article.content }}</div>
 			</div>
 
-			<div class="article_content">
-		        <div>{{ article.content }}</div>
-		    </div>
+		<div class="morenews">
+		
+		<hr>
 
-		    {{ articles_previous_page }}
+		<h4>More News From the Boston College Libraries</h4>	
+
+		  {% if articles %}
+		           
+		        {% set count = 0 %}
+		        {% for article in articles[:15] if article.category|selectattr("news", "announcements") %}
+		            
+		                    {% set count = count + 1 %}
+		                    {% if count < 12 %}
+		               
+		                        {% if article.category == "news" %}              
+		                    
+		                        <div class="news_listing">
+		                        	<span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+		                            <h5><a href="{{ article.destination }}">{{ article.title }}</a></h5>
+		                                
+		                        </div>
+		                 
+		                        {% endif %}
+		                 
+		                        {% if article.category == "announcements" %}  
+
+		                        <div class="news_listing">
+		                         	<span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+		                            <h5><a href="../../../../{{ article.url }}">{{ article.title }}</a></h5>
+		                        
+		                        </div>
+
+		                        {% endif %}
+
+		                    {% endif %}                
+
+		        {% endfor %}
+		          
+		    {% endif %}
+
+		</div>
 
 	</div>
 {% endif %}

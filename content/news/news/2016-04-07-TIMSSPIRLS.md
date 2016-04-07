@@ -1,5 +1,5 @@
 Title: TIMSS & PIRLS Publications in eScholarship@BC
-Destination: http://dlib.bc.edu/timss-pirls
+Destination: https://library.bc.edu/news/2016/Apr/timms-pirls
 Date: 2016-04-07 01:01 
 Tags: news, tags 
 Slug: timms-pirls

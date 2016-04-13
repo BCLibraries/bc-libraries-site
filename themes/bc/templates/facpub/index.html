@@ -20,7 +20,7 @@
 
                 <div id="titleauthor">
                     <h3><a href="https://library.bc.edu/{{ article.url }}">{{ article.title }}</a></h3>
-                    by {{ article.author_firstname}} {{ article.author_lastname}}
+                   {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}
                 </div>
 
                 <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
@@ -68,7 +68,7 @@
                     <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
                     <div class="bookinfo">
                     <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                        by {{ article.author_firstname}} {{ article.author_lastname}}</p>
+                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
                     </div>
                                     
                 </div>

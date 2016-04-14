@@ -134,9 +134,13 @@
                           
                 <li>
                     <div class="newsitem">
+                        {% if article.destination %}
                         <a href="{{ article.destination }}">
+                            {% else %}
+                            <a href="{{ article.url }}">
+                            {% endif %}
                         <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                        
+
                         <div class="newstext {{ article.showtext }}">
                             <p class="newslink">{{ article.title }}</a> </p>
                             <!--<p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>-->

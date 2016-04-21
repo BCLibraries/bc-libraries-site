@@ -1539,6 +1539,10 @@ a.announcelink {
 
 /*OVERWRITING LIBGUIDES 2.0 */
 
+#s-lib-scroll-top {
+    z-index: 10;
+}
+
 #s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */       {
     float: right;
     margin: 20px;

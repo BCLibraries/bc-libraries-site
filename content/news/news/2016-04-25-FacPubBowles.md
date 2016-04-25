@@ -12,7 +12,7 @@ In 1902, a radical vegetarian and nudist from Nuremberg named August Engelhardt 
 
 Christian Kracht's Imperium uses the outlandish details of Engelhardt's life to craft a fable about the allure of extremism and its fundamental foolishness. Engelhardt is at once a pitiable, misunderstood outsider and a rigid ideologue, and his misguided notions of purity and his spiral into madness presage the horrors of the mid-twentieth century.
 
-Playing with the tropes of classic adventure tales such as Treasure Island and Robinson Crusoe, Kracht's novel, an international bestseller, is funny, bizarre, shocking, and poignant. His allusions are misleading, his historical time line is twisted, his narrator is unreliable--and the result is a novel that is a cabinet of mirrors, a maze pitted with trapdoors.
+Playing with the tropes of classic adventure tales such as Treasure Island and Robinson Crusoe, Kracht's novel, an international bestseller, is funny, bizarre, shocking, and poignant. His allusions are misleading, his historical time line is twisted, his narrator is unreliable-and the result is a novel that is a cabinet of mirrors, a maze pitted with trapdoors.
 
 <!-- USEFUL CUT AND PASTE STUFF.
 

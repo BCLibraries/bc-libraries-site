@@ -6,7 +6,7 @@ Author_lastname: Bowles
 Author_position: German Studies Department
 Librarian_name: Jonas Barciauska
 Librarian_email: barciaus@bc.edu
-Librarian_position: Head of Collection Development
+Librarian_position: Head of Collection Development 
 Tags: facpub
 Slug: bowles-imperium 
 Youtube: https://www.youtube.com/embed/d0ajaaRDMik
@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21452851590001021
 Bookcover: 2016/04/bowles-cover.png
 Image_alt: Cover of Imperium - A Fiction of the South Seas
-Oneoff: yes
+Oneoff: no
 
 <p>In 1902, a radical vegetarian and nudist from Nuremberg named August Engelhardt set sail for what was then called the Bismarck Archipelago, in German New Guinea.  His destination: the island Kabakon. His goal: to establish a colony based on worship of the sun and coconuts. His malnourished body was found on the beach on Kabakon in 1919; he was forty-three years old.</p>
 

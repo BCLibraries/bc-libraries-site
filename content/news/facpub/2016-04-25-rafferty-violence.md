@@ -11,7 +11,7 @@ Tags: facpub
 Slug: rafferty-violence
 Youtube: https://www.youtube.com/embed/KkofrQyoJFI
 Sample_pages: 2016/04/rafferty-book.pdf
-ShowSample_pages: no
+ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21458306070001021
 Bookcover: 2016/04/rafferty-cover.png
 Image_alt: Cover of Violence, Politics and Catholicism in Ireland

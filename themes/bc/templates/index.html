@@ -8,19 +8,19 @@
     <div class="block_right">
          <div id="block_quick_links">
             <ul style="border-right: 1px solid #dadada;">
-                <li><a href="http://libguides.bc.edu/contact" title="Contact Us" target="_self">Contact us</a></li>
-                <li><a href="http://libcal.bc.edu/booking/oneill" title="Reserve a Study Room" target="_self">Reserve a Study Room</a></li>
-                <li><a href="http://libguides.bc.edu/ask-a-librarian" title="Ask a Librarian" target="_self">Ask a Librarian</a></li>
-                <li><a href="http://libguides.bc.edu/hours" title="Library Hours" target="_self">Library Hours</a></li>
-                <li><a href="http://proxy.bc.edu/login?url=https://www.refworks.com/refworks" title="RefWorks" target="_self">RefWorks</a></li>
+                <li><a href="http://libguides.bc.edu/contact" title="Contact Us" target="_self" id="ql-contact-us">Contact us</a></li>
+                <li><a href="http://libcal.bc.edu/booking/oneill" title="Reserve a Study Room" target="_self" id="ql-reserve-a-study-room">Reserve a Study Room</a></li>
+                <li><a href="http://libguides.bc.edu/ask-a-librarian" title="Ask a Librarian" target="_self" id="ql-ask-a-librarian">Ask a Librarian</a></li>
+                <li><a href="http://libguides.bc.edu/hours" title="Library Hours" target="_self" id="ql-hours">Library Hours</a></li>
+                <li><a href="http://proxy.bc.edu/login?url=https://www.refworks.com/refworks" title="RefWorks" target="_self" id="ql-refworks">RefWorks</a></li>
             </ul>
 
             <ul style="padding-left: 35px;">
-                <li><a href="http://answers.bc.edu/index.php" title="Library FAQs" target="_self">Library FAQs</a></li>
-                <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" title="Interlibrary Loan" target="_self">Interlibrary Loan</a></li>
-                <li><a href="http://arc.bc.edu/reserves" title="Course Reserves" target="_self">Course Reserves</a></li>
-                <li><a href="http://bc.worldcat.org/" title="WorldCat" target="_self">WorldCat</a></li>
-                <li><a href="http://bclib.bc.edu/a-to-z" title="Journals" target="_self">Journals</a></li>
+                <li><a href="http://answers.bc.edu/index.php" title="Library FAQs" target="_self" id="ql-faq">Library FAQs</a></li>
+                <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" title="Interlibrary Loan" target="_self" id="ql-interlibrary-loan">Interlibrary Loan</a></li>
+                <li><a href="http://arc.bc.edu/reserves" title="Course Reserves" target="_self" id="ql-course-reserves">Course Reserves</a></li>
+                <li><a href="http://bc.worldcat.org/" title="WorldCat" target="_self" id="ql-worldcat">WorldCat</a></li>
+                <li><a href="http://bclib.bc.edu/a-to-z" title="Journals" target="_self" id="ql-journals">Journals</a></li>
             </ul>
         </div>
 
@@ -32,13 +32,13 @@
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
-                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
-                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">Articles</a></li>
-                    <ul class="search_float">
-                    <li><a href="http://libguides.bc.edu/whatamisearching" title="What am I searching? ">What am I searching?</a> </li>
-                    <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced search</a></li>
-                    </ul>
+                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab" id="search-all">All</a></li>
+                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab" id="search-books">Books</a></li>
+                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab" id="search-articles">Articles</a></li>
+                <ul class="search_float">
+                <li><a href="http://libguides.bc.edu/whatamisearching" title="What am I searching?" id="search-what">What am I searching?</a> </li>
+                <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search" id="seach-advanced">Advanced search</a></li>
+                </ul>
             </ul>
 
             <!-- Tab panes -->
@@ -48,9 +48,9 @@
                         <div class="input-group input-group-md">
                             <form method="get" action="/search" id="bcbento-search">
                                 <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
-                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
+                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, &amp; more">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
+                                    <button class="btn btn-default" type="submit" id="submit-main">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -63,9 +63,9 @@
                         <div class="input-group input-group-md">
                             <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
                                 <label for="book-search" class="accessibility-text">Search books, media, and more</label>
-                                <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, & more">
+                                <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, &amp; more">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
+                                    <button class="btn btn-default" type="submit" id="submit-books">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -80,7 +80,7 @@
                                 <label for="article-search" class="accessibility-text">Search journal articles</label>
                                 <input type="text" id="article-search" name="any" placeholder="Find journal articles">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
+                                    <button class="btn btn-default" type="submit" id="submit-journals">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -96,9 +96,9 @@
 
     <div id="block_databases">
         <div class="col-md-6">
-            <h2><a href="http://libguides.bc.edu/az.php">Databases</a></h2>
+            <h2><a href="http://libguides.bc.edu/az.php" id="databases-link">Databases</a></h2>
 
-            <p class="db_subjects" style="float: right;margin-top: -17px;font-size: .9em;"><a href="http://libguides.bc.edu/az.php">...by subject</a></p>
+            <p class="db_subjects" style="float: right;margin-top: -17px;font-size: .9em;"><a href="http://libguides.bc.edu/az.php" id="databases-subject">...by subject</a></p>
             <!-- must include -->
             <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
             <select name="resources" id="dbs-by-title" class="chosen-box"
@@ -120,8 +120,8 @@
 <!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
 
     <div class="list_carousel">
-        <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left" id="carousel-prev"></span></a>
+        <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
 
         <ul id="newsslider">
                     
@@ -135,9 +135,9 @@
                 <li>
                     <div class="newsitem">
                         {% if article.destination %}
-                        <a href="{{ article.destination }}">
+                        <a href="{{ article.destination }}" id="{{ article.slug }}">
                             {% else %}
-                            <a href="{{ article.url }}">
+                            <a href="{{ article.url }}" id="{{ article.slug }}">
                             {% endif %}
                         <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
 
@@ -174,7 +174,7 @@
             {% if count < 3 %}
 
                 <div>
-                    <a href="{{ article.url }}" class="announcelink">{{ article.title }}</a><br />
+                    <a href="{{ article.url }}" class="announcelink" id="{{ article.slug }}">{{ article.title }}</a><br />
                     <span>{{ article.summary }}
                     </span>
                  <!-- REMOVING TRUNCATE FOR NOW, AS IT CUTS HREFS IN HALF. It was truncate(140)-->
@@ -189,19 +189,16 @@
 
     </div>
 
-      <!-- REAL ESTATE SECTION CONTAINS 6 BUTTONS THAT LINK TO PRIORITY LIBRARY SITES.
-        SWAP OUT <A> CLASS TO CHANGE ICONS. ICONS LISTED IN STYLE SHEET. SEARCH FOR "REAL ESTATE ICON CSS" -->
-        <div class="realestate">
-
-                <div class="button"><a href="http://escholarship.bc.edu/" class="icon_document"><p>eScholarship@BC</p></a></div>
-                <div class="button"><a href="/digschol/" class="icon_book"><p>Digital Scholarship</p></a></div>
-                <div class="button"><a href="http://libguides.bc.edu/popcollection" class="icon_openbook"><p>Popular Reading</p></a></div>
-                <div class="button"><a href="http://libguides.bc.edu/openaccess" class="icon_file"><p>Open Access</p></a></div>
-                <div class="button"><a href="http://libguides.bc.edu/digital-collections" class="icon_files"><p>Digital Collections</p></a></div>
-                <div class="button"><a href="http://www.bc.edu/libraries/about/exhibits-new.html" class="icon_picture"><p>Exhibits</p></a></div>
-
-       </div>
-
+    <!-- REAL ESTATE SECTION CONTAINS 6 BUTTONS THAT LINK TO PRIORITY LIBRARY SITES.
+    SWAP OUT <A> CLASS TO CHANGE ICONS. ICONS LISTED IN STYLE SHEET. SEARCH FOR "REAL ESTATE ICON CSS" -->
+    <div class="realestate">
+        <div class="button"><a href="http://escholarship.bc.edu/" class="icon_document" id="button-escholarship"><p>eScholarship@BC</p></a></div>
+        <div class="button"><a href="/digschol/" class="icon_book" id="button-digital-scholarship"><p>Digital Scholarship</p></a></div>
+        <div class="button"><a href="http://libguides.bc.edu/popcollection" class="icon_openbook" id="button-popular-reading"><p>Popular Reading</p></a></div>
+        <div class="button"><a href="http://libguides.bc.edu/openaccess" class="icon_file" id="button-open-access"><p>Open Access</p></a></div>
+        <div class="button"><a href="http://libguides.bc.edu/digital-collections" class="icon_files" id="button-digital-collections"><p>Digital Collections</p></a></div>
+        <div class="button"><a href="http://www.bc.edu/libraries/about/exhibits-new.html" class="icon_picture" id="button-exhibits"><p>Exhibits</p></a></div>
+   </div>
 </div>
 
 

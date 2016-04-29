@@ -827,6 +827,10 @@
             var myTitle = $(this).find("p").html();
             ga('send', 'event', 'homebuttons', 'click', myTitle);
         });
+        $("ul.item-desktop li a").mouseenter(function(){
+            var myPane = $(this).html();
+            ga('send', 'event', 'librarypanes', 'hover', myPane);
+        });
     });
     </script>
 

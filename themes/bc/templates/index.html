@@ -51,6 +51,7 @@
                                 <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, &amp; more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit" id="submit-main">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -66,6 +67,7 @@
                                 <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, &amp; more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit" id="submit-books">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -81,6 +83,7 @@
                                 <input type="text" id="article-search" name="any" placeholder="Find journal articles">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit" id="submit-journals">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -101,8 +104,7 @@
             <p class="db_subjects" style="float: right;margin-top: -17px;font-size: .9em;"><a href="http://libguides.bc.edu/az.php" id="databases-subject">...by subject</a></p>
             <!-- must include -->
             <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
-            <select name="resources" id="dbs-by-title" class="chosen-box"
-                    data-placeholder="Select a database…">
+            <select name="resources" id="dbs-by-title" class="chosen-box" data-placeholder="Select a database…">
                 <option></option>
             </select>
         </div>
@@ -124,33 +126,25 @@
         <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
 
         <ul id="newsslider">
-                    
+
 
             {% set count = 0 %}
             {% for article in articles[:30] if article.category == "news" and article.expired != "yes" %}
-             
+
                 {% set count = count + 1 %}
                 {% if count < 11 %}
-                          
-                <li>
-                    <div class="newsitem">
-                        {% if article.destination %}
-                        <a href="{{ article.destination }}" id="{{ article.slug }}">
-                            {% else %}
-                            <a href="{{ article.url }}" id="{{ article.slug }}">
-                            {% endif %}
-                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
 
+                <li>
+                    <a href="{% if article.destination %}{{ article.destination }}{% else %}{{ article.url }}{% endif %}" id="{{ article.slug }}">
+                    <div class="newsitem">
+                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
                         <div class="newstext {{ article.showtext }}">
-                            <p class="newslink">{{ article.title }}</a> </p>
-                            <!--<p><em> {{ article.date|strftime('%B %d, %Y') }} </em> </p>-->
+                            <p class="newslink">{{ article.title }}</p>
                         </div>
                         </a>
                     </div>
                 </li>
-            
-
-                {% endif %}
+                 {% endif %}
             {% endfor %}
 
         

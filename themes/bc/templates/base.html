@@ -126,12 +126,12 @@
     </ul>
 
     <div id="bcheader_search">
-        <form action="//bc.edu/googlesearch/results.html" id="cse-search-box" _lpchecked="1">
+        <form action="//bc.edu/googlesearch/results.html" id="cse-search-box">
             <div>
                 <input type="hidden" name="cx" value="017979566303760088717:i5wjadpvu2w" />
                 <input type="hidden" name="cof" value="FORID:11" />
                 <input type="hidden" name="ie" value="UTF-8" />
-                <label for="q"><span class="screenreader offscreen">Search BC</span></label>
+                <label for="searchbox"><span class="screenreader offscreen">Search BC</span></label>
                 <input type="text" value="Search BC" onblur="if(this.value=='') this.value='Search BC';" onclick="if(this.value=='Search BC') this.value='';" name="q" id="searchbox" size="27" autocomplete="off"   />
                 <input type="image" src="/theme/img/go_button.png" id="searchsubmit" name="sa" value="Search" style="float:right" alt="search">
             </div>
@@ -158,7 +158,7 @@
             <!-- BEGIN CONTAINER -->
             <div class="container">
                 <div class="hamburger">
-                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                    <button aria-label="Open navigation" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <!-- BEGIN NAVBAR-COLLAPSE -->

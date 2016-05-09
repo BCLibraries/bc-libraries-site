@@ -5,7 +5,7 @@ Tags: news, tags
 Slug: banned-book 
 Expired: no
 ShowText: yes
-Image_alt: Image reads Caution, Books may contain dangerous thought-provoking ideas
+Image_alt: Caution, Books may contain dangerous thought-provoking ideas
 Image_thumb: 2015-09/bannedbooks-thumbs.png
 
 Stop by O’Neill Library September 27 - October 3 for BANNED BOOKS WEEK a display of books available for checkout from the collections at O’Neill Library. These books have been challenged, censored, or outright banned from libraries and schools across the United States. 

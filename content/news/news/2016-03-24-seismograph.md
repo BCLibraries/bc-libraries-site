@@ -5,7 +5,7 @@ Tags: news, tags
 Slug: oneill-library-seismograph 
 Expired: no
 ShowText: yes
-Image_alt: Image reads Seismology... and the library
+Image_alt: Seismology... and the library
 Image_thumb: 2016-03/seis-thumbs.png
 
 Weston Observatory and the Boston College Lynch School of Education recently installed a seismograph in the BC O’Neill Library (Level One study area). This seismograph records earthquakes in New England and around the world, and measures the pulse of the Earth, providing direct information about earthquakes, plate tectonics, and the structure of the Earth’s interior. The O’Neill seismograph display is a prototype of a new initiative for operating seismographs in public places so that the presence of a seismograph in a public setting will raise the public’s awareness of the science of seismology, natural hazards and the environment, and science in general.

@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21458306070001021
 Bookcover: 2016/04/rafferty-cover.png
 Image_alt: Cover of Violence, Politics and Catholicism in Ireland
-Oneoff: yes
+Oneoff: no
 
 Four Courts Press, 2016
 

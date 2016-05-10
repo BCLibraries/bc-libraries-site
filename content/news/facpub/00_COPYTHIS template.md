@@ -15,6 +15,7 @@ ShowSample_pages: yes
 Book_location: url
 Bookcover: 2016/xx/NAME-cover.jpg
 Image_alt: image description
+Oneoff: yes or no (will hide from main site for review)
 
 Maecenas egestas leo ante, in interdum lectus accumsan id. Proin a scelerisque dui, a accumsan ipsum. Pellentesque sodales, dui a efficitur posuere, diam tortor facilisis enim, nec aliquet arcu ligula sit amet dolor. Nulla ut est et turpis porttitor ullamcorper. Nullam lacinia eros sed tellus vulputate mollis. Maecenas lobortis metus at augue consectetur tincidunt. Nullam egestas varius massa, congue sollicitudin erat ornare non. Nulla tempor augue eu elementum hendrerit.
 

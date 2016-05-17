@@ -21,7 +21,6 @@ $(document).ready(function () {
         $heading.nextAll().remove();
 
         loading_timers[service.name] = setTimeout(function () {
-            console.log('loading is set');
             $target.addClass('loading');
         }, 150);
 
@@ -36,10 +35,12 @@ $(document).ready(function () {
                     if (data.length > service.max_results) {
                         data.splice(service.max_results, 100);
                     }
-                    var html = templates[service.name](data);
-                    clearTimeout(loading_timers[service.name]);
-                    $target.removeClass('loading');
-                    $heading.after(html);
+                    if (templates[service.name]) {
+                        var html = templates[service.name](data);
+                        clearTimeout(loading_timers[service.name]);
+                        $target.removeClass('loading');
+                        $heading.after(html);
+                    }
                 },
                 error: function (xhr, status) {
                     clearTimeout(loading_timers[service.name]);
@@ -94,7 +95,9 @@ $(document).ready(function () {
     function renderSearchResults(services) {
         for (i = 0, max = services.length; i < max; i += 1) {
             source = $('#' + services[i].name + '-template').html();
-            templates[services[i].name] = Handlebars.compile(source);
+            if (source) {
+                templates[services[i].name] = Handlebars.compile(source);
+            }
         }
     }
 
@@ -122,7 +125,6 @@ $(document).ready(function () {
                 source = $('#dym-template').html();
                 html = Handlebars.compile(source)(data);
                 $('#didyoumean-holder').append(html);
-                console.log('DYM');
             }
         },
         {
@@ -144,6 +146,14 @@ $(document).ready(function () {
             name: 'guides',
             max_results: 2,
             postprocess: emptyProcess
+        },
+        {
+            name: 'springshare',
+            max_results: 5,
+            postprocess: function (data) {
+                console.log('Springshare results');
+                console.log(data);
+            }
         }
     ];
 

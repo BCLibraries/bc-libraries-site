@@ -4,7 +4,7 @@ By: Translated
 Author_firstname: Daniel
 Author_lastname: Bowles
 Author_position: German Studies Department
-Librarian_name: Jonas Barciauska
+Librarian_name: Jonas Barciauskas
 Librarian_email: barciaus@bc.edu
 Librarian_position: Head of Collection Development 
 Tags: facpub

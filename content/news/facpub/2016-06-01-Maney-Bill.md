@@ -6,7 +6,7 @@ Author_lastname:  Maney
 Author_position: Professor, History Department 
 Librarian_name: Kimberly Kowal
 Librarian_email: kimberly.kowal@bc.edu
-Librarian_position: Associate University Librarian, Digital Initiative
+Librarian_position: Associate University Librarian, Digital Initiatives and Services
 Tags: facpub
 Slug: maney-bill
 Youtube: https://www.youtube.com/embed/BQYyby2OClE

@@ -31,7 +31,7 @@ $(document).ready(function () {
 
         $.ajax(
             {
-                type: 'GET',e
+                type: 'GET',
                 url: '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword),
                 dataType: 'jsonp',
                 cache: true,

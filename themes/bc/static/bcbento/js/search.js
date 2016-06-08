@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     var search_string, services, templates, source, loading_timers, i, max, api_version;
 
-    api_version = '0.0.7';
+    api_version = '0.0.9.2';
 
     /**
      * Call a single search service
@@ -23,13 +23,15 @@ $(document).ready(function () {
         $heading = $('#' + service.name + '-results h3');
         $heading.nextAll().remove();
 
+        console.log('sending '+'/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword));
+        
         loading_timers[service.name] = setTimeout(function () {
             $target.addClass('loading');
         }, 150);
 
         $.ajax(
             {
-                type: 'GET',
+                type: 'GET',e
                 url: '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword),
                 dataType: 'jsonp',
                 cache: true,

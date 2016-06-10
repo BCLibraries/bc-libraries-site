@@ -2,19 +2,19 @@ Date: 2010-10-01 01:01
 Date_range: MONTH, XX YEAR - MONTH, XX YEAR
 Title: Exhibit Titles 
 Subtitle: Yadda
-Sponsor: sponsor
+Sponsor: Sponsored By etc (or leave blank)
 Location: see below
 Tags: exhibit
 Slug: exhibit-friendly-url 
 Image: 2015/xx/NAME-poster.png
 Image_thumb: 2015/xx/NAME-thumb.png
 Image_alt: image description
-Active: see below
-Style: see below
+Active: yes or no
+Style: default
 
-Article summary [linked text](http://www.google.com).
+TEXT WILL GO HERE
 
-For style, include options for horizontal posters, vertical posters, middle align, and right align.
+<!--
 
 Gallery locations: 
     Burns Library (burns)
@@ -30,9 +30,14 @@ Need spaces for:
 
   Archived Bapst Exhibits (bapsts)
   Virtual Exhibits (virtual)
+  Tip O'Neill (tiponeill)
 
+Style
 
-----
+    Poster on left, text on right (default)
+    Poster on right, text on left (right)
+    Poster large, centered above text (middle_top)
+    Poster large, centered below text (middle_down)
 
-
+-->
 

@@ -10,6 +10,6 @@ Image: 2015/12/artsandtech-poster.png
 Image_thumb: 2015/12/artsandtech-thumb.png
 Image_alt: Poster for Art and Digital Technology
 Active: yes
-Style: see below
+Style: middle_down
 
 In <strong>Art & Digital Technology</strong>, a studio art course taught by professors Karl Baden and Greer Muldowney, students combine text and image to produce a variety of design and art-oriented pieces, including book and magazine spreads, posters, advertisements and CD covers, using Adobe Photoshop and Illustrator as creative tools. This exhibition consists of excerpts from the students' final projects.

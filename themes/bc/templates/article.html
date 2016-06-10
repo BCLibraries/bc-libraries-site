@@ -153,21 +153,153 @@
 
 <!-- TEMPLATE FOR EXHIBITS -->
 {% if article.category == "exhibits" %}
+	
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
+        <a href="http://library.bc.edu" title="Libraries">Libraries
+        </a>
+        </li>
+        <li id="s-lib-bc-site">
+        <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
+        </a>
+        </li>
+    </ol>
 
-	<div class="article_page">
+	<div class="exhibit_page">
 
-		<h3>{{ article.title }}</h3>
+	<!-- THIS IS THE LOGIC TO CHANGE THE LOCATION OF THE EXHIBIT -->
+	<div class="blackband {{ article.location }}">
+			
+			<div class="bandcenter">
 
-			<div class="article_meta">
-			{{ article.date|strftime('%B %d, %Y') }}
-		    <img src="/theme/img/news/{{ article.image }}" alt="{{ article.image_alt }}" >
+			{% if article.location == "burns" %}
+		
+			<h2>Burns Library Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the Burns Library Archives</a></p>
+
+			{% endif %}
+
+			{% if article.location == "tml" %}
+		
+			<h2>Theology and Minsitry Library Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the TML Archives</a></p>
+
+			{% endif %}
+			
+			{% if article.location == "lvl1" %}
+		
+			<h2>O'Neill Level One Gallery Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the O'Neill Level One Gallery Archives</a></p>
+
+			{% endif %}
+
+			{% if article.location == "lvl3" %}
+		
+			<h2>O'Neill Level Three Gallery Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the O'Neill Level Three Gallery Archives</a></p>
+
+			{% endif %}
+
+			{% if article.location == "reading" %}
+		
+			<h2>O'Neill Reading Room</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the O'Neill Reading Room Archives</a></p>
+
+			{% endif %}
+
+			{% if article.location == "backwall" %}
+		
+			<h2>O'Neill Reading Room Back Wall</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the O'Neill Reading Room Back Wall Archives</a></p>
+
+			{% endif %}
+			
+			{% if article.location == "lobby" %}
+		
+			<h2>O'Neill Library Level Three Lobby</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the O'Neill Library Level Three Lobby Archives</a></p>
+
+			{% endif %}
+			
+			{% if article.location == "stokes" %}
+		
+			<h2>History Department, Stokes Hall</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the History Department, Stokes Hall Archives</a></p>
+
+			{% endif %}
+			
+			{% if article.location == "bapsts" %}
+		
+			<h2>Bapst Library Archived Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			<a href="#" class="arrow">Return to the Bapst Library Archives</a></p>
+
+			{% endif %}
+
+			{% if article.location == "virtual" %}
+		
+			<h2>Burns Library Virtual Exhibits</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+			
+			{% endif %}
+
+			{% if article.location == "tip" %}
+		
+			<h2>Tip O'Neill Exhibit</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
+
+			{% endif %}
 			</div>
+	</div>
 
-			<div class="article_content">
-		        <div>{{ article.content }}</div>
-		    </div>
+	<div id="individualpage" class="{{ article.style }}">
 
-		    {{ articles_previous_page }}
+		<div class="exhibittitle">
+			<h3>
+				{{ article.title }} <br />
+				<span class="subtitle">{{ article.subtitle }}</span>
+			</h3>
+
+			<p><span class="date"><em>{{ article.date_range }}</em></span><br />
+			<span class="sponsor">{{ article.sponsor }}</span>
+			</p>
+		
+		</div>
+
+				<div class="article_content">
+					
+					<div class="poster">
+					<img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" >
+					</div>
+
+					<div class="text">
+				        {{ article.content }}
+				    </div>
+
+			    </div>
+
+				<!-- THIS CONTENT EXIST IN THE OFF CHANCE THAT WE NEED TEXT ON TOP OF POSTER -->
+			    <div class="article_content_two">
+					
+					<div class="text">
+				        {{ article.content }}
+				    </div>
+
+					<div class="poster">
+					<img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" >
+					</div>
+
+			    </div>
+
+		</div>
 
 	</div>
 {% endif %}

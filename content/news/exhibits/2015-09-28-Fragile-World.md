@@ -6,11 +6,11 @@ Sponsor: Cosponsored by the Boston College University Libraries and the Boston C
 Location: tml
 Tags: exhibit
 Slug: a-fragile-world
-Image: 2015/09/fragile-poster.png
+Image: 2015/09/fragile-poster.jpg
 Image_thumb: 2015/09/fragile-thumb.png
 Image_alt: A Fragile World Belonging to All exhibit poster
 Active: yes
-Style: see below
+Style: default
 
 Drawing together the words of Pope Francis’s encyclical letter Laudato Si’ with a selection of corresponding images, this exhibit is an invitation to actively reflect on the concerns, challenges, hopes—and call to action—for the care of our common home so powerfully expressed in the encyclical.
 

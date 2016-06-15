@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
+        <a href="http://library.bc.edu" title="Libraries">Libraries
+        </a>
+        </li>
+        <li id="s-lib-bc-site">
+        <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
+        </a>
+        <li id="s-lib-bc-site">
+            <a href="http://library.bc.edu/exhibits/burns" title="Burns Library Exhibit Archives">Burns Library Exhibit Archives</a></li>
+        </li>
+    </ol>
+
+<div id="exhibit_home">
+
+    <div class="blackband burns">
+        <div class="bandcenter">
+            <h2>Burns Library Exhibit Archives</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia venenatis dapibus. Fusce a leo in ligula vestibulum consectetur sit amet vitae dolor. Morbi varius mollis lorem ut congue. Maecenas sed lorem tellus. In urna ligula, fringilla sit amet neque at, lacinia gravida dolor.</p>
+        </div>
+    </div>
+
+    <div class="latest_exhibit">
+
+        <div class="left">
+            <h3>Gallery Spaces</h3>
+
+            <ul>
+                <li class="target">Burns Library</li>
+                <li><a href="#">Theology and Ministry Library </a></li>
+                <li><a href="#">O'Neill Level One</a></li>
+                <li><a href="#">O'Neill Level Three</a></li>
+                <li><a href="#">O'Neill Reading Room</a></li>
+                <li><a href="#">O'Neill Reading Room Back Wall</a></li>
+                <li><a href="#">O'Neill Lobby</a></li>
+                <li><a href="#">History Dept, Stokes Hall</a></li>
+                <li><a href="#">Archived Bapst Exhibits</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <h3>Past Exhibits</h3>
+
+<!-- SET IT UP FOR THAT IF LIBRARY, THEN THIS IMAGE PATH & ARCHIVE PATH. IF ANOTHE LIBRARY, DIFFERENT PATH. ETC -->
+    <ul>
+            <div class="archives">
+                <h4>2016</h4>
+            </div>
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "burns" %}
+                   
+                    {% if article.date|strftime('%Y') == "2016" %}
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                            {% if article.location == "burns" %}
+                            <!-- BURNS LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="frame">
+                                        <a href="../../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                            {% endif %}                        
+                        {% endif %}
+                    {% endif %}              
+                {% endfor %}
+            {% endif %}
+
+    </ul>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
+
+{% block pagescripts %}
+    
+<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
+{% endblock %}

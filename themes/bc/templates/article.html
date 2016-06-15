@@ -163,6 +163,82 @@
         <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
         </a>
         </li>
+
+      	{% if article.location == "burns" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/burns" title="Burns Library Exhibit Archives">Burns Library Exhibit Archives</a></li>
+
+		{% endif %}
+
+		{% if article.location == "tml" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/tml" title="Theology and Ministry Library Exhibit Archives">Theology and Ministry Library Exhibit Archives</a></li>
+
+		{% endif %}
+			
+		{% if article.location == "lvl1" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/lvl1" title="O'Neill Level One Gallery Archives">O'Neill Level One Gallery Archives</a></li>
+
+		{% endif %}
+
+		{% if article.location == "lvl3" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/lvl3" title="O'Neill Level Three Gallery Archives">O'Neill Level Three Gallery Archives</a></li>
+
+		{% endif %}
+
+		{% if article.location == "reading" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/reading" title="O'Neill Reading Room Archives">O'Neill Reading Room Archives</a></li>
+		{% endif %}
+
+		{% if article.location == "backwall" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/backwall" title="O'Neill Reading Room Back Wall Archives">O'Neill Reading Room Back Wall Archives</a></li>
+
+		{% endif %}
+			
+		{% if article.location == "lobby" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/lobby" title="O'Neill Lobby Archives">O'Neill Lobby Archives</a></li>
+
+		{% endif %}
+			
+		{% if article.location == "stokes" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/stokes" title="History Dept, Stokes Hall Archives">History Dept, Stokes Hall Archives</a></li>
+		{% endif %}
+			
+		{% if article.location == "bapsts" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/bapst" title="Bapst Library Exhibit Archives">Bapst Library Exhibit Archives</a></li>
+
+		{% endif %}
+
+		{% if article.location == "virtual" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/virtual" title="Burns Virtual Exhibits">Burns Virtual Exhibits</a></li>
+			
+		{% endif %}
+
+		{% if article.location == "tip" %}
+		
+			<li id="s-lib-bc-site">
+			<a href="http://library.bc.edu/exhibits/tip" title="Tip O'Neill Exhibit">Tip O'Neill Exhibit</a></li>
+
+		{% endif %}
+
     </ol>
 
 	<div class="exhibit_page">
@@ -182,7 +258,7 @@
 
 			{% if article.location == "tml" %}
 		
-			<h2>Theology and Minsitry Library Exhibits</h2>
+			<h2>Theology and Ministry Library Exhibits</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate malesuada ullamcorper. <br />
 			<a href="#" class="arrow">Return to the TML Archives</a></p>
 

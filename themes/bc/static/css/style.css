@@ -4391,6 +4391,24 @@ html {
     padding: 10px 20px 0;
 }
 
+#exhibit_home .latest_exhibit .left ul {
+    margin: 0 0 20px;
+}
+
+#exhibit_home .latest_exhibit .left ul li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0px 0 10px;
+}
+
+
+#exhibit_home .latest_exhibit .left .target {
+    color: #666;
+    border-bottom: 1px solid #990000;
+    padding: 0 0 0;
+    margin: 0 0 10px;
+}
+
 #exhibit_home .latest_exhibit .right {
     float: right;
     width: 75%;
@@ -4476,6 +4494,8 @@ html {
     color: #32758F;
 }  
 
+
+
 /* EXHIBIT BLACKBAND HEADER STYLING AND CUSTOMIZATION */
 
 .blackband {
@@ -4518,47 +4538,47 @@ html {
     max-width: 875px;
 }
 
-.exhibit_page .burns {
+#exhibit_home .burns, .exhibit_page .burns {
+        background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .tml, .exhibit_page .tml {
+        background: url("/theme/img/exhibits/banner_tml.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .lvl1, .exhibit_page .lvl1 {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .lvl3, .exhibit_page .lvl3 {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .reading, .exhibit_page .reading {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .backwall, .exhibit_page .backwall {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .lobby, .exhibit_page .lobby {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .stokes, .exhibit_page .stokes {
+        background: url("/theme/img/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .bapsts, .exhibit_page .bapsts {
+        background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit_home .virtual, .exhibit_page .virtual {
         background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 
-.exhibit_page .tml {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .lvl1 {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .lvl3 {
-        background: url("/theme/img/exhibits/banner_lvl3.png") no-repeat 0% 0% #101010;
-}
-
-.exhibit_page .reading {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .backwall {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .lobby {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .stokes {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .bapsts {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .virtual {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-}
-
-.exhibit_page .tip {
+#exhibit_home .tip, .exhibit_page .tip {
         background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 

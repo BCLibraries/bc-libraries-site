@@ -16,6 +16,10 @@ TEXT WILL GO HERE
 
 <!--
 
+Active:
+Yes (will appear on Exhibit's homepage)
+No (will not appear on Exhibit's homepage, but will appear in archives)
+
 Gallery locations: 
     Burns Library (burns)
     Theology and Ministry Library (tml)

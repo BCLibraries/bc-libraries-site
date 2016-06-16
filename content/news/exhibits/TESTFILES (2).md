@@ -1,6 +1,6 @@
-Date: 2015-10-15 01:01 
+Date: 2016-01-15 01:01 
 Date_range: October 15, 2015 - January 24, 2016
-Title: Morbi varius mollis lorem ut congue 2
+Title: Test 002
 Subtitle:
 Sponsor: Sponsored by The Institute for the Liberal Arts, Boston College, and Boston College Libraries.
 Location: burns

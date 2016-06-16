@@ -4359,7 +4359,7 @@ html {
     overflow-x: hidden;
 }
 
-#exhibit_home {
+#exhibit, #exhibit_archive {
     position: relative;
     display: inline-block;
     height: 100%;
@@ -4375,15 +4375,15 @@ html {
     padding: 290px 0 0;
 }
 
-#exhibit_home .latest_exhibit h3 {
+#exhibit .latest_exhibit h3 {
     font-size: 22px;
 }
 
-#exhibit_home .latest_exhibit .left h3 {
+#exhibit .latest_exhibit .left h3 {
     text-align: center;
 }
 
-#exhibit_home .latest_exhibit .left {
+#exhibit .latest_exhibit .left {
     float: left;
     width: 25%;
     background: #eaeaea;
@@ -4391,67 +4391,83 @@ html {
     padding: 10px 20px 0;
 }
 
-#exhibit_home .latest_exhibit .left ul {
+#exhibit .latest_exhibit .left ul {
     margin: 0 0 20px;
 }
 
-#exhibit_home .latest_exhibit .left ul li {
+#exhibit .latest_exhibit .left ul li {
     list-style: none outside none;
     margin: 0;
-    padding: 0px 0 10px;
+    padding: 0px 0 15px;
 }
 
-
-#exhibit_home .latest_exhibit .left .target {
-    color: #666;
-    border-bottom: 1px solid #990000;
-    padding: 0 0 0;
+#exhibit .latest_exhibit .left ul li a:hover {
+   text-decoration: none;
+    padding: 0 0 0 10px;
     margin: 0 0 10px;
 }
 
-#exhibit_home .latest_exhibit .right {
+#exhibit .latest_exhibit .left .target {
+    color: #666;
+    border-bottom: 1px solid #990000;
+    padding: 0 0 0 15px;
+    margin: 0 0 10px;
+}
+
+#exhibit .latest_exhibit .right {
     float: right;
     width: 75%;
     padding: 10px 20px 0;
 }
 
-#exhibit_home .latest_exhibit .right ul {
+#exhibit .latest_exhibit .right ul {
     margin: 0;
     padding: 0;
+    clear: both;
 }
 
-#exhibit_home .latest_exhibit .holder {
+#exhibit .latest_exhibit .holder {
     display: inline-block;
     position: relative;
-    margin: 0px 0px 50px 0;
+    margin: 0px 0px 30px 0;
     padding: 0;
     width: 375px;
     height: auto;
 }
 
-#exhibit_home .latest_exhibit .holder:nth-child(odd) {
+#exhibit .latest_exhibit .holder:nth-child(odd) {
    float: left;
 }
 
-#exhibit_home .latest_exhibit .holder:nth-child(even) {
+#exhibit .latest_exhibit .holder:nth-child(even) {
    float: right;
 }
 
-#exhibit_home .latest_exhibit .holder .archives {
+#exhibit.archives .latest_exhibit .holder:nth-child(odd), #exhibit.archives .latest_exhibit .holder:nth-child(even) {
+   float: left;
+   margin: 0 25px 25px 0;
+}
+
+#exhibit.archives .latest_exhibit .holdhead {
+    margin: 0 0 10px 0;
+    width: 375px;
+}
+
+#exhibit .latest_exhibit .holder .holdhead {
     position: relative;
 }
 
-#exhibit_home .latest_exhibit .holder .archives h4 {
+#exhibit .latest_exhibit .holdhead h4 {
     border-bottom: 1px solid #05506D;
     text-transform: uppercase;
     margin: 5px 0 0 !important;
 }
 
-#exhibit_home .latest_exhibit .holder .archives p {
+#exhibit .latest_exhibit .holder .holdhead p {
     font-size: 12px;
 }
 
-#exhibit_home .latest_exhibit .holder .frame {
+#exhibit .latest_exhibit .holder .frame {
     border: 2px solid #05506D;
     position: relative;
     color: #444;
@@ -4459,16 +4475,16 @@ html {
     width: 375px;
 }
 
-#exhibit_home .latest_exhibit .holder .frame:hover {
+#exhibit .latest_exhibit .holder .frame:hover {
     border: 2px solid #32758F;
 }
 
-#exhibit_home .latest_exhibit .holder .frame img {
+#exhibit .latest_exhibit .holder .frame img {
     height: 100%;
     width: 100%;
 }
 
-#exhibit_home .latest_exhibit .holder .frame .info {
+#exhibit .latest_exhibit .holder .frame .info {
     bottom: 0px;
     position: absolute;
     width: 100%;
@@ -4477,24 +4493,22 @@ html {
     padding: 5px;
 }
 
-#exhibit_home .latest_exhibit .holder .frame .info .date {
+#exhibit .latest_exhibit .holder .frame .info .date {
     font-size: 12px;
     margin: 0;
     font-style: italic;
     color: #444;
 }
 
-#exhibit_home .latest_exhibit .holder .frame .info .title {
+#exhibit .latest_exhibit .holder .frame .info .title {
     font-weight: bold;
     line-height: 1;
     font-size: 15px;
 }
 
-#exhibit_home .latest_exhibit .holder .frame:hover .info .title {
+#exhibit .latest_exhibit .holder .frame:hover .info .title {
     color: #32758F;
 }  
-
-
 
 /* EXHIBIT BLACKBAND HEADER STYLING AND CUSTOMIZATION */
 
@@ -4538,53 +4552,108 @@ html {
     max-width: 875px;
 }
 
-#exhibit_home .burns, .exhibit_page .burns {
+#exhibit .burns, .exhibit_page .burns {
         background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .tml, .exhibit_page .tml {
+#exhibit .tml, .exhibit_page .tml {
         background: url("/theme/img/exhibits/banner_tml.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .lvl1, .exhibit_page .lvl1 {
+#exhibit .lvl1, .exhibit_page .lvl1 {
         background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .lvl3, .exhibit_page .lvl3 {
+#exhibit .lvl3, .exhibit_page .lvl3 {
         background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .reading, .exhibit_page .reading {
+#exhibit .reading, .exhibit_page .reading {
         background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .backwall, .exhibit_page .backwall {
+#exhibit .backwall, .exhibit_page .backwall {
         background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .lobby, .exhibit_page .lobby {
+#exhibit .lobby, .exhibit_page .lobby {
         background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .stokes, .exhibit_page .stokes {
+#exhibit .stokes, .exhibit_page .stokes {
         background: url("/theme/img/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .bapsts, .exhibit_page .bapsts {
+#exhibit .bapsts, .exhibit_page .bapsts {
         background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit_home .virtual, .exhibit_page .virtual {
+#exhibit .virtual, .exhibit_page .virtual {
         background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 
-#exhibit_home .tip, .exhibit_page .tip {
+#exhibit .tip, .exhibit_page .tip {
         background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 
 .blackband a {
     color: #fff;
 }
+
+/* EXHIBIT ARCHIVE STYLING */
+
+#exhibit.archives .latest_exhibit .holder {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 50px 0;
+    padding: 0;
+    width: 250px;
+    height: auto;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame {
+    border: 2px solid #05506D;
+    position: relative;
+    color: #444;
+    height: 250px;
+    width: 250px;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame:hover {
+    border: 2px solid #32758F;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame img {
+    height: 100%;
+    width: 100%;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    min-height: 55px;
+    padding: 5px;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info .date {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    color: #444;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info .title {
+    font-weight: bold;
+    line-height: 1;
+    font-size: 15px;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame:hover .info .title {
+    color: #32758F;
+}  
+
 
 /* INDIVIDUAL EXHIBIT PAGE STYLES */
 

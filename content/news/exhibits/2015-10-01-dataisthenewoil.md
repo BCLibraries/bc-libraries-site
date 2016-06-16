@@ -10,7 +10,7 @@ Image: 2015/10/data-poster.png
 Image_thumb: 2015/10/data-thumb.png
 Image_alt: Poster for Data is the New Oil.
 Active: yes
-Style: see below
+Style: right
 
 Data, data, data -- it's truly everywhere, and it’s growing.  We collect more and more of it (think "Big Data"), and we're storing almost all of it digitally -- and all of it is at risk without good care and management.  Boston College's research data is one of its "primary assets".  Like other academic research institutions, Boston College is responding to the proliferation of federal and publisher mandates for better data <strong>management</strong> practice and growing recognition of the <strong>enormous risk data loss poses</strong>.
 

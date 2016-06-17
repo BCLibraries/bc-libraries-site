@@ -54,7 +54,9 @@ EXTRA_PATH_METADATA = {
 }
 
 DIRECT_TEMPLATES = (('index', 'news/index', 
-					'exhibits/index', 'exhibits/burns/index',
+					'exhibits/index', 'exhibits/burns/index', 'exhibits/backwall/index', 'exhibits/bapst/index', 'exhibits/lvl1/index',
+					'exhibits/lvl3/index', 'exhibits/lobby/index', 'exhibits/reading/index', 'exhibits/stokes/index', 
+					'exhibits/tiponeill/index', 'exhibits/tml/index', 'exhibits/virtual/index', 'exhibits/spaces/index',
 					'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))
 
 #PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))#

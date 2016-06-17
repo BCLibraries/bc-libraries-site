@@ -4398,7 +4398,7 @@ html {
 #exhibit .latest_exhibit .left ul li {
     list-style: none outside none;
     margin: 0;
-    padding: 0px 0 15px;
+    padding: 0px 0 10px;
 }
 
 #exhibit .latest_exhibit .left ul li a:hover {
@@ -4489,8 +4489,9 @@ html {
     position: absolute;
     width: 100%;
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
-    min-height: 55px;
-    padding: 5px;
+    min-height: 65px;
+    padding: 10px 5px 5px;
+    border-top: 1px solid #05506D;
 }
 
 #exhibit .latest_exhibit .holder .frame .info .date {
@@ -4509,6 +4510,10 @@ html {
 #exhibit .latest_exhibit .holder .frame:hover .info .title {
     color: #32758F;
 }  
+
+#exhibit .above_footer {
+    clear: both;
+}
 
 /* EXHIBIT BLACKBAND HEADER STYLING AND CUSTOMIZATION */
 
@@ -4561,19 +4566,19 @@ html {
 }
 
 #exhibit .lvl1, .exhibit_page .lvl1 {
-        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+        background: url("/theme/img/exhibits/banner_lvl1.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lvl3, .exhibit_page .lvl3 {
-        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+        background: url("/theme/img/exhibits/banner_lvl3.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .reading, .exhibit_page .reading {
-        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+        background: url("/theme/img/exhibits/banner_reading.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .backwall, .exhibit_page .backwall {
-        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+        background: url("/theme/img/exhibits/banner_backwall.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lobby, .exhibit_page .lobby {

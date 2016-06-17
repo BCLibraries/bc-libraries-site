@@ -10,15 +10,14 @@
         <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
         </a>
         <li id="s-lib-bc-site">
-            <a href="http://library.bc.edu/exhibits/burns" title="Burns Library Exhibit Archives">Burns Library Exhibit Archives</a></li>
-        </li>
+            <a href="http://library.bc.edu/exhibits/tml" title="Theology and Ministry Library Exhibit Archives">Theology and Ministry Library Exhibit Archives</a></li>
     </ol>
 
 <div id="exhibit" class="archives">
 
-    <div class="blackband burns">
+    <div class="blackband tml">
         <div class="bandcenter">
-            <h2>Burns Library Exhibit Archives</h2>
+            <h2>Theology and Ministry Library Exhibit Archives</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia venenatis dapibus. Fusce a leo in ligula vestibulum consectetur sit amet vitae dolor. Morbi varius mollis lorem ut congue. Maecenas sed lorem tellus. In urna ligula, fringilla sit amet neque at, lacinia gravida dolor.</p>
         </div>
     </div>
@@ -30,15 +29,14 @@
 
             <ul>
                 <li><a href="../bapst">Bapst Library</a></li>
-                <li class="target">Burns Library</li>
-                <li><a href="../tml">Theology and Ministry Library </a></li>
+                <li><a href="../burns">Burns Library</a></li>
+                <li class="target">Theology and Ministry Library</li>
                 <li><a href="../lvl1">O'Neill Level One</a></li>
                 <li><a href="../lvl3">O'Neill Level Three</a></li>
                 <li><a href="../reading">O'Neill Reading Room</a></li>
                 <li><a href="../backwall">O'Neill Reading Room Back Wall</a></li>
                 <li><a href="../lobby">O'Neill Lobby</a></li>
                 <li><a href="../stokes">History Dept, Stokes Hall</a></li>
-
             </ul>
         </div>
 
@@ -53,20 +51,20 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category == "exhibits" and article.location == "burns" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "tml" %}
                    
                     {% if article.date|strftime('%Y') == "2016" %}
                     
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
 
-                            {% if article.location == "burns" %}
+                            {% if article.location == "tml" %}
 
                                 <li class="holder">
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -92,7 +90,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category == "exhibits" and article.location == "burns" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "tml" %}
                    
                     {% if article.date|strftime('%Y') == "2015" %}
                     
@@ -100,13 +98,13 @@
                         {% if count < 100 %}  
 
                           
-                            {% if article.location == "burns" %}
+                            {% if article.location == "tml" %}
 
                                 <li class="holder">
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -132,7 +130,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category == "exhibits" and article.location == "burns" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "tml" %}
                    
                     {% if article.date|strftime('%Y') == "2014" %}
                     
@@ -140,13 +138,13 @@
                         {% if count < 100 %}  
 
                           
-                            {% if article.location == "burns" %}
+                            {% if article.location == "tml" %}
 
                                 <li class="holder">
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -172,7 +170,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category == "exhibits" and article.location == "burns" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "tml" %}
                    
                     {% if article.date|strftime('%Y') == "2013" %}
                     
@@ -180,13 +178,13 @@
                         {% if count < 100 %}  
 
                           
-                            {% if article.location == "burns" %}
+                            {% if article.location == "tml" %}
 
                                 <li class="holder">
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>

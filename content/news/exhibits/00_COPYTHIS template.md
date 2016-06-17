@@ -17,8 +17,8 @@ TEXT WILL GO HERE
 <!--
 
 Active:
-Yes (will appear on Exhibit's homepage)
-No (will not appear on Exhibit's homepage, but will appear in archives)
+    Yes (will appear on Exhibit's homepage)
+    No (will not appear on Exhibit's homepage, but will appear in archives)
 
 Gallery locations: 
     Burns Library (burns)
@@ -29,15 +29,15 @@ Gallery locations:
     O'Neill Reading Room Back Wall (backwall)
     O'Neill Lobby (lobby)
     History Dept, Stokes Hall (stokes)
+    Bapst Exhibits (bapsts)
+    Archived Bapst Exhibits (bapstsarchive)
   
 Need spaces for:
 
-  Archived Bapst Exhibits (bapsts)
   Virtual Exhibits (virtual)
   Tip O'Neill (tiponeill)
 
-Style
-
+Style:
     Poster on left, text on right (default)
     Poster on right, text on left (right)
     Poster large, centered above text (middle_top)

@@ -15,6 +15,7 @@ $(document).ready(function () {
      */
     function callSearchService(service, keyword) {
         var $target, $heading;
+        var submit_url;
 
         // Workaround for question mark problems.
         keyword = keyword.replace(/\?/, '');
@@ -23,16 +24,16 @@ $(document).ready(function () {
         $heading = $('#' + service.name + '-results h3');
         $heading.nextAll().remove();
 
-        console.log('sending '+'/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword));
-        
         loading_timers[service.name] = setTimeout(function () {
             $target.addClass('loading');
         }, 150);
 
+        submit_url = 'http://localhost/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword).replace('"', '%22');
+
         $.ajax(
             {
                 type: 'GET',
-                url: '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword),
+                url: submit_url,
                 dataType: 'jsonp',
                 cache: true,
                 success: function (data, status, xhr) {

@@ -28,7 +28,7 @@ $(document).ready(function () {
             $target.addClass('loading');
         }, 150);
 
-        submit_url = 'http://localhost/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword).replace('"', '%22');
+        submit_url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword).replace('"', '%22');
 
         $.ajax(
             {

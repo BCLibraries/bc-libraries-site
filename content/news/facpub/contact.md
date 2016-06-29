@@ -1,8 +1,9 @@
-Date: 2015-01-01 01:01
+Date: 2016-01-01 01:01
 Title: n/a
 Tags: facpub
 Slug: contact
 Oneoff: yes
+Contact: ContactOnly
 Editor_Name: Leslie Homzie
 Editor_Title: Collection Development Librarian
 Editor_Email: leslie.homzie@bc.edu

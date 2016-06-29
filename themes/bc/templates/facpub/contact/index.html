@@ -5,7 +5,7 @@
 
 {% if articles %} 
 
-                    {% for article in articles if article.category == "facpub" and article.oneoff == "yes" %}
+                    {% for article in articles if article.category == "facpub" and article.contact == "ContactOnly" %}
  
     <div class="article_page">
         <div class="article_content">

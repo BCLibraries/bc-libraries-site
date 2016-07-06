@@ -15,7 +15,7 @@ $('document').ready(function () {
         jQuery.each(msg, function (index, value) {
             var url;
 
-            if (index == 0 && value.short_name.indexOf('<b>') > -1) {
+            if (index == 0 && value.short_name.indexOf('<strong>') > -1) {
                 options = "<optgroup label='Trial databases'>";
                 needs_groups = true;
                 is_trial = true;
@@ -28,7 +28,7 @@ $('document').ready(function () {
             } else {
                 url = '';
             }
-            if (needs_groups && is_trial && value.short_name.indexOf('<b>') == -1) {
+            if (needs_groups && is_trial && value.short_name.indexOf('<strong>') == -1) {
                 is_trial = false;
                 options = options + '</optgroup><optgroup label="Databases">';
             }

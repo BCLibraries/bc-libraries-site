@@ -821,6 +821,9 @@
             var myPane = $(this).html();
             ga('send', 'event', 'librarypanes', 'hover', myPane);
         });
+        $("input#searchsubmit").click(function(){
+            ga('send', 'event', 'bc-searchbutton', 'click');
+        });
     });
     </script>
 

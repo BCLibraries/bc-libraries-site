@@ -79,7 +79,7 @@ $(document).ready(function () {
             },
             error: function (foo, bar, baz) {
                 $loading_img.hide();
-                respond('There was an error sending your feedback. Please email <a href="mailto:lib-webtaskforce-ggroup@bc.edu">lib-webtaskforce-ggroup@bc.edu</a>');
+                respond('<div><h3>Form Error Occured</h3><p>There was an error sending your feedback.</p><p>Please resend your feedback to <a href="mailto:lib-webadvisory-ggroup@bc.edu">lib-webadvisory-ggroup@bc.edu</a></p></div>');
             }
         });
 

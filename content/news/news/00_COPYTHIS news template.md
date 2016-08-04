@@ -2,7 +2,7 @@ Title: News Title
 Destination: URL
 Date: 2010-10-01 01:01 
 Tags: news, tags 
-Slug: friendly-url 
+Slug: a-nice-and-friendly-url 
 Expired: yes or no
 ShowText: yes
 Image_alt: image description

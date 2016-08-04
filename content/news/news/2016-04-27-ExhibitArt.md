@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLoneExhibits/artan
 Date: 2016-04-27 01:01 
 Tags: news, tags 
 Slug: news-exhibit-artstechspring
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Pixelated imaged of the Mona Lisa.
 Image_thumb: 2016-04/arts-tech-thumbs.png

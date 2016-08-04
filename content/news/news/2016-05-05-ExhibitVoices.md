@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExh
 Date: 2016-05-05 01:01 
 Tags: news, tags 
 Slug: news-exhibit-voices
-Expired: no
+Expired: yes
 ShowText: no
 Image_alt: Voices Lost and Found: Remebering Three Women Artists Killed in Auschwitz, May - July 2016, located in the O'Neill Reading Room
 Image_thumb: 2016-05/voices-thumbs.png

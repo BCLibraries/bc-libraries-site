@@ -323,9 +323,10 @@ th {
 #header {
     width: 100%;
     min-height: 100px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     padding: 0;
     position: relative;
+    border-bottom: 1px solid #dadada;
 }
 
 @media ( max-width: 1199px ) {
@@ -879,7 +880,7 @@ a.announcelink {
 .announcements div {
     margin: 0 0 10px 0;
     display: inline-block;
-    padding: 0 15px 0 0;
+    padding: 0 0 15px 0;
 }
 
 .announcements .readmore, .announcements .readmore.yes {

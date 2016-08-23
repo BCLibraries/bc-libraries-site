@@ -42,8 +42,8 @@ Learn how to organize, save, and automatically create (!) citations and bibliogr
 <em>Friday, October 7:</em> 			 1:30 -- 2:00 PM
 </p>
 
-<strong style="color: #990000;">Designing a Research Project.</strong>  <br />
-Presents a straightforward methodology for choosing and refining both a research topic and a research strategy.  
+<p><strong style="color: #990000;">Designing a Research Project.</strong>  <br />
+Presents a straightforward methodology for choosing and refining both a research topic and a research strategy.  </p>
 
 <p style="margin: 0 0 15px 50px">
 <em>Tuesday, October 11:</em> 		3:00 – 3:30 PM <br />

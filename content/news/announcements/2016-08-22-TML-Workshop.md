@@ -14,7 +14,7 @@ TML (Theology & Ministry Library) is offering the following series of 30-minute,
 
 
 <strong style="color: #990000;">
-Using the Library Catalog Effectively.</strong>  
+Using the Library Catalog Effectively.</strong>  <br />
 Focuses on the best techniques for searching the Boston College Libraries catalog.
 
 <p style="margin: 0 0 15px 50px">
@@ -24,7 +24,7 @@ Focuses on the best techniques for searching the Boston College Libraries catalo
 </p>
 
 
-<strong style="color: #990000;">Finding Articles.</strong>  
+<strong style="color: #990000;">Finding Articles.</strong>  <br /> 
 Introduces the major theological databases available via the BC Libraries.  
 
 <p style="margin: 0 0 15px 50px">
@@ -33,7 +33,7 @@ Introduces the major theological databases available via the BC Libraries.
 <em>Friday, September 30:</em>  		 1:30 – 2:00 PM
 </p>
 
-<strong style="color: #990000;">RefWorks/Flow.</strong> 
+<p><strong style="color: #990000;">RefWorks/Flow.</strong> <br />
 Learn how to organize, save, and automatically create (!) citations and bibliographies using this tool available for free to all members of the BC community.
 
 <p style="margin: 0 0 15px 50px">
@@ -42,7 +42,7 @@ Learn how to organize, save, and automatically create (!) citations and bibliogr
 <em>Friday, October 7:</em> 			 1:30 -- 2:00 PM
 </p>
 
-<strong style="color: #990000;">Designing a Research Project.</strong>  
+<strong style="color: #990000;">Designing a Research Project.</strong>  <br />
 Presents a straightforward methodology for choosing and refining both a research topic and a research strategy.  
 
 <p style="margin: 0 0 15px 50px">

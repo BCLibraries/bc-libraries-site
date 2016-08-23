@@ -13,37 +13,42 @@ Summary: Will appear on homepage.
 TML (Theology & Ministry Library) is offering the following series of 30-minute, stand-alone but inter-connected workshops to help you make the most of our research resources:
 
 
-<strong>Using the Library Catalog Effectively.</strong>  Focuses on the best techniques for searching the Boston College Libraries catalog.
+<strong style="color: #990000;">
+Using the Library Catalog Effectively.</strong>  
+Focuses on the best techniques for searching the Boston College Libraries catalog.
 
 <p style="margin: 0 0 15px 50px">
-Monday, September 19: 		10:30 – 11:00 AM <br />
-Tuesday, September 20: 		  3:00 – 3:30 PM <br />
-Friday, September 23: 		  1:30 – 2:00 PM
+<em>Monday, September 19:</em> 		10:30 – 11:00 AM <br />
+<em>Tuesday, September 20:</em> 		  3:00 – 3:30 PM <br />
+<em>Friday, September 23:</em> 		  1:30 – 2:00 PM
 </p>
 
 
-<strong>Finding Articles.</strong>  Introduces the major theological databases available via the BC Libraries.  
+<strong style="color: #990000;">Finding Articles.</strong>  
+Introduces the major theological databases available via the BC Libraries.  
 
 <p style="margin: 0 0 15px 50px">
-Monday, September 26: 		10:30 – 11:00 AM <br />
-Tuesday, September 27: 		 3:00 – 3:30 PM <br />
-Friday, September 30:  		 1:30 – 2:00 PM
+<em>Monday, September 26:</em> 		10:30 – 11:00 AM <br />
+<em>Tuesday, September 27:</em> 		 3:00 – 3:30 PM <br />
+<em>Friday, September 30:</em>  		 1:30 – 2:00 PM
 </p>
 
-<strong>RefWorks/Flow.</strong>  Learn how to organize, save, and automatically create (!) citations and bibliographies using this tool available for free to all members of the BC community.
+<strong style="color: #990000;">RefWorks/Flow.</strong> 
+Learn how to organize, save, and automatically create (!) citations and bibliographies using this tool available for free to all members of the BC community.
 
 <p style="margin: 0 0 15px 50px">
-Monday, October 3: 		           10:30 – 11:00 AM <br />
-Tuesday, October 4: 			 3:00 – 3:30 PM <br />
-Friday, October 7: 			 1:30 -- 2:00 PM
+<em>Monday, October 3:</em> 		           10:30 – 11:00 AM <br />
+<em>Tuesday, October 4:</em> 			 3:00 – 3:30 PM <br />
+<em>Friday, October 7:</em> 			 1:30 -- 2:00 PM
 </p>
 
-<strong>Designing a Research Project.</strong>  Presents a straightforward methodology for choosing and refining both a research topic and a research strategy.  
+<strong style="color: #990000;">Designing a Research Project.</strong>  
+Presents a straightforward methodology for choosing and refining both a research topic and a research strategy.  
 
 <p style="margin: 0 0 15px 50px">
-Tuesday, October 11: 		3:00 – 3:30 PM <br />
-Wednesday, October 12:                   1:30 – 2:00 PM <br />
-Friday, October 14: 			1:30 – 2:00 PM
+<em>Tuesday, October 11:</em> 		3:00 – 3:30 PM <br />
+<em>Wednesday, October 12:</em>                   1:30 – 2:00 PM <br />
+<em>Friday, October 14:</em> 			1:30 – 2:00 PM
 </p>
 
 <strong>Unless otherwise announced, all sessions will be held in TML Room 112.</strong>

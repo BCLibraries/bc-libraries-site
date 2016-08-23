@@ -182,6 +182,16 @@
         <p>Value Beyond Discovery</p>
     </div>
 
+        <!-- HIDING ON HOMEPAGE, AS THERE ARE NOW 2 OTHER SEARCH BOXES. 
+    <div id="sb-search" class="sb-search-open sb-search">
+        <form method="get" action="http://library.bc.edu/search">
+            <label for="search" class="accessibility-text">Search the BC Libraries</label>
+            <input class="sb-search-input" placeholder="Search the BC Libraries" type="text" value="" name="any" id="search">
+            <input class="sb-search-submit" type="submit" value="Submit" name="submit">
+            <span class="sb-icon-search"></span>
+        </form>
+    </div>-->
+
     <!-- MENU BEGINS HERE -->
     <div id="megamenu">
         <!-- BEGIN NAVBAR -->
@@ -324,7 +334,6 @@
                                                     <li><h4><a href="http://libguides.bc.edu/ask-a-librarian" id="mm-help-aal">Ask A Librarian</a></h4></li>
                                                     <li class="ref_pane"><a href="http://libguides.bc.edu/ask-a-librarian" id="mm-help-ref">Visit a Reference Desk</a></li>
                                                     <li class="faq_pane"><a href="http://answers.bc.edu/index.php" id="mm-help-faq">Frequently Asked Questions</a></li>
-                                                    <li class="text_pane"><a href="#" id="mm-help-text">Text us</a></li>
                                                     <li class="chat_pane"><a href="#" onClick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=19965&title=Boston College/AJCU+Librarians&profile=cs-bostoncoll','chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;" id="mm-help-chat">Chat with us</a></li>
                                                     <li class="email_pane"><a href="http://answers.bc.edu/q.php" id="mm-help-email">Send us an Email</a></li>
                                                     <li class="call_pane"><a href="#" id="mm-help-call">Call us</a></li>
@@ -335,7 +344,6 @@
                                                     <li><h4><a href="http://libguides.bc.edu/ask-a-librarian" id="mm-t-help-aal">Ask A Librarian</a></h4></li>
                                                     <li class="ref_pane"><a href="#" id="mm-t-help-ref">Visit a Reference Desk</a></li>
                                                     <li class="faq_pane"><a href="#" id="mm-t-help-faq">Frequently Asked Questions</a></li>
-                                                    <li class="text_pane"><a href="#" id="mm-t-help-text">Text us</a></li>
                                                     <li class="chat_pane"><a href="#" id="mm-t-help-email">Send us an Email</a></li>
                                                     <li class="call_pane"><a href="#" id="mm-t-help-call">Call us</a></li>
                                                 </ul>
@@ -366,16 +374,6 @@
                                                     </div>
                                                 </div>
                                                 <!-- END FAQ PANE. RIGHT UP THERE-->
-
-                                                <!-- TEXT PANE BEGINS HERE -->
-                                                <div id="text_pane" class="item_pane col-sm-5">
-                                                    <div class="pane_info">
-                                                        <div class="askicon ask_txt"></div>
-                                                        <h2>Text us</h2>
-                                                        <p>Text 617-229-5222 for quick questions during weekday reference service hours.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- END TEXT PANE. RIGHT UP THERE-->
 
                                                 <!-- CHAT PANE BEGINS HERE -->
                                                 <div id="chat_pane" class="item_pane col-sm-5">
@@ -821,12 +819,12 @@
     <script src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
     <script src="/theme/bcbento/js/bclib-typeahead.js"></script>
 
-    <!-- JS for expanding search bar -->
+    <!-- JS for expanding search bar 
     <script src="/theme/js/classie.js"></script>
     <script src="/theme/js/uisearch.js"></script>
     <script>
         new UISearch( document.getElementById( 'sb-search' ) );
-    </script>
+    </script>-->
 
     <!-- Google Analytics script -->
     <script>

@@ -323,9 +323,10 @@ th {
 #header {
     width: 100%;
     min-height: 100px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     padding: 0;
     position: relative;
+    border-bottom: 1px solid #dadada;
 }
 
 @media ( max-width: 1199px ) {
@@ -399,13 +400,13 @@ th {
     position: absolute;
     width: 0%;
     min-width: 50px;
-    height: 50px;
+    height: 40px;
     overflow: hidden;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
-    top: 0px;
+    top: 5px;
     right: 15px;
     z-index: 100;
 }
@@ -414,16 +415,16 @@ th {
     position: absolute;
     top: 0;
     right: 0;
-    border: 2px solid #B29D6C;
+    border: 2px solid #32758f;
     outline: none;
     background: #fff;
     width: 25%;
-    height: 50px;
+    height: 40px;
     margin: 0;
     z-index: 10;
     padding: 0 0px 0px 10px;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 16px;
     color: #666;
 }
 @media ( max-width: 1199px ) {
@@ -432,8 +433,11 @@ th {
 }}
 
 @media ( max-width: 768px ) {
+    .sb-search {
+        top: 65px;
+    }
     .sb-search-input {
-        width: 95%;
+        width: 96%;
 }
 }
 
@@ -455,15 +459,15 @@ th {
 
 .sb-icon-search,
 .sb-search-submit {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     padding: 0;
     margin: 0;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
     cursor: pointer;
 }
@@ -477,13 +481,12 @@ th {
     border: none;
     outline: none;
     z-index: -1;
+    display: block;
 }
 
 .sb-icon-search {
-    color: #fff;
-    background: #B29D6C;
-    border-bottom: 4px solid #9a885d;
-    z-index: 90;
+    background: #32758f;
+    border-bottom: 4px solid #05506d;
     font-size: 18px;
     speak: none;
     font-style: normal;
@@ -491,6 +494,10 @@ th {
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:hover {
+    background: red;
 }
 
 .sb-icon-search:before {
@@ -511,7 +518,7 @@ th {
 
 .sb-search.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
-    color: #990000;
+    color: #fff;
     z-index: 11;
 }
 
@@ -873,7 +880,7 @@ a.announcelink {
 .announcements div {
     margin: 0 0 10px 0;
     display: inline-block;
-    padding: 0 15px 0 0;
+    padding: 0 0 15px 0;
 }
 
 .announcements .readmore, .announcements .readmore.yes {
@@ -2074,7 +2081,7 @@ nav select {
 }
 @media ( max-width: 768px ) {
     #megamenu .navbar-collapse {
-        margin: 100px 0 0 0;
+        margin: 165px 0 0 0;
     }
 }
 @media (min-width: 768px) {
@@ -2110,9 +2117,10 @@ nav select {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0;
     float: right;
-    margin: 55px 15px 0;
+    margin: 115px 15px 0;
     padding: 13px;
     position: relative;
+    width: 96%;
 }
 @media (min-width: 768px) {
     #megamenu .navbar-toggle {
@@ -2127,6 +2135,7 @@ nav select {
     display: block;
     height: 2px;
     width: 22px;
+    margin: 0 auto;
 }
 
 #megamenu .navbar-nav > li {
@@ -4771,4 +4780,20 @@ html {
 .middle_down .article_content_two .text {
    max-width: 875px;
    margin: 0 auto 25px;
+}
+
+/* CAREER */
+
+.career #fakebctitle {
+display: none;
+}
+
+.career #librarytitle a h1 {
+background: url("/theme/img/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: block;
+float: left;
+height: 125px;
+text-indent: -9999px;
+width: 125px;
+margin: -50px 0 0 0px;
 }

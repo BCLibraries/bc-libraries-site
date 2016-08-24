@@ -99,6 +99,8 @@ $(document).ready(function () {
      * @param services
      */
     function renderSearchResults(services) {
+        console.log('render');
+        console.log(services);
         for (i = 0, max = services.length; i < max; i += 1) {
             source = $('#' + services[i].name + '-template').html();
             if (source) {
@@ -192,6 +194,7 @@ $(document).ready(function () {
 
     Handlebars.registerHelper('truncate', function (max_length, text) {
         var too_long, string;
+        text = text ? text : '';
         too_long = text.length > max_length;
         if (too_long) {
             string = text.substr(0, max_length - 1);

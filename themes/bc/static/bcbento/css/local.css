@@ -284,10 +284,6 @@ input#typeahead {
     margin-bottom: 1em;
 }
 
-#librarians-results {
-    margin-bottom: 3em
-}
-
 #librarians-results li > a {
     display: block;
     float: left;
@@ -298,4 +294,12 @@ input#typeahead {
 #springshare-results .more-results-link {
     top: -6px;
     position: relative;
+}
+
+#all-results .result-container {
+    display: block;
+}
+
+#all-results .result-container#librarians-results ul li:last-child {
+    margin-bottom: 3em;
 }

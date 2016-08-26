@@ -94,7 +94,7 @@ $.fn.bcBento = function (services, service_url_base) {
         }
     }
 
-    function truncate(str, max_length) {
+    function truncate(max_length, str) {
         if (str.length > max_length) {
             str = str.substr(0, max_length - 1);
             str = str.substr(0, str.lastIndexOf(' ')) + '…';

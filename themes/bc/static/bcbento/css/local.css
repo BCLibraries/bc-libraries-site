@@ -12,7 +12,7 @@
 
 /** All results **/
 
-#all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
+#all-results #primary .result-container h3, #all-results #secondary .result-container h3, #all-results #tertiary .result-container h3 {
     display: inline-block
 }
 
@@ -22,7 +22,7 @@
 }
 
 #all-results .loading {
-    background: #000 url(../img/loading-circle.gif) no-repeat center center;
+    background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
 #all-results .result-container ul {
@@ -91,14 +91,7 @@
 }
 
 .librarians img {
-    width: 50%;
-    max-width: 200px;
-    float: left
-}
-
-.librarian-info {
-    float: left;
-    width: 100%;
+    max-width: 100%
 }
 
 .librarian-info p {
@@ -266,4 +259,47 @@ input#typeahead {
         height: 200px;
         height: auto;
     }
+}
+
+#all-results #secondary {
+    width: 33.3%;
+    margin: 0 0 5px;
+    padding: 0 2em;
+}
+
+#all-results #primary {
+    margin: 0;
+    width: 33.3%;
+    border-left: 5px solid #fff;
+    padding-right: 2em;
+}
+
+#all-results #tertiary {
+    width: 33%;
+    border-left: 5px solid #fff;
+    padding-left: 2em;
+}
+
+#springshare-results li {
+    margin-bottom: 1em;
+}
+
+#librarians-results li > a {
+    display: block;
+    float: left;
+    width:  100px;
+    margin-right: 1em;
+}
+
+#springshare-results .more-results-link {
+    top: -6px;
+    position: relative;
+}
+
+#all-results .result-container {
+    display: block;
+}
+
+#all-results .result-container#librarians-results ul li:last-child {
+    margin-bottom: 3em;
 }

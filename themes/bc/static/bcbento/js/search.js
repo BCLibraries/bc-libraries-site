@@ -1,52 +1,41 @@
 /*jslint browser:true */
 /*globals $, Handlebars */
 
-$(document).ready(function () {
-    'use strict';
+'use strict';
 
-    var search_string, services, templates, source, loading_timers, i, max, api_version;
+$.fn.bcBento = function (services, service_url_base) {
+
+    var search_string, templates, source, loading_timers, i, max, api_version;
 
     api_version = '0.0.9.2';
 
-    /**
-     * Call a single search service
-     * @param service the name of the service
-     * @param keyword the
-     */
     function callSearchService(service, keyword) {
-        var $target, $heading;
-        var submit_url;
-
-        // Workaround for question mark problems.
-        keyword = keyword.replace(/\?/, '');
+        var $target, $heading, url;
 
         $target = $('#' + service.name + '-results');
         $heading = $('#' + service.name + '-results h3');
-        $heading.nextAll().remove();
 
+        // Workaround for question mark and double-quote problems.
+        keyword = keyword.replace(/\?/, '').replace('"', '%22');
+
+        url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = url.replace(/%2B/,'+');
+
+        // Clear old results.
+        $heading.nextAll().remove();
         loading_timers[service.name] = setTimeout(function () {
             $target.addClass('loading');
         }, 150);
 
-        submit_url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword).replace('"', '%22');
 
         $.ajax(
             {
                 type: 'GET',
-                url: submit_url,
+                url: url,
                 dataType: 'jsonp',
                 cache: true,
                 success: function (data, status, xhr) {
-                    service.postprocess(data);
-                    if (data.length > service.max_results) {
-                        data.splice(service.max_results, 100);
-                    }
-                    if (templates[service.name]) {
-                        var html = templates[service.name](data);
-                        clearTimeout(loading_timers[service.name]);
-                        $target.removeClass('loading');
-                        $heading.after(html);
-                    }
+                    successfulSearch(data, status, xhr, service, $target, $heading);
                 },
                 error: function (xhr, status) {
                     clearTimeout(loading_timers[service.name]);
@@ -56,25 +45,34 @@ $(document).ready(function () {
         );
     }
 
-    /**
-     * Search all services
-     * @param keyword
-     */
+    function successfulSearch(data, status, xhr, service, $target, $heading) {
+        if (typeof service.postprocess != 'undefined') {
+            service.postprocess(data);
+        }
+
+        if (data.items && data.items.length > service.max_results) {
+            data.items = data.items.slice(0, service.max_results);
+        }
+
+        if (templates[service.name]) {
+            var html = templates[service.name](data);
+            clearTimeout(loading_timers[service.name]);
+            $target.removeClass('loading');
+            $heading.after(html);
+        }
+    }
+
     function search(keyword) {
         var $typeahead = $('#typeahead');
         $('#didyoumean-holder').empty();
         setTitle(keyword);
         $typeahead.typeahead('close');
-        for (i = 0, max = services.length; i < max; i += 1) {
-            callSearchService(services[i], keyword);
-        }
+        services.forEach(function (service) {
+            callSearchService(service, keyword);
+        });
         $typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
     }
 
-    /**
-     * Set page title
-     * @param keyword
-     */
     function setTitle(keyword) {
         var display_keyword = keyword.replace(/\+/g, ' ');
         if (keyword) {
@@ -82,11 +80,6 @@ $(document).ready(function () {
         }
     }
 
-    /**
-     * Get a parameter from the query string
-     * @param name
-     * @returns {string}
-     */
     function getQueryStringParam(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -94,77 +87,19 @@ $(document).ready(function () {
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 
-    /**
-     * Render the search results
-     * @param services
-     */
-    function renderSearchResults(services) {
-        for (i = 0, max = services.length; i < max; i += 1) {
-            source = $('#' + services[i].name + '-template').html();
-            if (source) {
-                templates[services[i].name] = Handlebars.compile(source);
-            }
+    function renderServiceResults(service) {
+        source = $('#' + service.name + '-template').html();
+        if (source) {
+            templates[service.name] = Handlebars.compile(source);
         }
     }
 
-
-    /**
-     * Truncate string and add ellipses
-     * @param str
-     * @param length
-     * @returns string
-     */
-    function truncate(str, length) {
-        var too_long, s_;
-        too_long = str.length > length;
-        s_ = too_long ? str.substr(0, length - 1) : str;
-        s_ = too_long ? s_.substr(0, s_.lastIndexOf(' ')) : s_;
-        return too_long ? s_ + '…' : s_;
-    }
-
-    services = [
-        {
-            name: 'catalog',
-            max_results: 8,
-            postprocess: function (data) {
-                var html;
-                source = $('#dym-template').html();
-                html = Handlebars.compile(source)(data);
-                $('#didyoumean-holder').append(html);
-            }
-        },
-        {
-            name: 'articles',
-            max_results: 8,
-            postprocess: emptyProcess
-        },
-        {
-            name: 'librarians',
-            max_results: 2,
-            postprocess: function (data) {
-                data.forEach(function (librarian) {
-                        librarian.display_subjects = librarian.subjects.sort().join(', ');
-                    }
-                );
-            }
-        },
-        {
-            name: 'guides',
-            max_results: 2,
-            postprocess: emptyProcess
-        },
-        {
-            name: 'springshare',
-            max_results: 5,
-            postprocess: function (data) {
-                console.log('Springshare results');
-                console.log(data);
-            }
+    function truncate(max_length, str) {
+        if (str.length > max_length) {
+            str = str.substr(0, max_length - 1);
+            str = str.substr(0, str.lastIndexOf(' ')) + '…';
         }
-    ];
-
-    function emptyProcess(result) {
-        return result;
+        return str;
     }
 
     templates = [];
@@ -190,20 +125,55 @@ $(document).ready(function () {
         });
     }
 
-    Handlebars.registerHelper('truncate', function (max_length, text) {
-        var too_long, string;
-        too_long = text.length > max_length;
-        if (too_long) {
-            string = text.substr(0, max_length - 1);
-            string = string.substr(0, string.lastIndexOf(' ')) + '…';
-        } else {
-            string = text;
-        }
-        return string;
-    });
+    Handlebars.registerHelper('truncate', truncate);
 
-    renderSearchResults(services);
+    services.forEach(renderServiceResults);
     search(search_string);
     $('#typeahead').val(search_string);
+};
 
+
+$(document).ready(function () {
+
+    // Define services
+    var catalog = {
+        name: 'catalog',
+        max_results: 8,
+        postprocess: function (data) {
+            var html, source;
+            source = $('#dym-template').html();
+            html = Handlebars.compile(source)(data);
+            $('#didyoumean-holder').append(html);
+        }
+    }
+
+    var articles = {
+        name: 'articles',
+        max_results: 8,
+    };
+
+    var librarians = {
+        name: 'librarians',
+        max_results: 2,
+        postprocess: function (data) {
+            data.forEach(function (librarian) {
+                    librarian.display_subjects = librarian.subjects.sort().join(', ');
+                }
+            );
+        }
+    };
+
+    var guides = {
+        name: 'guides',
+        max_results: 2,
+    };
+
+    var springshare = {
+        name: 'springshare',
+        max_results: 5
+    }
+
+    var service_url_base = ''
+
+    $(document).bcBento([catalog, articles, librarians, guides, springshare], service_url_base);
 });

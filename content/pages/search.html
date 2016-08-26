@@ -113,14 +113,14 @@
 
         <!-- Tertiary results box.-->
         <div id="tertiary" style="background-color: none">
-            <h3>Also try</h3>
 
-            <div id="guides-results" class="result-container guides" style="background-color: inherit">
-                <h3 id="subjecth3" style="display: none">Subject guides</h3>
-            </div>
             <div id="librarians-results" class="result-container librarians" style="background-color: inherit">
                 <h3 id="librarianh3" style="display: none;">Librarians</h3>
             </div>
+            <div id="springshare-results" class="result-container springshare" style="background-color: inherit">
+                <h3 id="subjecth3" style="display: none">Subject guides</h3>
+            </div>
+
         </div>
 
     </div>
@@ -141,7 +141,7 @@
 
             <div class="librarian-info">
                 <h4 class="librarian-name"><a href="http://libguides.bc.edu/prf.php?account_id={{id}}">{{name}}</a></h4>
-                <p>{{display_subjects}}</p>
+                <p class="guide-description">{{display_subjects}}</p>
             </div>
         </li>
         {{/.}}
@@ -149,16 +149,21 @@
     {{/if}}
 </script>
 
-<script id="guides-template" type="text/x-template">
+<script id="springshare-template" type="text/x-template">
     {{#if .}}
     <h3 class="visible-also-try">Subject guides</h3>
+    <div class="more-results-link">
+        <a href="{{search_link}}">
+            see all {{total_results}} results…
+        </a>
+    </div>
     <ul>
-        {{#.}}
+        {{#items}}
         <li>
             <div><a href="{{url}}">{{title}}</a></div>
-            <div class="guide-description">{{description}}</div>
+            <div class="guide-description">{{truncate '50' abstract}}</div>
         </li>
-        {{/.}}
+        {{/items}}
     </ul>
     {{/if}}
 

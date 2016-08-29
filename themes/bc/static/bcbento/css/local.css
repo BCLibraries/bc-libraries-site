@@ -215,7 +215,6 @@ input#typeahead {
 .dym-notice a {
     font-weight: bold;
 }
-
 #all-results #primary {
     margin: 0;
     border-left: 5px solid #fff;
@@ -247,26 +246,20 @@ input#typeahead {
 }
 
 @media screen and ( max-width: 1199px ) {
-    #all-results #tertiary #guides-results {
-        float: left;
-        width: 33%;
-    }
+#all-results #primary {
+    margin: 0;
+    border-left: 5px solid #fff;
+    padding-right: 2em;
+}
 
-    #all-results #tertiary #librarians-results {
-        float: left;
-        width: 66%;
-    }
+#all-results #secondary {
+    margin: 0 0 5px;
+    padding: 0 2em;
+}
 
-    #all-results #tertiary #librarians-results li {
-        display: inline-block;
-        width: 30%;
-        vertical-align: top;
-    }
-
-    #all-results #tertiary #librarians-results img {
-        height: 150px;
-        width: auto;
-    }
+#all-results #tertiary {
+    border-left: 5px solid #fff;
+    padding-left: 2em;
 }
 
 @media screen and ( max-width: 768px ) {

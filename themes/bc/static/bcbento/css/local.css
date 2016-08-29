@@ -246,26 +246,27 @@ input#typeahead {
 }
 
 @media screen and ( max-width: 1199px ) {
-#all-results #primary {
-    margin: 0;
-    border-left: 5px solid #fff;
-    padding-right: 2em;
-}
+    #all-results #primary {
+        margin: 0;
+        border-left: 5px solid #fff;
+        padding-right: 2em;
+    }
 
-#all-results #secondary {
-    margin: 0 0 5px;
-    padding: 0 2em;
-}
+    #all-results #secondary {
+        margin: 0 0 5px;
+        padding: 0 2em;
+    }
 
-#all-results #tertiary {
-    border-left: 5px solid #fff;
-    padding-left: 2em;
+    #all-results #tertiary {
+        border-left: 5px solid #fff;
+        padding-left: 2em;
+    }
 }
 
 @media screen and ( max-width: 768px ) {
     #all-results #tertiary #guides-results {
         float: none;
-        width: 100%%;
+        width: 100%;
     }
 
     #all-results #tertiary #librarians-results {

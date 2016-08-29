@@ -76,7 +76,7 @@ $.fn.bcBento = function (services, service_url_base) {
     function setTitle(keyword) {
         var display_keyword = keyword.replace(/\+/g, ' ');
         if (keyword) {
-            document.title = 'Search BC Libraries for "' + truncate(display_keyword, 40) + '"';
+            document.title = 'Search BC Libraries for "' + truncate(40, display_keyword) + '"';
         }
     }
 

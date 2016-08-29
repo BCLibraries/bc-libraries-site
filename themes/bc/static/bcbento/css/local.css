@@ -99,8 +99,8 @@
 }
 
 #all-results #librarian-info p, #all-results .guide-description {
-    color: #333;
-    font-size: 13px;
+    color: #666;
+    font-size: 14px;
 }
 
 #tertiary .visible-also-try a {
@@ -291,6 +291,33 @@ input#typeahead {
     margin-right: 1em;
 }
 
+#librarians-results .results-highlight {
+    margin-bottom:10px;
+}
+
+#librarians-results .results-highlight,
+#springshare-results .results-highlight {
+    background-color: #fffdf6;
+    border: 1px solid #ffeaae;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#springshare-results ul.guide-pages {
+    padding:4px 0 0 25px;
+    list-style: circle;
+}
+
+#springshare-results ul.guide-pages li {
+    list-style: circle;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+#springshare-results ul.guide-pages li a {
+    font-weight:normal;
+}
+
 #springshare-results .more-results-link {
     top: -6px;
     position: relative;
@@ -302,4 +329,8 @@ input#typeahead {
 
 #all-results .result-container#librarians-results ul li:last-child {
     margin-bottom: 3em;
+}
+
+#tertiary .title {
+    font-size: 18px;
 }

@@ -163,11 +163,6 @@ $(document).ready(function () {
         }
     };
 
-    var guides = {
-        name: 'guides',
-        max_results: 2,
-    };
-
     var springshare = {
         name: 'springshare',
         max_results: 5
@@ -175,5 +170,5 @@ $(document).ready(function () {
 
     var service_url_base = ''
 
-    $(document).bcBento([catalog, articles, librarians, guides, springshare], service_url_base);
+    $(document).bcBento([catalog, articles, librarians, springshare], service_url_base);
 });

@@ -20,8 +20,8 @@
                 </li>
                 <ul class="search_float searchpage">
                     <li>
-                        <a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced
-                            search</a></li>
+                        <a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced search</a>
+                    </li>
                 </ul>
             </ul>
 
@@ -85,9 +85,7 @@
     <!-- BRIEF EXPLANATION OF BENTO SEARCH BOX CAN GO HERE. -->
     <div class="block_whatam">
         <p><strong>What am I searching?</strong> <span class="questionball"></span></p>
-
-        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search
-            tool.</a></p>
+        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search tool.</a></p>
     </div>
 
 </div>
@@ -100,7 +98,7 @@
         <!-- The primary results box. -->
         <div id="primary">
             <div id="catalog-results" class="result-container">
-                <h3 id="booksh3">Books & more</h3>
+                <h3 id="booksh3">Books &amp; more</h3>
             </div>
         </div>
 
@@ -112,14 +110,12 @@
         </div>
 
         <!-- Tertiary results box.-->
-        <div id="tertiary" style="background-color: none">
-            <h3>Also try</h3>
-
-            <div id="guides-results" class="result-container guides" style="background-color: inherit">
-                <h3 id="subjecth3" style="display: none">Subject guides</h3>
-            </div>
-            <div id="librarians-results" class="result-container librarians" style="background-color: inherit">
+        <div id="tertiary">
+            <div id="librarians-results" class="result-container librarians">
                 <h3 id="librarianh3" style="display: none;">Librarians</h3>
+            </div>
+            <div id="springshare-results" class="result-container springshare">
+                <h3 id="subjecth3" style="display: none">Website</h3>
             </div>
         </div>
 
@@ -133,33 +129,48 @@
 <!-- Search result templates -->
 <script id="librarians-template" type="text/x-template">
     {{#if .}}
-    <h3 class="visible-also-try">Librarians</h3>
-    <ul>
-        {{#.}}
-        <li>
-            <a href="http://libguides.bc.edu/prf.php?account_id={{id}}"><img src="//{{image}}" alt="picture of {{name}}"></a>
+    <div class="results-highlight">
+        <h3 id="librarianh3" class="visible-also-try">Librarians</h3>
+        <ul>
+            {{#.}}
+            <li>
+                <a href="http://libguides.bc.edu/prf.php?account_id={{id}}"><img src="//{{image}}" alt="picture of {{name}}"></a>
 
-            <div class="librarian-info">
-                <h4 class="librarian-name"><a href="http://libguides.bc.edu/prf.php?account_id={{id}}">{{name}}</a></h4>
-                <p>{{display_subjects}}</p>
-            </div>
-        </li>
-        {{/.}}
-    </ul>
+                <div class="librarian-info">
+                    <h4 class="librarian-name"><a href="http://libguides.bc.edu/prf.php?account_id={{id}}">{{name}}</a></h4>
+                    <p class="guide-description">{{display_subjects}}</p>
+                </div>
+            </li>
+            {{/.}}
+        </ul>
+        <p class="all-librarians"><a href="http://libguides.bc.edu/ask-a-librarian/contact">See all subject librarians</a></p>
+    </div>
     {{/if}}
 </script>
 
-<script id="guides-template" type="text/x-template">
+<script id="springshare-template" type="text/x-template">
     {{#if .}}
-    <h3 class="visible-also-try">Subject guides</h3>
-    <ul>
-        {{#.}}
-        <li>
-            <div><a href="{{url}}">{{title}}</a></div>
-            <div class="guide-description">{{description}}</div>
-        </li>
-        {{/.}}
-    </ul>
+    <div class="results-highlight">
+        <h3 id="subjecth3" class="visible-also-try">Website</h3>
+        <div class="more-results-link">
+            <a href="{{search_link}}">see all {{total_results}} results&hellip;&nbsp;</a>
+        </div>
+        <ul>
+            {{#items}}
+            <li class="bento-result">
+                <div><a href="{{url}}" class="title">{{title}}</a></div>
+                <div class="guide-description">{{truncate '50' abstract}}</div>
+                {{#if pages}}
+                <ul class="guide-pages">
+                {{#pages}}
+                    <li><a href="{{url}}">{{title}}</a></li>
+                {{/pages}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/items}}
+        </ul>
+    </div>
     {{/if}}
 
 </script>
@@ -167,9 +178,7 @@
 <script id="catalog-template" type="text/x-template">
 
     <div class="more-results-link">
-        <a href="{{search_link}}">
-            see all {{total_results}} results…
-        </a>
+        <a href="{{search_link}}">see all {{total_results}} results&hellip;&nbsp;</a>
     </div>
 
     <ul id="catalog-results bento-results">
@@ -260,9 +269,7 @@
 
 <script id="articles-template" type="text/x-template">
     <div class="more-results-link">
-        <a href="{{search_link}}">
-            see all {{total_results}} results
-        </a>
+        <a href="{{search_link}}">see all {{total_results}} results&hellip;&nbsp;</a>
     </div>
 
     <ul>
@@ -290,17 +297,16 @@
         Did you mean <a href="/search?any={{dym}}">{{dym}}</a>?
     </div>
     {{/if}}
-
 </script>
 
 <!-- Control search tab switch. -->
 <script>
     $(function () {
         $('#block_search *[role=presentation]').click(
-                function () {
-                    var current_text = $('#block_search .tab-pane.active input[type=text]').val();
-                    $('#block_search .tab-pane input[type=text]').val(current_text);
-                }
+            function () {
+                var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                $('#block_search .tab-pane input[type=text]').val(current_text);
+            }
         );
     });
 </script>

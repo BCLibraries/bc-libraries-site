@@ -12,7 +12,7 @@
 
 /** All results **/
 
-#all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
+#all-results #primary .result-container h3, #all-results #secondary .result-container h3, #all-results #tertiary .result-container h3 {
     display: inline-block
 }
 
@@ -22,7 +22,7 @@
 }
 
 #all-results .loading {
-    background: #000 url(../img/loading-circle.gif) no-repeat center center;
+    background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
 #all-results .result-container ul {
@@ -31,13 +31,21 @@
     clear: left;
 }
 
+#all-results #librarians-results.result-container ul {
+    padding: 0 0 0 7px;
+}
+
+#all-results #librarians-results.result-container ul li{
+    padding-top: 10px;
+}
+
 #all-results .result-container ul li {
     list-style: none;
     overflow: hidden;
     clear: both;
 }
 
-#all-results .result-container li .title, .result-container li a {
+#all-results .result-container li .title, .result-container li a, p.all-librarians a {
     text-decoration: none;
     color: #0075b0;
     font-weight: bold;
@@ -91,14 +99,7 @@
 }
 
 .librarians img {
-    width: 50%;
-    max-width: 200px;
-    float: left
-}
-
-.librarian-info {
-    float: left;
-    width: 100%;
+    max-width: 100%
 }
 
 .librarian-info p {
@@ -106,8 +107,8 @@
 }
 
 #all-results #librarian-info p, #all-results .guide-description {
-    color: #333;
-    font-size: 13px;
+    color: #666;
+    font-size: 14px;
 }
 
 #tertiary .visible-also-try a {
@@ -196,11 +197,6 @@ input#typeahead {
     }
 }
 
-#bentoboxresults h3.visible-also-try {
-    font-size: 1em;
-    font-weight: bold;
-}
-
 #guides-results {
     margin-bottom: 1em;
 }
@@ -222,34 +218,62 @@ input#typeahead {
 .dym-notice a {
     font-weight: bold;
 }
+#all-results #primary {
+    margin: 0;
+    border-left: 5px solid #fff;
+    padding-right: 2em;
+}
 
-@media ( max-width: 1199px ) {
-    #all-results #tertiary #guides-results {
-        float: left;
+
+#all-results #secondary {
+    margin: 0 0 5px;
+    padding: 0 2em;
+}
+
+#all-results #tertiary {
+    border-left: 5px solid #fff;
+    padding-left: 2em;
+}
+
+@media screen and  (min-width: 1200px) {
+    #all-results #secondary {
         width: 33%;
     }
 
-    #all-results #tertiary #librarians-results {
-        float: left;
-        width: 66%;
+    #all-results #primary {
+        width: 33%;
     }
 
-    #all-results #tertiary #librarians-results li {
-        display: inline-block;
-        width: 30%;
-        vertical-align: top;
-    }
-
-    #all-results #tertiary #librarians-results img {
-        height: 150px;
-        width: auto;
+    #all-results #tertiary {
+        width: 33%;
     }
 }
 
-@media ( max-width: 768px ) {
+@media screen and ( max-width: 1199px ) {
+    #all-results #primary {
+        margin: 0;
+        border-left: 5px solid #fff;
+        padding-right: 2em;
+    }
+
+    #all-results #secondary {
+        margin: 0 0 5px;
+        padding: 0 2em;
+    }
+
+    #all-results #tertiary {
+        border-left: 5px solid #fff;
+        padding-left: 0;
+        margin-bottom: 2em;
+    }
+}
+
+
+@media screen and ( max-width: 768px ) {
     #all-results #tertiary #guides-results {
         float: none;
-        width: 100%%;
+        width: 100%;
+        margin-left: 0;
     }
 
     #all-results #tertiary #librarians-results {
@@ -266,4 +290,67 @@ input#typeahead {
         height: 200px;
         height: auto;
     }
+}
+
+#springshare-results li {
+    margin-bottom: 1em;
+}
+
+#librarians-results li > a {
+    display: block;
+    float: left;
+    width:  100px;
+    margin-right: 1em;
+}
+
+#librarians-results .results-highlight {
+    margin-bottom:10px;
+}
+
+#librarians-results .results-highlight,
+#springshare-results .results-highlight {
+    background-color: #fffdf6;
+    border: 1px solid #ffeaae;
+    border-radius: 10px;
+    padding: 0 5px 10px 10px;
+}
+
+#librarians-results {
+    margin-bottom: 1em;
+}
+
+#librarians-results .results-highlight {
+    padding-bottom: 0;
+}
+
+#springshare-results ul.guide-pages {
+    padding:4px 0 0 25px;
+    list-style: circle;
+}
+
+#springshare-results ul.guide-pages li {
+    list-style: circle;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+#springshare-results ul.guide-pages li a {
+    font-weight:normal;
+}
+
+#springshare-results .more-results-link {
+    top: -6px;
+    position: relative;
+}
+
+#all-results .result-container {
+    display: block;
+}
+
+#all-results .result-container#librarians-results ul li:last-child {
+    margin-bottom: 2.5em;
+}
+
+#tertiary .title {
+    font-size: 18px;
 }

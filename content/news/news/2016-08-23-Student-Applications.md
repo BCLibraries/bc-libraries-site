@@ -1,4 +1,4 @@
-Title: Applications for Student Library Employment Open 08/24!
+Title: Applications for Student Library Employment Are Open
 Destination: http://libguides.bc.edu/employment#jobs
 Date: 2016-08-23 01:01 
 Tags: news, tags 

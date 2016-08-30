@@ -6,8 +6,8 @@ Sponsor: Sponsored By etc (or leave blank)
 Location: see below
 Tags: exhibit
 Slug: exhibit-friendly-url 
-Image: 2015/xx/NAME-poster.png
-Image_thumb: 2015/xx/NAME-thumb.png
+Image: 2015/NAME-poster.png
+Image_thumb: 2015/NAME-thumb.png
 Image_alt: image description
 Active: yes or no
 Style: default
@@ -42,6 +42,11 @@ Style:
     Poster on right, text on left (right)
     Poster large, centered above text (middle_top)
     Poster large, centered below text (middle_down)
+
+Add'l images
+    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
+    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
+    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
 
 -->
 

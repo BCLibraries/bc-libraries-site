@@ -3,7 +3,7 @@ Destination:
 Date: 2016-05-17 01:01 
 Tags: news, tags 
 Slug: bapst-you-are-here 
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Aerial shot of Burns Library with an arrow that says You Are Here
 Image_thumb: 2016-05/here-thumbs.png

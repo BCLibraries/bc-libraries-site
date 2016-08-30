@@ -4646,7 +4646,7 @@ html {
     bottom: 0px;
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0px 0px;
     min-height: 55px;
     padding: 5px;
 }
@@ -4723,6 +4723,18 @@ html {
 .article_content .text, .article_content_two .text  {
     text-align: justify;
 
+}
+
+/* FOR NON-POSTER IMAGES THAT APPEAR IN SOME EXHIBIT PAGES */
+
+.article_content .text img {
+    border: 2px solid #05506D;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.article_content .text img.center {
+    margin: 0 auto 10px;
 }
 
 

@@ -3107,15 +3107,11 @@ body,
     border: 1px solid #666;
 }
 
-#articles-results h3, #catalog-results h3 {
+#articles-results h3, #catalog-results h3,
+#librarians-results h3, #springshare-results h3 {
     margin-top: 0;
-    padding: 10px 7px;
-    width: 50%;
-    height: 30px;
-}
-
-#librarians-results h3, #guides-results h3 {
-    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 0 0 7px;
 }
 
     /* SPECIFIC GUIDE H3 ICONS */
@@ -3167,12 +3163,10 @@ body,
 }
 
 #all-results .more-results-link {
-    display: inline-block;
-    text-align: right;
-    float: right;
-    width: 50%;
+    width: 100%;
     margin-top: 0;
-    padding: 3px 7px;
+    margin-bottom: 14px;
+    padding: 3px 0 0 7px;
     height: 30px;
 }
 
@@ -3192,20 +3186,20 @@ body,
 }
 
 #all-results #secondary {
-    width: 40%;
+    width: 33.3%;
     margin: 0 0 5px;
     padding: 0 2em;
 }
 
 #all-results #primary {
     margin: 0;
-    width: 40%;
+    width: 33.3%;
     border-left: 5px solid #fff;
     padding-right: 2em;
 }
 
 #all-results #tertiary {
-    width: 20%;
+    width: 33%;
     border-left: 5px solid #fff;
     padding-left: 2em;
 }
@@ -3251,7 +3245,7 @@ body,
 #bentoboxresults h3 {
     font-weight: bold;
     text-transform: none;
-    font-size: 14px;
+    font-size: 22px;
     color: #790009;
 }
 

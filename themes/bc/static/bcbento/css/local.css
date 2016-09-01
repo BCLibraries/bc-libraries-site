@@ -315,12 +315,9 @@ input#typeahead {
     padding: 0 5px 10px 10px;
 }
 
-#librarians-results {
-    margin-bottom: 1em;
-}
-
 #librarians-results .results-highlight {
     padding-bottom: 0;
+    margin-bottom: 1em;
 }
 
 #springshare-results ul.guide-pages {

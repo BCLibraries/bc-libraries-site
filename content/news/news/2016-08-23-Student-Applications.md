@@ -3,7 +3,7 @@ Destination: http://libguides.bc.edu/employment#jobs
 Date: 2016-08-23 01:01 
 Tags: news, tags 
 Slug: news-student-applications
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Two students checking in books
 Image_thumb: 2016-08/student-thumbs.png

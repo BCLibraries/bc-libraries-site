@@ -15,11 +15,11 @@ $.fn.bcBento = function (services, service_url_base) {
         $target = $('#' + service.name + '-results');
         $heading = $('#' + service.name + '-results h3');
 
-        // Workaround for question mark problems.
+        // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
         url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
-        url = url.replace(/%2B/,'+');
+        url = url.replace(/%2B/,'+').replace('"','%22');
 
         // Clear old results.
         $heading.nextAll().remove();

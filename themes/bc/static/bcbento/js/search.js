@@ -10,10 +10,16 @@
 * using 'navigator.sendBeacon' in browser that support it.
 */
 var trackOutboundLink = function(url) {
-    ga('send', 'event', 'outbound', 'click', url, {
-        'transport': 'beacon',
-        'hitCallback': function(){document.location = url;}
-    });
+    if (ga.q) {
+        // Google Analytics is blocked
+        // http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+        document.location = url;
+    } else {
+        ga('send', 'event', 'outbound', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+        });
+    }
 }
 
 $.fn.bcBento = function (services, service_url_base) {

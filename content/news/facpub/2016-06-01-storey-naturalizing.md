@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21448432950001021
 Bookcover: 2016/06/storey-cover.png
 Image_alt: Book cover featuring a helix shell
-Oneoff: yes
+Oneoff: no
 
 SUNY Press, 2015
 

@@ -4,9 +4,9 @@ By:
 Author_firstname: David E.
 Author_lastname: Storey
 Author_position: Philosophy Department
-Librarian_name: Jonas Barciauskas
-Librarian_email: barciaus@bc.edu
-Librarian_position: Head of Collection Development
+Librarian_name: Sally Wyman
+Librarian_email: sally.wyman@bc.edu
+Librarian_position: Head Librarian, Collection Development and Research Services
 Tags: facpub
 Slug: storey-naturalizing
 Youtube: https://www.youtube.com/embed/hC8-hAqgqF8

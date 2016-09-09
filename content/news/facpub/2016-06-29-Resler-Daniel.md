@@ -4,9 +4,9 @@ By: Edited
 Author_firstname: Michael
 Author_lastname: Resler
 Author_position: German Studies Department
-Librarian_name: Jonas Barciauskas
-Librarian_email: barciaus@bc.edu
-Librarian_position: Head of Collection Development
+Librarian_name: Lawrence Busenbark
+Librarian_email: lawrence.busenbark@bc.edu
+Librarian_position: German Studies Subject Librarian
 Tags: facpub
 Slug: resler-daniel
 Youtube: https://www.youtube.com/embed/R96rxCPmACA

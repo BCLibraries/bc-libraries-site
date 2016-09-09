@@ -16,7 +16,7 @@ $('document').ready(function () {
             var url;
 
             if (! is_trial && value.enable_trial) {
-                options = "<optgroup label='Trial databases'>";
+                options = options + "<optgroup label='Trial databases'>";
                 needs_groups = true;
                 is_trial = true;
             }

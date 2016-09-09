@@ -4,9 +4,9 @@ By:
 Author_firstname: Patrick H.
 Author_lastname: Byrne
 Author_position: Philosophy Department
-Librarian_name: Jonas Barciauskas
-Librarian_email: barciaus@bc.edu
-Librarian_position: Head of Collection Development
+Librarian_name: Sally Wyman
+Librarian_email: sally.wyman@bc.edu
+Librarian_position: Head Librarian, Collection Development and Research Services
 Tags: facpub
 Slug: byrne-ethics 
 Youtube: https://www.youtube.com/embed/Ed9KlxFY7b0

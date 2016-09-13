@@ -4,7 +4,7 @@ Tags: news, announcement
 Expired: no
 Readmore: yes
 Slug: theological-research-at-TML
-Summary: Will appear on homepage.
+Summary: TML (Theology & Ministry Library) is offering the following series of 30-minute, stand-alone but inter-connected workshops to help you make the most of our research resources!
 
 <em>Develop the skills you need to engage confidently in theological research!</em>
 

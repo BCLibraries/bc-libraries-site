@@ -1,5 +1,5 @@
 Title: Theological Research @ TML
-Date: 2016-8-22 01:01 
+Date: 2016-9-13 01:01 
 Tags: news, announcement
 Expired: no
 Readmore: yes

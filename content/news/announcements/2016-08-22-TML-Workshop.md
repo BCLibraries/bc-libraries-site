@@ -1,7 +1,7 @@
 Title: Theological Research @ TML
-Date: 2016-08-22 01:01 
+Date: 2016-9-13 01:01 
 Tags: news, announcement
-Expired: yes
+Expired: no
 Readmore: yes
 Slug: theological-research-at-TML
 Summary: Will appear on homepage.

@@ -1,5 +1,5 @@
 Title: For New Faculty
-Date: 2016-08-18 01:01 
+Date: 2016-08-23 01:01 
 Tags: news, announcement
 Expired: no 
 Readmore: no

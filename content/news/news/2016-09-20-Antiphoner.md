@@ -1,10 +1,12 @@
 Title: Burns Antiphoner an Interactive Open Access Resource
+Destination: 
 Date: 2016-09-20 01:01 
-Tags: news, announcement
-Expired: no 
-Readmore: yes
-Slug: announcement-antiphoner 
-Summary: The Digital Scholarship Group at Boston College Libraries and Dr. Michael Noone are proud to introduce <a href="http://burnsantiphoner.bc.edu/">Burns Antiphoner</a>, an interactive open access resource.
+Tags: news, tags 
+Slug: news-antiphoner
+Expired: no
+ShowText: yes
+Image_alt: Scan of the Antiphoner
+Image_thumb: 2016-09/ant-thumbs.png
 
 <p>The Digital  Scholarship Group at Boston College Libraries and Dr. Michael Noone are proud  to introduce <a href="http://burnsantiphoner.bc.edu/">Burns Antiphoner</a>, an interactive open  access resource.</p>
 
@@ -18,13 +20,3 @@ Summary: The Digital Scholarship Group at Boston College Libraries and Dr. Micha
 <p>Anna Kijas<br />
 Digital Scholarship Librarian, Boston College Libraries <br />
 <a href="http://library.bc.edu/digschol/">http://library.bc.edu/digschol/</a></p>
-
-<!-- USEFUL CUT AND PASTE STUFF.
-
-<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_left">
-
-<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
-
-<a href="#" target="_blank">
-
--->

@@ -5,7 +5,7 @@ Tags: news, tags
 Slug: news-antiphoner
 Expired: no
 ShowText: yes
-Image_alt: A scan of the Antiphoner
+Image_alt: Scan of the Antiphoner
 Image_thumb: 2016-09/ant-thumbs.png
 
 <p>The Digital  Scholarship Group at Boston College Libraries and Dr. Michael Noone are proud  to introduce <a href="http://burnsantiphoner.bc.edu/">Burns Antiphoner</a>, an interactive open  access resource.</p>

@@ -1,4 +1,4 @@
-Date: 2016-06-01 01:02
+Date: 2016-06-01 01:04
 Title: Bill Clinton: New Gilded Age President
 By: 
 Author_firstname: Patrick J.

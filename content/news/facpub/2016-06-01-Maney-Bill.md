@@ -15,10 +15,8 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21457687350001021
 Bookcover: 2016/06/maney-cover.png
 Image_alt: Book cover featuring a photo of Bill Clinton
-Oneoff: yes
+Oneoff: no
 
 <em>Bill Clinton: New Gilded Age President</em> goes beyond personality and politics to examine the critical issues of the day: economic and fiscal policy, business and financial deregulation, healthcare and welfare reform, and foreign affairs in a postCold War world. But at its heart is Bill Clinton in all his guises: the first baby boomer to reach the White House; the "natural"&#8211;the most gifted politician of his generation, but one with an inexplicably careless and self-destructive streak; the "Comeback Kid," repeatedly overcoming long odds; the survivor, frequently down but never out; and, with Hillary Rodham Clinton, part of the most controversial First Couple since Franklin and Eleanor Roosevelt.
 
 Maney's book is, in sum, the most succinct and up-to-date study of the Clinton presidency, invaluable not merely for understanding a transformative era in American history, but presidential, national, and global politics today.
-
-<!--<em>View a <a href="http://library.bc.edu/theme/img/facpub/2015/XX/NAME-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>-->

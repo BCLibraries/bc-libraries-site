@@ -22,7 +22,7 @@
     {% if articles %}
            
         {% set count = 0 %}
-        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
+        {% for article in articles if article.category|selectattr("news", "announcements") %}
 
             {% if article.date|strftime('%Y') == "2016" %}
             
@@ -94,7 +94,7 @@
     {% if articles %}
            
         {% set count = 0 %}
-        {% for article in articles[:50] if article.category|selectattr("news", "announcements") %}
+        {% for article in articles if article.category|selectattr("news", "announcements") %}
 
             {% if article.date|strftime('%Y') == "2015" %}
             

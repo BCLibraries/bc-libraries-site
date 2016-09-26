@@ -19,6 +19,4 @@ Jane's centenary is being celebrated nationwide, with a documentary film, an ope
 
 Kanigel is the author of seven previous books--including <em>The Man Who Knew Infinity</em>, which was a finalist for the National Book Critics Circle Award and the Los Angeles Times Book Prize--and the recipient of numerous awards, including a Guggenheim fellowship. 
 
-<strong>Highlights from the Jane Jacobs Papers, held by the Burns Library, will be on view. </strong>
-
 For further information, including directions and parking, please call (617) 552-3282.

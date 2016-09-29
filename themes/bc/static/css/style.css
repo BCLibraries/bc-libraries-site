@@ -1064,6 +1064,13 @@ a.announcelink {
     float: left;
 }
 
+.icon_data:before { /* DATA SHARING ICON */
+    font-family:'FontAwesome';
+    content:"\f1e0";
+    margin: 0 10px;
+    float: left;
+}
+
 @media ( max-width: 1199px ) {
     .icon_rss:before { /* RSS FEED ICON */
         margin: 10px 5px;
@@ -1119,6 +1126,10 @@ a.announcelink {
 
     .icon_newspaper:before { /* NEWSPAPER ICON */
         margin: 10px 5px;
+    }
+
+    .icon_data:before { /* DATA SHARING ICON */
+         margin: 10px 5px;
     }
 }
 @media ( max-width: 399px ) {
@@ -1177,6 +1188,10 @@ a.announcelink {
     .icon_newspaper:before { /* NEWSPAPER ICON */
         display: none;
     }
+    .icon_data:before { /* DATA SHARING ICON */
+        display: none;
+    }
+
 }
 
 /*BC LIBRARY FRONT HOMEPAGE SUPER SEARCH STYLE */

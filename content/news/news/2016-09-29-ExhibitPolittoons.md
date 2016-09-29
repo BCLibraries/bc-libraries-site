@@ -1,4 +1,4 @@
-Title: O'Neill Reading Room Exhibit: Campaigns & Cartoonss 
+Title: O'Neill Reading Room Exhibit: Campaigns & Cartoons
 Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExhibits/politicalcartoons.html
 Date: 2016-09-29 01:01 
 Tags: news, tags 

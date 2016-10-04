@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21457957350001021
 Bookcover: 2016/06/brinton-cover.png
 Image_alt: Book cover
-Oneoff: yes
+Oneoff: no
 
 Central European dissidents gained global fame by serving as key protagonists in the collapse of communism in 1989. As writers, philosophers, and artists, they should be remembered for their ideas as much as for their political actions. This book takes the variegated and collected dissident oeuvre and reads their texts as expressions of their existential search for inter-subjective understanding and mutual recognition, showing how their ideas contribute to current conversations in political philosophy about thinking and action.
 

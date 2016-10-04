@@ -1,9 +1,9 @@
 Title: Theology & Ministry Library Exhibit: Picturing Paradise
 Destination: http://www.bc.edu/libraries/about/exhibits-new/TMLExhibits/paradise.html
-Date: 2016-10-04 01:02 
+Date: 2016-10-20 01:02 
 Tags: news, tags 
 Slug: news-exhibit-paradise
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: An embroidered and appliquéd fabric pictures called a cuadro
 Image_thumb: 2016-10/paradise-thumbs.png

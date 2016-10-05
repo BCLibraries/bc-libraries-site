@@ -11,6 +11,7 @@ from __future__ import unicode_literals
 import re
 import collections
 import os.path
+import gzip
 
 from datetime import datetime
 from logging import warning, info
@@ -202,7 +203,7 @@ class SitemapGenerator(object):
             setattr(wrapper, 'modified', str(lastmod))
 
     def generate_output(self, writer):
-        path = os.path.join(self.output_path, 'sitemap-01.{0}'.format(self.format))
+        path = os.path.join(self.output_path, 'sitemap-01.{0}.gz'.format(self.format))
 
         pages = self.context['pages'] + self.context['articles'] \
                 + [ c for (c, a) in self.context['categories']] \
@@ -218,7 +219,7 @@ class SitemapGenerator(object):
 
         info('writing {0}'.format(path))
 
-        with open(path, 'w', encoding='utf-8') as fd:
+        with gzip.open(path, 'wt') as fd:
 
             if self.format == 'xml':
                 fd.write(XML_HEADER)

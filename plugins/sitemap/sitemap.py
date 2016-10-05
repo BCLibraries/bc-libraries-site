@@ -174,7 +174,9 @@ class SitemapGenerator(object):
                     flag = True
                     break
             if not flag:
-                fd.write(XML_URL.format(self.siteurl, pageurl, lastmod, chfreq, pri))
+                if len(pageurl) > 1:
+                    pageurl = pageurl.rstrip('/')
+                fd.write(XML_URL.format(self.siteurl, pageurl.replace('/index.html',''), lastmod, chfreq, pri))
         else:
             fd.write(self.siteurl + '/' + pageurl + '\n')
 
@@ -200,7 +202,7 @@ class SitemapGenerator(object):
             setattr(wrapper, 'modified', str(lastmod))
 
     def generate_output(self, writer):
-        path = os.path.join(self.output_path, 'sitemap.{0}'.format(self.format))
+        path = os.path.join(self.output_path, 'sitemap-01.{0}'.format(self.format))
 
         pages = self.context['pages'] + self.context['articles'] \
                 + [ c for (c, a) in self.context['categories']] \

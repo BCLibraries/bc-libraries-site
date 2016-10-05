@@ -40,8 +40,21 @@ DEFAULT_PAGINATION = 00
 
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = []
+PLUGINS=['sitemap',]
 
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.3,
+        'indexes': 0.5,
+        'pages': 0.9
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'daily'
+    }
+}
 WITH_FUTURE_DATES = False
 
 STATIC_PATHS = [

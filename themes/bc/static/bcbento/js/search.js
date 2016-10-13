@@ -37,7 +37,7 @@ $.fn.bcBento = function (services, service_url_base) {
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = 'http://libdev.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/,'+').replace('"','%22');
 
         // Clear old results.
@@ -182,12 +182,12 @@ $(document).ready(function () {
         }
     };
 
-    var springshare = {
-        name: 'springshare',
+    var website = {
+        name: 'website',
         max_results: 5
-    }
+    };
 
     var service_url_base = ''
 
-    $(document).bcBento([catalog, articles, librarians, springshare], service_url_base);
+    $(document).bcBento([catalog, articles, librarians, website], service_url_base);
 });

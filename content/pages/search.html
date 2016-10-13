@@ -114,7 +114,7 @@
             <div id="librarians-results" class="result-container librarians">
                 <h3 id="librarianh3" style="display: none;">Librarians</h3>
             </div>
-            <div id="springshare-results" class="result-container springshare">
+            <div id="website-results" class="result-container website">
                 <h3 id="subjecth3" style="display: none">Website</h3>
             </div>
         </div>
@@ -148,18 +148,17 @@
     {{/if}}
 </script>
 
-<script id="springshare-template" type="text/x-template">
+<script id="website-template" type="text/x-template">
     {{#if items}}
     <div class="results-highlight">
         <h3 id="subjecth3" class="visible-also-try">Website</h3>
         <div class="more-results-link">
-            <a href="{{search_link}}" onclick="trackOutboundLink('{{search_link}}'); return false;">see all {{total_results}} results&hellip;&nbsp;</a>
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}} results&hellip;&nbsp;</a>
         </div>
         <ul>
             {{#items}}
             <li class="bento-result">
-                <div><a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{title}}</a></div>
-                <div class="guide-description">{{truncate '50' abstract}}</div>
+                <div><a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a><br /> in <a href="{{guide_url}}"class="guide-title">{{guide_title}}</a></div>
                 {{#if pages}}
                 <ul class="guide-pages">
                 {{#pages}}

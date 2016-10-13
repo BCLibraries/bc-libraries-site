@@ -182,12 +182,12 @@ $(document).ready(function () {
         }
     };
 
-    var springshare = {
-        name: 'springshare',
+    var website = {
+        name: 'website',
         max_results: 5
-    }
+    };
 
     var service_url_base = ''
 
-    $(document).bcBento([catalog, articles, librarians, springshare], service_url_base);
+    $(document).bcBento([catalog, articles, librarians, website], service_url_base);
 });

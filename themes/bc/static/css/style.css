@@ -3832,6 +3832,7 @@ background-attachment: fixed;
     position: relative;
     border-bottom: 1px solid #666;
     background: url("/theme/img/facpub_header.png") no-repeat scroll top left #000000; 
+    margin: 0 auto 0px;
 }
 
 .facpub #header  a:hover {

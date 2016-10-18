@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21459195060001021
 Bookcover: 2016/06/resler-cover.png
 Image_alt: A very plain book cover
-Oneoff: yes
+Oneoff: no
 
 This critical edition of <em>Daniel</em>, one of the earliest post-classical Arthurian romances, includes the normalized Middle High German text with an introduction, selected bibliography, index of proper names, and a reproduction of the first verse of the original manuscript. In addition to the textual-critical apparatus, the third edition includes a second apparatus with linguistic explanations intended to ease access to the text.
 

@@ -1,7 +1,7 @@
 Title: Ivan Myjer of Building & Monument Conservation
 Date: 2016-10-11 01:01 
 Tags: news, announcement
-Expired: no 
+Expired: yes 
 Readmore: yes
 Slug: announcement-burns-myjer
 Summary: Join us at the Burns Library on Wed., Oct 19 at 6pm for a presentation on the conservation of the carved frontispieces at Mission San Jose y San Miguel de Aguayo in San Antonio, Texas &amp; reading the Alamo Church Façade.

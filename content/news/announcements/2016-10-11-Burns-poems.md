@@ -1,7 +1,7 @@
 Title: A Celebration of Contemporary Irish Poetry
 Date: 2016-10-11 01:05
 Tags: news, announcement
-Expired: no 
+Expired: yes 
 Readmore: yes
 Slug: announcement-burns-poems
 Summary: Join us on Tues., Oct 18 for a special evening as leading poets from Ireland read &amp; discuss selections from <em>Leabhar na hAthghabhála: Poems of Repossession</em>, an anthology of Irish-language poetry, edited by Louis de Paor.

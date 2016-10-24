@@ -1,7 +1,7 @@
 Title: Celebrate GIS Day!
-Date: 2016-10-21 01:01 
+Date: 2016-10-24 01:01 
 Tags: news, announcement
-Expired: yes 
+Expired: no 
 Readmore: yes
 Slug: announcement-gis-contest-fall16 
 Summary: November 16, Browse posters on the 2nd and 3rd floor of O’Neill and learn how geographic information systems are used Boston College.

@@ -1,4 +1,4 @@
-Title: Grad students, Like Pizza? Join our Library Focus Group!
+Title: Like Pizza? Join our Library Focus Group!
 Destination:
 Date: 2016-10-28 01:01 
 Tags: news, tags 
@@ -8,7 +8,6 @@ ShowText: yes
 Image_alt: Of photo of a wonderful, succulent-looking pepperoni pizza, piping-hot, fresh out of the oven.
 Image_thumb: 2016-03/pizza-thumbs.png
 
-<p><strong>Grad Students, Like Pizza?</strong></p>
 
 <p>Join our focus group! Lunch and Library Feedback. <br />
 12:00-1:00pm, Thursday, November 9 <br/>

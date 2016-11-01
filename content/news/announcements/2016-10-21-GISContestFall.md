@@ -55,7 +55,7 @@ Summary: November 16, Browse posters on the 2nd and 3rd floor of O’Neill and l
 <li>Best practices for posters</li>
 </ul>
 
-<p><a href="http://bclib.bc.edu/form/gis-contest">Submission Form (PDF)</a></p>
+<p><a href="http://bclib.bc.edu/form/gis-contest">Submission Form</a></p>
 
 
 

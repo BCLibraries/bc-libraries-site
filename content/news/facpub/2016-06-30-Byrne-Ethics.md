@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21458261260001021
 Bookcover: 2016/06/byrne-cover.png
 Image_alt: Very painterly image of a path through the forest
-Oneoff: yes 
+Oneoff: no 
 
 In <em>The Ethics of Discernment</em>, Patrick H. Byrne presents an approach to ethics that builds upon the cognitional theory and the philosophical method of self-appropriation that Bernard Lonergan introduced in his book Insight, as well as upon Lonergan's later writing on ethics and values.
 Extending Lonergan's method into the realm of ethics, Byrne argues that we can use self-appropriation to come to objective judgements of value. <em>The Ethics of Discernment</em> is an introspective analysis of that process, in which sustained ethical inquiry and attentiveness to feelings as "intentions of value" leads to a rich conception of the good.

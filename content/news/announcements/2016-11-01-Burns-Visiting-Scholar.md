@@ -1,4 +1,4 @@
-Title: Lethal in Two Languages: Flann O'Brien and Máirtín Ó Cadhain
+Title: Lethal in Two Languages: Flann O'Brien &amp; Máirtín Ó Cadhain
 Date: 2016-11-01 01:01 
 Tags: news, announcement
 Expired: no 
@@ -6,9 +6,9 @@ Readmore: yes
 Slug: burns-visiting-scholar-f16
 Summary: Will appear on homepage.
 
-<img src="/theme/img/news/2016-11/assemblage.png" alt="words" class="float_right">
+<img src="/theme/img/news/2016-11/assemblage.jpg" alt=" Realia from the Flann O'Brien Papers, John J. Burns Library, Boston College. Photo by Gary Wayne Gilbert, 2009." class="float_right">
 
-<h3>Fall 2016 Burns Visiting Scholar in Irish Studies Lecture</h3>
+<h4>Fall 2016 Burns Visiting Scholar in Irish Studies Lecture</h4>
 <em>Presented by literary critic and poet Louis de Paor</em>
 
 Wednesday, November 9, 4:30 p.m. <br />
@@ -18,7 +18,7 @@ A passing reference to Flann O'Brien's <em>The Third Policeman</em> in the telev
 
 The Boston College Libraries and the Center for Irish Programs cordially invite you to attend a reception honoring Louis de Paor in the Library's Irish Room immediately following his lecture.
 
-For more information about de Paor and his work, please visit bc.edu/burns.
+For more information about de Paor and his work, please visit <a href="http://bc.edu/burns">bc.edu/burns</a>.
 
 For further information about the lecture, including directions and parking, please call (617) 552-3282.
 

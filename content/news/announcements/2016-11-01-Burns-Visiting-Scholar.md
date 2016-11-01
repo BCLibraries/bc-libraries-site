@@ -4,7 +4,7 @@ Tags: news, announcement
 Expired: no 
 Readmore: yes
 Slug: burns-visiting-scholar-f16
-Summary: Will appear on homepage.
+Summary: Join the Burns Library on Wed., Nov 9 at 4:30pm for the Fall 2016 Burns Visiting Scholar in Irish Studies Lecture.
 
 <img src="/theme/img/news/2016-11/assemblage.jpg" alt=" Realia from the Flann O'Brien Papers, John J. Burns Library, Boston College. Photo by Gary Wayne Gilbert, 2009." class="float_right">
 

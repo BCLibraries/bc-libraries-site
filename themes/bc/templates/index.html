@@ -129,7 +129,7 @@
 
 
             {% set count = 0 %}
-            {% for article in articles[:30] if article.category == "news" and article.expired != "yes" %}
+            {% for article in articles[:30] if article.category.name == "news" and article.expired != "yes" %}
 
                 {% set count = count + 1 %}
                 {% if count < 11 %}
@@ -162,7 +162,7 @@
         <h2>Announcements</h2>
 
         {% set count = 0 %}
-        {% for article in articles[:10] if article.category == "announcements" and article.expired != "yes" %}
+        {% for article in articles[:10] if article.category.name == "announcements" and article.expired != "yes" %}
 
             {% set count = count + 1 %} 
             {% if count < 3 %}

@@ -18,7 +18,7 @@
                     {% set count = count + 1 %}
                     {% if count < 50 %}
                
-                        {% if article.category == "newsletter" %}              
+                        {% if article.category.name == "newsletter" %}
                     
                         <div class="news_listing">
                             <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">

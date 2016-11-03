@@ -1,165 +1,77 @@
 {% extends "base.html" %}
-{% block content %}
 
+
+{% block content %}
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
         </a>
         </li>
         <li id="s-lib-bc-site">
-        <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements 
+        <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements
         </a>
         </li>
     </ol>
 
     <h2>Library News & Announcements </h2>
 
-<!-- START 2016 NEWS -->
-<div class="news_archives">
-    
-<h3>2016</h3>                     
+    <div class="news_archives">
 
-    {% if articles %}
-           
-        {% set count = 0 %}
-        {% for article in articles if article.category|selectattr("news", "announcements") %}
+        <h3>2016</h3>
 
-            {% if article.date|strftime('%Y') == "2016" %}
-            
-                
+       {% for article in articles | has_category(['news','announcements']) | has_year('2016') %}
 
-                    {% set count = count + 1 %}
-                    {% if count < 50 %}
-               
-                        {% if article.category == "news" %}              
-                    
-                        <div class="news_listing">
-                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-
-                            <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
-                            
-                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-                                                        
-                            <div class="archive_content">
-                                <p>{{ article.content|striptags|truncate(200) }}</p>
-                            </div>
-
-                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
-                            <span class="readmore">
-                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                            </span>-->
-                                
-                            
-                        </div>
-                 
-                        {% endif %}
-                 
-                        {% if article.category == "announcements" %}  
-
-                         <div class="news_listing">
-                            <img src="/theme/img/generic_news.png" alt="A generic news icon">
-
-                            <h4><a href="../{{ article.url }}">{{ article.title }}</a></h4>
-                            
-                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-                                                        
-                            <div class="archive_content">
-                                <p>{{ article.summary|striptags|truncate(250) }}</p>
-                            </div>
-
-                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
-                            <span class="readmore">
-                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                            </span> -->
-                        </div>
-
-                        {% endif %}
-
-                    {% endif %}                
-           
-            {% endif %}
+            {{ article_archive_display(article) }}
 
         {% endfor %}
-          
-    {% endif %}
 
-</div>
+    </div>
 
 
-<!-- START 2015 NEWS -->
-<div class="news_archives">
-    
-<h3>2015</h3>                     
+    <div class="news_archives">
 
-    {% if articles %}
-           
-        {% set count = 0 %}
-        {% for article in articles if article.category|selectattr("news", "announcements") %}
+    <h3>2015</h3>
 
-            {% if article.date|strftime('%Y') == "2015" %}
-            
-                
 
-                    {% set count = count + 1 %}
-                    {% if count < 50 %}
-               
-                        {% if article.category == "news" %}              
-                    
-                        <div class="news_listing">
-                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+        {% for article in articles | has_category(['news','announcements']) | has_year('2015') %}
 
-                            <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
-                            
-                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-                                                        
-                            <div class="archive_content">
-                                <p>{{ article.content|striptags|truncate(200) }}</p>
-                            </div>
-
-                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
-                            <span class="readmore">
-                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                            </span>-->
-                                
-                            
-                        </div>
-                 
-                        {% endif %}
-                 
-                        {% if article.category == "announcements" %}  
-
-                         <div class="news_listing">
-                            <img src="/theme/img/generic_news.png" alt="A generic news icon">
-
-                            <h4><a href="../{{ article.url }}">{{ article.title }}</a></h4>
-                            
-                            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-                                                        
-                            <div class="archive_content">
-                                <p>{{ article.summary|striptags|truncate(250) }}</p>
-                            </div>
-
-                            <!-- HIDING READ MORE FOR NOW. MIGHT BE REDUNDANT WITH LARGE TITLE LINK
-                            <span class="readmore">
-                                <a href="{{ article.url }}"><span class="arrow">View more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                            </span> -->
-                        </div>
-
-                        {% endif %}
-
-                    {% endif %}                
-           
-            {% endif %}
+            {{ article_archive_display(article) }}
 
         {% endfor %}
-          
-    {% endif %}
 
-</div>
-
+    </div>
 {% endblock %}
 
+
+{% macro article_archive_display(article) %}
+<div class="news_listing">
+
+    {% if article.image_thumb %}
+        {% set article_image = "/theme/img/news/" + article.image_thumb %}
+    {% else %}
+        {% set article_image = "/theme/img/generic_news.png" %}
+    {% endif %}
+
+    {% if article.image_alt %}
+        {% set article_alt = article.image_alt %}
+    {% else %}
+        {% set article_alt = "News icon" %}
+    {% endif %}
+
+    <img src="{{ article_image }}" alt="{{ article_alt}}">
+
+    <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
+
+    <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
+
+    <div class="archive_content">
+        <p>{{ article.summary|striptags|truncate(200) }}</p>
+    </div>
+
+</div>
+{% endmacro %}
+
+
 {% block pagescripts %}
-    
 <script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
 {% endblock %}

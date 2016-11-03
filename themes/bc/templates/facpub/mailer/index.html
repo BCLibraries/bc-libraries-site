@@ -42,7 +42,7 @@
 
 {% if articles %}
             {% set count = 0 %}
-            {% for article in articles if article.category == "facpub" and article.oneoff != "yes" %}
+            {% for article in articles if article.category.name == "facpub" and article.oneoff != "yes" %}
 
                 {% set count = count + 1 %}
                 {% if count < 2 %}   

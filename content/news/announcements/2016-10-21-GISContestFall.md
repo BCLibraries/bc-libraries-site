@@ -4,17 +4,18 @@ Tags: news, announcement
 Expired: no 
 Readmore: yes
 Slug: announcement-gis-contest-fall16 
-Summary: November 16, Browse posters on the 2nd and 3rd floor of O’Neill and learn how geographic information systems are used Boston College.
+Summary: Enter the 8th Annual GIS Contest! Then on Nov. 16, browse posters on the 2nd & 3rd floor of O’Neill & learn how geographic information systems are used Boston College.
 
-<p>On Wednesday, November 16 2016, browse  posters on the 2nd and 3rd floor of O’Neill and learn how geographic information systems are used at Boston College.
+<p>On Wednesday, November 16 2016, browse  posters on the 2nd and 3rd floor of O’Neill and learn how geographic information systems are used at Boston College. <br/>
 
 <em>Try a chocolate globe while they last...</em>
 
 <img src="/theme/img/news/2016-10/gis_f16.png" alt="GIS Contest!">
 
-<h4>Submission Guidelines</h4>
+<h4>Enter the 8th Annual GIS Contest</h4>
+<strong>>Submission Guidelines</strong>
 
-<p><strong>Submissions will be judged on:</strong></p>
+<p><em>Submissions will be judged on:</em></p>
 <ul>
 <li>Quality of the map</li>
 <li>Appropriate use of GIS as a research tool at Boston College within the last year.</li>

@@ -13,9 +13,10 @@ Summary: Enter the 8th Annual GIS Contest! Then on Nov. 16, browse posters on th
 <img src="/theme/img/news/2016-10/gis_f16.png" alt="GIS Contest!">
 
 <h4>Enter the 8th Annual GIS Contest</h4>
-<strong>>Submission Guidelines</strong>
 
-<p><em>Submissions will be judged on:</em></p>
+<strong>Submission Guidelines</strong>
+
+<p>Submissions will be judged on:</p>
 <ul>
 <li>Quality of the map</li>
 <li>Appropriate use of GIS as a research tool at Boston College within the last year.</li>

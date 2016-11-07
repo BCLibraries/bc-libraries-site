@@ -27,15 +27,15 @@
             <h3>Gallery Spaces</h3>
 
             <ul>
-                <li><a href="/exhibits/bapst">Bapst Library</a></li>
-                <li><a href="/exhibits/burns">Burns Library</a></li>
-                <li><a href="/exhibits/tml">Theology and Ministry Library </a></li>
-                <li><a href="/exhibits/lvl1">O'Neill Level One</a></li>
-                <li><a href="/exhibits/lvl3">O'Neill Level Three</a></li>
-                <li><a href="/exhibits/readingroom">O'Neill Reading Room</a></li>
-                <li><a href="/exhibits/backwall">O'Neill Reading Room Back Wall</a></li>
-                <li><a href="/exhibits/lobby">O'Neill Lobby</a></li>
-                <li><a href="/exhibits/stokes">History Dept, Stokes Hall</a></li>
+                <li><a href="./bapst">Bapst Library</a></li>
+                <li><a href="./burns">Burns Library</a></li>
+                <li><a href="./tml">Theology and Ministry Library </a></li>
+                <li><a href="./lvl1">O'Neill Level One</a></li>
+                <li><a href="./lvl3">O'Neill Level Three</a></li>
+                <li><a href="./readingroom">O'Neill Reading Room</a></li>
+                <li><a href="./backwall">O'Neill Reading Room Back Wall</a></li>
+                <li><a href="./lobby">O'Neill Lobby</a></li>
+                <li><a href="./stokes">History Dept, Stokes Hall</a></li>
             </ul>
         </div>
 
@@ -46,7 +46,7 @@
     <ul>
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -59,7 +59,7 @@
 
                                     <div class="holdhead">
                                     <h4>Burns Library</h4>
-                                    <p>Click here for <a href="./bapst">Burns Library Archives</a></p>
+                                    <p>Click here for <a href="./burns">Burns Library Archives</a></p>
                                     </div>
 
                                     <div class="frame">
@@ -82,7 +82,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -119,7 +119,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -157,7 +157,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -194,7 +194,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -231,7 +231,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -267,7 +267,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
@@ -303,7 +303,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.active == "yes" %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}

@@ -17,13 +17,3 @@ O'Neill Library, 413</p>
 <img src="/theme/img/news/2016-10/ux_pizza_web_grad.png" alt="An image of pizza">
 
 <p>For more information, contact <a href="mailto:spinac@bc.edu">Carli Spina</a>.</p>
-
-<!-- USEFUL CUT AND PASTE STUFF.
-
-<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_left">
-
-<img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
-
-<a href="#" target="_blank">
-
--->

@@ -51,7 +51,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl1" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
                    
                     {% if article.date|strftime('%Y') == "2016" %}
                     
@@ -90,7 +90,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl1" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
                    
                     {% if article.date|strftime('%Y') == "2015" %}
                     
@@ -130,7 +130,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl1" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
                    
                     {% if article.date|strftime('%Y') == "2014" %}
                     
@@ -170,7 +170,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl1" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
                    
                     {% if article.date|strftime('%Y') == "2013" %}
                     
@@ -210,7 +210,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl1" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
                    
                     {% if article.date|strftime('%Y') == "2012" %}
                     

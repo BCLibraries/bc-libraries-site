@@ -51,7 +51,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles if article.category == "exhibits" and article.location == "lvl3" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl3" %}
                    
                     
                     

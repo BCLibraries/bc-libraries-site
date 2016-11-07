@@ -53,7 +53,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "burns" %}
+                {% for article in articles if article.category == "exhibits" and article.location == "burns" %}
                    
                     {% if article.date|strftime('%Y') == "2016" %}
                     
@@ -92,7 +92,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "burns" %}
+                {% for article in articles if article.category == "exhibits" and article.location == "burns" %}
                    
                     {% if article.date|strftime('%Y') == "2015" %}
                     
@@ -132,7 +132,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "burns" %}
+                {% for article in articles if article.category == "exhibits" and article.location == "burns" %}
                    
                     {% if article.date|strftime('%Y') == "2014" %}
                     
@@ -172,7 +172,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "burns" %}
+                {% for article in articles if article.category == "exhibits" and article.location == "burns" %}
                    
                     {% if article.date|strftime('%Y') == "2013" %}
                     
@@ -204,6 +204,49 @@
 
     </ul>
 
+<!-- 2012 files-->
+    <ul>
+            <div class="holdhead">
+                <h4>2012</h4>
+            </div>
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles if article.category == "exhibits" and article.location == "burns" %}
+                   
+                    {% if article.date|strftime('%Y') == "2012" %}
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                          
+                            {% if article.location == "burns" %}
+
+                                <li class="holder">
+
+                                    <div class="frame">
+                                        <a href="../../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                            {% endif %}                        
+                        {% endif %}
+                    {% endif %}              
+                {% endfor %}
+            {% endif %}
+
+    </ul>
+
+<hr>
+
+<p>Please click this link for <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/burns.html">exhibit archives from 1997-2011</a></p>
 
 <!-- GALLERIES BELONG ABOVE THIS POINT -->
         </div>

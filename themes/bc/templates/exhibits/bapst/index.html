@@ -51,7 +51,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapst" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapst" %}
                    
                     {% if article.date|strftime('%Y') == "2016" %}
                     
@@ -90,7 +90,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapst" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapst" %}
                    
                     {% if article.date|strftime('%Y') == "2015" %}
                     
@@ -131,7 +131,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapstarchive" %}
                    
                     {% if article.date|strftime('%Y') == "2014" %}
                     
@@ -171,7 +171,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapstarchive" %}
                    
                     {% if article.date|strftime('%Y') == "2013" %}
                     
@@ -211,7 +211,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapstarchive" %}
                    
                     {% if article.date|strftime('%Y') == "2012" %}
                     
@@ -251,7 +251,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
+                {% for article in articles[:100] if article.category == "exhibits" and article.location == "bapstarchive" %}
                    
                     {% if article.date|strftime('%Y') == "2011" %}
                     

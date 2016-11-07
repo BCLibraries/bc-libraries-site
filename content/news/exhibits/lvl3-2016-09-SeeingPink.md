@@ -9,7 +9,7 @@ Slug: exhibit-seeing-pink
 Image: 2016/09-seeingpink.png
 Image_thumb: 2016/09-seeingpink-thumb.png
 Image_alt: Seeing Pink   exhibit poster
-Active: no
+Active: yes
 Style: right
 
 This selection of photographs is part of a larger body of work called Seeing Pink, about the idea of the color pink in America.

@@ -9,7 +9,7 @@ Slug: missionaries
 Image: 2016/07-missionaries.png
 Image_thumb: 2016/07-missionaries-thumb.png
 Image_alt:  Missionaries & Linguists exhibit poster
-Active: yes
+Active: no
 Style: right
 
 When Jesuits evangelized the indigenous peoples of Africa and the Americas, they began by learning and studying their languages. This exhibit features grammars and dictionaries using European alphabets and sound systems to represent tongues that lacked writing systems. They include books printed in the 17th century for Spanish missions in South America, in the 19th century for French missions in Africa, and in 20th century for missions among Inuit peoples and the Lakota tribes of North America. Maps, photographs, and artifacts complement the evidence preserved in linguistic texts and provide insights into profoundly different cultural worlds the Jesuits encountered.

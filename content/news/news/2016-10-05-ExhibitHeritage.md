@@ -3,7 +3,7 @@ Destination: http://www.bc.edu/libraries/about/exhibits-new/ONLoneExhibits/honor
 Date: 2016-10-05 01:01 
 Tags: news, tags 
 Slug: exhibit-honoring
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Latin dancing
 Image_thumb: 2016-10/heritage-thumbs.png

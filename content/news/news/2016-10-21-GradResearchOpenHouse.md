@@ -3,7 +3,7 @@ Destination:
 Date: 2016-10-24 01:02 
 Tags: news, tags 
 Slug: news-grad-open-house
-Expired: no
+Expired: yes
 ShowText: no
 Image_alt: Graduate Research Open House, Level 3 Reading Room in O'Neill Library, Thurs, November 3rd, 3pm through 5pm
 Image_thumb: 2016-10/gradopen-thumbs.png

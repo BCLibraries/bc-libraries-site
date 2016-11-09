@@ -5,7 +5,7 @@ Subtitle:
 Sponsor: Cosponsored by the Boston College University Libraries and the Boston College School of Theology and Ministry
 Location: tml
 Tags: exhibit
-Slug: fragile-world
+Slug: a-fragile-world
 Image: 2015/09-fragile-poster.jpg
 Image_thumb: 2015/09-fragile-thumb.png
 Image_alt:A Fragile World Belonging to All exhibit poster

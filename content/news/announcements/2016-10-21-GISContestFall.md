@@ -1,5 +1,5 @@
 Title: Celebrate GIS Day!
-Date: 2016-10-24 01:02 
+Date: 2016-11-16 01:02 
 Tags: news, announcement
 Expired: no 
 Readmore: yes

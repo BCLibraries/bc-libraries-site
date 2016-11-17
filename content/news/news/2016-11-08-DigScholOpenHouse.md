@@ -3,7 +3,7 @@ Destination: http://libcal.bc.edu/event/2887458
 Date: 2016-11-08 01:01 
 Tags: news, tags 
 Slug: news-digscholopen
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Cartoon image of the loch ness monster
 Image_thumb: 2016-11/digschol-thumbs.png

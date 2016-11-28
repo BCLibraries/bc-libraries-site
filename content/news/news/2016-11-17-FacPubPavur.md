@@ -1,6 +1,6 @@
 Title: Faculty Publication Highlight: Claude Pavur, S.J. & Cristiano Casalini 
 Destination: http://library.bc.edu/facpub/2016/Jul/pavur-casalini/
-Date: 2016-11-17 01:01 
+Date: 2016-11-10 01:02
 Tags: news, tags 
 Slug: news-facpub-pavur
 Expired: no

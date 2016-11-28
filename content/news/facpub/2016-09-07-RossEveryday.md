@@ -14,8 +14,8 @@ Sample_pages: 2016/09/ross-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21459735590001021
 Bookcover: 2016/09/ross-cover.png
-Image_alt: image description
-Oneoff: yes
+Image_alt: Book cover
+Oneoff: no
 
 <a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674659834">Harvard UP</a>, 2016
 

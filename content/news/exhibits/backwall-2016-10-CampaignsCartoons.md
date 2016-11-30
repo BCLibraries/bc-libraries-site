@@ -5,7 +5,7 @@ Subtitle: Depictions of U.S. Presidential Candidates from 1828 to 2016
 Sponsor:
 Location: backwall
 Tags: exhibit
-Slug: politicalcartoons
+Slug: political-cartoons
 Image: 2016/10-politicaltoons.png
 Image_thumb: 2016/10-politicaltoons-thumbs.png
 Image_alt: Illustration of Theodore Roosevelt

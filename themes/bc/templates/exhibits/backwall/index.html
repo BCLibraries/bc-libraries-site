@@ -46,19 +46,17 @@
 <!-- 2016 files-->
     <ul>
             <div class="holdhead">
-                <h4>2016</h4>
+                <h4>2015-2016</h4>
             </div>
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "backwall" %}
-                   
-                    {% if article.date|strftime('%Y') == "2016" %}
-                    
+                {% for article in articles if article.category.name == "exhibits" and article.location == "backwall" %}
+
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
 
-                            {% if article.location == "burns" %}
+                            {% if article.location == "backwall" %}
 
                                 <li class="holder">
 
@@ -76,132 +74,10 @@
                                 </li>
                             {% endif %}                        
                         {% endif %}
-                    {% endif %}              
                 {% endfor %}
             {% endif %}
 
     </ul>
-
-<!-- 2015 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2015</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "backwall" %}
-                   
-                    {% if article.date|strftime('%Y') == "2015" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "burns" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/backwall/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2014 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2014</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "backwall" %}
-                   
-                    {% if article.date|strftime('%Y') == "2014" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "burns" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/backwall/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2013 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2013</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "backwall" %}
-                   
-                    {% if article.date|strftime('%Y') == "2013" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "burns" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/backwall/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
 
 <!-- GALLERIES BELONG ABOVE THIS POINT -->
         </div>

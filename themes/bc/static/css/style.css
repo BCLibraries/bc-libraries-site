@@ -4443,6 +4443,7 @@ html {
     margin: 0;
     padding: 0;
     clear: both;
+    display: inline-block;
 }
 
 #exhibit .latest_exhibit .holder {
@@ -4774,6 +4775,7 @@ html {
     float: none;
     margin: 0 auto 15px;
     max-width: 875px;
+    width: 50%;
 }
 
 .middle_top .article_content .text {
@@ -4797,6 +4799,7 @@ html {
     float: none;
     margin: 0 auto 0px;
     max-width: 875px;
+    width: 50%;
 }
 
 .middle_down .article_content_two .text {

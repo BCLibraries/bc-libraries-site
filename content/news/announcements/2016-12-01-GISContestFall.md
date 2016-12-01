@@ -1,18 +1,15 @@
-Title: Celebrate GIS Day!
-Date: 2016-11-16 01:02 
+Title: Enter the 8th Annual GIS Contest! 
+Date: 2016-12-01 01:02 
 Tags: news, announcement
-Expired: yes 
+Expired: no 
 Readmore: yes
-Slug: announcement-gis-contest-fall16 
-Summary: Enter the 8th Annual GIS Contest! Browse posters on the 2nd & 3rd floor of O’Neill & learn how geographic information systems are used Boston College.
+Slug: announcement-enter-gis-contest-fall16 
+Summary: Read for submission guidelines. Browse posters on the 2nd & 3rd floor of O’Neill & learn how geographic information systems are used Boston College.
 
-<p>Starting Wednesday, November 16 2016, browse posters on the 2nd and 3rd floor of O’Neill and learn how geographic information systems are used at Boston College. <br/>
+<p>Students are invited to present their GIS mapping work as part of a campus-wide celebration of geospatial research at Boston College. Prizes will be awarded to the top student entries which will be displayed in the O’Neill Library lobby on Wednesday, April 26th, 2017.</p>
 
-<em>Try a chocolate globe while they last...</em>
-
-<img src="/theme/img/news/2016-10/gis_f16.png" alt="GIS Contest!">
-
-<h4>Enter the 8th Annual GIS Contest</h4>
+<p><strong>Entry deadline</strong>: April 6th, 2017 </p>
+<p><a href="http://bclib.bc.edu/form/gis-contest">Submission Form</a></p>
 
 <strong>Submission Guidelines</strong>
 

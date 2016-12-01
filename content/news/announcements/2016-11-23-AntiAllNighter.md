@@ -1,7 +1,7 @@
 Title: Anti-All Nighter
 Date: 2016-11-23 01:01 
 Tags: news, announcement
-Expired: no 
+Expired: yes 
 Readmore: yes
 Slug: announcement-anti-all-nighter
 Summary: Get a jumpstart on your final papers and assignments with research help, writing assistance, and academic coaching. Or reduce stress with coloring, puzzles, stretching, meditation, a snack break, and a therapy dog.

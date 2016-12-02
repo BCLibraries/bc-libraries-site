@@ -29,8 +29,8 @@ Gallery locations:
     O'Neill Reading Room Back Wall (backwall)
     O'Neill Lobby (lobby)
     History Dept, Stokes Hall (stokes)
-    Bapst Exhibits (bapsts)
-    Archived Bapst Exhibits (bapstsarchive)
+    Bapst Exhibits (bapst)
+    Archived Bapst Exhibits (bapstarchive)
   
 Need spaces for:
 

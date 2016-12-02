@@ -18,7 +18,9 @@
     <div class="blackband bapst">
         <div class="bandcenter">
             <h2>Bapst Library Exhibit Archives</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia venenatis dapibus. Fusce a leo in ligula vestibulum consectetur sit amet vitae dolor. Morbi varius mollis lorem ut congue. Maecenas sed lorem tellus. In urna ligula, fringilla sit amet neque at, lacinia gravida dolor.</p>
+            <p>In the spring of 2004, Bapst Art Library became the host for the first ever Boston College student art gallery. The gallery is a joint endeavor of the Bapst Art Library, the Fine Arts Department, and ArtVision, a student group for the promotion of the arts on campus. The gallery features a range of media including painting, sketches, watercolors, photography, and ceramic sculptures. Students plan, jury, hang, and manage several exhibits throughout the year. <br />
+
+<em>Note: This gallery is not longer in use.</em></p>
         </div>
     </div>
 
@@ -41,9 +43,14 @@
         </div>
 
         <div class="right">
-            <h3>Past Exhibits in the Bapst Exhibit Cases</h3>
+            
+            <!-- Note: unhide this if we ever start making pages for the Bapst cases.
+            <h3>Past Exhibits in the Bapst Exhibit Cases</h3> -->
 
 <!-- 2016 files-->
+   
+<!-- Note: unhide this if we ever start making pages for the Bapst cases.
+
     <ul>
             <div class="holdhead">
                 <h4>2016</h4>
@@ -51,7 +58,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapst" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "bapst" %}
                    
                     {% if article.date|strftime('%Y') == "2016" %}
                     
@@ -64,7 +71,7 @@
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/bapsts/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -80,9 +87,13 @@
                 {% endfor %}
             {% endif %}
 
-    </ul>
+    </ul> 
+
+    -->
 
 <!-- 2015 files-->
+    
+<!--
     <ul>
             <div class="holdhead">
                 <h4>2015</h4>
@@ -90,7 +101,7 @@
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapst" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "bapst" %}
                    
                     {% if article.date|strftime('%Y') == "2015" %}
                     
@@ -104,7 +115,7 @@
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/bapsts/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -122,30 +133,41 @@
 
     </ul>
 
+    -->
+
+<br />
+
 <h3>Archived Exhibits from the Bapst Student Gallery</h3>
+
+<!-- Note: unhide this if we ever start making pages for the Bapst cases.
+
+<p>In the spring of 2004, Bapst Art Library became the host for the first ever Boston College student art gallery. The gallery is a joint endeavor of the Bapst Art Library, the Fine Arts Department, and ArtVision, a student group for the promotion of the arts on campus. The gallery features a range of media including painting, sketches, watercolors, photography, and ceramic sculptures. Students plan, jury, hang, and manage several exhibits throughout the year. <br />
+
+<em>Note: This gallery is not longer in use.</em></p> -->
+
+
 <!-- 2014 files-->
     <ul>
             <div class="holdhead">
-                <h4>2014</h4>
+                <h4>2011-2014</h4>
             </div>
 
             {% if articles %}
                 {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "bapstarchive" %}
                    
-                    {% if article.date|strftime('%Y') == "2014" %}
                     
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
 
                           
-                            {% if article.location == "bapst" %}
+                            {% if article.location == "bapstarchive" %}
 
                                 <li class="holder">
 
                                     <div class="frame">
                                         <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/bapstarchive/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -156,133 +178,11 @@
 
                                 </li>
                             {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
+                        {% endif %}              
                 {% endfor %}
             {% endif %}
 
     </ul>
-
-<!-- 2013 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2013</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
-                   
-                    {% if article.date|strftime('%Y') == "2013" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "bapst" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2012 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2012</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
-                   
-                    {% if article.date|strftime('%Y') == "2012" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "bapst" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2011 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2011</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles[:100] if article.category.name == "exhibits" and article.location == "bapstarchive" %}
-                   
-                    {% if article.date|strftime('%Y') == "2011" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "bapst" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
 
 <!-- GALLERIES BELONG ABOVE THIS POINT -->
         </div>

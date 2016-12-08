@@ -1,4 +1,4 @@
-Title: News Title 
+Title: Winter in New England, O'Neill Reading Room Back Wall Exhibit.
 Destination: http://www.bc.edu/libraries/about/exhibits-new/ONReadingBackWallExhibits/winternewengland.html
 Date: 2016-12-01 01:01 
 Tags: news, tags 

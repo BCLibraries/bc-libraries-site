@@ -14,7 +14,7 @@ Image_thumb: 2016-12/book-thumbs.png
 
 The Boston College Libraries are seeking a BC undergraduate or graduate student interested in exhibit displays  and digital technologies to develop online versions of exhibitions. If selected for this project, you will develop technical expertise while learning about historical and cultural heritage collections.
 
-Burns Library staff will work with you to identify previous exhibitions of rare books, manuscripts, and other special collections materials that can be transferred into an online digital publication. A listing of previous Burns Library exhibitions can be found on the <a href="http://www.bc.edu/libraries/about/exhibits-new/BurnsExhibits.html">Burns Library Archvied Exhibits website</a>. 
+Burns Library staff will work with you to identify previous exhibitions of rare books, manuscripts, and other special collections materials that can be transferred into an online digital publication. A listing of previous Burns Library exhibitions can be found on the <a href="http://www.bc.edu/libraries/about/exhibits-new/BurnsExhibits.html">Burns Library Archived Exhibits website</a>. 
 
 Using digital exhibition software, you will bring these physical exhibits online in collaboration with the Libraries’ Digital Scholarship Team. You will learn best practices for curating digital content and will build a portfolio that showcases your technical and curatorial work publicly online.
 

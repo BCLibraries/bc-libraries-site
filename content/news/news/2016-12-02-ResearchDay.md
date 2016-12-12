@@ -3,7 +3,7 @@ Destination: http://libguides.bc.edu/ResearchDay2016
 Date: 2016-12-02 01:01 
 Tags: news, tags 
 Slug: news-research-day 
-Expired: no
+Expired: yes
 ShowText: no
 Image_alt: Advancing Research and Scholarship at Boston College, The Environment And Society, research for a changing world
 Image_thumb: 2016-12/researchday-thumbs.png

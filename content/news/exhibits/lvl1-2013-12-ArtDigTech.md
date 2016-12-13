@@ -5,7 +5,7 @@ Subtitle:
 Sponsor:
 Location: lvl1
 Tags: exhibit
-Slug: art-dig-tech-f16
+Slug: art-dig-tech-f13
 Image: 2013/12-artdig.jpg
 Image_thumb: 2013/11-artdig-thumb.png
 Image_alt: Exhibit Poster

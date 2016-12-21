@@ -4609,8 +4609,8 @@ html {
         background: url("/theme/img/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
 }
 
-#exhibit .bapsts, .exhibit_page .bapsts {
-        background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
+#exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
+        background: url("/theme/img/exhibits/banner_bapst.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .virtual, .exhibit_page .virtual {

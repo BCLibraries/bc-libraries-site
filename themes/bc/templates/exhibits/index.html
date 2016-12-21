@@ -42,8 +42,42 @@
         <div class="right">
             <h3>Latest Exhibits</h3>
 
-<!-- PROBABLY SHOULD REORDER THE LIBRARIES TO BE IN ALPHA ORDER. -->
     <ul>
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                            {% if article.location == "bapst" %}
+                            <!-- BAPST LATEST EXHIBIT -->
+                                <li class="holder">
+
+                                    <div class="holdhead">
+                                    <h4>Bapst Library, Gargan Hall</h4>
+                                    <p>Click here for <a href="./bapst">Bapst Library Past Exhibits</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                            {% endif %}                        
+                        {% endif %}
+                                  
+                {% endfor %}
+            {% endif %}
+
             {% if articles %}
                 {% set count = 0 %}
                 {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
@@ -87,20 +121,19 @@
                     
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
-
-                          
-                            {% if article.location == "tml" %}
-                            <!-- TML LATEST EXHIBIT -->
+                         
+                            {% if article.location == "stokes" %}
+                            <!-- HISTORY DEPT, STOKE HALL LATEST EXHIBIT -->
                                 <li class="holder">
 
                                     <div class="holdhead">
-                                    <h4>Theology & Ministry Library</h4>
-                                    <p>Click here for <a href="./tml">Theology & Ministry Library Past Exhibits</a></p>
+                                    <h4>History Dept, Stokes Hall</h4>
+                                    <p>Click here for <a href="./stokes">History Dept, Stokes Hall Past Exhibits</a></p>
                                     </div>
 
                                     <div class="frame">
                                         <a href="../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/stokes/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -111,13 +144,13 @@
 
                                 </li>
                                                      
-                            {% endif %}                        
+                            {% endif %}      
                         {% endif %}
                                   
                 {% endfor %}
             {% endif %}
 
-            {% if articles %}
+           {% if articles %}
                 {% set count = 0 %}
                 {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
@@ -301,26 +334,27 @@
                 {% endfor %}
             {% endif %}
 
-            {% if articles %}
+             {% if articles %}
                 {% set count = 0 %}
                 {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
                     
                         {% set count = count + 1 %}
                         {% if count < 100 %}  
-                         
-                            {% if article.location == "stokes" %}
-                            <!-- HISTORY DEPT, STOKE HALL LATEST EXHIBIT -->
+
+                          
+                            {% if article.location == "tml" %}
+                            <!-- TML LATEST EXHIBIT -->
                                 <li class="holder">
 
                                     <div class="holdhead">
-                                    <h4>History Dept, Stokes Hall</h4>
-                                    <p>Click here for <a href="./stokes">History Dept, Stokes Hall Past Exhibits</a></p>
+                                    <h4>Theology & Ministry Library</h4>
+                                    <p>Click here for <a href="./tml">Theology & Ministry Library Past Exhibits</a></p>
                                     </div>
 
                                     <div class="frame">
                                         <a href="../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/stokes/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        <img src="/theme/img/exhibits/tml/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
                                         
                                         <div class="info">
                                             <p class="date">{{ article.date_range }}</p>
@@ -331,7 +365,7 @@
 
                                 </li>
                                                      
-                            {% endif %}      
+                            {% endif %}                        
                         {% endif %}
                                   
                 {% endfor %}

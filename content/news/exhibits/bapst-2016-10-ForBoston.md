@@ -1,7 +1,7 @@
 Date: 2016-10-22 01:01 
 Date_range: October - December, 2016
 Title: For Boston: Echoes of Football from the Boston College Archives 
-Subtitle: Selected Books from Bapst Library
+Subtitle: Selected Items from the University Archives
 Sponsor:
 Location: bapst
 Tags: exhibit

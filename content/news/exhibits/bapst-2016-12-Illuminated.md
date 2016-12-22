@@ -1,4 +1,4 @@
-Date: 2016-10-01 01:01 
+Date: 2016-10-23 01:01 
 Date_range: October - December, 2016
 Title: Illuminated Manuscripts, selected books from Bapst 
 Subtitle:Selected Books from Bapst Library

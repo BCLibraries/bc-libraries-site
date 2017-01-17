@@ -1,7 +1,7 @@
 Title: BBC Databases on Trial
 Date: 2016-12-15 01:01 
 Tags: news, announcement
-Expired: no 
+Expired: yes 
 Readmore: yes
 Slug: announcement-bbc-databases-trial
 Summary: BBC handbooks, annual reports, and accounts, 1921-2001/2, BBC Listener research Department, 1937 - circa 1950

@@ -25,9 +25,9 @@ $(document).ready(function () {
     }
 
     function setFeedbackUrl() {
-        /*var url = document.URL;
+        var url = document.URL;
         url = url.replace(/\#.*$/, '');
-        document.getElementsByName('page_url')[0].value = url;*/
+        document.getElementsByName('page_url')[0].value = url;
     }
 
     window.addEventListener("hashchange", setFeedbackUrl, false);

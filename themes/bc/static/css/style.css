@@ -662,7 +662,7 @@ th {
 
 #content /*USED IN LIBGUIDES, NOT HOMEPAGE */{
     margin: 0;
-    padding: 0 0 0 10px;
+    padding: 0;
     width: 980px;
     float: right;
     display: inline-block;
@@ -4290,6 +4290,7 @@ COULD BE USEFUL ELSEWHERE  */
     pointer-events: none;
 }
 
+
 #bcl-feedback:target {
     opacity:1;
     pointer-events: auto;
@@ -4370,53 +4371,6 @@ COULD BE USEFUL ELSEWHERE  */
     color: #fff;
     float: right;
 }
-
-/* LIBANSWERS OVERWRITES */
-
-#bcl-feedback #feedback_wrapper {
-    width: 50%;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translate(0px, -50%);
-    margin: 0 auto;
-}
-
-#bcl-feedback #feedback_wrapper .s-la-widget-embed {
-    margin-top: 50px;
-}
-
-#feedback_close {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    font-size: 35px;
-    float: right;
-}
-
-#feedback_close::after {
-    font-family:'FontAwesome';
-    content:"\f057";
-    color: #fff;
-    margin: 0 10px;
-    position: absolute;
-}
-
-@media ( max-width: 1199px ) {
-    #bcl-feedback #feedback_wrapper {
-    width: 90%;
-    display: inline-block;
-    position: absolute;
-    top: 5%;
-    left: 0;
-    right: 0;
-    transform: translate(0px, 0%);
-    margin: 0 auto;
-}
-}
-
 
 /* LIBRARY EXHIBITS STYLES */
 

@@ -49,8 +49,27 @@
 
     <h2>Past Highlights</h2>
 
-    <!-- START 2016 ARCHIVES UNHIDE THIS AFTER AT LEAST A SECOND ARTICLE IS POSTED -->
+    <!-- START 2017 ARCHIVES UNHIDE THIS AFTER AT LEAST A SECOND ARTICLE IS POSTED -->
     <div class="yearlyblock">
+
+    <h3>2017 Highlights</h3>
+
+       {% for article in articles | has_category(['facpub']) | has_year('2017') | not_oneoff %}
+            <div class="old_facpub">
+
+                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+                <div class="bookinfo">
+                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
+                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+
+    <!-- START 2016 ARCHIVES UNHIDE THIS AFTER AT LEAST A SECOND ARTICLE IS POSTED -->
+    <div class="yearlyblock archived">
 
     <h3>2016 Highlights</h3>
 

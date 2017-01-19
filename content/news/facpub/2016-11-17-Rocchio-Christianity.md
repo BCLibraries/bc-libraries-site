@@ -1,4 +1,4 @@
-Date: 2016-11-17 01:05
+Date: 2017-01-17 01:05
 Title: Christianity and the Culture Machine: Media and Theology in the Age of Late Secularism
 By:
 Author_firstname: Vincent F.

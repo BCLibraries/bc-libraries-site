@@ -4316,7 +4316,7 @@ body.body-modal {
 }
 
 #bcl-feedback #feedback_wrapper .s-la-widget-embed {
-    margin-top: 0px;
+    border-radius: 8px;
 }
 
 #feedback_close {

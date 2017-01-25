@@ -1,5 +1,5 @@
 Title: New Trial: Border and Migration Studies Online
-Date: 2017-01-17 01:01 
+Date: 2017-01-24 01:01 
 Tags: news, announcement
 Expired: no 
 Readmore: yes

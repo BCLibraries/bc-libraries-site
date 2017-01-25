@@ -1,7 +1,7 @@
-Date: 2017-01-19 01:01
+Date: 2017-01-25 01:01
 Title: TIMSS 2015 Encyclopedia: Education Policy and Curriculum in Mathematics and Science
 By: 
-Author_firstname: Dr. Ina 
+Author_firstname: Dr. Ina V.S.
 Author_lastname: Mullis
 Author_position: Professor, Educational Research, Measurement & Evaluation 
 Tags: facpub
@@ -12,8 +12,8 @@ ShowSample_pages: no
 Book_location: http://timssandpirls.bc.edu/timss2015/encyclopedia/
 Bookcover: 2017/01/timss-cover.png
 Image_alt: TIMSS and PIRLS
-Oneoff: yes
+Oneoff: no
 
-<em>New TIMSS Report Released</em>
-
-Singapore, Hong Kong SAR, Korea, Chinese Taipei, and Japan continue outperforming all participating countries in mathematics at the fourth and eighth grades, according to results released Tuesday from the latest round of the Third International Mathematics and Science Study, the longest running, large scale international assessment of mathematics and science education in the world. Those East Asian countries were strong in science as well, but the results were more varied, according to the assessment, which is administered by Michael O. Martin and Ina V.S. Mullis, executive directors of the TIMSS & PIRLS International Study Center at the Lynch School of Education
+<p>Across the world, requirements for becoming a teacher have become  increasingly stringent and more technology is making its way into curricula and  instruction. The <em>TIMSS 2015 Encyclopedia:  Education Policy and Curriculum in Mathematics and Science</em> draws on data  from TIMSS 2015, an education assessment of 60 countries and regions at the  fourth and eighth grades directed by Drs. Ina V.S. Mullis and Michael O.  Martin. No other publication offers such a comprehensive look at global  education: each participating country or region authored a chapter describing  its educational system, and students and their parents, teachers, and  principals completed questionnaires about the contexts of their learning and  teaching. The encyclopedia shows that countries allocate significant  instructional time for mathematics and science, national curricular guidelines  in those subjects are emerging in preprimary programs, and school systems are  investing in digital devices ranging from basic tools to sophisticated systems. </p>
+<p>The <em>TIMSS 2015 Encyclopedia</em> is a companion to the <em>TIMSS 2015  International Results in Mathematics and Science</em>. TIMSS (Trends in  International Mathematics and Science Study) spans 20 years of trends, the  longest of any international education assessment. </p>
+<p><a href="http://bit.ly/2jpm4Tb">View  other TIMSS and PIRLS publications through BC Libraries&rsquo; eScholarship.</a></p>

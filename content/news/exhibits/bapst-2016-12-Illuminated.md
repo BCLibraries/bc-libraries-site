@@ -9,5 +9,5 @@ Slug: illuminated-manuscripts
 Image: 2016/10-art.png
 Image_thumb: 2016/10-art-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: middle_down

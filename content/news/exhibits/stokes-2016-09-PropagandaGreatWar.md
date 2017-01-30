@@ -9,7 +9,7 @@ Slug: exhibit-propaganda-great-war
 Image: 2016/11-propaganda.png
 Image_thumb: 2016/11-propaganda-thumb.png
 Image_alt: Italian progaganda poster from WWII
-Active: yes
+Active: no
 Style: middle_down
 
 This exhibit is the product of a History Department seminar that was developed in collaboration with the University’s Burns Library. The course encouraged students to consider how governments used a variety of media including posters as propaganda when recruiting for the Great War. Undergraduates examined multiple sources including personal memoirs and diaries from the Burns Library Special Collection and World War I posters from the Boston Athenaeum to examine how the war was 'sold' or marketed to recruits and the general public. In the exhibit students contrast this propaganda with the stark reality that awaited soldiers once they became combatants in 'the war to end all wars'.

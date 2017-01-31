@@ -636,7 +636,7 @@ th {
 
 #content /*USED IN LIBGUIDES, NOT HOMEPAGE */{
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 10px;
     width: 980px;
     float: right;
     display: inline-block;
@@ -3077,8 +3077,6 @@ nav select {
     z-index: 2;
 }
 
-html,
-body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
@@ -4262,8 +4260,9 @@ COULD BE USEFUL ELSEWHERE  */
     -moz-transition: opacity 100ms ease-in;
     transition: opacity 100ms ease-in;
     pointer-events: none;
+    overflow: auto;
+    overflow-y: scroll;
 }
-
 
 #bcl-feedback:target {
     opacity:1;
@@ -4271,80 +4270,60 @@ COULD BE USEFUL ELSEWHERE  */
     display: block
 }
 
-#bcl-feedback > .visible-form {
-    width: 600px;
-    max-width: 100%;
-    position: relative;
-    margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 5px;
-    background: #fff;
-}
+/* LIBANSWERS OVERWRITES */
 
-.bcl-modal-header {
-    height: 2em;
-    margin-bottom: 1.5em
-}
-
-.bcl-modal-header h3 {
-    float: left;
-    height: 1em;
-    width: 95%;
-    margin: 1em 0;
-}
-
-.bcl-modal-body {
-    clear: both;
-}
-
-.bcl-modal-body p {
-    line-height: 1.5;
-    margin-bottom: 1.5em
-}
-
-.bcl-modal-header .close-modal {
-    float: left;
-    width: 5%;
-    height: 1em;
-    text-align: right;
-    font-weight: bold;
-}
-
-.bcl-modal-header .close-modal:hover {
-    text-decoration: none;
-}
-
-.website-feedback p {
-    margin-bottom: 1em;
-}
-
-.website-feedback p label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.website-feedback p input, .website-feedback p textarea {
+body.body-modal {
+    position:fixed;
     width: 100%;
-    border: 1px solid #cecfca;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-#feedback-text {
-    height: 8em
+#bcl-feedback #feedback_wrapper {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 100px auto 20px auto;
 }
 
-.website-feedback p input.feedback_button {
-    background: none repeat scroll 0 0 #990000;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: 3px solid #510000;
-    border-radius: 0 0 0 0;
-    height: 34px;
-    width: 25%;
-    min-width: 100px;
+#bcl-feedback #feedback_wrapper .s-la-widget-embed {
+    border-radius: 8px;
+}
+
+#feedback_close {
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+#feedback_close::after {
+    font-family:'FontAwesome';
+    content:"\f057";
     color: #fff;
-    float: right;
+    margin: 0 10px;
+    position: absolute;
 }
+
+@media ( max-width: 1199px ) {
+    #bcl-feedback #feedback_wrapper {
+    width: 90%;
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    transform: translate(0px, 0%);
+    margin: 40px auto 20px auto;
+}
+}
+
 
 /* LIBRARY EXHIBITS STYLES */
 

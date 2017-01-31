@@ -6,7 +6,7 @@ Slug: a-nice-and-friendly-url
 Expired: yes or no
 ShowText: yes
 Image_alt: image description
-Image_thumb: 2016-xx/FILENAME-thumbs.png
+Image_thumb: 2017-xx/FILENAME-thumbs.png
 
 Article summary [linked text](http://www.google.com).
 

@@ -29,32 +29,6 @@ body {
     line-height: 1.75;
 }
 
-/* TEMPORARY RETURN TO OLD SITE LINK */
-
-a.returntoold {
-    color: #fff !important; position: absolute; right: 5%; top: 10px;
-}
-a.returntoold:hover {
-    color: #fff !important;
-    text-decoration: underline !important;
-}
-
-a.returntoold:after {
-    font-family: 'icomoon';
-    content: "\e658";
-    display: inline-block;
-    text-decoration: none;
-     font-size: 12px;
-    padding: 0 0 0 5px;
-}
-
-
-@media ( max-width: 768px ) {
-    a.returntoold {
-        display: none;
-    }
-}
-
 /* THE BASICS */
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -2132,10 +2106,10 @@ nav select {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0;
     float: right;
-    margin: 115px 15px 0;
+    margin: 115px 0px 0;
     padding: 13px;
     position: relative;
-    width: 96%;
+    width: 100%;
 }
 @media (min-width: 768px) {
     #megamenu .navbar-toggle {
@@ -4475,7 +4449,7 @@ html {
       #exhibit .latest_exhibit .holder {
         display: inline-block;
         position: relative;
-        margin: 0px 0px 30px 0;
+        margin: 0px auto 30px;
         padding: 0;
         width: 100%;
         height: auto;
@@ -4494,12 +4468,10 @@ html {
 
     #exhibit .latest_exhibit .holder:nth-child(odd) {
        float: none;
-       margin: 0 auto;
     }
 
     #exhibit .latest_exhibit .holder:nth-child(even) {
        float: none;
-        margin: 0 auto;
     }
 }
 
@@ -4641,18 +4613,26 @@ html {
     text-shadow: 2px 2px 1px #000000;
 }
 
-@media ( max-width: 1199px ) {
-    .blackband .bandcenter {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-    }
-}   
-
 .exhibit_page .blackband .bandcenter {
     text-align: center;
     width: 875px;
     max-width: 875px;
+}
+
+@media ( max-width: 1199px ) {
+    .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
+        width: 75%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}  
+
+@media ( max-width: 768px ) {
+     .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
 
 #exhibit .burns, .exhibit_page .burns {
@@ -4872,6 +4852,28 @@ html {
 
 }
 
+@media ( max-width: 1199px ) {
+    #individualpage {
+    padding: 0px 0 25px;
+    z-index: 3;
+}
+
+.exhibit_page .exhibittitle {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 5px 0px;
+    margin: 0 auto 25px;
+    display: block;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    -webkit-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+    -moz-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+    box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+}
+    }
+
 /* FOR NON-POSTER IMAGES THAT APPEAR IN SOME EXHIBIT PAGES */
 
 .article_content .text img {
@@ -4942,6 +4944,58 @@ html {
    max-width: 875px;
    margin: 0 auto 25px;
 }
+
+@media ( max-width: 1199px ) {
+    
+    .default .article_content .poster, .right .article_content .poster  {
+        float: right;
+        margin: 0px 0px 10px 25px;
+        max-width: 35%;
+    }
+    .default .article_content .text,  .right .article_content .text  {
+        padding: 0 0px 0 0px;
+    }
+
+    .middle_top .article_content .poster {
+        float: none;
+        margin: 0 auto 15px;
+        max-width: 875px;
+        width: 50%;
+    }
+
+    .middle_top .article_content .text {
+       max-width: 875px;
+       margin: 0 auto;
+    }
+
+    .article_content_two {
+        display: none;
+    }
+}
+
+@media ( max-width: 768px ) {
+
+    .article_content {
+        display: none;
+    }
+
+    .article_content_two {
+        display: block;
+    }
+
+    .default .article_content_two .poster, .right .article_content _two .poster, .middle_top .article_conten_two .poster {
+        float: none;
+        margin: 0 auto 15px;
+        max-width: 875px;
+        width: 50%;
+    }
+
+    .middle_top .article_content_two .text, .default .article_content_two .text,  .right .article_content_two .text {
+       max-width: 875px;
+       margin: 0 auto;
+    }
+}
+
 
 /* CAREER */
 

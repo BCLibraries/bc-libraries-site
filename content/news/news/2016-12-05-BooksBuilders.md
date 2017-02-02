@@ -3,7 +3,7 @@ Destination:
 Date: 2017-01-23 01:03
 Tags: news, tags 
 Slug: book-builders
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: The Bookbuilders of Boston Logo
 Image_thumb: 2016-12/book-thumbs.png

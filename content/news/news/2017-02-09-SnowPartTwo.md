@@ -3,7 +3,7 @@ Destination: http://library.bc.edu/announcements/2017/Feb/thurs-storm-hours/
 Date: 2017-02-09 01:01 
 Tags: news, tags 
 Slug: thurs-storm-news
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Snow on Bapst
 Image_thumb: 2017-02/snow-thumbs.png

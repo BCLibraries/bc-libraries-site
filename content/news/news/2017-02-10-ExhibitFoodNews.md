@@ -1,5 +1,5 @@
 Title: Food & Community, O'Neill Reading Room Back Wall Exhibit 
-Destination: https://www.library.bc.edu/exhibits/2017/Feb/food-and-community/
+Destination: http://library.bc.edu/exhibits/2017/Feb/food-and-community/
 Date: 2017-02-10 01:01 
 Tags: news, tags 
 Slug: news-exhibit-food

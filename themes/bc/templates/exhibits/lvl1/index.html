@@ -43,6 +43,45 @@
         <div class="right">
             <h3>Past Exhibits</h3>
 
+<!-- 2017 files-->
+    <ul>
+            <div class="holdhead">
+                <h4>2017</h4>
+            </div>
+
+            {% if articles %}
+                {% set count = 0 %}
+                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                   
+                    {% if article.date|strftime('%Y') == "2017" %}
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                            {% if article.location == "lvl1" %}
+
+                                <li class="holder">
+
+                                    <div class="frame">
+                                        <a href="../../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                            {% endif %}                        
+                        {% endif %}
+                    {% endif %}              
+                {% endfor %}
+            {% endif %}
+
+    </ul>
+
 <!-- 2016 files-->
     <ul>
             <div class="holdhead">

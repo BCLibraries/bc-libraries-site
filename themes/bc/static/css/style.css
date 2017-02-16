@@ -1548,6 +1548,10 @@ a.announcelink {
     top: -55px;
 }
 
+.s-lib-profile-div {
+    margin-bottom: 30px;
+}
+
 .s-lib-profile-email .label-info, .s-lib-profile-widget .label-info {
     background: #05506d;
     border-bottom: 4px solid #04394e;

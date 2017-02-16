@@ -1548,7 +1548,7 @@ a.announcelink {
     top: -55px;
 }
 
-.s-lib-profile-email .label-info {
+.s-lib-profile-email .label-info, .s-lib-profile-widget .label-info {
     background: #05506d;
     border-bottom: 4px solid #04394e;
 }
@@ -1558,7 +1558,7 @@ a.announcelink {
     border-bottom: 2px solid #05506d;
 }
 
-.s-lib-profile-email .label {
+.s-lib-profile-email .label, .s-lib-profile-widget .label {
     border-radius: 0;
     color: #fff;
     display: inline;
@@ -4889,13 +4889,13 @@ html {
 
 /* SPECIFIC EXHIBIT STYLES */
 
-.default .article_content .poster {
+.default .article_content .poster, .left .article_content .poster  {
     float: left;
     margin: 0px 25px 10px 0px;
     max-width: 50%;
 }
 
-.default .article_content .text {
+.default .article_content .text, .left .article_content .text  {
     padding: 0 95px 0 0px;
 }
 
@@ -4947,12 +4947,12 @@ html {
 
 @media ( max-width: 1199px ) {
     
-    .default .article_content .poster, .right .article_content .poster  {
+    .default .article_content .poster, .right .article_content .poster, .left .article_content .poster  {
         float: right;
         margin: 0px 0px 10px 25px;
         max-width: 35%;
     }
-    .default .article_content .text,  .right .article_content .text  {
+    .default .article_content .text,  .right .article_content .text, .left .article_content .text {
         padding: 0 0px 0 0px;
     }
 

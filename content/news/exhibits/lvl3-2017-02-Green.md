@@ -1,7 +1,7 @@
 Date: 2017-02-21 01:01 
 Date_range: February - May, 2017
 Title: Minos: Tribulations of a Fantastical (Or Not) Creature
-Subtitle: Graphite drawings by Professor Sammy Chong, SJ of the Art, Art History, and Film Department
+Subtitle: A series of drawings by Professor Sammy Chong, of the Art, Art History, and Film Department
 Sponsor: Sponsored by the Art, Art History, and Film Department and The Boston College Libraries
 Location: lvl3
 Tags: exhibit

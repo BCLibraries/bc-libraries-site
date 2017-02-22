@@ -16,4 +16,4 @@ Cultures all around the world and in different times have strived for the establ
 
 This series of drawings juxtapose the conventional and the grotesque; Minotaur characters navigate familiar settings. By featuring the instability and disorder implicit in the monster concept, I introduce an inquiry into societal paradigms. This entails a consideration through contrast of a reality that embraces what is different at cultural, political, racial, economic, and sexual levels.
 
-<em>- Professor Sammy Chong, SJ of the Art, Art History, and Film Department</em>
+<em>- Professor Sammy Chong, of the Art, Art History, and Film Department</em>

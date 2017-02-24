@@ -1,7 +1,7 @@
 Title: Maintaining Community Throughout Difficult Conversations
 Date: 2017-02-16 01:01 
 Tags: news, announcement
-Expired: no 
+Expired: yes 
 Readmore: yes
 Slug: announcement-fireside-chat
 Summary: Join us in the O'Neill Library, 3rd Floor Reading Room on Thursday, February 23 at 4:00pm for a fireside chat with Barbara Jones (VP, Student Affairs), Vincent Rougeau (Dean, Law School) and	Anthony Penna (Associate VP, Mission and Ministry). Hosted by by Tom Wall, University Librarian.

@@ -9,7 +9,7 @@ Slug: exhibit-picturing-paradise
 Image: 2016/10-paradise.png
 Image_thumb: 2016/10-paradise-thumb.png
 Image_alt: Picturing Paradise exhibit poster
-Active: yes
+Active: no
 Style: default
 
 <p>Picturing Paradise is an exhibition that features embroidered and appliquéd fabric pictures called cuadros, created by the women of Compacto Humano and Manos Ancashinas,   two art cooperatives located in Pamplona Alta, a shantytown situated on   the outskirts of Lima, Peru. The exhibition places emphasis on the   women as artists and the way their art reflects creativity, resilience,   and hope despite the harsh conditions of their lives.</p>

@@ -17,6 +17,18 @@
 
     <div class="news_archives">
 
+        <h3>2017</h3>
+
+       {% for article in articles | has_category(['news','announcements']) | has_year('2017') %}
+
+            {{ article_archive_display(article) }}
+
+        {% endfor %}
+
+    </div>
+
+    <div class="news_archives">
+
         <h3>2016</h3>
 
        {% for article in articles | has_category(['news','announcements']) | has_year('2016') %}

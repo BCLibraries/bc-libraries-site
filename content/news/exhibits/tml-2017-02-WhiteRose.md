@@ -16,7 +16,7 @@ Style: right
 
 Opening in the Theology and Ministry Library Atrium Gallery on March 13, 2017, the <strong>White Rose</strong> is an inspiring exhibition depicting student resistance against Hitler in Munich during 1942-43. Created by <a href="http://www.weisse-rose-stiftung.de/" target="_blank">The White Rose Foundation</a>, this traveling exhibit is sponsored by the Boston College Libraries in collaboration with the Consulate General of Germany to New England. The exhibit will open with a panel discussion entitled: <em>The White Rose: Invoking Moral Courage and Resistance</em> from 4:00 – 5:00 PM followed by a reception from 5:00 – 6:30 PM. <strong>Consul General Ralf Horlemann</strong> will attend and will offer opening remarks.
 
-Members of the panel are <strong>Dr. John Michalczyk, Dr. Bernhard Knorn, S.J., and Rabbi Sara Paasche-Orlow</strong> and the moderator is <strong>Dr. Nicole Eaton</strong>.
+Members of the panel are <strong>Dr. John Michalczyk, Dr. Bernhard Knorn, S.J., Rabbi Sara Paasche-Orlow</strong> and the moderator is <strong>Dr. Nicole Eaton</strong>.
 
 <strong>Dr. Michalczyk</strong> is a Boston College Fine Arts Professor and director of the university's Film Studies Program. He is a filmmaker whose documentaries have focused on issues of social justice, and he often uses the examinations of painful human experiences to shed light on our humanity. Dr. Michalczyk's documentaries explore issues of discrimination, hatred, war and peace. He has published on the subject of the White Rose (<em>Confront! : Resistance in Nazi Germany</em> ed. By John Michalczyk), and he worked with a White Rose survivor both at Boston College and in Germany at the University of Munich. 
 

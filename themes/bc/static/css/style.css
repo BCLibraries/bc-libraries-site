@@ -1494,13 +1494,12 @@ a.announcelink {
 }
 
 .mediablock {
-    font-family: 'icomoon';
     height: 40px;
     width: 40px;
     display: block;
     background: #32758f;
     text-align: center;
-    padding: 6px 0;
+    padding: 4px 0;
     color: #fff !important;
     font-size: 20px;
     float: left;
@@ -1514,24 +1513,41 @@ a.announcelink {
 }
 
 #media_news:after {
+    font-family: 'icomoon';
     content: "\e684";
 }
 
 #media_facebook:after {
+    font-family: 'icomoon';
     content: "\e63f";
 }
 
 #media_flickr:after {
+    font-family: 'icomoon';
     content: "\e641";
 }
 
 #media_twitter:after {
+    font-family: 'icomoon';
     content: "\e640";
 }
 
 #media_youtube:after {
+    font-family: 'icomoon';
     content: "\e645";
 }
+
+#media_linkedin:after {
+    font-family: 'FontAwesome';
+    content: "\f0e1";
+}
+
+#media_instagram:after {
+    font-family: 'FontAwesome';
+    content: "\f16d";
+    font-size: 22px;
+}
+
 
 /*OVERWRITING LIBGUIDES 2.0 */
 

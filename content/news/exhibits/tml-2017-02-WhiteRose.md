@@ -2,7 +2,7 @@ Date: 2017-02-27 01:01
 Date_range: March 13 - 31, 2017
 Title: White Rose: Student Resistance to Hitler (1942-43)
 Subtitle: A traveling exhibit created by the White Rose Foundation (Weiße Rose Stiftung), Munich, Germany
-Sponsor: Sponsored by the Boston College Libraries in collaboration with the Consul General of Germany to New England
+Sponsor: Co-Sponsored by the Boston College Libraries and the Boston College Catholic Studies Department in collaboration with the Consul General of Germany to New England
 Location: tml
 Tags: exhibit
 Slug: white-rose

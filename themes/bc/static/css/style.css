@@ -4407,14 +4407,14 @@ html {
 
 #exhibit .latest_exhibit .left ul li a:hover {
    text-decoration: none;
-    padding: 0 0 0 10px;
+    border-bottom: 1px solid #990000;
     margin: 0 0 10px;
 }
 
 #exhibit .latest_exhibit .left .target {
     color: #666;
     border-bottom: 1px solid #990000;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 0px;
     margin: 0 0 10px;
 }
 

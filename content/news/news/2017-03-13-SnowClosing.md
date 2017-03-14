@@ -1,6 +1,6 @@
 Title: Tuesday Snow Storm Hours
 Destination: http://library.bc.edu/announcements/2017/Mar/announcement-news-march-snow/
-Date: 2017-03-13 01:01 
+Date: 2017-03-13 01:02 
 Tags: news, tags 
 Slug: news-march-snow
 Expired: no

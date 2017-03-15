@@ -3,7 +3,7 @@ Destination: http://library.bc.edu/announcements/2017/Mar/announcement-news-marc
 Date: 2017-03-13 01:02 
 Tags: news, tags 
 Slug: news-march-snow
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: The Boston College Campus on a snowy day.
 Image_thumb: 2017-02/snow-thumbs.png

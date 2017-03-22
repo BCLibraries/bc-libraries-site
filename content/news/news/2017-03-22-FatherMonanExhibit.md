@@ -6,5 +6,5 @@ Slug: father-monan
 Expired:no
 ShowText: yes
 Image_alt: Father Monan
-Image_thumb: 2017-03/father-monan.jpg
+Image_thumb: 2017-03/in-mem-father-monan.jpg
 

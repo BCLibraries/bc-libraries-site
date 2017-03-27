@@ -1,4 +1,4 @@
-Title: Enter the 8th Annual BC GIS Contest (PDF)
+Title: Enter the 8th Annual BC GIS Contest
 Destination: http://www.bc.edu/giscontest
 Date: 2017-03-27 01:02
 Tags: news, tags 
@@ -8,5 +8,5 @@ ShowText: yes
 Image_alt: Got GIS?
 Image_thumb: 2016-02/gis-thumbs.png
 
-Enter the 8th Annual BC GIS Contest (PDF)
+Enter the 8th Annual BC GIS Contest
 Details: http://www.bc.edu/giscontest

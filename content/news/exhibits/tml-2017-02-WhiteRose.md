@@ -28,6 +28,8 @@ Members of the panel are <strong>Dr. John Michalczyk, Dr. Bernhard Knorn, S.J., 
 
 Boston College students, faculty, and staff as well as the greater Boston Community are warmly invited to experience the exhibition to learn about the individuals of the White Rose, their paths to resistance, actions, and persecution by the Nazi regime.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OndJutvVyFA" frameborder="0" allowfullscreen></iframe>
+
 <h3>Photos from the Opening Reception</h3>
 
 <a href="/theme/img/exhibits/tml/2017/wr-imgs/IMG_0195.JPG"><img src="/theme/img/exhibits/tml/2017/wr-imgs/IMG_0195.JPG" alt="Students and faculty viewing the exhibit during the opening reception" style="float: left; width: 45%; margin: 5px;" ></a> <a href="/theme/img/exhibits/tml/2017/wr-imgs/IMG_0202.JPG"><img src="/theme/img/exhibits/tml/2017/wr-imgs/IMG_0202.JPG" alt="Students and faculty viewing the exhibit during the opening reception" style="float: left; width: 45%; margin: 5px;" ></a>

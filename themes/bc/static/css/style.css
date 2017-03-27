@@ -4963,6 +4963,7 @@ html {
 .middle_down .article_content_two .text {
    max-width: 875px;
    margin: 0 auto 25px;
+   display: inline-block;
 }
 
 @media ( max-width: 1199px ) {
@@ -4986,6 +4987,7 @@ html {
     .middle_top .article_content .text {
        max-width: 875px;
        margin: 0 auto;
+       display: inline-block;
     }
 
     .article_content_two {
@@ -5013,6 +5015,7 @@ html {
     .middle_top .article_content_two .text, .default .article_content_two .text,  .right .article_content_two .text {
        max-width: 875px;
        margin: 0 auto;
+        display: inline-block;
     }
 }
 

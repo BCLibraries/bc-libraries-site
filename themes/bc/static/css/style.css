@@ -1459,7 +1459,6 @@ a.announcelink {
     }
 }
 
-
 .column_hours {
     border-right: 0px;
     width: 50%;
@@ -1480,7 +1479,7 @@ a.announcelink {
 /* SOCIAL MEDIA CSS */
 
 #socialmedia {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 #socialmedia ul li {
@@ -1489,19 +1488,16 @@ a.announcelink {
     margin: 0;
     padding: 0px 3px;
 }
-#socialmedia ul li:first-child {
-    padding: 0 3px 0 0;
-}
 
 .mediablock {
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     display: block;
     background: #32758f;
     text-align: center;
-    padding: 4px 0;
+    padding: 2px 0; 
     color: #fff !important;
-    font-size: 20px;
+    font-size: 18px;
     float: left;
     border-bottom: 3px solid #05506d;
 }
@@ -1513,28 +1509,28 @@ a.announcelink {
 }
 
 #media_news:after {
-    font-family: 'icomoon';
-    content: "\e684";
+    font-family: 'FontAwesome';
+    content: "\f09e";
 }
 
 #media_facebook:after {
-    font-family: 'icomoon';
-    content: "\e63f";
+    font-family: 'FontAwesome';
+    content: "\f09a";
 }
 
 #media_flickr:after {
-    font-family: 'icomoon';
-    content: "\e641";
+    font-family: 'FontAwesome';
+    content: "\f16e";
 }
 
 #media_twitter:after {
-    font-family: 'icomoon';
-    content: "\e640";
+    font-family: 'FontAwesome';
+    content: "\f099";
 }
 
 #media_youtube:after {
-    font-family: 'icomoon';
-    content: "\e645";
+    font-family: 'FontAwesome';
+    content: "\f16a";
 }
 
 #media_linkedin:after {
@@ -1545,7 +1541,6 @@ a.announcelink {
 #media_instagram:after {
     font-family: 'FontAwesome';
     content: "\f16d";
-    font-size: 22px;
 }
 
 
@@ -2126,7 +2121,7 @@ nav select {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0;
     float: right;
-    margin: 115px 0px 0;
+    margin: 75px 0px 0;
     padding: 13px;
     position: relative;
     width: 100%;

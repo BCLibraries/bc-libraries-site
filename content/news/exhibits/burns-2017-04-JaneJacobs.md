@@ -1,6 +1,6 @@
 Date: 2017-04-03 01:01 
 Date_range: April 10 - June 23, 2017
-Title: Dark Age Ahead or Systems of Survial? 
+Title: Dark Age Ahead or Systems of Survival? 
 Subtitle: Jane Jacobs and the Ethics of Economies
 Sponsor: Sponsored by the Boston College Libraries
 Location: burns

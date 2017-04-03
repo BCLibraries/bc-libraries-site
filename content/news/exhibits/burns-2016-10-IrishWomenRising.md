@@ -9,7 +9,7 @@ Slug: irishwomen
 Image: 2016/10-irishwomen.png
 Image_thumb: 2016/10-irishwomen-thumb.png
 Image_alt: Irish Women Rising exhibit poster
-Active: yes
+Active: no
 Style: right
 
   <p>In the struggle for national independence, Irish   women had to fight both British imperialism and Irish sexism. They   organized politically and militarily. They fought alongside men, went to   jail, and on hunger strikes.</p>

@@ -12,7 +12,7 @@ ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21463680170001021
 Bookcover: 2017/01/hopkins-cover.png
 Image_alt: Book cover
-Oneoff: yes
+Oneoff: no
 
 Why do Republican politicians promise to rein in government, only to face repeated rebellions from Republican voters and media critics for betraying their principles? Why do Democratic politicians propose an array of different policies to match the diversity of their supporters, only to become mired in stark demographic divisions over issue priorities? In short, why do the two parties act so differently-whether in the electorate, on the campaign trail, or in public office?
 

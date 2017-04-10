@@ -1,4 +1,4 @@
-Date: 2017-01-20 01:01
+Date: 2017-01-26 01:01
 Title: Asymmetric Politics
 By:
 Author_firstname: Dave

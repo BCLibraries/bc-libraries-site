@@ -4071,10 +4071,6 @@ padding: 0 25px 0 0;
     overflow: hidden;
 }
 
-.old_facpub:nth-child(odd) {
-    border-right: 1px solid #dadada;
-}
-
 .old_facpub:last-child, .old_facpub:nth-last-child(2) {
     border-bottom: 0px;
 }

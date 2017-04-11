@@ -1,6 +1,6 @@
 Title: Faculty Publication Highlight: Dave Hopkins 
 Destination: http://bit.ly/2oY6D7E
-Date: 2017-04-10 01:01 
+Date: 2017-04-11 01:02
 Tags: news, tags 
 Slug: news-facpub-hopkins
 Expired: no

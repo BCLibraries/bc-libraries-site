@@ -1,6 +1,6 @@
 Title: Join us in O'Neill Library for the Anti-All-Nighter
 Destination: 
-Date: 2017-04-18 01:01 
+Date: 2017-04-19 01:01 
 Tags: news, tags 
 Slug: news-all-nighter-s17
 Expired: no
@@ -8,7 +8,7 @@ ShowText: yes
 Image_alt: A stylized imaged of a person meditating  
 Image_thumb: 2017-04/allnighter-thumbs.png
 
-Anti-All-Nighter Schedule for April 2017, located in the O'Neill Library Reading Room
+Anti-All-Nighter Schedule for April 19 2017, located in the O'Neill Library Reading Room
 
 <strong>Desk Yoga, session one:</strong> 8:00pm - 8:30pm <br />
 <strong>Desk Yoga, session two:</strong> 8:30pm - 9:00pm <br />

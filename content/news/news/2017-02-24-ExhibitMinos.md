@@ -2,7 +2,7 @@ Title: New O'Neill Level Three Gallery Exhibit: Minos
 Destination: http://library.bc.edu/exhibits/2017/Feb/exhibit-minos/
 Date: 2017-02-24 01:01 
 Tags: news, tags 
-Slug: exhibit-minos
+Slug: news-exhibit-minos
 Expired: no
 ShowText: yes
 Image_alt: A graphite drawing of a minotour

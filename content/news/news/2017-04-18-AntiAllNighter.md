@@ -3,7 +3,7 @@ Destination:
 Date: 2017-04-19 01:01 
 Tags: news, tags 
 Slug: news-all-nighter-s17
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A stylized imaged of a person meditating  
 Image_thumb: 2017-04/allnighter-thumbs.png

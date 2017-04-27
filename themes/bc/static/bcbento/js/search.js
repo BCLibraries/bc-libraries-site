@@ -32,12 +32,12 @@ $.fn.bcBento = function (services, service_url_base) {
         var $target, $heading, url;
 
         $target = $('#' + service.name + '-results');
-        $heading = $('#' + service.name + '-results h3');
+        $heading = $('#' + service.name + '-results .search-heading');
 
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = 'https://library.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/,'+').replace('"','%22');
 
         // Clear old results.

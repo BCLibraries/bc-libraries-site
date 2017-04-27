@@ -20,11 +20,11 @@
                 </li>
                 <ul class="search_float searchpage">
                     <li>
-                        <a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced search</a>
+                        <a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" title="Advanced search">Advanced
+                            search</a>
                     </li>
                 </ul>
             </ul>
-
 
 
             <!-- Tab panes -->
@@ -37,7 +37,8 @@
                                     more</label>
                                 <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
+                                    <button class="btn btn-default" type="submit" id="submit-main">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -54,6 +55,7 @@
                                 <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, & more">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -69,6 +71,7 @@
                                 <input type="text" id="article-search" name="any" placeholder="Find journal articles">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit">
+                                        <span class="accessibility-text">Submit search</span>
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </span>
@@ -85,7 +88,8 @@
     <!-- BRIEF EXPLANATION OF BENTO SEARCH BOX CAN GO HERE. -->
     <div class="block_whatam">
         <p><strong>What am I searching?</strong> <span class="questionball"></span></p>
-        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search tool.</a></p>
+        <p><a href="http://libguides.bc.edu/whatamisearching" target="_self">Learn more about the new library search
+            tool.</a></p>
     </div>
 
 </div>
@@ -98,24 +102,24 @@
         <!-- The primary results box. -->
         <div id="primary">
             <div id="catalog-results" class="result-container">
-                <h3 id="booksh3">Books &amp; more</h3>
+                <h2 id="booksh3" class="search-heading">Books &amp; more</h2>
             </div>
         </div>
 
         <!-- Secondary results box. -->
         <div id="secondary">
             <div id="articles-results" class="result-container">
-                <h3 id="articleh3">Articles</h3>
+                <h2 id="articleh3" class="search-heading">Articles</h2>
             </div>
         </div>
 
         <!-- Tertiary results box.-->
         <div id="tertiary">
             <div id="librarians-results" class="result-container librarians">
-                <h3 id="librarianh3" style="display: none;">Librarians</h3>
+                <h2 id="librarianh3" style="display: none;" class="search-heading">Librarians</h2>
             </div>
             <div id="website-results" class="result-container website">
-                <h3 id="subjecth3" style="display: none">Website</h3>
+                <h2 id="subjecth3" style="display: none" class="search-heading">Website</h2>
             </div>
         </div>
 
@@ -130,20 +134,24 @@
 <script id="librarians-template" type="text/x-template">
     {{#if .}}
     <div class="results-highlight">
-        <h3 id="librarianh3" class="visible-also-try">Librarians</h3>
+        <h2 id="librarianh3" class="visible-also-try">Librarians</h2>
         <ul>
             {{#.}}
             <li>
                 <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
 
                 <div class="librarian-info">
-                    <h4 class="librarian-name"><a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a></h4>
+                    <h3 class="librarian-name">
+                        <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a>
+                    </h3>
                     <p class="guide-description">{{display_subjects}}</p>
                 </div>
             </li>
             {{/.}}
         </ul>
-        <p class="all-librarians"><a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See all subject librarians</a></p>
+        <p class="all-librarians">
+            <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
+                all subject librarians</a></p>
     </div>
     {{/if}}
 </script>
@@ -151,24 +159,32 @@
 <script id="website-template" type="text/x-template">
     {{#if items}}
     <div class="results-highlight">
-        <h3 id="subjecth3" class="visible-also-try">Website</h3>
+        <h2 id="subjecth3" class="visible-also-try">Website</h2>
         <div class="more-results-link">
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}} results&hellip;&nbsp;</a>
+
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+                {{total_results}} results&hellip;&nbsp;</a>
+
         </div>
-        <ul>
+        <div>
             {{#items}}
-            <li class="bento-result">
-                <div><a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a><br /> in <a href="{{guide_url}}"class="guide-title">{{guide_title}}</a></div>
+            <div class="bento-result">
+                <div>
+                    <h3>
+                        <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a>
+                    </h3>
+                    <br/>
+                    in <a href="{{guide_url}}" class="guide-title">{{guide_title}}</a></div>
                 {{#if pages}}
                 <ul class="guide-pages">
-                {{#pages}}
+                    {{#pages}}
                     <li><a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{title}}</a></li>
-                {{/pages}}
+                    {{/pages}}
                 </ul>
                 {{/if}}
-            </li>
+            </div>
             {{/items}}
-        </ul>
+        </div>
     </div>
     {{/if}}
 
@@ -177,20 +193,23 @@
 <script id="catalog-template" type="text/x-template">
 
     <div class="more-results-link">
-        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}} results&hellip;&nbsp;</a>
+        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}}
+            results&hellip;&nbsp;</a>
     </div>
 
-    <ul id="catalog-results bento-results">
+    <div id="catalog-results bento-results">
 
         {{#items}}
-        <li class="bento-result">
+        <div>
 
-            <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}}">
+            <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result">
 
 
-                <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
-                    {{truncate '100' title}}
-                </a>
+                <h3>
+                    <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                        {{truncate '100' title}}
+                    </a>
+                </h3>
 
                 {{date}}
 
@@ -231,18 +250,20 @@
                         {{/avail}}
                     </ul>
                     {{#if getit}}
-                    <div class="available-online"><a href="{{link}}" onclick="trackOutboundLink('{{link}}'); return false;">Available online</a></div>
+                    <div class="available-online">
+                        <a href="{{link}}" onclick="trackOutboundLink('{{link}}'); return false;">Available online</a>
+                    </div>
                     {{/if}}
                 </div>
             </div>
 
             {{#if covers.[0]}}
-            <img src="{{covers.[0]}}" class="cover-image">
+            <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
             {{/if}}
 
-        </li>
+        </div>
         {{/items}}
-    </ul>
+    </div>
 
     {{#if worldcat_results}}
     <div class="worldcat-results">
@@ -268,16 +289,19 @@
 
 <script id="articles-template" type="text/x-template">
     <div class="more-results-link">
-        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}} results&hellip;&nbsp;</a>
+        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all {{total_results}}
+            results&hellip;&nbsp;</a>
     </div>
 
-    <ul>
+    <div>
         {{#items}}
-        <li class="bento-result">
+        <div class="bento-result">
 
-            <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
-                {{truncate '100' title}}
-            </a>
+            <h3>
+                <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                    {{truncate '100' title}}
+                </a>
+            </h3>
 
             {{date}}
 
@@ -285,9 +309,9 @@
             <div class="creator">{{truncate '80' creator}}</div>
             {{/if}}
             <div class="publisher">{{{part_of}}}</div>
-        </li>
+        </div>
         {{/items}}
-    </ul>
+    </div>
 </script>
 
 <script id="dym-template" type="text/x-template">

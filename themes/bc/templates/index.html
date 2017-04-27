@@ -122,8 +122,8 @@
 <!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
 
     <div class="list_carousel">
-        <a id="prev" href="#" class="newsbutton prev"><span class="glyphicon glyphicon-chevron-left" id="carousel-prev"></span></a>
-        <a id="next" href="#" class="newsbutton next"><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
+        <a id="prev" href="#" class="newsbutton prev"><span class="accessibility-text">Carousel move left</span><span class="glyphicon glyphicon-chevron-left" id="carousel-prev"></span></a>
+        <a id="next" href="#" class="newsbutton next"><span class="accessibility-text">Carousel move right</span><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
 
         <ul id="newsslider">
 
@@ -133,18 +133,17 @@
 
                 {% set count = count + 1 %}
                 {% if count < 11 %}
-
                 <li>
                     <a href="{% if article.destination %}{{ article.destination }}{% else %}{{ article.url }}{% endif %}" id="{{ article.slug }}">
-                    <div class="newsitem">
-                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                        <div class="newstext {{ article.showtext }}">
-                            <p class="newslink">{{ article.title }}</p>
+                        <div class="newsitem">
+                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+                            <div class="newstext {{ article.showtext }}">
+                                <p class="newslink">{{ article.title }}</p>
+                            </div>
                         </div>
-                        </a>
-                    </div>
+                    </a>
                 </li>
-                 {% endif %}
+                {% endif %}
             {% endfor %}
 
         

@@ -1,5 +1,5 @@
 Date: 2017-01-19 01:02
-Title: The BBC's 'Irish Troubles'
+Title: The BBC's Irish Troubles
 By:
 Author_firstname: Robert J
 Author_lastname: Savage

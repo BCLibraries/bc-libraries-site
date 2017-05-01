@@ -72,6 +72,7 @@ h1 {
     text-transform: uppercase;
 }
 
+.h2style,
 h2 {
     color: #05506d;
     font-size: 20px;
@@ -81,6 +82,7 @@ h2 {
     text-transform: uppercase;
 }
 
+.h3style,
 h3 {
     color: #05506d;
     font-size: 18px;
@@ -90,6 +92,7 @@ h3 {
     text-transform: uppercase;
 }
 
+.h4style,
 h4, h5, h6 {
     color: #05506d;
     font-size: 16px;
@@ -2325,18 +2328,25 @@ nav select {
 .yamm .dropdown-menu li > a p.tuck {
     padding: 0 0 0 12px;
 }
-
-.yamm .dropdown-menu li > h4 a {
+.yamm .dropdown-menu li > .h4style {
+    color: #05506d;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0 10px !important;
+    padding: 0;
+    text-transform: none;
+}
+.yamm .dropdown-menu li > .h4style a {
     display: inline-block;
     width: 100%;
 }
 @media ( max-width: 768px ) {
-    .yamm .dropdown-menu li > h4  {
+    .yamm .dropdown-menu li > .h4style  {
         margin: 0 !important;
         font-size: 18px;
         padding: 0px;
     }
-    .yamm .dropdown-menu li > h4 a {
+    .yamm .dropdown-menu li > .h4style a {
         font-size: 18px;
         padding: 10px;
     }
@@ -2344,8 +2354,8 @@ nav select {
 
 .yamm .dropdown-menu li > a:hover,
 .yamm .dropdown-menu li > a:focus,
-.yamm .dropdown-menu li > h4 a:hover,
-.yamm .dropdown-menu li > h4 a:focus {
+.yamm .dropdown-menu li > .h4style a:hover,
+.yamm .dropdown-menu li > .h4style a:focus {
     color: #990000;
     text-decoration: none;
     background: #E0E0E0;
@@ -2527,10 +2537,10 @@ nav select {
 }
 
 @media ( max-width: 768px ) {
-    .yamm .dropdown-menu li > h4  {
+    .yamm .dropdown-menu li > .h4style  {
         margin: 0 !important;
     }
-    .yamm .dropdown-menu li > h4 a {
+    .yamm .dropdown-menu li > .h4style a {
         font-size: 18px;
         padding: 10px;
     }
@@ -2612,11 +2622,11 @@ nav select {
     }
 }
 
-.pane_info h3 a {
+.pane_info .h3style a {
     padding: 0 35px 0 0;
 }
 
-.pane_info h3 a:after {
+.pane_info .h3style a:after {
     font-family: 'icomoon';
     content: "\e682";
     padding: 0 0  0 5px;
@@ -2625,7 +2635,7 @@ nav select {
 }
 
 
-.pane_info h4 {
+.pane_info .h4style {
     padding: 0;
 }
 

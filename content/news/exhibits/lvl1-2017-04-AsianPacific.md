@@ -9,7 +9,7 @@ Slug: untold-stories
 Image: 2017/04-asianpacific.png
 Image_thumb: 2017/04-asianpacific-thumb.png
 Image_alt: Untold Stories  poster
-Active: yes
+Active: no
 Style: right
 
 “April is Asian Pacific American Heritage Month (APAHM) at Boston College and this year our focus is on the many faces of the Asian American community. We are hosting the Untold Stories campaign to spread awareness about the diversity within the Asian American and Pacific Islander community. We hope that by creating a space for those inside of the community to share their stories about their AAPI identity, we will create more understanding and solidarity in the BC community at large.”  -<em>Joon Park, A&S '18</em>

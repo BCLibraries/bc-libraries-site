@@ -1,5 +1,5 @@
 Title: Faculty Publication Highlight: Margaret Lombe    
-Destination: http://library.bc.edu/facpub/2017/Feb/lombe-chrildren/
+Destination: http://library.bc.edu/facpub/2017/Feb/lombe-chrildren
 Date: 2017-04-25 01:01 
 Tags: news, tags 
 Slug: news-facpub-lombe

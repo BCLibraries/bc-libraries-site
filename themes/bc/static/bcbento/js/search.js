@@ -24,9 +24,9 @@ var trackOutboundLink = function (url) {
     }
 };
 
-$.fn.bcBento = function (services, service_url_base) {
+$.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, i, max, api_version;
+    var search_string, templates, source, loading_timers, api_version;
 
     api_version = '0.0.9.2';
 
@@ -55,10 +55,10 @@ $.fn.bcBento = function (services, service_url_base) {
                 url: url,
                 dataType: 'jsonp',
                 cache: true,
-                success: function (data, status, xhr) {
-                    successfulSearch(data, status, xhr, service, $target, $heading);
+                success: function (data) {
+                    successfulSearch(data, service, $target, $heading);
                 },
-                error: function (xhr, status) {
+                error: function () {
                     clearTimeout(loading_timers[service.name]);
                     $target.removeClass('loading');
                 }
@@ -66,8 +66,8 @@ $.fn.bcBento = function (services, service_url_base) {
         );
     }
 
-    function successfulSearch(data, status, xhr, service, $target, $heading) {
-        if (typeof service.postprocess != 'undefined') {
+    function successfulSearch(data, service, $target, $heading) {
+        if (typeof service.postprocess !== 'undefined') {
             service.postprocess(data);
         }
 
@@ -169,7 +169,7 @@ $.fn.bcBento = function (services, service_url_base) {
 $(document).ready(function () {
 
     // Define services
-    var catalog = {
+    const catalog = {
         name: 'catalog',
         max_results: 8,
         postprocess: function (data) {
@@ -180,12 +180,12 @@ $(document).ready(function () {
         }
     };
 
-    var articles = {
+    const articles = {
         name: 'articles',
-        max_results: 8,
+        max_results: 8
     };
 
-    var librarians = {
+    const librarians = {
         name: 'librarians',
         max_results: 2,
         postprocess: function (data) {

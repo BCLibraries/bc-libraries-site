@@ -35,7 +35,7 @@
                             <form method="get" action="/search" id="bcbento-search">
                                 <label for="typeahead" class="accessibility-text">Search articles, books, journals, and
                                     more</label>
-                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more">
+                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, & more" role="search">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="submit" id="submit-main">
                                         <span class="accessibility-text">Submit search</span>
@@ -102,6 +102,7 @@
         <!-- The primary results box. -->
         <div id="primary">
             <div id="catalog-results" class="result-container">
+                <span class="results-count accessibility-text" aria-live="polite"></span>
                 <h2 id="booksh3" class="search-heading">Books &amp; more</h2>
             </div>
         </div>
@@ -109,6 +110,7 @@
         <!-- Secondary results box. -->
         <div id="secondary">
             <div id="articles-results" class="result-container">
+                <span class="results-count accessibility-text" aria-live="polite"></span>
                 <h2 id="articleh3" class="search-heading">Articles</h2>
             </div>
         </div>

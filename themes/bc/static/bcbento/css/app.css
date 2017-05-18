@@ -295,10 +295,6 @@
     color: #999;
 }
 
-li.bento-result {
-    margin-bottom: 1.5em;
-}
-
 .dym-notice {
     display: inline-block;
     zoom: 1;
@@ -310,4 +306,15 @@ li.bento-result {
 div#didyoumean-holder {
     text-align: center;
     height: 3em;
+}
+
+.bento-result {
+    margin-bottom: 1.7em
+}
+
+#bentoboxresults h2 {
+    font-weight: bold;
+    text-transform: none;
+    font-size: 22px;
+    color: #790009;
 }

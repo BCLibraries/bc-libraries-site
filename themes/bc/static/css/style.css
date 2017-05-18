@@ -3255,10 +3255,8 @@ nav select {
 }
 
 #bentoboxresults h3 {
-    font-weight: bold;
     text-transform: none;
-    font-size: 22px;
-    color: #790009;
+    margin: 0
 }
 
 #all-results .cover-image {

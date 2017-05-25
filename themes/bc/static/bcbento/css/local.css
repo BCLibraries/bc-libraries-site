@@ -13,7 +13,8 @@
 /** All results **/
 
 #all-results #primary .result-container h3, #all-results #secondary .result-container h3, #all-results #tertiary .result-container h3 {
-    display: inline-block
+    display: inline-block;
+    padding: 0;
 }
 
 /** More results link **/
@@ -45,7 +46,7 @@
     clear: both;
 }
 
-#all-results .result-container li .title, .result-container li a, p.all-librarians a {
+#all-results .result-container .title, .result-container a, p.all-librarians a {
     text-decoration: none;
     color: #0075b0;
     font-weight: bold;
@@ -209,6 +210,11 @@ input#typeahead {
 
 #catalog-results {
     min-height: 500px;
+}
+
+#all-results img {
+    padding: 0;
+    border: none
 }
 
 .librarian-name a {

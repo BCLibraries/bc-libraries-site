@@ -4,12 +4,12 @@
 'use strict';
 
 /**
-* Function that tracks a click on an outbound link in Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-* using 'navigator.sendBeacon' in browser that support it.
-*/
-var trackOutboundLink = function(url) {
+ * Function that tracks a click on an outbound link in Analytics.
+ * This function takes a valid URL string as an argument, and uses that URL string
+ * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+ * using 'navigator.sendBeacon' in browser that support it.
+ */
+var trackOutboundLink = function (url) {
     if (ga.q) {
         // Google Analytics is blocked
         // http://veithen.github.io/2015/01/24/outbound-link-tracking.html
@@ -17,14 +17,16 @@ var trackOutboundLink = function(url) {
     } else {
         ga('send', 'event', 'outbound', 'click', url, {
             'transport': 'beacon',
-            'hitCallback': function(){document.location = url;}
+            'hitCallback': function () {
+                document.location = url;
+            }
         });
     }
-}
+};
 
-$.fn.bcBento = function (services, service_url_base) {
+$.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, i, max, api_version;
+    var search_string, templates, source, loading_timers, api_version;
 
     api_version = '0.0.9.2';
 
@@ -32,13 +34,13 @@ $.fn.bcBento = function (services, service_url_base) {
         var $target, $heading, url;
 
         $target = $('#' + service.name + '-results');
-        $heading = $('#' + service.name + '-results h3');
+        $heading = $('#' + service.name + '-results .search-heading');
 
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = '/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
-        url = url.replace(/%2B/,'+').replace('"','%22');
+        url = 'https://library.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = url.replace(/%2B/, '+').replace('"', '%22');
 
         // Clear old results.
         $heading.nextAll().remove();
@@ -53,10 +55,10 @@ $.fn.bcBento = function (services, service_url_base) {
                 url: url,
                 dataType: 'jsonp',
                 cache: true,
-                success: function (data, status, xhr) {
-                    successfulSearch(data, status, xhr, service, $target, $heading);
+                success: function (data) {
+                    successfulSearch(data, service, $target, $heading);
                 },
-                error: function (xhr, status) {
+                error: function () {
                     clearTimeout(loading_timers[service.name]);
                     $target.removeClass('loading');
                 }
@@ -64,8 +66,8 @@ $.fn.bcBento = function (services, service_url_base) {
         );
     }
 
-    function successfulSearch(data, status, xhr, service, $target, $heading) {
-        if (typeof service.postprocess != 'undefined') {
+    function successfulSearch(data, service, $target, $heading) {
+        if (typeof service.postprocess !== 'undefined') {
             service.postprocess(data);
         }
 
@@ -73,11 +75,23 @@ $.fn.bcBento = function (services, service_url_base) {
             data.items = data.items.slice(0, service.max_results);
         }
 
+        buildResultCount(data.total_results, service.name);
+
         if (templates[service.name]) {
             var html = templates[service.name](data);
             clearTimeout(loading_timers[service.name]);
             $target.removeClass('loading');
             $heading.after(html);
+        }
+    }
+
+    function buildResultCount(total_results, service_name) {
+        var announce_selector = '#' + service_name + '-results .results-count',
+            message = total_results + ' ' + service_name + ' results found',
+            aria_results_count;
+        aria_results_count = document.querySelector(announce_selector);
+        if (aria_results_count) {
+            aria_results_count.textContent = message;
         }
     }
 
@@ -155,7 +169,7 @@ $.fn.bcBento = function (services, service_url_base) {
 $(document).ready(function () {
 
     // Define services
-    var catalog = {
+    const catalog = {
         name: 'catalog',
         max_results: 8,
         postprocess: function (data) {
@@ -164,14 +178,14 @@ $(document).ready(function () {
             html = Handlebars.compile(source)(data);
             $('#didyoumean-holder').append(html);
         }
-    }
-
-    var articles = {
-        name: 'articles',
-        max_results: 8,
     };
 
-    var librarians = {
+    const articles = {
+        name: 'articles',
+        max_results: 8
+    };
+
+    const librarians = {
         name: 'librarians',
         max_results: 2,
         postprocess: function (data) {
@@ -187,7 +201,7 @@ $(document).ready(function () {
         max_results: 5
     };
 
-    var service_url_base = ''
+    var service_url_base = '';
 
     $(document).bcBento([catalog, articles, librarians, website], service_url_base);
 });

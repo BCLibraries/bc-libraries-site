@@ -160,11 +160,10 @@
     <div class="announcements">
         <h2>Announcements</h2>
 
-        {% set count = 0 %}
         {% for article in articles if article.category.name == "announcements" and article.expired != "yes" %}
 
             {% set count = count + 1 %} 
-            {% if count < 3 %}
+            {% if loop.index < 3 %}
 
                 <div>
                     <a href="{{ article.url }}" class="announcelink" id="{{ article.slug }}">{{ article.title }}</a><br />

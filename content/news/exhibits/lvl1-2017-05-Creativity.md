@@ -1,5 +1,5 @@
 Date: 2017-05-24 01:01 
-Date_range: July - September 2017
+Date_range: June - September 2017
 Title: Celebrating Creativity of the Boston College Libraries' Staff 
 Subtitle: 
 Sponsor: Sponsored by the Boston College Libraries

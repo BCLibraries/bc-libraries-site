@@ -1479,6 +1479,22 @@ a.announcelink {
     line-height: 1;
 }
 
+#footer .links {
+    font-style: normal;
+}
+
+#footer .links a {
+    margin: 0 .75em;
+}
+
+#footer .links a:first-child {
+    margin-left: 0;
+}
+
+#footer .links a:last-child {
+    margin-right: 0;
+}
+
 /* SOCIAL MEDIA CSS */
 
 #socialmedia {

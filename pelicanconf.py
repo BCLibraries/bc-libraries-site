@@ -21,6 +21,10 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+CACHE_CONTENT = True
+CONTENT_CACHING_LAYER = 'reader'
+LOAD_CONTENT_CACHE = True
+
 USE_FOLDER_AS_CATEGORY = True
 
 ARTICLE_URL = '{category}/{date:%Y}/{date:%b}/{slug}/'

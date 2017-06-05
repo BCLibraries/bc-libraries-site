@@ -845,6 +845,8 @@
             ga('send', 'event', 'bc-searchbutton', 'click');
         });
     });
+    // Initialize bootstrap popover
+    $(function () { $('[data-toggle="tooltip"]').tooltip() });
     </script>
 
     {% block pagescripts %}

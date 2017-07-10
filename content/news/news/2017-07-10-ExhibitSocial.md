@@ -1,6 +1,6 @@
 Title: Burns Library Exhibit: Being Social Before Social Media
 Destination: http://library.bc.edu/exhibits/2017/Jul/being-social/
-Date: 2010-10-01 01:01 
+Date: 2017-07-10 01:01 
 Tags: news, tags 
 Slug: news-exhibit-being-social
 Expired: no

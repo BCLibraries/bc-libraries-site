@@ -9,7 +9,7 @@ Slug: jane-jacobs
 Image: 2017/04-jane.png
 Image_thumb: 2017/04-jane-thumb.png
 Image_alt: Photo collage throughout Jane Jacob's life plus exhibit poster
-Active: yes
+Active: no
 Style: left
 
 Are we headed for another "dark age" or do the moral foundations of our commerce and politics possess the resources and resilience to rebound? Celebrated urban theorist and activist Jane Jacobs examined these questions in her later works, presented in this exhibition drawn from her personal papers held in Burns Library.

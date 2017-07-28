@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+body {
+    background: #fff 0% 0%;
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-size: 14px;
+    padding: 0;
+    line-height: 1.75;
+}
+
 /* temp overrides */
 .homepagerefresh .accessibility-text {
     display: none;
@@ -7,7 +16,8 @@
 
 /*  boostrap overrides  */
 .row {
-    padding: 10px 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* top level maroon bar */
@@ -23,12 +33,36 @@
     background-color: blue;
 }
 
+.homepagerefresh #db-rg-hours {
+}
+.homepagerefresh #db-rg-hours .list-group-item {
+    border:none;
+}
+
 .homepagerefresh #quick-links {
     background-color:#dfddcf;
+    text-align: center;
+}
+.homepagerefresh #quick-links h3 {
+    text-align: center;
+}
+.homepagerefresh #quick-links a {
+    text-decoration: none;
+}
+.homepagerefresh #quick-links p {
+    font-style: italic;
+    padding-top: .5em;
 }
 
 .homepagerefresh #ds-highlight {
     background-color: #ccc;
+}
+
+.homepagerefresh #scholarship {
+    text-align: center;
+}
+.homepagerefresh #scholarship h3 {
+    text-transform: uppercase;
 }
 
 .homepagerefresh #exhibit-highlight {

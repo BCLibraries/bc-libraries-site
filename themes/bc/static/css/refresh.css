@@ -2,5 +2,51 @@
 
 /* temp overrides */
 .homepagerefresh .accessibility-text {
-	display: none;
+    display: none;
 }
+
+/*  boostrap overrides  */
+.row {
+    padding: 10px 0;
+}
+
+/* top level maroon bar */
+#bclib-top-bar {
+    background: #8a100b no-repeat 100% 0%;
+    border-bottom: 1px solid #dccaa0;
+    color: #fff;
+    height: 40px;
+}
+
+/* content sections */
+.homepagerefresh #header {
+    background-color: blue;
+}
+
+.homepagerefresh #quick-links {
+    background-color:#dfddcf;
+}
+
+.homepagerefresh #ds-highlight {
+    background-color: #ccc;
+}
+
+.homepagerefresh #exhibit-highlight {
+    background-color: cyan;
+}
+
+.homepagerefresh #digcol-highlight {
+    background-color: #C0C0C0;
+}
+
+.homepagerefresh #lib-footer {
+    background-color: #8a100b;
+    color: #fff;
+    border-top: 4px #b29d6c solid;
+}
+
+.homepagerefresh #bc-footer {
+    background-color: #501315;
+    color: #b7b7b7;
+}
+

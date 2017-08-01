@@ -21,12 +21,48 @@ body {
 }
 
 /* top level maroon bar */
-#bclib-top-bar {
+#bclib-header {
     background: #8a100b no-repeat 100% 0%;
     border-bottom: 1px solid #dccaa0;
     color: #fff;
     height: 40px;
 }
+
+#bclib-header.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bclib-header .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#bclib-header .row {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width: 992px) {
+    #bclib-header .col-md-12 {
+        width: 100%;
+        float:left;
+    }
+}
+
+#bclib-header .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* end top level maroon bar */
 
 /* content sections */
 .homepagerefresh #header {

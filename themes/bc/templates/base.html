@@ -144,15 +144,8 @@
 
     <a href="#midlevelcontainer" class="accessibility-text">Skip to main content</a>
 
-    <!-- avoid using boostrap for bclin-top-bar -->
-    <!-- we want to make this modular and not all systems will have bootstrap installed -->
-    <div class="container-fluid" id="bclib-top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">Boston College Libraries</div>
-            </div>
-        </div>
-    </div>
+    {# modular bc maroon header #}
+    {% include 'bclib-header.html' %}
 
     <!-- HEADER START -->
     <div class="container-fluid" id="header">

@@ -184,10 +184,27 @@ body {
 /* end top level maroon bar */
 
 
-/* content sections */
-.homepagerefresh #header {
-    background-color: blue;
+.homepagerefresh .megamenu-container {
+    margin: 0
+    padding: 0;
 }
+
+/* content sections */
+
+/* header */
+.homepagerefresh #header {
+    background-color: #ccc;
+}
+.homepagerefresh #header .row {
+    padding-top: 0px;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+}
+
 
 .homepagerefresh #db-rg-hours {
 }

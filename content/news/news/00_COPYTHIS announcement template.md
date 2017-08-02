@@ -4,7 +4,7 @@ Tags: news, announcement
 Expired: yes or no 
 Readmore: yes or no
 Slug: announcement-friendly-url 
-Summary: Will appear on homepage.
+Summary: Will appear on homepage. No more than 175 characters.
 
 Article content will go on this line. This is for longer text on individual news page. FYI to link: [linked text](http://www.google.com).
 

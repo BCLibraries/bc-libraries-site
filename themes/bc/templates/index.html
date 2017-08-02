@@ -1,226 +1,260 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!-- TOP ROW -->
-<div class="row" style="line-height: 0;">
-
-    <!-- BEGIN QUICK LINKS BLOCK -->
-    <div class="block_right">
-         <div id="block_quick_links">
-            <ul style="border-right: 1px solid #dadada;">
-                <li><a href="http://libguides.bc.edu/contact" target="_self" id="ql-contact-us">Contact us</a></li>
-                <li><a href="http://libcal.bc.edu/booking/oneill" target="_self" id="ql-reserve-a-study-room">Reserve a Study Room</a></li>
-                <li><a href="http://libguides.bc.edu/ask-a-librarian" target="_self" id="ql-ask-a-librarian">Ask a Librarian</a></li>
-                <li><a href="http://libguides.bc.edu/hours" target="_self" id="ql-hours">Library Hours</a></li>
-                <li><a href="http://libguides.bc.edu/refworks-login" target="_self" id="ql-refworks">RefWorks</a></li>
-            </ul>
-
-            <ul style="padding-left: 35px;">
-                <li><a href="http://answers.bc.edu/index.php" target="_self" id="ql-faq">Library FAQs</a></li>
-                <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" target="_self" id="ql-interlibrary-loan">Interlibrary Loan</a></li>
-                <li><a href="http://arc.bc.edu/reserves" target="_self" id="ql-course-reserves">Course Reserves</a></li>
-                <li><a href="https://bc.on.worldcat.org" target="_self" id="ql-worldcat">WorldCat</a></li>
-                <li><a href="http://bclib.bc.edu/a-to-z" target="_self" id="ql-journals">Journals</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div id="block_search">
-
-        <div role="tabpanel" id="tabpanel">
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab" id="search-all">All</a></li>
-                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab" id="search-books">Books</a></li>
-                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab" id="search-articles">Articles</a></li>
-                <ul class="search_float">
-                <li><a href="http://libguides.bc.edu/whatamisearching" id="search-what">What am I searching?</a> </li>
-                <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" id="seach-advanced">Advanced search</a></li>
-                </ul>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="all">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search" id="bcbento-search">
-                                <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
-                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, &amp; more" data-toggle="tooltip" title='<a href="https://library.bc.edu/new-catalog">Library search is getting a new look. Try it today!</a>' data-trigger="focus" data-placement="top" data-container="body" data-html="true">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-main">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="books">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
-                                <label for="book-search" class="accessibility-text">Search books, media, and more</label>
-                                <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, &amp; more">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-books">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="articles">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search-services/primo-articles" id="bcbento-search">
-                                <label for="article-search" class="accessibility-text">Search journal articles</label>
-                                <input type="text" id="article-search" name="any" placeholder="Find journal articles">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-journals">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+<!-- HEADER START -->
+<div class="container-fluid" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 megamenu-container">
+                {% include 'megamenu.html' %}
             </div>
-
+            <div class="col-md-12">search box</div>
+            <div class="col-md-12">caption link</div>
         </div>
-
     </div>
+</div>
+<!-- HEADER END -->
 
-    <div id="block_databases">
+<!-- DB RG HOURS BOX START -->
+<div class="container" id="db-rg-hours">
+    <div class="row">
+        <div class="col-md-4">
+            <h3><a href="#">Databases</a></h3>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="#">Start Your Research</a></h3>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3><a href="#">Hours</a></h3>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- DB RG HOURS BOX END -->
+
+<!-- QUICK LINKS START -->
+<div class="container-fluid" id="quick-links">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#">Study Rooms</a>
+                <p>Reserve a study room in O'Neill Library</p>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Ask A Librarian</a>
+                <p>Get help with your research</p>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Interlibrary Loan</a>
+                <p>Request books, articles, and more from other libraries</p>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Worldcat</a>
+                <p>Search libraries worldwide</p>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Course Reserves</a>
+                <p>Find readings for your classes</p>
+            </div>
+            <div class="col-md-2">
+                <a href="#">Refworks</a>
+                <p>Save and manage citations</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- QUICK LINKS END -->
+
+<!-- NEWS START -->
+<div class="container" id="news">
+    <div class="row">
+        <div class="col-md-12"><h3><a href="">News</a></h3></div>
+        <div class="col-md-3">news 1</div>
+        <div class="col-md-3">news 2</div>
+        <div class="col-md-3">news 3</div>
+        <div class="col-md-3">news 4</div>
+    </div>
+</div>
+<!-- NEWS END -->
+
+<!-- DS HIGHLIGHT START -->
+<div class="container-fluid" id="ds-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">Burns Antiphoner</div>
+        </div>
+    </div>
+</div>
+<!-- DS HIGHLIGHT END -->
+
+<!-- SCHOLARSHIP-AT-BC START -->
+<div class="container" id="scholarship">
+    <div class="row">
+        <div class="col-md-12"><h3>Scholarship at BC</h3></div>
         <div class="col-md-6">
-            <h2><a href="http://libguides.bc.edu/az.php" id="databases-link">Databases</a></h2>
-
-            <p class="db_subjects" style="float: right;margin-top: -17px;font-size: .9em;"><a href="http://libguides.bc.edu/az.php" id="databases-subject">...by subject</a></p>
-            <!-- must include -->
-            <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
-            <select name="resources" id="dbs-by-title" class="chosen-box" data-placeholder="Select a database…">
-                <option></option>
-            </select>
+            <h4><a href="#">eScholarship</a></h4>
+            <p>A repository of the scholarly and creative work of Boston Collge</p>
         </div>
         <div class="col-md-6">
-            {% include "research-guide-chooser.html" %}
+            <h4><a href="#">Dataverse</a></h4>
+            <p>A place for BC researchers to share, preserve, explore, and analyze their research data</p>
         </div>
     </div>
-
 </div>
-<!-- END TOP ROW -->
+<!-- SCHOLARSHIP-AT-BC END -->
 
-<!-- SECOND ROW, NEWS REEL -->
-<div class="row newsrow">
-    
-<!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
-
-    <div class="list_carousel">
-        <a id="prev" href="#" class="newsbutton prev"><span class="accessibility-text">Carousel move left</span><span class="glyphicon glyphicon-chevron-left" id="carousel-prev"></span></a>
-        <a id="next" href="#" class="newsbutton next"><span class="accessibility-text">Carousel move right</span><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
-
-        <ul id="newsslider">
-
-
-            {% set count = 0 %}
-            {% for article in articles[:30] if article.category.name == "news" and article.expired != "yes" %}
-
-                {% set count = count + 1 %}
-                {% if count < 11 %}
-                <li>
-                    <a href="{% if article.destination %}{{ article.destination }}{% else %}{{ article.url }}{% endif %}" id="{{ article.slug }}">
-                        <div class="newsitem">
-                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                            <div class="newstext {{ article.showtext }}">
-                                <p class="newslink">{{ article.title }}</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                {% endif %}
-            {% endfor %}
-
-        
-        </ul>
-     </div>
-
-</div>
-
-<!-- ROW THREE, THE THIRD ROW -->
-<div class="row">
-      
-       <!-- LIBRARY ANNOUNCEMENTS CAN GO HERE -->
-
-    <div class="announcements">
-        <h2>Announcements</h2>
-
-        {% for article in articles if article.category.name == "announcements" and article.expired != "yes" %}
-
-            {% set count = count + 1 %} 
-            {% if loop.index < 3 %}
-
-                <div>
-                    <a href="{{ article.url }}" class="announcelink" id="{{ article.slug }}">{{ article.title }}</a><br />
-                    <span>{{ article.summary }}
-                    </span>
-                 <!-- REMOVING TRUNCATE FOR NOW, AS IT CUTS HREFS IN HALF. It was truncate(140)-->
-
-                    <div class="readmore {{ article.readmore }}">
-                    <a href="{{ article.url }}" id="readmore-{{ article.slug }}"><span class="arrow">Read more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                    </div>
-                    
-                </div>
-            {% endif %}
-        {% endfor %}
-
+<!-- EXHIBIT HIGHLIGHT START -->
+<div class="container-fluid" id="exhibit-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">Some Exhibit</div>
+        </div>
     </div>
-
-    <!-- REAL ESTATE SECTION CONTAINS 6 BUTTONS THAT LINK TO PRIORITY LIBRARY SITES.
-    SWAP OUT <A> CLASS TO CHANGE ICONS. ICONS LISTED IN STYLE SHEET. SEARCH FOR "REAL ESTATE ICON CSS" -->
-    <div class="realestate">
-        <div class="button"><a href="http://escholarship.bc.edu/" class="icon_document" id="button-escholarship"><p>eScholarship@BC</p></a></div>
-        <div class="button"><a href="https://ds.bc.edu/" class="icon_book" id="button-digital-scholarship"><p>Digital Scholarship</p></a></div>
-        <div class="button"><a href="http://libguides.bc.edu/popcollection" class="icon_openbook" id="button-popular-reading"><p>Popular Reading</p></a></div>
-        <div class="button"><a href="http://www.bc.edu/dataverse" class="icon_data" id="button-open-access"><p>Dataverse</p></a></div>
-        <div class="button"><a href="http://libguides.bc.edu/digital-collections" class="icon_files" id="button-digital-collections"><p>Digital Collections</p></a></div>
-        <div class="button"><a href="http://library.bc.edu/exhibits" class="icon_picture" id="button-exhibits"><p>Exhibits</p></a></div>
-   </div>
 </div>
+<!-- EXHIBIT HIGHLIGHT END -->
+
+<!-- FACPUB START -->
+<div class="container" id="facpub">
+    <div class="row">
+        <div class="col-md-12"><h3><a href="">Latest Faculty Publication Highlight</a></h3></div>
+        <div class="col-md-5">video</div>
+        <div class="col-md-2">book cover</div>
+        <div class="col-md-5">more text</div>
+    </div>
+</div>
+<!-- FACPUB END -->
+
+<!-- DIGITAL COLLECTIONS HIGHLIGHT START -->
+<div class="container-fluid" id="digcol-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">Some Digital Collections</div>
+        </div>
+    </div>
+</div>
+<!-- DIGITAL COLLECTIONS HIGHLIGHT END -->
+
+<!-- LIBRARY FOOTER START -->
+<div class="container-fluid" id="lib-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">Library footer</div>
+        </div>
+    </div>
+</div>
+<!-- LIBRARY FOOTER END -->
+
+<!-- BC FOOTER START -->
+<div class="container-fluid" id="bc-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">BC footer</div>
+        </div>
+    </div>
+</div>
+<!-- BC FOOTER END -->
 
 
-{% endblock %}
+{# % block content % #}
+{# % endblock % #}
 
-{% block pagescripts %}
-<!-- CAROUFREDSEL JS UNDER HERE -->
-<script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
-<!-- fire plugin onDocumentReady -->
-<script type="text/javascript" language="javascript">
-    $(function() {
 
-        //  Scrolled by user interaction
-        $('#newsslider').carouFredSel({
-            auto: false,
-            items: 1,
-            prev: '#prev',
-            next: '#next',
-            pagination: "#pager2",
-            mousewheel: true,
-            swipe: {
-                onMouse: true,
-                onTouch: true
-            }
-        });
+<!--
+    Temporary location for inactive scripts
+-->
 
+<!--script type="text/javascript" src="/theme/js/libraryinfo.js"></script-->
+
+<!-- /#contentinfo -->
+<!-- MEGA MENU SCRIPT -->
+<!--script type="text/javascript" src="/theme/js/megamenu.js"></script-->
+
+<!-- Control search tab switch. -->
+<!--script>
+$(function () {
+    $('#block_search *[role=presentation]').click(
+        function() {
+            var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+            $('#block_search .tab-pane input[type=text]').val(current_text);
+        }
+    );
+});
+</script-->
+
+<!-- Script to block spam-bots. Requires JQuery. -->
+<!--script src="/theme/js/nospam.js"></script-->
+<!--script src="/theme/js/libhours.js"></script-->
+<!--script src="/theme/bcbento/js/typeahead.bundle.min.js"></script-->
+<!--script src="/theme/bcbento/js/bclib-typeahead.js"></script-->
+
+<!-- JS for expanding search bar
+<script src="/theme/js/classie.js"></script>
+<script src="/theme/js/uisearch.js"></script>
+<script>
+    new UISearch( document.getElementById( 'sb-search' ) );
+</script>-->
+
+<!-- Google Analytics script -->
+<!--script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-3008279-16', 'auto');
+ga('require', 'linkid');
+ga('send', 'pageview');
+
+$(function () {
+    $('#megamenu ul.nav li.dropdown').mouseenter(function() {
+        var myText = $(this).find("a.menu-option").text();
+        ga('send', 'event', 'megamenu', 'hover', myText.trim());
     });
-</script>
+    $('.realestate .button a').click(function(){
+        var myTitle = $(this).find("p").html();
+        ga('send', 'event', 'homebuttons', 'click', myTitle);
+    });
+    $("ul.item-desktop li a").mouseenter(function(){
+        var myPane = $(this).html();
+        ga('send', 'event', 'librarypanes', 'hover', myPane);
+    });
+    $("input#searchsubmit").click(function(){
+        ga('send', 'event', 'bc-searchbutton', 'click');
+    });
+});
+// Initialize bootstrap popover
+$(function () { $('[data-toggle="tooltip"]').tooltip() });
+</script-->
 
-<!-- END CAROUFREDSEL JS-->
-    
-<script src="/theme/js/bc-home-chosen.js?version=0.0.2"></script>
+{# % block pagescripts % #}
+{# % endblock % #}
+</div>
+<!-- END FULL PAGE WRAPPER -->
+
 {% endblock %}

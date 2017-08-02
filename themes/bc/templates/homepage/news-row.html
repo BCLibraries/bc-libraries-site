@@ -9,21 +9,14 @@
             </h3>
         </div>
 
-        {% for article in articles[:20] if article.category.name == "news" and article.expired != "yes" %}
+       {% for article in articles | most_recent_news(4) %}
 
-        {% if loop.index <= 4 %}
         <div class="col-md-3">
-
-            {% if article.destination %}
-            {% set url=article.destination %}
-            {% else %}
-            {% set url=article.url %}
-            {% endif %}
 
             {% if article.image_thumb %}
 
             {# article with image #}
-            <a href="{{ url }}" id="{{ article.slug }}">
+            <a href="{{ article.destination }}" id="{{ article.slug }}">
                 <div class="newsitem">
                     <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
                     <p class="newslink">{{ article.title }}</p>
@@ -34,7 +27,7 @@
 
             {# announcement without image #}
             <div class="announcement">
-                <p class="newslink"><a href="{{ url }}" id="{{ article.slug }}">{{ article.title }}</a></p>
+                <p class="newslink"><a href="{{ article.destination }}" id="{{ article.slug }}">{{ article.title }}</a></p>
                 <p class="">
                     {{ article.summary }}
                 </p>
@@ -43,7 +36,6 @@
             {% endif %}
 
         </div>
-        {% endif %}
 
         {% endfor %}
     </div>

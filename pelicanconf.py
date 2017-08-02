@@ -124,9 +124,21 @@ def not_oneoff(articles_list):
     return [article for article in articles_list if not (hasattr(article, 'oneoff')) or article.oneoff != 'yes']
 
 
+def most_recent_news(articles_list, count):
+    news_articles = [a for a in articles_list if a.category.name == 'news' and is_not_expired(a)][:count]
+    for a in news_articles:
+        if not a.destination:
+            a.destination = a.url
+    return news_articles
+
+def is_not_expired(article):
+    return not (hasattr(article, 'expired')) or article.expired != 'yes'
+
+
 # These are filters we can use in templates
 JINJA_FILTERS = {
     'has_category': has_category,
     'has_year': has_year,
-    'not_oneoff': not_oneoff
+    'not_oneoff': not_oneoff,
+    'most_recent_news': most_recent_news
 }

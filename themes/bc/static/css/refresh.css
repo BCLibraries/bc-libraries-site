@@ -10,6 +10,7 @@ body {
 }
 
 /* temp overrides */
+.homepagerefresh #lib-footer table caption,
 .homepagerefresh .accessibility-text {
     position: absolute;
     left: -10000px;
@@ -154,33 +155,6 @@ body {
     padding: 0 2px;
     border-radius: 0
 }
-
-@media (min-width: 992px) {
-    #bclib-header .col-md-12 {
-        width: 100%;
-    }
-    #bclib-header .col-md-8 {
-        width: 66.66666667%;
-    }
-    #bclib-header .col-md-6 {
-        width: 50%;
-    }
-    #bclib-header .col-md-4 {
-        width: 33.33333333%;
-    }
-}
-
-@media (max-width: 991px) {
-    #bclib-header {
-        height: auto;
-    }
-    #bclib-header .col-sm-12 {
-        width: 100%;
-    }
-    #bclib-header ul.bclib-header-links {
-        text-align: left;
-    }
-}
 /* end top level maroon bar */
 
 
@@ -250,10 +224,181 @@ body {
     background-color: #8a100b;
     color: #fff;
     border-top: 4px #b29d6c solid;
+    line-height: 1.5;
+    font-weight: 300;
+    z-index: 4;
+    position: relative;
 }
+.homepagerefresh #lib-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.homepagerefresh #lib-footer a {
+    color: #fff;
+}
+.homepagerefresh #lib-footer a:hover,
+.homepagerefresh #lib-footer a:focus {
+    color: #dccaa0;
+    text-decoration: none;
+}
+.homepagerefresh #lib-footer h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.homepagerefresh #lib-footer .phone-numbers, 
+.homepagerefresh #lib-footer .lib-footer-links {
+    padding-top: 1em;
+}
+.homepagerefresh #lib-footer .phone-numbers .phone-label,
+.homepagerefresh #lib-footer .phone-numbers .phone-number {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.homepagerefresh #lib-footer #socialmedia h4,
+.homepagerefresh #lib-footer .quick-links h4 {
+    text-align: center;
+}
+.homepagerefresh #lib-footer #socialmedia ul {
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+    text-align: center;
+}
+.homepagerefresh #lib-footer #socialmedia ul li {
+    display: inline-block;
+    padding: 0 3px 9px 3px;
+}
+.homepagerefresh #lib-footer #socialmedia ul li a {
+    color: #8a100b;
+    font-size: 16px;
+    border-radius: 50%;
+    border-color: #dccaa0;
+    background: #dccaa0;
+    width: 30px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+    display: block;
+    -webkit-transition: .2s;
+}
+.homepagerefresh #lib-footer #socialmedia ul li a:hover,
+.homepagerefresh #lib-footer #socialmedia ul li a:focus {
+    background-color: #fff;
+}
+
+.homepagerefresh #lib-footer .quick-links ul {
+    text-align: center;
+}
+.homepagerefresh #lib-footer .table-bordered {
+    border-top: none;
+}
+.homepagerefresh #lib-footer .hours-todays-date {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
 
 .homepagerefresh #bc-footer {
     background-color: #501315;
     color: #b7b7b7;
+    
 }
 
+
+/* taken from style.css */
+#media_news:after {
+    font-family: 'FontAwesome';
+    content: "\f09e";
+}
+
+#media_facebook:after {
+    font-family: 'FontAwesome';
+    content: "\f09a";
+}
+
+#media_flickr:after {
+    font-family: 'FontAwesome';
+    content: "\f16e";
+}
+
+#media_twitter:after {
+    font-family: 'FontAwesome';
+    content: "\f099";
+}
+
+#media_youtube:after {
+    font-family: 'FontAwesome';
+    content: "\f16a";
+}
+
+#media_linkedin:after {
+    font-family: 'FontAwesome';
+    content: "\f0e1";
+}
+
+#media_instagram:after {
+    font-family: 'FontAwesome';
+    content: "\f16d";
+}
+
+
+
+/* media query overrides */
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) {
+    #bclib-header .col-md-12 {
+        width: 100%;
+    }
+    #bclib-header .col-md-8 {
+        width: 66.66666667%;
+    }
+    #bclib-header .col-md-6 {
+        width: 50%;
+    }
+    #bclib-header .col-md-4 {
+        width: 33.33333333%;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    #bclib-header {
+        height: auto;
+    }
+    #bclib-header .col-sm-12 {
+        width: 100%;
+    }
+    #bclib-header ul.bclib-header-links {
+        text-align: left;
+    }
+    .homepagerefresh #lib-footer .phone-numbers .phone-pair {
+        padding-top: 4px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .homepagerefresh #lib-footer h4 {
+        margin-top: 30px;
+    }
+    .homepagerefresh #lib-footer h4.orgname {
+        margin-top: inherit;
+    }
+    .homepagerefresh #lib-footer .hours-todays-date {
+        top: 30px;
+    }
+    .homepagerefresh #lib-footer #socialmedia h4,
+    .homepagerefresh #lib-footer .quick-links h4,
+    .homepagerefresh #lib-footer #socialmedia ul,
+    .homepagerefresh #lib-footer .quick-links ul {
+        text-align: left;
+    }
+}

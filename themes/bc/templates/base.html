@@ -151,9 +151,11 @@
     {% block content %}
     {% endblock %}
 
-    {% include 'footer-lib.html' %}
+    <footer role="footer">
+        {% include 'footer-lib.html' %}
 
-    {% include 'footer-bc.html' %}
+        {% include 'footer-bc.html' %}
+    </footer>
 
 </body>
 </html>

@@ -167,9 +167,11 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background-color: #ccc;
+    background: #ccc url('http://library.bc.edu/random-img/random-pic.php');
+    height: 350px;
+    background-size: cover;
 }
-.homepagerefresh #header .row {
+.homepagerefresh #header-top-row {
     padding-top: 0px;
 }
 @media (min-width: 768px) {
@@ -177,6 +179,14 @@ body {
         float: right;
         margin: 0;
     }
+}
+
+/* Search panel */
+#search-panel {
+    background-color: lightblue;
+}
+#search-panel #search-links {
+    padding-top: 0
 }
 
 

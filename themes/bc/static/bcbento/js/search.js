@@ -169,7 +169,7 @@ $.fn.bcBento = function (services) {
 $(document).ready(function () {
 
     // Define services
-    const catalog = {
+    var catalog = {
         name: 'catalog',
         max_results: 8,
         postprocess: function (data) {
@@ -180,12 +180,12 @@ $(document).ready(function () {
         }
     };
 
-    const articles = {
+    var articles = {
         name: 'articles',
         max_results: 8
     };
 
-    const librarians = {
+    var librarians = {
         name: 'librarians',
         max_results: 2,
         postprocess: function (data) {

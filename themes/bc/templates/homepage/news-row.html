@@ -11,17 +11,28 @@
 
        {% for article in articles | most_recent_news(4) %}
 
-        <div class="col-md-3">
-
-            {% if article.image_thumb %}
+            {% if article.image_thumb and article.expired != "yes" %}
 
             {# article with image #}
-            <a href="{{ article.destination }}" id="{{ article.slug }}">
-                <div class="newsitem">
-                    <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                    <p class="newslink">{{ article.title }}</p>
-                </div>
-            </a>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+
+            <div class="news-content">
+                <a href="{{ article.destination }}" id="{{ article.slug }}">
+                    
+                    <div class="newsitem">                        
+
+                        <div class="newstext">
+                                <p class="newslink">{{ article.title }}</p>
+                        </div>
+                        
+                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
 
             {% else %}
 
@@ -31,11 +42,10 @@
                 <p class="">
                     {{ article.summary }}
                 </p>
-            </div>
+            </div> 
 
-            {% endif %}
+            {% endif %} 
 
-        </div>
 
         {% endfor %}
     </div>

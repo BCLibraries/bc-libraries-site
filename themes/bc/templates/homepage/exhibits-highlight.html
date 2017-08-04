@@ -1,12 +1,67 @@
 <!-- EXHIBIT HIGHLIGHT START -->
+
+ 
+
+
+
+
+
 <div class="container-fluid" id="exhibit-highlight">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
 
+	{% if articles %}
+                {% set count = 0 %}
+                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+                    
+                        {% set count = count + 1 %}
+                        {% if count < 100 %}  
+
+                            {% if article.location == "bapst" %}
+                            <!-- BAPST LATEST EXHIBIT -->
+
+                            <div class="content exhibit-box">
+                            	<h3><a href="#" id="current-exhibits">Current Exhibit</a></h3>
+
+                            	<a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}<</a>
+
+                            	<img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+
+                            	<p>{{ article.content|truncate(11, False, '...', 0) }}</p>
+                            </div>
 
 
-            Some Exhibit
+                                <li class="holder">
+
+                                    <div class="holdhead">
+                                    <h4>Bapst Library, Gargan Hall</h4>
+                                    <p>Click here for <a href="./bapst">Bapst Library Past Exhibits</a></p>
+                                    </div>
+
+                                    <div class="frame">
+                                        <a href="../{{ article.url }}">
+                                        <img src="/theme/img/exhibits/bapst/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                        
+                                        <div class="info">
+                                            <p class="date">{{ article.date_range }}</p>
+                                            <p class="title">{{ article.title }}</p>
+                                        </div>   
+                                        </a>   
+                                    </div>                       
+
+                                </li>
+                            {% endif %}                        
+                        {% endif %}
+                                  
+               {% endfor %}
+	{% endif %}
+
+
+
+
+
+
 
             </div>
         </div>

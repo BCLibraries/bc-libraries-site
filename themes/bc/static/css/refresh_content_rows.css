@@ -16,3 +16,7 @@
 	z-index: 2;
 	background-size: cover;
 }
+
+.exhibit-box {
+	background: rgba(255,255,255,0.5);
+}

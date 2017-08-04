@@ -1,5 +1,37 @@
 @charset "utf-8";
 
+/* GENERAL BC STYLING */
+
+.btn.btn-default {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #555;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid #ddd;
+    white-space: normal;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.btn.btn-gold {
+	color: #000;
+    background: #947f4e;
+}
+
+.btn.btn-gold:hover {
+    color: #fff;
+    border: 0;
+}
+
 /* HOMEPAGE EXHIBIT ROW STYLING */
 
 .homepagerefresh #exhibit-highlight {
@@ -12,11 +44,58 @@
 	border-top: 1px solid #dadada;
 	border-bottom: 1px solid #dadada;
 	color: #fff;
-	padding: 30px 0;
+	padding: 55px 0;
 	z-index: 2;
 	background-size: cover;
 }
 
 .exhibit-box {
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.75);
+	max-width: 75%;
+	height: 300px;
+	margin: auto;
+	padding: 20px;
+}
+
+.exhibit-box .row {
+	height: 100%;
+}
+
+.exhibit-box h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #8a100b !important;
+	font-size: 12px;
+    letter-spacing: 2px;
+	margin: 0;
+}
+
+a#current-exhibits-title {
+	color: #000 !important;
+	font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.exhibit-box .exhibit-left {
+	text-align: center;
+	height: 100%;
+}
+.exhibit-box .exhibit-right {
+	text-align: right;
+	height: 100%;
+}
+
+.exhibit-box .exhibit-left p {
+	color: #000;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 200;
+}
+
+.exhibit-poster {
+	max-width: 100%;
+	max-height: 100%;
 }

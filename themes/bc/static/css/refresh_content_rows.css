@@ -1,8 +1,13 @@
 @charset "utf-8";
 
-/* GENERAL BC STYLING */
 
-.content .btn.btn-default {
+#db-rg-hours .list-group {
+	margin-bottom: 0px;
+}
+
+/* BUTTON STYLING */
+
+.content .btn.btn-default, #db-rg-hours .btn {
     padding: 12px;
     font-size: 14px;
     line-height: 18px;
@@ -22,14 +27,22 @@
     -webkit-transition: .2s;
 }
 
-.content .btn.btn-gold {
+.content .btn.btn-gold, #db-rg-hours .btn.btn-gold {
 	color: #000;
     background: #947f4e;
 }
 
-.content .btn.btn-gold:hover {
+.content .btn.btn-gold:hover, #db-rg-hours .btn.btn-gold:hover {
     color: #fff;
     border: 0;
+}
+
+.row.nobottom {
+	padding-bottom: 0px;
+}
+
+.row.notop {
+	padding-top: 0px;
 }
 
 /* HOMEPAGE NEWS ROW STYLING */

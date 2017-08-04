@@ -27,6 +27,17 @@
 
 
 /* Mega Menu */
+.homepagerefresh #megamenu .navbar-default .navbar-brand {
+    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-left: 35px;
+}
+
 .homepagerefresh #megamenu .navbar-default {
     background-color: inherit;
     border: none;
@@ -41,9 +52,10 @@
     margin-top: -1px;
 }
 .homepagerefresh .megamenu-container .nav a.menu-option {
-    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85); 
+    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
     color: #fff;
     font-size: 20px;
+    font-weight: 200;
 }
 .homepagerefresh .megamenu-container .container:first-child,
 .homepagerefresh .megamenu-container .navbar-collapse {

@@ -429,8 +429,8 @@ body {
 }
 
 /* Portrait tablets and small desktops */
-/* @media (max-width: 991px) { */
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) {
+/*@media screen and (max-width: 991px) and (min-width: 768px) { */
     #bclib-header {
         height: auto;
     }
@@ -496,3 +496,4 @@ body {
         padding-right: 0;
     }
 }
+

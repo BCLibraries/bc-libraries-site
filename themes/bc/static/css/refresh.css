@@ -170,6 +170,7 @@ body {
     background: #ccc url('http://library.bc.edu/random-img/random-pic.php');
     height: 350px;
     background-size: cover;
+    padding-top: 80px;
 }
 .homepagerefresh #header-top-row {
     padding-top: 0px;

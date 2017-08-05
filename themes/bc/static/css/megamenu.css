@@ -51,6 +51,9 @@
     background-color: rgba(0,0,0,.55);
     color: #000;
     /*margin-top: -1px;*/
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
 }
 .homepagerefresh .megamenu-container .nav a.menu-option {
     text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
@@ -78,6 +81,8 @@
         padding-left:15px;
         padding-right:15px;
         background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     }
 }
 .homepagerefresh .megamenu-container .nav a.menu-option:focus,

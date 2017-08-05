@@ -45,11 +45,12 @@
 .homepagerefresh #megamenu .navbar {
     margin-bottom: 0;
     border-bottom: none;
+    border-radius: 0;
 }
 .homepagerefresh .megamenu-container {
     background-color: rgba(0,0,0,.55);
     color: #000;
-    margin-top: -1px;
+    /*margin-top: -1px;*/
 }
 .homepagerefresh .megamenu-container .nav a.menu-option {
     text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
@@ -101,7 +102,7 @@
 }
 
 #megamenu .navbar-nav > li > .dropdown-menu {
-    border: 1px solid #dadada;
+    /*border: 1px solid #dadada;*/
     border-top: none;
     border-radius: 0;
     margin-top: 0;
@@ -118,7 +119,7 @@
         font-size: 12px;
     }
     #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-        border-top: 3px solid #05506d;
+        /*border-top: 3px solid #05506d;*/
     }
 }
 @media ( max-width: 768px ) {

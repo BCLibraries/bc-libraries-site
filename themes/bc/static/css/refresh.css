@@ -8,8 +8,6 @@ body {
     padding: 0;
     line-height: 1.75;
 }
-
-.homepagerefresh #lib-footer table caption,
 .homepagerefresh .accessibility-text {
     position: absolute;
     left: -10000px;
@@ -427,7 +425,6 @@ body {
 .homepagerefresh #lib-footer .quick-links ul {
     text-align: center;
 }
-.homepagerefresh #lib-footer .table-bordered,
 .homepagerefresh .table-hours .table-bordered {
     border-top: none;
 }

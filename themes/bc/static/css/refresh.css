@@ -75,9 +75,9 @@ body {
 }
 
 #bclib-header a:hover,
-#bclib-header a:active {
-    color: #fff;
-    text-decoration: underline;
+#bclib-header a:focus {
+    color: #dccaa0;
+    text-decoration: none;
 }
 
 #bclib-header.container-fluid {
@@ -344,7 +344,8 @@ body {
     background-color: #8a100b;
     color: #fff;
     border-top: 4px #b29d6c solid;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 25px;
     font-weight: 300;
     z-index: 4;
     position: relative;
@@ -363,8 +364,20 @@ body {
     text-decoration: none;
 }
 .homepagerefresh #lib-footer h4 {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 5px;
+}
+.homepagerefresh #lib-footer h4 a {
+    /*text-decoration: underline;*/
+}
+.homepagerefresh #lib-footer h4.orgname {
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    margin: 0 0 10px 0;
 }
 .homepagerefresh #lib-footer .phone-numbers, 
 .homepagerefresh #lib-footer .lib-footer-links {
@@ -419,7 +432,7 @@ body {
 }
 .homepagerefresh #lib-footer .hours-todays-date {
     position: absolute;
-    top: 10px;
+    top: -5px;
     right: 15px;
 }
 

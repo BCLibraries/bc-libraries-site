@@ -9,7 +9,6 @@ body {
     line-height: 1.75;
 }
 
-/* temp overrides */
 .homepagerefresh #lib-footer table caption,
 .homepagerefresh .accessibility-text {
     position: absolute;
@@ -212,10 +211,85 @@ body {
     padding-top: .5em;
 }
 
+/* digital scholarship highlight */
 .homepagerefresh #ds-highlight {
-    background-color: #ccc;
+    display: inline-block;
+    width: 100vw;
+    min-height: 150px;
+    height: 600px;
+    background: url(/theme/img/antiphonerbg.jpg) no-repeat 0% 50% #101010;
+    background-size: auto auto;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    color: #fff;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+.homepagerefresh .container-fluid .pull-right {
+    height: auto;
+}
+.homepagerefresh .leftBottom,
+.homepagerefresh .leftTop, 
+.homepagerefresh .rightTop, 
+.homepagerefresh .rightBottom {
+    position: relative;
+}
+.homepagerefresh .leftBottom .container-fluid .pull-right,
+.homepagerefresh .leftTop .container-fluid .pull-right, 
+.homepagerefresh .rightTop .container-fluid .pull-right, 
+.homepagerefresh .rightBottom .container-fluid .pull-right {
+    position: absolute;
 }
 
+.homepagerefresh .leftTop .container-fluid .pull-right {
+    left:20px;
+    top:20px;
+}
+.homepagerefresh .rightTop .container-fluid .pull-right {
+    top:20px;
+    right:20px;
+}
+.homepagerefresh .leftBottom .container-fluid .pull-right {
+    left: 20px;
+    bottom: 20px;
+}
+.homepagerefresh .rightBottom .container-fluid .pull-right {
+    bottom:20px;
+    right:20px;
+}
+
+.homepagerefresh .leftBottom .container-fluid .pull-right .content,
+.homepagerefresh .leftTop .container-fluid .pull-right .content, 
+.homepagerefresh .rightTop .container-fluid .pull-right .content, 
+.homepagerefresh .rightBottom .container-fluid .pull-right .content {
+    color: #fff;
+    display: table;
+    padding: 40px 40px;
+    max-width: 60%;
+    background: rgba(0,0,0,0.5);
+}
+.homepagerefresh .rightTop .container-fluid .pull-right .content,
+.homepagerefresh .rightBottom .container-fluid .pull-right .content {
+    float: right;
+}
+.homepagerefresh #ds-highlight .content h3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 200;
+}
+.homepagerefresh #ds-highlight .content h3 a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.homepagerefresh #ds-highlight .content h3 a:hover,
+.homepagerefresh #ds-highlight .content h3 a:focus {
+    color: #dccaa0;
+    border-bottom: 1px solid #dccaa0;
+    text-decoration: none;
+}
+
+/* scholarship */
 .homepagerefresh #scholarship {
     text-align: center;
 }
@@ -223,14 +297,18 @@ body {
     text-transform: uppercase;
 }
 
+/* exhibition highlight */
 .homepagerefresh #exhibit-highlight {
     background-color: cyan;
 }
 
+/* digital collections highlight */
 .homepagerefresh #digcol-highlight {
     background-color: #C0C0C0;
 }
 
+
+/* footers */
 .homepagerefresh #lib-footer {
     background-color: #8a100b;
     color: #fff;
@@ -455,6 +533,30 @@ body {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+
+    .homepagerefresh #ds-highlight.container-fluid .pull-right {
+        left: auto!important;
+        top: auto!important;
+        bottom: 0!important;
+        right: 0!important;
+        width: 100%!important;
+        max-width: 100%!important;
+        transform: none!important;
+        -ms-transform: none!important;
+        -webkit-transform: none!important;
+        position: absolute;
+    }
+    .homepagerefresh #ds-highlight.container-fluid .pull-right .content {
+        padding: 15px 15px!important;
+        max-width: 100%!important;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
+
     .homepagerefresh #lib-footer h4 {
         margin-top: 30px;
     }

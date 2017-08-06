@@ -19,6 +19,31 @@ body {
     overflow: hidden;
 }
 
+/* links */
+.homepagerefresh #ds-highlight .content h3,
+.homepagerefresh #digcol-highlight .content h3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 200;
+    line-height: 1.25;
+}
+.homepagerefresh #ds-highlight .content h3 a,
+.homepagerefresh #digcol-highlight .content h3 a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.homepagerefresh #ds-highlight .content h3 a:hover,
+.homepagerefresh #ds-highlight .content h3 a:focus,
+.homepagerefresh #digcol-highlight .content h3 a:hover,
+.homepagerefresh #digcol-highlight .content h3 a:focus {
+    color: #dccaa0;
+    border-bottom: 1px solid #dccaa0;
+    text-decoration: none;
+}
+
+
+
+
 /*  boostrap overrides  */
 .row {
     padding-top: 1em;
@@ -273,21 +298,6 @@ body {
 .homepagerefresh .rightBottom .container-fluid .pull-right .content {
     float: right;
 }
-.homepagerefresh #ds-highlight .content h3 {
-    margin: 0 0 20px 0;
-    padding: 0;
-    font-weight: 200;
-}
-.homepagerefresh #ds-highlight .content h3 a {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-.homepagerefresh #ds-highlight .content h3 a:hover,
-.homepagerefresh #ds-highlight .content h3 a:focus {
-    color: #dccaa0;
-    border-bottom: 1px solid #dccaa0;
-    text-decoration: none;
-}
 
 /* scholarship */
 .homepagerefresh #scholarship {
@@ -304,7 +314,19 @@ body {
 
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {
-    background-color: #C0C0C0;
+    display: inline-block;
+    width: 100vw;
+    min-height: 150px;
+    height: 600px;
+    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 0% 5% #101010;
+    background-size: auto auto;
+    color: #fff;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+.homepagerefresh #digcol-highlight .container-fluid .pull-right .content {
+    max-width: 50%;
 }
 
 
@@ -534,7 +556,7 @@ body {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
-    .homepagerefresh #ds-highlight.container-fluid .pull-right {
+    .homepagerefresh .container-fluid .pull-right {
         left: auto!important;
         top: auto!important;
         bottom: 0!important;
@@ -546,7 +568,7 @@ body {
         -webkit-transform: none!important;
         position: absolute;
     }
-    .homepagerefresh #ds-highlight.container-fluid .pull-right .content {
+    .homepagerefresh .container-fluid .pull-right .content {
         padding: 15px 15px!important;
         max-width: 100%!important;
         width: 100%;

@@ -427,7 +427,8 @@ body {
 .homepagerefresh #lib-footer .quick-links ul {
     text-align: center;
 }
-.homepagerefresh #lib-footer .table-bordered {
+.homepagerefresh #lib-footer .table-bordered,
+.homepagerefresh .table-hours .table-bordered {
     border-top: none;
 }
 .homepagerefresh #lib-footer .hours-todays-date {

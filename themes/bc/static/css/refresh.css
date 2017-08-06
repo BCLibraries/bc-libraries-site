@@ -312,6 +312,15 @@ body {
     background-color: cyan;
 }
 
+/* faculty publication highlight */
+.homepagerefresh #facpub {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+.homepagerefresh #facpub .media img {
+    max-height: 260px;
+}
+
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {
     display: inline-block;

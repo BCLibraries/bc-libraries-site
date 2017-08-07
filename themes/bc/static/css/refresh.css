@@ -48,6 +48,13 @@ body {
     padding-bottom: 1em;
 }
 
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 /* top level maroon bar */
 #bclib-header {
     box-sizing: border-box;
@@ -218,6 +225,18 @@ body {
 .homepagerefresh #db-rg-hours .list-group-item {
     border:none;
 }
+.homepagerefresh #db-rg-hours h3 a {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+.homepagerefresh #db-rg-hours .row {
+    margin-bottom: 80px;
+}
+.homepagerefresh #db-rg-hours .button-wrap {
+    position: absolute;
+    bottom: -45px;
+}
+
 
 .homepagerefresh #quick-links {
     background-color:#dfddcf;
@@ -228,10 +247,11 @@ body {
 }
 .homepagerefresh #quick-links a {
     text-decoration: none;
+    border-bottom: 1px solid;
 }
 .homepagerefresh #quick-links p {
     font-style: italic;
-    padding-top: .5em;
+    padding-top: .25em;
 }
 
 /* digital scholarship highlight */

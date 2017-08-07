@@ -375,9 +375,16 @@ body {
 /* scholarship */
 .homepagerefresh #scholarship {
     text-align: center;
+    padding: 15px 0;
 }
 .homepagerefresh #scholarship h3 {
     text-transform: uppercase;
+    margin: 0;
+    color: #8a100b;
+    font-size: 20px;
+}
+.homepagerefresh #scholarship h4 {
+    margin-top: 1.25em;
 }
 
 /* exhibition highlight */
@@ -748,6 +755,10 @@ body.body-modal {
         bottom: auto;
         right: auto;
         left: auto;
+    }
+    .homepagerefresh #scholarship .row {
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .homepagerefresh #lib-footer h4 {
         margin-top: 30px;

@@ -18,6 +18,10 @@ body {
 }
 
 /* links */
+.homepagerefresh #facpub h3 a {
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
 .homepagerefresh #ds-highlight .content h3,
 .homepagerefresh #digcol-highlight .content h3 {
     margin: 0 0 20px 0;

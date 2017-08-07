@@ -104,7 +104,7 @@
 
 .homepagerefresh #exhibit-highlight {
 	display: inline-block;
-	width: 100vw;
+	width: 100%;
 	min-height: 150px;
 	height: 400px;
 	background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;

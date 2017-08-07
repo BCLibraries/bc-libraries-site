@@ -257,7 +257,7 @@ body {
 /* digital scholarship highlight */
 .homepagerefresh #ds-highlight {
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     min-height: 150px;
     height: 600px;
     background: url(/theme/img/antiphonerbg.jpg) no-repeat 0% 50% #101010;
@@ -286,20 +286,20 @@ body {
 }
 
 .homepagerefresh .leftTop .container-fluid .pull-right {
-    left:20px;
+    left:0px;
     top:20px;
 }
 .homepagerefresh .rightTop .container-fluid .pull-right {
     top:20px;
-    right:20px;
+    right:0px;
 }
 .homepagerefresh .leftBottom .container-fluid .pull-right {
-    left: 20px;
+    left: 0px;
     bottom: 20px;
 }
 .homepagerefresh .rightBottom .container-fluid .pull-right {
     bottom:20px;
-    right:20px;
+    right:0px;
 }
 
 .homepagerefresh .leftBottom .container-fluid .pull-right .content,
@@ -339,7 +339,7 @@ body {
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {
     display: inline-block;
-    width: 100vw;
+    width: 100%;
     min-height: 150px;
     height: 600px;
     background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 0% 5% #101010;

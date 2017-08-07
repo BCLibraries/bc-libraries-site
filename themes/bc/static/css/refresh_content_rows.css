@@ -168,6 +168,11 @@ a#current-exhibits-title {
 	max-height: 100%;
 }
 
+@media (max-width: 991px) {
+	#news .news-content {
+		margin: 0 auto 2em auto;
+	}
+}
 /* FAC PUB 
 
 FOUND TEMPLATE HERE: http://www.bc.edu/bc-web/academics.html */

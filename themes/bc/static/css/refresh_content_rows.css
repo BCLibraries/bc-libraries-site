@@ -106,13 +106,10 @@
 	display: inline-block;
 	width: 100%;
 	min-height: 150px;
-	/*height: 400px;*/
-	background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
-    background-size: auto auto;
+	background: url("/theme/img/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
 	border-top: 1px solid #dadada;
 	border-bottom: 1px solid #dadada;
 	color: #fff;
-	/*padding: 55px 0;*/
 	z-index: 2;
 	background-size: cover;
 }

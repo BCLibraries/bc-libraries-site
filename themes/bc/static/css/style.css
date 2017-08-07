@@ -1328,7 +1328,6 @@ a.announcelink {
 
 .search_float li:first-child:after {
     color: #b5b5b5;
-    content: " | ";
     font-size: 16px;
 }
 

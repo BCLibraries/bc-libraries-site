@@ -270,11 +270,21 @@ body {
     border-bottom: 2px solid;
 }
 .homepagerefresh #db-rg-hours .row {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 .homepagerefresh #db-rg-hours .button-wrap {
     position: absolute;
     bottom: -45px;
+}
+.homepagerefresh #hours-container .hours-link {
+    text-align: right;
+}
+.homepagerefresh .list-group.popular a.list-group-item {
+    padding: 6px 15px;
+}
+.homepagerefresh h4.list-label {
+    margin: 0;
+    font-size: 14px;
 }
 
 /* news */
@@ -693,6 +703,9 @@ body.body-modal {
     }
     #bclib-header ul.bclib-header-links {
         text-align: left;
+    }
+    .homepagerefresh #hours-container {
+        display: none;
     }
     .homepagerefresh #news {
         padding-bottom: 0em;

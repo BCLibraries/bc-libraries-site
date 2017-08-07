@@ -39,7 +39,7 @@ $.fn.bcBento = function (services) {
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = 'https://library.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = 'http://libdev.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/, '+').replace('"', '%22');
 
         // Clear old results.
@@ -99,11 +99,11 @@ $.fn.bcBento = function (services) {
         var $typeahead = $('#typeahead');
         $('#didyoumean-holder').empty();
         setTitle(keyword);
-        $typeahead.typeahead('close');
+        //$typeahead.typeahead('close');
         services.forEach(function (service) {
             callSearchService(service, keyword);
         });
-        $typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
+        //$typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
     }
 
     function setTitle(keyword) {

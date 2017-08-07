@@ -1,5 +1,5 @@
-#all-results, #all-results * {
-    box-sizing: border-box;
+#all-results #primary, #all-results #secondary {
+    padding-right: 3em;
 }
 
 /** Accessible hide class. **/
@@ -11,28 +11,6 @@
     height: 1px;
     overflow: hidden;
 }
-
-/** Layout **/
-
-#all-results #primary, #all-results #secondary, #all-results #tertiary {
-    float: left;
-}
-
-#all-results #primary {
-    width: 30%;
-    margin-right: 10%;
-}
-
-#all-results #secondary {
-    width: 30%;
-    margin-right: 10%;
-}
-
-#all-results #tertiary {
-    width: 20%;
-}
-
-/** End layout **/
 
 /* Typeahead stuff - Handle with care
 ----------------------------*/
@@ -102,7 +80,9 @@
 /** Start results stuff **/
 
 #all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
-    display: inline-block
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: normalq;
 }
 
 /** More results link **/
@@ -129,6 +109,29 @@
 
 #all-results .result-container .creator {
     color: #666;
+}
+
+
+/** Librarian & guide results. **/
+#all-results h4 {
+    margin: 0 !important;
+}
+
+.librarians img {
+    max-width: 100%
+}
+
+.librarian-info p {
+    font-size: 14px;
+}
+
+#all-results #librarian-info p, #all-results .guide-description {
+    color: #666;
+    font-size: 14px;
+}
+
+#tertiary .visible-also-try a {
+    font-size: 16px;
 }
 
 #all-results .result-container .publisher {
@@ -187,10 +190,6 @@
     opacity: 1;
     filter: alpha(opacity=100);
     cursor: pointer;
-}
-
-#all-results .catalog-metadata {
-    font-size: .9em;
 }
 
 #all-results .type {
@@ -313,8 +312,86 @@ div#didyoumean-holder {
 }
 
 #bentoboxresults h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
     text-transform: none;
-    font-size: 22px;
-    color: #790009;
+    font-size: 24px;
+}
+
+
+.librarian-name a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dym-notice a {
+    font-weight: bold;
+}
+
+#website-results li {
+    margin-bottom: 1rem;
+}
+
+#librarians-results .librarian > a {
+    display: block;
+    float: left;
+    width:  100px;
+    margin-right: 1em;
+}
+
+#librarians-results .results-highlight {
+    margin-bottom:10px;
+}
+
+#librarians-results .results-highlight,
+#website-results .results-highlight {
+    background-color: #fffdf6;
+    border: 1px solid #ffeaae;
+    border-radius: 10px;
+    padding: .5em 1em;
+}
+
+#website-results ul.guide-pages {
+    padding:4px 0 0 25px;
+    list-style: circle;
+}
+
+#website-results ul.guide-pages li {
+    list-style: circle;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+#website-results ul.guide-pages li a {
+    font-weight:normal;
+}
+
+#website-results .more-results-link {
+    top: -6px;
+    position: relative;
+}
+
+#all-results .result-container {
+    display: block;
+}
+
+#all-results .result-container#librarians-results ul li:last-child {
+    margin-bottom: 2.5em;
+}
+
+#all-results .loading {
+    background: #fff url(../img/loading-circle.gif) no-repeat center center;
+}
+
+.librarian {
+    clear: left;
+    padding-top: 1em;
+}
+
+.results-highlight h3 {
+    font-size: 1.25em;
+}
+
+div#website-results {
+    padding-top: 0;
+    padding-bottom: 0;
 }

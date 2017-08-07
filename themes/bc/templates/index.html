@@ -3,43 +3,44 @@
 
 {%include 'homepage/header.html' %}
 
-<!-- DB RG HOURS BOX START -->
-<div class="container" id="db-rg-hours">
-    <div class="row equal nobottom">
-        {% include 'homepage/databases.html' %}
+<div id="main-body" role="main" tabindex="-1">
+    <!-- DB RG HOURS BOX START -->
+    <div class="container" id="db-rg-hours">
+        <div class="row equal nobottom">
+            {% include 'homepage/databases.html' %}
 
-        {% include 'homepage/start-research.html' %}
+            {% include 'homepage/start-research.html' %}
 
-        {% include 'homepage/hours.html' %}
+            {% include 'homepage/hours.html' %}
+        </div>
+        <!--div class="row notop">
+            <div class="col-md-4">
+                <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All ​d​atabases</a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All Research Guides</a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://libguides.bc.edu/hours" class="btn btn-gold">All Library Hours</a>
+            </div>
+        </div-->
     </div>
-    <!--div class="row notop">
-        <div class="col-md-4">
-            <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All ​d​atabases</a>
-        </div>
-        <div class="col-md-4">
-            <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All Research Guides</a>
-        </div>
-        <div class="col-md-4">
-            <a href="http://libguides.bc.edu/hours" class="btn btn-gold">All Library Hours</a>
-        </div>
-    </div-->
+    <!-- DB RG HOURS BOX END -->
+
+    {% include 'homepage/quick-links.html' %}
+
+    {% include 'homepage/news-row.html' %}
+
+    {% include 'homepage/digital-scholarship-highlight.html' %}
+
+    {% include 'homepage/scholarship-at-bc.html' %}
+
+    {% include 'homepage/exhibits-highlight.html' %}
+
+    {% include 'homepage/facpub-highlight.html' %}
+
+    {% include 'homepage/special-collections-highlight.html' %}
 </div>
-<!-- DB RG HOURS BOX END -->
-
-{% include 'homepage/quick-links.html' %}
-
-{% include 'homepage/news-row.html' %}
-
-{% include 'homepage/digital-scholarship-highlight.html' %}
-
-{% include 'homepage/scholarship-at-bc.html' %}
-
-{% include 'homepage/exhibits-highlight.html' %}
-
-{% include 'homepage/facpub-highlight.html' %}
-
-{% include 'homepage/special-collections-highlight.html' %}
-
 <!--
     Temporary location for inactive scripts
 -->

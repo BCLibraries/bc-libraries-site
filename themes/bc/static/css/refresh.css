@@ -335,9 +335,6 @@ body {
     background-color: #fff;
     padding-bottom: 40px;
 }
-.homepagerefresh #facpub .media img {
-    max-height: 260px;
-}
 
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {
@@ -581,6 +578,9 @@ body {
     #bclib-header ul.bclib-header-links {
         text-align: left;
     }
+    .homepagerefresh #facpub img.bookcover {
+        display:none!important;
+    }
     .homepagerefresh #lib-footer .phone-numbers .phone-pair {
         padding-top: 4px;
     }
@@ -618,7 +618,6 @@ body {
         right: auto;
         left: auto;
     }
-
     .homepagerefresh #lib-footer h4 {
         margin-top: 30px;
     }

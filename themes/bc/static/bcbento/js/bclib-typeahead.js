@@ -2,7 +2,7 @@ $(document).ready(function () {
     engine = new Bloodhound({
         name: 'holmes-typeahead',
         remote: {
-            url: '/search-services/typeahead?any=%QUERY&callback=?',
+            url: 'http://libdev.bc.edu/search-services/typeahead?any=%QUERY',
             rateLimitWait: 100,
             rateLimitBy: 'throttle'
         },
@@ -12,7 +12,7 @@ $(document).ready(function () {
         queryTokenizer: Bloodhound.tokenizers.whitespace
     });
     engine.initialize();
-    $('#typeahead').typeahead({
+    $('#lib-search-box').typeahead({
         hint: false,
         minLength: 3
     }, {

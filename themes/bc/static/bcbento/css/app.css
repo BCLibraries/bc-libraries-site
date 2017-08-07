@@ -71,6 +71,15 @@
     overflow: hidden
 }
 
+.twitter-typeahead {
+    width: 100%;
+    top: 3px;
+}
+
+.twitter-typeahead .tt-dropdown-menu {
+    width: 100%;
+}
+
 .active .typeahead-subject {
     color: #ddd;
 }
@@ -268,10 +277,6 @@
 
 .typeahead-type {
     color: #ddd;
-}
-
-#typeahead {
-    width: 400px;
 }
 
 #all-results .result-container ul li {

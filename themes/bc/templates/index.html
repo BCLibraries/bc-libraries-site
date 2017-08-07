@@ -64,8 +64,6 @@ $(function () {
 </script-->
 
 <!-- Script to block spam-bots. Requires JQuery. -->
-<!--script src="/theme/bcbento/js/typeahead.bundle.min.js"></script-->
-<!--script src="/theme/bcbento/js/bclib-typeahead.js"></script-->
 
 <!-- JS for expanding search bar
 <script src="/theme/js/classie.js"></script>
@@ -113,4 +111,9 @@ $(function () {
     //$(function () { $('[data-toggle="tooltip"]').tooltip() });
 </script>
 
+{% endblock %}
+
+{% block pagescripts %}
+<script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
 {% endblock %}

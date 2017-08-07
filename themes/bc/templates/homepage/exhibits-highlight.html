@@ -5,7 +5,7 @@
 <div class="container-fluid" id="exhibit-highlight">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 col-md-offset-1">
 
 	{% if articles %}
                 {% set count = 0 %}
@@ -21,7 +21,7 @@
                             	<h3>Exhibits</h3>
 
                             	<div class="row">
-	                            	<div class="exhibit-left col-md-9">
+	                            	<div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
 
 	                            		<a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
 										<p>{{ article.content|truncate(140, False, '...') }}</p>
@@ -30,7 +30,7 @@
 
 									</div>
 
-									<div class="exhibit-right col-md-3">
+									<div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
 										
 										<img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
 

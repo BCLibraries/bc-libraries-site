@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    engine = new Bloodhound({
+    var engine = new Bloodhound({
         name: 'holmes-typeahead',
         remote: {
             url: 'http://libdev.bc.edu/search-services/typeahead?any=%QUERY',
@@ -12,7 +12,7 @@ $(document).ready(function () {
         queryTokenizer: Bloodhound.tokenizers.whitespace
     });
     engine.initialize();
-    $('#lib-search-box').typeahead({
+    var mytypeahead = $('#lib-search-box').typeahead({
         hint: false,
         minLength: 3
     }, {

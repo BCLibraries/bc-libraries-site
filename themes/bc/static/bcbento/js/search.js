@@ -172,6 +172,10 @@ $.fn.bcBento = function (services) {
         });
     }
 
+    $('#search-panel').on('typeahead:selected', function (evt, data) {
+        search(data.value);
+    });
+
     Handlebars.registerHelper('truncate', truncate);
 
     services.forEach(renderServiceResults);

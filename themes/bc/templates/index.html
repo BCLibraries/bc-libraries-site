@@ -116,4 +116,9 @@ $(function () {
 {% block pagescripts %}
 <script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
 <script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
+<script type="text/javascript">
+    $('#search-panel').on('typeahead:selected', function (evt, data) {
+        $('#search-panel form').submit();
+    });
+</script>
 {% endblock %}

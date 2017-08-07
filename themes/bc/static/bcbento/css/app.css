@@ -103,7 +103,6 @@
     background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
-
 #all-results .result-container ul {
     padding: 0;
     margin: 0;
@@ -119,7 +118,6 @@
 #all-results .result-container .creator {
     color: #666;
 }
-
 
 /** Librarian & guide results. **/
 #all-results h4 {
@@ -172,6 +170,7 @@
 #all-results .cover-image {
     width: 20%;
     float: left;
+    padding-top: 1.5em
 }
 
 #all-results .catalog-text.has-cover {
@@ -302,7 +301,7 @@
 .dym-notice {
     display: inline-block;
     zoom: 1;
-    background-color:lightyellow;
+    background-color: lightyellow;
     padding: .3em .5em;
     border: 1px dotted gray;
 }
@@ -313,7 +312,12 @@ div#didyoumean-holder {
 }
 
 .bento-result {
-    margin-bottom: 1.7em
+    margin-bottom: 1.7em;
+    clear: left;
+}
+
+#bentoboxresults {
+    min-height: 500px;
 }
 
 #bentoboxresults h2 {
@@ -321,7 +325,6 @@ div#didyoumean-holder {
     text-transform: none;
     font-size: 24px;
 }
-
 
 .librarian-name a {
     font-size: 14px;
@@ -339,12 +342,12 @@ div#didyoumean-holder {
 #librarians-results .librarian > a {
     display: block;
     float: left;
-    width:  100px;
+    width: 100px;
     margin-right: 1em;
 }
 
 #librarians-results .results-highlight {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 #librarians-results .results-highlight,
@@ -356,7 +359,7 @@ div#didyoumean-holder {
 }
 
 #website-results ul.guide-pages {
-    padding:4px 0 0 25px;
+    padding: 4px 0 0 25px;
     list-style: circle;
 }
 
@@ -367,7 +370,7 @@ div#didyoumean-holder {
 }
 
 #website-results ul.guide-pages li a {
-    font-weight:normal;
+    font-weight: normal;
 }
 
 #website-results .more-results-link {

@@ -120,7 +120,7 @@ body {
 }
 
 #bclib-header a.bclib-header-logo  {
-    
+
 }
 #bclib-header a.bclib-header-logo p {
     background: none;
@@ -217,10 +217,25 @@ body {
 
 /* Search panel */
 #search-panel {
-    background-color: lightblue;
+    background-color: #204375;
 }
+
+#search-panel .fa-search {
+    padding-right: .5em;
+}
+
 #search-panel #search-links {
     padding-top: 0
+}
+
+#search-panel #search-links a, #search-panel #search-links a:visited {
+    color: white;
+    font-size: 18px;
+}
+
+#search-panel input.form-control, #search-panel button.btn.btn-default  {
+    height: 50px;
+    font-size: 20px;
 }
 
 
@@ -277,14 +292,14 @@ body {
     height: auto;
 }
 .homepagerefresh .leftBottom,
-.homepagerefresh .leftTop, 
-.homepagerefresh .rightTop, 
+.homepagerefresh .leftTop,
+.homepagerefresh .rightTop,
 .homepagerefresh .rightBottom {
     position: relative;
 }
 .homepagerefresh .leftBottom .container-fluid .pull-right,
-.homepagerefresh .leftTop .container-fluid .pull-right, 
-.homepagerefresh .rightTop .container-fluid .pull-right, 
+.homepagerefresh .leftTop .container-fluid .pull-right,
+.homepagerefresh .rightTop .container-fluid .pull-right,
 .homepagerefresh .rightBottom .container-fluid .pull-right {
     position: absolute;
 }
@@ -307,8 +322,8 @@ body {
 }
 
 .homepagerefresh .leftBottom .container-fluid .pull-right .content,
-.homepagerefresh .leftTop .container-fluid .pull-right .content, 
-.homepagerefresh .rightTop .container-fluid .pull-right .content, 
+.homepagerefresh .leftTop .container-fluid .pull-right .content,
+.homepagerefresh .rightTop .container-fluid .pull-right .content,
 .homepagerefresh .rightBottom .container-fluid .pull-right .content {
     color: #fff;
     display: table;
@@ -398,7 +413,7 @@ body {
     letter-spacing: 1.25px;
     margin: 0 0 10px 0;
 }
-.homepagerefresh #lib-footer .phone-numbers, 
+.homepagerefresh #lib-footer .phone-numbers,
 .homepagerefresh #lib-footer .lib-footer-links {
     padding-top: 1em;
 }
@@ -572,7 +587,7 @@ body {
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
-/*@media screen and (max-width: 991px) and (min-width: 768px) { */
+    /*@media screen and (max-width: 991px) and (min-width: 768px) { */
     #bclib-header {
         height: auto;
     }
@@ -590,7 +605,7 @@ body {
     }
     .homepagerefresh #bc-footer .copyright {
         text-align: left;
-    }  
+    }
     .homepagerefresh #bc-footer .bc-links {
         text-align: left;
         padding-top: 20px;
@@ -646,7 +661,7 @@ body {
     }
     .homepagerefresh #bc-footer .copyright {
         text-align: center;
-    }  
+    }
     .homepagerefresh #bc-footer .bc-links {
         text-align: center;
         padding-top: 20px;

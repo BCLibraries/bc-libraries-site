@@ -26,7 +26,7 @@ var trackOutboundLink = function (url) {
 
 $.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, api_version;
+    var search_string, templates, source, loading_timers, api_version, spinner_html, error_html;
 
     api_version = '0.0.9.2';
 
@@ -45,7 +45,7 @@ $.fn.bcBento = function (services) {
         // Clear old results.
         $heading.nextAll().remove();
         loading_timers[service.name] = setTimeout(function () {
-            $target.addClass('loading');
+            $heading.after(spinner_html);
         }, 150);
 
 
@@ -53,14 +53,15 @@ $.fn.bcBento = function (services) {
             {
                 type: 'GET',
                 url: url,
-                dataType: 'jsonp',
+                dataType: 'json',
                 cache: true,
                 success: function (data) {
                     successfulSearch(data, service, $target, $heading);
                 },
                 error: function () {
                     clearTimeout(loading_timers[service.name]);
-                    $target.removeClass('loading');
+                    $heading.nextAll().remove();
+                    $heading.after(error_html);
                 }
             }
         );
@@ -80,7 +81,7 @@ $.fn.bcBento = function (services) {
         if (templates[service.name]) {
             var html = templates[service.name](data);
             clearTimeout(loading_timers[service.name]);
-            $target.removeClass('loading');
+            $heading.nextAll().remove();
             $heading.after(html);
         }
     }
@@ -134,6 +135,19 @@ $.fn.bcBento = function (services) {
         }
         return str;
     }
+
+    function buildSpinner() {
+        var source = $('#spinner-template').html();
+        return Handlebars.compile(source)({});
+    }
+
+    function buildErrorNotice() {
+        var source = $('#error-template').html();
+        return Handlebars.compile(source)({});
+    }
+
+    spinner_html = buildSpinner();
+    error_html = buildErrorNotice();
 
     templates = [];
 

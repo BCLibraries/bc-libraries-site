@@ -4,9 +4,10 @@
             <div class="col-md-12">
                 <form action="/search">
                     <div class="input-group">
-                        <input class="form-control" name="any" placeholder="Search for books, articles, journals, databases">
+                        <label for="lib-search-box" class="sr-only">Search</label>
+                        <input class="form-control" name="any" placeholder="Search for books, articles, journals, databases" id="lib-search-box">
                         <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i> <span class="search-button-text">Search</span></button>
                     </span>
                     </div>
                 </form>

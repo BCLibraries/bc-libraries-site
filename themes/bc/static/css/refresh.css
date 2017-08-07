@@ -88,14 +88,14 @@ body {
     text-align: left;
     overflow: hidden;
 }
-#skiplink:active, 
-#skiplink:focus, 
+#skiplink:active,
+#skiplink:focus,
 #skiplink:hover {
-    left: 0; 
+    left: 0;
     top: 0;
-    width: auto; 
-    height: auto; 
-    overflow: visible; 
+    width: auto;
+    height: auto;
+    overflow: visible;
     background-color: #fff;
     padding: 4px;
 }
@@ -789,6 +789,17 @@ body.body-modal {
         border: 0;
         margin-right: 0;
         padding-right: 0;
+    }
+
+    #search-panel button.btn.btn-default .search-button-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
     }
 }
 

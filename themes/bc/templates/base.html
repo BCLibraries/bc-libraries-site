@@ -32,8 +32,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.12.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--script type="text/javascript" src="/theme/js/bootstrap-hover-dropdown.min.js"></script-->
-    <!--script type="text/javascript" src="/theme/js/jquery.hoverIntent.minified.js"></script-->
     <script type="text/javascript" src="//api2.libanswers.com/1.0/widgets/5468" async></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -212,6 +210,15 @@
 
     <script src="/theme/js/nospam.js"></script>
     <script src="/theme/js/libhoursv2.js"></script>
+
+    <!-- MEGA MENU SCRIPTS -->
+    <!-- This code will prevent unexpected menu close when using some components (like accordion, forms, etc) -->
+    <script>$(document).on('click','.yamm .dropdown-menu',function(e){e.stopPropagation()});</script>
+    <script type="text/javascript" src="/theme/js/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="/theme/js/jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="/theme/js/megamenu.js"></script>
+    <script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
+    <!-- END MEGA MENU SCRIPTS -->
 
     {% block pagescripts %}
     {% endblock %}

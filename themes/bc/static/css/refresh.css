@@ -457,6 +457,26 @@ body {
     letter-spacing: 1.25px;
     margin: 0 0 10px 0;
 }
+.homepagerefresh #lib-footer .address-wrap,
+.homepagerefresh #lib-footer .hours-wrap {
+    float: left;
+}
+.homepagerefresh #lib-footer .social-wrap {
+    float: right;
+}
+
+.homepagerefresh #lib-footer .lib-footer-links a {
+    border-right: 1px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.homepagerefresh #lib-footer .lib-footer-links a:first-child {
+    padding-left: 0;
+}
+.homepagerefresh #lib-footer .lib-footer-links a:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
 .homepagerefresh #lib-footer .phone-numbers,
 .homepagerefresh #lib-footer .lib-footer-links {
     padding-top: 1em;
@@ -721,6 +741,12 @@ body.body-modal {
     .homepagerefresh #facpub img.bookcover {
         display:none!important;
     }
+    .homepagerefresh #lib-footer .lib-footer-links a {
+        border-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
     .homepagerefresh #lib-footer .phone-numbers .phone-pair {
         padding-top: 4px;
     }
@@ -761,20 +787,11 @@ body.body-modal {
         padding-left: 1em;
         padding-right: 1em;
     }
-    .homepagerefresh #lib-footer h4 {
-        margin-top: 30px;
-    }
     .homepagerefresh #lib-footer h4.orgname {
         margin-top: inherit;
     }
-    .homepagerefresh #lib-footer .hours-todays-date {
-        top: 30px;
-    }
-    .homepagerefresh #lib-footer #socialmedia h4,
-    .homepagerefresh #lib-footer .quick-links h4,
-    .homepagerefresh #lib-footer #socialmedia ul,
-    .homepagerefresh #lib-footer .quick-links ul {
-        text-align: left;
+    .homepagerefresh #lib-footer .hours-wrap {
+        margin-top: 3em;
     }
     .homepagerefresh #bc-footer .bc-links ul {
         max-width: 275px;

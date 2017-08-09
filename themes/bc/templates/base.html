@@ -4,7 +4,7 @@
     {% block head %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}-{{ SITENAME }}</title>
     <meta charset="utf-8"/>
 
     <link rel="shortcut icon" href="/favicon.ico?v=0" />
@@ -189,6 +189,8 @@
 
     {# modular bc maroon header #}
     {% include 'bclib-header.html' %}
+
+    <h1 class="sr-only sr-only-focusable">{{ self.title() }}</h1>
 
     {% block content %}
     {% endblock %}

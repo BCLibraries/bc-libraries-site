@@ -59,6 +59,14 @@ body {
     }
 }
 
+@media (max-width: 480px) { 
+   .col-xxs {
+      display:block;
+      float:none;
+      width: 100%
+   }
+}
+
 /* top level maroon bar */
 #bclib-header {
     box-sizing: border-box;

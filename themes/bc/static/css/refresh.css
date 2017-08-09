@@ -287,6 +287,9 @@ body {
 .homepagerefresh #hours-container .hours-link {
     text-align: right;
 }
+.homepagerefresh #hours-container .table-hours.top-table-hours .font-small {
+    font-size: 13px;
+}
 .homepagerefresh .list-group.popular a.list-group-item {
     padding: 6px 15px;
 }

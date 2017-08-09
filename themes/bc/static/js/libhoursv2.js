@@ -34,7 +34,11 @@ $(document).ready(function(){
                     //console.log(loc.name);
                     //console.log("found " + name);
                     var rendered = loc.rendered;
-                    $(libs2[name]).text(rendered);
+                    if (loc.rendered.length >= 12) {
+                        //console.log("adding font-small class to output");
+                        rendered = "<span class='font-small'>" + rendered + "</span>";
+                    }
+                    $(libs2[name]).html(rendered);
                 }
             });
         }

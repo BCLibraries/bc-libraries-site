@@ -248,7 +248,7 @@
     color: #05506d;
     font-size: 16px;
     font-weight: normal;
-    margin: 5px 0 10px !important;
+    margin: 5px 0 0 !important;
     padding: 0;
     text-transform: none;
 }
@@ -646,6 +646,19 @@
 }
 .megamenuemail:hover:before {
     color: #32758f;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .megamenuphone:before,
+    .megamenuemail:before,
+    .megamenucalendar:before {
+        content: none;
+        padding: 0;
+    }
+}
+.mini_hours_container,
+#oconnor_hours_container {
+    font-size: 15px;
+    margin-bottom: 4px;
 }
 
  /* ASK A LIBRARIAN ICON STYLES */

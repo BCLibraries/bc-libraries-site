@@ -383,7 +383,6 @@ body {
 /* scholarship */
 .homepagerefresh #scholarship {
     text-align: center;
-    padding: 15px 0;
 }
 .homepagerefresh #scholarship h3 {
     text-transform: uppercase;
@@ -792,8 +791,8 @@ body.body-modal {
         left: auto;
     }
     .homepagerefresh #scholarship .row {
-        padding-left: 1em;
-        padding-right: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     .homepagerefresh #lib-footer h4.orgname {
         margin-top: inherit;

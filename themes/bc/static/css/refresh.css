@@ -411,7 +411,6 @@ body {
 
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {
-    display: inline-block;
     width: 100%;
     min-height: 150px;
     height: 600px;

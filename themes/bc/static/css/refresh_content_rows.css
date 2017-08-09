@@ -47,7 +47,7 @@
 
 /* HOMEPAGE NEWS ROW STYLING */
 
-#news h3 a {
+#news h2 a {
 	font-size: 24px;
     line-height: 30px;
     font-weight: 600;
@@ -56,7 +56,7 @@
     border-bottom: 1px solid;
 }
 
-#news h3 a:hover {
+#news h2 a:hover {
 	/*border-bottom: 4px solid #501315;*/
 	text-decoration: none;
 }
@@ -129,7 +129,7 @@
 	height: 100%;
 }
 
-.exhibit-box h3 {
+.exhibit-box h2 {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #8a100b !important;

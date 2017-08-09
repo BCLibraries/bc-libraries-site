@@ -18,7 +18,8 @@ body {
 }
 
 /* links */
-.homepagerefresh #facpub h3 a {
+.homepagerefresh #facpub h2 a {
+    font-size: 24px;
     border-bottom: 1px solid;
     text-decoration: none;
 }
@@ -273,7 +274,10 @@ body {
 .homepagerefresh #db-rg-hours .list-group-item {
     border:none;
 }
-.homepagerefresh #db-rg-hours h3 a {
+.homepagerefresh #db-rg-hours h2 {
+    font-size: 24px;
+}
+.homepagerefresh #db-rg-hours h2 a {
     text-decoration: none;
     border-bottom: 2px solid;
 }
@@ -293,7 +297,7 @@ body {
 .homepagerefresh .list-group.popular a.list-group-item {
     padding: 6px 15px;
 }
-.homepagerefresh h4.list-label {
+.homepagerefresh h3.list-label {
     margin: .75em 0 .5em 0;
     font-size: 14px;
 }
@@ -402,14 +406,15 @@ body {
 .homepagerefresh #scholarship {
     text-align: center;
 }
-.homepagerefresh #scholarship h3 {
+.homepagerefresh #scholarship h2 {
     text-transform: uppercase;
     margin: 0;
     color: #8a100b;
     font-size: 20px;
 }
-.homepagerefresh #scholarship h4 {
+.homepagerefresh #scholarship h3 {
     margin-top: 1.25em;
+    font-size: 18px;
 }
 
 /* exhibition highlight */
@@ -421,6 +426,9 @@ body {
 .homepagerefresh #facpub {
     background-color: #fff;
     padding-bottom: 40px;
+}
+.homepagerefresh #facpub h3 {
+    font-size: 18px;
 }
 .homepagerefresh #facpub .more-link {}
 

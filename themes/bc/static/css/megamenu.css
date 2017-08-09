@@ -48,9 +48,8 @@
     border-radius: 0;
 }
 .homepagerefresh .megamenu-container {
-    background-color: rgba(0,0,0,.55);
+    background-color: rgba(16,14,15,.85);
     color: #000;
-    /*margin-top: -1px;*/
     position: absolute;
     width: 100%;
     z-index: 10000;

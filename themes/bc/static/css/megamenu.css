@@ -97,6 +97,14 @@
 
 
 /* mega menu style copied from style.css */
+.h3style {
+    color: #05506d;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    /*text-transform: uppercase;*/
+}
 .h4style {
     color: #05506d;
     font-size: 16px;
@@ -317,7 +325,7 @@
 }
 
 .more a:after {
-    font-family: 'icomoon';
+    /*font-family: 'icomoon';
     content: "\e655";
     color: #a3a3a3;
     display: block;
@@ -325,7 +333,8 @@
     font-size: 15px;
     line-height: 1;
     padding: 5px 0 0 10px;
-    font-weight: normal;
+    font-weight: normal;*/
+    content: none;
 }
 
 .more a:hover:after {
@@ -569,11 +578,12 @@
 }
 
 .pane_info .h3style a:after {
-    font-family: 'icomoon';
+    /*font-family: 'icomoon';
     content: "\e682";
     padding: 0 0  0 5px;
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none;*/
+    content: none;
 }
 
 
@@ -598,11 +608,12 @@
 }
 
 .megamenucalendar:before {
-    font-family: "icomoon";
+    /*font-family: "icomoon";
     content: "\e648";
     color: #05506d;
     float: left;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 0;*/
+    content: none;
 }
 .megamenucalendar:hover:before {
     color: #32758f;
@@ -618,11 +629,12 @@
 }
 
 .megamenuphone:before {
-    font-family: "icomoon";
+    /*font-family: "icomoon";
     content: "\e67d";
     color: #05506d;
     float: left;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 0;*/
+    content: none;
 }
 .megamenuphone:hover:before {
     color: #32758f;
@@ -638,11 +650,12 @@
 }
 
 .megamenuemail:before {
-    font-family: "icomoon";
+    /*font-family: "icomoon";
     content: "\e67c";
     color: #05506d;
     float: left;
-    padding: 0 10px 0 0;
+    padding: 0 10px 0 0;*/
+    content: none;
 }
 .megamenuemail:hover:before {
     color: #32758f;
@@ -653,6 +666,11 @@
     .megamenucalendar:before {
         content: none;
         padding: 0;
+    }
+    .megamenuphone .fa-phone,
+    .megamenuemail .fa-envelope,
+    .megamenucalendar .fa-calendar {
+        display: none;
     }
 }
 .mini_hours_container,

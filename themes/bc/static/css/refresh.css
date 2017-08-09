@@ -315,7 +315,6 @@ body {
     text-align: center;
 }
 .homepagerefresh #quick-links .quick-link-block {
-    height: 140px;
     padding: 1em;
     transition: all 0.3s ease 0s;
     cursor: pointer
@@ -751,6 +750,9 @@ body.body-modal {
     }
     #bclib-header .col-md-4 {
         width: 33.33333333%;
+    }
+    #quick-links .quick-link-block {
+        height: 140px;
     }
 }
 

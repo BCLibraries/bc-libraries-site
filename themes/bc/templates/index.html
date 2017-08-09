@@ -78,8 +78,34 @@ $(function () {
 <script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
 <script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
 <script type="text/javascript">
-    $('#search-panel').on('typeahead:selected', function (evt, data) {
-        $('#search-panel form').submit();
-    });
+    // Various glue scripts for the front page.
+    (function () {
+        function run_on_ready(fn) {
+            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            }
+        }
+
+        function listenForTypeahead() {
+            $('#search-panel').on('typeahead:selected', function (evt, data) {
+                $('#search-panel form').submit();
+            });
+        }
+
+        function makeQuickLinkBoxesClickable() {
+            var linkboxes = document.querySelectorAll('.quick-link-block');
+            linkboxes.forEach(function (el) {
+                el.addEventListener('click', function (evt) {
+                    console.log(evt);
+                    window.location = el.querySelector('a').href;
+                });
+            });
+        }
+
+        run_on_ready(listenForTypeahead);
+        run_on_ready(makeQuickLinkBoxesClickable);
+    })();
 </script>
 {% endblock %}

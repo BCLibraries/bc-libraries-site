@@ -27,7 +27,7 @@
 
 
 /* Mega Menu */
-.homepagerefresh #megamenu .navbar-default .navbar-brand {
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
     text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
     color: #fff;
     font-size: 20px;
@@ -38,11 +38,11 @@
     padding-left: 20px;
 }
 
-.homepagerefresh #megamenu .navbar-default {
+.homepagerefresh #megamenu-refresh .navbar-default {
     background-color: inherit;
     border: none;
 }
-.homepagerefresh #megamenu .navbar {
+.homepagerefresh #megamenu-refresh .navbar {
     margin-bottom: 0;
     border-bottom: none;
     border-radius: 0;
@@ -67,10 +67,10 @@
     padding-right:0;
 }
 @media ( max-width: 767px ) {
-    .homepagerefresh #megamenu .navbar-default .navbar-brand {
+    .homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
         display: none;
     }
-    .homepagerefresh #megamenu .navbar-default .navbar-toggle .icon-bar {
+    .homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;
     }
     .homepagerefresh .megamenu-container .nav a.menu-option {
@@ -114,51 +114,51 @@
     text-transform: none;
 }
 
-.homepagerefresh #megamenu .navbar-nav > li > a:focus {
+.homepagerefresh #megamenu-refresh .navbar-nav > li > a:focus {
     background: #05506d !important;
     color: #fff;
     outline: 0;
 }
 
-.homepagerefresh #megamenu .navbar-nav > li > a:hover {
+.homepagerefresh #megamenu-refresh .navbar-nav > li > a:hover {
     background: #05506d !important;
     color: #fff;
     outline: 0;
 }
 
-.homepagerefresh #megamenu .navbar-nav > .open > a, #megamenu .navbar-nav > .open > a:hover {
+.homepagerefresh #megamenu-refresh .navbar-nav > .open > a, #megamenu-refresh .navbar-nav > .open > a:hover {
     background: #05506d !important;
     color: #fff !important;
 }
 
-.homepagerefresh #megamenu .navbar-nav > li > .dropdown-menu {
+.homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
     /*border: 1px solid #dadada;*/
     border-top: none;
     border-radius: 0;
     margin-top: 0;
 }
 
-/*#megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+/*#megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
     border-top: 3px solid #05506d;
 }*/
 @media ( max-width: 1199px ) {
-    .homepagerefresh #megamenu .navbar-nav > li > .dropdown-menu {
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
         border: 0;
         border-radius: 0;
         margin-top: 0;
         font-size: 12px;
     }
-    .homepagerefresh #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
         /*border-top: 3px solid #05506d;*/
     }
 }
 @media ( max-width: 767px ) {
-     .homepagerefresh #megamenu .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
         border-top: 0px;
     }
 }
 @media ( max-width: 767px ) {
-    .homepagerefresh #megamenu .navbar-nav > li > .dropdown-menu {
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
         border: 0;
         font-size: 14px;
         background-color: #fff;
@@ -187,7 +187,7 @@
 
 /* CUSTOM MENU STYLING */
 
-/*#megamenu {
+/*#megamenu-refresh {
     width: 1200px;
     height: 100px;
     margin: 0px auto;
@@ -195,7 +195,7 @@
     background: #fff;
 }
 @media ( max-width: 1199px ) {
-    #megamenu {
+    #megamenu-refresh {
         width: 100%;
         height: 95px;
         margin: 0px auto;
@@ -204,7 +204,7 @@
     }
 }*/
 @media ( max-width: 767px ) {
-    .homepagerefresh #megamenu {
+    .homepagerefresh #megamenu-refresh {
         display: inline;
     }
 }
@@ -347,7 +347,7 @@
 .homepagerefresh .hamburger {
     background: transparent;
 }
-.homepagerefresh #megamenu .navbar-toggle {
+.homepagerefresh #megamenu-refresh .navbar-toggle {
     background-color: #990000;
     background-image: none;
     /*border: 1px solid rgba(0, 0, 0, 0);
@@ -360,7 +360,7 @@
     /*width: 100%;*/
 }
 /*@media (min-width: 767px) {
-    .homepagerefresh #megamenu .navbar-toggle {
+    .homepagerefresh #megamenu-refresh .navbar-toggle {
         display: none;
     }
 }

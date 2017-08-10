@@ -1,62 +1,64 @@
 {% extends "base.html" %}
 
+{% block title %}News{% endblock %}
+
+{% block pagestyles %}
+<link rel="stylesheet" href="/theme/css/news.css"/>
+{% endblock %}
 
 {% block content %}
+<div class="container">
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
         </a>
         </li>
         <li id="s-lib-bc-site">
-        <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements
-        </a>
+        <a href="http://library.bc.edu/news" title="Library News Archives">News archives</a>
         </li>
     </ol>
 
-    <h2>Library News & Announcements </h2>
+    <h2>News archive</h2>
 
-    <div class="news_archives">
+    {{ years_worth_of_articles('2017') }}
 
-        <h3>2017</h3>
+    {{ years_worth_of_articles('2016') }}
 
-       {% for article in articles | has_category(['news','announcements']) | has_year('2017') %}
+    {{ years_worth_of_articles('2015') }}
 
-            {{ article_archive_display(article) }}
-
-        {% endfor %}
-
-    </div>
-
-    <div class="news_archives">
-
-        <h3>2016</h3>
-
-       {% for article in articles | has_category(['news','announcements']) | has_year('2016') %}
-
-            {{ article_archive_display(article) }}
-
-        {% endfor %}
-
-    </div>
-
-
-    <div class="news_archives">
-
-    <h3>2015</h3>
-
-
-        {% for article in articles | has_category(['news','announcements']) | has_year('2015') %}
-
-            {{ article_archive_display(article) }}
-
-        {% endfor %}
-
-    </div>
+</div>
 {% endblock %}
 
+{# Print one year of articles. Put quotes around year! #}
+{% macro years_worth_of_articles(year) %}
+<div class="news_archives">
 
+    <h3>{{ year }}</h3>
+
+
+    {% for article in articles | has_category(['news','announcements']) | has_year(year) %}
+
+    {# Open a new row on odd-numbered articles #}
+    {% if loop.index % 2 == 1 %}
+    <div class="row">
+        {% endif %}
+
+        {{ article_archive_display(article) }}
+
+        {# Close the row on even articles or on the last article #}
+        {% if loop.index % 2 == 0 or loop.last %}
+    </div>
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+{% endmacro %}
+
+
+{# Print one article. #}
 {% macro article_archive_display(article) %}
-<div class="news_listing">
+<div class="news_listing col-md-6">
 
     {% if article.image_thumb %}
         {% set article_image = "/theme/img/news/" + article.image_thumb %}
@@ -85,5 +87,4 @@
 
 
 {% block pagescripts %}
-<script src="/theme/js/bc-home-chosen.js?version=0.0.1"></script>
 {% endblock %}

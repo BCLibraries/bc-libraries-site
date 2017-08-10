@@ -50,6 +50,7 @@
 .homepagerefresh .megamenu-container {
     background-color: rgba(16,14,15,.85);
     color: #000;
+    /*margin-top: -1px;*/
     position: absolute;
     width: 100%;
     z-index: 10000;
@@ -756,3 +757,58 @@
     line-height: 0.8;
 }
 
+
+/* Image sprites for library thumbnails */
+.libsprite {
+    background: url('/theme/img/librarypane/libthumb-spritesheet.jpg') no-repeat;
+    display: block;
+    border: 2px solid #990000;
+}
+
+.libsprite-librarythumbnails_bapst {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -5px;
+}
+
+.libsprite-librarythumbnails_burns {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -5px;
+}
+
+ .libsprite-librarythumbnails_ed {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -165px;
+}
+
+.libsprite-librarythumbnails_law {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -165px;
+}
+
+.libsprite-librarythumbnails_oconnor {
+    width: 150px;
+    height: 150px;
+    background-position: -325px -5px;
+}
+
+.homepagerefresh .libsprite-librarythumbnails_oneill {
+    width: 150px;
+    height: 150px;
+    background-position: -325px -165px;
+}
+
+ .libsprite-librarythumbnails_swl {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -325px;
+}
+
+.libsprite-librarythumbnails_tml {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -325px;
+}

@@ -204,6 +204,9 @@ body {
     /*width: 250px;*/
 
 }
+#bclib-header #bclib-header-form form {
+    display: flex;
+}
 #bclib-header input#bclib-header-search {
     font-size: 14px;
     color: #000;

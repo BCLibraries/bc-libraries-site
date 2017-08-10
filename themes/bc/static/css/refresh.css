@@ -739,6 +739,12 @@ body.body-modal {
 
 /* media query overrides */
 
+/* Landscape tablets and all desktops */
+@media screen and (min-width: 992px) {
+    #quick-links .quick-link-block {
+        height: 140px;
+    }
+}
 /* Landscape tablets and medium desktops */
 /*@media (min-width: 992px) {*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -753,9 +759,6 @@ body.body-modal {
     }
     #bclib-header .col-md-4 {
         width: 33.33333333%;
-    }
-    #quick-links .quick-link-block {
-        height: 140px;
     }
 }
 

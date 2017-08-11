@@ -221,6 +221,16 @@ body {
     padding: 0 2px;
     border-radius: 0
 }
+
+#bclib-header a.ignatius {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("/theme/img/ignatius.png") 0 0;
+    background-size: cover;
+    float: right;
+}
+
 /* end top level maroon bar */
 
 

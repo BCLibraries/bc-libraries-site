@@ -363,7 +363,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/antiphonerbg.jpg) no-repeat 0% 50% #101010;
+    background: url(/theme/img/antiphonerbg.jpg) no-repeat 100% 50% #101010;
     background-size: auto auto;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
@@ -455,7 +455,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 0% 5% #101010;
+    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 50% 5% #101010;
     background-size: auto auto;
     color: #fff;
     padding: 55px 0;

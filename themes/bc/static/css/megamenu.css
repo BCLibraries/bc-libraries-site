@@ -208,12 +208,22 @@
         display: inline;
     }
 }
-
+.homepagerefresh #megamenu-refresh .hours-todays-date-container {
+    padding-bottom: 4px;
+}
+.homepagerefresh #megamenu-refresh .hours-todays-date {
+    font-weight: 600;
+}
 .homepagerefresh .menu_list, .ask_list {
     list-style: none outside none;
     padding: 0px;
     margin: 0 0px;
     border-right: 1px solid #DADADA;
+    padding: 0 25px;
+}
+.homepagerefresh .hours_menu_list {
+    list-style: none outside none;
+    border-right: 0;
     padding: 0 25px;
 }
 @media ( max-width: 767px ) {

@@ -2,6 +2,10 @@
 
 {% block title %}Home{% endblock %}
 
+{% block pagestyles %}
+<link rel="stylesheet" href="/theme/css/stories.css" />
+{% endblock %}
+
 {% block content %}
 
 {%include 'homepage/header.html' %}
@@ -14,19 +18,8 @@
 
             {% include 'homepage/start-research.html' %}
 
-            {#% include 'homepage/hours.html' %#}
+            {% include 'homepage/story-box.html' %}
         </div>
-        <!--div class="row notop">
-            <div class="col-md-4">
-                <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All ​d​atabases</a>
-            </div>
-            <div class="col-md-4">
-                <a href="http://libguides.bc.edu/az.php" class="btn btn-gold">All Research Guides</a>
-            </div>
-            <div class="col-md-4">
-                <a href="http://libguides.bc.edu/hours" class="btn btn-gold">All Library Hours</a>
-            </div>
-        </div-->
     </div>
     <!-- DB RG HOURS BOX END -->
 
@@ -78,6 +71,7 @@ $(function () {
 {% endblock %}
 
 {% block pagescripts %}
+<script type="text/javascript" src="/theme/js/story-box.js"></script>
 <script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
 <script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
 <script type="text/javascript">

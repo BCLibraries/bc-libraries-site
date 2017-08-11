@@ -131,6 +131,10 @@ def most_recent_news(articles_list, count):
             a.destination = a.url
     return news_articles
 
+def current_stories(articles_list, count):
+    return [a for a in articles_list if a.category.name == 'stories' and is_not_expired(a)][:count]
+
+
 def is_not_expired(article):
     return not (hasattr(article, 'expired')) or article.expired != 'yes'
 
@@ -140,5 +144,6 @@ JINJA_FILTERS = {
     'has_category': has_category,
     'has_year': has_year,
     'not_oneoff': not_oneoff,
-    'most_recent_news': most_recent_news
+    'most_recent_news': most_recent_news,
+    'current_stories': current_stories
 }

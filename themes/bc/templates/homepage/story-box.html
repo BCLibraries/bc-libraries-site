@@ -1,0 +1,25 @@
+<div id="storybox" class="col-md-6 col-sm-12 col-xs-12 col-xxs">
+    <div class="row">
+
+        <div class="col-md-10 story-display">
+
+            {% for story in articles | current_stories(4) %}
+            <figure class="sr-only story" id="story-{{loop.index}}">
+                <a href="{{ story.destination }}" title="Text here?">
+                    <img src="/theme/img/stories/{{ story.image }}" alt="{{ story.image_alt }}" aria-hidden="true" role="presentation"/>
+                </a>
+                <figcaption><a href="{{ story.destination }}">{{ story.title }}</a></figcaption>
+            </figure>
+            {% endfor %}
+
+        </div>
+
+        <div class="col-md-2 story-selectors" aria-hidden="true" role="presentation">
+
+            {% for story in articles | current_stories(4) %}
+            <img class="selector" src="/theme/img/stories/{{ story.selector_img }}" alt="thumbnail" data-story="story-{{ loop.index }}"/>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

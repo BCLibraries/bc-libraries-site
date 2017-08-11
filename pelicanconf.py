@@ -135,10 +135,14 @@ def current_stories(articles_list, count):
     return [a for a in articles_list if a.category.name == 'stories' and is_not_expired(a)][:count]
 
 def current_facpubs(articles_list, count):
-    return [a for a in articles_list if a.category.name == 'facpub' and not_oneoff(a)][:count]
+    return [a for a in articles_list if a.category.name == 'facpub' and is_not_expired(a)][:count]
 
 def is_not_expired(article):
     return not (hasattr(article, 'expired')) or article.expired != 'yes'
+
+def is_not_oneoff(article):
+    return not (hasattr(article, 'oneoff')) or article.oneoff != 'yes'
+
 
 
 # These are filters we can use in templates

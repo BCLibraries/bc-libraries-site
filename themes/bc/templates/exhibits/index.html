@@ -2,14 +2,21 @@
 
 {% block pagestyles %}
 <style>
-    .right .col-md-6 {
-        margin-bottom: 2em;
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
     }
+
+
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="container">
+
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
+
+<div class="container exhibit-container">
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
             <a href="http://library.bc.edu" title="Libraries">Libraries
@@ -65,7 +72,7 @@
 
                     {% if article.location == "bapst" %}
                     <!-- BAPST LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>Bapst Library, Gargan Hall</h4>
@@ -101,7 +108,7 @@
 
                     {% if article.location == "burns" %}
                     <!-- BURNS LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>Burns Library</h4>
@@ -138,7 +145,7 @@
 
 
                     <!-- HISTORY DEPT, STOKE HALL LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>History Dept, Stokes Hall</h4>
@@ -175,7 +182,7 @@
 
                     {% if article.location == "lvl1" %}
                     <!-- O'NEILL LEVEL ONE LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>O'Neill Level One Gallery</h4>
@@ -215,7 +222,7 @@
 
 
                     <!-- O'NEILL LEVEL THREE LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>O'Neill Level Three Gallery</h4>
@@ -252,7 +259,7 @@
 
                     {% if article.location == "reading" %}
                     <!-- O'NEILL READING ROOM LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>O'Neill Reading Room</h4>
@@ -288,7 +295,7 @@
 
                     {% if article.location == "backwall" %}
                     <!-- O'NEILL READING ROOM BACK WALL LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>O'Neill Reading Room Back Wall</h4>
@@ -324,7 +331,7 @@
 
                     {% if article.location == "lobby" %}
                     <!-- O'NEILL LEVEL 3 LOBBY LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>O'Neill Library Lobby</h4>
@@ -361,7 +368,7 @@
 
                     {% if article.location == "tml" %}
                     <!-- TML LATEST EXHIBIT -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>Theology & Ministry Library</h4>
@@ -395,7 +402,7 @@
                     </div>
 
                     <!-- TIP O'NEILL -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>Tip O’Neill Exhibit</h4>
@@ -418,7 +425,7 @@
                     </div>
 
                     <!-- BURNS VIRTUAL EXHIBIT LINK -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 holder">
 
                         <div class="holdhead">
                             <h4>Burns Library Virtual Exhibits</h4>

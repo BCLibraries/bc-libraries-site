@@ -1,0 +1,672 @@
+/* LIBRARY EXHIBITS STYLES */
+
+html {
+    overflow-x: hidden;
+}
+
+.exhibit-container {
+    padding-top: 50px;
+}
+
+.exhibit-container .breadcrumb {
+    margin-bottom: 5px;
+}
+
+#exhibit, #exhibit_archive {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.latest_exhibit {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 275px 0 0;
+}
+
+@media ( max-width: 1199px ) {
+    .latest_exhibit {
+        padding: 0px 0 0;
+    }
+}
+
+#exhibit .latest_exhibit h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+#exhibit .latest_exhibit .left h3 {
+    text-align: center;
+}
+
+#exhibit .latest_exhibit .left {
+    float: left;
+    width: 25%;
+    background: #eaeaea;
+    border-bottom: 5px solid #dadada;
+    padding: 10px 20px 0;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit .latest_exhibit .left {
+        display: none;
+    }
+}
+
+#exhibit .latest_exhibit .left ul {
+    margin: 0 0 20px;
+    padding: 0 0 0 15px;
+}
+
+#exhibit .latest_exhibit .left ul li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0px 0 10px;
+}
+
+#exhibit .latest_exhibit .left ul li a:hover {
+   text-decoration: none;
+    border-bottom: 1px solid #990000;
+    margin: 0 0 10px;
+}
+
+#exhibit .latest_exhibit .left .target {
+    color: #666;
+    border-bottom: 1px solid #990000;
+    padding: 0 0 0 0px;
+    margin: 0 0 10px;
+}
+
+#exhibit .latest_exhibit .right {
+    float: right;
+    width: 75%;
+    padding: 10px 20px 0;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit .latest_exhibit .right {
+        float: right;
+        width: 100%;
+        padding: 10px 20px 0;
+    }
+}
+
+#exhibit .latest_exhibit .right ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline-block;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit .latest_exhibit .right ul {
+        width: 100%;
+    }
+}
+
+#exhibit .latest_exhibit .holder {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 30px 0;
+    padding: 0;
+    width: 375px;
+    height: auto;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit .latest_exhibit .holder {
+        display: inline-block;
+        position: relative;
+        margin: 0px 0px 15px 0;
+        padding: 0;
+        width: 40%;
+        height: auto;
+    }
+}
+
+@media ( max-width: 768px ) {
+      #exhibit .latest_exhibit .holder {
+        display: inline-block;
+        position: relative;
+        margin: 0px auto 30px;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#exhibit .latest_exhibit .holder:nth-child(odd) {
+   float: right;
+}
+
+#exhibit .latest_exhibit .holder:nth-child(even) {
+   float: left;
+}
+
+#exhibit .latest_exhibit .holder .holdhead {
+    position: relative;
+}
+
+#exhibit .latest_exhibit .holdhead h4 {
+    border-bottom: 1px solid #05506D;
+    text-transform: uppercase;
+    margin: 5px 0 0 !important;
+}
+
+#exhibit .latest_exhibit .holder .holdhead p {
+    font-size: 12px;
+}
+
+#exhibit .latest_exhibit .holder .frame {
+    border: 2px solid #05506D;
+    position: relative;
+    color: #444;
+    height: 375px;
+    width: 375px;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit .latest_exhibit .holder .frame {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #exhibit .latest_exhibit .holder .frame {
+        border: 2px solid #05506D;
+        position: relative;
+        color: #444;
+        height: 100%;
+        width: auto;
+    }
+}
+
+#exhibit .latest_exhibit .holder .frame:hover {
+    border: 2px solid #32758F;
+}
+
+#exhibit .latest_exhibit .holder .frame img {
+    height: 100%;
+    width: 100%;
+}
+
+#exhibit .latest_exhibit .holder .frame .info {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    min-height: 65px;
+    padding: 10px 5px 5px;
+    border-top: 1px solid #05506D;
+}
+
+#exhibit .latest_exhibit .holder .frame .info .date {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    color: #444;
+}
+
+#exhibit .latest_exhibit .holder .frame .info .title {
+    font-weight: bold;
+    line-height: 1;
+    font-size: 15px;
+}
+
+#exhibit .latest_exhibit .holder .frame:hover .info .title {
+    color: #32758F;
+}  
+
+#exhibit .above_footer {
+    clear: both;
+}
+
+/* EXHIBIT BLACKBAND HEADER STYLING AND CUSTOMIZATION */
+
+.blackband {
+    display: inline-block;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    min-height: 150px;
+    height: 290px;
+    background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    color: #fff;
+    padding: 30px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+@media ( max-width: 1199px ) {
+    .blackband {
+    display: inline-block;
+    position: relative;
+    width: 100%
+    min-height: 150px;
+    height: auto;
+    background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    color: #fff;
+    padding: 30px 0;
+    z-index: 2;
+    background-size: cover;
+    }
+}
+
+.blackband h2 {
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 20px 0;
+}
+
+@media ( max-width: 1199px ) {
+    .blackband h2 {
+    font-size: 24px;
+    }
+}
+
+.blackband .bandcenter {
+    width: 50%;
+    max-width: 610px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    text-align: justify;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.exhibit_page .blackband .bandcenter {
+    text-align: center;
+    width: 875px;
+    max-width: 875px;
+}
+
+@media ( max-width: 1199px ) {
+    .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
+        width: 75%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}  
+
+@media ( max-width: 768px ) {
+     .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+#exhibit .burns, .exhibit_page .burns {
+        background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .tml, .exhibit_page .tml {
+        background: url("/theme/img/exhibits/banner_tml.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .lvl1, .exhibit_page .lvl1 {
+        background: url("/theme/img/exhibits/banner_lvl1.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .lvl3, .exhibit_page .lvl3 {
+        background: url("/theme/img/exhibits/banner_lvl3.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .reading, .exhibit_page .reading {
+        background: url("/theme/img/exhibits/banner_reading.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .backwall, .exhibit_page .backwall {
+        background: url("/theme/img/exhibits/banner_backwall.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .lobby, .exhibit_page .lobby {
+        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .stokes, .exhibit_page .stokes {
+        background: url("/theme/img/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
+        background: url("/theme/img/exhibits/banner_bapst.png") no-repeat 50% 0% #101010;
+}
+
+#exhibit .virtual, .exhibit_page .virtual {
+        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+}
+
+#exhibit .tip, .exhibit_page .tip {
+        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+}
+
+.blackband a {
+    color: #fff;
+}
+
+/* EXHIBIT ARCHIVE STYLING */
+
+#exhibit.archives .latest_exhibit .holder:nth-child(odd), #exhibit.archives .latest_exhibit .holder:nth-child(even) {
+   float: left;
+   margin: 0 25px 25px 0;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
+       float: right;
+       margin: 0 0px 25px 0;
+    }
+
+    #exhibit.archives .latest_exhibit .holder:nth-child(even) {
+        float: left;
+        margin: 0 0px 25px 0;
+    }
+}
+
+@media ( max-width: 768px ) {
+        #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
+       float: none;
+       margin: 0 0px 25px 0;
+    }
+
+    #exhibit.archives .latest_exhibit .holder:nth-child(even) {
+        float: none;
+        margin: 0 0px 25px 0;
+    }
+}
+
+#exhibit.archives .latest_exhibit .holdhead {
+    margin: 0 0 10px 0;
+    width: 375px;
+}
+
+#exhibit.archives .latest_exhibit .holder {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 50px 0;
+    padding: 0;
+    width: 250px;
+    height: auto;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame {
+    border: 2px solid #05506D;
+    position: relative;
+    color: #444;
+    height: 250px;
+    width: 250px;
+}
+
+@media ( max-width: 1199px ) {
+    #exhibit.archives .latest_exhibit .holder {
+        margin: 0px 0px 25px 0;
+        padding: 0;
+        width: 45%;
+        height: auto;
+    }
+
+    #exhibit.archives .latest_exhibit .holder .frame {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #exhibit.archives .latest_exhibit .holder {
+        margin: 0px 0px 25px 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+#exhibit.archives .latest_exhibit .holder .frame:hover {
+    border: 2px solid #32758F;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame img {
+    height: 100%;
+    width: 100%;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0px 0px;
+    min-height: 55px;
+    padding: 5px;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info .date {
+    font-size: 12px;
+    margin: 0;
+    font-style: italic;
+    color: #444;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame .info .title {
+    font-weight: bold;
+    line-height: 1;
+    font-size: 15px;
+}
+
+#exhibit.archives .latest_exhibit .holder .frame:hover .info .title {
+    color: #32758F;
+}  
+
+
+/* INDIVIDUAL EXHIBIT PAGE STYLES */
+
+#individualpage {
+    padding: 205px 0 0;
+    z-index: 3;
+}
+
+.exhibit_page .exhibittitle {
+    width: 75%;
+    min-height: 120px;
+    padding: 10px 5px 0px;
+    margin: 0 auto 25px;
+    display: block;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    -webkit-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0.35);
+    box-shadow: 0px -15px 12px 1px rgba(0,0,0,0.35);
+}
+
+.exhibit_page .exhibittitle h3 {
+    font-size: 25px;
+    text-shadow: 2px 2px 1px #b8b8b8;
+}
+
+.exhibit_page .exhibittitle h3 .subtitle {
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #b8b8b8;
+}
+
+.exhibit_page .exhibittitle p {
+    font-size: 12px;
+}
+
+.exhibit_page .article_content, .exhibit_page .article_content_two {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.article_content .poster, .article_content_two .poster {
+    border: 2px solid #05506D;
+    padding: 2px;
+}
+
+.article_content .poster img, .article_content_two .poster img  {
+    width: 100%;
+    max-width: 100%;
+}
+
+.article_content .text, .article_content_two .text  {
+    text-align: justify;
+
+}
+
+@media ( max-width: 1199px ) {
+    #individualpage {
+    padding: 0px 0 25px;
+    z-index: 3;
+}
+
+.exhibit_page .exhibittitle {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 5px 0px;
+    margin: 0 auto 25px;
+    display: block;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    -webkit-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+    -moz-box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+    box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+}
+    }
+
+/* FOR NON-POSTER IMAGES THAT APPEAR IN SOME EXHIBIT PAGES */
+
+.exhibit_page .article_content .article_content .text img {
+    border: 2px solid #05506D;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.exhibit_page .article_content .article_content .text img.center {
+    margin: 0 auto 10px;
+}
+
+
+/* SPECIFIC EXHIBIT STYLES */
+
+.default .article_content .poster, .left .article_content .poster  {
+    float: left;
+    margin: 0px 25px 10px 0px;
+    max-width: 50%;
+}
+
+.default .article_content .text, .left .article_content .text  {
+    padding: 0 95px 0 0px;
+}
+
+.right .article_content .poster {
+    float: right;
+    margin: 0px 0px 10px 25px;
+    max-width: 50%;
+}
+
+.right .article_content .text {
+    padding: 0 0 0 95px;
+}
+
+.middle_top .article_content .poster {
+    float: none;
+    margin: 0 auto 15px;
+    max-width: 875px;
+    width: 50%;
+}
+
+.middle_top .article_content .text {
+   max-width: 875px;
+   margin: 0 auto;
+}
+
+.article_content_two {
+    display: none;
+}
+
+.middle_down .article_content_two {
+    display: block;
+}  
+
+.middle_down .article_content {
+    display: none;
+}
+
+.middle_down .article_content_two .poster {
+    float: none;
+    margin: 0 auto 0px;
+    max-width: 875px;
+    width: 50%;
+}
+
+.middle_down .article_content_two .text {
+   max-width: 875px;
+   margin: 0 auto 25px;
+   display: inline-block;
+}
+
+@media ( max-width: 1199px ) {
+    
+    .default .article_content .poster, .right .article_content .poster, .left .article_content .poster  {
+        float: right;
+        margin: 0px 0px 10px 25px;
+        max-width: 35%;
+    }
+    .default .article_content .text,  .right .article_content .text, .left .article_content .text {
+        padding: 0 0px 0 0px;
+    }
+
+    .middle_top .article_content .poster {
+        float: none;
+        margin: 0 auto 15px;
+        max-width: 875px;
+        width: 50%;
+    }
+
+    .middle_top .article_content .text {
+       max-width: 875px;
+       margin: 0 auto;
+       display: inline-block;
+    }
+
+    .article_content_two {
+        display: none;
+    }
+}
+
+@media ( max-width: 768px ) {
+
+    .exhibit_page .article_content {
+        display: none;
+    }
+
+    .article_content_two {
+        display: block;
+    }
+
+    .default .article_content_two .poster, .right .article_content _two .poster, .middle_top .article_conten_two .poster {
+        float: none;
+        margin: 0 auto 15px;
+        max-width: 875px;
+        width: 50%;
+    }
+
+    .middle_top .article_content_two .text, .default .article_content_two .text,  .right .article_content_two .text {
+       max-width: 875px;
+       margin: 0 auto;
+        display: inline-block;
+    }
+}

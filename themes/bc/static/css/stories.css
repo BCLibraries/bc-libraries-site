@@ -17,10 +17,12 @@
 }
 
 .homepagerefresh #storybox .story figcaption {
-    font-size: 18px;
-    font-variant: small-caps;
+    font-size: 14px;
+    font-weight: 700;
+    /* font-variant: small-caps; */
     padding: 0 5px;
-    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     width: 450px;
     background: #501315;
 }
@@ -30,7 +32,7 @@
 }
 
 .homepagerefresh #storybox .story figcaption a {
-    color: #ffffff;
+    color: #fff;
 }
 
 .homepagerefresh #storybox .story figcaption a:hover {
@@ -45,7 +47,7 @@
 .homepagerefresh #storybox .story-selectors img.selector {
     width: 87px;
     margin-bottom: 1em;
-    opacity: .65;
+    opacity: .55;
     padding: 6px;
     cursor: pointer;
     border-radius: 4px;

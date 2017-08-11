@@ -1,32 +1,38 @@
 <!-- FACPUB START -->
 <div class="container" id="facpub">
     <div class="row">
-        <div class="col-md-12"><h2><a href="/facpub/">Faculty Publication Highlights</a></h2></div>
-        <div class="col-md-3 col-sm-5 col-xs-12">
-            <h3><a href="http://library.bc.edu/facpub/2017/Apr/dunkle-enchantment/">Enchantment And Creed In The Hymns Of Ambrose Of Milan</a></h3>
-            <p>By Brian P. Dunkle, SJ<br/>
-            <em>Assistant Professor of Historical Theology</em>
-            </p>
-
-            <!--p><a href="http://library.bc.edu/theme/img/facpub/2017/04/dunkle-book.pdf">View sample pages</a></p>
-
-            <p><a href="http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21466611840001021">Find this item</a></p-->
+        
+        <div class="col-md-12">
+            <h2><a href="/facpub/">Faculty Publication Highlights</a></h2>
         </div>
-        <div class="col-md-9 col-sm-7 col-xs-12">
+        
+        <div class="col-md-5 col-sm-5 col-xs-12">
+
+    {% for facpub in articles | current_facpubs(1) %}
+
+            <h3><a href="http://library.bc.edu/facpub/{{ facpub.url }}">{{ facpub.title }}</a></h3>
+                <p>By {{ facpub.author_firstname}} {{ facpub.author_lastname}}<br/>
+                    <em>{{ facpub.author_position }}</em>
+                </p>
+
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12">
             <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12" aria-hidden="true">
-                    <a href="http://library.bc.edu/facpub/2017/Apr/dunkle-enchantment/"><img class="bookcover thumbnail img-responsive" src="/theme/img/facpub/2017/04/dunkle-cover.png" alt="book cover" /></a>
-                </div>
-                <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TUN4I7TfZbA" frameborder="0" allowfullscreen title="Interview with author"></iframe>
+                        <iframe class="embed-responsive-item" src="{{ facpub.youtube }}" frameborder="0" allowfullscreen title="Interview with author"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="col-md-12">
-            <p class="more-link"><a href="http://library.bc.edu/facpub/2017/Apr/dunkle-enchantment/">Read more about <em>Enchantment And Creed In The Hymns Of Ambrose Of Milan</em> <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></p>
-        </div>
+            <p class="more-link"><a href="https://library.bc.edu/{{ facpub.url }}">Read more about <em>{{ facpub.title }}</em> <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></p>
+
+    {% endfor %}  
+
+        </div>       
+
     </div>
 </div>
 <!-- FACPUB END -->

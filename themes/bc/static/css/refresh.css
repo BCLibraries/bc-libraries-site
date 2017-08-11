@@ -222,13 +222,23 @@ body {
     border-radius: 0
 }
 
-#bclib-header a.ignatius {
+/*#bclib-header a.ignatius {
     display: inline-block;
     height: 30px;
     width: 30px;
     background: url("/theme/img/ignatius.png") 0 0;
     background-size: cover;
     float: right;
+}*/
+
+#megamenu-refresh a.ignatius {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: url("/theme/img/ignatius.png") 0 0;
+    background-size: cover;
+    float: left;
+    margin: -10px 10px 0 0;
 }
 
 /* end top level maroon bar */
@@ -353,7 +363,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/antiphonerbg.jpg) no-repeat 100% 50% #101010;
+    background: url(/theme/img/antiphonerbg.jpg) no-repeat 0% 50% #101010;
     background-size: auto auto;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
@@ -445,7 +455,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 50% 5% #101010;
+    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 0% 5% #101010;
     background-size: auto auto;
     color: #fff;
     padding: 55px 0;

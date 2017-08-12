@@ -192,10 +192,6 @@ body {
     border-right: 0;
     border-radius: 0;
 }
-
-#bclib-header .input-wrapper {
-    padding-right: 0;
-}
 #bclib-header .input-group-btn .btn {
     padding: 0 8px;
     border-radius: 0
@@ -521,6 +517,9 @@ body.body-modal {
 
 /* Landscape tablets and all desktops */
 @media screen and (min-width: 992px) {
+    #bclib-header .input-wrapper {
+        padding-right: 0;
+    }
     #quick-links .quick-link-block {
         height: 140px;
     }
@@ -570,6 +569,7 @@ body.body-modal {
     .homepagerefresh #facpub img.bookcover {
         display:none!important;
     }
+
 }
 
 /* Landscape phones and portrait tablets */

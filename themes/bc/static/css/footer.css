@@ -8,6 +8,7 @@
     font-weight: 300;
     z-index: 4;
     position: relative;
+    padding-top: 1em;
 }
 .homepagerefresh #lib-footer ul {
     list-style: none;
@@ -210,6 +211,15 @@
     content: "\f16d";
 }
 
+
+@media (min-width: 1201px) {
+    .homepagerefresh #lib-footer .address-wrap,
+    .homepagerefresh #lib-footer .hours-wrap,
+    .homepagerefresh #lib-footer .social-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {

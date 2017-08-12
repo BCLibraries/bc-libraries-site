@@ -520,24 +520,12 @@ body.body-modal {
     #bclib-header .input-wrapper {
         padding-right: 0;
     }
-    #quick-links .quick-link-block {
-        height: 140px;
-    }
 }
 /* Landscape tablets and medium desktops */
 /*@media (min-width: 992px) {*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #bclib-header .col-md-12 {
-        width: 100%;
-    }
-    #bclib-header .col-md-8 {
-        width: 66.66666667%;
-    }
-    #bclib-header .col-md-6 {
-        width: 50%;
-    }
-    #bclib-header .col-md-4 {
-        width: 33.33333333%;
+    #quick-links .quick-link-block {
+        height: 170px;
     }
 }
 

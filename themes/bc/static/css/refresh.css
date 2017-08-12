@@ -60,14 +60,6 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .col-xxs {
-        display:block;
-        float:none;
-        width: 100%
-    }
-}
-
 /* top level maroon bar */
 #bclib-header {
     box-sizing: border-box;
@@ -149,8 +141,8 @@ body {
     padding-left: 15px;
 }
 
-#bclib-header a.bclib-header-logo  {
-
+#bclib-header a.bclib-header-logo img.logo-small {
+    padding-top: 4px;
 }
 #bclib-header a.bclib-header-logo p {
     background: none;
@@ -186,39 +178,26 @@ body {
 #bclib-header #bclib-header-form,
 #bclib-header input#bclib-header-search,
 #bclib-header .input-group-btn .btn {
-    height: 24px;
+    height: 28px;
 }
 
-#bclib-header #bclib-header-form {
-    display: inline-table;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align : center;
-    -webkit-align-items : center;
-    -moz-box-align : center;
-    -ms-flex-align : center;
-    align-items: center;
-    /*width: 250px;*/
-
-}
+#bclib-header #bclib-header-form {}
 #bclib-header #bclib-header-form form {
     display: flex;
 }
 #bclib-header input#bclib-header-search {
     font-size: 14px;
     color: #000;
-    pad ding: 2px 0 2px 4px;
+    /*padding: 2px 0 2px 4px;*/
     border-right: 0;
+    border-radius: 0;
 }
 
 #bclib-header .input-wrapper {
-    display: inline-block;
+    padding-right: 0;
 }
 #bclib-header .input-group-btn .btn {
-    padding: 0 2px;
+    padding: 0 8px;
     border-radius: 0
 }
 
@@ -569,11 +548,21 @@ body.body-modal {
     #bclib-header {
         height: auto;
     }
+    #bclib-header .container {
+        padding-bottom: 2px;
+    }
     #bclib-header .col-sm-12 {
         width: 100%;
     }
     #bclib-header ul.bclib-header-links {
         text-align: left;
+    }
+    #bclib-header ul.bclib-header-links li:last-child {
+        margin-left: 0;
+    }
+    #bclib-header .header-right {
+        padding-left: 0;
+        padding-right: 0;
     }
     .homepagerefresh #news {
         padding-bottom: 0em;
@@ -623,3 +612,20 @@ body.body-modal {
     }
 }
 
+@media (max-width: 480px) {
+    .col-xxs {
+        display:block;
+        float:none;
+        width: 100%
+    }
+    #bclib-header .container {
+        width: 100%;
+    }
+    #bclib-header .input-wrapper .pull-right {
+        float: none!important;
+        padding: 4px 0 6px 0;
+    }
+    #bclib-header .header-right {
+        padding-right: 15px;
+    }
+}

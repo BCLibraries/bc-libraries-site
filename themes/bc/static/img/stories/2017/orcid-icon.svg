@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 360 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M308,135c0,70.7 -57.3,128 -128,128c-70.7,0 -128,-57.3 -128,-128c0,-70.7 57.3,-128 128,-128c70.7,0 128,57.3 128,128Z" style="fill:#a6ce39;fill-rule:nonzero;"/><g><path d="M138.3,193.2l-15.4,0l0,-107.1l15.4,0l0,107.1Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M160.9,86.1l41.6,0c39.6,0 57,28.3 57,53.6c0,27.5 -21.5,53.6 -56.8,53.6l-41.8,0l0,-107.2l0,0Zm15.4,93.3l24.5,0c34.9,0 42.9,-26.5 42.9,-39.7c0,-21.5 -13.7,-39.7 -43.7,-39.7l-23.7,0l0,79.4Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M140.7,63.8c0,5.5 -4.5,10.1 -10.1,10.1c-5.6,0 -10.1,-4.6 -10.1,-10.1c0,-5.6 4.5,-10.1 10.1,-10.1c5.6,0 10.1,4.6 10.1,10.1Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 450 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,45,15)">
+        <path d="M308,135C308,205.7 250.7,263 180,263C109.3,263 52,205.7 52,135C52,64.3 109.3,7 180,7C250.7,7 308,64.3 308,135Z" style="fill:rgb(166,206,57);fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,45,15)">
+        <rect x="122.9" y="86.1" width="15.4" height="107.1" style="fill:white;fill-rule:nonzero;"/>
+        <path d="M160.9,86.1L202.5,86.1C242.1,86.1 259.5,114.4 259.5,139.7C259.5,167.2 238,193.3 202.7,193.3L160.9,193.3L160.9,86.1L160.9,86.1ZM176.3,179.4L200.8,179.4C235.7,179.4 243.7,152.9 243.7,139.7C243.7,118.2 230,100 200,100L176.3,100L176.3,179.4Z" style="fill:white;fill-rule:nonzero;"/>
+        <path d="M140.7,63.8C140.7,69.3 136.2,73.9 130.6,73.9C125,73.9 120.5,69.3 120.5,63.8C120.5,58.2 125,53.7 130.6,53.7C136.2,53.7 140.7,58.3 140.7,63.8L140.7,63.8Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+</svg>

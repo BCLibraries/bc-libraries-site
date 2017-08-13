@@ -219,6 +219,9 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .homepagerefresh #lib-footer .hours-todays-date {
+        right: 0px;
+    }
 }
 
 /* Portrait tablets and small desktops */

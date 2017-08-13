@@ -3,11 +3,11 @@
 
     <div class="row">
 
-        <div class="col-md-12">
+        <!--div class="col-md-12">
             <h2>
                 <a href="/news">News</a>
             </h2>
-        </div>
+        </div-->
 
        {% for article in articles | most_recent_news(4) %}
 
@@ -49,6 +49,6 @@
 
         {% endfor %}
     </div>
-
+    <div class="more-news"><a href="/news"><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> See all news</a></div>
 </div>
 <!-- NEWS END -->

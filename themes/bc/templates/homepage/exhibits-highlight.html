@@ -3,56 +3,210 @@
 <!-- FUTURE NOTES, ADD SLIDER AND OTHER EXHIBITS -->
 
 <div id="exhibit-highlight">
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+        <div class="row" style="margin-top: 1em;">
+            <div class="col-md-2">
+                   <!-- THERE'S NOTHING HERE -->
+            </div>
+            <div class="col-md-10">
+                 <h2>Exhibits</h2>
+            </div>
+        </div>
 
-	{% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+        <div class="row" style="margin-bottom: 3em;">
+            <div class="col-md-12">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
                     
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+        
+                        {% if articles %}
+                                {% set count = 0 %}
+                                {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+                                    
+                                    {% set count = count + 1%}
+                                    {% if count < 100 %}  
 
-                            {% if article.location == "lvl1" %}
-                            <!-- LEVEL ONE LATEST EXHIBIT -->
+                                       {% if article.location == "burns" %}
+                                        <!-- LATEST BURNS EXHIBIT -->
 
-                            <div class="content exhibit-box" >
-                            	<h2>Exhibits</h2>
+                                          <div class="item exhibit-box active">
 
-                            	<div class="row">
-	                            	<div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
+                                                <div class="row">
+                                                    <div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
 
-	                            		<a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
-										<p>{{ article.content|truncate(140, False, '...') }}</p>
-										<br />
-										<p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
+                                                        <p><em>Burns Library</em></p>
+                                                        <a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
+                                                        
+                                                        <p>{{ article.content|truncate(140, False, '...') }}</p>
+                                                        <br />
+                                                        <p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
 
-									</div>
+                                                    </div>
 
-									<div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
-										
-										<img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
+                                                    <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                                
+                                                        <img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
 
-									</div>
-								</div>
-							</div>
+                                                    </div>
+                                                </div>
 
-                           
-                            {% endif %}                        
+                                          </div>
+                                          <!-- END BURNS -->
+                                            {% endif %}
+
+                                        {% if article.location == "lvl1" %}
+                                        <!-- LATEST LVL1 EXHIBIT -->
+
+                                          <div class="item exhibit-box">
+
+                                                <div class="row">
+                                                    <div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
+                                                        <p><em>O'Neill Library, Level 1 Gallery</em></p>
+                                                        <a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
+                                                        
+                                                        <p>{{ article.content|truncate(140, False, '...') }}</p>
+                                                        <br />
+                                                        <p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
+
+                                                    </div>
+
+                                                    <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                                
+                                                        <img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
+
+                                                    </div>
+                                                </div>
+
+                                          </div>
+                                        <!-- END LVL1 -->
+                                        {% endif %}
+
+
+                                        {% if article.location == "lvl3" %}
+                                        <!-- LATEST LVL3 EXHIBIT -->
+
+                                          <div class="item exhibit-box">
+
+                                                <div class="row">
+                                                    <div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
+                                                        <p><em>O'Neill Library, Level 3 Gallery</em></p>
+                                                        <a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
+                                                        
+                                                        <p>{{ article.content|truncate(140, False, '...') }}</p>
+                                                        <br />
+                                                        <p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
+
+                                                    </div>
+
+                                                    <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                                
+                                                        <img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
+
+                                                    </div>
+                                                </div>
+
+                                          </div>
+                                        <!-- END LVL3 -->
+                                        {% endif %}
+
+
+                                        {% if article.location == "backwall" %}
+                                        <!-- LATEST BACK WALL EXHIBIT -->
+
+                                          <div class="item exhibit-box">
+
+                                                <div class="row">
+                                                    <div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
+                                                        <p><em>O'Neill Library, Reading Room Back Wall</em></p>
+                                                        <a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
+                                                        
+                                                        <p>{{ article.content|truncate(140, False, '...') }}</p>
+                                                        <br />
+                                                        <p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
+
+                                                    </div>
+
+                                                    <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                                
+                                                        <img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
+
+                                                    </div>
+                                                </div>
+
+                                          </div>
+                                        <!-- END BACK WALL -->
+                                        {% endif %}
+                                        
+                                         {% if article.location == "bapst" %}
+                                        <!-- LATEST BAPST EXHIBIT -->
+
+                                          <div class="item exhibit-box">
+
+                                                <div class="row">
+                                                    <div class="exhibit-left col-md-9 col-sm-9 col-xs-8">
+
+                                                        <p><em>Bapst Library, Gargan Hall</em></p>
+                                                        <a href="../{{ article.url }}" id="current-exhibits-title">{{ article.title }}</a>
+
+                                                        
+                                                        <p>{{ article.content|truncate(140, False, '...') }}</p>
+                                                        <br />
+                                                        <p><a href="http://library.bc.edu/exhibits"><span class="btn btn-default btn-gold">See More Library Exhibits</span></a></p>
+
+                                                    </div>
+
+                                                    <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                                
+                                                        <img src="/theme/img/exhibits/{{ article.location }}/{{ article.image }}" alt="{{ article.image_alt }}" class="exhibit-poster">
+
+                                                    </div>
+                                                </div>
+
+                                          </div>
+                                        <!-- END BAPST -->
+                                        {% endif %}
+                                       
+                                    {% endif %}
+                                                  
+                               {% endfor %}
                         {% endif %}
-                                  
-               {% endfor %}
-	{% endif %}
 
+                    </div>
 
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
 
-
-
-
+                </div>
 
             </div>
         </div>
     </div>
+
 </div>
+
+<script>
+$('.carousel').carousel({
+  interval: 10000
+})
+</script>
+
 <!-- EXHIBIT HIGHLIGHT END -->

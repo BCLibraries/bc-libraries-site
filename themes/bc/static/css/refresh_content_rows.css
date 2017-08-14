@@ -7,7 +7,7 @@
 
 /* BUTTON STYLING */
 
-.content .btn.btn-default, #db-rg-hours .btn {
+.content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {
     padding: 12px;
     font-size: 14px;
     line-height: 18px;
@@ -27,12 +27,12 @@
     -webkit-transition: .2s;
 }
 
-.content .btn.btn-gold, #db-rg-hours .btn.btn-gold {
+.content .btn.btn-gold, #db-rg-hours .btn.btn-gold, #exhibit-highlight .btn.btn-gold {
 	color: #000;
     background: #947f4e;
 }
 
-.content .btn.btn-gold:hover, #db-rg-hours .btn.btn-gold:hover {
+.content .btn.btn-gold:hover, #db-rg-hours .btn.btn-gold:hover, #exhibit-highlight .btn.btn-gold:hover {
     color: #fff;
     border: 0;
 }
@@ -113,29 +113,26 @@
 	z-index: 2;
 	background-size: cover;
 }
-#exhibit-highlight .row:first-child {
-	padding-top: 3em;
-	padding-bottom: 3em;
+
+#exhibit-highlight h2 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff !important;
+	font-size: 16px;
+    letter-spacing: 2px;
+	margin: 0;
 }
+
 .exhibit-box {
 	background: rgba(255,255,255,0.75);
-	/*max-width: 75%;*/
-	/*height: 300px;*/
-	/*margin: auto;*/
+	max-width: 75%;
+	height: 300px;
+	margin: auto;
 	padding: 20px;
 }
 
 .exhibit-box .row {
 	height: 100%;
-}
-
-.exhibit-box h2 {
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #8a100b !important;
-	font-size: 12px;
-    letter-spacing: 2px;
-	margin: 0;
 }
 
 a#current-exhibits-title {
@@ -147,7 +144,6 @@ a#current-exhibits-title {
 }
 
 .exhibit-box .exhibit-left {
-	text-align: center;
 	height: 100%;
 }
 .exhibit-box .exhibit-right {
@@ -157,7 +153,7 @@ a#current-exhibits-title {
 
 .exhibit-box .exhibit-left p {
 	color: #000;
-	text-align: justify;
+	text-align: left;
 	font-size: 18px;
 	line-height: 28px;
 	font-weight: 200;
@@ -166,6 +162,7 @@ a#current-exhibits-title {
 .exhibit-poster {
 	max-width: 100%;
 	max-height: 100%;
+	border: 1px solid #000;
 }
 
 @media (max-width: 991px) {
@@ -176,6 +173,14 @@ a#current-exhibits-title {
 		text-align: left;
 	}
 }
+
+/* EXHIBIT SLIDER OVERWRITES */
+
+#exhibit-highlight .carousel-control.left, #exhibit-highlight .carousel-control.right {
+	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
+}
+
+
 /* FAC PUB 
 
 FOUND TEMPLATE HERE: http://www.bc.edu/bc-web/academics.html */

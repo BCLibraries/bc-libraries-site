@@ -529,12 +529,19 @@ body.body-modal {
 
 /* media query overrides */
 
+@media screen and (min-width: 1200px) {
+    .homepagerefresh #quick-links .quick-link-block {
+        height: 145px;
+    }
+}
+
 /* Landscape tablets and all desktops */
 @media screen and (min-width: 992px) {
     #bclib-header .input-wrapper {
         padding-right: 0;
     }
 }
+
 /* Landscape tablets and medium desktops */
 /*@media (min-width: 992px) {*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {

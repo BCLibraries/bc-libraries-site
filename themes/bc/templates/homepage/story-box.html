@@ -6,10 +6,11 @@
             {% for story in articles | current_stories(4) %}
             <figure class="sr-only story" id="story-{{loop.index}}">
                 <a href="{{ story.destination }}" title="Text here?">
-                    <img src="/theme/img/stories/{{ story.image }}" alt="{{ story.image_alt }}" aria-hidden="true" role="presentation"/>
+                    <img src="/theme/img/stories/{{ story.image }}" alt="" aria-hidden="true" role="presentation"/>
+                    <figcaption>{{ story.title }}</figcaption>
                 </a>
-                <figcaption><a href="{{ story.destination }}">{{ story.title }}</a></figcaption>
             </figure>
+
             {% endfor %}
 
         </div>

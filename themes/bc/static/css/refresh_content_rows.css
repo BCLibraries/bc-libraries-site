@@ -27,14 +27,14 @@
     -webkit-transition: .2s;
 }
 
-.content .btn.btn-gold, #db-rg-hours .btn.btn-gold {
-	color: #000;
-    background: #947f4e;
+.content .btn.btn-blue, #db-rg-hours .btn.btn-gold {
+	color: #dddddd;
+    background: #204375;
 }
 
-.content .btn.btn-gold:hover, #db-rg-hours .btn.btn-gold:hover {
+.content .btn.btn-blue:hover, #db-rg-hours .btn.btn-gold:hover {
     color: #fff;
-    border: 0;
+	background: #1d3c68;
 }
 
 .row.nobottom {

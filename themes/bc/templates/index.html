@@ -91,13 +91,23 @@ $(function () {
             });
         }
 
-        function makeQuickLinkBoxesClickable() {
+        function makeQuickLinkBoxesClickableOld() {
             var linkboxes = document.querySelectorAll('.quick-link-block');
             linkboxes.forEach(function (el) {
                 el.addEventListener('click', function (evt) {
                     console.log(evt);
                     window.location = el.querySelector('a').href;
                 });
+            });
+        }
+
+        /* Rewrote makeQuickLinkBoxesClickable to use jQuery methods. */
+        /* Fixes IE/Edge issue with forEach() not supporting nodeList */
+        /* object returned from document.querySelectorAll */
+        function makeQuickLinkBoxesClickable() {
+            $(".quick-link-block").click(function(evt){
+                console.log(evt);
+                window.location = $(this).find("a").attr("href");
             });
         }
 

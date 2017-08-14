@@ -26,7 +26,7 @@
     -moz-transition: .2s;
     -webkit-transition: .2s;
 }
-
+ 
 .content .btn.btn-gold, #db-rg-hours .btn.btn-gold, #exhibit-highlight .btn.btn-gold {
 	color: #000;
     background: #947f4e;

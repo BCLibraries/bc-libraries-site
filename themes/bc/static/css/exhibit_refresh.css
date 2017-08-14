@@ -10,6 +10,7 @@ html {
 
 .exhibit-container .breadcrumb {
     margin-bottom: 5px;
+    padding: 8px 0;
 }
 
 #exhibit, #exhibit_archive {
@@ -153,7 +154,6 @@ html {
 
 #exhibit .latest_exhibit .holdhead h4 {
     border-bottom: 1px solid #05506D;
-    text-transform: uppercase;
     margin: 5px 0 0 !important;
 }
 
@@ -262,7 +262,7 @@ html {
 }
 
 .blackband h2 {
-    font-size: 38px;
+    font-size: 36px;
     color: #fff;
     text-align: center;
     border-bottom: 1px solid #fff;
@@ -615,7 +615,7 @@ html {
 .middle_down .article_content_two .text {
    max-width: 875px;
    margin: 0 auto 25px;
-   display: inline-block;
+   display: block;
 }
 
 @media ( max-width: 1199px ) {

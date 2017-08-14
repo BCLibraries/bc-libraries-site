@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block pagestyles %}
+
+{% endblock %}
+
+{% block content %}
 <style>
     .homepagerefresh .megamenu-container {
     background-color: rgba(16,14,15,.90);
@@ -8,10 +12,6 @@
 
 
 </style>
-{% endblock %}
-
-{% block content %}
-
 <div class="megamenu-container">
     {% include 'megamenu.html' %}
 </div>

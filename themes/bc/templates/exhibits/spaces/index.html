@@ -1,130 +1,143 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
+    }
 
-  <ol class="breadcrumb" id="s-lib-bc-list">
-    <li id="s-lib-bc-customer">
-    <a href="http://library.bc.edu" title="Libraries">Libraries
-    </a>
-    </li>
-    <li id="s-lib-bc-site">
-    <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
-    </a>
-    </li>
-  </ol>
 
-<div id="exhibit">
+</style>
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
 
-  <div class="blackband">
-    <div class="bandcenter">
-    <h2>Exhibits Spaces</h2>
-    <p>Exhibits in the Boston College University Libraries will advance discovery of library resources by highlighting connections between our collections and academic and community life at BC. The Libraries welcome partnerships with the Boston College community and other institutions, groups, or individuals to create thoughtful and attractive exhibits. Successful exhibit proposals will be in strong alignment with the mission and collections of the Libraries.</p>
+<div class="container exhibit-container">
+
+    <ol class="breadcrumb" id="s-lib-bc-list">
+      <li id="s-lib-bc-customer">
+      <a href="http://library.bc.edu" title="Libraries">Libraries
+      </a>
+      </li>
+      <li id="s-lib-bc-site">
+      <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
+      </a></li>
+    </ol>
+
+  <div id="exhibit">
+
+    <div class="blackband">
+      <div class="bandcenter">
+      <h2>Exhibits Spaces</h2>
+      <p>Exhibits in the Boston College University Libraries will advance discovery of library resources by highlighting connections between our collections and academic and community life at BC. The Libraries welcome partnerships with the Boston College community and other institutions, groups, or individuals to create thoughtful and attractive exhibits. Successful exhibit proposals will be in strong alignment with the mission and collections of the Libraries.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="latest_exhibit">
+<div class="row">
+    <div class="latest_exhibit">
 
-    <div class="left">
-    <h3>Gallery Spaces</h3>
+      <div class="left">
+      <h3>Gallery Spaces</h3>
 
-    <ul>
-      <li><a href="../bapst">Bapst Library</a></li>
-      <li><a href="../burns">Burns Library</a></li>
-      <li><a href="../tml">Theology and Ministry Library </a></li>
-      <li><a href="../lvl1">O'Neill Level One</a></li>
-      <li><a href="../lvl3">O'Neill Level Three</a></li>
-      <li><a href="../readingroom">O'Neill Reading Room</a></li>
-      <li><a href="../backwall">O'Neill Reading Room Back Wall</a></li>
-      <li><a href="../lobby">O'Neill Lobby</a></li>
-      <li><a href="../stokes">History Dept, Stokes Hall</a></li>
+      <ul>
+        <li><a href="../bapst">Bapst Library</a></li>
+        <li><a href="../burns">Burns Library</a></li>
+        <li><a href="../tml">Theology and Ministry Library </a></li>
+        <li><a href="../lvl1">O'Neill Level One</a></li>
+        <li><a href="../lvl3">O'Neill Level Three</a></li>
+        <li><a href="../readingroom">O'Neill Reading Room</a></li>
+        <li><a href="../backwall">O'Neill Reading Room Back Wall</a></li>
+        <li><a href="../lobby">O'Neill Lobby</a></li>
+        <li><a href="../stokes">History Dept, Stokes Hall</a></li>
+        
+      </ul>
+      </div>
+
+      <div class="right">
       
-    </ul>
-    </div>
-
-    <div class="right">
-    
-<!-- CONTENT GOES HERE -->
+  <!-- CONTENT GOES HERE -->
 
 
-  <h3>Bapst Library, Gargan Hall Exhibit Cases</h3>
-  <p><strong>Description of space: </strong>One exhibit case in Gargan Hall.</p>
-  <p><strong>Policy for use of space: </strong>Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
-  <p><strong>Contact:</strong> <a href="mailto:laurie.mayville@bc.edu">Laurie Mayville</a></p>
-<br />
-
-  <h3>Bapst Library, Outside Gargan Hall Exhibit Cases</h3>
-  <p><strong>Description of space: </strong>Two cases found outside Gargan Hall.</p>
-  <p><strong>Policy for use of space: </strong>Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
-  <p><strong>Contact: <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
-<br />
-
-
-  <h3>Burns Library</h3>
-  <p><strong>Description of space:</strong> Burns wall cases (4 cases). </p>
-  <p><strong>Policy for use of space:  </strong>Exhibits highlight collections in the Burns Library.</p>
-  <p><strong>Contact:</strong> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
-<br />
-
-
-  <h3>Educational Resource Center, Campion Hall G13  </h3>
-  <p><strong>Description of space:</strong> One wall with bulletin board and two bookcases (approximately 11 linear feet)</p>
-  <p><strong>Policy for use of space:</strong> This space is designated to feature educational and curriculum materials. Student work may be exhibited with approval of ERC exhibit committee.</p>
-  <p><strong>Contact:</strong> <a href="mailto:margaret.cohen@bc.edu">Margaret Cohen</a></p>
-<br />
-
-  <h3>O&rsquo;Neill Library, 3rd floor Lobby</h3>
-  <p><strong>Description of space: </strong> One horizontal case</p>
-  <p><strong>Policy of use for the main exhibit case</strong>: The space is designated to materials relating to the Lowell Humanities Series. </p>
-  <p><strong>Contact</strong>: <a href="mailto:sturgest@bc.edu@bc.edu">Stephen Sturgeon</a></p>
-<br />
-
-
-  <h3>O&rsquo;Neill Library, Level One Gallery, 1st floor  </h3>
-  <p><strong>Description of space:</strong> The galley is an open space of 770 sq. ft., with wall space of 385 sq. ft. for displaying flatwork only.</p>
-  <p><strong>
-  Policy for use of space: </strong>Since 2009 Level One Gallery in O'Neill Library has been a space for the BC Community to display their creative work. The Boston College Libraries fully support the Arts here at the university and the gallery encourages the creative spirit of Boston College.</p>
-  <p><strong>Contact: </strong><a href="mailto:houstonp@bc.edu">Chris Houston-Ponchak</a> </p>
-<br />
-
-
-
-  <h3>O&rsquo;Neill Library: Level Three Gallery, 3rd floor</h3>
-  <p><strong>Description of space:</strong> Gallery space for hanging art, 11&rsquo; tall with at total length of approximately 75&rsquo;. The entire length includes 3 wall bays that are 24&rsquo; each with 2 pilasters bump outs at one third intervals. There is existing library furniture in front of the wall that comes to about 3 feet of the lower portion of the wall.</p>
-  <p><strong> Policy for use of space: </strong>Level Three Gallery in O'Neill Library is a space for the BC faculty and alumni to display their creative work. Work should support the educational purpose and curricula of the university.</p>
-  <p><strong>Contact: </strong><a href="mailto:bogdanon@bc.edu@bc.edu">Nina Bogdanovsky</a></p>
-<br />
-
-
-
-  <h3>O&rsquo;Neill Reading Room, 3rd floor</h3>
-  <p><strong>Description of space: </strong>There are three horizontal cases in the O&rsquo;Neill Reading Room.</p>
-  <p><strong>Policy of use of space</strong>: Exhibits in the O&rsquo;Neill Reading Room feature special collections from the John J. Burns Library.</p>
-  <p><strong>Contact</strong>: <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
-<br />
-
-  <h3>O&rsquo;Neill Reading Room, Back Wall</h3>
-  <p><strong>Description of space: </strong>There are three horizontal cases against the Back Wall of the O&rsquo;Neill Reading Room.</p>
-  <p><strong>Policy of use of space</strong>: Policy of use for the main exhibit case</strong>: Exhibits in O&rsquo;Neill are part of the Library&rsquo;s educational outreach and are specifically created to stimulate interest in, and encourage further study of, the topics showcased in the displays.  One case is devoted to campus events, and the remaining are open to exhibits which highlight collections, spotlight interesting research being done on campus, explore current and/or historically important events, or demonstrate cultural trends and their significance for the BC community. </p>
-  <p><strong>Contact</strong>: <a href="mailto:sally.wyman@bc.edu">Sally Wyman</a></p>
-<br />
-
-  <h3>Social Work Library</h3>
-  <p><strong>Description of space:</strong> 5'x4' magnetic whiteboard and a five-feet long credenza on top of which to display items. </p>
-  <p><strong>Policy for use of space:</strong> Display themes need to be relevant to social work matters and consistent with the missions and values of BC and the BC School of Social Work. </p>
-  <p><strong>Contact:</strong> <a href="mailto:hannah.ha@bc.edu">Hannah Ha</a></p>
-
+    <h3>Bapst Library, Gargan Hall Exhibit Cases</h3>
+    <p><strong>Description of space: </strong>One exhibit case in Gargan Hall.</p>
+    <p><strong>Policy for use of space: </strong>Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
+    <p><strong>Contact:</strong> <a href="mailto:laurie.mayville@bc.edu">Laurie Mayville</a></p>
   <br />
 
-  <h3>Theology and Ministry Library Atrium Gallery</h3>
-  <p><strong>Description of space:</strong> Approximately 90 linear feet of space along three walls fitted with picture rail on the lower level Theology and Ministry Library.</p>
-  <p><strong>Policy for use of space:</strong> Exhibits are sought which are consistent with the Jesuit mission of Boston College and, more specifically, with the mission and values of the School of Theology and Ministry</p>
-  <p><strong>Contact:</strong> <a href="mailto:brittons@bc.edu@bc.edu">Scott Britton</a></p>
- 
-<!-- NO CONTENT BELOW THIS MARK -->
+    <h3>Bapst Library, Outside Gargan Hall Exhibit Cases</h3>
+    <p><strong>Description of space: </strong>Two cases found outside Gargan Hall.</p>
+    <p><strong>Policy for use of space: </strong>Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
+    <p><strong>Contact:</strong> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+  <br />
+
+
+    <h3>Burns Library</h3>
+    <p><strong>Description of space:</strong> Burns wall cases (4 cases). </p>
+    <p><strong>Policy for use of space:  </strong>Exhibits highlight collections in the Burns Library.</p>
+    <p><strong>Contact:</strong> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+  <br />
+
+
+    <h3>Educational Resource Center, Campion Hall G13  </h3>
+    <p><strong>Description of space:</strong> One wall with bulletin board and two bookcases (approximately 11 linear feet)</p>
+    <p><strong>Policy for use of space:</strong> This space is designated to feature educational and curriculum materials. Student work may be exhibited with approval of ERC exhibit committee.</p>
+    <p><strong>Contact:</strong> <a href="mailto:margaret.cohen@bc.edu">Margaret Cohen</a></p>
+  <br />
+
+    <h3>O&rsquo;Neill Library, 3rd floor Lobby</h3>
+    <p><strong>Description of space: </strong> One horizontal case</p>
+    <p><strong>Policy of use for the main exhibit case</strong>: The space is designated to materials relating to the Lowell Humanities Series. </p>
+    <p><strong>Contact</strong>: <a href="mailto:sturgest@bc.edu@bc.edu">Stephen Sturgeon</a></p>
+  <br />
+
+
+    <h3>O&rsquo;Neill Library, Level One Gallery, 1st floor  </h3>
+    <p><strong>Description of space:</strong> The galley is an open space of 770 sq. ft., with wall space of 385 sq. ft. for displaying flatwork only.</p>
+    <p><strong>
+    Policy for use of space: </strong>Since 2009 Level One Gallery in O'Neill Library has been a space for the BC Community to display their creative work. The Boston College Libraries fully support the Arts here at the university and the gallery encourages the creative spirit of Boston College.</p>
+    <p><strong>Contact: </strong><a href="mailto:houstonp@bc.edu">Chris Houston-Ponchak</a> </p>
+  <br />
+
+
+
+    <h3>O&rsquo;Neill Library: Level Three Gallery, 3rd floor</h3>
+    <p><strong>Description of space:</strong> Gallery space for hanging art, 11&rsquo; tall with at total length of approximately 75&rsquo;. The entire length includes 3 wall bays that are 24&rsquo; each with 2 pilasters bump outs at one third intervals. There is existing library furniture in front of the wall that comes to about 3 feet of the lower portion of the wall.</p>
+    <p><strong> Policy for use of space: </strong>Level Three Gallery in O'Neill Library is a space for the BC faculty and alumni to display their creative work. Work should support the educational purpose and curricula of the university.</p>
+    <p><strong>Contact: </strong><a href="mailto:bogdanon@bc.edu@bc.edu">Nina Bogdanovsky</a></p>
+  <br />
+
+
+
+    <h3>O&rsquo;Neill Reading Room, 3rd floor</h3>
+    <p><strong>Description of space: </strong>There are three horizontal cases in the O&rsquo;Neill Reading Room.</p>
+    <p><strong>Policy of use of space</strong>: Exhibits in the O&rsquo;Neill Reading Room feature special collections from the John J. Burns Library.</p>
+    <p><strong>Contact</strong>: <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+  <br />
+
+    <h3>O&rsquo;Neill Reading Room, Back Wall</h3>
+    <p><strong>Description of space: </strong>There are three horizontal cases against the Back Wall of the O&rsquo;Neill Reading Room.</p>
+    <p><strong>Policy of use of space</strong>: Policy of use for the main exhibit case</strong>: Exhibits in O&rsquo;Neill are part of the Library&rsquo;s educational outreach and are specifically created to stimulate interest in, and encourage further study of, the topics showcased in the displays.  One case is devoted to campus events, and the remaining are open to exhibits which highlight collections, spotlight interesting research being done on campus, explore current and/or historically important events, or demonstrate cultural trends and their significance for the BC community. </p>
+    <p><strong>Contact</strong>: <a href="mailto:sally.wyman@bc.edu">Sally Wyman</a></p>
+  <br />
+
+    <h3>Social Work Library</h3>
+    <p><strong>Description of space:</strong> 5'x4' magnetic whiteboard and a five-feet long credenza on top of which to display items. </p>
+    <p><strong>Policy for use of space:</strong> Display themes need to be relevant to social work matters and consistent with the missions and values of BC and the BC School of Social Work. </p>
+    <p><strong>Contact:</strong> <a href="mailto:hannah.ha@bc.edu">Hannah Ha</a></p>
+
+    <br />
+
+    <h3>Theology and Ministry Library Atrium Gallery</h3>
+    <p><strong>Description of space:</strong> Approximately 90 linear feet of space along three walls fitted with picture rail on the lower level Theology and Ministry Library.</p>
+    <p><strong>Policy for use of space:</strong> Exhibits are sought which are consistent with the Jesuit mission of Boston College and, more specifically, with the mission and values of the School of Theology and Ministry</p>
+    <p><strong>Contact:</strong> <a href="mailto:brittons@bc.edu@bc.edu">Scott Britton</a></p>
+   
+  <!-- NO CONTENT BELOW THIS MARK -->
+
+      </div>
 
     </div>
-
+</div>
   </div>
-
 </div>
 {% endblock %}
 

@@ -1,295 +1,310 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
+    }
 
-    <ol class="breadcrumb" id="s-lib-bc-list">
-        <li id="s-lib-bc-customer">
-        <a href="http://library.bc.edu" title="Libraries">Libraries
-        </a>
-        </li>
-        <li id="s-lib-bc-site">
-        <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
-        </a>
-        <li id="s-lib-bc-site">
-            <a href="http://library.bc.edu/exhibits/lvl1" title="O'Neill Level One Gallery Archives">O'Neill Level One Gallery Archives</a></li>
-    </ol>
 
-<div id="exhibit" class="archives">
+</style>
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
 
-    <div class="blackband lvl1">
-        <div class="bandcenter">
-            <h2>O'Neill Level One Gallery Archives</h2>
-            <p>Level One Gallery is an exhibition area in the O'Neill Library. Current students, alumni, faculty members, and Boston College staff are encouraged to submit exhibition proposals.</p>
+<div class="container exhibit-container">
+   
+        <ol class="breadcrumb" id="s-lib-bc-list">
+            <li id="s-lib-bc-customer">
+            <a href="http://library.bc.edu" title="Libraries">Libraries
+            </a>
+            </li>
+            <li id="s-lib-bc-site">
+            <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
+            </a></li>
+            <li id="s-lib-bc-site">
+                <a href="http://library.bc.edu/exhibits/lvl1" title="O'Neill Level One Gallery Archives">O'Neill Level One Gallery Archives</a></li>
+        </ol>
+
+
+    <div id="exhibit" class="archives">
+
+        <div class="blackband lvl1">
+            <div class="bandcenter">
+                <h2>O'Neill Level One Gallery Archives</h2>
+                <p>Level One Gallery is an exhibition area in the O'Neill Library. Current students, alumni, faculty members, and Boston College staff are encouraged to submit exhibition proposals.</p>
+            </div>
         </div>
+
+<div class="row">
+        <div class="latest_exhibit">
+
+            <div class="left">
+                <h3>Gallery Spaces</h3>
+
+                <ul>
+                    <li><a href="../bapst">Bapst Library</a></li>
+                    <li><a href="../burns">Burns Library</a></li>
+                    <li><a href="../tml">Theology and Ministry Library </a></li>
+                    <li class="target">O'Neill Level One</li>
+                    <li><a href="../lvl3">O'Neill Level Three</a></li>
+                    <li><a href="../reading">O'Neill Reading Room</a></li>
+                    <li><a href="../backwall">O'Neill Reading Room Back Wall</a></li>
+                    <li><a href="../lobby">O'Neill Lobby</a></li>
+                    <li><a href="../stokes">History Dept, Stokes Hall</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h3>Past Exhibits</h3>
+
+    <!-- 2017 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2017</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2017" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <!-- 2016 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2016</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2016" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <!-- 2015 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2015</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2015" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                              
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <!-- 2014 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2014</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2014" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                              
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <!-- 2013 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2013</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2013" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                              
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <!-- 2012 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2012</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
+                       
+                        {% if article.date|strftime('%Y') == "2012" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                              
+                                {% if article.location == "lvl1" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
+    <hr>
+
+    <p>Please click this link for <a href="http://www.bc.edu/libraries/about/exhibits/oneill/level1/archive.html">exhibit archives from 2009-2011</a></p>
+
+    <!-- GALLERIES BELONG ABOVE THIS POINT -->
+            </div>
+
+        </div>
+</div>
     </div>
-
-    <div class="latest_exhibit">
-
-        <div class="left">
-            <h3>Gallery Spaces</h3>
-
-            <ul>
-                <li><a href="../bapst">Bapst Library</a></li>
-                <li><a href="../burns">Burns Library</a></li>
-                <li><a href="../tml">Theology and Ministry Library </a></li>
-                <li class="target">O'Neill Level One</li>
-                <li><a href="../lvl3">O'Neill Level Three</a></li>
-                <li><a href="../reading">O'Neill Reading Room</a></li>
-                <li><a href="../backwall">O'Neill Reading Room Back Wall</a></li>
-                <li><a href="../lobby">O'Neill Lobby</a></li>
-                <li><a href="../stokes">History Dept, Stokes Hall</a></li>
-            </ul>
-        </div>
-
-        <div class="right">
-            <h3>Past Exhibits</h3>
-
-<!-- 2017 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2017</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2017" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2016 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2016</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2016" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2015 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2015</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2015" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2014 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2014</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2014" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2013 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2013</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2013" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<!-- 2012 files-->
-    <ul>
-            <div class="holdhead">
-                <h4>2012</h4>
-            </div>
-
-            {% if articles %}
-                {% set count = 0 %}
-                {% for article in articles if article.category.name == "exhibits" and article.location == "lvl1" %}
-                   
-                    {% if article.date|strftime('%Y') == "2012" %}
-                    
-                        {% set count = count + 1 %}
-                        {% if count < 100 %}  
-
-                          
-                            {% if article.location == "lvl1" %}
-
-                                <li class="holder">
-
-                                    <div class="frame">
-                                        <a href="../../{{ article.url }}">
-                                        <img src="/theme/img/exhibits/lvl1/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-                                        
-                                        <div class="info">
-                                            <p class="date">{{ article.date_range }}</p>
-                                            <p class="title">{{ article.title }}</p>
-                                        </div>   
-                                        </a>   
-                                    </div>                       
-
-                                </li>
-                            {% endif %}                        
-                        {% endif %}
-                    {% endif %}              
-                {% endfor %}
-            {% endif %}
-
-    </ul>
-
-<hr>
-
-<p>Please click this link for <a href="http://www.bc.edu/libraries/about/exhibits/oneill/level1/archive.html">exhibit archives from 2009-2011</a></p>
-
-<!-- GALLERIES BELONG ABOVE THIS POINT -->
-        </div>
-
-    </div>
-
 </div>
 {% endblock %}
 

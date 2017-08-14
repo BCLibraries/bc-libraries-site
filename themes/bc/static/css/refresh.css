@@ -228,8 +228,8 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background: #ccc url('//library.bc.edu/random-img/img/glass-01.jpg');
-    height: 350px;
+    background: #ccc url('/theme/img/hero01.jpg') 0% 40%;
+    height: 450px;
     background-size: cover;
     padding-top: 80px;
 }

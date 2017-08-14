@@ -431,7 +431,9 @@ body {
 .homepagerefresh #facpub h3 {
     font-size: 18px;
 }
-.homepagerefresh #facpub .more-link {}
+.homepagerefresh #facpub .more-link {
+    text-align: right;
+}
 
 /* digital collections highlight */
 .homepagerefresh #digcol-highlight {

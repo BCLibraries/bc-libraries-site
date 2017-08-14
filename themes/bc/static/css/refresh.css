@@ -266,7 +266,6 @@ body {
 #search-panel input.form-control, #search-panel button.btn.btn-default  {
     height: 50px;
     font-size: 20px;
-    margin-top: -1px; /* fixes alignment issue in Firefox */
 }
 
 

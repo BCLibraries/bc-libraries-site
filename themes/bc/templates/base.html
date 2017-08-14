@@ -168,11 +168,16 @@
             $("a").click(function(e) {
                 if (!ga.q) {
                     var url = $(this).attr("href");
-                    ga("send", "event", "outbound", "click", url, {"hitCallback":
-                        function () {
-                            document.location = url;
-                        }
-                    });
+
+                    /* Bug fix to stop screen jump when clicking carousel controls */
+                    if (url.indexOf('#') !== 0) {
+                        ga("send", "event", "outbound", "click", url, {
+                            "hitCallback":
+                                function () {
+                                    document.location = url;
+                                }
+                        });
+                    }
                     e.preventDefault();
                 }
             });

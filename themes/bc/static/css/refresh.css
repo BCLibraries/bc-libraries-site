@@ -272,8 +272,7 @@ body {
     margin-top: -1px;
 }
 
-.homepagerefresh #db-rg-hours {
-}
+.homepagerefresh #db-rg-hours {margin-top: 20px;}
 .homepagerefresh #db-rg-hours .list-group-item {
     border:none;
 }
@@ -313,6 +312,7 @@ body {
 .homepagerefresh #quick-links {
     background-color:#dfddcf;
     text-align: center;
+    margin-top: 20px;
 }
 .homepagerefresh #quick-links .quick-link-block {
     padding: 1em;

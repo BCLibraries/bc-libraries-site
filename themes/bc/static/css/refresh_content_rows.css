@@ -135,7 +135,7 @@
 	height: 100%;
 }
 
-a#current-exhibits-title {
+a.current-exhibits-title {
 	color: #000 !important;
 	font-size: 20px;
     line-height: 22px;

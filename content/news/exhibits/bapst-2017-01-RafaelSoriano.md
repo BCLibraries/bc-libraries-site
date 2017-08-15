@@ -7,7 +7,7 @@ Location: bapst
 Tags: exhibit
 Slug: rafael-soriano
 Image: 2017/01-rafael.png
-Image_thumb: 2017/01-rafael-thumb.png
+Image_thumb: 2017/01-rafael-thumb.jpg
 Image_alt: Exhibit poster
 Active: yes
 Style: middle_top

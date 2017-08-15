@@ -572,6 +572,9 @@ body.body-modal {
         padding-left: 0;
         padding-right: 0;
     }
+    .homepagerefresh #header {
+        background-position: 100% 40%;
+    }
     .homepagerefresh #news {
         padding-bottom: 0em;
     }

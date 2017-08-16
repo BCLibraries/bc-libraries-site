@@ -353,7 +353,6 @@ body {
     color: #23527c;
 }
 .homepagerefresh #quick-links p {
-    font-style: italic;
     padding-top: .25em;
 }
 
@@ -548,7 +547,7 @@ body.body-modal {
 
 @media screen and (min-width: 1200px) {
     .homepagerefresh #quick-links .quick-link-block {
-        height: 145px;
+        height: 128px;
     }
 }
 
@@ -563,7 +562,7 @@ body.body-modal {
 /*@media (min-width: 992px) {*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     #quick-links .quick-link-block {
-        height: 170px;
+        height: 184px;
     }
 }
 

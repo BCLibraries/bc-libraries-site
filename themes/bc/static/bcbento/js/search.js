@@ -26,9 +26,11 @@ var trackOutboundLink = function (url) {
 
 $.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, api_version, spinner_html, error_html;
+    var search_string, templates, source, loading_timers, api_version, spinner_html, error_html, host;
 
     api_version = '0.0.9.2';
+
+    host = window.location.hostname === 'library.bc.edu' ? 'https://library' : 'http://libdev';
 
     function callSearchService(service, keyword) {
         var $target, $heading, url;
@@ -39,7 +41,7 @@ $.fn.bcBento = function (services) {
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = 'http://libdev.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = host + '.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/, '+').replace('"', '%22');
 
         // Clear old results.

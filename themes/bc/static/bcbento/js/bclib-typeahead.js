@@ -1,8 +1,10 @@
 $(document).ready(function () {
+    var host = window.location.hostname === 'library.bc.edu' ? 'https://library' : 'http://libdev';
+
     var engine = new Bloodhound({
         name: 'holmes-typeahead',
         remote: {
-            url: 'http://libdev.bc.edu/search-services/typeahead?any=%QUERY',
+            url: host + '.bc.edu/search-services/typeahead?any=%QUERY',
             rateLimitWait: 100,
             rateLimitBy: 'throttle'
         },

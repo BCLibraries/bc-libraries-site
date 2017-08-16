@@ -10,19 +10,15 @@
 }
 
 .homepagerefresh #storybox .story img {
-    /*max-height: 290px;*/
     width: 100%
 }
 
 .homepagerefresh #storybox .story figcaption {
-    font-size: 14px;
     font-weight: 700;
-    /* font-variant: small-caps; */
     padding: 0 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /*width: 450px;*/
+    letter-spacing: 1px;
     background: #501315;
+    text-align: center;
 }
 
 .homepagerefresh #storybox .story figcaption.blue {

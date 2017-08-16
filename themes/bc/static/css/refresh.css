@@ -588,6 +588,12 @@ body.body-modal {
     }
 }
 
+@media (min-width: 768px) {
+    .homepagerefresh #header {
+        padding-top: 130px;
+    }
+}
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .homepagerefresh .container-fluid .pull-right {

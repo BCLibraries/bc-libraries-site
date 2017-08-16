@@ -240,7 +240,7 @@ body {
 .homepagerefresh .caption-link {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 20px;
     padding: 4px 20px;
     background-color: rgba(16,14,15,.85);
     color: #fff;

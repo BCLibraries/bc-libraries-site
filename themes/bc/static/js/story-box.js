@@ -27,7 +27,6 @@
         var selectors = document.querySelectorAll('#storybox .selector');
         var x = Math.floor(Math.random() * selectors.length );
         var random_selector = selectors[x];
-        console.log(x);
         switchTo(random_selector);
     }
 }());

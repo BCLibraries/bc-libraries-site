@@ -76,7 +76,8 @@ DIRECT_TEMPLATES = (('index', 'news/index',
                      'exhibits/lvl3/index', 'exhibits/lobby/index', 'exhibits/reading/index', 'exhibits/stokes/index',
                      'exhibits/tiponeill/index', 'exhibits/tml/index', 'exhibits/virtual/index',
                      'exhibits/spaces/index',
-                     'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index', 'search/index'))
+                     'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index', 'search/index',
+                     'feedback/index'))
 
 # PAGINATED_DIRECT_TEMPLATES = (('index', 'news/index', 'exhibits/index', 'facpub/index', 'facpub/contact/index', 'facpub/mailer/index', 'newsletter/index' ))#
 

@@ -486,7 +486,7 @@ body {
     overflow: auto;
     overflow-y: scroll;
 }
-#bcl-feedback:target {
+#bcl-feedback:target, #bcl-feedback:active, #bcl-feedback:focus {
     opacity:1;
     pointer-events: auto;
     display: block
@@ -524,6 +524,16 @@ body.body-modal {
     color: #fff;
     margin: 0 10px;
     position: absolute;
+}
+
+div#s-la-widget-5468 {
+    max-width: 800px;
+    margin: 16px auto;
+    font-family: "Open sans", sans-serif;
+}
+
+div#s-la-widget-5468 #s-la-askform-section-5494 {
+    display: none;
 }
 
 @media ( max-width: 1199px ) {

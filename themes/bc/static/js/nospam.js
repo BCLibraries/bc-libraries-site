@@ -1,7 +1,9 @@
 $(document).ready(function () {
     var url = window.location.href;
     var hash = window.location.hash;
-    
+
+    console.log('loaded');
+
     // form fields which will be updated automatically
     // this selector is specific to the LibAnswers Feedback form
     var urlFormField = "#s-la-widget-5468 fieldset#s-la-askform-section-5494 input#val4_5468";

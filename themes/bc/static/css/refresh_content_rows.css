@@ -180,7 +180,24 @@ a.current-exhibits-title {
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
 }
 
+/* MEDIA QUERIES */
 
-/* FAC PUB 
+@media (max-width: 480px) {
+	.carousel-indicators {
+		display: none;
+	}
 
-FOUND TEMPLATE HERE: http://www.bc.edu/bc-web/academics.html */
+	.exhibit-blurb {
+		display: none;
+	}
+
+	.more-exhibits-button {
+		display: none;
+	}
+
+	.exhibit-right {
+		display: none;
+	}
+}
+
+/* FOUND TEMPLATE HERE: http://www.bc.edu/bc-web/academics.html */

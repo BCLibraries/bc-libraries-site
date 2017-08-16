@@ -115,7 +115,10 @@
     top: -5px;
     right: 15px;
 }
-
+.homepagerefresh #lib-footer .ihs-logo img {
+    height: 100px;
+    margin-top: 20px;
+}
 
 
 .homepagerefresh #bc-footer {

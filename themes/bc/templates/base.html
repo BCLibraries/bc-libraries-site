@@ -165,7 +165,7 @@
             $("input#searchsubmit").click(function(){
                 ga('send', 'event', 'bc-searchbutton', 'click');
             });
-            $("a").click(function(e) {
+            $("a").not('.search-link').click(function(e) {
                 if (!ga.q) {
                     var url = $(this).attr("href");
 

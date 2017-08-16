@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block pagestyles %}
-<link rel="stylesheet" href="/theme/css/stories.css" />
+<link rel="stylesheet" href="/theme/css/stories.css"/>
 {% endblock %}
 
 {% block content %}
@@ -77,6 +77,11 @@ $(function () {
 <script type="text/javascript">
     // Various glue scripts for the front page.
     (function () {
+        var book_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            article_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            journal_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0&journals=any,~~TERM~~&query=any,contains,~~TERM~~';
+
+
         function run_on_ready(fn) {
             if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
                 fn();
@@ -91,26 +96,34 @@ $(function () {
             });
         }
 
-        function makeQuickLinkBoxesClickableOld() {
-            var linkboxes = document.querySelectorAll('.quick-link-block');
-            linkboxes.forEach(function (el) {
-                el.addEventListener('click', function (evt) {
-                    console.log(evt);
-                    window.location = el.querySelector('a').href;
-                });
-            });
-        }
-
         /* Rewrote makeQuickLinkBoxesClickable to use jQuery methods. */
         /* Fixes IE/Edge issue with forEach() not supporting nodeList */
+
         /* object returned from document.querySelectorAll */
         function makeQuickLinkBoxesClickable() {
-            $(".quick-link-block").click(function(evt){
-                console.log(evt);
+            $(".quick-link-block").click(function (evt) {
                 window.location = $(this).find("a").attr("href");
             });
         }
 
+        function smartLinkToSearch() {
+            linkToSearch('.book-search-link', book_search_url);
+            linkToSearch('.article-search-link', article_search_url);
+            linkToSearch('.journal-search-link', journal_search_url);
+        }
+
+        function linkToSearch(link_class, url) {
+            $(link_class).click(function (e) {
+                var term = $('#lib-search-box').val();
+                if (term && term !== '') {
+                    e.preventDefault();
+                    window.location.href = url.replace('~~TERM~~', term);
+                    return false;
+                }
+            });
+        }
+
+        run_on_ready(smartLinkToSearch());
         run_on_ready(listenForTypeahead);
         run_on_ready(makeQuickLinkBoxesClickable);
     })();

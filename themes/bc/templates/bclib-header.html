@@ -18,8 +18,8 @@
             <div class="col-md-8 col-sm-12 col-xs-6 col-xxs header-right">
                 <div class="col-md-7 col-sm-7 col-xs-7 col-xxs">
                     <ul class="bclib-header-links">
-                        <!--<li><a href="https://bc.edu">Our Mission</a></li>-->
                         <li><a href="https://bc.edu">BC Home</a></li>
+                        <li><a href="http://www.bc.edu/bc-web/about/mission.html">Mission</a></li>
                         <li><a href="#bcl-feedback"><span class="fa fa-commenting-o" aria-hidden="true"></span> Feedback</a>
                         </li>
                         <li>
@@ -29,10 +29,11 @@
                 </div>
                 <div class="col-md-5 col-sm-5 col-xs-5 col-xxs input-wrapper">
                     <div class="pull-right">
-                        <form action="/search">
+                        <form action="http://www.bc.edu/bc-web/search.html">
                             <div class="input-group" id="bclib-header-form">
                                 <label for="bclib-header-search" class="accessibility-text">Search the Library</label>
-                                <input type="text" id="bclib-header-search" class="form-control" name="any" placeholder="Search for...">
+                                <input type="hidden" ie="UTF-8" />
+                                <input type="text" id="bclib-header-search" class="form-control" name="q" placeholder="Search bc.edu">
                                 <span class="input-group-btn">
                                         <button class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i><span class="accessibility-text">Submit Search</span></button>
                                     </span>

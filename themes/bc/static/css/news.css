@@ -1,0 +1,14 @@
+.news_listing {
+    margin-bottom: .5em
+}
+
+
+.news_listing img {
+    float: left;
+    width: 25%;
+    margin: 1em
+}
+
+.news_archives .row {
+    margin-bottom: .5em
+}

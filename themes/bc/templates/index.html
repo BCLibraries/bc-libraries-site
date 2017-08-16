@@ -1,225 +1,131 @@
 {% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block pagestyles %}
+<link rel="stylesheet" href="/theme/css/stories.css"/>
+{% endblock %}
+
 {% block content %}
 
-    <!-- TOP ROW -->
-<div class="row" style="line-height: 0;">
+{%include 'homepage/header.html' %}
 
-    <!-- BEGIN QUICK LINKS BLOCK -->
-    <div class="block_right">
-         <div id="block_quick_links">
-            <ul style="border-right: 1px solid #dadada;">
-                <li><a href="http://libguides.bc.edu/contact" target="_self" id="ql-contact-us">Contact us</a></li>
-                <li><a href="http://libcal.bc.edu/booking/oneill" target="_self" id="ql-reserve-a-study-room">Reserve a Study Room</a></li>
-                <li><a href="http://libguides.bc.edu/ask-a-librarian" target="_self" id="ql-ask-a-librarian">Ask a Librarian</a></li>
-                <li><a href="http://libguides.bc.edu/hours" target="_self" id="ql-hours">Library Hours</a></li>
-                <li><a href="http://libguides.bc.edu/refworks-login" target="_self" id="ql-refworks">RefWorks</a></li>
-            </ul>
+<div id="main-body" role="main">
+    <!-- DB RG HOURS BOX START -->
+    <div class="container" id="db-rg-hours">
+        <div class="row nobottom">
+            {% include 'homepage/databases.html' %}
 
-            <ul style="padding-left: 35px;">
-                <li><a href="http://answers.bc.edu/index.php" target="_self" id="ql-faq">Library FAQs</a></li>
-                <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" target="_self" id="ql-interlibrary-loan">Interlibrary Loan</a></li>
-                <li><a href="http://arc.bc.edu/reserves" target="_self" id="ql-course-reserves">Course Reserves</a></li>
-                <li><a href="https://bc.on.worldcat.org" target="_self" id="ql-worldcat">WorldCat</a></li>
-                <li><a href="http://bclib.bc.edu/a-to-z" target="_self" id="ql-journals">Journals</a></li>
-            </ul>
-        </div>
+            {% include 'homepage/start-research.html' %}
 
-    </div>
-
-    <div id="block_search">
-
-        <div role="tabpanel" id="tabpanel">
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab" id="search-all">All</a></li>
-                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab" id="search-books">Books</a></li>
-                <li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab" id="search-articles">Articles</a></li>
-                <ul class="search_float">
-                <li><a href="http://bclib.bc.edu/advanced-search" class="advanced-search-link" id="seach-advanced">Advanced search</a></li>
-                </ul>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="all">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search" id="bcbento-search">
-                                <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
-                                <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, &amp; more">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-main">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="books">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search-services/primo-catalog" id="bcbento-search">
-                                <label for="book-search" class="accessibility-text">Search books, media, and more</label>
-                                <input type="text" id="book-search" class="" name="any" placeholder="Find books, media, &amp; more">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-books">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="articles">
-                    <div class="col-xs-12">
-                        <div class="input-group input-group-md">
-                            <form method="get" action="/search-services/primo-articles" id="bcbento-search">
-                                <label for="article-search" class="accessibility-text">Search journal articles</label>
-                                <input type="text" id="article-search" name="any" placeholder="Find journal articles">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" id="submit-journals">
-                                        <span class="accessibility-text">Submit search</span>
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div id="block_databases">
-        <div class="col-md-6">
-            <h2><a href="http://libguides.bc.edu/az.php" id="databases-link">Databases</a></h2>
-
-            <p class="db_subjects" style="float: right;margin-top: -17px;font-size: .9em;"><a href="http://libguides.bc.edu/az.php" id="databases-subject">...by subject</a></p>
-            <!-- must include -->
-            <label for="dbs-by-title" class="accessibility-text">Find database by title</label>
-            <select name="resources" id="dbs-by-title" class="chosen-box" data-placeholder="Select a database…">
-                <option></option>
-            </select>
-        </div>
-        <div class="col-md-6">
-            {% include "research-guide-chooser.html" %}
+            {% include 'homepage/story-box.html' %}
         </div>
     </div>
+    <!-- DB RG HOURS BOX END -->
 
+    {% include 'homepage/quick-links.html' %}
+
+    {% include 'homepage/news-row.html' %}
+
+    {% include 'homepage/digital-scholarship-highlight.html' %}
+
+    {% include 'homepage/scholarship-at-bc.html' %}
+
+    {% include 'homepage/exhibits-highlight.html' %}
+
+    {% include 'homepage/facpub-highlight.html' %}
+
+    {% include 'homepage/special-collections-highlight.html' %}
 </div>
-<!-- END TOP ROW -->
+<!--
+    Temporary location for inactive scripts
+-->
 
-<!-- SECOND ROW, NEWS REEL -->
-<div class="row newsrow">
-    
-<!-- THUMBNAILS ARE 230xp x 230p. NEWS WILL ONLY REQUIRE A THUMBNAIL AND WILL LINK DIRECTLY TO AN EVENT, PAGE, OR EXHIBIT. -->
+<!--script type="text/javascript" src="/theme/js/libraryinfo.js"></script-->
 
-    <div class="list_carousel">
-        <a id="prev" href="#" class="newsbutton prev"><span class="accessibility-text">Carousel move left</span><span class="glyphicon glyphicon-chevron-left" id="carousel-prev"></span></a>
-        <a id="next" href="#" class="newsbutton next"><span class="accessibility-text">Carousel move right</span><span class="glyphicon glyphicon-chevron-right" id="carousel-next"></span></a>
+<!-- /#contentinfo -->
+<!-- MEGA MENU SCRIPT -->
+<!--script type="text/javascript" src="/theme/js/megamenu.js"></script-->
 
-        <ul id="newsslider">
+<!-- Control search tab switch. -->
+<!--script>
+$(function () {
+    $('#block_search *[role=presentation]').click(
+        function() {
+            var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+            $('#block_search .tab-pane input[type=text]').val(current_text);
+        }
+    );
+});
+</script-->
 
+<!-- Script to block spam-bots. Requires JQuery. -->
 
-            {% set count = 0 %}
-            {% for article in articles[:30] if article.category.name == "news" and article.expired != "yes" %}
-
-                {% set count = count + 1 %}
-                {% if count < 11 %}
-                <li>
-                    <a href="{% if article.destination %}{{ article.destination }}{% else %}{{ article.url }}{% endif %}" id="{{ article.slug }}">
-                        <div class="newsitem">
-                            <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
-                            <div class="newstext {{ article.showtext }}">
-                                <p class="newslink">{{ article.title }}</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                {% endif %}
-            {% endfor %}
-
-        
-        </ul>
-     </div>
-
-</div>
-
-<!-- ROW THREE, THE THIRD ROW -->
-<div class="row">
-      
-       <!-- LIBRARY ANNOUNCEMENTS CAN GO HERE -->
-
-    <div class="announcements">
-        <h2>Announcements</h2>
-
-        {% for article in articles if article.category.name == "announcements" and article.expired != "yes" %}
-
-            {% set count = count + 1 %} 
-            {% if loop.index < 3 %}
-
-                <div>
-                    <a href="{{ article.url }}" class="announcelink" id="{{ article.slug }}">{{ article.title }}</a><br />
-                    <span>{{ article.summary }}
-                    </span>
-                 <!-- REMOVING TRUNCATE FOR NOW, AS IT CUTS HREFS IN HALF. It was truncate(140)-->
-
-                    <div class="readmore {{ article.readmore }}">
-                    <a href="{{ article.url }}" id="readmore-{{ article.slug }}"><span class="arrow">Read more</span> <span class="offscreen">about {{ article.title }}</span></a>
-                    </div>
-                    
-                </div>
-            {% endif %}
-        {% endfor %}
-
-    </div>
-
-    <!-- REAL ESTATE SECTION CONTAINS 6 BUTTONS THAT LINK TO PRIORITY LIBRARY SITES.
-    SWAP OUT <A> CLASS TO CHANGE ICONS. ICONS LISTED IN STYLE SHEET. SEARCH FOR "REAL ESTATE ICON CSS" -->
-    <div class="realestate">
-        <div class="button"><a href="http://escholarship.bc.edu/" class="icon_document" id="button-escholarship"><p>eScholarship@BC</p></a></div>
-        <div class="button"><a href="https://ds.bc.edu/" class="icon_book" id="button-digital-scholarship"><p>Digital Scholarship</p></a></div>
-        <div class="button"><a href="http://libguides.bc.edu/popcollection" class="icon_openbook" id="button-popular-reading"><p>Popular Reading</p></a></div>
-        <div class="button"><a href="http://www.bc.edu/dataverse" class="icon_data" id="button-open-access"><p>Dataverse</p></a></div>
-        <div class="button"><a href="http://libguides.bc.edu/digital-collections" class="icon_files" id="button-digital-collections"><p>Digital Collections</p></a></div>
-        <div class="button"><a href="http://library.bc.edu/exhibits" class="icon_picture" id="button-exhibits"><p>Exhibits</p></a></div>
-   </div>
-</div>
-
+<!-- JS for expanding search bar
+<script src="/theme/js/classie.js"></script>
+<script src="/theme/js/uisearch.js"></script>
+<script>
+    new UISearch( document.getElementById( 'sb-search' ) );
+</script>-->
 
 {% endblock %}
 
 {% block pagescripts %}
-<!-- CAROUFREDSEL JS UNDER HERE -->
-<script type="text/javascript" src="/theme/js/jquery.carouFredSel-6.2.1.js"></script>
-<!-- fire plugin onDocumentReady -->
-<script type="text/javascript" language="javascript">
-    $(function() {
+<script type="text/javascript" src="/theme/js/story-box.js"></script>
+<script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
+<script type="text/javascript">
+    // Various glue scripts for the front page.
+    (function () {
+        var book_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            article_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            journal_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0&journals=any,~~TERM~~&query=any,contains,~~TERM~~';
 
-        //  Scrolled by user interaction
-        $('#newsslider').carouFredSel({
-            auto: false,
-            items: 1,
-            prev: '#prev',
-            next: '#next',
-            pagination: "#pager2",
-            mousewheel: true,
-            swipe: {
-                onMouse: true,
-                onTouch: true
+
+        function run_on_ready(fn) {
+            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
             }
-        });
+        }
 
-    });
+        function listenForTypeahead() {
+            $('#search-panel').on('typeahead:selected', function (evt, data) {
+                $('#search-panel form').submit();
+            });
+        }
+
+        /* Rewrote makeQuickLinkBoxesClickable to use jQuery methods. */
+        /* Fixes IE/Edge issue with forEach() not supporting nodeList */
+
+        /* object returned from document.querySelectorAll */
+        function makeQuickLinkBoxesClickable() {
+            $(".quick-link-block").click(function (evt) {
+                window.location = $(this).find("a").attr("href");
+            });
+        }
+
+        function smartLinkToSearch() {
+            linkToSearch('.book-search-link', book_search_url);
+            linkToSearch('.article-search-link', article_search_url);
+            linkToSearch('.journal-search-link', journal_search_url);
+        }
+
+        function linkToSearch(link_class, url) {
+            $(link_class).click(function (e) {
+                var term = $('#lib-search-box').val();
+                if (term && term !== '') {
+                    e.preventDefault();
+                    window.location.href = url.replace('~~TERM~~', term);
+                    return false;
+                }
+            });
+        }
+
+        run_on_ready(smartLinkToSearch());
+        run_on_ready(listenForTypeahead);
+        run_on_ready(makeQuickLinkBoxesClickable);
+    })();
 </script>
-
-<!-- END CAROUFREDSEL JS-->
-    
-<script src="/theme/js/bc-home-chosen.js?version=0.0.2"></script>
 {% endblock %}

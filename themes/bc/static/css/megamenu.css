@@ -1,0 +1,824 @@
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.homepagerefresh .yamm .nav,
+.homepagerefresh .yamm .collapse,
+.homepagerefresh .yamm .dropup,
+.homepagerefresh .yamm .dropdown {
+  position: static;
+}
+.homepagerefresh .yamm .container {
+  position: relative;
+}
+.homepagerefresh .yamm .dropdown-menu {
+  left: auto;
+}
+.homepagerefresh .yamm .yamm-content {
+  padding: 20px 30px;
+}
+.homepagerefresh .yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+
+
+/* Mega Menu */
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
+    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-left: 17px;
+}
+
+.homepagerefresh #megamenu-refresh .navbar-default {
+    background-color: inherit;
+    border: none;
+}
+.homepagerefresh #megamenu-refresh .navbar {
+    margin-bottom: 0;
+    border-bottom: none;
+    border-radius: 0;
+}
+.homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.85);
+    color: #000;
+    /*margin-top: -1px;*/
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+}
+.homepagerefresh .megamenu-container .nav a.menu-option {
+    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+.homepagerefresh .megamenu-container .container:first-child,
+.homepagerefresh .megamenu-container .navbar-collapse {
+    padding-left:0;
+    padding-right:0;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
+        display: none;
+    }
+    .homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .homepagerefresh .megamenu-container .nav a.menu-option {
+        text-shadow: none;
+        color: #000;
+    }
+    .homepagerefresh .megamenu-container .navbar-collapse {
+        padding-left:15px;
+        padding-right:15px;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+}
+.homepagerefresh .megamenu-container .nav a.menu-option:focus,
+.homepagerefresh .megamenu-container .nav a.menu-option:hover,
+.homepagerefresh .megamenu-container .nav .open a.menu-option {
+    text-shadow: none;
+    color:#fff;
+    background-color: #534741;
+    /*color:#000;
+    background-color: #b29d6c;*/
+}
+
+
+/* mega menu style copied from style.css */
+.homepagerefresh .h3style {
+    color: #05506d;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    /*text-transform: uppercase;*/
+}
+.homepagerefresh .h4style {
+    color: #05506d;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0 10px !important;
+    padding: 0;
+    text-transform: none;
+}
+
+.homepagerefresh #megamenu-refresh .navbar-nav > li > a:focus {
+    background: #05506d !important;
+    color: #fff;
+    outline: 0;
+}
+
+.homepagerefresh #megamenu-refresh .navbar-nav > li > a:hover {
+    background: #05506d !important;
+    color: #fff;
+    outline: 0;
+}
+
+.homepagerefresh #megamenu-refresh .navbar-nav > .open > a, #megamenu-refresh .navbar-nav > .open > a:hover {
+    background: #05506d !important;
+    color: #fff !important;
+}
+
+.homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
+    /*border: 1px solid #dadada;*/
+    border-top: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+/*#megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+    border-top: 3px solid #05506d;
+}*/
+@media ( max-width: 1199px ) {
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
+        border: 0;
+        border-radius: 0;
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+        /*border-top: 3px solid #05506d;*/
+    }
+}
+@media ( max-width: 767px ) {
+     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
+        border-top: 0px;
+    }
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
+        border: 0;
+        font-size: 14px;
+        background-color: #fff;
+        z-index: 1000;
+    }
+}
+
+.homepagerefresh .dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* display: none; */
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+/* CUSTOM MENU STYLING */
+
+/*#megamenu-refresh {
+    width: 1200px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0;
+    background: #fff;
+}
+@media ( max-width: 1199px ) {
+    #megamenu-refresh {
+        width: 100%;
+        height: 95px;
+        margin: 0px auto;
+        background: #fff;
+        display: inline-block;
+    }
+}*/
+@media ( max-width: 767px ) {
+    .homepagerefresh #megamenu-refresh {
+        display: inline;
+    }
+}
+.homepagerefresh #megamenu-refresh .hours-todays-date-container {
+    padding-bottom: 4px;
+}
+.homepagerefresh #megamenu-refresh .hours-todays-date {
+    font-weight: 600;
+}
+.homepagerefresh .menu_list, .ask_list {
+    list-style: none outside none;
+    padding: 0px;
+    margin: 0 0px;
+    border-right: 1px solid #DADADA;
+    padding: 0 25px;
+}
+.homepagerefresh .hours_menu_list {
+    list-style: none outside none;
+    border-right: 0;
+    padding: 0 25px;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .menu_list, .ask_list {
+        /*list-style: none outside none;
+        padding: 0px;
+        margin: 0 0 10px 0;
+        border-right: 1px solid #DADADA;
+        padding: 0px;
+        float: none;
+        width: 100%;*/
+        text-align: center;
+    }
+}
+
+.homepagerefresh .libhelp-link {
+    cursor: pointer;
+}
+
+.homepagerefresh .end {
+    border: 0px;
+}
+
+.homepagerefresh .yamm .dropdown-menu li > a {
+    display: block;
+    padding: 3px 5px;
+    margin: 0 0 0 -5px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    word-break: normal;
+    outline: none;
+    color: #666;
+}
+
+.homepagerefresh .yamm .dropdown-menu li > a p.tuck {
+    padding: 0 0 0 12px;
+}
+.homepagerefresh .yamm .dropdown-menu li > .h4style {
+    color: #05506d;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0 0 !important;
+    padding: 0;
+    text-transform: none;
+}
+.homepagerefresh .yamm .dropdown-menu li > .h4style a {
+    display: inline-block;
+    width: 100%;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .yamm .dropdown-menu li > .h4style  {
+        margin: 0 !important;
+        font-size: 18px;
+        padding: 0px;
+    }
+    .homepagerefresh .yamm .dropdown-menu li > .h4style a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+.homepagerefresh .yamm .dropdown-menu li > a:hover,
+.homepagerefresh .yamm .dropdown-menu li > a:focus,
+.homepagerefresh .yamm .dropdown-menu li > .h4style a:hover,
+.homepagerefresh .yamm .dropdown-menu li > .h4style a:focus {
+    color: #990000;
+    text-decoration: none;
+    background: #E0E0E0;
+}
+
+.homepagerefresh .bottom_row {
+    /*background: #EAEAEA;*/
+    border-top: 1px solid #DADADA;
+    /*margin: 0px;*/
+    padding: 10px 0 10px;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .bottom_row {
+            margin: 10px 0 0px 0;
+    }
+}
+.homepagerefresh .more {
+    float: right;
+    margin: 0 20px;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .more {
+        float: none;
+        margin: 0 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.homepagerefresh .more a {
+    /*background: #d6d6d6;
+    display: block;
+    padding: 15px 25px;
+    width: 100%;
+    border-bottom: 2px solid #c2c2c2;*/
+}
+
+.homepagerefresh .more a:hover {
+    text-decoration: none;
+    background: #a3a3a3;
+    border-bottom: 2px solid #999;
+    color: #fff;
+}
+
+.homepagerefresh .more a:after {
+    /*font-family: 'icomoon';
+    content: "\e655";
+    color: #a3a3a3;
+    display: block;
+    float: right;
+    font-size: 15px;
+    line-height: 1;
+    padding: 5px 0 0 10px;
+    font-weight: normal;*/
+    content: none;
+}
+
+.homepagerefresh .more a:hover:after {
+    color: #fff;
+}
+
+
+
+
+.homepagerefresh .hamburger {
+    background: transparent;
+}
+.homepagerefresh #megamenu-refresh .navbar-toggle {
+    background-color: #990000;
+    background-image: none;
+    /*border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+    float: right;
+    margin: 115px 0px 0;*/
+    padding: 13px;
+    position: relative;
+    border-color: #dccaa0;
+    /*width: 100%;*/
+}
+/*@media (min-width: 767px) {
+    .homepagerefresh #megamenu-refresh .navbar-toggle {
+        display: none;
+    }
+}
+.homepagerefresh .navbar-toggle .icon-bar {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 1px 1px 1px 1px;
+    color: #000000;
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin: 0 auto;
+}*/
+
+
+
+
+/* LIBRARY INFO DROP DOWN */
+
+.homepagerefresh .libraryinfo-content {
+    padding: 0 0px 0px 20px;
+    text-align: left;
+}
+
+.homepagerefresh .item-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 0 0 25px;
+    position: relative;
+    border-right: 5px solid #DADADA;
+}
+
+.homepagerefresh .item-desktop {
+    display: inline-block;
+}
+
+.homepagerefresh .item-tablet {
+    display: none;
+}
+
+@media ( max-width: 1199px ) {
+    .homepagerefresh .item-desktop {
+        display: none;
+    }
+    .homepagerefresh .item-tablet {
+    display: inline-block;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .item-list {
+        display: none;
+    }
+}
+
+.homepagerefresh .get-help-menu .item-list {
+    padding: 0 0 0 25px;
+}
+
+.homepagerefresh .yamm .dropdown-menu li .item-list > li > a:hover,
+.yamm .dropdown-menu li .item-list > li > a:hover {
+    background: #eaeaea;
+    color: #990000;
+    text-decoration: none;
+}
+
+.homepagerefresh .item-list .selected a {
+    color: #990000 !important;
+    font-weight: normal !important;
+    text-decoration: none;
+    background: #dadada;
+}
+
+.homepagerefresh #bapst_pane,
+.homepagerefresh #burns_pane,
+.homepagerefresh #erc_pane,
+.homepagerefresh #law_pane,
+.homepagerefresh #oconnor_pane,
+.homepagerefresh #oneill_pane,
+.homepagerefresh #swl_pane,
+.homepagerefresh #tml_pane {
+    width: 58%;
+    height: auto;
+    color: #666;
+    padding: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh #bapst_pane,
+    .homepagerefresh #burns_pane,
+    .homepagerefresh #erc_pane,
+    .homepagerefresh #law_pane,
+    .homepagerefresh #oconnor_pane,
+    .homepagerefresh #oneill_pane,
+    .homepagerefresh #swl_pane,
+    .homepagerefresh #tml_pane {
+        width: 100%;
+        height: auto;
+        color: #666;
+        padding: 0;
+        margin: 0 0 10px 0;
+        display: inline-block !important;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .pane_info .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+}
+
+.homepagerefresh .item_pane img {
+    float: left;
+    margin-right: 10px;
+    padding: 0 0 75px 0;
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .item_pane img {
+        display: none;
+    }
+}
+
+.homepagerefresh #h4mobile {
+    display: none;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh #h4mobile {
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px  0 0 0;
+        width: 100%;
+        border-top: 1px solid #666;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .yamm .dropdown-menu li > .h4style  {
+        margin: 0 !important;
+    }
+    .homepagerefresh .yamm .dropdown-menu li > .h4style a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh #ref_pane,
+    .homepagerefresh #faq_pane,
+    .homepagerefresh #text_pane,
+    .homepagerefresh #chat_pane,
+    .homepagerefresh #email_pane,
+    .homepagerefresh #call_pane {
+        display: inline-block !important;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+
+/* NEW LIBARY PANE CODE */
+
+.homepagerefresh .item_pane p {
+    line-height: inherit;
+    text-align: left;
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .item_pane p {
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.homepagerefresh .item_pane .address {
+    font-size: 11px;
+}
+
+.homepagerefresh .item_pane ul {
+    padding: 0px 0 5px 0;
+    margin: 0px;
+}
+
+.homepagerefresh .item_pane li {
+    list-style: none;
+}
+
+.homepagerefresh .pane_pic {
+    float: left;
+    width: 25%;
+    padding: 15px 10px;
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .pane_pic {
+        display: none;
+    }
+}
+
+.homepagerefresh .pane_pic img {
+    border: 2px solid #990000;
+    width: 100%;
+    padding: 0;
+}
+
+.homepagerefresh .pane_info {
+    float: right;
+    width: 75%;
+    padding: 15px;
+}
+
+.homepagerefresh .get-help-menu .pane_info {
+    float: none;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+@media ( max-width: 767px ) {
+    .homepagerefresh .pane_info {
+        float: none;
+        width: 95%;
+        padding: 0px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+.homepagerefresh .pane_info .h3style a {
+    padding: 0 35px 0 0;
+}
+
+.homepagerefresh .pane_info .h3style a:after {
+    /*font-family: 'icomoon';
+    content: "\e682";
+    padding: 0 0  0 5px;
+    display: inline-block;
+    text-decoration: none;*/
+    content: none;
+}
+
+
+.homepagerefresh .pane_info .h4style {
+    padding: 0;
+}
+
+@media ( max-width: 767px ) {
+    .homepagerefresh .pane_info p {
+        text-align: left;
+        line-height: inherit;
+    }
+}
+
+.homepagerefresh .megamenucalendar {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+}
+
+.homepagerefresh .megamenucalendar:before {
+    /*font-family: "icomoon";
+    content: "\e648";
+    color: #05506d;
+    float: left;
+    padding: 0 10px 0 0;*/
+    content: none;
+}
+.homepagerefresh .megamenucalendar:hover:before {
+    color: #32758f;
+}
+
+.homepagerefresh .megamenuphone {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+}
+
+.homepagerefresh .megamenuphone:before {
+    /*font-family: "icomoon";
+    content: "\e67d";
+    color: #05506d;
+    float: left;
+    padding: 0 10px 0 0;*/
+    content: none;
+}
+.homepagerefresh .megamenuphone:hover:before {
+    color: #32758f;
+}
+
+.homepagerefresh .megamenuemail {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.homepagerefresh .megamenuemail:before {
+    /*font-family: "icomoon";
+    content: "\e67c";
+    color: #05506d;
+    float: left;
+    padding: 0 10px 0 0;*/
+    content: none;
+}
+.homepagerefresh .megamenuemail:hover:before {
+    color: #32758f;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .homepagerefresh .megamenuphone:before,
+    .homepagerefresh .megamenuemail:before,
+    .homepagerefresh .megamenucalendar:before {
+        content: none;
+        padding: 0;
+    }
+    .homepagerefresh .megamenuphone .fa-phone,
+    .homepagerefresh .megamenuemail .fa-envelope,
+    .homepagerefresh .megamenucalendar .fa-calendar {
+        display: none;
+    }
+}
+.homepagerefresh .mini_hours_container,
+.homepagerefresh #oconnor_hours_container {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+ /* ASK A LIBRARIAN ICON STYLES */
+
+.homepagerefresh .askicon {
+    font-family: 'icomoon';
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #32758f;
+    text-align: center;
+    padding: 6px 0;
+    margin: 0 10px 75px 0;
+    color: #fff !important;
+    float: left;
+    border-bottom: 3px solid #05506d;
+}
+
+.homepagerefresh .askicon:hover {
+    background: #05506d;
+    text-decoration: none;
+    border-bottom: 2px solid #04394e;
+}
+
+.homepagerefresh .ask_ref:after {
+    content:"\e688";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.homepagerefresh .ask_faq:after {
+    content:"\e687";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.homepagerefresh .ask_txt:after {
+    content:"\e689";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+.homepagerefresh .ask_chat:after {
+    content:"\e61f";
+    font-size: 30px;
+    line-height: 1;
+}
+
+.homepagerefresh .ask_email:after {
+    content:"\e67c";
+    font-size: 30px;
+    line-height: 1;
+}
+
+.homepagerefresh .ask_call:after {
+    content:"\e686";
+    font-size: 35px;
+    line-height: 0.8;
+}
+
+
+/* Image sprites for library thumbnails */
+.libsprite {
+    background: url('/theme/img/librarypane/libthumb-spritesheet.jpg') no-repeat;
+    display: block;
+    border: 2px solid #990000;
+}
+
+.libsprite-librarythumbnails_bapst {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -5px;
+}
+
+.libsprite-librarythumbnails_burns {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -5px;
+}
+
+ .libsprite-librarythumbnails_ed {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -165px;
+}
+
+.libsprite-librarythumbnails_law {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -165px;
+}
+
+.libsprite-librarythumbnails_oconnor {
+    width: 150px;
+    height: 150px;
+    background-position: -325px -5px;
+}
+
+.homepagerefresh .libsprite-librarythumbnails_oneill {
+    width: 150px;
+    height: 150px;
+    background-position: -325px -165px;
+}
+
+ .libsprite-librarythumbnails_swl {
+    width: 150px;
+    height: 150px;
+    background-position: -5px -325px;
+}
+
+.libsprite-librarythumbnails_tml {
+    width: 150px;
+    height: 150px;
+    background-position: -165px -325px;
+}

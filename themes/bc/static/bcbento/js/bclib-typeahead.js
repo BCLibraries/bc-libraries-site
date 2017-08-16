@@ -1,8 +1,10 @@
 $(document).ready(function () {
-    engine = new Bloodhound({
+    var host = window.location.hostname === 'library.bc.edu' ? 'https://library' : 'http://libdev';
+
+    var engine = new Bloodhound({
         name: 'holmes-typeahead',
         remote: {
-            url: '/search-services/typeahead?any=%QUERY&callback=?',
+            url: host + '.bc.edu/search-services/typeahead?any=%QUERY',
             rateLimitWait: 100,
             rateLimitBy: 'throttle'
         },
@@ -12,7 +14,7 @@ $(document).ready(function () {
         queryTokenizer: Bloodhound.tokenizers.whitespace
     });
     engine.initialize();
-    $('#typeahead').typeahead({
+    var mytypeahead = $('#lib-search-box').typeahead({
         hint: false,
         minLength: 3
     }, {

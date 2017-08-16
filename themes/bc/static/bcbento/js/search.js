@@ -26,9 +26,11 @@ var trackOutboundLink = function (url) {
 
 $.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, api_version;
+    var search_string, templates, source, loading_timers, api_version, spinner_html, error_html, host;
 
     api_version = '0.0.9.2';
+
+    host = window.location.hostname === 'library.bc.edu' ? 'https://library' : 'http://libdev';
 
     function callSearchService(service, keyword) {
         var $target, $heading, url;
@@ -39,13 +41,13 @@ $.fn.bcBento = function (services) {
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = 'https://library.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = host + '.bc.edu/search-services/v' + api_version + '/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/, '+').replace('"', '%22');
 
         // Clear old results.
         $heading.nextAll().remove();
         loading_timers[service.name] = setTimeout(function () {
-            $target.addClass('loading');
+            $heading.after(spinner_html);
         }, 150);
 
 
@@ -53,14 +55,15 @@ $.fn.bcBento = function (services) {
             {
                 type: 'GET',
                 url: url,
-                dataType: 'jsonp',
+                dataType: 'json',
                 cache: true,
                 success: function (data) {
                     successfulSearch(data, service, $target, $heading);
                 },
                 error: function () {
                     clearTimeout(loading_timers[service.name]);
-                    $target.removeClass('loading');
+                    $heading.nextAll().remove();
+                    $heading.after(error_html);
                 }
             }
         );
@@ -80,7 +83,7 @@ $.fn.bcBento = function (services) {
         if (templates[service.name]) {
             var html = templates[service.name](data);
             clearTimeout(loading_timers[service.name]);
-            $target.removeClass('loading');
+            $heading.nextAll().remove();
             $heading.after(html);
         }
     }
@@ -99,11 +102,11 @@ $.fn.bcBento = function (services) {
         var $typeahead = $('#typeahead');
         $('#didyoumean-holder').empty();
         setTitle(keyword);
-        $typeahead.typeahead('close');
+        //$typeahead.typeahead('close');
         services.forEach(function (service) {
             callSearchService(service, keyword);
         });
-        $typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
+        //$typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
     }
 
     function setTitle(keyword) {
@@ -135,6 +138,19 @@ $.fn.bcBento = function (services) {
         return str;
     }
 
+    function buildSpinner() {
+        var source = $('#spinner-template').html();
+        return Handlebars.compile(source)({});
+    }
+
+    function buildErrorNotice() {
+        var source = $('#error-template').html();
+        return Handlebars.compile(source)({});
+    }
+
+    spinner_html = buildSpinner();
+    error_html = buildErrorNotice();
+
     templates = [];
 
     loading_timers = [];
@@ -158,6 +174,10 @@ $.fn.bcBento = function (services) {
         });
     }
 
+    $('#search-panel').on('typeahead:selected', function (evt, data) {
+        search(data.value);
+    });
+
     Handlebars.registerHelper('truncate', truncate);
 
     services.forEach(renderServiceResults);
@@ -169,7 +189,7 @@ $.fn.bcBento = function (services) {
 $(document).ready(function () {
 
     // Define services
-    const catalog = {
+    var catalog = {
         name: 'catalog',
         max_results: 8,
         postprocess: function (data) {
@@ -180,12 +200,12 @@ $(document).ready(function () {
         }
     };
 
-    const articles = {
+    var articles = {
         name: 'articles',
         max_results: 8
     };
 
-    const librarians = {
+    var librarians = {
         name: 'librarians',
         max_results: 2,
         postprocess: function (data) {

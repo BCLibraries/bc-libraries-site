@@ -1,5 +1,19 @@
 {% extends "base.html" %}
+{% block title %}O'Neill Level Three Gallery Exhibits{% endblock %}
 {% block content %}
+
+<style>
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
+    }
+
+
+</style>
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
+
+<div class="container exhibit-container">
 
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
@@ -8,7 +22,7 @@
         </li>
         <li id="s-lib-bc-site">
         <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
-        </a>
+        </a></li>
         <li id="s-lib-bc-site">
             <a href="http://library.bc.edu/exhibits/lvl3" title="O'Neill Level Three Gallery Archives">O'Neill Level Three Gallery Archives</a></li>
     </ol>
@@ -22,6 +36,7 @@
         </div>
     </div>
 
+<div class="row">
     <div class="latest_exhibit">
 
         <div class="left">
@@ -87,7 +102,8 @@
         </div>
 
     </div>
-
+</div>
+</div>
 </div>
 {% endblock %}
 

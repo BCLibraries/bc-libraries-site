@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
+<style>
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
+    }
+
+
+</style>
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
@@ -8,7 +18,7 @@
         </li>
         <li id="s-lib-bc-site">
         <a href="http://library.bc.edu/exhibits" title="Library Exhibits">Library Exhibits
-        </a>
+        </a></li>
         <li id="s-lib-bc-site">
             <a href="http://library.bc.edu/exhibits/virtual" title="Burns Virtual Exhibits">Burns Virtual Exhibits</a></li>
     </ol>

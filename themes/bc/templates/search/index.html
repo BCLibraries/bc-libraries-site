@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block pagestyles %}
+<style>
+    .homepagerefresh #header {
+        height: initial;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+{% include 'homepage/header.html' %}
+
+<div id="main-body" class="container">
+    <div id="didyoumean-holder" class="row"></div>
+
+    <div id="bentoboxresults">
+
+        <div class="row" id="all-results">
+
+            <!-- The primary results box. -->
+            <div id="primary" class="col-md-5">
+                <div id="catalog-results" class="result-container">
+                    <span class="results-count accessibility-text" aria-live="polite"></span>
+                    <h2 id="booksh3" class="search-heading">Books &amp; more</h2>
+                </div>
+            </div>
+
+            <!-- Secondary results box. -->
+            <div id="secondary" class="col-md-4">
+                <div id="articles-results" class="result-container">
+                    <span class="results-count accessibility-text" aria-live="polite"></span>
+                    <h2 id="articleh3" class="search-heading">Articles</h2>
+                </div>
+            </div>
+
+            <!-- Tertiary results box.-->
+            <div id="tertiary" class="col-md-3">
+                <div id="website-results" class="result-container website row">
+                    <h2 id="subjecth3" class="search-heading">Website</h2>
+                </div>
+                <div id="librarians-results" class="result-container librarians row">
+                    <h2 id="librarianh3" class="search-heading">Librarians</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
+    <script src="/theme/bcbento/js/search.js?v=20170815-01"></script>
+
+    {% raw %}
+    <!-- Search result templates -->
+    <script id="librarians-template" type="text/x-template">
+        {{#if .}}
+        <div class="results-highlight">
+            {{#.}}
+            <div class="librarian">
+                <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
+
+                <div class="librarian-info">
+                    <h3 class="librarian-name">
+                        <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a>
+                    </h3>
+                    <p class="guide-description">{{display_subjects}}</p>
+                </div>
+            </div>
+            {{/.}}
+            <p class="all-librarians">
+                <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
+                    all subject librarians</a></p>
+        </div>
+        {{/if}}
+    </script>
+
+    <script id="website-template" type="text/x-template">
+        {{#if items}}
+        <div class="more-results-link">
+
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+                {{total_results}} results&hellip;&nbsp;</a>
+
+        </div>
+        <div class="results-highlight">
+
+            <div>
+                {{#items}}
+                <div class="bento-result">
+                    <div>
+                        <h3>
+                            <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a>
+                        </h3>
+                        in <a href="{{guide_url}}" class="guide-title">{{guide_title}}</a></div>
+                    {{#if pages}}
+                    <ul class="guide-pages">
+                        {{#pages}}
+                        <li><a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{title}}</a></li>
+                        {{/pages}}
+                    </ul>
+                    {{/if}}
+                </div>
+                {{/items}}
+            </div>
+        </div>
+        {{/if}}
+
+    </script>
+
+    <script id="catalog-template" type="text/x-template">
+
+        <div class="more-results-link">
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+                {{total_results}}
+                results&hellip;&nbsp;</a>
+        </div>
+
+        <div id="catalog-results bento-results">
+
+            {{#items}}
+            <div>
+
+                <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result">
+
+
+                    <h3>
+                        <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                            {{truncate '100' title}}
+                        </a>
+                    </h3>
+
+                    {{date}}
+
+                    <div class="catalog-metadata">
+                        {{#if creator}}
+                        <div class="creator">
+                            {{truncate '40' creator}}
+                        </div>
+                        {{/if}}
+
+                        {{^creator}}
+                        {{#if contributors.[0]}}
+                        <div class="creator">
+                            {{truncate '40' contributors.[0]}}
+                        </div>
+                        {{/if}}
+                        {{/creator}}
+
+                        {{^creator}}
+                        {{^contributor}}
+                        <div class="publisher">
+                            {{publisher}} {{date}}
+                        </div>
+                        {{/contributor}}
+                        {{/creator}}
+
+                        <div class="type">{{type}}</div>
+                        <ul class="available-items">
+                            {{#avail}}
+                            <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
+                                <span class="library">{{lib_display}}</span>
+                                {{#if in_library_only }}
+                                <span class="location">{{full/location}}</span>
+                                {{/if}}
+                                <span class="callno">{{call_number}}</span>
+                                <span class="availability">{{availability}}</span>
+                            </li>
+                            {{/avail}}
+                        </ul>
+                        {{#if getit}}
+                        <div class="available-online">
+                            <a href="{{link}}" onclick="trackOutboundLink('{{link}}'); return false;">Available
+                                online</a>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+
+                {{#if covers.[0]}}
+                <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
+                {{/if}}
+
+            </div>
+            {{/items}}
+        </div>
+
+        {{#if worldcat_results}}
+        <div class="worldcat-results">
+            <p>The following items were found at other libraries:</p>
+            <ul>
+                {{#worldcat_results}}
+                <li>
+                    <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">
+                        {{truncate '100' name}}
+                    </a>
+
+                    <div class="creator">
+                        {{truncate '40' creator}}
+                    </div>
+                </li>
+                {{/worldcat_results}}
+            </ul>
+        </div>
+        {{/if}}
+
+
+    </script>
+
+    <script id="articles-template" type="text/x-template">
+        <div class="more-results-link">
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+                {{total_results}}
+                results&hellip;&nbsp;</a>
+        </div>
+
+        <div>
+            {{#items}}
+            <div class="bento-result">
+
+                <h3>
+                    <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                        {{truncate '100' title}}
+                    </a>
+                </h3>
+
+                {{date}}
+
+                {{#if creator}}
+                <div class="creator">{{truncate '80' creator}}</div>
+                {{/if}}
+                <div class="publisher">{{{part_of}}}</div>
+            </div>
+            {{/items}}
+        </div>
+    </script>
+
+    <script id="dym-template" type="text/x-template">
+        {{#if dym}}
+        <div class="dym-notice">
+            Did you mean <a href="/search?any={{dym}}">{{dym}}</a>?
+        </div>
+        {{/if}}
+    </script>
+
+    <script id="spinner-template" type="text/x-template">
+        <div class="spinner-box">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </script>
+
+    <script id="error-template" type="text/x-template">
+        <div class="error-notice">
+            <div class="alert alert-danger" role="alert">There was an error connecting to this service.</div>
+        </div>
+    </script>
+
+    <!-- Control search tab switch. -->
+    <script>
+        $(function () {
+            $('#block_search *[role=presentation]').click(
+                function () {
+                    var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                    $('#block_search .tab-pane input[type=text]').val(current_text);
+                }
+            );
+        });
+    </script>
+    {% endraw %}
+</div>
+
+{% endblock %}
+
+{% block pagescripts %}
+<script type="text/javascript" src="/theme/bcbento/js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="/theme/bcbento/js/bclib-typeahead.js"></script>
+{% endblock %}

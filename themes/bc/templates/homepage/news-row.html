@@ -1,0 +1,54 @@
+<!-- NEWS START -->
+<div class="container" id="news">
+
+    <div class="row">
+
+        <!--div class="col-md-12">
+            <h2>
+                <a href="/news">News</a>
+            </h2>
+        </div-->
+
+       {% for article in articles | most_recent_news(4) %}
+
+            {% if article.image_thumb and article.expired != "yes" %}
+
+            {# article with image #}
+
+        <div class="col-xxs col-xs-6 col-sm-6 col-md-3">
+
+            <div class="news-content">
+                <a href="{{ article.destination }}" id="{{ article.slug }}">
+                    
+                    <div class="newsitem">                        
+
+                        <div class="newstext">
+                                <p class="newslink">{{ article.title }}</p>
+                        </div>
+                        
+                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+            {% else %}
+
+            {# announcement without image #}
+            <div class="announcement">
+                <p class="newslink"><a href="{{ article.destination }}" id="{{ article.slug }}">{{ article.title }}</a></p>
+                <p class="">
+                    {{ article.summary }}
+                </p>
+            </div> 
+
+            {% endif %} 
+
+
+        {% endfor %}
+    </div>
+    <div class="more-news"><a href="/news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
+</div>
+<!-- NEWS END -->

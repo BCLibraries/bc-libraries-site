@@ -651,6 +651,14 @@ body.body-modal {
     }
 }
 
+/* Specific to the bc-lib header */
+@media (max-width: 600px) {
+    #bclib-header .link-wrapper,
+    #bclib-header .input-wrapper {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .col-xxs {
         display:block;
@@ -665,7 +673,15 @@ body.body-modal {
         float: none!important;
         padding: 4px 0 6px 0;
     }
-    #bclib-header .header-right {
+    /*#bclib-header .header-right {
         padding-right: 15px;
+    }*/
+}
+
+/* Specific to the bc-lib header */
+@media (max-width: 345px) {
+    #bclib-header .link-wrapper .fa-commenting-o,
+    #bclib-header .link-wrapper .fa-user {
+        display: none;
     }
 }

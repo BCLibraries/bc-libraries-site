@@ -181,6 +181,18 @@ a.current-exhibits-title {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 767px) {
+	.exhibit-right {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.more-exhibits-button {
+		display: none;
+	}
+}
+
 
 @media (max-width: 480px) {
 	.carousel-indicators {
@@ -188,14 +200,6 @@ a.current-exhibits-title {
 	}
 
 	.exhibit-blurb {
-		display: none;
-	}
-
-	.more-exhibits-button {
-		display: none;
-	}
-
-	.exhibit-right {
 		display: none;
 	}
 }

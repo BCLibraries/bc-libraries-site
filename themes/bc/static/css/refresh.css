@@ -232,9 +232,26 @@ body {
     height: 450px;
     background-size: cover;
     padding-top: 80px;
+    position: relative;
 }
 .homepagerefresh #header-top-row {
     padding-top: 0px;
+}
+.homepagerefresh .caption-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px 40px;
+    background-color: rgba(16,14,15,.85);
+    color: #fff;
+    font-size: 13px;
+}
+.homepagerefresh .caption-link a {
+    color: #fff;
+}
+.homepagerefresh .caption-link a:hover,
+.homepagerefresh .caption-link a:focus {
+    text-decoration: underline;
 }
 @media (min-width: 768px) {
     .navbar-nav {

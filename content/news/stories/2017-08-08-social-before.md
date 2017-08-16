@@ -1,5 +1,5 @@
 Title: Being Social Before Social Media
-Destination: https://johnjburnslibrary.wordpress.com/2017/07/24/feeling-social/
+Destination: http://library.bc.edu/exhibits/2017/Jul/being-social/
 Date: 2017-08-08 03:01
 Expired: no
 Slug: being-social-before

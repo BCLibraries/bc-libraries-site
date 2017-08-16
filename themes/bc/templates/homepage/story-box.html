@@ -5,7 +5,7 @@
 
             {% for story in articles | current_stories(4) %}
             <figure class="sr-only story" id="story-{{loop.index}}">
-                <a href="{{ story.destination }}" title="Text here?">
+                <a href="{{ story.destination }}">
                     <img src="/theme/img/stories/{{ story.image }}" alt="" aria-hidden="true" role="presentation"/>
                     <figcaption>{{ story.title }}</figcaption>
                 </a>

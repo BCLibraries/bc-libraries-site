@@ -12,4 +12,17 @@ $(function () {
     }).on('hide.bs.dropdown', function (e) {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(50);
     });
+
+    // Close open menus when user presses ESC
+    $(document).on('keydown', function (e) {
+        if (e.keyCode === 27) {
+            $('.dropdown-toggle').each(closeMenu);
+        }
+    });
+
+    function closeMenu(num, menu) {
+        if ($(menu).attr('aria-expanded') === 'true') {
+            $(menu).dropdown('toggle');
+        }
+    }
 });

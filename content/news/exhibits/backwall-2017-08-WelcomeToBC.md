@@ -9,7 +9,7 @@ Slug: welcome-to-bc
 Image: 2017/08-welcome.png
 Image_thumb: 2017/08-welcome-thumb.png
 Image_alt: A year book cover with a golden eagle.
-Active: no
+Active: yes
 Style: right
 
 <strong>Welcome to BC! </strong>

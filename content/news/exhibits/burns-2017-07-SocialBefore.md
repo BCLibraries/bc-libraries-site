@@ -7,7 +7,7 @@ Location: burns
 Tags: exhibit
 Slug: being-social
 Image: 2017/07-social.png
-Image_thumb: 2017/07-social-thumb.jpg
+Image_thumb: 2017/07-social-thumb.png
 Image_alt: Photo of students from 1970s placing letter in to a mailbox, next to an image of a cellphone with the same photo on it
 Active: yes
 Style: left

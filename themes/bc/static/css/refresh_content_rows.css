@@ -117,10 +117,10 @@
 #exhibit-highlight h2 {
 	font-weight: 600;
 	/*text-transform: uppercase;*/
-	color: #fff !important;
+	color: #fff;
 	/*font-size: 16px;*/
     letter-spacing: 2px;
-	margin: 0;
+	margin: .5em 0 1em 0;
 }
 
 .exhibit-box {
@@ -175,7 +175,9 @@ a.current-exhibits-title {
 }
 
 /* EXHIBIT SLIDER OVERWRITES */
-
+#exhibit-highlight .carousel {
+	margin-bottom: 3em;
+}
 #exhibit-highlight .carousel-control.left, #exhibit-highlight .carousel-control.right {
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
 }

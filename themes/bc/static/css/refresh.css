@@ -694,3 +694,149 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         display: none;
     }
 }
+
+@media print {
+    body {
+        font-size: large;
+    }
+    body:before {
+        content:"Boston College Libraries "!important;
+        font-size:2em;
+        font-weight:normal;
+    }
+    a:after{
+        content:" (" attr(href) ") "!important;
+        font-size:0.8em;
+        font-weight:normal;
+        word-wrap:break-word;
+    }
+    p {
+        page-break-inside: avoid;
+    }
+    .view-mode .s-lib-box .s-lib-box-title {
+        font-size: large;
+    }
+    #midlevelcontainer-refresh {
+        margin-top: 0!important;
+    }
+    #bclib-header, 
+    .megamenu-container,
+    iframe,
+    a[name=s-lg-guide-main],
+    #s-lg-guide-tabs,
+    #s-lib-scroll-top,
+    #s-lib-footer-login-link {
+        display: none!important;
+    }
+    .s-lg-guide-body [class*="col-"] {
+        float: left; width:100%;
+    }
+
+    /*  homepage only styles */
+    #db-rg-hours h2,
+    #db-rg-hours h2 a,
+    #ds-highlight h3,
+    #ds-highlight h3 a,
+    #exhibit-highlight h2,
+    #exhibit-highlight h2 a,
+    #scholarship h2,
+    #scholarship h2 a,
+    #exhibit-highlight h2,
+    #exhibit-highlight h2 a,
+    #facpub h2,
+    #facpub h2 a,
+    #digcol-highlight h3,
+    #digcol-highlight h3 a {
+        font-size: 22px!important;
+        font-weight: normal!important;
+        letter-spacing: 1px!important;
+        color: #000!important;
+        text-decoration: none!important;
+        margin: 0 0 1em 0!important;
+        padding: 0!important;
+        border: 0!important;
+    }
+    .mainhomepage .container,
+    .mainhomepage .container-fluid {
+        width: 100%!important;
+    }
+    .mainhomepage #header,
+    .mainhomepage #storybox {
+        display: none;
+    }
+    #db-rg-hours h2 {
+        margin: 0!important;
+    }
+    #db-rg-hours h2:last-child {
+        padding-top: 1em!important;
+    }
+    #news {
+        display: none;
+    }
+    #quick-links {
+        border-top: 1px solid #dadada; 
+        border-bottom: 1px solid #dadada; 
+        padding: 1em 0;
+    }
+    #quick-links .quick-link-block {
+        text-align: left;
+        padding: .25em 0!important;
+    }
+    #ds-highlight {
+        height: auto!important; 
+        padding: 0!important;
+        text-align: left!important;
+    }
+    #ds-highlight [class*="col-"] {
+        position: relative!important;
+        text-align: left!important;
+    }
+    #ds-highlight .content {
+        padding: 0;
+    }
+    .mainhomepage .embed-responsive {
+        display: none;
+    }
+    #scholarship {
+        text-align: left!important;
+    }
+    #exhibit-highlight .carousel-control,
+    #exhibit-highlight img.exhibit-poster,
+    #exhibit-highlight .carousel-indicators,
+    #exhibit-highlight .exhibit-right {
+        display: none;
+    }
+    #exhibit-highlight .exhibit-box {
+        padding: 0!important;
+        margin: 0!important;
+        height: auto!important;
+    }
+    #exhibit-highlight .exhibit-box .btn {
+        padding: 0;
+    }
+    #exhibit-highlight .carousel {
+        margin-bottom: 0!important;
+    }
+    #exhibit-highlight .col-md-offset-2 {
+        margin-left: 0!important;
+    }
+    #facpub {
+        text-align: left!important;
+    }
+    #facpub .more-link {
+        text-align: left!important;
+    }
+    #digcol-highlight {
+        height: auto!important; 
+        padding: 0!important; 
+        border-top: 1px solid #dadada; 
+        border-bottom: 1px solid #dadada;
+        text-align: left!important;
+    }
+    #digcol-highlight [class*="col-"] {
+        position: relative!important;
+    }
+    #digcol-highlight .content {
+        padding: 1.5em 0 0 0;
+    }
+}

@@ -8,7 +8,7 @@ Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
 Tags: facpub
-Slug: Sienkiewicz-Other
+Slug: sienkiewicz-other
 Youtube: https://www.youtube.com/embed/IDpCOtsC3Wo
 Sample_pages: 2017/09/sienkiewicz-book.pdf
 ShowSample_pages: yes

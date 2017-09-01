@@ -3817,7 +3817,7 @@ span.expiredyes {
 
 .facpub {
 background: url("/theme/img/facpub_bg.png") no-repeat scroll top center rgba(0, 0, 0, 0);
-background-size: fill;
+background-size: cover;
 background-attachment: fixed;
 
 }

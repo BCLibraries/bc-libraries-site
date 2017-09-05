@@ -10,7 +10,7 @@
 
     {% for facpub in articles | current_facpubs(1) %}
 
-            <h3><a href="http://library.bc.edu/facpub/{{ facpub.url }}">{{ facpub.title }}</a></h3>
+            <h3><a href="http://library.bc.edu/{{ facpub.url }}">{{ facpub.title }}</a></h3>
                 <p>By {{ facpub.author_firstname}} {{ facpub.author_lastname}}<br/>
                     <em>{{ facpub.author_position }}</em>
                 </p>

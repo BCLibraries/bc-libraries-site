@@ -1,21 +1,12 @@
-Date: 2017-09-01 01:05
-Title: The Other Air Force: U.S. Efforts to Reshape Middle Eastern Media Since 9/11
-By:
-Author_firstname: Matt 
-Author_lastname: Sienkiewicz, Ph.D.
-Author_position: Communication Department
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
-Tags: facpub
-Slug: sienkiewicz-other
-Youtube: https://www.youtube.com/embed/IDpCOtsC3Wo
-Sample_pages: 2017/09/sienkiewicz-book.pdf
-ShowSample_pages: yes
-Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21465012150001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
-Bookcover: 2017/09/sienkiewicz-cover.png
-Image_alt: Book cover
-Oneoff: no
+Title: Faculty Publication Highlight: Matt Sienkiewicz, Ph.D.
+Destination: http://library.bc.edu/facpub/2017/Sep/sienkiewicz-other/
+Date: 2017-09-05 01:01 
+Tags: news, tags 
+Slug: facpub-sien
+Expired: no
+ShowText: yes
+Image_alt: A photo of Professor Sienkiewicz during his interview
+Image_thumb: 2017-09/sien-thumbs.png
 
 As it seeks to win the hearts and minds of citizens in the Muslim world, the United States has poured millions of dollars into local television and radio programming, hoping to generate pro-American currents on Middle Eastern airwaves. However, as this fascinating new book shows, the Middle Eastern media producers who rely on these funds are hardly puppets on an American string, but instead contribute their own political and creative agendas while working within U.S. restrictions.  
  

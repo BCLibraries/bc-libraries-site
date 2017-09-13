@@ -46,11 +46,14 @@
 
             <!-- Tertiary results box.-->
             <div id="tertiary" class="col-md-3">
+                <div id="faq-results" class="result-container faq row ">
+                    <span class="search-heading"></span>
+                </div>
                 <div id="website-results" class="result-container website row">
-                    <h2 id="subjecth3" class="search-heading">Website</h2>
+                    <span class="search-heading"></span>
                 </div>
                 <div id="librarians-results" class="result-container librarians row">
-                    <h2 id="librarianh3" class="search-heading">Librarians</h2>
+                    <span class="search-heading"></span>
                 </div>
             </div>
 
@@ -64,6 +67,7 @@
     <!-- Search result templates -->
     <script id="librarians-template" type="text/x-template">
         {{#if .}}
+        <h2 id="librarianh3" class="search-heading">Librarians</h2>
         <div class="results-highlight">
             {{#.}}
             <div class="librarian">
@@ -84,13 +88,29 @@
         {{/if}}
     </script>
 
+
+    <script id="faq-template" type="text/x-template">
+        {{#if items}}
+        <h2 id="faqh3" class="search-heading">Frequently asked questions</h2>
+        <div class="results-highlight">
+            <ul>
+                {{#items}}
+                <li>
+                    <a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{question}}</a>
+                </li>
+                {{/items}}
+            </ul>
+        </div>
+        <div class="more-results-link">
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+                {{total_results}} results&hellip;&nbsp;</a>
+        </div>
+        {{/if}}
+    </script>
+
     <script id="website-template" type="text/x-template">
         {{#if items}}
-        <div class="more-results-link">
-
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see more results&hellip;&nbsp;</a>
-
-        </div>
+        <h2 id="subjecth3" class="search-heading">Website</h2>
         <div class="results-highlight">
 
             <div>
@@ -111,6 +131,9 @@
                 </div>
                 {{/items}}
             </div>
+        </div>
+        <div class="more-results-link">
+            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see more results&hellip;&nbsp;</a>
         </div>
         {{/if}}
 
@@ -246,7 +269,7 @@
     <script id="dym-template" type="text/x-template">
         {{#if dym}}
         <div class="dym-notice">
-            Did you mean <a href="/search?any={{dym}}">{{dym}}</a>?
+            Did you mean <a href="https://library.bc.edu/search?any={{dym}}">{{dym}}</a>?
         </div>
         {{/if}}
     </script>

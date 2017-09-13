@@ -393,6 +393,7 @@ div#didyoumean-holder {
 .librarian {
     clear: left;
     padding-top: 1em;
+    overflow: hidden;
 }
 
 .results-highlight h3 {
@@ -420,7 +421,7 @@ h2#faqh3 {
 #tertiary .more-results-link {
     padding-left: 1em;
     margin-top: .5em;
-    margin-bottom: 2em;
+    margin-bottom: em;
 }
 
 #tertiary h2 {

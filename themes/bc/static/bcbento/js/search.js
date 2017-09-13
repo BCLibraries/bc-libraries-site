@@ -183,7 +183,7 @@ $.fn.bcBento = function (services) {
 
     services.forEach(renderServiceResults);
     search(search_string);
-    $('#typeahead').val(search_string);
+    $('#lib-search-box').val(search_string);
 };
 
 

@@ -420,4 +420,13 @@ h2#faqh3 {
 #tertiary .more-results-link {
     padding-left: 1em;
     margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+#tertiary h2 {
+    margin-top: 0;
+}
+
+#tertiary {
+    margin-top: 4px;
 }

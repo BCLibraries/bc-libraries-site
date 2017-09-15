@@ -1,4 +1,4 @@
-Date: 2017-09-15 01:01 
+Date: 2017-09-15 01:02
 Date_range: September 2017 - January 2018
 Title: Amplified Heart
 Subtitle:

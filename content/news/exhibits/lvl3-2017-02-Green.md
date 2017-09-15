@@ -9,7 +9,7 @@ Slug: exhibit-minos
 Image: 2017/02-green_poster.png
 Image_thumb: 2017/02-green_thumb.png
 Image_alt: Minos exhibit poster
-Active: yes
+Active: no
 Style: default
 
 Cultures all around the world and in different times have strived for the establishment of stability and order. In this attempt those who do not fit into the status quo, those deemed as different, are consigned and silenced. Myths usually portray them as monsters, as the Greek myth of the Minotaur can attest to. The Minotaur's alienation is rooted in the fact that he is reviled by others. To be a monster is not the essence of the Minotaur's being; rather, it is imposed upon him by the mainstream.

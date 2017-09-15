@@ -1,5 +1,5 @@
 Title: O'Neill Library Level 3 Exhibit: Amplified Heart
-Destination: URL
+Destination: http://library.bc.edu/exhibits/2017/Sep/exhibit-amp-heart/
 Date: 2017-09-15 01:01 
 Tags: news, tags 
 Slug: news-amp-heart

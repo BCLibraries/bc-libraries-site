@@ -3,7 +3,7 @@ Destination: http://library.bc.edu/facpub/2017/Sep/sienkiewicz-other/
 Date: 2017-09-05 01:01 
 Tags: news, tags 
 Slug: facpub-sien
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photo of Professor Sienkiewicz during his interview
 Image_thumb: 2017-09/sien-thumbs.png

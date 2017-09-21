@@ -9,7 +9,7 @@ Slug: white-rose
 Image: 2017/02-white.png
 Image_thumb: 2017/02-white-thumb.png
 Image_alt: White Rose exhibit poster
-Active: yes
+Active: no
 Style: right
 
 <em>"How can we expect righteousness to prevail when there is hardly anyone willing to give himself up individually to a righteous cause? Such a fine, sunny day, and I have to go, but what does my death matter, if through us, thousands of people are awakened and stirred to action?"</em> -Sophie Scholl, member of the White Rose

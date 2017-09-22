@@ -3,6 +3,11 @@
 {% block title %}Search{% endblock %}
 
 {% block pagestyles %}
+<script>
+    if (document.location.href.indexOf('proxy.bc.edu') > -1) {
+        document.location.href = 'https://library.bc.edu/search?'+ window.location.search;
+    }
+</script>
 <style>
     .homepagerefresh #header {
         height: initial;

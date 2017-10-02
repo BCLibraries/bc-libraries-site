@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2017/Sep/fragasso-twenty/
 Date: 2017-09-18 01:01 
 Tags: news, tags 
 Slug: facpub-fragasso
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Phil Fragasso speaking about his book
 Image_thumb: 2017-09/frag-thumbs.png

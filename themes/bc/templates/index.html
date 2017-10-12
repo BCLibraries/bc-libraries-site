@@ -78,9 +78,11 @@ $(function () {
 <script type="text/javascript">
     // Various glue scripts for the front page.
     (function () {
-        var book_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
-            article_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
-            journal_search_url = 'https://bc-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0&journals=any,~~TERM~~&query=any,contains,~~TERM~~';
+        var host = window.location.host === 'libdev.bc.edu' ? 'bcprimo-test.hosted.exlibrisgroup.com' : 'bc-primo.hosted.exlibrisgroup.com';
+
+        var book_search_url = 'https://' + host + '/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            article_search_url = 'https://' + host + '/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0&query=any,contains,~~TERM~~',
+            journal_search_url = 'https://' + host + '/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0&journals=any,~~TERM~~&query=any,contains,~~TERM~~';
 
 
         function run_on_ready(fn) {

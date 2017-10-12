@@ -9,7 +9,7 @@ Slug: celebrating-creativity-s17
 Image: 2017/05-creative.png
 Image_thumb: 2017/05-creative-thumb.png
 Image_alt: Colorful collage containing library buildings, cameras, paint brushes, knitting needles
-Active: yes
+Active: no
 Style: default
 
 This annual exhibit features the creative side of the Boston College Libraries' Staff.  Submissions include photography, painting, digital design, collage, and fiber crafts.

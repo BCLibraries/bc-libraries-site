@@ -9,7 +9,7 @@ Slug: righting-historical-wrongs
 Image: 2017/01-righting.png
 Image_thumb: 2017/01-righting-thumb.png
 Image_alt: Righting Historical Wrongs poster, information is same as page
-Active: yes
+Active: no
 Style: right
 
 As part of the course "Making History Public" in the History Department, <em>Righting Historical Wrongs at the Turn of the Millennium</em> features student-designed visualizations on historical justice issues from interdisciplinary, global, local, and comparative perspectives that might appeal to a wide range of interests, especially in our current political climate.

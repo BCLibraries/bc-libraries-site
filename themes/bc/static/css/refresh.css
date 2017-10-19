@@ -666,6 +666,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #bclib-header .input-wrapper {
         width: 100%;
     }
+    #bclib-header .input-wrapper .pull-right {
+        float: none!important;
+        padding: 4px 0 6px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -678,17 +682,13 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #bclib-header .container {
         width: 100%;
     }
-    #bclib-header .input-wrapper .pull-right {
-        float: none!important;
-        padding: 4px 0 6px 0;
-    }
     /*#bclib-header .header-right {
         padding-right: 15px;
     }*/
 }
 
 /* Specific to the bc-lib header */
-@media (max-width: 345px) {
+@media (max-width: 400px) {
     #bclib-header .link-wrapper .fa-commenting-o,
     #bclib-header .link-wrapper .fa-user {
         display: none;

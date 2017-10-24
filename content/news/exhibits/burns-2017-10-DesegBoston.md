@@ -17,3 +17,5 @@ In 1954, the United States Supreme Court declared separate public schools for bl
 In 1965, Massachusetts was the first state to legally prohibit racially imbalanced schools (Racial Imbalance Law of 1965). Nonetheless, de facto segregation persisted in the state, prompting a 1974 federal ruling (Morgan v. Hennigan) mandating Boston school redistricting and busing to promote greater racial balances. With resistance to desegregation in the community, this landmark decision spurred both activism and riots in the 1970s and 1980s.
 
 Drawing from materials in the John J. Burns Library collections, Boston College Libraries’ Digital Scholarship team looks back on the controversies and crises that ensued, examining the facts, figures, and effects of desegregation in Boston Public Schools.
+
+<em>This exhibit was curated by the <a href="https://ds.bc.edu/">Digital Scholarship Group</a> members, Sarah Melton and Anna Kijas; and Assistant Professor Eric Weiskott (English Department, Morrissey College of Arts and Sciences) </em>

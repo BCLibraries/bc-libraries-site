@@ -3,7 +3,7 @@ Destination: http://bit.ly/2h3JNt0
 Date: 2017-10-24 01:01 
 Tags: news, tags 
 Slug: exhibt-deseg-bos-sch
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: exhibit poster
 Image_thumb: 2017-10/deseg-thumbs.png

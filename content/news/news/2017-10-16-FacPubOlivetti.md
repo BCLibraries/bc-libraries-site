@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2017/Sep/olivetti-dynamics/
 Date: 2017-10-16 01:01 
 Tags: news, tags 
 Slug: facpub-olivetti-expanding
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photo of Dr. Olivetti during her interview
 Image_thumb: 2017-10/olivetti-thumbs.png

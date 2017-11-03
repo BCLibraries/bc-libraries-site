@@ -9,7 +9,7 @@ Slug: art-club-f17
 Image: 2017/10-artclub.png
 Image_thumb: 2017/10-artclub-thumb.png
 Image_alt: Art Club's poster
-Active: yes
+Active: no
 Style: middle_top
 
 What do you think of when you think of creating art? 

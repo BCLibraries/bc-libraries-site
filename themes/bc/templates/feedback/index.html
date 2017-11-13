@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Search{% endblock %}
+{% block title %}Feedback{% endblock %}
 
 {% block pagestyles %}
 <style>
@@ -15,4 +15,16 @@
 {% endblock %}
 
 {% block pagescripts %}
+<script>
+    $(document).ready(function () {
+        // add in referrer string into hidden form field 'url'
+        var referrer = document.referrer;
+        var urlFormField = "#s-la-widget-5468 fieldset#s-la-askform-section-5494 input#val4_5468";
+
+        $(document.body).one("focus", "#s-la-widget-5468", function(){
+            console.log("referrer: " + referrer);
+            $(urlFormField).val(referrer).change();
+        });
+    });
+</script>
 {% endblock %}

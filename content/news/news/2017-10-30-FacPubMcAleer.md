@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2017/Sep/mcaleer-positive/
 Date: 2017-10-30 01:01 
 Tags: news, tags 
 Slug: facpub-mcaleer 
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photo of Andrew McAleer during his interview
 Image_thumb: 2017-10/mcaleer-thumbs.png

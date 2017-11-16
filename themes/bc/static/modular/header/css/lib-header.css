@@ -1,0 +1,182 @@
+/* see https://github.com/BCLibraries/bc-library-modular-header */
+/* 2017-10-04                  */
+
+/*                             */
+/* custom header module styles */
+/*                             */
+
+#bclib-header {
+    /* default settings for module */
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #000;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1.75;
+
+    box-sizing: border-box;
+    background: #8a100b no-repeat 100% 0%;
+    border-bottom: 1px solid #dccaa0;
+    color: #fff;
+    height: 42px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#bclib-header .container {
+    line-height: 1;
+}
+#bclib-header .container-fluid {
+    width: 100%;
+}
+#bclib-header .row {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#bclib-header ul.bclib-header-links {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 2.5;
+}
+#bclib-header ul.bclib-header-links li {
+    display: inline;
+    margin: 0 10px;
+    line-height: 1.1667; /* 14/12 px */
+}
+#bclib-header ul.bclib-header-links li:first-child {
+    margin-left: 0px;
+}
+#bclib-header ul.bclib-header-links li:last-child {
+    margin-right: 0px;
+}
+#bclib-header a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+#bclib-header a:hover, #bclib-header a:focus {
+    color: #dccaa0;
+    text-decoration: none;
+}
+#bclib-header img {
+    vertical-align: middle;
+    border: 0;
+}
+#bclib-header a.bclib-header-logo p {
+    background: none;
+    display: none;
+    margin: 0 0 10px;
+}
+#bclib-header #bclib-header-form, 
+#bclib-header input#bclib-header-search, 
+#bclib-header .input-group-btn .btn {
+    height: 28px;
+}
+#bclib-header form {
+    margin-bottom: 0px;
+}
+#bclib-header ul.bclib-header-links li .fa {
+    font-size: 14px;
+}
+#bclib-header input#bclib-header-search {
+    font-size: 14px;
+    color: #000;
+    border-right: 0;
+    border-radius: 0;
+}
+#bclib-header .input-group-btn .btn {
+    padding: 0 8px;
+    border-radius: 0;
+}
+#bclib-header .accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* option to hide bc search box */
+#bclib-header .hide-search .input-wrapper,
+#bclib-header.hide-search .input-wrapper {
+    display: none;
+}
+#bclib-header .hide-search .link-wrapper,
+#bclib-header.hide-search .link-wrapper {
+    width: 100%;
+}
+
+
+/*                                    */
+/* custom header module media queries */
+/*                                    */
+
+@media (max-width: 480px) {
+    #bclib-header .container {
+        width: 100%;
+    }
+    #bclib-header .col-xxs {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    #bclib-header .input-wrapper .pull-right {
+        float: none!important;
+    }
+}
+
+@media (max-width: 605px) {
+    #bclib-header .link-wrapper, #bclib-header .input-wrapper {
+        width: 100%;
+    }
+    #bclib-header .input-wrapper .pull-right {
+        padding: 4px 0 6px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    #bclib-header {
+        height: auto;
+    }
+    #bclib-header .container {
+        padding-bottom: 2px;
+    }
+    #bclib-header .col-sm-12 {
+        width: 100%;
+    }
+    #bclib-header .header-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #bclib-header .col-sm-12 {
+        width: 100%;
+    }
+    #bclib-header ul.bclib-header-links {
+        text-align: left;
+    }
+    #bclib-header ul.bclib-header-links li:last-child {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #bclib-header .input-wrapper {
+        padding-right: 0;
+    }
+}

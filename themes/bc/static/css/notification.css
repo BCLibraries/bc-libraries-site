@@ -1,5 +1,4 @@
 #downtime-notification {
-    position: absolute;
     z-index: 101;
     top: 0;
     left: 0;
@@ -7,20 +6,10 @@
     background: #fde073;
     text-align: center;
     overflow: hidden;
-    padding: 0 2em;
+    padding: 1em 2em;
     -webkit-box-shadow: 0 0 5px black;
     -moz-box-shadow:    0 0 5px black;
     box-shadow:         0 0 5px black;
-}
-
-@keyframes slideDown {
-    0%, 100% { transform: translateY(-50px); }
-    1%, 99% { transform: translateY(0px); }
-}
-
-#downtime-notification {
-    transform: translateY(-50px);
-    animation: slideDown 30s .5s 1 ease forwards;
 }
 
 #close {

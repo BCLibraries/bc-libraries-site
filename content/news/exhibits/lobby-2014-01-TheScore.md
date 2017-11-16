@@ -12,4 +12,4 @@ Image_alt: exhibit poster
 Active: no
 Style: right
 
-The exhibit in the main lobby of O'Neill Library highlights some of the   music scores available at the Boston College Libraries.  Included are   scores from the 16 th century to the present; facsimiles, study scores,   critical scores, and more. The display contains a facsimile of   Beethoven&rsquo;s 9th symphony, several pieces composed and edited   by Boston College Music Faculty, and more.  View the accompanying online   guide at: <a href="http://libguides.bc.edu/musicexhibit">http://libguides.bc.edu/musicexhibit</a>
+The exhibit in the main lobby of O'Neill Library highlights some of the   music scores available at the Boston College Libraries.  Included are   scores from the 16 th century to the present; facsimiles, study scores,   critical scores, and more. The display contains a facsimile of   Beethoven&rsquo;s 9th symphony, several pieces composed and edited   by Boston College Music Faculty, and more. 

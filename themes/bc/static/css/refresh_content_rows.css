@@ -112,6 +112,7 @@
 	color: #fff;
 	z-index: 2;
 	background-size: cover;
+	padding-bottom: 4rem;
 }
 
 #exhibit-highlight h2 {
@@ -125,7 +126,7 @@
 
 .exhibit-box {
 	background: rgba(255,255,255,0.75);
-	max-width: 75%;
+	/*max-width: 75%;*/
 	height: 300px;
 	margin: auto;
 	padding: 20px;
@@ -177,10 +178,19 @@ a.current-exhibits-title {
 /* EXHIBIT SLIDER OVERWRITES */
 #exhibit-highlight .carousel {
 	margin-bottom: 3em;
+	max-width: 75%;
+	margin: auto;
 }
 #exhibit-highlight .carousel-control.left, #exhibit-highlight .carousel-control.right {
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
 }
+#exhibit-highlight .carousel-control.left {
+	left:-15%;
+}
+#exhibit-highlight .carousel-control.right {
+	right:-15%;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 767px) {

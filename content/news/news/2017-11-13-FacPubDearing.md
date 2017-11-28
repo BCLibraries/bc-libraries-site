@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2017/Sep/dearing-cronin/
 Date: 2017-11-14 01:01 
 Tags: news, tags 
 Slug: facpub-cronin-dearing
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photo of Dr. Cronin & Prof. Dearing during their interview
 Image_thumb: 2017-11/dear-thumb.png

@@ -631,6 +631,10 @@ th {
     display: inline-block;
 }
 
+.facpub #content_container /* FACPUB HACK */ {
+    display: inline-block;
+}
+
 @media ( max-width: 1199px ) {
     #content_container {
         width: 100%;

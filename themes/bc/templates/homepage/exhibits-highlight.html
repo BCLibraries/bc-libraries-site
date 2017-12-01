@@ -15,6 +15,7 @@
 
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
+                        {% set count = [0] %}
                         {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
                             {# include only selected article.locations #}
                             {% if article.location == "burns" 
@@ -23,7 +24,10 @@
                                 or article.location == "backwall" 
                                 or article.location == "tml" 
                             %}
-                                <li data-target="#myCarousel" data-slide-to="{{ loop.index }}" class="{% if loop.first %}active{% endif %}"></li>
+                                <li data-target="#myCarousel" data-slide-to="{{ count[0] }}" class="{% if count[0] == 0 %}active{% endif %}"></li>
+
+                                {# increment counter https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template/32700975#32700975 #}
+                                {% if count.append(count.pop() + 1) %}{% endif %}
                             {% endif %}
                         {% endfor %}
                     </ol>
@@ -32,12 +36,10 @@
                     <div class="carousel-inner">
 
                         {% if articles %}
-                            {% set count = 0 %}
+                            {% set count = [0] %}
                             {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
-                                {% set count = count + 1 %}
-                                {% if count < 100 %}
-
+                                {% if count[0] < 20 %}
                                     {# set the library label based on article.location #}
                                     {# hide select locations by adding '-HIDE' to article.location string compare #}
                                     {% if article.location == "burns" %}
@@ -59,7 +61,7 @@
                                     {% endif %}
 
                                     {% if library_label %}
-                                    <div class="item exhibit-box {% if loop.first %}active{% endif %}">
+                                    <div class="item exhibit-box {% if count[0] == 0 %}active{% endif %}">
                                         <div class="row">
                                             <div class="exhibit-left col-md-9 col-sm-9 col-xs-12">
                                                 <p><em>{{ library_label }}</em></p>
@@ -76,6 +78,9 @@
                                         </div>
                                     </div>
                                     {% endif %}
+
+                                    {# increment counter https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template/32700975#32700975 #}
+                                    {% if count.append(count.pop() + 1) %}{% endif %}
                                 {% endif %}
                            {% endfor %}
                         {% endif %}

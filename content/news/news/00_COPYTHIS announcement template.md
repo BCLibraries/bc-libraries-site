@@ -17,3 +17,11 @@ Article content will go on this line. This is for longer text on individual news
 <a href="#" target="_blank">
 
 -->
+
+<!-- 
+
+AS OF THE WEBSITE REFRESH, FALL 2017, THERE IS NO PLACE ON THE WEBSITE FOR ANNOUNCEMENTS.
+
+
+
+-->

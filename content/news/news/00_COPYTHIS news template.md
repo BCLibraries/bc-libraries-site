@@ -16,6 +16,6 @@ Article summary [linked text](http://www.google.com).
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

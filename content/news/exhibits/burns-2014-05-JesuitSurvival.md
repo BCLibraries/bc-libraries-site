@@ -13,7 +13,7 @@ Active: no
 Style: default
 
   <p>2014 marks the 200th anniversary of the restoration   of the Society of Jesus, one of the most significant events in   nineteenth-century cultural and religious history but also one of the   least well-studied. This exhibit aims to shed new light on neglected   aspects of this vital subject. It accompanies an international   conference on the same topic at Boston College (11-15 June 2014).</p>
-  <p>See the <a href="http://www.bc.edu/centers/jesinst/Conferences/jesuit-survival-and-restoration/abstracts.html" target="_blank">conference website</a> for more details.<br />
+  <p>See the <a href="http://www.bc.edu/centers/jesinst/Conferences/jesuit-survival-and-restoration/abstracts.html" target="_blank" rel="noopener">conference website</a> for more details.<br />
   </p>
   <p>The 1773 suppression of the Jesuits, and the various national   expulsions and banishments that preceded it, sought to destroy the   Society as a corporate entity. This did not spell the end of the Jesuit   enterprise, however. Persecuted by the Catholic monarchies of Portugal,   Spain, and France, the Jesuits survived in various guises and locales   across the globe. The exhibit focuses on three of these and the links   between them but also looks at the parallel contexts in other parts of   Asia, South and North America, and central and Western Europe.<br />
   </p>

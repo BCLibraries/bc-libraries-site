@@ -12,7 +12,7 @@ Image_alt: poster
 Active: no
 Style: middle_top
 
-Six letters from this Burns Library manuscript collection reveal experiences of a family living through the years of the Great Famine in Ireland. The collection contains letters from <a href="http://hdl.handle.net/2345/1121" target="_blank">James Prendergast</a> of Milltown, County Kerry, writing to his children Julia, Jeffrey, and Thomas in Boston. The selected letters are on display in the <strong>John J. Burns Library, Fine Print Room</strong> through March 27th, 2013. Learn more about the Prendergast family correspondence in a <a href="http://johnjburnslibrary.wordpress.com/2013/02/18/5658/" target="_blank">John J. Burns Library blog post.</a>
+Six letters from this Burns Library manuscript collection reveal experiences of a family living through the years of the Great Famine in Ireland. The collection contains letters from <a href="http://hdl.handle.net/2345/1121" target="_blank" rel="noopener">James Prendergast</a> of Milltown, County Kerry, writing to his children Julia, Jeffrey, and Thomas in Boston. The selected letters are on display in the <strong>John J. Burns Library, Fine Print Room</strong> through March 27th, 2013. Learn more about the Prendergast family correspondence in a <a href="http://johnjburnslibrary.wordpress.com/2013/02/18/5658/" target="_blank" rel="noopener">John J. Burns Library blog post.</a>
 
 <!--
 

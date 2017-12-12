@@ -8,4 +8,4 @@ ShowText: yes
 Image_alt: Pin that says VOTE
 Image_thumb: 2016-09/vote-thumbs.png
 
-Campaigns & Elections: <a href="http://libguides.bc.edu/elections/voterresources" target="_blank">Voter Resources</a>
+Campaigns & Elections: <a href="http://libguides.bc.edu/elections/voterresources" target="_blank" rel="noopener">Voter Resources</a>

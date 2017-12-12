@@ -16,6 +16,6 @@ Yom HaShoah is the day that honors the memory of the victims of the Holocaust (1
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

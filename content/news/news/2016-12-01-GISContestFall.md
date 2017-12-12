@@ -65,6 +65,6 @@ Summary: Read for submission guidelines. Browse posters on the 2nd & 3rd floor o
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

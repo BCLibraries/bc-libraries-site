@@ -8,7 +8,7 @@ ShowText: yes
 Image_alt: TIMSS and PIRLS logo
 Image_thumb: 2016-04/timss-thumbs.png
 
-<a href="http://dlib.bc.edu/timss-pirls" target="_blank">A collection of 50 publications</a> from the  TIMSS &amp; PIRLS International Study Center is now available at <a href="http://escholarship.bc.edu/" target="_blank">eScholarship@BC</a>,  Boston College's institutional repository of scholarly resources. For two  decades, TIMSS &amp; PIRLS has published research related to its assessments of  student achievement around the world. This collection is among the growing  number of research center publications archived by eScholarship@BC. For more  information about TIMSS &amp; PIRLS, please visit <a href="http://timssandpirls.bc.edu/" target="_blank">its  website</a>.
+<a href="http://dlib.bc.edu/timss-pirls" target="_blank" rel="noopener">A collection of 50 publications</a> from the  TIMSS &amp; PIRLS International Study Center is now available at <a href="http://escholarship.bc.edu/" target="_blank" rel="noopener">eScholarship@BC</a>,  Boston College's institutional repository of scholarly resources. For two  decades, TIMSS &amp; PIRLS has published research related to its assessments of  student achievement around the world. This collection is among the growing  number of research center publications archived by eScholarship@BC. For more  information about TIMSS &amp; PIRLS, please visit <a href="http://timssandpirls.bc.edu/" target="_blank" rel="noopener">its  website</a>.
 
 <!-- USEFUL CUT AND PASTE STUFF.
 
@@ -16,6 +16,6 @@ Image_thumb: 2016-04/timss-thumbs.png
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

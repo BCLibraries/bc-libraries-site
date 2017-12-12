@@ -22,9 +22,9 @@ Thompson Room, John J. Burns Library</p>
 
 <p>The Boston College University Libraries and the Center for Irish Programs cordially invite you to attend a reception honoring Dr. Ó Clabaigh in the Library's Irish Room immediately following his lecture.</p>
 
-<p>This event is free and open to the public but please let us know if you plan to attend by registering here: <a href="https://docs.google.com/forms/d/1J7LOV7dcQUR5UHG1F_VChajnPXRxZAW7BktaNwPIAcA/viewform" target="_blank">Burns Scholar lecture</a></p>
+<p>This event is free and open to the public but please let us know if you plan to attend by registering here: <a href="https://docs.google.com/forms/d/1J7LOV7dcQUR5UHG1F_VChajnPXRxZAW7BktaNwPIAcA/viewform" target="_blank" rel="noopener">Burns Scholar lecture</a></p>
 
-<p>For more information about Dr. Ó Clabaigh and his research and publications, please visit <a href="http://www.bc.edu/burns" target="_blank">bc.edu/burns</a>.</p>
+<p>For more information about Dr. Ó Clabaigh and his research and publications, please visit <a href="http://www.bc.edu/burns" target="_blank" rel="noopener">bc.edu/burns</a>.</p>
 
 <p>For further information about the lecture, including directions and parking, please call (617) 552-3282.</p>
 
@@ -36,6 +36,6 @@ Thompson Room, John J. Burns Library</p>
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

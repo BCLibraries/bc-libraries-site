@@ -19,4 +19,4 @@ These works individually have passages that function in extremes displays of gai
 Fragmenting seduction or image of desire, I think, makes the experience for  viewers more conflicting and intriguing, hopefully inspiring questions for their own personal experience and participation with similar images.  By seeing these faces out of context, opens the door for the viewer to engage with their imagination.
 
 
-<em>- <a href="https://arielbassonfreiberg.com/" target="_blank">Professor Ariel Freiberg</a>, of the Art, Art History, and Film Department</em>
+<em>- <a href="https://arielbassonfreiberg.com/" target="_blank" rel="noopener">Professor Ariel Freiberg</a>, of the Art, Art History, and Film Department</em>

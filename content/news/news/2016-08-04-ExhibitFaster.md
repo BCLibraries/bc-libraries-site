@@ -16,6 +16,6 @@ Following the 291st Olympiad in 393, the emperor Theodosius banned the Games as 
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

@@ -19,4 +19,4 @@ Stories about ethical issues at universities make headlines every day. From sexu
 
 Professional ethics are a key component of training for numerous other fields, such as business management, medicine, law, and journalism, but there is no prescribed course of study for the academy. Professors and administrators are not trained in standards for evaluating papers, colleagues, boundaries, or contracts. <em>University Ethics</em> not only examines the ethical problems that colleges face one by one but proposes creating an integrated culture of ethics university-wide that fosters the institution’s mission and community. In an environment plagued by university scandals, <em>University Ethics</em> is essential reading for anyone connected to higher education today. 
 
-<em>View a <a href="http://library.bc.edu/theme/img/facpub/2015/11/keenan-guide.pdf" target="_blank">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="http://library.bc.edu/theme/img/facpub/2015/11/keenan-guide.pdf" target="_blank" rel="noopener">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

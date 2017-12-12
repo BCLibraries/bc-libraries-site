@@ -22,7 +22,7 @@ Connolly House, Boston College <br />
  
 <p>A beer and wine reception will follow the presentation.</p>
 
-<p>For more information on the Irish National Famine Museum and Strokestown Park, please visit <a href="http://www.strokestownpark.ie/" target="_blank">http://www.strokestownpark.ie</a>.</p>
+<p>For more information on the Irish National Famine Museum and Strokestown Park, please visit <a href="http://www.strokestownpark.ie/" target="_blank" rel="noopener">http://www.strokestownpark.ie</a>.</p>
 
 
 <p>For further information about the presentation, including directions and parking, please call (617) 552-3282.</p>

@@ -16,6 +16,6 @@ Summary: Learn the basics about the BC Libraries that you need right now, plus 1
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

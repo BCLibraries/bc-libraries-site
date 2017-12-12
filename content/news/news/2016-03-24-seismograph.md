@@ -14,7 +14,7 @@ You can view the live feed of the O'Neill Level One seismograph any time, from a
 
 Weston Observatory is a geophysical research and science education center of the Department of Earth and Environmental Sciences at Boston College. It is located in Weston, MA about 10 miles west of BC’s Chestnut Hill campus. The Observatory has been monitoring earthquakes in New England and around the world since 1931.
 
-For more information, visit the <a href="http://www.bc.edu/research/westonobservatory" target="_blank">Weston Observatory website</a>.
+For more information, visit the <a href="http://www.bc.edu/research/westonobservatory" target="_blank" rel="noopener">Weston Observatory website</a>.
 
 <!-- 
 

@@ -18,6 +18,6 @@ Image_thumb: 2016-09/core-thumbs.png
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">
 
-<a href="#" target="_blank">
+<a href="#" target="_blank" rel="noopener">
 
 -->

@@ -8,5 +8,5 @@ ShowText: yes
 Image_alt: It's a photo of a pizza. I think it has pepperonis on it.
 Image_thumb: 2016-03/pizza-thumbs.png
 
-<p><a href="http://www-scopus-com.proxy.bc.edu/" target="_blank">Scopus</a> and <a href="http://apps.webofknowledge.com.proxy.bc.edu/" target="_blank">Web of Science</a>, two major multidisciplinary databases that can help your research.</p>
+<p><a href="http://www-scopus-com.proxy.bc.edu/" target="_blank" rel="noopener">Scopus</a> and <a href="http://apps.webofknowledge.com.proxy.bc.edu/" target="_blank" rel="noopener">Web of Science</a>, two major multidisciplinary databases that can help your research.</p>
 

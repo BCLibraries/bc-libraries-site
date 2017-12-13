@@ -2,7 +2,7 @@ Title:  Level One Gallery: Art & Digital Technology
 Destination: http://library.bc.edu/exhibits/2017/Dec/art-dig-tech-f17/
 Date: 2017-12-08 01:01 
 Tags: news, tags 
-Slug: exhibit-art-dig-tech-s17 
+Slug: exhibit-art-dig-tech-f17 
 Expired: no
 ShowText: yes
 Image_alt: Poster for the Art and Digital Technology exhibit

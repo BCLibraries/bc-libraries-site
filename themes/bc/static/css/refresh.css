@@ -362,7 +362,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/antiphonerbg.jpg) no-repeat 100% 50% #101010;
+    background: url(/theme/img/digitalscholashipbg-morales.jpg) no-repeat 100% 50% #101010;
     background-size: auto auto;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
@@ -371,6 +371,12 @@ body {
     z-index: 2;
     background-size: cover;
 }
+
+/* custom for DS morales project */
+.homepagerefresh #ds-highlight.rightBottom .container-fluid .pull-right .content {
+    background: rgba(0,0,0,0.80) !important;
+}
+
 .homepagerefresh .container-fluid .pull-right {
     height: auto;
 }

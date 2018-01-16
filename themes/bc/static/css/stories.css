@@ -9,6 +9,10 @@
     padding-bottom: 0;
 }
 
+.homepagerefresh #storybox figure {
+    position: relative;
+}
+
 .homepagerefresh #storybox .story img {
     width: 100%
 }
@@ -19,6 +23,9 @@
     letter-spacing: 1px;
     background: #501315;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .homepagerefresh #storybox .story figcaption.blue {

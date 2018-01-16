@@ -24,7 +24,7 @@
                                 or article.location == "backwall" 
                                 or article.location == "tml" 
                             %}
-                                <li data-target="#myCarousel" data-slide-to="{{ count[0] }}" class="{% if count[0] == 0 %}active{% endif %}"></li>
+                                <li data-target="#myCarousel" data-slide-to="{{ count[0] }}" class="{% if count[0] == 0 %}active{% endif %}" data-location="{{ article.location }}"></li>
 
                                 {# increment counter https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template/32700975#32700975 #}
                                 {% if count.append(count.pop() + 1) %}{% endif %}
@@ -39,29 +39,44 @@
                             {% set count = [0] %}
                             {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
+                                {# setting default values for loop #}
+                                {% set library_label = "" %}
+                                {% set library_label_set = false %}
+
                                 {% if count[0] < 20 %}
                                     {# set the library label based on article.location #}
                                     {# hide select locations by adding '-HIDE' to article.location string compare #}
                                     {% if article.location == "burns" %}
                                         {% set library_label = "Burns Library" %}
+                                        {% set library_label_set = true %}
                                     {% elif article.location == "lvl1" %}
                                         {% set library_label = "O'Neill Library, Level 1 Gallery" %}
+                                        {% set library_label_set = true %}
                                     {% elif article.location == "lvl3" %}
                                         {% set library_label = "O'Neill Library, Level 3 Gallery" %}
+                                        {% set library_label_set = true %}
                                     {% elif article.location == "backwall" %}
                                         {% set library_label = "O'Neill Library, Reading Room Back Wall" %}
+                                        {% set library_label_set = true %}
                                     {% elif article.location == "tml" %}
                                         {% set library_label = "Theology &amp; Ministry Library, Level 1 Gallery" %}
+                                        {% set library_label_set = true %}
                                     {% elif article.location == "reading-HIDE" %}
                                         {% set library_label = "O'Neill Library, Level 3 Reading Room" %}
+                                        {% set library_label_set = false %}
                                     {% elif article.location == "bapst-HIDE" %}
                                         {% set library_label = "Bapst Library, Gargan Hall" %}
+                                        {% set library_label_set = false %}
                                     {% elif article.location == "stokes-HIDE" %}
                                         {% set library_label = "Stokes Hall, 3rd Floor" %}
+                                        {% set library_label_set = false %}
+                                    {% else %}
+                                        {% set library_label = "" %}
+                                        {% set library_label_set = false %}
                                     {% endif %}
 
-                                    {% if library_label %}
-                                    <div class="item exhibit-box {% if count[0] == 0 %}active{% endif %}">
+                                    {% if library_label and library_label_set == true %}
+                                    <div class="item exhibit-box {% if count[0] == 0 %}active{% endif %}" data-location="{{ article.location }}">
                                         <div class="row">
                                             <div class="exhibit-left col-md-9 col-sm-9 col-xs-12">
                                                 <p><em>{{ library_label }}</em></p>

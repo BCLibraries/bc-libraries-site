@@ -10,6 +10,9 @@ Article content will go on this line. This is for longer text on individual news
 
 <!-- USEFUL CUT AND PASTE STUFF.
 
+THIS TEMPLATE IS PRETTY MUCH ENTIRELY DEFUNCT AS OF FALL 2017
+
+
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_left">
 
 <img src="/theme/img/news/201X-XX/XXXX.png" alt="words" class="float_right">

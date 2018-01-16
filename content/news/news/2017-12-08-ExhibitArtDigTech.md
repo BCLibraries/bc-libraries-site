@@ -3,7 +3,7 @@ Destination: http://library.bc.edu/exhibits/2017/Dec/art-dig-tech-f17/
 Date: 2017-12-08 01:01 
 Tags: news, tags 
 Slug: exhibit-art-dig-tech-f17 
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Poster for the Art and Digital Technology exhibit
 Image_thumb: 2017-12/artdig-thumb.png

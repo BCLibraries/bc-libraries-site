@@ -3,7 +3,7 @@ Destination: https://libguides.bc.edu/therapy-dogs-dec-f17
 Date: 2017-12-13 01:01 
 Tags: news, tags 
 Slug: therapy-dogs-dec-f17
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A dog
 Image_thumb: 2017-12/dog-thumb.png

@@ -1,7 +1,7 @@
 Date: 2018-01-22 01:01 
 Date_range: January - April 2018
 Title: 1984 - Stop Making Sense
-Subtitle: An exhibition by Hartmut Austen
+Subtitle:
 Sponsor: Sponsored by the Art, Art History, and Film Department and The Boston College Libraries
 Location: lvl3
 Tags: exhibit
@@ -11,6 +11,10 @@ Image_thumb: 2018/01-sense-thumb.png
 Image_alt: Stop Making Sense sketchy painting
 Active: yes
 Style: right
+
+
+<em>An exhibition by Hartmut Austen, <br />
+Assistant Professor, Studio Art, Art, Art History, and Film Department</em>
 
 In 1984, Hartmut Austen, finishing Middle School, became seriously interested in the visual arts.  Devoting much of his time to drawing, he took inspirations from a variety of pop-cultural and historic sources such as architecture magazines, art catalogs but also music and literature. His often small drawings on paper in pencil, ink and gouache were both derivative and experimental but also dreamy and, to be honest, not that original. It didn't matter. They set Austen on his way to eventually making his emerging passion also a profession. 
 

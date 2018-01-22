@@ -9,7 +9,7 @@ Slug: watanabe-fall
 Image: 2017/09-watanabe-poster.jpg
 Image_thumb: 2017/09-watanabe-thumb.png
 Image_alt: exhibit poster
-Active: yes
+Active: no
 Style: right
 
 Japan’s foremost Christian artist, Sadao Watanabe (1913-1996) converted from Buddhism to Christianity at 17 years old. He soon combined his new faith with an interest in preserving the traditional Japanese folk art of stencil dying, or <em>katazome</em>, by creating colorful representation of biblical scenes that he hoped would speak to his people. He said, ‘My task is to stand within the artistic tradition of Japan…Theology will not take deep root in Japanese soil if it is merely an import.” Each hand cut print has been created using a complicated traditional stencil art form used for dying kimonos. 

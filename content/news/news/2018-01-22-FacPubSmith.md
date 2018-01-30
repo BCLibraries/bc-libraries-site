@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jan/smith-21-century/
 Date: 2018-01-22 01:01 
 Tags: news, tags 
 Slug: facpub-smith-stangis
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Smith during her interview
 Image_thumb: 2018-01/smith-thumbs.png

@@ -133,6 +133,43 @@
                     {% endfor %}
                     {% endif %}
 
+                    <!--     BURNS VIRTUAL EXHIBIT LINK. UNHIDE WHEN FINISHED.
+                    {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+
+
+                    {% set count = count + 1 %}
+                    {% if count < 100 %}
+
+
+                    {% if article.location == "burnsomeka" %}
+                 
+                    <div class="col-md-6 holder">
+
+                        <div class="holdhead">
+                            <h4>Burns Library Digital Exhibits</h4>
+                            <p>&nbsp;</p>
+                        </div>
+
+                        <div class="frame">
+                            <a href="https://library.bc.edu/digital-exhibits/">
+                                <img src="/theme/img/exhibits/burnsomeka/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+
+                                <div class="info">
+                                    <p class="title">{{ article.title }}</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    {% endif %}
+                    {% endif %}
+
+                    {% endfor %}
+                    {% endif %}
+-->
+
                     {% if articles %}
                     {% set count = 0 %}
                     {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}

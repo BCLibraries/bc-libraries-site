@@ -31,6 +31,7 @@ Gallery locations:
     History Dept, Stokes Hall (stokes)
     Bapst Exhibits (bapst)
     Archived Bapst Exhibits (bapstarchive)
+    Burns Omeka Exhibits 2018 (burnsomeka) 
   
 Need spaces for:
 

@@ -9,7 +9,7 @@ Slug: exhibit-amp-heart
 Image: 2017/09-heart-poster.png
 Image_thumb: 2017/09-heart-thumb.png
 Image_alt: Amplified Heart exhibit poster
-Active: yes
+Active: no
 Style: default
 
 In our culture we are confronted with idealized images of beauty. Glimpses of these images circulate in media, movies, cell phones, and so on. Seen out of context, and placed in abstracted spaces motivates a different engagement with the vignettes of faces. 

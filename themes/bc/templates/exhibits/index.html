@@ -56,6 +56,7 @@
                         <li><a href="./backwall">O'Neill Reading Room Back Wall</a></li>
                         <li><a href="./lobby">O'Neill Lobby</a></li>
                         <li><a href="./stokes">History Dept, Stokes Hall</a></li>
+                        <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Boston College Libraries Digital Exhibits</a>
                     </ul>
                 </div>
 
@@ -133,42 +134,36 @@
                     {% endfor %}
                     {% endif %}
 
-                    <!--     BURNS VIRTUAL EXHIBIT LINK. UNHIDE WHEN FINISHED.
+                    <!--  Boston College Libraries Digital Exhibits -->
                     {% if articles %}
-                    {% set count = 0 %}
-                    {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
+                        {% set count = 0 %}
+                        {% for article in articles if article.category.name == "exhibits" and article.active == "yes" %}
 
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}
+                                {% if article.location == "burnsomeka" %}
+                                    <div class="col-md-6 holder">
 
-                    {% set count = count + 1 %}
-                    {% if count < 100 %}
+                                        <div class="holdhead">
+                                            <h4>Boston College Libraries Digital Exhibits</h4>
+                                            <p>&nbsp;</p>
+                                        </div>
 
+                                        <div class="frame">
+                                            <a href="https://library.bc.edu/digital-exhibits/">
+                                                <img src="/theme/img/exhibits/burnsomeka/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
 
-                    {% if article.location == "burnsomeka" %}
-                 
-                    <div class="col-md-6 holder">
-
-                        <div class="holdhead">
-                            <h4>Burns Library Digital Exhibits</h4>
-                            <p>&nbsp;</p>
-                        </div>
-
-                        <div class="frame">
-                            <a href="https://library.bc.edu/digital-exhibits/">
-                                <img src="/theme/img/exhibits/burnsomeka/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
-
-                                <div class="info">
-                                    <p class="title">{{ article.title }}</p>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    {% endif %}
+                                                <div class="info">
+                                                    <p class="title">{{ article.title }}</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
                     {% endif %}
 
-                    {% endfor %}
-                    {% endif %}
--->
 
                     {% if articles %}
                     {% set count = 0 %}

@@ -1,6 +1,6 @@
 Date: 2018-02-01 01:01 
 Date_range:
-Title: Burns Library Virtual Exhibits
+Title: Boston College Libraries Digital Exhibits
 Subtitle: 
 Sponsor: 
 Location: burnsomeka

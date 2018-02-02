@@ -526,7 +526,11 @@ html {
 
 .article_content .text, .article_content_two .text  {
     text-align: justify;
+}
 
+.digital-exhibits-link {
+    font-weight: bold;
+    padding: 2rem 0;
 }
 
 @media ( max-width: 1199px ) {

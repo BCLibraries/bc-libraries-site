@@ -12,7 +12,10 @@ Image_alt:  Are You Being Served? poster
 Active: no
 Style: default
 
-Would you care for some mock turtle soup? Chicken a là princesse? Clysmic waters? Old menus offer us an array of entertaining dishes, but they also give us a unique look at the way people ate, drank, and socialized in the past. From the fancy meals of society events and testimonial dinners, to the rather grim fare available to officers serving in the Philippines, to the signature cocktails offered at one of Boston’s rowdier eating joints, this exhibit dishes up a savory stew of cultural, social, and culinary history. Come to the John J. Burns Library to see what’s on the menu!
+<p>Would you care for some mock turtle soup? Chicken a là princesse? Clysmic waters? Old menus offer us an array of entertaining dishes, but they also give us a unique look at the way people ate, drank, and socialized in the past. From the fancy meals of society events and testimonial dinners, to the rather grim fare available to officers serving in the Philippines, to the signature cocktails offered at one of Boston’s rowdier eating joints, this exhibit dishes up a savory stew of cultural, social, and culinary history. Come to the John J. Burns Library to see what’s on the menu!</p>
+
+<p class="digital-exhibits-link"><a href="https://library.bc.edu/digital-exhibits/exhibits/show/common-boston">Visit the digital exhibit.</a></p>
+
 
 <!--
 

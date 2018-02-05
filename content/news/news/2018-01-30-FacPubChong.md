@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jan/chong-here/
 Date: 2018-01-30 01:01 
 Tags: news, tags 
 Slug: facpub-sammy-chong
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Chong during his interview
 Image_thumb: 2018-01/chong-thumbs.png

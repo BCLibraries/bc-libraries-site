@@ -9,7 +9,7 @@ Slug: deseg-bos-schools
 Image: 2017/10-deseg.png
 Image_thumb: 2017/10-deseg-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: right
 
 In 1954, the United States Supreme Court declared separate public schools for black and white students unconstitutional (Brown v. Board of Education). The ruling for desegregation provoked significant backlash from white communities and their elected officials across the country for several decades. De facto segregation, where racial concentration across neighborhoods resulted in the schools being predominantly minority or majority populations, continued nationwide after 1954. Activists continued to push for desegregation before and after the Civil Rights Act of 1964 and Voting Rights Act of 1965 respectively prohibited discrimination based on race, color, religion, sex, or national origin and racial discrimination in voting.

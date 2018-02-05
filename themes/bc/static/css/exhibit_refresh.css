@@ -69,8 +69,13 @@ html {
     padding: 0px 0 10px;
 }
 
+/* li for digitial exhibits wraps around to two lines */
+#exhibit .latest_exhibit .left ul li.digital-exhibits-li {
+    line-height: 1.6;
+}
+
 #exhibit .latest_exhibit .left ul li a:hover {
-   text-decoration: none;
+    text-decoration: none;
     border-bottom: 1px solid #990000;
     margin: 0 0 10px;
 }
@@ -521,7 +526,11 @@ html {
 
 .article_content .text, .article_content_two .text  {
     text-align: justify;
+}
 
+.digital-exhibits-link {
+    font-weight: bold;
+    padding: 2rem 0;
 }
 
 @media ( max-width: 1199px ) {

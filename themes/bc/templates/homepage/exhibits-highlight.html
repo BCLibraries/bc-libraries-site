@@ -70,6 +70,9 @@
                                     {% elif article.location == "stokes-HIDE" %}
                                         {% set library_label = "Stokes Hall, 3rd Floor" %}
                                         {% set library_label_set = false %}
+                                    {% elif article.location == "burnsomeka-HIDE" %}
+                                        {% set library_label = "Burns Virtual Exhibit" %}
+                                        {% set library_label_set = false %}
                                     {% else %}
                                         {% set library_label = "" %}
                                         {% set library_label_set = false %}
@@ -92,10 +95,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {% endif %}
-
                                     {# increment counter https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template/32700975#32700975 #}
                                     {% if count.append(count.pop() + 1) %}{% endif %}
+                                    {% endif %}
                                 {% endif %}
                            {% endfor %}
                         {% endif %}

@@ -161,7 +161,7 @@
                 var myPane = $(this).html();
                 ga('send', 'event', 'librarypanes', 'hover', myPane);
             });
-            $("input#searchsubmit").click(function(){
+            $("#bclib-header-form .input-group-btn button").click(function(){
                 ga('send', 'event', 'bc-searchbutton', 'click');
             });
             $("a").not('.search-link').click(function(e) {

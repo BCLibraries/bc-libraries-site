@@ -20,6 +20,20 @@ The Passages Artists Collective is a group of fine artists working in diverse me
 
 <br />
 
+<div class="poster">
+<img src="/theme/img/exhibits/tml/2018/01-holy-city_01.jpg" alt="Photo of the material on display at the Theology & Ministry Library">
+</div>
+<div class="poster">
+<img src="/theme/img/exhibits/tml/2018/01-holy-city_02.jpg" alt="Photo of the material on display at the Theology & Ministry Library">
+</div>
+<div class="poster">
+<img src="/theme/img/exhibits/tml/2018/01-holy-city_03.jpg" alt="Photo of the material on display at the Theology & Ministry Library">
+</div>
+<div class="poster">
+<img src="/theme/img/exhibits/tml/2018/01-holy-city_04.jpg" alt="Photo of the women who put the exhibit together">
+</div>
+
+
 <strong>Location: </strong><br />
 Boston College Theology & Ministry Library, Lower Level<br />
 117 Lake St., Brighton, MA  02135<br />
@@ -44,5 +58,6 @@ February 10, 2018 2:00pm - 6:00pm <br />
 
 <strong>Photo:</strong> <br />
 <em>"Blessed Are the Peace Makers"</em> by Jacqueline Johnson
+
 
 

@@ -9,7 +9,7 @@ Slug: right-reading
 Image: 2017/10-right.jpg
 Image_thumb: 2017/10-right-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: default
 
 The title of this exhibit plays on the title of a collection of William F. Buckley, Jr.'s columns and essays—one of nearly 700 volumes from the personal library of John J. Burns, Jr., a selection of which are presented here to stimulate reflection on our own reading habits and how they can guide our lives. Buckley was one of Burns's favorite authors, exemplifying the conservative Catholic outlook that he inherited from his father and one aspect of his "right reading." Yet "right reading" also gestures toward another, perhaps more important aspect: the regular, disciplined, simultaneous reading of books on multiple subjects from multiple viewpoints.

@@ -1,14 +1,24 @@
 .news_listing {
-    margin-bottom: .5em
+    margin-bottom: .5em;
 }
-
 
 .news_listing img {
     float: left;
     width: 25%;
-    margin: 1em
+    margin: 1em;
+    border: 1px solid #000;
 }
 
 .news_archives .row {
-    margin-bottom: .5em
+    margin-bottom: 0em;
+    padding: .5em 0;
+}
+
+.news_archives h4 {
+	margin-bottom: 0em;
+}
+
+.news_archives .archive_date {
+	font-style: italic;
+	font-size: 12px;
 }

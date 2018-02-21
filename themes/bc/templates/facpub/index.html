@@ -46,6 +46,26 @@
 
 <div class="facpub_archives">
 
+    <!-- START 2018 ARCHIVES -->
+    <div class="yearlyblock">
+
+    <h3>2018 Highlights</h3>
+
+       {% for article in articles | has_category(['facpub']) | has_year('2018') | not_oneoff %}
+            <div class="old_facpub">
+
+                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+                <div class="bookinfo">
+                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
+                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+
+
     <h2>Past Highlights</h2>
 
     <!-- START 2017 ARCHIVES -->

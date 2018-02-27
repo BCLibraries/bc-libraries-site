@@ -22,8 +22,8 @@ The exhibit highlights influences and milestones in Connolly’s music career, a
 
 <br />
 <img src="/theme/img/exhibits/burns/2013/01-connolly-001.jpg" alt="Photograph of Séamus Connolly's awards">
-<img src="/theme/img/exhibits/burns/2013/01-connolly-001.jpg" alt="Photograph of Séamus Connolly's violin" >
-<img src="/theme/img/exhibits/burns/2013/01-connolly-001.jpg" alt="Photograph of Séamus Connolly's sheet music">
+<img src="/theme/img/exhibits/burns/2013/01-connolly-002.jpg" alt="Photograph of Séamus Connolly's violin" >
+<img src="/theme/img/exhibits/burns/2013/01-connolly-003.jpg" alt="Photograph of Séamus Connolly's sheet music">
 <p><strong>Photographs by Gary Gilbert</strong></p>
 
 <!--

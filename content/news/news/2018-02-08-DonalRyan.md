@@ -3,7 +3,7 @@ Destination: https://libguides.bc.edu/burns-events/donalryan
 Date: 2018-02-08 01:01 
 Tags: news, tags 
 Slug: ryan-public-reading
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Donal Ryan, photo by Anthony Woods ​
 Image_thumb: 2018-02/ryan-thumb.png

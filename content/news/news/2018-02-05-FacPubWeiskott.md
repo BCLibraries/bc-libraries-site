@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jan/weiskott-english/
 Date: 2018-02-05 01:01 
 Tags: news, tags 
 Slug: facpub-weiskott
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Eric Weiskott during his interview
 Image_thumb: 2018-02/weiskott-thumbs.png

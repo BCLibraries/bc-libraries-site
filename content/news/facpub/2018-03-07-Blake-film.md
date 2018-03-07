@@ -1,5 +1,5 @@
 Date: 2018-03-07 01:01
-Title:FatherFather Blake will talk about his Life long involvement with film Studies and his 32 years at Boston College
+Title:Father Blake will talk about his Life long involvement with film Studies and his 32 years at Boston College
 By:
 Author_firstname: Richard 
 Author_lastname: Blake S.J. Ph.D.

@@ -9,7 +9,7 @@ Librarian_email:
 Librarian_position: 
 Tags: facpub
 Slug: blake-film
-Youtube: https://www.youtube.com/watch?v=KOTki_6B3PE
+Youtube: https://www.youtube.com/embed/KOTki_6B3PE
 Sample_pages: 2018/03/blake-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Richard%20Aloysius%20Blake&tab=bcl_only&search_scope=bcl&vid=bclib_new&offset=0

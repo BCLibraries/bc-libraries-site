@@ -1,5 +1,5 @@
 Date: 2018-03-07 01:01
-Title: Father Blake on his life long involvement with Film Studies and his 32 years at Boston College
+Title: Father Blake on his life long involvement with Film Studies and his 22 years at Boston College
 By:
 Author_firstname: Richard 
 Author_lastname: Blake S.J. Ph.D.
@@ -9,7 +9,7 @@ Librarian_email:
 Librarian_position: 
 Tags: facpub
 Slug: blake-film
-Youtube: https://www.youtube.com/embed/-KNWzLRNIs4
+Youtube: https://www.youtube.com/embed/3dXAoXzYmJM
 Sample_pages: 2018/03/blake-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Richard%20Aloysius%20Blake&tab=bcl_only&search_scope=bcl&vid=bclib_new&offset=0
@@ -17,7 +17,7 @@ Bookcover: 2018/03/blake-cover.png
 Image_alt: four of Professor Blake's book covers
 Oneoff: yes
 
-Father Blake t​ought American film history and criticism​ at Boston College for 32 years​. Prior to that he was ​an executive editor of America magazine, a national weekly journal of opinion​ and he ​also ​served as regular film reviewer. His research has focused on religious themes and imagery in popular American films and on the influence of New York City on Hollywood production. 
+Father Blake t​ought American film history and criticism​ at Boston College for 22 years​. Prior to that he was ​an executive editor of America magazine, a national weekly journal of opinion​ and he ​also ​served as regular film reviewer. His research has focused on religious themes and imagery in popular American films and on the influence of New York City on Hollywood production. 
 
 <style>
 

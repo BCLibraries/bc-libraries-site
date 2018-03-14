@@ -15,7 +15,7 @@ ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Richard%20Aloysius%20Blake&tab=bcl_only&search_scope=bcl&vid=bclib_new&offset=0
 Bookcover: 2018/03/blake-cover.png
 Image_alt: four of Professor Blake's book covers
-Oneoff: yes
+Oneoff: no
 
 Father Blake t​ought American film history and criticism​ at Boston College for 22 years​. Prior to that he was ​an executive editor of America magazine, a national weekly journal of opinion​ and he ​also ​served as regular film reviewer. His research has focused on religious themes and imagery in popular American films and on the influence of New York City on Hollywood production. 
 

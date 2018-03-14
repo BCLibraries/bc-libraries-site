@@ -9,7 +9,7 @@ Slug: outdoor-adventures-s18
 Image: 2018/02-outdoor-poster.png
 Image_thumb: 2018/02-outdoor-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: middle_down
 
-Check out some outdoor themed art by your fellow Eagles! Photos, paintings, and drawings will be on display in the Level 1 gallery space in the O'Neill Library fro the month of February featuring twelve student artists. 
+Check out some outdoor themed art by your fellow Eagles! Photos, paintings, and drawings will be on display in the Level 1 gallery space in the O'Neill Library for the month of February featuring twelve student artists. 

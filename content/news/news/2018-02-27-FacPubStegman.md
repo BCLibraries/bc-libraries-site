@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Feb/stegman-written/
 Date: 2018-02-27 01:01 
 Tags: news, tags 
 Slug: facpub-stegman 
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Father Stegman during his interview
 Image_thumb: 2018-02/steg-thumbs.png

@@ -1,5 +1,5 @@
-Title: New Year, New Blog for the Answer Wall
-Destination: http://answerwall.domain.bc.edu/
+Title: Dog of the Month
+Destination: https://libguides.bc.edu/dog-of-the-month
 Date: 2018-03-14 02:01
 Expired: no
 Slug: dog-of-the-month

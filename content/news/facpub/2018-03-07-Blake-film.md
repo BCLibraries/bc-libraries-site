@@ -1,5 +1,5 @@
 Date: 2018-03-07 01:01
-Title: Father Blake on his life long involvement with Film Studies and his Twenty-Two years at Boston College
+Title: Father Blake on his life long involvement with Film Studies and his twenty-two years at Boston College
 By:
 Author_firstname: Richard 
 Author_lastname: Blake S.J. Ph.D.

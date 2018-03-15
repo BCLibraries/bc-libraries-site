@@ -10,10 +10,10 @@ Librarian_position: Senior Reference Librarian
 Tags: facpub
 Slug: the-friendly-url 
 Youtube: url
-Sample_pages: 2016/xx/NAME-book.pdf
+Sample_pages: 2018/xx/NAME-book.pdf
 ShowSample_pages: yes
 Book_location: url
-Bookcover: 2016/xx/NAME-cover.png
+Bookcover: 2018/xx/NAME-cover.png
 Image_alt: image description
 Oneoff: yes or no ("yes" will hide from main site for review)
 
@@ -21,4 +21,4 @@ Maecenas egestas leo ante, in interdum lectus accumsan id. Proin a scelerisque d
 
 Nullam eu luctus augue, eu porttitor sem. Fusce imperdiet velit sed porttitor vehicula. Nulla facilisi. Duis in lacus velit. Nulla et nulla sed orci ornare tempor. Proin non ultrices nibh. Cras pulvinar vestibulum aliquet. Phasellus finibus tellus at enim tincidunt, at fermentum mauris faucibus. Duis placerat mattis arcu. Aliquam ut urna nec nisl suscipit ullamcorper. 
 
-<em>View a <a href="http://library.bc.edu/theme/img/facpub/2016/XX/NAME-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="https://library.bc.edu/theme/img/facpub/2018/XX/NAME-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

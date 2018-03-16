@@ -40,12 +40,8 @@
 </head>
 <body>
 
-{% if articles %}
-            {% set count = 0 %}
-            {% for article in articles if article.category.name == "facpub" and article.oneoff != "yes" %}
 
-                {% set count = count + 1 %}
-                {% if count < 2 %}   
+   
 
 <center>
     <table width="800" border="0" cellpadding="0" cellspacing="0" summary="Faculty Publication Highlights" height="69">
@@ -63,26 +59,27 @@
 
                 <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 0px;">
                 
-                    <img src="http://library.bc.edu/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}"
+                    <img src="http://library.bc.edu/theme/img/facpub/2018/03/krause-cover.png" alt="the book cover"
                     style="border: 2px solid #05506D; margin: 0px 10px 0px 0px; padding: 3px; width: 150px; height: auto;">
                     <br>
                    
-                    <strong>{{ article.author_firstname}} {{ article.author_lastname}}</strong><br>
-                    <span class="author-title">{{ article.author_position }}</span>
+                    <strong>Peter Krause</strong><br>
+                    <span class="author-title">Assistant Professor, Political Science</span>
                    
                 </td>
 
                 <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 20px;">  
                                 <!-- EDIT REQUIRED: Change title and description -->
-                                <h2>{{ article.title }}</h2>
+                                <h2>Rebel Power: Why National Movements Compete, Fight, and Win</h2>
                                 <div class="desc">
-                                {{ article.content }}
+                                <p>Many of the world's states—from Algeria to Ireland to the United States—are the result of robust national movements that achieved independence. Many other national movements have failed in their attempts to achieve statehood, including the Basques, the Kurds, and the Palestinians. In <em>Rebel Power</em>, Peter Krause offers a powerful new theory to explain this variation focusing on the internal balance of power among nationalist groups, who cooperate with each other to establish a new state while simultaneously competing to lead it. The most powerful groups push to achieve states while they are in position to rule them, whereas weaker groups unlikely to gain the spoils of office are likely to become spoilers, employing risky, escalatory violence to forestall victory while they improve their position in the movement hierarchy. Hegemonic movements with one dominant group are therefore more likely to achieve statehood than internally competitive, fragmented movements due to their greater pursuit of victory and lesser use of counterproductive violence.</p>
+<p>Krause conducted years of fieldwork in government and nationalist group archives in the Middle East, North Africa, and Europe, as well as more than 150 interviews with participants in the Palestinian, Zionist, Algerian, and Irish national movements. This research generated comparative longitudinal analyses of these four national movements involving 40 groups in 44 campaigns over a combined 140 years of struggle. Krause identifies new turning points in the history of these movements and provides fresh explanations for their use of violent and nonviolent strategies, as well as their numerous successes and failures. Rebel Power is essential reading for understanding not only the history of national movements but also the causes and consequences of contentious collective action today, from the Arab Spring to the civil wars and insurgencies in Syria, Afghanistan, Iraq, and beyond.</p>
                                 </div>
                                 
                                 
                                 <!-- EDIT REQUIRED: Change link to interview and faculty member surname -->
                                 <p id="link-to-more">
-                                    <a href="https://library.bc.edu/{{ article.url }}">Interview with Professor {{ article.author_lastname}} and more</a> &#187;
+                                    <a href="https://library.bc.edu/facpub/2018/Mar/krause-rebel/">Interview with Professor Krause and more</a> &#187;
                                 </p>
                 </td>
 
@@ -113,10 +110,10 @@
 
     </table>
 </center>
- {% endif %}
           
-            {% endfor %}
-{% endif %}
+
+   
+          
 
 
 </body></html>

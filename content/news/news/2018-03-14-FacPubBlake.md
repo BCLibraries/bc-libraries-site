@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Mar/blake-film/
 Date: 2018-03-14 01:01 
 Tags: news, tags 
 Slug: facpub-blake
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Father Blake during his interview
 Image_thumb: 2018-03/blake-thumbs.png

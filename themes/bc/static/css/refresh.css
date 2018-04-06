@@ -228,7 +228,7 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background: #ccc url('/theme/img/hero03.jpg') 0% 50%;
+    background: #ccc url('/theme/img/hero04.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
     height: 450px;
     background-size: cover;
     padding-top: 80px;

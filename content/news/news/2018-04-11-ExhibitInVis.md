@@ -6,7 +6,7 @@ Slug: exhibit-med-invis
 Expired: no
 ShowText: yes
 Image_alt: A flexing arm with a bandage on it
-Image_thumb: 2018-04/invis-thumbs.png
+Image_thumb: 2018-04/invis-thumb.png
 
 Discussing the theme of (in)visibility sets into motion the very process of identifying issues that often go unknown, unheard, and unseen. But it goes beyond just the duality of the “visible” and “invisible”—it also brings to light the societal implications surrounding these issues, helping further our understanding of ourselves and our communities.
  

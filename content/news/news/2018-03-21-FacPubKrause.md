@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Mar/krause-rebel/
 Date: 2018-03-21 01:01 
 Tags: news, tags 
 Slug: facpub-krause
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Krause during his interview
 Image_thumb: 2018-03/krause-thumb.png

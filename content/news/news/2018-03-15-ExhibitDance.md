@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/exhibits/2018/Mar/dance-ensemble-s18/
 Date: 2018-03-15 01:01 
 Tags: news, tags 
 Slug: exhibit-lvl1-dance
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photograph of the dancers performing
 Image_thumb: 2018-03/dance-thumb.png

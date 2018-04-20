@@ -86,7 +86,7 @@
 
     <img src="{{ article_image }}" alt="{{ article_alt}}">
 
-    <h4><a href="{{ article.destination }}">{{ article.title }}</a></h4>
+    <h4><a href="{% if article.destination %}{{ article.destination }}{% else %}../{{ article.url }}{% endif %}">{{ article.title }}</a></h4>
 
     <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
 

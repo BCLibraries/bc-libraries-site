@@ -3,7 +3,7 @@ Destination:
 Date: 2018-04-20 01:01 
 Tags: news, tags 
 Slug: gis-contest-s18
-Expired: yes
+Expired: no
 ShowText: yes
 Image_alt: An image of an old map reading Got GIS?
 Image_thumb: 2016-02/gis-thumbs.png

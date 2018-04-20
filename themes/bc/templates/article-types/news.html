@@ -1,43 +1,44 @@
-{% block content %}
-
-<style>
-    .homepagerefresh .megamenu-container {
-    background-color: rgba(16,14,15,.90);
-    }
-
-
-</style>
 <div class="megamenu-container">
     {% include 'megamenu.html' %}
 </div>
 
+<!-- TEST -->
+
 <div class="container">
-<!-- TEMPLATE FOR NEWS ITEMS GOES HERE. THIS WILL NOT BE USED VERY OFTEN, AS MOST NEWS LINKS OUT -->
-<ol class="breadcrumb" id="s-lib-bc-list">
-    <li id="s-lib-bc-customer">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
         </a>
-    </li>
-    <li id="s-lib-bc-site">
-        <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements
-        </a>
-    </li>
-</ol>
+        </li>
+        <li id="s-lib-bc-site">
+        <a href="http://library.bc.edu/news" title="Library News Archives">News archives</a>
+        </li>
+    </ol>
 
-<div class="article_page">
+<!-- TEMPLATE FOR NEWS ITEMS GOES HERE. THIS WILL NOT BE USED VERY OFTEN, AS MOST NEWS LINKS OUT -->
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
+            <a href="http://library.bc.edu" title="Libraries">Libraries
+            </a>
+        </li>
+        <li id="s-lib-bc-site">
+            <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements
+            </a>
+        </li>
+    </ol>
+
+    <div class="article_page">
 
 
-    <h3>{{ article.title }}</h3>
-    {% block title %}{{ article.title }}{% endblock %}
-    <em>{{ article.date|strftime('%B %d, %Y') }}</em>
+        <h3>{{ article.title }}</h3>
+        {% block title %}{{ article.title }}{% endblock %}
+        <em>{{ article.date|strftime('%B %d, %Y') }}</em>
 
-    <div class="article_content">
+        <div class="article_content">
 
-        <div>{{ article.content }}</div>
+            <div>{{ article.content }}</div>
+        </div>
+
     </div>
-
-   
-
-</div>
 </div>
 <!-- END NEWS -->

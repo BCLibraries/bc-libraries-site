@@ -1,7 +1,3 @@
-{% block pagestyles %}
-<link rel="stylesheet" href="/theme/css/news.css"/>
-{% endblock %}
-
 {% block content %}
 
 <style>
@@ -15,73 +11,33 @@
     {% include 'megamenu.html' %}
 </div>
 
-<div class="container exhibit-container">
-    <ol class="breadcrumb" id="s-lib-bc-list">
-        <li id="s-lib-bc-customer">
+<div class="container">
+<!-- TEMPLATE FOR NEWS ITEMS GOES HERE. THIS WILL NOT BE USED VERY OFTEN, AS MOST NEWS LINKS OUT -->
+<ol class="breadcrumb" id="s-lib-bc-list">
+    <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
         </a>
-        </li>
-        <li id="s-lib-bc-site">
-        <a href="http://library.bc.edu/news" title="Library News Archives">News archives</a>
-        </li>
-    </ol>
-
-
-</div>
+    </li>
+    <li id="s-lib-bc-site">
+        <a href="http://library.bc.edu/news" title="Library News Archives">Library News & Announcements
+        </a>
+    </li>
+</ol>
 
 <div class="article_page">
 
 
     <h3>{{ article.title }}</h3>
+    {% block title %}{{ article.title }}{% endblock %}
     <em>{{ article.date|strftime('%B %d, %Y') }}</em>
 
     <div class="article_content">
 
-        <!--<img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}" style="float: left;">-->
         <div>{{ article.content }}</div>
     </div>
 
-   <!-- <div class="morenews">
+   
 
-        <hr>
-
-        <h4>More News From the Boston College Libraries</h4>
-
-        {% if articles %}
-
-        {% set count = 0 %}
-        {% for article in articles[:15] if article.category|selectattr("news", "announcements") %}
-
-        {% set count = count + 1 %}
-        {% if count < 12 %}
-
-        {% if article.category.name == "news" %}
-
-        <div class="news_listing">
-            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-            <h5><a href="{{ article.destination }}">{{ article.title }}</a></h5>
-
-        </div>
-        {% block title %}{{ article.title }}{% endblock %}
-        {% endif %}
-
-        {% if article.category.name == "announcements" %}
-
-        <div class="news_listing">
-            <span class="archive_date">{{ article.date|strftime('%B %d, %Y') }}</span>
-            <h5><a href="../../../../{{ article.url }}">{{ article.title }}</a></h5>
-
-        </div>
-
-        {% endif %}
-
-        {% endif %}
-
-        {% endfor %}
-
-        {% endif %}
-
-    </div>-->
-
+</div>
 </div>
 <!-- END NEWS -->

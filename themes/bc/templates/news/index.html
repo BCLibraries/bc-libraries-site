@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}News{% endblock %}
+{% block title %} News {% endblock %}
 {% block pagestyles %}
 <link rel="stylesheet" href="/theme/css/news.css"/>
 {% endblock %}
@@ -17,7 +17,7 @@
     {% include 'megamenu.html' %}
 </div>
 
-<div class="container exhibit-container">
+<div class="container">
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries
@@ -38,7 +38,7 @@
 
     {{ years_worth_of_articles('2015') }}
 
-</div>
+
 {% endblock %}
 
 {# Print one year of articles. Put quotes around year! #}
@@ -94,6 +94,7 @@
         <p>{{ article.summary|striptags|truncate(200) }}</p>
     </div>
 
+</div>
 </div>
 {% endmacro %}
 

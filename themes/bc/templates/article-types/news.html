@@ -1,9 +1,19 @@
-{% block title %}News{% endblock %}
-{%include 'homepage/header.html' %}
-
 <div class="megamenu-container">
     {% include 'megamenu.html' %}
 </div>
+
+<style>
+.container .article_page {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media ( max-width: 768px ) {
+    .container .article_page {
+    width: auto;
+    margin: 0 auto;
+}
+</style>
 
 <div class="container">
     <ol class="breadcrumb" id="s-lib-bc-list">

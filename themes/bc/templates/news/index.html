@@ -1,16 +1,23 @@
 {% extends "base.html" %}
-
 {% block title %}News{% endblock %}
-
 {% block pagestyles %}
 <link rel="stylesheet" href="/theme/css/news.css"/>
 {% endblock %}
 
 {% block content %}
 
-{%include 'homepage/header.html' %}
+<style>
+    .homepagerefresh .megamenu-container {
+    background-color: rgba(16,14,15,.90);
+    }
 
-<div class="container">
+
+</style>
+<div class="megamenu-container">
+    {% include 'megamenu.html' %}
+</div>
+
+<div class="container exhibit-container">
     <ol class="breadcrumb" id="s-lib-bc-list">
         <li id="s-lib-bc-customer">
         <a href="http://library.bc.edu" title="Libraries">Libraries

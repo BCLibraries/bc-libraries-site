@@ -1,3 +1,6 @@
+{% block title %}News{% endblock %}
+{%include 'homepage/header.html' %}
+
 <div class="megamenu-container">
     {% include 'megamenu.html' %}
 </div>
@@ -29,7 +32,7 @@
 
 
         <h3>{{ article.title }}</h3>
-        {% block title %}{{ article.title }}{% endblock %}
+       
         <em>{{ article.date|strftime('%B %d, %Y') }}</em>
 
         <div class="article_content">

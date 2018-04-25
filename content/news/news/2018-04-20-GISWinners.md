@@ -16,7 +16,7 @@ Abolfazl Sotoudeh-Sherbaf, Sociology, graduate prize: "Iran's 2018 Protests: Spa
 Michaela Simoneau ‘18, International Studies, Biology/MCAS, undergraduate prize: "The Plight of the Rohingya Refugee: Assessing current and predicted health and sanitation challenges".
 
 <strong>The second place award of a $50 Amazon Gift Card, went to:</strong><br/>
-Xinyi Zeng, Geology, graduate prize: "Evaluating the Impact of Dams on Sediment Transport Pattern in the Main Stem of Parker River".
+Xinyi Zeng, Earth and Environmental Sciences, graduate prize: "Evaluating the Impact of Dams on Sediment Transport Pattern in the Main Stem of Parker River".
 Gabby Bouchard ‘18, Biology/MCAS, undergraduate prize: "Surveillance of Leading Chronic Diseases in Allston-Brighton".
 
 <strong>The third place award of a $25 Amazon Gift Card went to:</strong><br/>

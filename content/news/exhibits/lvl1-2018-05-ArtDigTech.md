@@ -6,7 +6,7 @@ Sponsor: Sponsored by the Art, Art History, and Film Department and the Boston C
 Location: lvl1
 Tags: exhibit
 Slug: art-dig-tech-s18
-Image: 2018/05-artdig.png
+Image: 2018/05-artdig-poster.png
 Image_thumb: 2018/05-artdig-thumb.png
 Image_alt: Exhibit poster
 Active: yes

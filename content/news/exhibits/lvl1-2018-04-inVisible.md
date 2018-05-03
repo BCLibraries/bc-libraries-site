@@ -9,7 +9,7 @@ Slug: medical-invisible
 Image: 2018/04-invis-poster.png
 Image_thumb: 2018/04-invis-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: right
 
 Discussing the theme of (in)visibility sets into motion the very process of identifying issues that often go unknown, unheard, and unseen. But it goes beyond just the duality of the “visible” and “invisible”—it also brings to light the societal implications surrounding these issues, helping further our understanding of ourselves and our communities.

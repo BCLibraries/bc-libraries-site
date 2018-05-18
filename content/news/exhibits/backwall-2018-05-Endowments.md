@@ -6,8 +6,8 @@ Sponsor: Sponsored by the Boston College Libraries
 Location: backwall
 Tags: exhibit
 Slug: recent-acquisitions
-Image: 2018/02-fashion-poster.png
-Image_thumb: 2018/02-fashion-thumb.png
+Image: 2018/05-endow-poster.png
+Image_thumb: 2018/05-endow-thumb.png
 Image_alt: An ornate, red and gold poster
 Active: yes
 Style: right

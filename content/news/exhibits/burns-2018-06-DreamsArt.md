@@ -1,4 +1,4 @@
-Date: 2018-05-01 01:01 
+Date: 2018-06-01 01:01 
 Date_range: June - DATE 2018
 Title: Dreams of Art & Glory
 Subtitle: Book Craft by the Roycrofters
@@ -6,8 +6,8 @@ Sponsor: Sponsored by the Boston College Libraries
 Location: burns
 Tags: exhibit
 Slug: roycrofters
-Image: 2018/02-dreams.png
-Image_thumb: 2018/02-objects-thumb.png
+Image: 2018/06-dreams.png
+Image_thumb: 2018/06-dreams-thumb.png
 Image_alt: Exhibit poster
 Active: no
 Style: default

@@ -8,7 +8,7 @@ Tags: exhibit
 Slug: viewpoints
 Image: 2018/05-viewpoints_poster.png
 Image_thumb: 2018/05-viewpoints_thumb.png
-Image_alt: Exhibit poster, reads the same as the page
+Image_alt: Exhibit poster reads the same as the page
 Active: yes
 Style: middle_top
 

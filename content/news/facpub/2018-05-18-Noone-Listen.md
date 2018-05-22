@@ -4,7 +4,7 @@ By: Edited
 Author_firstname: Michael 
 Author_lastname: Noone
 Author_position: Professor, Music Department
-Second_author: Daniele V. Filippi 
+Second_author: and Daniele V. Filippi 
 Tags: facpub
 Slug: noone-listening
 Youtube: https://www.youtube.com/embed/q7Tj5ReElQE

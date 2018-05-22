@@ -9,7 +9,7 @@ Slug: here-comes-hockey
 Image: 2018/01-hockey-poster.png
 Image_thumb: 2018/01-hockey-thumb.png
 Image_alt: An illustration of a BC hockey player
-Active: yes
+Active: no
 Style: middle_top
 
 The Boston College Eagles played their first intercollegiate ice hockey game 100 years ago. The story of hockey at Boston College began in the late 19th century with an earlier version of the game known as “ice polo.” Aside from brief breaks for the Great Depression and World War II, the modern version of the game has been played by men and women at “University Heights” since 1918.

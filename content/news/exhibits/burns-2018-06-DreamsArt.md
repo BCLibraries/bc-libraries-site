@@ -1,4 +1,4 @@
-Date: 2018-06-01 01:01 
+Date: 2018-05-01 01:01 
 Date_range: June - DATE 2018
 Title: Dreams of Art & Glory
 Subtitle: Book Craft by the Roycrofters

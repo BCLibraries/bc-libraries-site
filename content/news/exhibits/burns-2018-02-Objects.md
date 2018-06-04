@@ -9,7 +9,7 @@ Slug: object-in-archives
 Image: 2018/02-objects.png
 Image_thumb: 2018/02-objects-thumb.png
 Image_alt: Exhibit poster
-Active: yes
+Active: no
 Style: default
 
 Networks develop between people and objects across time and space through the mediator of the archives. Archival objects, in their movements from personal possessions to historical artifacts, hold the potential for multiple future relationships; by their inclusion in the John J. Burns Library, these artifacts become public rather than personal property, entering a complex web of connections that includes various objects, researchers, and other viewers. These material connections are more visible when an item is on display or being used by a researcher, but they are always present in the potentiality of archival objects. These artifacts matter—they take up space both physically and ideologically—and they actively help create temporal, physical, and scholarly networks within the archives. Recognizing and acknowledging these relationships broadens our understanding of the communal role materiality plays in forging connections between people and things. In a world that seems increasingly divisive, these moments of interconnectivity through shared historical objects are necessary links to both the past and the future. 

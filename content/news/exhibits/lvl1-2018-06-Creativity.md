@@ -9,7 +9,7 @@ Slug: celebrating-creativity-s18
 Image: 2018/06-creative.png
 Image_thumb: 2018/06-creative-thumb.png
 Image_alt: A colorful poster for the event
-Active: no
+Active: yes
 Style: default
 
 This annual exhibit features the creative side of the Boston College Libraries' Staff.  Submissions include photography, painting, digital design, collage, and fiber crafts.

@@ -228,7 +228,7 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background: #ccc url('/theme/img/hero05.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
+    background: #ccc url('/theme/img/hero04.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
     height: 450px;
     background-size: cover;
     padding-top: 80px;
@@ -240,11 +240,12 @@ body {
 .homepagerefresh .caption-link {
     position: absolute;
     bottom: 0;
-    right: 20px;
-    padding: 4px 20px;
+    right: 0;
+    padding: 2px 10px;
     background-color: rgba(16,14,15,.85);
     color: #fff;
     font-size: 13px;
+    font-weight: 200;
 }
 .homepagerefresh .caption-link a {
     color: #fff;
@@ -664,7 +665,11 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         clip: rect(0, 0, 0, 0);
         border: 0;
     }
-}
+
+    .homepagerefresh .caption-link {
+        display: none;
+    }
+    }
 
 /* Specific to the bc-lib header */
 @media (max-width: 600px) {

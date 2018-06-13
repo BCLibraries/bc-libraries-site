@@ -260,7 +260,9 @@
 }
 
 .homepagerefresh .yamm .dropdown-menu li > a p.tuck {
-    padding: 0 0 0 12px;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 4px;
 }
 .homepagerefresh .yamm .dropdown-menu li > .h4style {
     color: #05506d;

@@ -669,6 +669,17 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     .homepagerefresh .caption-link {
         display: none;
     }
+
+    #search-panel #search-links div {
+        display: inline-block;
+    }
+
+    .homepagerefresh #header {
+        background: #ccc url('/theme/img/hero04-small.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
+        background-size: cover;
+        background-position: 100%;
+        height: 320px;
+    }
     }
 
 /* Specific to the bc-lib header */
@@ -730,7 +741,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #midlevelcontainer-refresh {
         margin-top: 0!important;
     }
-    #bclib-header, 
+    #bclib-header,
     .megamenu-container,
     iframe,
     a[name=s-lg-guide-main],
@@ -785,8 +796,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         display: none;
     }
     #quick-links {
-        border-top: 1px solid #dadada; 
-        border-bottom: 1px solid #dadada; 
+        border-top: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
         padding: 1em 0;
     }
     #quick-links .quick-link-block {
@@ -794,7 +805,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding: .25em 0!important;
     }
     #ds-highlight {
-        height: auto!important; 
+        height: auto!important;
         padding: 0!important;
         text-align: left!important;
     }
@@ -838,9 +849,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         text-align: left!important;
     }
     #digcol-highlight {
-        height: auto!important; 
-        padding: 0!important; 
-        border-top: 1px solid #dadada; 
+        height: auto!important;
+        padding: 0!important;
+        border-top: 1px solid #dadada;
         border-bottom: 1px solid #dadada;
         text-align: left!important;
     }

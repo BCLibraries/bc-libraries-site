@@ -2344,8 +2344,9 @@ nav select {
 .yamm .dropdown-menu li > .h4style {
     color: #05506d;
     font-size: 16px;
+    line-height: 1.25;
     font-weight: normal;
-    margin: 5px 0 10px !important;
+    margin: 5px 0 5px 0 !important;
     padding: 0;
     text-transform: none;
 }

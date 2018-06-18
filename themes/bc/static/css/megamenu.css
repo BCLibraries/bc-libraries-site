@@ -81,8 +81,8 @@
         padding-left:15px;
         padding-right:15px;
         background-color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        border-bottom: 15px solid rgba(0, 0, 0, 0);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     }
 }
 .homepagerefresh .megamenu-container .nav a.menu-option:focus,
@@ -100,6 +100,7 @@
 .homepagerefresh .h3style {
     color: #05506d;
     font-size: 18px;
+    line-height: 1.25;
     font-weight: normal;
     margin: 5px 0 10px 0;
     padding: 0;
@@ -170,6 +171,7 @@
     }
     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
         border-top: 0px;
+        border-bottom: 1px dashed #ccc;
     }
     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
         border: 0;
@@ -232,7 +234,13 @@
     padding: 0px;
     margin: 0 0px;
     border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    margin-left:-1px;
     padding: 0 25px;
+}
+.homepagerefresh .menu_list:first-child, .ask_list:first-child {
+    border-left: none;
+    margin-left: 0;
 }
 .homepagerefresh .hours_menu_list {
     list-style: none outside none;
@@ -263,11 +271,11 @@
 
 .homepagerefresh .yamm .dropdown-menu li > a {
     display: block;
-    padding: 3px 5px;
+    padding: 5px 5px 5px 5px;
     margin: 0 0 0 -5px;
     clear: both;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 1.25;
     word-break: normal;
     outline: none;
     color: #666;
@@ -281,8 +289,9 @@
 .homepagerefresh .yamm .dropdown-menu li > .h4style {
     color: #05506d;
     font-size: 16px;
+    line-height: 1.25;
     font-weight: normal;
-    margin: 5px 0 0 !important;
+    margin: 5px 0 5px 0 !important;
     padding: 0;
     text-transform: none;
 }
@@ -609,6 +618,19 @@
     width: 100%;
     padding: 0 15px 0 15px;
 }
+
+@media ( max-width: 1200px ) {
+    .homepagerefresh .pane_info {
+        width: 72%;
+    }
+}
+
+@media ( max-width: 991px ) {
+    .homepagerefresh .pane_info {
+        width: 65%;
+    }
+}
+
 @media ( max-width: 767px ) {
     .homepagerefresh .pane_info {
         float: none;

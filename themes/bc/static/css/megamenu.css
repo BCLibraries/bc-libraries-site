@@ -115,6 +115,17 @@
     text-transform: none;
 }
 
+.homepagerefresh #megamenu-refresh .accounts-link-mobile {
+    padding: 8px 16px;
+    margin: 12px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #204375;
+    color: #fff;
+    border-radius: 4px;
+}
+
 .homepagerefresh #megamenu-refresh .navbar-nav > li > a:focus {
     background: #05506d !important;
     color: #fff;
@@ -162,7 +173,18 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width: 768px) {
+    .homepagerefresh #megamenu-refresh .accounts-link-mobile {
+        display: none;
+    }
+}
+
 @media ( max-width: 767px ) {
+    /* hide My Accounts in mobile menu */
+    .homepagerefresh #megamenu-refresh li.accounts-link {
+        display: none;
+    } 
     .homepagerefresh .h3style {
         margin-bottom: 5px;
     }

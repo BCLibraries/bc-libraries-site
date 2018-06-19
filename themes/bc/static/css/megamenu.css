@@ -72,6 +72,7 @@
     }
     .homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;
+        margin-left: 13px;
     }
     .homepagerefresh .megamenu-container .nav a.menu-option {
         text-shadow: none;
@@ -405,16 +406,22 @@
     background: transparent;
 }
 .homepagerefresh #megamenu-refresh .navbar-toggle {
-    background-color: #990000;
+    /*background-color: #990000;
     background-image: none;
-    /*border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0;
     float: right;
-    margin: 115px 0px 0;*/
+    margin: 115px 0px 0;
     padding: 13px;
     position: relative;
     border-color: #dccaa0;
-    /*width: 100%;*/
+    width: 100%;*/
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 50px;
+    height: 42px;
+    padding: 0;
 }
 /*@media (min-width: 767px) {
     .homepagerefresh #megamenu-refresh .navbar-toggle {
@@ -431,6 +438,26 @@
     margin: 0 auto;
 }*/
 
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-close {
+    color: #ffffff;
+    font-size: 30px;
+}
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-close .fa {
+    display: block;
+    margin-top: -3px;
+}
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-bar {
+    display: none;
+}
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle .icon-close {
+    display: block;
+}
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle.collapsed .icon-bar {
+    display: block;
+}
+.homepagerefresh #megamenu-refresh .navbar-default .navbar-toggle.collapsed .icon-close {
+    display: none;
+}
 
 
 

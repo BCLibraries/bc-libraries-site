@@ -66,7 +66,7 @@ body {
     background: #8a100b no-repeat 100% 0%;
     border-bottom: 1px solid #dccaa0;
     color: #fff;
-    height: 42px;
+    height: 38px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -157,10 +157,12 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     /* we want height = 30px */
+    /*    15 * 2      = 30   */
     /*    14 * 2.143 ~= 30   */
+    /*    13 * 2.308 ~= 30   */
     /*    12 * 2.5    = 30   */
-    font-size: 12px;
-    line-height: 2.5;
+    font-size: 14px;
+    line-height: 2.143;
 }
 #bclib-header ul.bclib-header-links li {
     display: inline;
@@ -587,19 +589,23 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 @media (max-width: 991px) {
     /*@media screen and (max-width: 991px) and (min-width: 768px) { */
     #bclib-header {
-        height: auto;
+        /*height: auto;*/
     }
     #bclib-header .container {
-        padding-bottom: 2px;
+        /*padding-bottom: 2px;*/
     }
     #bclib-header .col-sm-12 {
         width: 100%;
     }
     #bclib-header ul.bclib-header-links {
-        text-align: left;
+        text-align: right;
+        /*margin-bottom: .2rem;*/
+    }
+    #bclib-header ul.bclib-header-links li:first-child {
+        margin-left: 0;
     }
     #bclib-header ul.bclib-header-links li:last-child {
-        margin-left: 0;
+        margin-right: 0;
     }
     #bclib-header .header-right {
         padding-left: 0;
@@ -619,6 +625,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         margin-top: -1em;
         margin-bottom: 2em;
     }
+    .navbar-brand {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -629,6 +638,19 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    #bclib-header {
+        /*height: auto;*/
+    }
+    #bclib-header > .container {
+        width:100%;
+    }
+    #bclib-header ul.bclib-header-links {
+        font-size: 15px;
+        line-height: 2;
+    }
+    #bclib-header ul.bclib-header-links li {
+        margin:0 10px;
+    }
     .homepagerefresh .container-fluid .pull-right {
         left: auto!important;
         top: auto!important;
@@ -701,12 +723,18 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         width: 100%;
         margin: 0;
     }
+    #bclib-header {
+        height: auto;
+    }
     #bclib-header .container {
         width: 100%;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
-    /*#bclib-header .header-right {
-        padding-right: 15px;
-    }*/
+    #bclib-header ul.bclib-header-links {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 /* Specific to the bc-lib header */

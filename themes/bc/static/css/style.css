@@ -2340,34 +2340,50 @@ nav select {
     color: #666;
 }
 
+.yamm .dropdown-menu li > .h3style,
 .yamm .dropdown-menu li > .h4style {
     color: #05506d;
     font-size: 16px;
+    line-height: 1.25;
     font-weight: normal;
-    margin: 5px 0 10px !important;
+    margin: 5px 0 5px 0 !important;
     padding: 0;
     text-transform: none;
 }
+.yamm .dropdown-menu li > .h3style {
+    font-size: 18px;
+}
+.yamm .dropdown-menu li > .h3style a,
 .yamm .dropdown-menu li > .h4style a {
     display: inline-block;
     width: 100%;
 }
 @media ( max-width: 768px ) {
+    .yamm .dropdown-menu li > .h3style,
     .yamm .dropdown-menu li > .h4style  {
         margin: 0 !important;
         font-size: 18px;
         padding: 0px;
     }
+    .yamm .dropdown-menu li > .h3style {
+        font-size:20px;
+    }
+    .yamm .dropdown-menu li > .h3style a,
     .yamm .dropdown-menu li > .h4style a {
         font-size: 18px;
         padding: 10px;
+    }
+    .yamm .dropdown-menu li > .h3style a {
+        font-size: 20px;
     }
 }
 
 .yamm .dropdown-menu li > a:hover,
 .yamm .dropdown-menu li > a:focus,
 .yamm .dropdown-menu li > .h4style a:hover,
-.yamm .dropdown-menu li > .h4style a:focus {
+.yamm .dropdown-menu li > .h4style a:focus,
+.yamm .dropdown-menu li > .h3style a:hover,
+.yamm .dropdown-menu li > .h3style a:focus {
     color: #990000;
     text-decoration: none;
     background: #E0E0E0;
@@ -2549,12 +2565,17 @@ nav select {
 }
 
 @media ( max-width: 768px ) {
+    .yamm .dropdown-menu li > .h3style,
     .yamm .dropdown-menu li > .h4style  {
         margin: 0 !important;
     }
+    .yamm .dropdown-menu li > .h3style a,
     .yamm .dropdown-menu li > .h4style a {
         font-size: 18px;
         padding: 10px;
+    }
+    .yamm .dropdown-menu li > .h3style a {
+        font-size: 20px;
     }
 }
 
@@ -2646,7 +2667,7 @@ nav select {
     text-decoration: none;
 }
 
-
+.pane_info .h3style,
 .pane_info .h4style {
     padding: 0;
 }

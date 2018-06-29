@@ -1,133 +1,83 @@
-{% extends "facpub_base.html" %}
+{% extends "base.html" %}
 {% block title %}Faculty Publication Highlights{% endblock %}
 {% block content %}
 
+{% block pagestyles %}
+    <link rel="stylesheet" href="/theme/css/facpub_refresh.css"/>
+{% endblock %}
 
-<div class="row">
+{% include 'megamenu.html' %}
 
-{% if articles %}
-            {% set count = 0 %}
-            {% for article in articles if article.category == "facpub" and article.oneoff != "yes" %}
+<!-- BEGIN HEADER -->
+<div id="header" class="fph_header">
 
-                {% set count = count + 1 %}
-                {% if count < 2 %}      
+    <a href="http://library.bc.edu/facpub" class="facpubtitle" title="Back to the Faculty Publication Highlight's archives"><h1>Faculty Publication Highlights</h1> </a>
+     
+</div>
+<!-- END HEADER -->
 
-    <div class="latest-highlight">
-    
-        <div class="left">
+<div class="facpub_wrap">
 
-            <h2>Current Highlight</h2>
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
+        <a href="https://library.bc.edu" title="Libraries">Libraries
+        </a>
+        </li>
+        <li id="s-lib-bc-site" class="active">Faculty Publication Highlights
+        </li>
+    </ol>
 
-                    <div id="titleauthor">
-                        <h3><a href="https://library.bc.edu/{{ article.url }}">{{ article.title }}</a></h3>
-                       {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}
-                    </div>
+    <div class="row">
 
-                    <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
+           {% for article in articles | current_facpubs(1) %}   
+
+        <div class="latest-highlight">
+
+        <!-- NEW STUFF -->
+
+         <div class="youtube">
+
+            <div id="titleauthor">
+                <h3>{{ article.title }}</h3>
+                {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
+            </div>
+
+            <div class="video-container">
+                <iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+
         </div>
 
-        <div class="right">
-                <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
+        <!-- END NEW -->
+        
+            <div class="left">
 
-                <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
+                <h2>Current Highlight</h2>
+                    <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+
+                        <div id="titleauthor">
+                            <h3><a href="../{{ article.url }}">{{ article.title }}</a></h3>
+                           {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}
+                        </div>
+
+                        <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
+            </div>
+
+            <div class="right">
+                    <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
+
+                    <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
+            </div>
+
         </div>
 
     </div>
-
-</div>
-
-
-                {% endif %}
-          
-            {% endfor %}
-{% endif %}
-
-
-<div class="facpub_archives">
+              
+    {% endfor %}
     
-    <h2>Past Highlights</h2>
-
-    <!-- START 2018 ARCHIVES -->
-    <div class="yearlyblock">
-
-    <h3>2018 Highlights</h3>
-
-       {% for article in articles | has_category(['facpub']) | has_year('2018') | not_oneoff %}
-            <div class="old_facpub">
-
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-                <div class="bookinfo">
-                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                </div>
-
-            </div>
-        {% endfor %}
-    </div>
-
-    <!-- START 2017 ARCHIVES -->
-    <div class="yearlyblock">
-
-    <h3>2017 Highlights</h3>
-
-       {% for article in articles | has_category(['facpub']) | has_year('2017') | not_oneoff %}
-            <div class="old_facpub">
-
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-                <div class="bookinfo">
-                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                </div>
-
-            </div>
-        {% endfor %}
-    </div>
-
-
-    <!-- START 2016 ARCHIVES -->
-    <div class="yearlyblock archived">
-
-    <h3>2016 Highlights</h3>
-
-       {% for article in articles | has_category(['facpub']) | has_year('2016') | not_oneoff %}
-            <div class="old_facpub">
-
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-                <div class="bookinfo">
-                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                      {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                </div>
-
-            </div>
-        {% endfor %}
-    </div>
-
-    <!-- START 2015 ARCHIVES -->
-    <div class="yearlyblock archived">
-
-    <h3>2015 Highlights</h3>
-
-        {% for article in articles | has_category(['facpub']) | has_year('2015') | not_oneoff %}
-            <div class="old_facpub">
-
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-                <div class="bookinfo">
-                    <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                        by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                </div>
-
-            </div>
-        {% endfor %}
-
-    </div>
+    {% include 'facpub/archive.html' %}
 
 </div>
-
-<div class="older_archives">
-    <p><em>Here are the <a href="http://www.bc.edu/sites/libraries/facpub/archives/index.html">archives for Faculty Publication Highlights from 2006-2014</a>.</em></p>
-</div>
-
 {% endblock %}
 
 {% block pagescripts %}

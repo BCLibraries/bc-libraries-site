@@ -1,12 +1,6 @@
 {# Used to render all article types (news, announcements, exhibits, facpubs, etc. #}
 {# Article type templates are in the 'article-types' directory #}
 
-{% if article.category.name == "facpub" %}
-	{% extends "facpub_base.html" %}
-{% else %}
-	{% extends "base.html" %}
-{% endif %}
-
 {% block content %}
 
 	{% if article.category.name == "news" %}

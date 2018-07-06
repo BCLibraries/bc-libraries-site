@@ -139,34 +139,12 @@
     font-size: 12px;
 }
 
-.facpub #footer {
-    background: #eaeaea;
-    min-height: 50px;
-    margin: -1px auto 0;
-    width: 100%;
-    padding: 10px 20px 0;
-}
-
-.facpub #footer ul {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.facpub #footer ul li {
-    list-style: none outside none;
-    display: inline;
-    margin: 0;
+.facpub_wrap .row {
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0;
 }
 
-.facpub #footer ul li:after {
-    content: "|";
-    padding: 0 10px;
-}
-
-.facpub #footer ul li:last-child:after {
-    content: "";
-}
 
 /* LATEST HIGHLIGHTS */
 
@@ -192,6 +170,7 @@
     padding: 0 10px 0 0;
     position: relative;
     width: 54%;
+    text-align: justify;
 }
 
 .latest-highlight .right {
@@ -203,7 +182,7 @@
     text-align: justify;
 }
 
-.latest-highlight .left img {
+.latest-highlight img {
     border: 2px solid #05506d;
     float: left;
     height: 135px;

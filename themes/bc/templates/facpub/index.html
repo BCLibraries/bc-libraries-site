@@ -30,52 +30,57 @@
     <div class="row">
 
            {% for article in articles | current_facpubs(1) %}   
+        
+
+        <!-- NEW STUFF 
+            FUTURE NOTES:
+                ADD ADD'L MARKOWN SECTIONS TO TEMPLATE
+
+
+            -->
 
         <div class="latest-highlight">
 
-        <!-- NEW STUFF 
-        FUTURE NOTES:
-            MAKE CURRENT HIGHLIGHT LOOK MORE LIKE INDIVIDUAL PAGES
-            MOVE DESC TEXT DOWN TO MIDDLE BETWEEN ARCHIVE & CONTENT
-            ADD ADD'L MARKOWN SECTIONS TO TEMPLATE
+    
+        <h2>Current Highlight</h2>
+            <!-- LATEST FACPUB -->
+            <div class="youtube">
 
+                <div id="titleauthor">
+                    <h3><a href="../{{ article.url }}">{{ article.title }}</a></h3>
+                    {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
+                </div>
 
-        -->
+                <div class="video-container">
+                    <iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>
+                </div>
 
-         <div class="youtube">
-
-            <div id="titleauthor">
-                <h3>{{ article.title }}</h3>
-                {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
             </div>
-
-            <div class="video-container">
-                <iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-        </div>
-
-        <!-- END NEW -->
-        
-            <div class="left">
-
-                <h2>Current Highlight</h2>
-                    <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-
-                        <div id="titleauthor">
-                            <h3><a href="../{{ article.url }}">{{ article.title }}</a></h3>
-                           {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}
-                        </div>
-
-                        <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
-            </div>
-
-            <div class="right">
+            <!-- END LATEST -->
+          
+                <div class="left">
                     <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
 
-                    <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
-            </div>
+                    <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian. </p>
 
+
+                            
+                </div>
+
+             
+                <div class="right">
+                        <div class="prof_title">
+                            <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+
+                            <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
+                        </div>
+
+                        <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
+                </div>
+                
+                <div class="row">
+                    <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
+                </div>
         </div>
 
     </div>

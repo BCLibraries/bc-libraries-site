@@ -54,11 +54,11 @@
 
             <div class="row">
 
-                <div class="left">
+                <div class="fph_content_left">
                     <div>{{ article.content }}</div>
                 </div>
 
-                <div class="right">
+                <div class="fph_content_right">
 
                     <div class="prof_title">
                         <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
@@ -90,5 +90,12 @@
     {% include 'facpub/recent.html' %}
 
 </div>
+
+<script>
+$('.carousel').carousel({
+  interval: false
+})
+
+</script>
 
 {% endblock %}

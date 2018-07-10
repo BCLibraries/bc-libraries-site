@@ -75,11 +75,11 @@
                          {% endif %}
                     </div>
 
-                        <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
+                        <p class="{{ article.showbook_location }}"><a href="{{ article.book_location }}" class="location">Find this item</a></p>
                 </div>
                 
                 <div class="row">
-                    <a href="../{{ article.url }}" class="view-interview"><span class="arrow">View interview and more</span></a>
+                    <a href="../{{ article.url }}" class="view-interview">View interview and more</a>
                 </div>
         </div>
 

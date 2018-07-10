@@ -1,0 +1,397 @@
+/* FACULTY PUBLICATION HIGHLIGHT STYLES */
+
+#titleauthor h3, h4 {
+    margin: 5px 0 10px 0;
+}
+
+.facpub_wrap .article_page {
+    margin: 0;
+}
+
+.facpub_wrap {
+    width: 1080px;
+    margin: 0px auto 0;
+    background: #fff;
+}
+
+.fph_header {
+    background: url("/theme/img/facpub/fph_header.jpg") no-repeat scroll center center #000000 !important; 
+    height: 200px !important;
+}
+
+.facpubtitle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    padding: 0;
+}
+
+.fph_header h1 {
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    font-size: 55px;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.fph_header a:hover {
+    text-decoration: none;
+}
+
+/* INDIVIDUAL PAGES */
+
+.facpub_wrap .breadcrumb {
+    background: #fff;
+}
+
+.facpub_wrap #titleauthor {
+    font-size: 20px;
+    line-height: 1;
+    padding: 0 0 0 0px;
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+.facpub_wrap #titleauthor h3 {
+    color: #990000;
+}
+
+.facpub_wrap .youtube {
+    width: 100%;
+    background: none repeat scroll 0 0 #eaeaea;
+    border-bottom: 1px solid #dadada;
+    color: #000;
+    display: block;
+    margin: 0px 0 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.facpub_wrap #content_container {
+    width: 100%;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: 0px 0 0;
+    display: block;
+}
+
+.facpub_wrap .article_content {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.facpub_wrap .article_content .left {
+    float: left;
+    border-right: 1px solid #dadada;
+    padding: 0 20px 0 0;
+    width: 65%;
+    text-align: justify;
+}
+
+.facpub_wrap .article_content .right {
+    float: right;
+    width: 32%;
+}
+
+.facpub_wrap .article_content .right p, .facpub_wrap .article_content .right p.yes {
+    line-height: 1.5;
+}
+
+.facpub_wrap .article_content .right p.no /* USES MARKDOWN TO HIDE PARAGRPAH IF IS THERE IS NO ENTRY */
+    {
+   display: none;
+}
+
+.facpub_wrap .article_content .right .prof_title {
+    display: inline-block;
+    border-bottom: 1px solid #dadada;
+    margin: 0 0 10px 0;
+    width: 100%;
+    padding: 0 0 10px 0;
+}
+
+.facpub_wrap .article_content .right img {
+    margin: 0px 10px 10px 0px;
+    padding: 1px;
+    width: 125px;
+    height: auto;
+    min-height: 200px;
+    float: left;
+    border: 1px solid #666;
+}
+
+.facpub_wrap .sample:after {
+    font-family:'FontAwesome';
+    content:"\f1c1";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.facpub_wrap .location:after {
+    font-family:'FontAwesome';
+    content: "\f08e";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.facpub_wrap .librarian {
+    margin: 10px 0 25px 0;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #dadada;
+    background: #eaeaea;
+    font-size: 12px;
+}
+
+.facpub_wrap .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+}
+
+
+/* LATEST HIGHLIGHTS */
+
+.latest-highlight {
+    width: 100%;
+    display: block;
+    margin: 0px 0 10px 0;
+    overflow: hidden;
+    padding: 0px 0 25px 0;
+    position: relative;
+    height: auto;
+    border-bottom: 1px solid #dadada;
+}
+
+.latest-highlight h2 {
+    margin: 0px 0 20px 0;
+}
+
+.latest-highlight .left {
+    border-right: 1px solid #dadada;
+    float: left;
+    height: 100%;
+    padding: 0 10px 0 0;
+    position: relative;
+    width: 54%;
+    text-align: justify;
+}
+
+.latest-highlight .right {
+    float: right;
+    height: 100%;
+    padding: 0px 0px 0 10px;
+    position: relative;
+    width: 45%;
+    text-align: justify;
+}
+
+.latest-highlight img {
+    border: 2px solid #05506d;
+    float: left;
+    height: 135px;
+    margin: 0 10px 0 0;
+    padding: 1px;
+}
+
+.facpub .latest-highlight #titleauthor {
+    font-size: 15px;
+    line-height: 1;
+    padding: 0px;
+}
+
+.view-interview {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+
+.facpub_archives {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+
+.old_facpub {
+    width: 50%;
+    height: 135px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+}
+
+.old_facpub .bookinfo p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.old_facpub img {
+    width: 75px;
+    float: left;
+    border: 2px solid #05506d;
+    padding: 1px;
+    margin: 0 5px 0 0;
+}
+
+.older_archives {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 0;
+    border-top: 1px solid #dadada;
+    text-align: center;
+}
+
+.yearlyblock {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+/* RESPONSIVE PORTION */
+
+@media ( max-width: 919px ) {
+
+    .facpub {
+        background: none;
+    }
+
+    .facpub #fullpagewrapper {
+        width: 100%;
+        min-width: 575px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+        margin: 0px auto 0;
+    }
+
+    .facpub #header {
+        min-height: 95px;
+        height: 95px;
+    }
+
+    .facpub .article_content .left {
+        float: left;
+        border-right: 1px solid #dadada;
+        padding: 0 20px 0 0;
+        width: 60%;
+    }
+
+    .facpub .article_content .right {
+        float: right;
+        width: 35%;
+    }
+
+    .facpub .article_content .right p {
+        line-height: 1.5;
+    }
+
+    .facpub .article_content .right img {
+        float: left;
+        border: 1px solid #666;
+        margin: 0 10px 10px 0;
+        padding: 1px;
+        width: 150px;
+        height: auto;
+    }
+
+    .facpub #header h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media ( max-width: 850px ) {
+
+    .facpub #header {
+      background: url("/theme/img/facpub_header.png") no-repeat scroll top right #000000; 
+}
+
+    .facpub .article_content .left {
+        float: none;
+        border-right: 0px solid #dadada;
+        padding: 0;
+        width: 100%;
+    }
+    .facpub .article_content .right {
+        border-top: 1px solid #dadada;
+        float: none;
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+    .facpub .article_content .right p {
+        width: 100%;
+    }
+    .latest-highlight {
+        height: auto;
+    }
+    .latest-highlight .left {
+        border-bottom: 5px solid #fff;
+        height: auto;
+        padding: 5px;
+        width: 100%;
+    }
+    .latest-highlight .right {
+        height: auto;
+        width: 100%;
+        padding: 5px;
+    }
+    .view-interview {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+    .old_facpub:nth-child(2n+1) {
+        border-right: 0px solid #dadada;
+    }
+    .old_facpub:nth-last-child(2) {
+        border-bottom: 1px solid #dadada;
+    }
+    .old_facpub {
+        width: 100%;
+    }
+}
+
+
+/* RESPONSIVE YOUTUBE EMBED CODE -
+COULD BE USEFUL ELSEWHERE  */
+
+.video-container {
+    position: relative;
+    max-width: 853px;
+    max-height: 480px;
+    margin: 0 auto;
+}
+
+@media ( max-width: 1199px ) {
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 853px;
+    max-height: 480px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}

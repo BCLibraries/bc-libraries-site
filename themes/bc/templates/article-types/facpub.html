@@ -1,45 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Faculty Publication Highlights{% endblock %}
+{% block content %}
 
-<div class="article_page">
+{% block pagestyles %}
+    <link rel="stylesheet" href="/theme/css/facpub_refresh.css"/>
+{% endblock %}
 
-    <div class="youtube">
+{% include 'megamenu.html' %}
 
-        <div id="titleauthor">
-            <h3>{{ article.title }}</h3>
-            {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
-        </div>
+<!-- BEGIN HEADER -->
+<div id="header" class="fph_header">
 
-        <div class="video-container">
-            <iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <a href="http://library.bc.edu/facpub" class="facpubtitle" title="Back to the Faculty Publication Highlight's archives"><h1>Faculty Publication Highlights</h1> </a>
+     
+</div>
+<!-- END HEADER -->
 
-    </div>
+<div class="facpub_wrap">
 
-    <div class="article_content">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer">
+        <a href="https://library.bc.edu" title="Libraries">Libraries
+        </a>
+        </li>
+        <li id="s-lib-bc-site">
+        <a href="https://library.bc.edu/facpub" title="Faculty Publication Highlights Home">Faculty Publication Highlights</a>
+        </li>
+        <li id="s-lib-bc-site" class="active">{{ article.title|truncate(50, False, '...') }}
+        </li>
+    </ol>
 
-        <div class="row">
+    <div class="article_page">
 
-            <div class="left">
-                <div>{{ article.content }}</div>
+        <div class="youtube">
+
+            <div id="titleauthor">
+                <h3>{{ article.title }}</h3>
+                {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} 
+                
+                {% if article.second_author %}
+                     &#x26; {{ article.second_author}} 
+                {% endif %}
+                
             </div>
 
-            <div class="right">
-                <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+            <div class="video-container">
+                <iframe width="640" height="360" src="{{ article.youtube }}" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-                <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
-                    <em>{{ article.author_position }}</em></p>
+        </div>
+
+        <div class="article_content">
+
+            <div class="row">
+
+                <div class="left">
+                    <div>{{ article.content }}</div>
+                </div>
+
+                <div class="right">
+
+                    <div class="prof_title">
+                        <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+
+                        <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
+                            <em>{{ article.author_position }}</em></p>
+                        
+                        {% if article.second_author %}
+                            <p><strong>{{ article.second_author }}</strong> <br />
+                                <em>{{ article.second_position }}</em></p>
+                         {% endif %}
+                    </div>
 
 
-                <p class="{{ article.showsample_pages }}"><a href="/theme/img/facpub/{{ article.sample_pages }}" class="sample">View sample pages</a></p>
+                    <p class="{{ article.showsample_pages }}"><a href="/theme/img/facpub/{{ article.sample_pages }}" class="sample">View sample pages</a></p>
 
-                <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
+                    <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
+
+                </div>
             </div>
         </div>
+
+        <div class="librarian">
+             For further information about research in this area please visit the <a href="http://libguides.bc.edu/ask-a-librarian/contact">Subject Librarian portal</a>.
+        </div>
+
     </div>
 
-    <div class="librarian">
-        <!--For further information about research in this area, contact <a href="mailto:{{ article.librarian_email }}">{{ article.librarian_name }}</a>,
-        <em>{{ article.librarian_position }}</em>.-->
-        For further information about research in this area please visit the <a href="http://libguides.bc.edu/ask-a-librarian/contact">Subject Librarian portal</a>.
-    </div>
+    {% include 'facpub/recent.html' %}
 
 </div>
+
+{% endblock %}

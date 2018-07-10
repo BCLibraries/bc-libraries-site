@@ -1,15 +1,16 @@
 Date: 2010-10-01 01:01
+Tags: facpub
+Slug: the-friendly-url-000
 Title: Book title
 By: <!--leave blank or add edited, translated, etc -->
 Author_firstname: Name
 Author_lastname: Surname
-Author_position: dept, etc
-Second_author: <!-- and FIRSTNAME LASTNAME (Only add if there's a second name) -->
-Tags: facpub
-Slug: the-friendly-url-000
+Author_position: DEPT
+Second_author: <!-- ONLY USE FIRSTNAME LASTNAME (Only add if there's a second name, OTHERWISE LEAVE BLANK) -->
+Second_position:  <!-- ONLY USE IF THERE IS A 2nd AUTHOR, OTHERWISE LEAVE BLANK -->
 Youtube: url
 Sample_pages: 2018/xx/NAME-book.pdf
-ShowSample_pages: <!-- yes or no ("yes" will display link) -->
+ShowSample_pages: <!-- yes or no ("no" will hide link) -->
 Book_location: url
 Bookcover: 2018/xx/NAME-cover.png
 Image_alt: the book cover 

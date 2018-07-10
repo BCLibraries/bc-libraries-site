@@ -1,10 +1,11 @@
-Date: 2018-05-18 01:01
+Date: 2018-07-10 01:01
 Title: Listening to Early Modern Catholicism: Perspectives from Musicology
 By: Edited 
 Author_firstname: Michael 
 Author_lastname: Noone
 Author_position: Professor, Music Department
-Second_author: and Daniele V. Filippi 
+Second_author: Daniele V. Filippi
+Second_position: Research Fellow at the Schola Cantorum Basiliensis (Basel, Switzerland)
 Tags: facpub
 Slug: noone-listening
 Youtube: https://www.youtube.com/embed/q7Tj5ReElQE

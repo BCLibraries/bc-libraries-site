@@ -36,7 +36,12 @@
 
             <div id="titleauthor">
                 <h3>{{ article.title }}</h3>
-                {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
+                {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} 
+                
+                {% if article.second_author %}
+                     &#x26; {{ article.second_author}} 
+                {% endif %}
+                
             </div>
 
             <div class="video-container">
@@ -54,17 +59,24 @@
                 </div>
 
                 <div class="right">
+
                     <div class="prof_title">
                         <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
 
                         <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
                             <em>{{ article.author_position }}</em></p>
+                        
+                        {% if article.second_author %}
+                            <p><strong>{{ article.second_author }}</strong> <br />
+                                <em>{{ article.second_position }}</em></p>
+                         {% endif %}
                     </div>
 
 
                     <p class="{{ article.showsample_pages }}"><a href="/theme/img/facpub/{{ article.sample_pages }}" class="sample">View sample pages</a></p>
 
                     <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
+
                 </div>
             </div>
         </div>

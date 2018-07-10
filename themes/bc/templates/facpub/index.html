@@ -30,14 +30,6 @@
     <div class="row">
 
            {% for article in articles | current_facpubs(1) %}   
-        
-
-        <!-- NEW STUFF 
-            FUTURE NOTES:
-                ADD ADD'L MARKOWN SECTIONS TO TEMPLATE
-
-
-            -->
 
         <div class="latest-highlight">
 
@@ -48,7 +40,11 @@
 
                 <div id="titleauthor">
                     <h3><a href="../{{ article.url }}">{{ article.title }}</a></h3>
-                    {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} {{ article.second_author}}
+                    {{ article.by }} by {{ article.author_firstname }} {{ article.author_lastname }} 
+                
+                    {% if article.second_author %}
+                        &#x26; {{ article.second_author}} 
+                    {% endif %}
                 </div>
 
                 <div class="video-container">
@@ -69,11 +65,18 @@
 
              
                 <div class="right">
-                        <div class="prof_title">
-                            <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+                    
+                    <div class="prof_title">
+                        <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
 
-                            <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
-                        </div>
+                        <p><strong>{{ article.author_firstname }} {{ article.author_lastname }}</strong> <br />
+                            <em>{{ article.author_position }}</em></p>
+                        
+                        {% if article.second_author %}
+                            <p><strong>{{ article.second_author }}</strong> <br />
+                                <em>{{ article.second_position }}</em></p>
+                         {% endif %}
+                    </div>
 
                         <p><a href="{{ article.book_location }}" class="location">Find this item</a></p>
                 </div>

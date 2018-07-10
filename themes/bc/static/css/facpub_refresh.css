@@ -41,6 +41,10 @@
 
 /* INDIVIDUAL PAGES */
 
+.facpub_wrap .breadcrumb {
+    background: #fff;
+}
+
 .facpub_wrap #titleauthor {
     font-size: 20px;
     line-height: 1;
@@ -74,7 +78,7 @@
 
 .facpub_wrap .article_content {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 .facpub_wrap .article_content .left {
@@ -103,13 +107,16 @@
     display: inline-block;
     border-bottom: 1px solid #dadada;
     margin: 0 0 10px 0;
+    width: 100%;
+    padding: 0 0 10px 0;
 }
 
 .facpub_wrap .article_content .right img {
     margin: 0px 10px 10px 0px;
     padding: 1px;
-    width: 124px;
+    width: 125px;
     height: auto;
+    min-height: 200px;
     float: left;
     border: 1px solid #666;
 }

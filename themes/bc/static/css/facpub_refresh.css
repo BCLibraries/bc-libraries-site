@@ -206,8 +206,16 @@
 
 .view-interview {
     position: absolute;
-    bottom: 7px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.view-interview:after {
+    font-family:'FontAwesome';
+    content:"\f04b";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 8px;
 }
 
 .facpub_archives {

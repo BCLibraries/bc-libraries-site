@@ -12,6 +12,7 @@ Youtube: url
 Sample_pages: 2018/xx/NAME-book.pdf
 ShowSample_pages: <!-- yes or no ("no" will hide link) -->
 Book_location: url
+ShowBook_location: <!-- yes or no ("no" will hide link) -->
 Bookcover: 2018/xx/NAME-cover.png
 Image_alt: the book cover 
 Oneoff: <!-- yes or no ("yes" will hide from main site for review) -->

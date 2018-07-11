@@ -15,8 +15,9 @@
 }
 
 .fph_header {
-    background: url("/theme/img/facpub/fph_header.jpg") no-repeat scroll center center #000000 !important; 
-    height: 200px !important;
+  background: url("/theme/img/facpub/fph_header.jpg") no-repeat scroll center center #000000 !important; 
+  min-height: 200px !important;
+  height: 200px !important;
 }
 
 .facpubtitle {
@@ -32,7 +33,7 @@
     line-height: 1;
     margin: 0;
     text-align: center;
-    font-size: 55px;
+    font-size: 3em;
     text-shadow: 2px 2px 1px #000000;
 }
 
@@ -269,92 +270,51 @@
 
 /* RESPONSIVE PORTION */
 
-@media ( max-width: 919px ) {
+@media ( max-width: 1079px ) {
 
-    .facpub {
-        background: none;
-    }
-
-    .facpub #fullpagewrapper {
+    .facpub_wrap {
         width: 100%;
-        min-width: 575px;
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-        margin: 0px auto 0;
+        padding: 0 10px;
+        min-width: 420px;
     }
 
-    .facpub #header {
-        min-height: 95px;
-        height: 95px;
-    }
-
-    .facpub .article_content .fph_content_left {
-        float: left;
-        border-right: 1px solid #dadada;
-        padding: 0 20px 0 0;
-        width: 60%;
-    }
-
-    .facpub .article_content .fph_content_right {
-        float: right;
-        width: 35%;
-    }
-
-    .facpub .article_content .fph_content_right p {
-        line-height: 1.5;
-    }
-
-    .facpub .article_content .fph_content_right img {
-        float: left;
-        border: 1px solid #666;
-        margin: 0 10px 10px 0;
-        padding: 1px;
-        width: 150px;
+    .fph_header {
         height: auto;
+        max-height: 200px;
+        min-height: 50px;
+        overflow: hidden;
     }
-
-    .facpub #header h1 {
-        font-size: 30px;
-    }
-
 }
 
-@media ( max-width: 850px ) {
+@media ( max-width: 640px ) {
 
-    .facpub #header {
-      background: url("/theme/img/facpub_header.png") no-repeat scroll top right #000000; 
-}
+    .fph_header h1 {
+         font-size: 2em;
+        text-shadow: 1px 1px 1px #000000;
+    }
 
-    .facpub .article_content .fph_content_left {
-        float: none;
-        border-right: 0px solid #dadada;
-        padding: 0;
-        width: 100%;
-    }
-    .facpub .article_content .fph_content_right {
-        border-top: 1px solid #dadada;
-        float: none;
-        width: 100%;
-        padding: 10px 0 0 0;
-    }
-    .facpub .article_content .fph_content_right p {
-        width: 100%;
-    }
     .latest-highlight {
         height: auto;
     }
-    .latest-highlight .fph_content_left {
-        border-bottom: 5px solid #fff;
+
+    .facpub_wrap .article_content .fph_content_left,  .latest-highlight .fph_content_left {
+        float: none;
+        border-right: 0px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        padding: 0 5px;
+        width: 100%;
         height: auto;
-        padding: 5px;
+    }
+    .facpub_wrap .article_content .fph_content_right, .latest-highlight .fph_content_right {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 10px 0 0 0;
+    }
+    .facpub_wrap .article_content .fph_content_right p {
         width: 100%;
     }
-    .latest-highlight .fph_content_right {
-        height: auto;
-        width: 100%;
-        padding: 5px;
-    }
+  
     .view-interview {
         position: relative;
         bottom: auto;

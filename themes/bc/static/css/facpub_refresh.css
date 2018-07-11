@@ -300,25 +300,26 @@
     .facpub_wrap .article_content .fph_content_left,  .latest-highlight .fph_content_left {
         float: none;
         border-right: 0px solid #dadada;
-        border-bottom: 1px solid #dadada;
+        border-bottom: 0px solid #dadada;
         padding: 0 5px;
         width: 100%;
         height: auto;
     }
-    .facpub_wrap .article_content .fph_content_right, .latest-highlight .fph_content_right {
+    .facpub_wrap .article_content .fph_content_right {
         float: none;
         width: 100%;
         height: auto;
         padding: 10px 0 0 0;
+    }
+    .latest-highlight .fph_content_right {
+        display: none;
     }
     .facpub_wrap .article_content .fph_content_right p {
         width: 100%;
     }
   
     .view-interview {
-        position: relative;
-        bottom: auto;
-        right: auto;
+        display: none;
     }
     .old_facpub:nth-child(2n+1) {
         border-right: 0px solid #dadada;

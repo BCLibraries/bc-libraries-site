@@ -1,6 +1,12 @@
-<div class="megamenu-container">
-    {% include 'megamenu.html' %}
-</div>
+{% extends "base.html" %}
+{% block title %}News at the Boston College Libraries{% endblock %}
+{% block content %}
+
+{% block pagestyles %}
+    <link rel="stylesheet" href="/theme/css/news.css"/>
+{% endblock %}
+
+{% include 'megamenu.html' %}
 
 <style>
 .container .article_page {
@@ -54,3 +60,4 @@
 </div>
 <br/>
 <!-- END NEWS -->
+{% endblock %}

@@ -3,8 +3,6 @@
 
 'use strict';
 
-console.log('a')
-
 /**
  * Function that tracks a click on an outbound link in Analytics.
  * This function takes a valid URL string as an argument, and uses that URL string
@@ -51,7 +49,7 @@ $.fn.bcBento = function (services) {
         // Workaround for question mark and double-quote problems.
         keyword = keyword.replace(/\?/, '');
 
-        url = protocol + 'localhost:8080/' + service.name + '?any=' + encodeURIComponent(keyword);
+        url = protocol + host + '/search-services/' + service.name + '?any=' + encodeURIComponent(keyword);
         url = url.replace(/%2B/, '+').replace('"', '%22');
 
         // Clear old results.
@@ -71,7 +69,6 @@ $.fn.bcBento = function (services) {
                     successfulSearch(data, service, $target, $heading);
                 },
                 error: function (data) {
-                    console.log(data);
                     clearTimeout(loading_timers[service.name]);
                     $heading.nextAll().remove();
                     $heading.after(error_html);

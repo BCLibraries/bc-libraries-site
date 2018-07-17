@@ -24,11 +24,18 @@ var trackOutboundLink = function (url) {
     }
 };
 
+function getQueryStringParam(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var search_string = getQueryStringParam('any');
+
 $.fn.bcBento = function (services) {
 
-    var search_string, templates, source, loading_timers, api_version, spinner_html, error_html, host, protocol;
-
-    api_version = '0.0.9.2';
+    var templates, source, loading_timers, spinner_html, error_html, host, protocol;
 
     host = window.location.hostname;
     protocol = window.location.hostname === 'library.bc.edu' ? 'https://' : 'http://';
@@ -61,7 +68,7 @@ $.fn.bcBento = function (services) {
                 success: function (data) {
                     successfulSearch(data, service, $target, $heading);
                 },
-                error: function () {
+                error: function (data) {
                     clearTimeout(loading_timers[service.name]);
                     $heading.nextAll().remove();
                     $heading.after(error_html);
@@ -100,14 +107,11 @@ $.fn.bcBento = function (services) {
     }
 
     function search(keyword) {
-        var $typeahead = $('#typeahead');
         $('#didyoumean-holder').empty();
         setTitle(keyword);
-        //$typeahead.typeahead('close');
         services.forEach(function (service) {
             callSearchService(service, keyword);
         });
-        //$typeahead.typeahead('val', keyword.replace(/\+/g, ' '));
     }
 
     function setTitle(keyword) {
@@ -115,13 +119,6 @@ $.fn.bcBento = function (services) {
         if (keyword) {
             document.title = 'Search BC Libraries for "' + truncate(40, display_keyword) + '"';
         }
-    }
-
-    function getQueryStringParam(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 
     function renderServiceResults(service) {
@@ -155,8 +152,6 @@ $.fn.bcBento = function (services) {
     templates = [];
 
     loading_timers = [];
-
-    search_string = getQueryStringParam('any');
 
     if (!!window.history && history.pushState) {
 
@@ -195,6 +190,8 @@ $(document).ready(function () {
         max_results: 8,
         postprocess: function (data) {
             var html, source;
+            data.search_string = search_string;
+            data.worldcat_search = 'https://bc.on.worldcat.org/search?databaseList=&queryString=' + search_string;
             source = $('#dym-template').html();
             html = Handlebars.compile(source)(data);
             $('#didyoumean-holder').append(html);

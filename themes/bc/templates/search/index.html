@@ -66,7 +66,7 @@
 
     </div>
     <script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
-    <script src="/theme/bcbento/js/search.js?v=20170913-01"></script>
+    <script src="/theme/bcbento/js/search.js?v=20180628-01"></script>
 
     {% raw %}
     <!-- Search result templates -->
@@ -147,11 +147,14 @@
 
     <script id="catalog-template" type="text/x-template">
 
+        {{#if total_results}}
         <div class="more-results-link">
             <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
                 {{total_results}}
                 results&hellip;&nbsp;</a>
         </div>
+        {{/if}}
+
 
         <div id="catalog-results bento-results">
 
@@ -224,19 +227,12 @@
 
         {{#if worldcat_results}}
         <div class="worldcat-results">
-            <p>The following items were found at other libraries:</p>
-            <ul>
-                {{#worldcat_results}}
-                <li>
-                    <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">
-                        {{truncate '100' name}}
-                    </a>
-
-                    <div class="creator">
-                        {{truncate '40' creator}}
-                    </div>
-                </li>
-                {{/worldcat_results}}
+            <p>There are no results in the catalog matching your search <span class="search-string">"{{search_string}}"</span>:</p>
+            <h3>Suggestions</h3>
+            <ul class="worldcat-suggestions">
+                <li><a href="{{worldcat_search}}">Try your search in WorldCat</a>.</li>
+                <li>Check the other search result boxes.</li>
+                <li>Try different keywords.</li>
             </ul>
         </div>
         {{/if}}

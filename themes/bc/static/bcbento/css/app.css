@@ -431,3 +431,21 @@ h2#faqh3 {
 #tertiary {
     margin-top: 4px;
 }
+
+#all-results .result-container ul.worldcat-suggestions li {
+    list-style: disc;
+    margin-left: 1em;
+}
+
+#all-results #primary .worldcat-results h3 {
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#all-results #primary .worldcat-results {
+    background-color: #f2f2f1;
+    padding: 1em;
+    border: 1px solid #cdcccc;
+    border-radius: 10px;
+}

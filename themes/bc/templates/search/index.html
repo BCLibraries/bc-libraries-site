@@ -225,7 +225,7 @@
             {{/items}}
         </div>
 
-        {{#if worldcat_results}}
+        {{#unless total_results}}
         <div class="worldcat-results">
             <p>There are no results in the catalog matching your search <span class="search-string">"{{search_string}}"</span>:</p>
             <h3>Suggestions</h3>
@@ -235,7 +235,7 @@
                 <li>Try different keywords.</li>
             </ul>
         </div>
-        {{/if}}
+        {{/unless}}
 
 
     </script>

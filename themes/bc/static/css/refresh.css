@@ -311,9 +311,6 @@ body {
     position: absolute;
     bottom: -45px;
 }
-.homepagerefresh .list-group.popular a.list-group-item {
-    padding: 6px 15px;
-}
 .homepagerefresh h3.list-label {
     margin: .75em 0 .5em 0;
     font-size: 14px;
@@ -321,7 +318,6 @@ body {
 
 /* news */
 .homepagerefresh #news {
-    padding-top: 2em;
     padding-bottom: 2em;
 }
 .homepagerefresh #news .more-news{

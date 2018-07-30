@@ -1,4 +1,4 @@
-Title: Summer is Around the Corner
+Title: Campus in the Summer
 Destination: https://ds.bc.edu/may-2018-oneill-library-displays/
 Date: 2018-05-15 03:01
 Expired: no

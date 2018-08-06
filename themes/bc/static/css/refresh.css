@@ -230,7 +230,7 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background: #ccc url('/theme/img/hero04.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
+    background: #ccc url('/theme/img/hero-miraspace-rollout-boston-gas.jpg') 0 0; /* CHANGE BACKGROUND SEASONALLY */
     height: 450px;
     background-size: cover;
     padding-top: 80px;
@@ -246,7 +246,7 @@ body {
     padding: 2px 10px;
     background-color: rgba(16,14,15,.85);
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 200;
 }
 .homepagerefresh .caption-link a {
@@ -608,7 +608,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding-right: 0;
     }
     .homepagerefresh #header {
-        background-position: 100% 40%;
+        background-position: 50% 40%;
     }
     .homepagerefresh #news {
         padding-bottom: 0em;
@@ -693,9 +693,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }
 
     .homepagerefresh #header {
-        background: #ccc url('/theme/img/hero04-small.jpg') 0% 100%; /* CHANGE BACKGROUND SEASONALLY */
-        background-size: cover;
-        background-position: 100%;
+        /* CHANGE BACKGROUND SEASONALLY */
+        background-image: url('/theme/img/hero-miraspace-rollout-boston-gas-small.jpg');
         height: 320px;
     }
     }

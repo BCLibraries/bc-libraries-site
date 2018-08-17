@@ -7,8 +7,10 @@ Author_firstname: Name
 Author_lastname: Surname
 Author_position: DEPT
 Second_author: <!-- ONLY USE FIRSTNAME LASTNAME (Only add if there's a second name, OTHERWISE LEAVE BLANK) -->
-Second_position:  <!-- ONLY USE IF THERE IS A 2nd AUTHOR, OTHERWISE LEAVE BLANK -->
-Youtube: url
+Second_position:  <!-- ONLY USE IF THERE IS A 3rd AUTHOR, OTHERWISE LEAVE BLANK -->
+Third_author: <!-- ONLY USE FIRSTNAME LASTNAME (Only add if there's a second name, OTHERWISE LEAVE BLANK) -->
+Third_position:  <!-- ONLY USE IF THERE IS A 3rd AUTHOR, OTHERWISE LEAVE BLANK -->
+Youtube: https://www.youtube.com/embed/CHANGE
 Sample_pages: 2018/xx/NAME-book.pdf
 ShowSample_pages: <!-- yes or no ("no" will hide link) -->
 Book_location: url

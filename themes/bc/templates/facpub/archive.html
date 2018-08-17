@@ -13,8 +13,16 @@
                     <img src="/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
                     <div class="bookinfo">
                         <p><a href="../{{ article.url }}"><em>{{ article.title }}</em></a> <br />
-                          {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}</p>
-                    </div>
+                          {{ article.by }} by {{ article.author_firstname}} {{ article.author_lastname}}
+
+                    {% if article.second_author %}
+                        &#x26; {{ article.second_author}} 
+                    {% endif %}
+
+                    {% if article.third_author %}
+                    &#x26; {{ article.third_author}} 
+                    {% endif %}
+                </p></div>
 
                 </div>
             {% endfor %}

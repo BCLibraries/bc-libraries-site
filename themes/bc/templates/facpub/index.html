@@ -45,6 +45,10 @@
                     {% if article.second_author %}
                         &#x26; {{ article.second_author}} 
                     {% endif %}
+
+                    {% if article.third_author %}
+                        &#x26; {{ article.third_author}} 
+                    {% endif %}
                 </div>
 
                 <div class="video-container">
@@ -72,6 +76,10 @@
                         {% if article.second_author %}
                             <p><strong>{{ article.second_author }}</strong> <br />
                                 <em>{{ article.second_position }}</em></p>
+                         {% endif %}
+                        {% if article.third_author %}
+                            <p><strong>{{ article.third_author }}</strong> <br />
+                                <em>{{ article.third_position }}</em></p>
                          {% endif %}
                     </div>
 

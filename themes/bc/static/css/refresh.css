@@ -230,7 +230,7 @@ body {
 
 /* header */
 .homepagerefresh #header {
-    background: #ccc url('/theme/img/hero-miraspace-rollout-boston-gas.jpg') 0 0; /* CHANGE BACKGROUND SEASONALLY */
+    background: #ccc url('/theme/img/hero01.jpg') 0 40%; /* CHANGE BACKGROUND SEASONALLY */
     height: 450px;
     background-size: cover;
     padding-top: 80px;
@@ -461,7 +461,7 @@ body {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url(/theme/img/specialcollectionsbg-japaneseprint-winter.jpg) no-repeat 50% 5% #101010;
+    background: url(/theme/img/specialcollectionsbg-sports.jpg) no-repeat 50% 5% #101010;
     background-size: auto auto;
     color: #fff;
     padding: 55px 0;
@@ -608,7 +608,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding-right: 0;
     }
     .homepagerefresh #header {
-        background-position: 50% 40%;
+        background-position: 100% 40%;
     }
     .homepagerefresh #news {
         padding-bottom: 0em;
@@ -694,10 +694,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
     .homepagerefresh #header {
         /* CHANGE BACKGROUND SEASONALLY */
-        background-image: url('/theme/img/hero-miraspace-rollout-boston-gas-small.jpg');
-        height: 320px;
+        background-image: url('/theme/img/hero01-small.jpg');
+        height: 322px;
     }
-    }
+}
 
 /* Specific to the bc-lib header */
 @media (max-width: 600px) {

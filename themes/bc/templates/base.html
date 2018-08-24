@@ -161,9 +161,7 @@
                 var myPane = $(this).html();
                 ga('send', 'event', 'librarypanes', 'hover', myPane);
             });
-            $("#bclib-header-form .input-group-btn button").click(function(){
-                ga('send', 'event', 'bc-searchbutton', 'click');
-            });
+            // send 'outbound' event for all link clicks
             $("a").not('.search-link').click(function(e) {
                 if (!ga.q) {
                     var url = $(this).attr("href");
@@ -179,6 +177,39 @@
                     }
                     e.preventDefault();
                 }
+            });
+            // send 'homepage' event for all link clicks and include sections
+            $("a").not(".carousel-control").click(function(e){
+                var url = $(this).attr("href");
+                var dataTag = $(this).parents("[data-tag=ga-tag]");
+                var dataID = "-";
+                if (dataTag && dataTag.length) {
+                    dataID = dataTag.attr("id");
+                    if (typeof dataID === 'undefined') {
+                        dataID = "-"
+                    }
+                }
+                ga('send', 'event', 'homepage', dataID, url);
+            });
+            // send 'exhibits-nav' event for carosel nav clicks
+            $("a.carousel-control").click(function(e){
+                var nav = $(this).attr("data-slide");
+                if (typeof nav === "undefined") {
+                    nav = "-";
+                }
+                ga('send', 'event', 'exhibits-nav', 'click', nav);
+            });
+            $("ol.carousel-indicators li").click(function(e){
+                var slide = $(this).attr("data-slide-to");
+                if (typeof slide === "undefined") {
+                    slide = "-";
+                }
+                ga('send', 'event', 'exhibits-nav', 'click', 'indicator', slide);
+            });
+            // send 'story-nav' event for story selector clicks
+            $("#storybox .story-selectors img.selector").click(function(e){
+                var src = $(this).attr("src");
+                ga('send', 'event', 'story-nav', 'click', src);
             });
         });
         // Initialize bootstrap popover

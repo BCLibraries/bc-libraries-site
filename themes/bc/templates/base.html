@@ -161,6 +161,9 @@
                 var myPane = $(this).html();
                 ga('send', 'event', 'librarypanes', 'hover', myPane);
             });
+            //
+            // HOMEPAGE only GA event triggers
+            //
             // send 'outbound' event for all link clicks
             $("a").not('.search-link').click(function(e) {
                 if (!ga.q) {
@@ -179,8 +182,9 @@
                 }
             });
             // send 'homepage' event for all link clicks and include sections
-            $("a").not(".carousel-control").click(function(e){
-                var url = $(this).attr("href");
+            // ignore news carousel and mega menu top-level links
+            $("a").not(".carousel-control, li.dropdown > a.menu-option").click(function(e){
+                var url = $(this).attr("href");                
                 var dataTag = $(this).parents("[data-tag=ga-tag]");
                 var dataID = "-";
                 if (dataTag && dataTag.length) {
@@ -192,6 +196,7 @@
                 ga('send', 'event', 'homepage', dataID, url);
             });
             // send 'exhibits-nav' event for carosel nav clicks
+            // -   left and right nav buttons
             $("a.carousel-control").click(function(e){
                 var nav = $(this).attr("data-slide");
                 if (typeof nav === "undefined") {
@@ -199,6 +204,7 @@
                 }
                 ga('send', 'event', 'exhibits-nav', 'click', nav);
             });
+            // -   dot indicators
             $("ol.carousel-indicators li").click(function(e){
                 var slide = $(this).attr("data-slide-to");
                 if (typeof slide === "undefined") {

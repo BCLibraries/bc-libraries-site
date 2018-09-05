@@ -231,6 +231,10 @@
         <a id="close">[close]</a>
     </div>-->
 
+    {% if LOCAL_BUILD == True or JENKINS_BUILD == True %}
+        {% include 'build-header.html' %}
+    {% endif %}
+
     <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
 
     {# modular bc maroon header #}

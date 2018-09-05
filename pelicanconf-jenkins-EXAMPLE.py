@@ -158,7 +158,7 @@ JINJA_FILTERS = {
 
 # Custom build variables
 LOCAL_BUILD = False
-JENKINS_BUILD = False
+JENKINS_BUILD = True
 GITHUB_URL = "https://github.com/BCLibraries/bc-libraries-site"
 JENKINS_URL = "http://localhost:8080"
 JENKINS_JOB_NAME = "jobname"

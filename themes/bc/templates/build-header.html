@@ -1,0 +1,19 @@
+<style>
+	#build-header {padding: 3px 10px; text-align: right;}
+	ul#jenkins-list {list-style-type: none; margin: 0; padding: 0;}
+	ul#jenkins-list li {display: inline; list-style-type: none; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ccc;}
+	ul#jenkins-list li:last-child {padding-right: 0; margin-right: 10px; border: none;}
+</style>
+
+<div id="build-header">
+	{% if JENKINS_BUILD == True %}
+		<ul id="jenkins-list">
+			<li><span class="build-label">Build Time</span>: <code>222222</code></li>
+			<li><span class="build-label">Build number</span>: <code>111111</code></li>
+			<li><span class="build-label">Branch</span>: <a href="{{ GITHUB_URL }}">master</a></li>
+			<li><a href="{{ JENKINS_URL }}/job/{{ JENKINS_JOB_NAME }}" target="_blank">Jenkins</a></li>
+		</ul>
+  	{% elif LOCAL_BUILD == True %}
+  		<div>Local build</div>
+    {% endif %}
+</div>

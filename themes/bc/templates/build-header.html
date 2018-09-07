@@ -8,10 +8,10 @@
 <div id="build-header">
 	{% if JENKINS_BUILD == True %}
 		<ul id="jenkins-list">
-			<li><span class="build-label">Build Time</span>: <code>222222</code></li>
-			<li><span class="build-label">Build number</span>: <code>111111</code></li>
-			<li><span class="build-label">Branch</span>: <a href="{{ GITHUB_URL }}">master</a></li>
-			<li><a href="{{ JENKINS_URL }}/job/{{ JENKINS_JOB_NAME }}" target="_blank">Jenkins</a></li>
+			<li><span class="build-label">Build Time</span>: <code>JENKINS_BUILD_TIME</code></li>
+			<li><span class="build-label">Build number</span>: <code>JENKINS_BUILD_NUMBER</code></li>
+			<li><span class="build-label">Branch</span>: <a href="{{ GITHUB_URL }}/tree/GITHUB_BRANCH_NAME">GITHUB_BRANCH_NAME</a></li>
+			<li><a href="{{ JENKINS_URL }}/job/{{ JENKINS_JOB_NAME }}/JENKINS_BUILD_NUMBER" target="_blank">Jenkins</a></li>
 		</ul>
   	{% elif LOCAL_BUILD == True %}
   		<div>Local build</div>

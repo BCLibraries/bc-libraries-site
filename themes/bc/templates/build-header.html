@@ -1,5 +1,6 @@
 <style>
 	#build-header {padding: 3px 10px; text-align: right;}
+	#build-header code {background-color:inherit; color: inherit;}
 	ul#jenkins-list {list-style-type: none; margin: 0; padding: 0;}
 	ul#jenkins-list li {display: inline; list-style-type: none; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ccc;}
 	ul#jenkins-list li:last-child {padding-right: 0; margin-right: 10px; border: none;}
@@ -10,8 +11,9 @@
 		<ul id="jenkins-list">
 			<li><span class="build-label">Build Time</span>: <code>JENKINS_BUILD_TIME</code></li>
 			<li><span class="build-label">Build number</span>: <code>JENKINS_BUILD_NUMBER</code></li>
-			<li><span class="build-label">Branch</span>: <a href="{{ GITHUB_URL }}/tree/GITHUB_BRANCH_NAME">GITHUB_BRANCH_NAME</a></li>
-			<li><a href="{{ JENKINS_URL }}/job/{{ JENKINS_JOB_NAME }}/JENKINS_BUILD_NUMBER" target="_blank">Jenkins</a></li>
+			<li><span class="build-label">Git Branch</span>: <a href="JENKINS_GIT_URL/tree/JENKINS_GIT_BRANCH_SHORT" target="_blank">JENKINS_GIT_BRANCH_SHORT</a></li>
+			<li><span class="build-label">Git Commit</span>: <a href="JENKINS_GIT_URL/commit/JENKINS_GIT_COMMIT" target="_blank">JENKINS_GIT_COMMIT_SHORT</a></li>
+			<li><a href="JENKINS_URL/job/JENKINS_JOB_NAME/JENKINS_BUILD_NUMBER" target="_blank">Jenkins</a></li>
 		</ul>
   	{% elif LOCAL_BUILD == True %}
   		<div>Local build</div>

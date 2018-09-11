@@ -5,8 +5,8 @@ Subtitle: Events and Traditions at Boston College
 Sponsor: 
 Location: bapst
 Tags: exhibit
-Slug: viewpoints
-Image: 2018/05-viewpoints_poster.png
+Slug: save-the-date
+Image: 2018/09-save.png
 Image_thumb: 2018/09-save-thumb.jpg
 Image_alt: Exhibit poster reads the same as the page
 Active: yes

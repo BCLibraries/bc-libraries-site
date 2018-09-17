@@ -29,12 +29,16 @@
 <div id="main-body" class="container">
     <div id="didyoumean-holder" class="row"></div>
 
-    <div id="bentoboxresults">
+    <div id="askus-container" class="">
+        <div>Not finding what you need? <a href="https://libguides.bc.edu/ask-a-librarian">Ask us!</a></div>
+    </div>
+
+    <div id="bentoboxresults" class="">
 
         <div class="row" id="all-results">
 
             <!-- The primary results box. -->
-            <div id="primary" class="col-md-5">
+            <div id="primary" class="col-md-5 col-sm-12">
                 <div id="catalog-results" class="result-container">
                     <span class="results-count accessibility-text" aria-live="polite"></span>
                     <h2 id="booksh3" class="search-heading">Books &amp; media</h2>
@@ -42,7 +46,7 @@
             </div>
 
             <!-- Secondary results box. -->
-            <div id="secondary" class="col-md-4">
+            <div id="secondary" class="col-md-4 col-sm-12">
                 <div id="articles-results" class="result-container">
                     <span class="results-count accessibility-text" aria-live="polite"></span>
                     <h2 id="articleh3" class="search-heading">Articles</h2>
@@ -50,7 +54,7 @@
             </div>
 
             <!-- Tertiary results box.-->
-            <div id="tertiary" class="col-md-3 row">
+            <div id="tertiary" class="col-md-3 col-sm-12">
                 <div id="faq-results" class="result-container faq">
                     <span class="search-heading"></span>
                 </div>
@@ -156,15 +160,13 @@
         {{/if}}
 
 
-        <div id="catalog-results bento-results">
-
+        <div id="catalog-results" class="bento-results">
             {{#items}}
-            <div>
+            <div class="bento-results-item media">
 
-                <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result">
+                <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result media-body">
 
-
-                    <h3>
+                    <h3 class="media-heading">
                         <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
                             {{truncate '100' title}}
                         </a>
@@ -218,7 +220,9 @@
                 </div>
 
                 {{#if covers.[0]}}
-                <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
+                <div class="media-right">
+                    <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
+                </div>
                 {{/if}}
 
             </div>
@@ -247,22 +251,23 @@
                 results&hellip;&nbsp;</a>
         </div>
 
-        <div>
+        <div id="article-results" class="bento-results">
             {{#items}}
-            <div class="bento-result">
+            <div class="bento-results-item media">
+                <div class="media-body">
+                    <h3 class="media-heading">
+                        <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                            {{truncate '100' title}}
+                        </a>
+                    </h3>
 
-                <h3>
-                    <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
-                        {{truncate '100' title}}
-                    </a>
-                </h3>
+                    {{date}}
 
-                {{date}}
-
-                {{#if creator}}
-                <div class="creator">{{truncate '80' creator}}</div>
-                {{/if}}
-                <div class="publisher">{{{part_of}}}</div>
+                    {{#if creator}}
+                    <div class="creator">{{truncate '80' creator}}</div>
+                    {{/if}}
+                    <div class="publisher">{{{part_of}}}</div>
+                </div>
             </div>
             {{/items}}
         </div>

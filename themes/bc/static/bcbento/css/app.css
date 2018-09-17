@@ -1,6 +1,6 @@
-#all-results #primary, #all-results #secondary {
+/*#all-results #primary, #all-results #secondary {
     padding-right: 3em;
-}
+}*/
 
 /** Accessible hide class. **/
 #all-results .hidden {
@@ -87,6 +87,9 @@
 /** End typeahead stuff **/
 
 /** Start results stuff **/
+#all-results {
+    padding-top: 0;
+}
 
 #all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
     display: inline-block;
@@ -168,15 +171,15 @@
 /** Covers **/
 
 #all-results .cover-image {
-    width: 20%;
+    /*width: 20%;
     float: left;
-    padding-top: 1.5em
+    padding-top: 1.5em*/
 }
 
 #all-results .catalog-text.has-cover {
-    width: 80%;
+    /*width: 80%;
     float: left;
-    padding-right: 1em
+    padding-right: 1em*/
 }
 
 /** end covers **/
@@ -308,7 +311,7 @@
 
 div#didyoumean-holder {
     text-align: center;
-    height: 3em;
+    /*height: 3em;*/
 }
 
 .bento-result {
@@ -318,6 +321,7 @@ div#didyoumean-holder {
 
 #bentoboxresults {
     min-height: 500px;
+    padding-top: 0;
 }
 
 #bentoboxresults h2 {
@@ -448,4 +452,29 @@ h2#faqh3 {
     padding: 1em;
     border: 1px solid #cdcccc;
     border-radius: 10px;
+}
+
+#askus-container {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1rem 0 2.5rem 0;
+}
+
+#bentoboxresults .bento-results {
+    margin-bottom: 5rem;
+}
+
+#bentoboxresults .bento-results-item.media {
+    border-top: 1px solid #ddd;
+    margin: 1rem 1.25rem 1rem 0;
+    padding: 2rem 0 1rem 0; 
+}
+
+#bentoboxresults #secondary .bento-results-item.media {
+    margin: 1rem 0 1rem 0rem;
+}
+
+#bentoboxresults .bento-results-item.media img {
+    max-width: 120px;
 }

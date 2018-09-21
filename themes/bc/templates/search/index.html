@@ -27,7 +27,7 @@
 {% include 'homepage/header.html' %}
 
 <div id="main-body" class="container">
-    <div id="didyoumean-holder" class="row"></div>
+    <!--div id="didyoumean-holder" class="row"></div-->
 
     <div id="askus-container" class="">
         <div>Not finding what you need? <a href="https://libguides.bc.edu/ask-a-librarian">Ask us!</a></div>
@@ -75,33 +75,39 @@
     {% raw %}
     <!-- Search result templates -->
     <script id="librarians-template" type="text/x-template">
-        {{#if .}}
         <h2 id="librarianh3" class="search-heading">Librarians</h2>
+        
+        {{#if .}}
         <div class="results-highlight">
             {{#.}}
-            <div class="librarian">
-                <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
+            <div class="media">
+                <div class="media-left">
+                    <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
+                </div>
 
-                <div class="librarian-info">
-                    <h3 class="librarian-name">
+                <div class="media-body">
+                    <h4 class="media-heading">
                         <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a>
-                    </h3>
+                    </h4>
                     <p class="guide-description">{{display_subjects}}</p>
                 </div>
             </div>
             {{/.}}
+            <p class="all-librarians">
+                <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
+                    all subject librarians</a>
+            </p>
         </div>
-        <p class="all-librarians">
-            <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
-                all subject librarians</a>
-        </p>
+        {{else}}
+        <div class="no-results-found">
+            <a href="http://libguides.bc.edu/ask-a-librarian/contact">See all subject librarians</a>.
+        </div>
         {{/if}}
     </script>
 
-
     <script id="faq-template" type="text/x-template">
-        {{#if items}}
         <h2 id="faqh3" class="search-heading">Frequently asked questions</h2>
+        {{#if items}}
         <div class="results-highlight">
             <ul>
                 {{#items}}
@@ -115,14 +121,18 @@
             <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
                 {{total_results}} results&hellip;&nbsp;</a>
         </div>
+        {{else}}
+        <div class="no-results-found">
+            <div>No results found.</div>
+            <p><a href="http://answers.bc.edu/">Browse all FAQs</a></p>
+        </div>
         {{/if}}
     </script>
 
     <script id="website-template" type="text/x-template">
-        {{#if items}}
         <h2 id="subjecth3" class="search-heading">Website</h2>
+        {{#if items}}
         <div class="results-highlight">
-
             <div>
                 {{#items}}
                 <div class="bento-result">
@@ -144,6 +154,10 @@
         </div>
         <div class="more-results-link">
             <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see more results&hellip;&nbsp;</a>
+        </div>
+        {{else}}
+        <div class="no-results-found">
+            No results found.
         </div>
         {{/if}}
 

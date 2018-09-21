@@ -128,7 +128,7 @@
 }
 
 .librarians img {
-    max-width: 100%
+    max-width: 100px;
 }
 
 .librarian-info p {
@@ -343,6 +343,10 @@ div#didyoumean-holder {
     margin-bottom: 1rem;
 }
 
+#librarians-results .librarian p {
+    margin-top: 1em;
+}
+
 #librarians-results .librarian > a {
     display: block;
     float: left;
@@ -419,21 +423,41 @@ div#website-results {
 }
 
 h2#faqh3 {
-    margin-top: 0;
+    /*margin-top: 0;*/
 }
 
-#tertiary .more-results-link {
+#tertiary .more-results-link,
+#tertiary .no-results-found {
     padding-left: 1em;
     margin-top: .5em;
     margin-bottom: 2em;
 }
+#tertiary .no-results-found {
+    padding-left: 0;
+    margin-bottom: 4em;
+}
 
 #tertiary h2 {
-    margin-top: 0;
+    /*margin-top: 0;*/
+    padding-bottom:10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tertiary h2#faqh3 {
+    padding-bottom:20px;
+}
+
+@media ( max-width: 991px ) {
+    #tertiary h2#faqh3 {
+        padding-bottom:10px;
+    }
+    .librarians img {
+        max-width: 150px;
+    }
 }
 
 #tertiary {
-    margin-top: 4px;
+    /*margin-top: 4px;*/
 }
 
 #all-results .result-container ul.worldcat-suggestions li {
@@ -458,7 +482,7 @@ h2#faqh3 {
     text-align: right;
     font-size: 16px;
     font-weight: 600;
-    margin: 1rem 0 2.5rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 #bentoboxresults .bento-results {

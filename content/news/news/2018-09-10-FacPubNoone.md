@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jul/noone-listening/
 Date: 2018-09-10 01:01 
 Tags: news, tags 
 Slug: news-facpub-noone
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: A photo of Professor Noone during their interview
 Image_thumb: 2018-09/noone-thumb.png

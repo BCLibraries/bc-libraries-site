@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/May/michalczyk-law/
 Date: 2018-09-18 01:01 
 Tags: news, tags 
 Slug: facpub-michalczyk
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Michalczyk during his interview
 Image_thumb: 2018-09/mich-thumb.png

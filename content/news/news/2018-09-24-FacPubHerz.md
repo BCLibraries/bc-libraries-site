@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jul/herz-eat/
 Date: 2018-09-24 01:01 
 Tags: news, tags 
 Slug: facpub-herz
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Herz during her interview
 Image_thumb: 2018-09/herz-thumb.png

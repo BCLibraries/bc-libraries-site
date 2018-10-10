@@ -1,5 +1,5 @@
 Title: Dog of the Month
-Destination: https://libguides.bc.edu/dog-of-the-month
+Destination: https://libguides.bc.edu/dog-of-the-month/
 Date: 2018-03-14 02:01
 Expired: yes
 Slug: dog-of-the-month

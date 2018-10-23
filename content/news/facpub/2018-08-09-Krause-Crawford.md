@@ -15,7 +15,7 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldispl
 ShowBook_location: yes
 Bookcover: 2018/08/krause-cover.png
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 From the rising significance of non-state actors to the increasing influence of regional powers, the nature and conduct of international politics has arguably changed dramatically since the height of the Cold War. Yet much of the literature on deterrence and compellence continues to draw (whether implicitly or explicitly) upon assumptions and precepts formulated in-and predicated upon-politics in a state-centric, bipolar world.   
 

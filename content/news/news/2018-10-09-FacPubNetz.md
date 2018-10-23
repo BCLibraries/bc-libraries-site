@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Jul/netzer-coptic/
 Date: 2018-10-09 01:02
 Tags: news, tags 
 Slug: facpub-netzler
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Netzer during her interview
 Image_thumb: 2018-10/netz-thumb.png

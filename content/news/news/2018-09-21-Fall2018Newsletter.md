@@ -6,6 +6,6 @@ Slug: fall2018-newsletter
 Expired: no
 ShowText: yes
 Image_alt: Boston College Libraries Newsletter
-Image_thumb: 2017-03/newsletter-thumbs.png
+Image_thumb: 2017-09/newsletter-thumb.png
 
 All this and more in the Boston College Libraries Newsletter!

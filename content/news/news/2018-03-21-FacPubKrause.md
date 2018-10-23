@@ -2,7 +2,7 @@ Title: Faculty Publication Highlight:  Peter Krause
 Destination: https://library.bc.edu/facpub/2018/Mar/krause-rebel/
 Date: 2018-03-21 01:01 
 Tags: news, tags 
-Slug: facpub-krause
+Slug: facpub-krause-01
 Expired: yes
 ShowText: yes
 Image_alt: Professor Krause during his interview

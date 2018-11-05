@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Aug/krause-crawford/
 Date: 2018-10-23 01:02
 Tags: news, tags 
 Slug: facpub-krause
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Krause during his interview
 Image_thumb: 2018-10/krause-thumb.png

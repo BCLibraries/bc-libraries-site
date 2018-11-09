@@ -9,7 +9,7 @@ Slug: stop-making-sense
 Image: 2018/01-sense-poster.png
 Image_thumb: 2018/01-sense-thumb.png
 Image_alt: Stop Making Sense sketchy painting
-Active: yes
+Active: no
 Style: right
 
 

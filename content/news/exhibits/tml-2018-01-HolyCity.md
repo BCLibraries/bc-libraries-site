@@ -9,7 +9,7 @@ Slug: holy-city-art-love
 Image: 2018/01-holy-poster.png
 Image_thumb: 2018/01-holy-thumb.png
 Image_alt: exhibit poster
-Active: yes
+Active: no
 Style: right
 
 <em>The Holy City: Art of Love, Unity & Resurrection</em> presents an historic exhibition of original works by the Passages Artists Collective.  Scheduled to coincide with African-American History Month and the <a href="http://www.agnt.org/season-for-nonviolence" target="_blank">Season of Non Violence</a>, this exhibit features a selection of quilts included in a multi-media exhibit that opened in May of 2016 in Charleston, South Carolina.  

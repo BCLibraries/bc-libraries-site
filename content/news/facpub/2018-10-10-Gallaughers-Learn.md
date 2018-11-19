@@ -17,6 +17,6 @@ Book_location: #
 ShowBook_location: no
 Bookcover: 2018/10/gallaughers-cover.png
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 <em>Learn to Program using Swift for iOS Development</em> breaks down the learning barriers for app creation with a hands-on, video-centered approach. <em>Learn to Program Using Swift for iOS Development</em> is intended to excite new-to-programming students and will have them building fully functional apps by mid-semester. Students will gain an introduction to core programming and iOS concepts and should find the video-centered approach especially useful, since all videos can be replayed and reviewed at any time. Learning "scaffolding" surrounds videos, offering a written summary of most concepts covered in videos and providing a helpful reference to return to when building new apps. 

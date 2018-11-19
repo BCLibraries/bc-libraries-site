@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Aug/technology-and-engagement/
 Date: 2018-11-05 01:02
 Tags: news, tags 
 Slug: facpub-rowan
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Rowan during her interview
 Image_thumb: 2018-11/rowan-thumb.png

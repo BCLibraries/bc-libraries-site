@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Oct/gallaugher-learn/
 Date: 2018-11-19 01:02
 Tags: news, tags 
 Slug: facpub-gallaugher
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Gallaugher during his interview
 Image_thumb: 2018-11/gall-thumb.png

@@ -17,7 +17,7 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldispl
 ShowBook_location: yes
 Bookcover: 2018/10/pineda-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 <em>The Holy Spirit</em> helps readers grow in awareness of the Holy Spirit's presence and movement in their lives. Each author is a faculty member of Boston College's School of Theology and Ministry and offers a reflection on the Holy Spirit in light of their own particular expertise and grounded in the discipline and/or field of their study (Scripture; systematic theology; pastoral ministry; ethics; spirituality, among others). The book is organized in three parts: the first attends to how we become of aware of the Holy Spirit's active and constant presence in our lives; the second considers how the tradition has identified the Holy Spirit's movement among us; and the third explores various ways in which we have responded to the Holy Spirit.  
 

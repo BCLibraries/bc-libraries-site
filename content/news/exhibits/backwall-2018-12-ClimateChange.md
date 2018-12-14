@@ -7,7 +7,7 @@ Location: backwall
 Tags: exhibit
 Slug: climate-change-humanities
 Image: 2018/12-climate-poster.png
-Image_thumb: 2018/12-climate-thumb.png
+Image_thumb: 2018/12-climate-thumb.jpg
 Image_alt: A view of the Earth from the moon
 Active: yes
 Style: right

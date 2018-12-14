@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/exhibits/2018/Nov/iew-f18/
 Date: 2018-11-09 01:01 
 Tags: news, tags 
 Slug: exhibit-iew-f18
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: exhibit poster
 Image_thumb: 2018-11/iew-thumb.png

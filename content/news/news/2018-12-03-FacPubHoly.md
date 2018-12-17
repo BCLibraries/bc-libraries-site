@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Oct/holy-spirit-bctm/
 Date: 2018-12-03 01:02
 Tags: news, tags 
 Slug: facpub-holy-spirit-setting
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Gallaugher during his interview
 Image_thumb: 2018-12/hss-thumb.png

@@ -1,1 +1,1 @@
-This is the new Boston College Libraries Web site, created with [Pelican](https://github.com/getpelican/pelican).
+This is the [Boston College Libraries](https://library.bc.edu) Web site, created with [Pelican](https://github.com/getpelican/pelican).

@@ -76,7 +76,7 @@
     <!-- Search result templates -->
     <script id="librarians-template" type="text/x-template">
         <h2 id="librarianh3" class="search-heading">Librarians</h2>
-        
+
         {{#if .}}
         <div class="results-highlight">
             {{#.}}
@@ -215,12 +215,15 @@
                         <ul class="available-items">
                             {{#avail}}
                             <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
-                                <span class="library">{{lib_display}}</span>
-                                {{#if in_library_only }}
-                                <span class="location">{{full/location}}</span>
-                                {{/if}}
-                                <span class="callno">{{call_number}}</span>
-                                <span class="availability">{{availability}}</span>
+                                <a href="{{../link}}" class="avail-link" onclick="trackOutboundLink('{{../link}}')">
+                                    {{#if on_shelf}}
+                                    <span class="library">Find in {{lib_display}}</span>
+                                    <span class="location">{{loc_display}}</span>
+                                    <span class="callno">({{call_number}})</span>
+                                    {{else}}
+                                    Not available. Check for more options.
+                                    {{/if}}
+                                </a>
                             </li>
                             {{/avail}}
                         </ul>
@@ -245,7 +248,8 @@
 
         {{#unless total_results}}
         <div class="worldcat-results">
-            <p>There are no results in the catalog matching your search <span class="search-string">"{{search_string}}"</span>:</p>
+            <p>There are no results in the catalog matching your search
+                <span class="search-string">"{{search_string}}"</span>:</p>
             <h3>Suggestions</h3>
             <ul class="worldcat-suggestions">
                 <li>Check the other search results.</li>

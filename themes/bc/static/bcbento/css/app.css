@@ -289,12 +289,12 @@
     content: '✓';
     font-weight: bold;
     font-size: 16px;
-    color: #00cc00;
+    color: #0f7d00;
 }
 
 #all-results .result-container ul li.item-info.unavailable:before {
     content: '✗';
-    color: #990000;
+    color: inherit;
 }
 
 #all-results .result-container ul li.item-info.unavailable {
@@ -501,4 +501,23 @@ h2#faqh3 {
 
 #bentoboxresults .bento-results-item.media img {
     max-width: 120px;
+}
+
+.avail-link, .avail-link:hover {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 14px;
+}
+
+.available-online a, .available-online a:hover {
+    font-size: 14px;
+}
+
+.avail-link span.library {
+    color: #0f7d00;
+    margin-right: .25em;
+}
+
+.avail-link .callno, .avail-link .location {
+    color: #204375
 }

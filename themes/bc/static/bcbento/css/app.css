@@ -509,6 +509,10 @@ h2#faqh3 {
     font-size: 14px;
 }
 
+.available-online a, .available-online a:hover {
+    font-size: 14px;
+}
+
 .avail-link span.library {
     color: #0f7d00;
     margin-right: .25em;

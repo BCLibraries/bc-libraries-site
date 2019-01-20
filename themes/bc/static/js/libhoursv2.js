@@ -47,7 +47,7 @@ $(document).ready(function(){
     // call to the hours api
     $.ajax({
         type: "GET",
-        url: "//api3.libcal.com/api_hours_today.php?iid=609&lid=0&format=json",
+        url: "//api3.libcal.com/api_hours_today.php?iid=609&lid=0&format=json&system_time=0",
         jsonp: "callback",
         dataType: "jsonp",
         cache: true,

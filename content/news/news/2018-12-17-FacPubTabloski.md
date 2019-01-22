@@ -1,6 +1,6 @@
 Title: Faculty Publication Highlight: Patricia A. Tabloski and Joanne Evans 
 Destination: https://library.bc.edu/facpub/2018/Oct/tabloski-redefining/
-Date: 2018-12-17 01:02
+Date: 2018-12-17 01:09
 Tags: news, tags 
 Slug: facpub-tabloski-redefining-retirement
 Expired: yes

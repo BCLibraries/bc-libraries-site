@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2018/Oct/tabloski-redefining/
 Date: 2018-12-17 01:02
 Tags: news, tags 
 Slug: facpub-tabloski-redefining-retirement
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Tabloski during her interview
 Image_thumb: 2018-12/tab-thumb.png

@@ -9,7 +9,7 @@ Slug: save-the-date
 Image: 2018/09-save.png
 Image_thumb: 2018/09-save-thumb.jpg
 Image_alt: Exhibit poster reads the same as the page
-Active: yes
+Active: no
 Style: right
 
 Every year at Boston College includes waypoints—annual events that anchor the academic and social seasons of the year. 

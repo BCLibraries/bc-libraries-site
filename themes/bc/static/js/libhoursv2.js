@@ -38,6 +38,11 @@ $(document).ready(function(){
                         //console.log("adding font-small class to output");
                         rendered = "<span class='font-small'>" + rendered + "</span>";
                     }
+
+                    if (loc.name == "O'Neill Library" && loc.rendered.includes('*')) {
+                        $('.onl-asterisk-notice').show();
+                    }
+
                     $(libs2[name]).html(rendered);
                 }
             });

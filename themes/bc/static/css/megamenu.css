@@ -252,6 +252,12 @@
 .homepagerefresh #megamenu-refresh .hours-todays-date {
     font-weight: 600;
 }
+
+.homepagerefresh #megamenu-refresh .onl-asterisk-notice {
+    display: none
+}
+
+
 .homepagerefresh .menu_list, .ask_list {
     list-style: none outside none;
     padding: 0px;

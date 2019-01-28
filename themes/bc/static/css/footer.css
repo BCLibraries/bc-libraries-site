@@ -43,6 +43,12 @@
 .homepagerefresh #lib-footer .hours-wrap {
     float: left;
 }
+
+.homepagerefresh #lib-footer .onl-asterisk-notice {
+    font-size: 12px;
+    display: none
+}
+
 .homepagerefresh #lib-footer .social-wrap {
     float: right;
 }

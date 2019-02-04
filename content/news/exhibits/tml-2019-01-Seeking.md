@@ -9,7 +9,7 @@ Slug: seeking-shelter
 Image: 2019/01-seek-poster.png
 Image_thumb: 2019/01-seek-thumb.png
 Image_alt: Father Berrigan flashes the peace sign at his arrest in Baltimore, 1968. Photo by Bob Fitch
-Active: no
+Active: yes
 Style: right
 
 <strong>Exhibit launch and opening reception:</strong><br/> February 4th, 2019, 4:00pm - 6:00pm (<em>snow date February 6th</em>)

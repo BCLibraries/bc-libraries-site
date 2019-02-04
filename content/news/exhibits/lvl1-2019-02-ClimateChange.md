@@ -6,8 +6,8 @@ Sponsor: Sponsored by the Boston College Libraries
 Location: lvl1
 Tags: exhibit
 Slug: climate-change-humanities
-Image: 2018/12-climate-poster.jpg
-Image_thumb: 2018/12-climate-thumb.png
+Image: 2019/02-climate-poster.jpg
+Image_thumb: 2019/02-climate-thumb.png
 Image_alt: A view of the Earth from the moon
 Active: yes
 Style: right

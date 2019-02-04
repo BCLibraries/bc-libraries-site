@@ -9,7 +9,7 @@ Slug: genius-genre
 Image: 2019/02-genius-poster.png
 Image_thumb: 2019/02-genius-thumb.png
 Image_alt: Cover of book The Third Policeman
-Active: no
+Active: yes
 Style: middle_top
 
 Flann the novelist. Myles the columnist. Brother Barnabas the student. Brian O’Nolan (1911-1966) wrote in many genres under many guises, in both English and Irish, confounding contemporaries with his incomparable genius and satirical wit.

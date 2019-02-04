@@ -58,6 +58,45 @@
             <div class="right">
                 <h3>Exhibits</h3>
 
+<!-- 2019 files-->
+        <ul>
+                <div class="holdhead">
+                    <h4>2019</h4>
+                </div>
+
+                {% if articles %}
+                    {% set count = 0 %}
+                    {% for article in articles if article.category.name == "exhibits" and article.location == "burns" %}
+                       
+                        {% if article.date|strftime('%Y') == "2019" %}
+                        
+                            {% set count = count + 1 %}
+                            {% if count < 100 %}  
+
+                                {% if article.location == "burns" %}
+
+                                    <li class="holder">
+
+                                        <div class="frame">
+                                            <a href="../../{{ article.url }}">
+                                            <img src="/theme/img/exhibits/burns/{{ article.image_thumb}}" alt="{{ article.image_alt }}">
+                                            
+                                            <div class="info">
+                                                <p class="date">{{ article.date_range }}</p>
+                                                <p class="title">{{ article.title }}</p>
+                                            </div>   
+                                            </a>   
+                                        </div>                       
+
+                                    </li>
+                                {% endif %}                        
+                            {% endif %}
+                        {% endif %}              
+                    {% endfor %}
+                {% endif %}
+
+        </ul>
+
     <!-- 2018 files-->
         <ul>
                 <div class="holdhead">

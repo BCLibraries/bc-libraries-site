@@ -2,7 +2,7 @@ Date: 2019-02-04 01:00
 Date_range: February 11 - March 29, 2019
 Title: Voices of '68
 Subtitle: 
-Sponsor: Sponsored by the Boston College Libraries, the Boston College Institute for the Liberal Arts, the Northern Ireland Bureau, the Boston College History Department, and Boston College African and African Diaspora Studies Program
+Sponsor: Sponsored by the Boston College Libraries, the Boston College Institute for the Liberal Arts, the Northern Ireland Bureau, the Boston College Irish Institute, the Boston College History Department, and Boston College African and African Diaspora Studies
 Location: backwall
 Tags: exhibit
 Slug: voices-of-68
@@ -20,7 +20,7 @@ Richard Cushnie, Deputy Director/First Secretary of the Northern Ireland Bureau 
 
 The exhibition is a collaborative project between National Museums NI and Dr. Chris Reynolds from Nottingham Trent University. The project includes filmed testimonies capturing the personal accounts of the 1968 events.  Other elements of the project include educational resources and a series of extended videos that allow visitors to explore this seminal moment in Northern Ireland's recent history.
 
-The BC installation and panel discussion are co-sponsored by the Boston College Libraries, the Boston College Institute for the Liberal Arts, the Northern Ireland Bureau, the Boston College History Department, and Boston College African and African Diaspora Studies Program.
+The BC installation and panel discussion are co-sponsored by the Boston College Libraries, the Boston College Institute for the Liberal Arts, the Northern Ireland Bureau, the Boston College Irish Institute, the Boston College History Department, and Boston College African and African Diaspora Studies.
 
 Karen Logan, Project Curator at National Museums NI comments - "Voices of '68 has been a significant collaboration dedicated to highlighting the living legacies of a time in history that challenged Northern Irish society.  We hope that the exhibitions and talks throughout the exhibition will encourage conversations around the wider issues of human rights and political reform and that the actions of the past will help inform all communities."
 

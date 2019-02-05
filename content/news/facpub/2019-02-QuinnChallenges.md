@@ -15,7 +15,7 @@ Sample_pages: 2019/quinn-book.pdf
 ShowSample_pages: yes
 Book_location:#
 ShowBook_location: no
-Bookcover: 2019/quinn.cover.jpg
+Bookcover: 2019/quinn-cover.jpg
 Image_alt: the book cover 
 Oneoff: yes
 

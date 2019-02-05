@@ -11,11 +11,11 @@ Second_position:  <!-- ONLY USE IF THERE IS A 3rd AUTHOR, OTHERWISE LEAVE BLANK 
 Third_author: <!-- ONLY USE FIRSTNAME LASTNAME (Only add if there's a second name, OTHERWISE LEAVE BLANK) -->
 Third_position:  <!-- ONLY USE IF THERE IS A 3rd AUTHOR, OTHERWISE LEAVE BLANK -->
 Youtube: https://www.youtube.com/embed/CHANGE
-Sample_pages: 2018/xx/NAME-book.pdf
+Sample_pages: 2019/NAME-book.pdf
 ShowSample_pages: <!-- yes or no ("no" will hide link) -->
 Book_location: url
 ShowBook_location: <!-- yes or no ("no" will hide link) -->
-Bookcover: 2018/xx/NAME-cover.png
+Bookcover: 2019/NAME-cover.png
 Image_alt: the book cover 
 Oneoff: <!-- yes or no ("yes" will hide from main site for review) -->
 

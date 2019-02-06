@@ -5,7 +5,7 @@ Subtitle: The Humanities in the Conversation
 Sponsor: Sponsored by the Boston College Libraries
 Location: lvl1
 Tags: exhibit
-Slug: climate-change-humanities
+Slug: climate-change-humanities-lvl1
 Image: 2019/02-climate-poster.jpg
 Image_thumb: 2019/02-climate-thumb.png
 Image_alt: A view of the Earth from the moon

@@ -12,8 +12,6 @@ Image_alt: Father Berrigan flashes the peace sign at his arrest in Baltimore, 19
 Active: yes
 Style: right
 
-<strong>Exhibit launch and opening reception:</strong><br/> February 4th, 2019, 4:00pm - 6:00pm (<em>snow date February 6th</em>)
-
 Jesuit Father Daniel Berrigan and theologian and civil rights lawyer William Stringfellow belonged to an old American tradition -- faith-based activism.  During the tumultous 1960s and long afterward, the two friends, both hard-working, prolific authors, were also activist opponents of the war in Vietnam and campaigners for civil rights, social justice in the Christian tradition, nucelar disarmament, and the environment.
 
 <em>Seeking Shelter: A Story of Place, Faith and Resistance</em>, the multi-media exhibition that tells this intriguing, moving, and timely story, made its debut on Block Island at the Island Free Library in July of 2017.  The accompanying film, <em>Seeking Shelter</em>, illuminates the exhibition's themes through the recollections of people who knew the story's central figures well and have deep insight into Block Island as a place and as a community.

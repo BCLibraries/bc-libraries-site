@@ -1,4 +1,4 @@
-Date: 2019-02-04 01:02
+Date: 2019-02-12 01:02
 Tags: facpub
 Slug: mckaughan-vandewall
 Title: The History and Philosophy of Science: A Reader
@@ -17,7 +17,7 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldispl
 ShowBook_location: yes
 Bookcover: 2019/mck-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 The History and Philosophy of Science: A Reader brings together seminal texts from antiquity to the end of the nineteenth century and makes them accessible in one volume for the first time.
 

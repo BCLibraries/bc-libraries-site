@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Faculty Publication Highlights</title>
+
+        <style>
+        body {
+             font-family: Arial, sans-serif;
+             font-size: 11px;
+             color: #444;
+        }
+        
+        a, a:visited  {
+            color: #337ab7;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        a:hover, a:active, a:focus  {
+            color: #204375;
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #fff;
+            line-height: 1;
+            margin: 0;
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 2px 2px 1px #000000;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-style: italic;
+        }
+
+        .author-title {
+            font-size: .75em;
+            font-style: italic;
+        }
+
+        .header {
+            background: url("https://library.bc.edu/theme/img/facpub/fph_mailer_header.jpg") 0% 50% no-repeat;
+            background-size: cover;
+            height: 140px;
+            width: 100%;
+            border: 5px solid #eaeaea;
+            border-bottom: 0px;
+        }
+
+        .content {
+            background: #EAEAEA;
+            padding: 20px 0 0 0;
+            display: inline-block;
+        }
+
+        .content img {
+            border: 2px solid #05506D; 
+            margin: 0px 10px 0px 0px; 
+            padding: 3px; 
+            width: 150px; 
+            height: 240px;
+            background: #ededed;
+        }
+
+        .left {
+            border-left: 5px solid #eaeaea; 
+            padding: 0px 10px 0px 5px;
+        }
+
+        .right {
+            border-right: 5px solid #eaeaea; 
+            padding: 0px 10px 10px 0px;
+        }
+        
+        .content p {
+            text-align: justify;
+        }
+
+        .desc {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .link-to-more {
+            display: inline-table;
+            border-bottom: 1px solid #fff;
+            background: #EAEAEA;
+            text-align: center;
+            padding: 0px 0 25px 0;
+            width: 100%;
+        }
+
+        .explain {
+            background: #FFF; 
+            border-left: 5px solid #eaeaea; 
+            font-size: 11px;
+            border-right: 5px solid #eaeaea; 
+            padding: 20px 100px;
+        }
+
+        .footer {
+            font-size: 12px;
+        }
+
+        </style>
+
+</head>
+<body>
+
+
+
+<center>
+<table width="800" border="0" cellpadding="0" cellspacing="0" summary="Faculty Publication Highlights" height="69">
+    <tbody>
+
+<!-- HEADER ROW -->
+    <tr>
+        <td bgcolor="#fff" colspan="12" class="header">
+        <a href="http://library.bc.edu/facpub/">
+            <h1>Recent Faculty Publication Highlights</h1>
+        </a>
+        </td>
+    </tr>   
+<!-- END HEADER -->   
+
+{% for article in articles | current_facpubs(2) %}   
+
+    <tr class="content">
+
+        <td valign="top" colspan="4" class="left">
+        
+            <img src="http://library.bc.edu/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
+            <br>
+           
+            <strong>{{ article.author_firstname}} {{ article.author_lastname}}</strong><br>
+            <span class="author-title">{{ article.author_position }}</span><br><br>
+
+            {% if article.second_author %}
+            <strong>{{ article.second_author }}</strong> <br />
+            <span class="author-title">{{ article.second_position }}</span><br><br>
+            {% endif %}
+
+            {% if article.third_author %}
+            <strong>{{ article.third_author }}</strong> <br />
+            <span class="author-title">{{ article.thirdposition }}</span>
+            {% endif %}
+                       
+        </td>
+
+        <td valign="top" colspan="8" class="right">  
+            <!-- EDIT REQUIRED: Change title and description -->
+            <h2>{{ article.title }}</h2>
+            <div class="desc">
+            {{ article.content }}
+            </div>
+            
+        </td>
+    </tr>
+
+    <tr colspan="12" class="link-to-more">    
+            <!-- EDIT REQUIRED: Change link to interview and faculty member surname -->
+        <td>
+             <p>
+                <a href="https://library.bc.edu/{{ article.url }}">
+                See more from the interview with {{ article.author_firstname }} {{ article.author_lastname }} 
+
+                {% if article.second_author %}
+                        &#x26; {{ article.second_author}} 
+                {% endif %}
+
+                {% if article.third_author %}
+                , {{ article.second_author}}, &#x26; {{ article.third_author}} 
+                {% endif %}
+
+            </a> &#187;
+            </p>
+        </td>
+
+    </tr>
+<!-- END CONTENT ROW -->
+
+{% endfor %}
+
+<!-- DESC ROW -->
+    <tr>
+         <td colspan="12" class="explain">
+        <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
+        
+        <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
+
+        </td>
+     </tr>
+<!-- END DESC ROW -->
+
+<!-- FOOTER ROW -->    
+    <tr>
+        <td colspan="12" style="text-align: center; background: #EAEAEA; height: 50px;">
+        <p class="footer">
+        <a href="https://www.bc.edu/">&#169; 2019 BOSTON COLLEGE</a>&nbsp; | &nbsp;
+        <a href="https://library.bc.edu/">BOSTON COLLEGE LIBRARIES</a>&nbsp; | &nbsp;
+        <a href="http://library.bc.edu/facpub/contact">CONTACT</a>&nbsp; | &nbsp;
+        <a href="http://library.bc.edu/facpub/">ARCHIVES</a>
+        </td>
+    </tr>
+<!-- END FOOTER -->
+        </tbody>
+
+    </table>
+</center>
+ 
+          
+
+
+</body></html>

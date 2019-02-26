@@ -40,7 +40,7 @@
 </head>
 <body>
 
-{% for article in articles | current_facpubs(1) %}   
+   
 
 <center>
     <table width="800" border="0" cellpadding="0" cellspacing="0" summary="Faculty Publication Highlights" height="69">
@@ -58,33 +58,33 @@
 
                 <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 0px;">
                 
-                    <img src="http://library.bc.edu/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}"
+                    <img src="http://library.bc.edu/theme/img/facpub/2019/okeefe-cover.jpg" alt="the book cover"
                     style="border: 2px solid #05506D; margin: 0px 10px 0px 0px; padding: 3px; width: 150px; height: auto;">
                     <br>
                    
-                    <strong>{{ article.author_firstname}} {{ article.author_lastname}}</strong><br>
-                    <span class="author-title">{{ article.author_position }}</span> <br /> <br />
+                    <strong>Theresa O'Keefe</strong><br>
+                    <span class="author-title">School of Theology and Ministry, Associate Professor of the Practice of Youth and Young Adult Faith</span> <br /> <br />
 
 <!-- UNHIDE IF THERE IS MORE THAN 1 AUTHOR:
-                     <strong>{{ article.second_author}}</strong><br>
-                    <span class="author-title">{{ article.second_position }}</span><br /> <br />
+                     <strong></strong><br>
+                    <span class="author-title"></span><br /> <br />
 
-                     <strong>{{ article.third_author}}</strong><br>
-                    <span class="author-title">{{ article.third_position }}</span>
+                     <strong></strong><br>
+                    <span class="author-title"></span>
 -->
                 </td>
 
                 <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 20px;">  
                                 <!-- EDIT REQUIRED: Change title and description -->
-                                <h2>{{ article.title }}</h2>
+                                <h2>Navigating Toward Adulthood:  A Theology of Ministry with Adolescents</h2>
                                 <div class="desc">
-                                {{ article.content }}
+                                <p>The heart of ministry with adolescents is assisting adolescents to recognize and grow into the multiple relationships in their lives, including their relationship with God. <em>Navigating Toward Adulthood</em> is a work of Practical Theology that examines the project of adolescence within frameworks of developmental psychology and sociology, intersecting with Catholic theology.  It is organized into four parts:  the first outlines the "project of adolescence," and what a young person must undergo to become a spiritually mature and healthy adult; the second offers a definition of adulthood focusing on its social responsibilities; the third characterizes adolescence as the stage in which a person transitions from an instrumental to a relational engagement with the world; and the fourth focuses on how the Church can best respond to the resulting adolescent developmental needs. </p>
                                 </div>
                                 
                                 
                                 <!-- EDIT REQUIRED: Change link to interview and faculty member surname -->
                                 <p id="link-to-more">
-                                    <a href="https://library.bc.edu/{{ article.url }}">Interview with Professor {{ article.author_lastname}} and more</a> &#187;
+                                    <a href="https://library.bc.edu/facpub/2019/Feb/okeefe-navigating/">Interview with Professor O'Keefe and more</a> &#187;
                                 </p>
                 </td>
 
@@ -117,7 +117,6 @@
 </center>
  
           
-{% endfor %}
 
 
 </body></html>

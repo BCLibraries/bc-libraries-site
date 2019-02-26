@@ -7,102 +7,32 @@
         <style>
         body {
              font-family: Arial, sans-serif;
-             font-size: 11px;
+             font-size: 14px;
              color: #444;
         }
         
         a, a:visited  {
-            color: #337ab7;
+            color: #990000;
             font-weight: normal;
             text-decoration: none;
         }
 
         a:hover, a:active, a:focus  {
-            color: #204375;
+            color: #990000;
             text-decoration: underline;
-        }
-
-        h1 {
-            color: #fff;
-            line-height: 1;
-            margin: 0;
-            text-align: center;
-            font-size: 2em;
-            text-shadow: 2px 2px 1px #000000;
-            font-weight: normal;
         }
 
         h2 {
             font-style: italic;
         }
 
-        .author-title {
-            font-size: .75em;
-            font-style: italic;
-        }
-
-        .header {
-            background: url("https://library.bc.edu/theme/img/facpub/fph_mailer_header.jpg") 0% 50% no-repeat;
-            background-size: cover;
-            height: 140px;
-            width: 100%;
-            border: 5px solid #eaeaea;
-            border-bottom: 0px;
-        }
-
-        .content {
-            background: #EAEAEA;
-            padding: 20px 0 0 0;
-            display: inline-block;
-        }
-
-        .content img {
-            border: 2px solid #05506D; 
-            margin: 0px 10px 0px 0px; 
-            padding: 3px; 
-            width: 150px; 
-            height: 240px;
-            background: #ededed;
-        }
-
-        .left {
-            border-left: 5px solid #eaeaea; 
-            padding: 0px 10px 0px 5px;
-        }
-
-        .right {
-            border-right: 5px solid #eaeaea; 
-            padding: 0px 10px 10px 0px;
-        }
-        
-        .content p {
-            text-align: justify;
-        }
-
         .desc {
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5;
         }
-
-        .link-to-more {
-            display: inline-table;
-            border-bottom: 1px solid #fff;
-            background: #EAEAEA;
-            text-align: center;
-            padding: 0px 0 25px 0;
-            width: 100%;
-        }
-
-        .explain {
-            background: #FFF; 
-            border-left: 5px solid #eaeaea; 
-            font-size: 11px;
-            border-right: 5px solid #eaeaea; 
-            padding: 20px 100px;
-        }
-
         .footer {
             font-size: 12px;
+
         }
 
         </style>
@@ -110,108 +40,84 @@
 </head>
 <body>
 
-
+{% for article in articles | current_facpubs(1) %}   
 
 <center>
-<table width="800" border="0" cellpadding="0" cellspacing="0" summary="Faculty Publication Highlights" height="69">
-    <tbody>
-
-<!-- HEADER ROW -->
-    <tr>
-        <td bgcolor="#fff" colspan="12" class="header">
-        <a href="http://library.bc.edu/facpub/">
-            <h1>Recent Faculty Publication Highlights</h1>
-        </a>
-        </td>
-    </tr>   
-<!-- END HEADER -->   
-
-{% for article in articles | current_facpubs(2) %}   
-
-    <tr class="content">
-
-        <td valign="top" colspan="4" class="left">
-        
-            <img src="http://library.bc.edu/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}">
-            <br>
+    <table width="800" border="0" cellpadding="0" cellspacing="0" summary="Faculty Publication Highlights" height="69">
+         <tbody>
            
-            <strong>{{ article.author_firstname}} {{ article.author_lastname}}</strong><br>
-            <span class="author-title">{{ article.author_position }}</span><br><br>
+            <tr>
+                <td bgcolor="#fff"  colspan="6">
+                <a href="http://library.bc.edu/facpub/">
+                <img src="http://library.bc.edu/theme/img/facpub/2016/mailer_header.png" alt="Faculty Publication Highlights logo" ></a>
+                </td>
+            </tr>      
+           
+            <tr>
+                <td colspan="1" style="background: #EAEAEA;">&nbsp;</td>
 
-            {% if article.second_author %}
-            <strong>{{ article.second_author }}</strong> <br />
-            <span class="author-title">{{ article.second_position }}</span><br><br>
-            {% endif %}
+                <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 0px;">
+                
+                    <img src="http://library.bc.edu/theme/img/facpub/{{ article.bookcover }}" alt="{{ article.image_alt }}"
+                    style="border: 2px solid #05506D; margin: 0px 10px 0px 0px; padding: 3px; width: 150px; height: auto;">
+                    <br>
+                   
+                    <strong>{{ article.author_firstname}} {{ article.author_lastname}}</strong><br>
+                    <span class="author-title">{{ article.author_position }}</span> <br /> <br />
 
-            {% if article.third_author %}
-            <strong>{{ article.third_author }}</strong> <br />
-            <span class="author-title">{{ article.thirdposition }}</span>
-            {% endif %}
-                       
-        </td>
+<!-- UNHIDE IF THERE IS MORE THAN 1 AUTHOR:
+                     <strong>{{ article.second_author}}</strong><br>
+                    <span class="author-title">{{ article.second_position }}</span><br /> <br />
 
-        <td valign="top" colspan="8" class="right">  
-            <!-- EDIT REQUIRED: Change title and description -->
-            <h2>{{ article.title }}</h2>
-            <div class="desc">
-            {{ article.content }}
-            </div>
-            
-        </td>
-    </tr>
+                     <strong>{{ article.third_author}}</strong><br>
+                    <span class="author-title">{{ article.third_position }}</span>
+-->
+                </td>
 
-    <tr colspan="12" class="link-to-more">    
-            <!-- EDIT REQUIRED: Change link to interview and faculty member surname -->
-        <td>
-             <p>
-                <a href="https://library.bc.edu/{{ article.url }}">
-                See more from the interview with {{ article.author_firstname }} {{ article.author_lastname }} 
+                <td valign="top" colspan="2" style="background: #EAEAEA; padding: 10px 20px;">  
+                                <!-- EDIT REQUIRED: Change title and description -->
+                                <h2>{{ article.title }}</h2>
+                                <div class="desc">
+                                {{ article.content }}
+                                </div>
+                                
+                                
+                                <!-- EDIT REQUIRED: Change link to interview and faculty member surname -->
+                                <p id="link-to-more">
+                                    <a href="https://library.bc.edu/{{ article.url }}">Interview with Professor {{ article.author_lastname}} and more</a> &#187;
+                                </p>
+                </td>
 
-                {% if article.second_author %}
-                        &#x26; {{ article.second_author}} 
-                {% endif %}
+                <td colspan="1" style="background: #EAEAEA;">&nbsp;</td>
 
-                {% if article.third_author %}
-                , {{ article.second_author}}, &#x26; {{ article.third_author}} 
-                {% endif %}
+            </tr>
+            <tr>
+                <td colspan="1" style="background: #FFF; border-left: 5px solid #eaeaea;">&nbsp;</td>
+                <td colspan="4" style="background: #fff; padding: 10px 20px; font-size: 11px;">
+                <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
+                
+                <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
 
-            </a> &#187;
-            </p>
-        </td>
+                </td>
+                <td colspan="1" style="background: #FFF; border-right: 5px solid #eaeaea;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: center; background: #EAEAEA; height: 50px;">
+                <p class="footer">
+                <a href="https://www.bc.edu/">&#169; 2019 BOSTON COLLEGE</a>&nbsp; | &nbsp;
+                <a href="https://library.bc.edu/">BOSTON COLLEGE LIBRARIES</a>&nbsp; | &nbsp;
+                <a href="http://library.bc.edu/facpub/contact">CONTACT</a>&nbsp; | &nbsp;
+                <a href="http://library.bc.edu/facpub/">ARCHIVES</a>
+                </td>
+            </tr>
 
-    </tr>
-<!-- END CONTENT ROW -->
-
-{% endfor %}
-
-<!-- DESC ROW -->
-    <tr>
-         <td colspan="12" class="explain">
-        <p>The Faculty Publication Highlights series features recent publications by Boston College faculty. While it is likely that monographs will figure largely among these publications, the Libraries are also eager to promote other faculty productions such as significant journal articles, paintings, musical compositions, and movies.</p>
-        
-        <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian.</p>
-
-        </td>
-     </tr>
-<!-- END DESC ROW -->
-
-<!-- FOOTER ROW -->    
-    <tr>
-        <td colspan="12" style="text-align: center; background: #EAEAEA; height: 50px;">
-        <p class="footer">
-        <a href="https://www.bc.edu/">&#169; 2019 BOSTON COLLEGE</a>&nbsp; | &nbsp;
-        <a href="https://library.bc.edu/">BOSTON COLLEGE LIBRARIES</a>&nbsp; | &nbsp;
-        <a href="http://library.bc.edu/facpub/contact">CONTACT</a>&nbsp; | &nbsp;
-        <a href="http://library.bc.edu/facpub/">ARCHIVES</a>
-        </td>
-    </tr>
-<!-- END FOOTER -->
-        </tbody>
+                </tbody>
 
     </table>
 </center>
  
           
+{% endfor %}
 
 
 </body></html>

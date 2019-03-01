@@ -273,6 +273,15 @@
     <script type="text/javascript" src="/theme/js/libraryinfo.js"></script>
     <!-- END MEGA MENU SCRIPTS -->
 
+    <script src="https://arc.bc.edu/notices/downtime-notices-client.js"></script>
+    <script>
+        // Only run in test for now.
+        if (window.location.hostname === 'libdev.bc.edu') {
+            BCLibDowntimeNotices({
+                styles: true
+            });
+        }
+</script>
     {% block pagescripts %}
     {% endblock %}
 </body>

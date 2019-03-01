@@ -1,4 +1,4 @@
-Date: 2019-02-05 01:01
+Date: 2019-02-26 01:01
 Tags: facpub
 Slug: okeefe-navigating
 Title: Navigating Toward Adulthood:  A Theology of Ministry with Adolescents
@@ -17,6 +17,6 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldispl
 ShowBook_location: yes
 Bookcover: 2019/okeefe-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 The heart of ministry with adolescents is assisting adolescents to recognize and grow into the multiple relationships in their lives, including their relationship with God. <em>Navigating Toward Adulthood</em> is a work of Practical Theology that examines the project of adolescence within frameworks of developmental psychology and sociology, intersecting with Catholic theology.  It is organized into four parts:  the first outlines the "project of adolescence," and what a young person must undergo to become a spiritually mature and healthy adult; the second offers a definition of adulthood focusing on its social responsibilities; the third characterizes adolescence as the stage in which a person transitions from an instrumental to a relational engagement with the world; and the fourth focuses on how the Church can best respond to the resulting adolescent developmental needs. 

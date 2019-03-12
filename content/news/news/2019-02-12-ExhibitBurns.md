@@ -1,6 +1,6 @@
 Title: New Burns Library Exhibit: Genius of Genre 
 Destination: https://library.bc.edu/exhibits/2019/Jan/genius-genre/
-Date: 2019-02-12 01:02
+Date: 2019-02-26 01:11
 Tags: news, tags 
 Slug: exhibit-burns-genius
 Expired: no

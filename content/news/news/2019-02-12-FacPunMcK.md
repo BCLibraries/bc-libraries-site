@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Feb/mckaughan-vandewall/
 Date: 2019-02-12 01:01 
 Tags: news, tags 
 Slug: facpub-mckaughan-vandewall 
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Photo of the professors during their interview
 Image_thumb: 2019-02/mckaughan-thumb.png

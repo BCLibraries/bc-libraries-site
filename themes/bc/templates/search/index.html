@@ -29,300 +29,458 @@
 <div id="main-body" class="container">
     <!--div id="didyoumean-holder" class="row"></div-->
 
-    <div id="askus-container" class="">
-        <div>Not finding what you need? <a href="https://libguides.bc.edu/ask-a-librarian">Ask us!</a></div>
+    <div id="askus-container" class="row">
+        <nav class="link-to-bento-bar col-md-8">
+            <div class="skip-to">Skip to:</div>
+            <div><a href="#booksh3" class="search-link">Books & media</a></div>
+            <div><a href="#articleh3" class="search-link">Articles</a></div>
+            <div><a href="#faqh3" class="search-link">FAQ</a></div>
+            <div><a href="#librarianh3" class="search-link">Librarians</a></div>
+            <div><a href="#videoh3" class="search-link">Film & video</a></div>
+            <div><a href="#subjecth3" class="search-link">Website</a></div>
+        </nav>
+        <div class="not-finding col-md-4">Not finding what you need? <a href="https://libguides.bc.edu/ask-a-librarian">Ask
+            us!</a></div>
     </div>
 
     <div id="bentoboxresults" class="">
 
-        <div class="row" id="all-results">
-
-            <!-- The primary results box. -->
-            <div id="primary" class="col-md-5 col-sm-12">
-                <div id="catalog-results" class="result-container">
-                    <span class="results-count accessibility-text" aria-live="polite"></span>
-                    <h2 id="booksh3" class="search-heading">Books &amp; media</h2>
-                </div>
+        <div class="row" id="top-row">
+            <div id="catalog-results" class="col-md-5 col-sm-12 result-container">
+                <span class="results-count accessibility-text" aria-live="polite"></span>
+                <h2 id="booksh3" class="search-heading">Books &amp; media</h2>
             </div>
 
-            <!-- Secondary results box. -->
-            <div id="secondary" class="col-md-4 col-sm-12">
-                <div id="articles-results" class="result-container">
-                    <span class="results-count accessibility-text" aria-live="polite"></span>
-                    <h2 id="articleh3" class="search-heading">Articles</h2>
-                </div>
-            </div>
 
-            <!-- Tertiary results box.-->
-            <div id="tertiary" class="col-md-3 col-sm-12">
-                <div id="faq-results" class="result-container faq">
-                    <span class="search-heading"></span>
-                </div>
-                <div id="website-results" class="result-container website">
-                    <span class="search-heading"></span>
-                </div>
-                <div id="librarians-results" class="result-container librarians">
-                    <span class="search-heading"></span>
-                </div>
+            <div id="articles-results" class="col-md-5 col-md-offset-1 col-sm-12 result-container">
+                <span class="results-count accessibility-text" aria-live="polite"></span>
+                <h2 id="articleh3" class="search-heading">Articles</h2>
             </div>
+        </div>
 
+        <div class="row faq-librarian-row">
+            <div id="faq-results" class="col-md-8 result-container faq">
+                <span class="search-heading"></span>
+            </div>
+            <div id="librarians-results" class="result-container librarians col-md-4">
+                <span class="search-heading"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="video-results" class="result-container col-md-12">
+                <span class="results-count accessibility-text" aria-live="polite"></span>
+                <h2 id="videoh3" class="search-heading">Film &amp; video</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="website-results" class="col-md-12 result-container website">
+                <span class="search-heading"></span>
+            </div>
         </div>
 
     </div>
-    <script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
-    <script src="/theme/bcbento/js/search.js?v=20180628-01"></script>
 
-    {% raw %}
-    <!-- Search result templates -->
-    <script id="librarians-template" type="text/x-template">
-        <h2 id="librarianh3" class="search-heading">Librarians</h2>
+</div>
+<script src="/theme/bcbento/js/handlebars-v3.0.0.js"></script>
+<script src="/theme/bcbento/js/search.js?v=20180628-01"></script>
 
-        {{#if .}}
-        <div class="results-highlight">
-            {{#.}}
-            <div class="media">
-                <div class="media-left">
-                    <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
-                </div>
+{% raw %}
+<!-- Search result templates -->
+<script id="librarians-template" type="text/x-template">
+    <h2 id="librarianh3" class="search-heading">Librarians</h2>
 
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a>
-                    </h4>
-                    <p class="guide-description">{{display_subjects}}</p>
-                </div>
+    {{#if .}}
+    <div>
+        {{#.}}
+        <div class="media">
+            <div class="media-left">
+                <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;"><img src="//{{image}}" alt="picture of {{name}}"></a>
             </div>
-            {{/.}}
-            <p class="all-librarians">
-                <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
-                    all subject librarians</a>
-            </p>
-        </div>
-        {{else}}
-        <div class="no-results-found">
-            <a href="http://libguides.bc.edu/ask-a-librarian/contact">See all subject librarians</a>.
-        </div>
-        {{/if}}
-    </script>
 
-    <script id="faq-template" type="text/x-template">
-        <h2 id="faqh3" class="search-heading">Frequently asked questions</h2>
-        {{#if items}}
-        <div class="results-highlight">
-            <ul>
-                {{#items}}
-                <li>
-                    <a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{question}}</a>
-                </li>
-                {{/items}}
-            </ul>
-        </div>
-        <div class="more-results-link">
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
-                {{total_results}} results&hellip;&nbsp;</a>
-        </div>
-        {{else}}
-        <div class="no-results-found">
-            <div>No results found.</div>
-            <p><a href="http://answers.bc.edu/">Browse all FAQs</a></p>
-        </div>
-        {{/if}}
-    </script>
-
-    <script id="website-template" type="text/x-template">
-        <h2 id="subjecth3" class="search-heading">Website</h2>
-        {{#if items}}
-        <div class="results-highlight">
-            <div>
-                {{#items}}
-                <div class="bento-result">
-                    <div>
-                        <h3>
-                            <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a>
-                        </h3>
-                        in <a href="{{guide_url}}" class="guide-title">{{guide_title}}</a></div>
-                    {{#if pages}}
-                    <ul class="guide-pages">
-                        {{#pages}}
-                        <li><a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{title}}</a></li>
-                        {{/pages}}
-                    </ul>
-                    {{/if}}
-                </div>
-                {{/items}}
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <a href="http://libguides.bc.edu/prf.php?account_id={{id}}" onclick="trackOutboundLink('http://libguides.bc.edu/prf.php?account_id={{id}}'); return false;">{{name}}</a>
+                </h4>
+                <p class="guide-description">{{display_subjects}}</p>
             </div>
         </div>
-        <div class="more-results-link">
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see more results&hellip;&nbsp;</a>
-        </div>
-        {{else}}
-        <div class="no-results-found">
-            No results found.
-        </div>
-        {{/if}}
+        {{/.}}
+        <p class="all-librarians">
+            <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
+                all subject librarians</a>
+        </p>
+    </div>
+    {{else}}
+    <div class="no-results-found">
+        <a href="http://libguides.bc.edu/ask-a-librarian/contact">See all subject librarians</a>.
+    </div>
+    {{/if}}
+</script>
 
-    </script>
-
-    <script id="catalog-template" type="text/x-template">
-
-        {{#if total_results}}
-        <div class="more-results-link">
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
-                {{total_results}}
-                results&hellip;&nbsp;</a>
-        </div>
-        {{/if}}
-
-
-        <div id="catalog-results" class="bento-results">
+<script id="faq-template" type="text/x-template">
+    <h2 id="faqh3" class="search-heading">Frequently asked questions</h2>
+    {{#if items}}
+    <div>
+        <ul>
             {{#items}}
-            <div class="bento-results-item media">
+            <li>
+                <a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{question}}</a>
+            </li>
+            {{/items}}
+        </ul>
+    </div>
+    {{#ifRemainingResults total_results items}}
+    <div class="more-results-link">
+        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
+            {{localeNumber total_results}} results&hellip;&nbsp;</a>
+    </div>
+    {{else}}
+    {{/ifRemainingResults}}
+    {{else}}
+    <div class="no-results-found">
+        <div>No results found.</div>
+        <p><a href="http://answers.bc.edu/">Browse all FAQs</a></p>
+    </div>
+    {{/if}}
+</script>
 
-                <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result media-body">
-
-                    <h3 class="media-heading">
-                        <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
-                            {{truncate '100' title}}
-                        </a>
+<script id="website-template" type="text/x-template">
+    <h2 id="subjecth3" class="search-heading">Our website</h2>
+    {{#if items}}
+    <div>
+        <div>
+            {{#items}}
+            <div class="bento-result">
+                <div>
+                    <h3>
+                        <a href="{{url}}" class="title" onclick="trackOutboundLink('{{url}}'); return false;">{{page_title}}</a>
                     </h3>
-
-                    {{date}}
-
-                    <div class="catalog-metadata">
-                        {{#if creator}}
-                        <div class="creator">
-                            {{truncate '40' creator}}
-                        </div>
-                        {{/if}}
-
-                        {{^creator}}
-                        {{#if contributors.[0]}}
-                        <div class="creator">
-                            {{truncate '40' contributors.[0]}}
-                        </div>
-                        {{/if}}
-                        {{/creator}}
-
-                        {{^creator}}
-                        {{^contributor}}
-                        <div class="publisher">
-                            {{publisher}} {{date}}
-                        </div>
-                        {{/contributor}}
-                        {{/creator}}
-
-                        <div class="type">{{type}}</div>
-                        <ul class="available-items">
-                            {{#avail}}
-                            <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
-                                <a href="{{../link}}" class="avail-link" onclick="trackOutboundLink('{{../link}}')">
-                                    {{#if on_shelf}}
-                                    <span class="library">Find in {{lib_display}}</span>
-                                    <span class="location">{{loc_display}}</span>
-                                    <span class="callno">({{call_number}})</span>
-                                    {{else}}
-                                    Not available. Check for more options.
-                                    {{/if}}
-                                </a>
-                            </li>
-                            {{/avail}}
-                        </ul>
-                        {{#if getit}}
-                        <div class="available-online">
-                            <a href="{{link}}" onclick="trackOutboundLink('{{link}}'); return false;">Find online</a>
-                        </div>
-                        {{/if}}
-                    </div>
+                    in <a href="{{guide_url}}" class="guide-title">{{guide_title}}</a>
+                    <div class="website-highlight">{{{highlight.[1]}}}</div>
                 </div>
 
-                {{#if covers.[0]}}
-                <div class="media-right">
-                    <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
-                </div>
+                {{#if pages}}
+                <ul class="guide-pages">
+                    {{#pages}}
+                    <li>
+                        <div><a href="{{url}}" onclick="trackOutboundLink('{{url}}'); return false;">{{title}}</a></div>
+                    </li>
+                    {{/pages}}
+                </ul>
                 {{/if}}
-
             </div>
             {{/items}}
         </div>
+    </div>
+    <div class="more-results-link">
+        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see more results&hellip;&nbsp;</a>
+    </div>
+    {{else}}
+    <div class="no-results-found">
+        No results found.
+    </div>
+    {{/if}}
 
-        {{#unless total_results}}
-        <div class="worldcat-results">
-            <p>There are no results in the catalog matching your search
-                <span class="search-string">"{{search_string}}"</span>:</p>
-            <h3>Suggestions</h3>
-            <ul class="worldcat-suggestions">
-                <li>Check the other search results.</li>
-                <li>Try different keywords.</li>
-                <li>Try <a href="{{worldcat_search}}">your search in WorldCat</a>.</li>
-                <li><a href="https://libguides.bc.edu/purchaserequest">Suggest a purchase</a> for our collection.</li>
-            </ul>
+</script>
+
+<script id="catalog-template" type="text/x-template">
+
+    <div class="bento-results-list">
+        {{#items}}
+        <div class="bento-results-item media">
+
+            <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result media-body">
+
+                <h3 class="media-heading">
+                    <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                        {{truncate '100' title}}
+                    </a>
+                </h3>
+
+                {{date}}
+
+                <div class="catalog-metadata">
+                    {{#if creator}}
+                    <div class="creator">
+                        {{truncate '40' creator}}
+                    </div>
+                    {{/if}}
+
+                    {{^creator}}
+                    {{#if contributors.[0]}}
+                    <div class="creator">
+                        {{truncate '40' contributors.[0]}}
+                    </div>
+                    {{/if}}
+                    {{/creator}}
+
+                    {{^creator}}
+                    {{^contributor}}
+                    <div class="publisher">
+                        {{publisher}} {{date}}
+                    </div>
+                    {{/contributor}}
+                    {{/creator}}
+
+                    <div class="type">{{type}}</div>
+                    <ul class="available-items">
+                        {{#if is_avail}}
+                        {{#avail}}
+                        <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
+                            <a href="{{../link}}" class="avail-link" onclick="trackOutboundLink('{{../link}}')">
+                                {{#if on_shelf}}
+                                <span class="library">Find in {{lib_display}}</span>
+                                <span class="location">{{loc_display}}</span>
+                                <span class="callno">({{call_number}})</span>
+                                {{/if}}
+                            </a>
+                        </li>
+                        {{/avail}}
+                        {{else}}
+                        Not available. <a href="{{link}}">Check for more options</a>.
+                        {{/if}}
+                    </ul>
+                    {{#if getit}}
+                    <div class="available-online">
+                        <a href="{{link}}" onclick="trackOutboundLink('{{link}}'); return false;">Find online</a>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+
+            {{#if covers.[0]}}
+            <div class="media-right">
+                <img src="{{covers.[0]}}" alt="book cover" class="cover-image">
+            </div>
+            {{/if}}
+
         </div>
+        {{/items}}
+
+        {{> seeAll }}
+    </div>
+
+    {{#unless total_results}}
+    <div class="worldcat-results">
+        <p>There are no results in the catalog matching your search
+            <span class="search-string">"{{search_string}}"</span>:</p>
+        <h3>Suggestions</h3>
+        <ul class="worldcat-suggestions">
+            <li>Check the other search results.</li>
+            <li>Try different keywords.</li>
+            <li>Try <a href="{{worldcat_search}}">your search in WorldCat</a>.</li>
+            <li><a href="https://libguides.bc.edu/purchaserequest">Suggest a purchase</a> for our collection.</li>
+        </ul>
+    </div>
+    {{/unless}}
+
+</script>
+
+<script id="articles-template" type="text/x-template">
+
+    <div class="bento-results-list">
+        {{#items}}
+        <div class="bento-results-item media">
+            <div class="media-body">
+                <h3 class="media-heading">
+                    <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                        {{truncate '100' title}}
+                    </a>
+                </h3>
+
+                {{date}}
+
+                {{#if creator}}
+                <div class="creator">{{truncate '80' creator}}</div>
+                {{/if}}
+                <div class="publisher">{{{part_of}}}</div>
+            </div>
+        </div>
+        {{/items}}
+
+        {{> seeAll }}
+    </div>
+
+
+
+</script>
+
+
+<script id="video-template" type="text/x-template">
+
+    <div id="video-results" class="bento-results-list">
+        {{#items}}
+
+        <div class="bento-results-item video col-md-4">
+            {{#if getit}}
+            {{> onlineVideo }}
+            {{else}}
+            {{> physicalVideo }}
+            {{/if}}
+        </div>
+
+        {{/items}}
+
+        {{> seeAll }}
+    </div>
+
+    {{#unless total_results}}
+    <p>There are no results matching your search
         {{/unless}}
 
-    </script>
+</script>
 
-    <script id="articles-template" type="text/x-template">
-        <div class="more-results-link">
-            <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">see all
-                {{total_results}}
-                results&hellip;&nbsp;</a>
-        </div>
+<script id="online-video-template" type="text/x-template">
+    <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result online-video">
 
-        <div id="article-results" class="bento-results">
-            {{#items}}
-            <div class="bento-results-item media">
-                <div class="media-body">
-                    <h3 class="media-heading">
-                        <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
-                            {{truncate '100' title}}
-                        </a>
-                    </h3>
-
-                    {{date}}
-
-                    {{#if creator}}
-                    <div class="creator">{{truncate '80' creator}}</div>
-                    {{/if}}
-                    <div class="publisher">{{{part_of}}}</div>
-                </div>
+        <a href="{{getit}}">
+            <div class="video-thumbnail">
+                <span class="play-button"></span>
+                {{#if covers.[0]}}
+                <img src="{{ covers.[0] }}" alt="screenshot">
+                {{ else }}
+                <img src="/theme/bcbento/img/blank-screen.svg" class="blank-screen" alt="screenshot">
+                {{/if}}
             </div>
-            {{/items}}
-        </div>
-    </script>
+        </a>
 
-    <script id="dym-template" type="text/x-template">
-        {{#if dym}}
-        <div class="dym-notice">
-            Did you mean <a href="https://library.bc.edu/search?any={{dym}}">{{dym}}</a>?
-        </div>
-        {{/if}}
-    </script>
+        <h3 class="media-heading">
+            <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                {{truncate '100' title}}
+            </a>
+        </h3>
 
-    <script id="spinner-template" type="text/x-template">
-        <div class="spinner-box">
-            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-            <span class="sr-only">Loading...</span>
-        </div>
-    </script>
+        {{date}}
 
-    <script id="error-template" type="text/x-template">
-        <div class="error-notice">
-            <div class="alert alert-danger" role="alert">There was an error connecting to this service.</div>
-        </div>
-    </script>
+        <div class="catalog-metadata">
+            {{#if creator}}
+            <div class="creator">
+                {{truncate '40' creator}}
+            </div>
+            {{/if}}
 
-    <!-- Control search tab switch. -->
-    <script>
-        $(function () {
-            $('#block_search *[role=presentation]').click(
-                function () {
-                    var current_text = $('#block_search .tab-pane.active input[type=text]').val();
-                    $('#block_search .tab-pane input[type=text]').val(current_text);
-                }
-            );
-        });
-    </script>
-    {% endraw %}
+            {{^creator}}
+            {{#if contributors.[0]}}
+            <div class="creator">
+                {{truncate '40' contributors.[0]}}
+            </div>
+            {{/if}}
+            {{/creator}}
+        </div>
+        <div class="watch-online">
+            <a href="{{getit}}">Watch online</a>
+        </div>
+
+    </div>
+</script>
+
+<script id="physical-video-template" type="text/x-template">
+    <div class="catalog-text{{#if covers.[0]}} has-cover{{/if}} bento-result physical-video">
+
+        <a href="{{link}}">
+            <div class="video-cover">
+                {{#if covers.[0]}}
+                <img src="{{ covers.[0] }}" alt="screenshot">
+                {{ else }}
+                <div class="no-video-cover">
+                    <img src="/theme/bcbento/img/{{missingCoverIcon format}}" alt="">
+                </div>
+                {{/if}}
+            </div>
+        </a>
+
+        <h3 class="media-heading">
+            <a href="{{link}}" class="title" onclick="trackOutboundLink('{{link}}'); return false;">
+                {{truncate '100' title}}
+            </a>
+        </h3>
+
+        {{date}}
+
+        <div class="catalog-metadata">
+            {{#if creator}}
+            <div class="creator">
+                {{truncate '40' creator}}
+            </div>
+            {{/if}}
+
+            {{^creator}}
+            {{#if contributors.[0]}}
+            <div class="creator">
+                {{truncate '40' contributors.[0]}}
+            </div>
+            {{/if}}
+            {{/creator}}
+
+            {{ format }}
+
+            <ul class="available-items">
+                {{#if is_avail}}
+                {{#avail}}
+                <li class="item-info {{#unless on_shelf}}unavailable{{/unless}}">
+                    <a href="{{../link}}" class="avail-link" onclick="trackOutboundLink('{{../link}}')">
+                        {{#if on_shelf}}
+                        <span class="library">{{lib_display}}</span>
+                        <span class="location">{{loc_display}}</span>
+                        <div class="callno">({{call_number}})</div>
+                        {{/if}}
+                    </a>
+                </li>
+                {{/avail}}
+                {{else}}
+                Not available. <a href="{{link}}">Check for more options</a>.
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</script>
+
+<script id="see-all-template" type="text/x-template">
+    {{#ifRemainingResults total_results items}}
+    <div class="more-results-link">
+        <a href="{{search_url}}" onclick="trackOutboundLink('{{search_url}}'); return false;">&gt; see all
+            {{localeNumber total_results}}
+            results&hellip;&nbsp;</a>
+    </div>
+    {{else}}
+    {{/ifRemainingResults}}
+</script>
+
+<script id="dym-template" type="text/x-template">
+    {{#if dym}}
+    <div class="dym-notice">
+        Did you mean <a href="https://library.bc.edu/search?any={{dym}}">{{dym}}</a>?
+    </div>
+    {{/if}}
+</script>
+
+<script id="spinner-template" type="text/x-template">
+    <div class="spinner-box">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+    </div>
+</script>
+
+<script id="error-template" type="text/x-template">
+    <div class="error-notice">
+        <div class="alert alert-danger" role="alert">There was an error connecting to this service.</div>
+    </div>
+</script>
+
+<!-- Control search tab switch. -->
+<script>
+    $(function () {
+        $('#block_search *[role=presentation]').click(
+            function () {
+                var current_text = $('#block_search .tab-pane.active input[type=text]').val();
+                $('#block_search .tab-pane input[type=text]').val(current_text);
+            }
+        );
+    });
+</script>
+{% endraw %}
 </div>
 
 {% endblock %}

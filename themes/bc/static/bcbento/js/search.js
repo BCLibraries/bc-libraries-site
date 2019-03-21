@@ -37,7 +37,7 @@ $.fn.bcBento = function (services) {
 
     var templates, source, loading_timers, spinner_html, error_html, host, protocol;
 
-    host = window.location.hostname;
+    host = window.location.hostname === 'libsite.test' ? 'libdev.bc.edu' : window.location.hostname;
     protocol = window.location.hostname === 'library.bc.edu' ? 'https://' : 'http://';
 
     function callSearchService(service, keyword) {
@@ -136,6 +136,30 @@ $.fn.bcBento = function (services) {
         return str;
     }
 
+    function localeNumber(n) {
+        return n.toLocaleString();
+    }
+
+    function ifRemainingResults(v1, v2, options) {
+        console.log('called');
+        console.log(options);
+        if (v1 > v2.length) {
+            return options.fn(this);
+        }
+        return options.inverse(this);
+    }
+
+    function missingCoverIcon(format) {
+        switch (format) {
+            case "DVD":
+                return "mono-dvd-mount.svg";
+            case "VHS":
+                return "video-tape.svg";
+            default:
+                return "blank-screen.svg";
+        }
+    }
+
     function buildSpinner() {
         var source = $('#spinner-template').html();
         return Handlebars.compile(source)({});
@@ -175,6 +199,14 @@ $.fn.bcBento = function (services) {
     });
 
     Handlebars.registerHelper('truncate', truncate);
+    Handlebars.registerHelper('ifRemainingResults', ifRemainingResults);
+    Handlebars.registerHelper('localeNumber', localeNumber);
+    Handlebars.registerHelper("missingCoverIcon", missingCoverIcon);
+
+    Handlebars.registerPartial("onlineVideo", $("#online-video-template").html());
+    Handlebars.registerPartial("physicalVideo", $("#physical-video-template").html());
+    Handlebars.registerPartial("seeAll", $("#see-all-template").html());
+
 
     services.forEach(renderServiceResults);
     search(search_string);
@@ -187,7 +219,7 @@ $(document).ready(function () {
     // Define services
     var catalog = {
         name: 'catalog',
-        max_results: 8,
+        max_results: 3,
         postprocess: function (data) {
             var html, source;
             data.search_string = search_string;
@@ -198,9 +230,15 @@ $(document).ready(function () {
         }
     };
 
+    // Define services
+    var video = {
+        name: 'video',
+        max_results: 3
+    };
+
     var articles = {
         name: 'articles',
-        max_results: 8
+        max_results: 3
     };
 
     var librarians = {
@@ -226,5 +264,5 @@ $(document).ready(function () {
 
     var service_url_base = '';
 
-    $(document).bcBento([catalog, articles, librarians, website, faq], service_url_base);
+    $(document).bcBento([catalog, articles, librarians, website, video, faq], service_url_base);
 });

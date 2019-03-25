@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Feb/okeefe-navigating/
 Date: 2019-02-26 01:10
 Tags: news, tags 
 Slug: facpub-okeefe
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Theresa O'Keefe during her interview
 Image_thumb: 2019-02/okeefe-thumb.png

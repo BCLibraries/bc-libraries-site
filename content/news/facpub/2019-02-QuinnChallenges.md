@@ -1,4 +1,4 @@
-Date: 2019-02-05 01:01
+Date: 2019-02-28 01:01
 Tags: facpub
 Slug: quinn-challenges
 Title: Various Articles
@@ -17,7 +17,7 @@ Book_location:#
 ShowBook_location: no
 Bookcover: 2019/quinn-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 "Challenges and Opportunities for Living and Working Longer," with Kevin Cahill. 2018. 
 In <em>How Persistent Low Returns Will Shape Saving and Retirement</em>, Robert Clark, Raimond Maurer, and Olivia Mitchell, editors. New York, NY: Oxford University Press, pp. 101-118.

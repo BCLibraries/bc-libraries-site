@@ -2,7 +2,7 @@ Title: Data in Ministry: Research Methods and Resources to Understand Changes in
 Destination: http://bit.ly/tmlspeaks
 Date: 2019-03-20 02:01
 Expired:  no
-Slug: story-slug-name
+Slug: story-tml-speaks-s19
 Image: 2019/03-tml.png
 Selector_img: 2019/03-tml.png
 Image_alt: Tuesday, April 16th, 2019 12:00pm - 1:30pm at the Theology and Ministry Library Auditorium, 117 Lake Street Boston, MA 02135. 

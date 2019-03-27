@@ -1,13 +1,10 @@
 <!-- NEWS START -->
+
+<!-- TEST. -->
+
 <div class="container" id="news" data-tag="ga-tag">
 
     <div class="row">
-
-        <!--div class="col-md-12">
-            <h2>
-                <a href="/news">News</a>
-            </h2>
-        </div-->
 
        {% for article in articles | most_recent_news(4) %}
 

@@ -3,6 +3,10 @@
     margin-bottom: 6em;
 }
 
+.bento-results-page {
+    padding-top: 2em;
+}
+
 /** Prevent content jumps on blank search **/
 .results-row-1 {
     min-height: 80vh;
@@ -257,4 +261,36 @@ ol.faq-results-list {
         left: 0;
         position: absolute;
     }
+}
+
+/** Search bar **/
+.react-autosuggest__suggestion {
+    padding: .5em .5em;
+    border: 1px dotted #999;
+    cursor: pointer;
+}
+
+.react-autosuggest__suggestions-list {
+    list-style: none;
+    padding: 0;
+    width: 800px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+}
+
+.react-autosuggest__input {
+    width: 800px;
+    font-size: 20px;
+    height: 50px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.react-autosuggest__suggestion:hover {
+    background-color: #e9eaea;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #e9eaea;
 }

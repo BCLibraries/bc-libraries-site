@@ -1,0 +1,14 @@
+{
+  "main.js": "/theme/bcbento/static/js/main.8d7e30eb.chunk.js",
+  "main.js.map": "/theme/bcbento/static/js/main.8d7e30eb.chunk.js.map",
+  "runtime~main.js": "/theme/bcbento/static/js/runtime~main.c8c18500.js",
+  "runtime~main.js.map": "/theme/bcbento/static/js/runtime~main.c8c18500.js.map",
+  "static/js/2.394f3979.chunk.js": "/theme/bcbento/static/js/2.394f3979.chunk.js",
+  "static/js/2.394f3979.chunk.js.map": "/theme/bcbento/static/js/2.394f3979.chunk.js.map",
+  "index.html": "/theme/bcbento/index.html",
+  "precache-manifest.1a185668d0b39dec23bb79a65fdc4fdf.js": "/theme/bcbento/precache-manifest.1a185668d0b39dec23bb79a65fdc4fdf.js",
+  "service-worker.js": "/theme/bcbento/service-worker.js",
+  "static/media/blank-screen.svg": "/theme/bcbento/static/media/blank-screen.8c8df489.svg",
+  "static/media/mono-dvd-mount.svg": "/theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg",
+  "static/media/video-tape.svg": "/theme/bcbento/static/media/video-tape.7b003cc9.svg"
+}

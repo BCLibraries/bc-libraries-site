@@ -1,26 +1,17 @@
-{% extends "base.html" %}
-
-{% block title %}Search{% endblock %}
-
-{% block pagestyles %}
-<script>
-    if (document.location.href.indexOf('proxy.bc.edu') > -1) {
-        document.location.href = 'https://library.bc.edu/search?' + window.location.search;
-    }
-</script>
-<link rel="stylesheet" href="/theme/bcbento/css/bento.css?v=20190110">
-{% endblock %}
-
-{% block content %}
-
-{% include 'megamenu.html' %}
-
-<div id="main-body" class="container">
-    <div id="root"></div>
-</div>
-{% endblock %}
-
-{% block pagescripts %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="/theme/bcbento/favicon.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="/theme/bcbento/manifest.json"/>
+    <title>React App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root" class="container"></div>
 <script>!function (l) {
     function e(e) {
         for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++) t = n[f], c[t] && i.push(c[t][0]), c[t] = 0;
@@ -78,4 +69,5 @@
 }([])</script>
 <script src="/theme/bcbento/static/js/2.394f3979.chunk.js"></script>
 <script src="/theme/bcbento/static/js/main.8d7e30eb.chunk.js"></script>
-{% endblock %}
+</body>
+</html>

@@ -12,8 +12,6 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
-WRITE_SELECTED = ['output/search/index.html']
-
 THEME = "themes/bc"
 
 CSS_FILE = 'style.css'
@@ -24,7 +22,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 CACHE_CONTENT = True
-CONTENT_CACHING_LAYER = 'generator'
+CONTENT_CACHING_LAYER = 'reader'
 LOAD_CONTENT_CACHE = True
 
 USE_FOLDER_AS_CATEGORY = True
@@ -66,10 +64,6 @@ WITH_FUTURE_DATES = False
 STATIC_PATHS = [
     'extra/favicon.ico',
 ]
-
-CATEGORY_SAVE_AS = False
-AUTHOR_SAVE_AS = False
-TAG_SAVE_AS = False
 
 # path-specific metadata
 EXTRA_PATH_METADATA = {

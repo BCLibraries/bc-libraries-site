@@ -1,14 +1,14 @@
 {
-  "main.js": "/theme/bcbento/static/js/main.72f285d3.chunk.js",
-  "main.js.map": "/theme/bcbento/static/js/main.72f285d3.chunk.js.map",
+  "main.js": "/theme/bcbento/static/js/main.278963f9.chunk.js",
+  "main.js.map": "/theme/bcbento/static/js/main.278963f9.chunk.js.map",
   "runtime~main.js": "/theme/bcbento/static/js/runtime~main.c8c18500.js",
   "runtime~main.js.map": "/theme/bcbento/static/js/runtime~main.c8c18500.js.map",
-  "static/js/2.150fa27e.chunk.js": "/theme/bcbento/static/js/2.150fa27e.chunk.js",
-  "static/js/2.150fa27e.chunk.js.map": "/theme/bcbento/static/js/2.150fa27e.chunk.js.map",
+  "static/js/2.0a72dbf0.chunk.js": "/theme/bcbento/static/js/2.0a72dbf0.chunk.js",
+  "static/js/2.0a72dbf0.chunk.js.map": "/theme/bcbento/static/js/2.0a72dbf0.chunk.js.map",
   "index.html": "/theme/bcbento/index.html",
-  "precache-manifest.c2d1ed128d279292a9f5d834815fe924.js": "/theme/bcbento/precache-manifest.c2d1ed128d279292a9f5d834815fe924.js",
+  "precache-manifest.70b2b6efd2d0bd6bdcd36d719d4db8e8.js": "/theme/bcbento/precache-manifest.70b2b6efd2d0bd6bdcd36d719d4db8e8.js",
   "service-worker.js": "/theme/bcbento/service-worker.js",
   "static/media/blank-screen.svg": "/theme/bcbento/static/media/blank-screen.8c8df489.svg",
   "static/media/mono-dvd-mount.svg": "/theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg",
-  "static/media/video-tape.svg": "/theme/bcbento/static/media/video-tape.7b003cc9.svg"
+  "static/media/video-tape.svg": "/theme/bcbento/static/media/video-tape.38e1c445.svg"
 }

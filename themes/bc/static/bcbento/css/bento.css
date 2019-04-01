@@ -3,6 +3,13 @@
     margin-bottom: 6em;
 }
 
+/** Empty search */
+.blank-search-screen__explanation {
+    margin-top: 3em;
+    font-size: 24px;
+}
+/** End empty search **/
+
 .bento-results-page {
     padding-top: 2em;
 }
@@ -36,25 +43,16 @@
     padding: 0
 }
 
-.catalog-results-box__header,
-.article-results-box__header,
-.librarian-results-box__header,
-.faq-results-box__header,
-.video-results-box__header,
-.website-results-box__header {
+.bento-results-box__header {
     font-weight: 600;
     margin-bottom: .5em;
 }
 
-.catalog-results-box__header a, .article-results-box__header a,
-.librarian-results-box__header a, .faq-results-box__header a,
-.video-results-box__header a, .website-results-box__header a {
+.bento-results-box__header a {
     color: #585655;
 }
 
-.catalog-results-box__header a:hover, .article-results-box__header a:hover,
-.librarian-results-box__header a:hover, .faq-results-box__header a:hover,
-.video-results-box__header a:hover, .website-results-box__header a:hover {
+.bento-results-box__header a:hover {
     text-decoration: none;
     color: #7a7877;
 }
@@ -181,6 +179,10 @@
     border: 1px solid rgba(0, 0, 0, .2);
 }
 
+.online-video-thumb__blank_screen {
+    height: 140px;
+}
+
 .physical-video__box_cover {
     max-height: 100%;
 }
@@ -202,7 +204,7 @@ img.physical-video__default_cover {
 
 /** Librarians **/
 
-.librarian-results-box img {
+.librarian-results-list img {
     max-width: 100px;
 }
 
@@ -254,12 +256,17 @@ ol.faq-results-list {
         position: relative;
     }
 
+    .video-results-list li {
+        margin-bottom: 3em;
+    }
+
     .media-body__mobile-link {
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         position: absolute;
+        display: block;
     }
 }
 

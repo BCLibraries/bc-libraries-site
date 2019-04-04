@@ -5,7 +5,7 @@ Title: Jesuit Philosophy on the Eve of Modernity
 By:
 Author_firstname: Cristiano 
 Author_lastname: Casalini
-Author_position: Associate Professor, Teacher Education, Lynch School of Education
+Author_position: Associate Professor, Teacher Education, Lynch School of Education; Research Scholar, Institute for Advanced Jesuit Studies
 Second_author:
 Second_position:
 Third_author:

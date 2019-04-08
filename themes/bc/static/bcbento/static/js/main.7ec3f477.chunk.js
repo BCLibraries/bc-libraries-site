@@ -466,11 +466,11 @@
             e.unregister()
         })
     }, 21: function (e, a, t) {
-        e.exports = "/video-search/static/media/video-tape.38e1c445.svg"
+        e.exports = "/video-search/theme/bcbento/static/media/video-tape.38e1c445.svg"
     }, 35: function (e, a, t) {
-        e.exports = "/video-search/static/media/blank-screen.f8c2d118.svg"
+        e.exports = "/video-search/theme/bcbento/static/media/blank-screen.f8c2d118.svg"
     }, 50: function (e, a, t) {
-        e.exports = "/video-search/static/media/mono-dvd-mount.cb59635b.svg"
+        e.exports = "/video-search/theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg"
     }, 52: function (e, a, t) {
         e.exports = t(105)
     }

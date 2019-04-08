@@ -43,6 +43,24 @@
     padding: 0
 }
 
+.bento-results-box__header-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.bento-results-box__header-row .see-all-link {
+    margin-left: 4em;
+    font-size: .9em;
+    border-radius: 2px;
+    margin-bottom: .5em;
+    font-weight: 600;
+}
+
+.bento-results-box__header-row .see-all-link__prefix {
+    display: none;
+}
+
 .bento-results-box__header {
     font-weight: 600;
     margin-bottom: .5em;
@@ -109,6 +127,10 @@
 
 /** Physical availability info **/
 
+.catalog-result-item__getit {
+    font-weight: 600;
+}
+
 .item-info::before {
     content: "✓";
     font-weight: bold;
@@ -132,6 +154,10 @@
     color: #0f7d00;
 }
 
+.item-info__other-libraries {
+    color: #000;
+}
+
 .item-info__location, .item-info__callno {
     color: #204375;
 }
@@ -147,6 +173,10 @@
 /** End Physical availability info **/
 
 /** Video results **/
+.video-results-box .see-all-link {
+    clear: both;
+    padding-top: 1em;
+}
 
 .online_video__thumb::before {
     position: absolute;

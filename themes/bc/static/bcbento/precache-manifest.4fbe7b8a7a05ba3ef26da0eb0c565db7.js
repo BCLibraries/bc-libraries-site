@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg"
   },
   {
-    "revision": "8c8df489b30ccf12f5c390b2d1dbfbba",
-    "url": "/theme/bcbento/static/media/blank-screen.8c8df489.svg"
+    "revision": "f8c2d118cf469d8297e778c8ce07f2fd",
+    "url": "/theme/bcbento/static/media/blank-screen.f8c2d118.svg"
   },
   {
     "revision": "92e50514b733871a6ed8",
     "url": "/theme/bcbento/static/js/runtime~main.c8c18500.js"
   },
   {
-    "revision": "1e0d0a20183c88db3157",
-    "url": "/theme/bcbento/static/js/main.278963f9.chunk.js"
+    "revision": "ec376ae1bd4b63af007b",
+    "url": "/theme/bcbento/static/js/main.7ec3f477.chunk.js"
   },
   {
-    "revision": "de48514844311fc4812c",
-    "url": "/theme/bcbento/static/js/2.0a72dbf0.chunk.js"
+    "revision": "abb72519fdea73195deb",
+    "url": "/theme/bcbento/static/js/2.962469e1.chunk.js"
   },
   {
-    "revision": "4975d8a918c8dd88e41cc2fb929a0324",
+    "revision": "ada4a371d6cd599fdcffa93c18f1c845",
     "url": "/theme/bcbento/index.html"
   }
 ];

@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Feb/conley-lily/
 Date: 2019-03-12 01:01 
 Tags: news, tags 
 Slug: facpub-conley-lily
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Alston Conley holding a book
 Image_thumb: 2019-03/conley-thumb.png

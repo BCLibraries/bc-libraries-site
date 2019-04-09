@@ -20,7 +20,11 @@
             BURNS: {weight: 0},
             ERC: {weight: 0},
             SWK: {weight: 0},
-            LAW: {weight: 0}
+            LAW: {weight: 0},
+            GEO: {weight: 1},
+            RES_SHARE: {weight: 2},
+            DEV: {weight: 2},
+            INT: {weight: 1}
         };
 
         function m(e, a) {
@@ -138,7 +142,7 @@
                 render: p
             })
         };
-        var k = function (e) {
+        var w = function (e) {
             var a = e.article;
             return n.a.createElement("li", {className: "article-result-item media"}, n.a.createElement("div", {className: "media-body"}, n.a.createElement("h3", {className: "article-result-item__media-heading media-heading"}, n.a.createElement("a", {
                 href: a.link,
@@ -151,9 +155,9 @@
                 "aria-hidden": "true",
                 className: "media-body__mobile-link"
             }, "\xa0")))
-        }, w = function (e) {
+        }, k = function (e) {
             return n.a.createElement(n.a.Fragment, null, e.items.map(function (e) {
-                return n.a.createElement(k, {key: e.id, article: e})
+                return n.a.createElement(w, {key: e.id, article: e})
             }))
         };
         var S = function (e) {
@@ -164,7 +168,7 @@
                 term: "articles",
                 heading: "Articles",
                 searchString: a,
-                render: w
+                render: k
             })
         };
         var y = function (e) {
@@ -213,18 +217,18 @@
                 render: F
             })
         }, P = t(35), U = t.n(P);
-        var B = function (e) {
+        var V = function (e) {
             return function (a) {
                 a.target.onerror = null, a.target.src = e
             }
         };
-        var V = function (e) {
+        var A = function (e) {
             var a = e.video, t = a.covers && a.covers.length > 0 ? a.covers[0] : U.a,
                 r = a.covers && a.covers.length > 0 ? "online-video-thumb__screenshot" : "online-video-thumb__blank_screen";
             return n.a.createElement("li", {className: "online-video col-md-4"}, n.a.createElement("a", {href: a.getit}, n.a.createElement("div", {className: "online_video__thumb"}, n.a.createElement("img", {
                 src: t,
                 alt: "Watch ".concat(a.title, " online"),
-                onError: B(U.a),
+                onError: V(U.a),
                 className: r
             }))), n.a.createElement("h3", {className: "online-video__media-heading media-heading"}, n.a.createElement("a", {
                 href: a.link,
@@ -232,21 +236,21 @@
             }, a.title)), a.date, n.a.createElement("div", {className: "online-video__creator"}, function (e) {
                 return e.creator ? e.creator : e.contributors[0] ? e.contributors[0] : ""
             }(a)), n.a.createElement("div", {className: "online-video__watch-link"}, n.a.createElement("a", {href: a.getit}, "Watch online")))
-        }, W = t(21), q = t.n(W), A = t(50), T = t.n(A);
+        }, B = t(21), T = t.n(B), W = t(50), q = t.n(W);
 
-        function C(e) {
+        function I(e) {
             return e.covers.length > 0 && e.covers[0] ? "physical-video__box_cover" : "physical-video__default_cover"
         }
 
-        var I = function (e) {
+        var C = function (e) {
             var a = e.video, t = function (e) {
                 if (e.covers.length > 0 && e.covers[0]) return String(e.covers[0]);
                 switch (e.format) {
                     case"DVD":
-                        return T.a;
+                        return q.a;
                     case"VHS":
                     default:
-                        return q.a
+                        return T.a
                 }
             }(a);
             return n.a.createElement("li", {className: "physical-video col-md-4"}, n.a.createElement("a", {
@@ -254,9 +258,9 @@
                 "aria-hidden": "true"
             }, n.a.createElement("img", {
                 src: t,
-                onError: B(q.a),
+                onError: V(T.a),
                 alt: "",
-                className: C(a)
+                className: I(a)
             })), n.a.createElement("h3", {className: "physical-video__media-heading media-heading"}, n.a.createElement("a", {
                 href: a.link,
                 className: "physical-video__title"
@@ -267,7 +271,7 @@
             return n.a.createElement(n.a.Fragment, null, e.items.map(function (e) {
                 return function (e) {
                     var a = e.id;
-                    return e.getit ? n.a.createElement(V, {video: e, key: a}) : n.a.createElement(I, {video: e, key: a})
+                    return e.getit ? n.a.createElement(A, {video: e, key: a}) : n.a.createElement(C, {video: e, key: a})
                 }(e)
             }))
         };
@@ -301,7 +305,7 @@
                 return n.a.createElement(J, {key: e.url, hit: e})
             }))
         };
-        var K = function (e) {
+        var G = function (e) {
             var a = e.searchString;
             return n.a.createElement(_, {
                 baseUrl: "http://libdev.bc.edu/search-services/website",
@@ -312,7 +316,7 @@
                 render: Q
             })
         };
-        var $ = function (e) {
+        var K = function (e) {
             var a = e.searchString, t = Object(r.useRef)(null), l = Object(r.useRef)(null), c = Object(r.useRef)(null),
                 i = Object(r.useRef)(null), o = Object(r.useRef)(null), m = Object(r.useRef)(null);
             return n.a.createElement("div", null, n.a.createElement("div", {className: "row"}, n.a.createElement("nav", {className: "link-to-results col-md-8"}, n.a.createElement("div", {className: "link-to-results__skip-to"}, "Skip to:"), n.a.createElement(s, {
@@ -345,14 +349,14 @@
             }, n.a.createElement("div", {className: "col-md-12"}, n.a.createElement(D, {searchString: a}))), n.a.createElement("div", {
                 className: "results-row-4 row",
                 ref: m
-            }, n.a.createElement("div", {className: "col-md-12"}, n.a.createElement(K, {searchString: a})))))
+            }, n.a.createElement("div", {className: "col-md-12"}, n.a.createElement(G, {searchString: a})))))
         };
-        var z = function () {
+        var $ = function () {
             return n.a.createElement("div", {className: "blank-search-screen"}, n.a.createElement("div", {className: "blank-search-screen__explanation"}, "Search for just about anything in or about the Libraries."))
         };
-        var G = function (e) {
+        var z = function (e) {
             var a = e.searchBox, t = e.searchString;
-            return n.a.createElement("div", {className: "bento-results-page"}, a, t ? n.a.createElement($, {searchString: t}) : n.a.createElement(z, null))
+            return n.a.createElement("div", {className: "bento-results-page"}, a, t ? n.a.createElement(K, {searchString: t}) : n.a.createElement($, null))
         }, X = t(51), Y = t.n(X), Z = 3, ee = function (e) {
             return e.value
         };
@@ -459,7 +463,7 @@
                         c(m), document.title = ne(l)
                     }
                 });
-            return n.a.createElement(G, {searchBox: d, searchString: l})
+            return n.a.createElement(z, {searchBox: d, searchString: l})
         };
         Boolean("localhost" === window.location.hostname || "[::1]" === window.location.hostname || window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
         c.a.render(n.a.createElement(le, null), document.getElementById("root")), "serviceWorker" in navigator && navigator.serviceWorker.ready.then(function (e) {
@@ -475,4 +479,4 @@
         e.exports = t(105)
     }
 }, [[52, 1, 2]]]);
-//# sourceMappingURL=main.7ec3f477.chunk.js.map
+//# sourceMappingURL=main.767849ab.chunk.js.map

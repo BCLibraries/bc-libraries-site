@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Feb/quinn-challenges/
 Date: 2019-03-25 01:01 
 Tags: news, tags 
 Slug: facpub-quinn-various
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Dr. Quinn during his interview
 Image_thumb: 2019-03/quinn-thumb.png

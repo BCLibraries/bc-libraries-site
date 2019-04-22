@@ -1,4 +1,4 @@
-Title: Faculty Publication Highlight: Wan Sonya Tang  
+Title: Faculty Publication Highlight: Cristiano Casalini
 Destination: https://library.bc.edu/facpub/2019/Apr/casalini-jesuit/
 Date: 2019-04-22 01:01 
 Tags: news, tags 

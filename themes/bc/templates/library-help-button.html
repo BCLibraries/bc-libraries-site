@@ -1,12 +1,13 @@
 <style type="text/css">
     #askuswidget {
         position: fixed;
-        right: -124px;
+        right: -168px;
         z-index: 99999999999;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        font-size: 150%;
-        height: 5rem;
+        font-size: 130%;
+        height: auto;
+        padding-bottom: .75rem;
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
@@ -14,17 +15,25 @@
         -ms-transform-origin: top left;
         transform-origin: top left;
         box-shadow: rgb(0,0,0) 0px 0px 5px;
-        z-index: 100000;
+    }
+    #askuswidget.btn {
+        border-color: #fff;
+        border-top: none;
+    }
+    #askuswidget.btn:focus,
+    #askuswidget.btn:hover  {
+        border-color: inherit;
+        border-top: none;
     }
     @media (max-width: 900px) {
         #askuswidget {
-            bottom: 100px;
+            bottom: 200px;
         }
     }
     @media (min-width: 901px) {
         #askuswidget {
-            top:100px;
+            top:25%;
         }
     }
 </style>
-<div class="libraryh3lp" style="" data-lh3-jid="ajcu-chatstaff@chat.libraryh3lp.com"><a href="#" id="askuswidget" class="btn btn-primary" onclick="window.open('https://libraryh3lp.com/chat/ajcu-chatstaff@chat.libraryh3lp.com?skin=29500', 'AskUs', 'resizable=1,width=250,height=300'); return false;"><span class=" fa fa-commenting-o"></span> Ask Us</a></div>
+<div class="libraryh3lp" style="" data-lh3-jid="ajcu-chatstaff@chat.libraryh3lp.com"><a href="#" id="askuswidget" class="btn btn-primary" onclick="window.open('https://libraryh3lp.com/chat/ajcu-chatstaff@chat.libraryh3lp.com?skin=29500', 'AskUs', 'resizable=1,width=250,height=300'); return false;"><span class=" fa fa-commenting-o"></span> Chat With Us</a></div>

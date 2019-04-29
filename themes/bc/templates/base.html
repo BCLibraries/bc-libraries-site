@@ -223,8 +223,7 @@
             $("#askuswidget").click(function(e){
                 var src = window.location.pathname;
                 // enable in production
-                //ga('send', 'event', 'askuswidget', 'click', src);
-                console.log("path: " + src);
+                ga('send', 'event', 'askuswidget', 'click', src);
             });
         });
         // Initialize bootstrap popover

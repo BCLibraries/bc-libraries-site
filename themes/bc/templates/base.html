@@ -165,7 +165,7 @@
             // HOMEPAGE only GA event triggers
             //
             // send 'outbound' event for all link clicks
-            $("a").not('.search-link').click(function(e) {
+            $("a").not('#askuswidget, .search-link').click(function(e) {
                 if (!ga.q) {
                     var url = $(this).attr("href");
 
@@ -183,7 +183,7 @@
             });
             // send 'homepage' event for all link clicks and include sections
             // ignore news carousel and mega menu top-level links
-            $("a").not(".carousel-control, li.dropdown > a.menu-option").click(function(e){
+            $("a").not("#askuswidget, .carousel-control, li.dropdown > a.menu-option").click(function(e){
                 var url = $(this).attr("href");                
                 var dataTag = $(this).parents("[data-tag=ga-tag]");
                 var dataID = "-";
@@ -220,10 +220,9 @@
             //
             // catch Ask Us fixed button clicks
             //
-            $("#askuswidget").click(function(e){
-                var src = window.location.pathname;
-                // enable in production
-                ga('send', 'event', 'askuswidget', 'click', src);
+            $("a#askuswidget").click(function(e){
+                var src = window.location.href;
+                ga('send', 'event', 'chat-widget', 'click', src);
             });
         });
         // Initialize bootstrap popover

@@ -541,6 +541,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     display: none;
 }
 
+.megamenu-container .libraryh3lp > a.chat-link {
+    font-weight: 600;
+}
+
 @media ( max-width: 1199px ) {
     .homepagerefresh #db-rg-hours h2 {
         line-height: 1.3;

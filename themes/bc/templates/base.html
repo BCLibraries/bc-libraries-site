@@ -217,6 +217,15 @@
                 var src = $(this).attr("src");
                 ga('send', 'event', 'story-nav', 'click', src);
             });
+            //
+            // catch Ask Us fixed button clicks
+            //
+            $("#askuswidget").click(function(e){
+                var src = window.location.pathname;
+                // enable in production
+                //ga('send', 'event', 'askuswidget', 'click', src);
+                console.log("path: " + src);
+            });
         });
         // Initialize bootstrap popover
         //$(function () { $('[data-toggle="tooltip"]').tooltip() });

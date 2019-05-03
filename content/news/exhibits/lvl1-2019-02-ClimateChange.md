@@ -9,7 +9,7 @@ Slug: climate-change-humanities-lvl1
 Image: 2019/02-climate-poster.jpg
 Image_thumb: 2019/02-climate-thumb.png
 Image_alt: A view of the Earth from the moon
-Active: yes
+Active: no
 Style: right
 
 Climate change is often viewed as a concern limited to scientists and social scientists.  Now, however, it is increasingly recognized as a focus of interest for the Humanities.  As the impact of rising sea-levels, higher temperatures, increased or decreased rainfall, intensified storm activity and other changes are felt, humanists are called (and called upon) to help us understand and respond. How will the humanities provide a framework for responding to the challenges of climate change?

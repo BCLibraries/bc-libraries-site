@@ -9,7 +9,7 @@ Slug: ireland-1918
 Image: 2018/10-ireland-poster.jpg
 Image_thumb: 2018/10-ireland-thumb.png
 Image_alt: Victory Parade, Trinity College, Dublin
-Active: yes
+Active: no
 Style: middle_top
 
 The year 1918 was momentous for Ireland and the world in general. The purpose of this exhibit is to contextualize and relate the history of Ireland in that year to a global perspective. Although still part of the United Kingdom Irish separatists had taken the occasion of the First World War to stage a rebellion, “The Rising” in Irish terms, at Easter 1916. While short-lived and ruthlessly crushed that event brought to center stage the Sinn Féin party. In the general election of December 1918 it triumphed at the polls emphasizing democratic values in the face of collapsing empires, Ottoman, German, Austrian, Russian, and threatening the integrity of the British Empire. Southern Ireland’s break with the United Kingdom in 1922 would become a model for other countries seeking independence from Britain.

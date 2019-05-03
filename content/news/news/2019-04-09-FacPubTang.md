@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Mar/tang-televising/
 Date: 2019-04-09 01:01 
 Tags: news, tags 
 Slug: facpub-tang
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Tang mid-interview
 Image_thumb: 2019-04/tang-thumb.png

@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Apr/casalini-jesuit/
 Date: 2019-04-22 01:01 
 Tags: news, tags 
 Slug: facpub-casalini
-Expired: no
+Expired: yes
 ShowText: yes
 Image_alt: Professor Casalini during his interview
 Image_thumb: 2019-04/casa-thumb.png

@@ -17,6 +17,6 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldispl
 ShowBook_location: yes
 Bookcover: 2019/salameh-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 This book examines the early history of modern Lebanon, focusing on the country's Jewish community.  The author presents both history and memory of Lebanon's Jews after they were expelled from their homeland following the creation of the State of Israel.  The work retells the history of Lebanon by placing Lebanese Jews into the country's narrative from the 1920s to 1970s, including an examination of the role they played in the construction of Lebanon's multi-sectarian system.

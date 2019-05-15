@@ -153,6 +153,8 @@
       ga('send', 'pageview');
 
         $(function () {
+            var $all_anchors = $('a');
+
             $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
                 var myText = $(this).find("a.menu-option").text();
                 ga('send', 'event', 'megamenu', 'hover', myText.trim());
@@ -165,7 +167,7 @@
             // HOMEPAGE only GA event triggers
             //
             // send 'outbound' event for all link clicks
-            $("a").not('#askuswidget, .search-link').click(function(e) {
+            $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
                 if (!ga.q) {
                     var url = $(this).attr("href");
 
@@ -183,7 +185,7 @@
             });
             // send 'homepage' event for all link clicks and include sections
             // ignore news carousel and mega menu top-level links
-            $("a").not("#askuswidget, .carousel-control, li.dropdown > a.menu-option").click(function(e){
+            $all_anchors.not("#askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
                 var url = $(this).attr("href");                
                 var dataTag = $(this).parents("[data-tag=ga-tag]");
                 var dataID = "-";

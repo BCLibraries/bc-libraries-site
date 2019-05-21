@@ -2,7 +2,7 @@ Title: Faculty Publication Highlight: Gerald C. Kane
 Destination: https://library.bc.edu/facpub/2019/Apr/kane-tech/
 Date: 2019-05-21 01:01 
 Tags: news, tags 
-Slug: kane-tech
+Slug: facpub-kane-tech
 Expired: no
 ShowText: yes
 Image_alt: professor kane during his interview

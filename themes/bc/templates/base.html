@@ -168,19 +168,10 @@
             //
             // send 'outbound' event for all link clicks
             $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
-                if (!ga.q) {
-                    var url = $(this).attr("href");
-
-                    /* Bug fix to stop screen jump when clicking carousel controls */
-                    if (url.indexOf('#') !== 0) {
-                        ga("send", "event", "outbound", "click", url, {
-                            "hitCallback":
-                                function () {
-                                    document.location = url;
-                                }
-                        });
-                    }
-                    e.preventDefault();
+                var url = $(this).attr("href");
+                /* Bug fix to stop screen jump when clicking carousel controls */
+                if (url.indexOf('#') !== 0) {
+                    ga("send", "event", "outbound", "click", url);
                 }
             });
             // send 'homepage' event for all link clicks and include sections

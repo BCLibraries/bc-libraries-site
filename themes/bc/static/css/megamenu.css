@@ -243,7 +243,7 @@
 }*/
 @media ( max-width: 767px ) {
     .homepagerefresh #megamenu-refresh {
-        display: inline;
+        display: block;
     }
 }
 .homepagerefresh #megamenu-refresh .hours-todays-date-container {

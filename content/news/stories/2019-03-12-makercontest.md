@@ -1,7 +1,7 @@
 Title: Boston College Libraries Maker Contest!
 Destination: http://bit.ly/2C7n4qB
 Date: 2019-03-12 02:01
-Expired: no
+Expired: yes
 Slug: story-library-maker
 Image: 2019/03-maker.png
 Selector_img: 2019/03-maker.png

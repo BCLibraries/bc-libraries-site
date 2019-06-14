@@ -6,7 +6,7 @@
             {% for story in articles | current_stories(4) %}
             <figure class="sr-only story" id="story-{{loop.index}}">
                 <a href="{{ story.destination }}">
-                    <img src="/theme/img/stories/{{ story.image }}" alt="" aria-hidden="true" role="presentation"/>
+                    <img src="/theme/img/stories/{{ story.image }}" alt="{{ story.title }}" />
                     <figcaption>{{ story.title }}</figcaption>
                 </a>
             </figure>
@@ -15,10 +15,10 @@
 
         </div>
 
-        <div class="col-md-2 story-selectors" aria-hidden="true" role="presentation">
+        <div class="col-md-2 story-selectors" aria-hidden="true">
 
             {% for story in articles | current_stories(4) %}
-            <img class="selector" src="/theme/img/stories/{{ story.selector_img }}" alt="thumbnail" data-story="story-{{ loop.index }}"/>
+            <img class="selector" src="/theme/img/stories/{{ story.selector_img }}" alt="thumbnail" data-story="story-{{ loop.index }}" aria-hidden="true" />
             {% endfor %}
 
         </div>

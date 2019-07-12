@@ -4,6 +4,10 @@ By:
 Author_firstname: Patrick J.
 Author_lastname:  Maney
 Author_position: Professor, History Department 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Kimberly Kowal
 Librarian_email: kimberly.kowal@bc.edu
 Librarian_position: Associate University Librarian, Digital Initiatives and Services
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/BQYyby2OClE
 Sample_pages: 2016/06/maney-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21457687350001021
+ShowBook_location: yes
 Bookcover: 2016/06/maney-cover.png
 Image_alt: Book cover featuring a photo of Bill Clinton
 Oneoff: no

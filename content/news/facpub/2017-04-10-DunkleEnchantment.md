@@ -4,6 +4,10 @@ By:
 Author_firstname: Brian P.
 Author_lastname: Dunkle, SJ
 Author_position: Assistant Professor of Historical Theology
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Stephen Dalton
 Librarian_email: mail@bc.edu
 Librarian_position: etc this is hidden
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/TUN4I7TfZbA
 Sample_pages: 2017/04/dunkle-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21466611840001021
+ShowBook_location: yes
 Bookcover: 2017/04/dunkle-cover.png
 Image_alt: Book cover
 Oneoff: no

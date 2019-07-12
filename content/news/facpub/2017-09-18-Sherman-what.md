@@ -4,15 +4,20 @@ By:
 Author_firstname: Mary
 Author_lastname: Sherman
 Author_position: Art, Art History, and Film Department
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: sherman-what
 Youtube: https://www.youtube.com/embed/hxaUJ8MM4rY
 Sample_pages: 2017/09/sherman-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21468402760001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2017/09/sherman-cover.png
 Image_alt: What if You Could Hear a Painting book cover
 Oneoff: no

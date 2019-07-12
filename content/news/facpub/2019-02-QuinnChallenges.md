@@ -1,15 +1,18 @@
 Date: 2019-02-28 01:01
-Tags: facpub
-Slug: quinn-challenges
 Title: Various Articles
 By: 
 Author_firstname: Joseph F.
 Author_lastname: Quinn, Ph.D
 Author_position: Professor, Economics Department 
-Second_author: 
-Second_position: 
+Second_author:
+Second_position:
 Third_author:
-Third_position: 
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: quinn-challenges
 Youtube: https://www.youtube.com/embed/3OO-Hgh52dw
 Sample_pages: 2019/quinn-book.pdf
 ShowSample_pages: yes

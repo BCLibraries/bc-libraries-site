@@ -4,6 +4,10 @@ By:
 Author_firstname: Patrick H.
 Author_lastname: Byrne
 Author_position: Philosophy Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Sally Wyman
 Librarian_email: sally.wyman@bc.edu
 Librarian_position: Head Librarian, Collection Development and Research Services
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/Ed9KlxFY7b0
 Sample_pages: 2016/06/byrne-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21458261260001021
+ShowBook_location: yes
 Bookcover: 2016/06/byrne-cover.png
 Image_alt: Very painterly image of a path through the forest
 Oneoff: no 

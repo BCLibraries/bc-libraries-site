@@ -1,15 +1,18 @@
 Date: 2019-02-26 01:01
-Tags: facpub
-Slug: okeefe-navigating
 Title: Navigating Toward Adulthood:  A Theology of Ministry with Adolescents
 By:
 Author_firstname: Theresa 
 Author_lastname: O'Keefe
 Author_position: School of Theology and Ministry, Associate Professor of the Practice of Youth and Young Adult Faith
-Second_author: 
+Second_author:
 Second_position:
-Third_author: 
-Third_position:  
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: okeefe-navigating
 Youtube: https://www.youtube.com/embed/_UgIYcRlvus
 Sample_pages: 2019/okeefe-book.pdf
 ShowSample_pages: yes

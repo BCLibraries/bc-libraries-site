@@ -1,15 +1,18 @@
 Date: 2018-10-10 01:02
-Tags: facpub
-Slug: gallaugher-learn
 Title: Learn to Program using Swift for iOS Development 
 By:
 Author_firstname: John 
 Author_lastname: Gallaugher
 Author_position: Information Systems Department, Carroll School of Management 
-Second_author: 
-Second_position:  
-Third_author: 
-Third_position:  
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: gallaugher-learn
 Youtube: https://www.youtube.com/embed/RZdYdfNaAV4
 Sample_pages: 2018/xx/NAME-book.pdf
 ShowSample_pages: no

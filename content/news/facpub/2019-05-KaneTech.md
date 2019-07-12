@@ -1,15 +1,18 @@
 Date: 2019-04-17 01:01
-Tags: facpub
-Slug: kane-tech
 Title: The Technology Fallacy: How People Are the Real Key to Digital Transformation
 By: 
 Author_firstname: Gerald C.
 Author_lastname: Kane
 Author_position: Professor of Information Systems and Faculty Director, Shea Center for Entrepreneurship, Carroll School of Management
 Second_author: Anh Nguyen Phillips, Jonathan R. Copulsky, & Garth R. Andrus
-Second_position: 
-Third_author: 
-Third_position:  
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: kane-tech
 Youtube: https://www.youtube.com/embed/oclryxyloDg
 Sample_pages: 2019/kane-book.pdf
 ShowSample_pages: yes

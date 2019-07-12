@@ -1,6 +1,4 @@
 Date: 2018-08-09 01:01
-Tags: facpub
-Slug: krause-crawford
 Title: Coercion: The Power to Hurt in International Politics 
 By:
 Author_firstname: Peter 
@@ -8,6 +6,13 @@ Author_lastname: Krause
 Author_position: Associate Professor, Political Science
 Second_author: Timothy Crawford
 Second_position: Associate Professor, Political Science
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: krause-crawford
 Youtube: https://www.youtube.com/embed/JF0t9icXbDA
 Sample_pages: 2018/08/krause-book.pdf
 ShowSample_pages: yes

@@ -4,6 +4,10 @@ By:
 Author_firstname: Vincent F.
 Author_lastname: Rocchio 
 Author_position: Communication Department 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/mdHnorCLM5o
 Sample_pages: 2016/xx/NAME-book.pdf
 ShowSample_pages: no
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21464034940001021
+ShowBook_location: yes
 Bookcover: 2016/11/rocchio-cover.png
 Image_alt: the book cover
 Oneoff: no

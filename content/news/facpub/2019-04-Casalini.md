@@ -1,6 +1,4 @@
 Date: 2019-04-04 01:01
-Tags: facpub
-Slug: casalini-jesuit
 Title: Jesuit Philosophy on the Eve of Modernity
 By:
 Author_firstname: Cristiano 
@@ -10,6 +8,11 @@ Second_author:
 Second_position:
 Third_author:
 Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: casalini-jesuit
 Youtube: https://www.youtube.com/embed/YCI37AnPMCc
 Sample_pages: 2019/casalini-book.pdf
 ShowSample_pages: yes

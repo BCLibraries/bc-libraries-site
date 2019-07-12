@@ -4,6 +4,10 @@ By: Edited
 Author_firstname: Michael
 Author_lastname: Resler
 Author_position: German Studies Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Lawrence Busenbark
 Librarian_email: lawrence.busenbark@bc.edu
 Librarian_position: German Studies Subject Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/R96rxCPmACA
 Sample_pages: 2016/06/resler-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21459195060001021
+ShowBook_location: yes
 Bookcover: 2016/06/resler-cover.png
 Image_alt: A very plain book cover
 Oneoff: no

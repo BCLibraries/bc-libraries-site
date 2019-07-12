@@ -1,6 +1,4 @@
 Date: 2019-03-01 01:01
-Tags: facpub
-Slug: tang-televising
 Title: Televising Restoration Spain
 By:
 Author_firstname: Wan Sonya
@@ -10,6 +8,11 @@ Second_author:
 Second_position:
 Third_author:
 Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: tang-televising
 Youtube: https://www.youtube.com/embed/NwIcqBI1BDA
 Sample_pages: 2019/tang-book.pdf
 ShowSample_pages: yes

@@ -4,6 +4,10 @@ By:
 Author_firstname: David E.
 Author_lastname: Storey
 Author_position: Philosophy Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Sally Wyman
 Librarian_email: sally.wyman@bc.edu
 Librarian_position: Head Librarian, Collection Development and Research Services
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/hC8-hAqgqF8
 Sample_pages: 2016/06/storey-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21448432950001021
+ShowBook_location: yes
 Bookcover: 2016/06/storey-cover.png
 Image_alt: Book cover featuring a helix shell
 Oneoff: no

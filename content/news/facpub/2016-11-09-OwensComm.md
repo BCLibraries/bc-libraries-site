@@ -4,6 +4,10 @@ By:
 Author_firstname: Rita
 Author_lastname: Owens
 Author_position: Senior Lecturer, Carroll School of Management
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/pQ9KwcwAfys
 Sample_pages: 2016/11/owens-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21464903720001021
+ShowBook_location: yes
 Bookcover: 2016/11/owens-cover.png
 Image_alt: Book cover for Communcation for Consultants
 Oneoff: no

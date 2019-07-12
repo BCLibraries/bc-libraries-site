@@ -4,15 +4,20 @@ By:
 Author_firstname: Rebecca 
 Author_lastname: Valette
 Author_position: Professor Emeritus, Department of Romance Languages and Literatures
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: valette-navajo 
 Youtube: https://www.youtube.com/embed/jN-S5lBhUyM
 Sample_pages: 2018/04/valette-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21475809490001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2018/04/valette-cover.png
 Image_alt: book cover
 Oneoff: no

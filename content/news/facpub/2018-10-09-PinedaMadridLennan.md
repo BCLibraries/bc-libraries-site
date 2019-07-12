@@ -1,6 +1,4 @@
 Date: 2018-10-11 01:01
-Tags: facpub
-Slug: holy-spirit-bctm
 Title: Holy Spirit: Setting the World on Fire
 By: Co-Edited 
 Author_firstname: Richard 
@@ -8,8 +6,13 @@ Author_lastname: Lennan
 Author_position:  Professor of Systematic Theology, Professor Ordinarius
 Second_author: Nancy Pineda-Madrid
 Second_position: Associate Professor of Theology and Latino/Latina Ministry
-Third_author: 
-Third_position: 
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: holy-spirit-bctm
 Youtube: https://www.youtube.com/embed/B2bSG5DqB8o
 Sample_pages: 2018/10/hs-samples.pdf
 ShowSample_pages: yes

@@ -1,8 +1,13 @@
 Date: 2015-01-01 01:01
 Title: Sustainable Lifestyles and the Quest for Plentitude: Case Studies of the New Economy 
+By:
 Author_firstname: Juliet B. Schor and
 Author_lastname: Crag J. Thompson
 Author_position: Sociology Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Kate Silfen
 Librarian_email: silfen@bc.edu
 Librarian_position: Subject Specialist for Sociology and Social Work
@@ -12,8 +17,10 @@ Youtube: //www.youtube.com/embed/piGuIQKP8IY
 Sample_pages: 2015/01/schor-book.pdf
 ShowSample_pages: yes
 Book_location: http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21438379720001021
+ShowBook_location: yes
 Bookcover: 2015/01/schor-cover.jpg
 Image_alt: Book cover for Sustainable Lifestyles and the Quest for Plentitude: Case Studies of the New Economy 
+Oneoff: no
 
 <strong>Interview with: Juliet B. Schor, Lindsey B. Carfagna, and Robert Wengronowitz.</strong>
 

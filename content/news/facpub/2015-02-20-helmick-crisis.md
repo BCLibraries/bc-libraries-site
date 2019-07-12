@@ -1,8 +1,13 @@
 Date: 2015-02-20 01:01
 Title: The Crisis of Confidence in the Catholic Church 
+By:
 Author_firstname: Raymond G.
 Author_lastname: Helmick, S.J.
 Author_position: Theology Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Jonas Barciauskas
 Librarian_email: jonas.barciauskas@bc.edu
 Librarian_position: Head of Collection Development, O'Neill Library
@@ -12,8 +17,10 @@ Youtube: //www.youtube.com/embed/iLriTVPwRUA
 Sample_pages: 2015/02/helmick-book.pdf
 ShowSample_pages: yes
 Book_location: http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21439297820001021
+ShowBook_location: yes
 Bookcover: 2015/02/helmick-cover.jpg
 Image_alt: A fancy cover for The Crisis of Confidence in the Catholic Church 
+Oneoff: no
 
  The Catholic Church in the United States and Europe has seen declining numbers both in regular attendance and in clergy and religious life. Scandals have torn at people's allegiance, and feelings of disappointment, disillusion, and anger have become widespread. Church authorities have seemed reluctant to acknowledge or address these problems and have responded with vexation to those who raise them from the Right or Left. The Crisis of Confidence in the Catholic Church examines the roots of this crisis in light of the nature of the Church community, its institutional structure, and the historical experiences that have brought it to this pass. Raymond Helmick, SJ, traces the problems of the Catholic Church far back in its history - the concentration of Church leadership on controlling the Christian population, a requirement of obedience to their rulings rather than on the Gospel values of Jesus, the defensiveness and self-righteousness in the face of any criticism. Helmick also emphasizes the role of the Second Vatican Council as it brought the Church to an awareness of its potentiality for an active life of faith by its total membership.
 

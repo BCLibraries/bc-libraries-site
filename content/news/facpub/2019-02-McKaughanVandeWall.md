@@ -1,6 +1,4 @@
 Date: 2019-02-12 01:02
-Tags: facpub
-Slug: mckaughan-vandewall
 Title: The History and Philosophy of Science: A Reader
 By: 
 Author_firstname: Daniel 
@@ -8,8 +6,13 @@ Author_lastname: McKaughan
 Author_position: Associate Professor, Department of Philosophy
 Second_author: Holly VandeWall
 Second_position:  Associate Professor of the Practice, Department of Philosophy
-Third_author: 
+Third_author:
 Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: mckaughan-vandewall
 Youtube: https://www.youtube.com/embed/GsXx8Q185uU
 Sample_pages: #
 ShowSample_pages: no

@@ -1,14 +1,18 @@
 Date: 2019-02-27 01:01
-Tags: facpub
-Slug: conley-lily
 Title: A Lily Blooms in Winter
 By: 
 Author_firstname: Alston 
 Author_lastname: Conley
 Author_position: Art, Art History, and Film Department
-Second_author: 
-Second_position: 
-Third_position: 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: conley-lily
 Youtube: https://www.youtube.com/embed/jNnJD1MnTIo
 Sample_pages: 2019/conley-book.pdf
 ShowSample_pages: yes

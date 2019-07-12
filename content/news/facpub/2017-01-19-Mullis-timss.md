@@ -4,12 +4,20 @@ By:
 Author_firstname: Dr. Ina V.S.
 Author_lastname: Mullis
 Author_position: Professor, Educational Research, Measurement & Evaluation 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: mullis-timss
 Youtube: https://www.youtube.com/embed/6YMSpJiBWl8
 Sample_pages: 2016/xx/NAME-book.pdf
 ShowSample_pages: no
 Book_location: http://timssandpirls.bc.edu/timss2015/encyclopedia/
+ShowBook_location: yes
 Bookcover: 2017/01/timss-cover.png
 Image_alt: TIMSS and PIRLS
 Oneoff: no

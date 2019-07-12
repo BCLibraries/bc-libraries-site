@@ -4,13 +4,20 @@ By: Edited
 Author_firstname: John J.
 Author_lastname: Michalczyk 
 Author_position: Art, Art History, and Film Department
-Second_author: 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: michalczyk-law
 Youtube: https://www.youtube.com/embed/nZaylkuRNik
 Sample_pages: 2018/05/michalczyk-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21481402290001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2018/05/michalczyk-cover.png
 Image_alt: the book cover
 Oneoff: no

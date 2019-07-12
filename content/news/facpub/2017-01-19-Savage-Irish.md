@@ -4,12 +4,20 @@ By:
 Author_firstname: Robert J
 Author_lastname: Savage
 Author_position: Professor of the Practice, History Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: savage-irish
 Youtube: https://www.youtube.com/embed/JwSNT9GBnR0
 Sample_pages: 2017/01/savage-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21450207590001021
+ShowBook_location: yes
 Bookcover: 2017/01/savage-cover.png
 Image_alt: Cover for BBC's Irish Troubles
 Oneoff: no

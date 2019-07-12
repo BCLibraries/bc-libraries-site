@@ -1,9 +1,13 @@
 Date: 2016-03-07 01:02
 Title: Selected Related Articles
-by: 
+By: 
 Author_firstname: Michael 
 Author_lastname: Serazio
 Author_position: Department of Communication, Assistant Professor
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Leslie Homzie
 Librarian_email: leslie.homzie@bc.edu
 Librarian_position: Senior Research Librarian
@@ -13,8 +17,10 @@ Youtube: https://www.youtube.com/embed/5B1oXtj41UQ
 Sample_pages: 2016/xx/NAME-book.pdf
 ShowSample_pages: no
 Book_location: http://onlinelibrary.wiley.com/doi/10.1111/jcom.12078/full
+ShowBook_location: yes
 Bookcover: 2016/03/serazio-cover.png
 Image_alt: Cover of Volume 64, Issue 4 of the Journal of Communication 
+Oneoff: no
 
 <strong>Selected Related Articles</strong>
 

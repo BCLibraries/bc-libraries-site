@@ -4,15 +4,20 @@ By: Edited
 Author_firstname: Margaret 
 Author_lastname: Lombe
 Author_position: Associate Professor, Global Practice, School of Social Work 
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: lombe-chrildren
 Youtube: https://www.youtube.com/embed/aI4JBcMHtVY
 Sample_pages: 2017/03/lombe-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21455597360001021
+ShowBook_location: yes
 Bookcover: 2017/03/03-lombe-cover.png
 Image_alt: Book cover
 Oneoff: no

@@ -4,15 +4,20 @@ By:
 Author_firstname: Matt 
 Author_lastname: Sienkiewicz, Ph.D.
 Author_position: Communication Department
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: sienkiewicz-other
 Youtube: https://www.youtube.com/embed/IDpCOtsC3Wo
 Sample_pages: 2017/09/sienkiewicz-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21465012150001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2017/09/sienkiewicz-cover.png
 Image_alt: Book cover
 Oneoff: no

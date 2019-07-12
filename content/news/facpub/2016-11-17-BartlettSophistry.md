@@ -4,6 +4,10 @@ By:
 Author_firstname: Robert 
 Author_lastname: Bartlett
 Author_position: Political Science Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/pqUokQV-VW8
 Sample_pages: 2016/11/bartlett-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21463685050001021
+ShowBook_location: yes
 Bookcover: 2016/11/bartlett-cover.png
 Image_alt: it's a book cover
 Oneoff: no

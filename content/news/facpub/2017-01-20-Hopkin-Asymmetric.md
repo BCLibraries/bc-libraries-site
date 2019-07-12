@@ -4,12 +4,20 @@ By:
 Author_firstname: Dave
 Author_lastname: Hopkins
 Author_position: Assistant Professor, Political Science Department 
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position: 
 Tags: facpub
 Slug: hopkins-asymmetric
 Youtube: https://www.youtube.com/embed/FhWNCaNClyE
 Sample_pages: 2017/01/hopkins-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21463680170001021
+ShowBook_location: yes
 Bookcover: 2017/01/hopkins-cover.png
 Image_alt: Book cover
 Oneoff: no

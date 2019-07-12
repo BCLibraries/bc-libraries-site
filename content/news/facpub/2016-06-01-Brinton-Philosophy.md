@@ -4,6 +4,10 @@ By:
 Author_firstname: Aspen E.
 Author_lastname: Brinton
 Author_position: Professor, Philosophy
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Jonas Barciauskas 
 Librarian_email: jonas.barciauskas.1@bc.edu
 Librarian_position: Head of Collection Development
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/sKkOVp-4qcY
 Sample_pages: 2016/06/brinton-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21457957350001021
+ShowBook_location: yes
 Bookcover: 2016/06/brinton-cover.png
 Image_alt: Book cover
 Oneoff: no

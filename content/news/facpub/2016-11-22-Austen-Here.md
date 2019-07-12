@@ -4,6 +4,10 @@ By:
 Author_firstname: Hartmut 
 Author_lastname: Austen
 Author_position: Art, Art History & Film Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/BaHZuaPh4SY
 Sample_pages: #
 ShowSample_pages: no
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21463147960001021
+ShowBook_location: yes
 Bookcover: 2016/11/austen-cover.png
 Image_alt: A bright pink book cover
 Oneoff: no

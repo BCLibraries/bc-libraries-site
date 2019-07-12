@@ -4,15 +4,20 @@ By:
 Author_firstname: Dr. Mary J. Cronin and
 Author_lastname: Prof. Tiziana C. Dearing
 Author_position: 
-Librarian_name: Name Surname
-Librarian_email: mail@bc.edu
-Librarian_position: Senior Reference Librarian
+Second_author:
+Second_position:
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: dearing-cronin
 Youtube: https://www.youtube.com/embed/yvWs4_oo_9k
 Sample_pages: #
 ShowSample_pages: no
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21469902000001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2017/09/dear-cover.png
 Image_alt: Managing for Social Impact Book cover
 Oneoff: no

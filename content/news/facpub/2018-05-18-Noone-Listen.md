@@ -6,12 +6,18 @@ Author_lastname: Noone
 Author_position: Professor, Music Department
 Second_author: Daniele V. Filippi
 Second_position: Research Fellow at the Schola Cantorum Basiliensis (Basel, Switzerland)
+Third_author:
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: noone-listening
 Youtube: https://www.youtube.com/embed/q7Tj5ReElQE
 Sample_pages: 2018/07/noone-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ALMA-BC21479100840001021&context=L&vid=bclib_new&search_scope=bcl&tab=bcl_only&lang=en_US
+ShowBook_location: yes
 Bookcover: 2018/07/noone-cover.png
 Image_alt: the book cover 
 Oneoff: no

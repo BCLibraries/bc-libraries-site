@@ -1,6 +1,4 @@
 Date: 2018-10-12 04:01
-Tags: facpub
-Slug: tabloski-redefining
 Title: Redefining Retirement For Nurses; Finding Meaning In Retirement
 By: 
 Author_firstname: Patricia A. 
@@ -8,8 +6,13 @@ Author_lastname: Tabloski
 Author_position: Associate Professor at the Connell School of Nursing
 Second_author: Joanne Evans
 Second_position: Previously, Assistant Director at the American Nurses Credentialing Center
-Third_author: 
+Third_author:
 Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: tabloski-redefining
 Youtube: https://www.youtube.com/embed/VPNiXviyHh0
 Sample_pages: 2018/10/tabloski-samples.pdf
 ShowSample_pages: yes

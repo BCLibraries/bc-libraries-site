@@ -4,6 +4,10 @@ By:
 Author_firstname: Sarah Gwyneth 
 Author_lastname: Ross
 Author_position: Associate Professor and Director of the History Core
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Kimberly Kowal 
 Librarian_email: kowalk@bc.edu
 Librarian_position: Associate University Librarian, Digital Initiatives & Services
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/kR89g8P5wn4
 Sample_pages: 2016/09/ross-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21459735590001021
+ShowBook_location: yes
 Bookcover: 2016/09/ross-cover.png
 Image_alt: Book cover
 Oneoff: no

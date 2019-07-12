@@ -4,6 +4,10 @@ By:
 Author_firstname: Oliver P.
 Author_lastname: Rafferty, S.J.
 Author_position:  Professor of History and Director of Irish Studies Programs
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Kathleen Williams
 Librarian_email: kathleen.williams@bc.edu
 Librarian_position: Senior Reference Librarian and Bibliographer for Irish Studies
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/KkofrQyoJFI
 Sample_pages: 2016/04/rafferty-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21458306070001021
+ShowBook_location: yes
 Bookcover: 2016/04/rafferty-cover.png
 Image_alt: Cover of Violence, Politics and Catholicism in Ireland
 Oneoff: no

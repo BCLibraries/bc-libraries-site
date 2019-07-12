@@ -1,15 +1,18 @@
 Date: 2019-04-09 01:01
-Tags: facpub
-Slug: salameh-lebanon
 Title: Lebanon's Jewish Community: Fragments of Lives Arrested
 By:
 Author_firstname: Franck 
 Author_lastname: Salameh
 Author_position: Associate Professor of Near Eastern Studies
 Second_author:
-Second_position:  
+Second_position:
 Third_author:
-Third_position:  
+Third_position:
+Librarian_name:
+Librarian_email:
+Librarian_position:
+Tags: facpub
+Slug: salameh-lebanon
 Youtube: https://www.youtube.com/embed/-ZLC-ubacX4
 Sample_pages: 2019/salameh-book.pdf
 ShowSample_pages: yes

@@ -4,6 +4,10 @@ By: Translated
 Author_firstname: Daniel
 Author_lastname: Bowles
 Author_position: German Studies Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Jonas Barciauskas
 Librarian_email: barciaus@bc.edu
 Librarian_position: Head of Collection Development 
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/d0ajaaRDMik
 Sample_pages: 2016/04/bowles-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21452851590001021
+ShowBook_location: yes
 Bookcover: 2016/04/bowles-cover.png
 Image_alt: Cover of Imperium - A Fiction of the South Seas
 Oneoff: no

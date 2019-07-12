@@ -4,6 +4,10 @@ By:
 Author_firstname: Claude Pavur, S.J. 
 Author_lastname: and Cristiano Casalini
 Author_position:
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Stephen Dalton
 Librarian_email: leslie.homzie@bc.edu
 Librarian_position: Collection Development/Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/aaD5L84gJXI
 Sample_pages: 2016/07/pavurcasalini-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21461408870001021
+ShowBook_location: yes
 Bookcover: 2016/07/pavurcasalini-cover.png
 Image_alt: Book cover reads exactly what you think it would
 Oneoff: no

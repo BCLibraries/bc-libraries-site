@@ -1,19 +1,26 @@
 Date: 2015-06-23 01:01
 Title: Seán Lemass
+By:
 Author_firstname: Robert J. 
 Author_lastname: Savage
 Author_position: History Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name:  Elliot Brandow
 Librarian_email: elliot.brandow@bc.edu
 Librarian_position: Bibliographer for History
 Tags: facpub
 Slug: savage-sean 
 Youtube: //www.youtube.com/embed/-vhyAJPPblM
-ShowSample_pages: no
 Sample_pages: 2015/00/NAME-book.pdf
+ShowSample_pages: no
 Book_location: http://libsite.dev/facpub/2015/Jun/savage-sean/url
+ShowBook_location: yes
 Bookcover: 2015/06/savage-cover.jpg
 Image_alt: Seán Lemass book cover
+Oneoff: no
 
  Seán Lemass is generally regarded as the man most responsible for the modernisation of Irish society. This book considers how Lemass evolved as a key figure in Fianna Fail governments and later to become one of the most influential leaders of twentieth-century Ireland. Professor Savage argues that by the time Lemass emerged out of the shadow of Eamon de Valera he had learned valuable lessons concerning the limitations of political power. By 1959 Lemass understood that principle sometimes had to be compromised to ensure the maintenance of political power.
 

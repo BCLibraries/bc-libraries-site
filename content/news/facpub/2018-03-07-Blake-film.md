@@ -4,15 +4,20 @@ By:
 Author_firstname: Richard 
 Author_lastname: Blake S.J. Ph.D.
 Author_position: Art​,​ Art History, and Film Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name:
-Librarian_email: 
-Librarian_position: 
+Librarian_email:
+Librarian_position:
 Tags: facpub
 Slug: blake-film
 Youtube: https://www.youtube.com/embed/3dXAoXzYmJM
 Sample_pages: 2018/03/blake-book.pdf
 ShowSample_pages: yes
 Book_location: https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Richard%20Aloysius%20Blake&tab=bcl_only&search_scope=bcl&vid=bclib_new&offset=0
+ShowBook_location: yes
 Bookcover: 2018/03/blake-cover.png
 Image_alt: four of Professor Blake's book covers
 Oneoff: no

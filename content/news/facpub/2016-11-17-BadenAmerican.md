@@ -4,6 +4,10 @@ By:
 Author_firstname: Karl 
 Author_lastname: Baden
 Author_position: Art, Art History, and Film Department
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Name Surname
 Librarian_email: mail@bc.edu
 Librarian_position: Senior Reference Librarian
@@ -13,6 +17,7 @@ Youtube: https://www.youtube.com/embed/G4lMV-Pz4QE
 Sample_pages: 2016/11/baden-book.pdf
 ShowSample_pages: yes
 Book_location: http://bc-primo.hosted.exlibrisgroup.com/bclib:bcl:ALMA-BC21461771660001021
+ShowBook_location: yes
 Bookcover: 2016/11/baden-cover.png
 Image_alt: the book cover
 Oneoff: no

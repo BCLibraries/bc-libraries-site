@@ -1,8 +1,13 @@
 Date: 2015-11-05 01:01
 Title: University Ethics: How Colleges Can Build and Benefit from a Culture of Ethics 
+By:
 Author_firstname: James F. 
 Author_lastname: Keenan, S.J.
 Author_position: Canisius Professor, Theology Department, and Director of the Jesuit Institute
+Second_author:
+Second_position:
+Third_author:
+Third_position:
 Librarian_name: Jonas Barciauskas
 Librarian_email: jonas.barciauskas@bc.edu
 Librarian_position: Subject Specialist in Philosophy
@@ -12,8 +17,10 @@ Youtube: //www.youtube.com/embed/dgoDlC02g_c
 Sample_pages: 2015/11/keenan-book.pdf
 ShowSample_pages: yes
 Book_location: http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21449699840001021
+ShowBook_location: yes
 Bookcover: 2015/11/keenan-cover.jpg
 Image_alt: image description
+Oneoff: no
 
 Stories about ethical issues at universities make headlines every day. From sexual violence to racial conflict, from the treatment of adjuncts to cheating, students, professors, and administrators face countless ethical trials. And yet, very few resources exist to assist universities in developing an ethical culture. <em>University Ethics</em> addresses this challenge. Each chapter studies a facet of university life-including athletics, gender, faculty accountability, and more-highlights the ethical hotspots, explains why they occur, and proposes best practices.
 

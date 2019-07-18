@@ -546,15 +546,24 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 /* Ask A Librian box styles */
-.aal-box, .lib-box {
+.aal-box, 
+.lib-box {
     background-color: #f8f8f8; 
     font-size:16px;
+}
+.lib-box .panel-body a {
+    display: block;
+}
+.aal-box p:last-child,
+.lib-box p:last-child {
+    margin-bottom: 0;
 }
 .aal-box .fa {
     margin-left: 2px; 
     font-weight:600;
 }
-.aal-box h3, .panel h3 {
+.aal-box h3,
+.aal-box .panel h3 {
     font-size: larger; 
     font-weight: 600;
 }
@@ -589,6 +598,32 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 .lib-box .panel-body .media img {
     max-width: 141px!important;
+}
+.lib-box .lib-box-pair {
+    display: inline-block;
+}
+
+/* Ask A Librarian small boxes */
+.lib-box-small .panel-body .media img {
+    max-width: 100px!important;
+}
+.aal-box-small,
+.lib-box-small {
+    font-size: inherit;
+}
+.aal-box-small .panel-body,
+.lib-box-small .panel-body {
+    padding: 10px 5px 10px 10px;
+}
+.aal-box-small a.aal-icon {
+    font-size: 60px!important;
+    width: 100px;
+}
+.aal-box-small h3, 
+.aal-box-small .panel h3,
+.lib-box-small h3, 
+.lib-box-small .panel h3 {
+    font-size: 15px;
 }
 
 @media ( max-width: 1199px ) {
@@ -785,10 +820,13 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 /* Ask A Librarian specific */
 @media (max-width: 424px) {
     .aal-box .panel-body .media img,
-    .lib-box .panel-body .media img {
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
         max-width:90px!important;
     }
-    .aal-box a.aal-icon {
+    .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon {
         width:90px!important;
         font-size:50px!important;
     }
@@ -805,8 +843,11 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 /* Ask A Librarian specific */
 @media (max-width: 374px) {
     .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon,
     .aal-box .panel-body .media img,
-    .lib-box .panel-body .media img {
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
         display:none;
     }
 }

@@ -551,7 +551,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     background-color: #f8f8f8; 
     font-size:16px;
 }
-.lib-box .panel-body a {
+.lib-box .panel-body .media a.lib-thumb {
     display: block;
 }
 .aal-box p:last-child,

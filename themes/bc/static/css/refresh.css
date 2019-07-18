@@ -558,7 +558,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-size: larger; 
     font-weight: 600;
 }
-
 .aal-box a.aal-icon {
     font-size: 100px!important;
     color:#fff;
@@ -587,6 +586,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 .aal-box .aal-icon:active,
 .aal-box .aal-icon:hover {
     background-color:#31b0d5!important;
+}
+.lib-box .panel-body .media img {
+    max-width: 141px!important;
 }
 
 @media ( max-width: 1199px ) {
@@ -782,7 +784,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 /* Ask A Librarian specific */
 @media (max-width: 424px) {
-    .aal-box .panel-body .media img {
+    .aal-box .panel-body .media img,
+    .lib-box .panel-body .media img {
         max-width:90px!important;
     }
     .aal-box a.aal-icon {
@@ -801,10 +804,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 /* Ask A Librarian specific */
 @media (max-width: 374px) {
-    .aal-box .panel-body .media img {
-        display:none;
-    }
-    .aal-box a.aal-icon {
+    .aal-box a.aal-icon,
+    .aal-box .panel-body .media img,
+    .lib-box .panel-body .media img {
         display:none;
     }
 }

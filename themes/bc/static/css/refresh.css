@@ -563,7 +563,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-weight:600;
 }
 .aal-box h3,
-.aal-box .panel h3 {
+.aal-box .panel h3,
+.lib-box h3,
+.lib-box .panel h3 {
     font-size: larger; 
     font-weight: 600;
 }

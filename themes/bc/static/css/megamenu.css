@@ -194,7 +194,8 @@
     }
     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
         border-top: 0px;
-        border-bottom: 1px dashed #ccc;
+        border-bottom: 2px dashed #ccc;
+        margin-bottom: 1.5rem;
     }
     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu {
         border: 0;
@@ -287,6 +288,10 @@
         width: 100%;*/
         text-align: center;
         border: none;
+    }
+    #mm-help-aal > .h4style {
+        text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -816,8 +821,8 @@
 }
 
 #mm-help-container .panel {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: .75rem .5rem .5rem .75rem;
+    margin-bottom: .5rem;
     color: #666;
     height: 100%;
 }
@@ -831,33 +836,34 @@
 }
 
 #mm-help-container .aal-box {
-    background-color: #f8f8f8;
-    min-height: 100px;
+    font-size: inherit;
 }
 
 #mm-help-container .aal-box .h4style {
     color: #05506d;
     font-size: 16px;
     font-weight: 600;
-    margin: 0 !important;
+    margin: 0 0 .25rem 0!important;
     padding: 0;
     text-transform: none;
+    line-height: 1;
 }
 
 #mm-help-container .aal-box .fa {
-    margin-left: 0px; font-weight:600;
+    margin-left: 0px; 
+    font-weight:600;
 }
 
 #mm-help-container .aal-box p {
     padding: 0;
     margin: 0;
+    line-height: 1.5;
 }
 
 #mm-help-container .aal-box a.aal-icon {
     font-size:35px!important;
     color: #fff;
     display: block;
-    vertical-align: top;
     line-height: 1;
     width: 55px;
 }
@@ -867,32 +873,29 @@
     width: 100%;
 }
 
-#mm-help-container .aal-box #email-icon-link {
-    background-color: #a25729;
-}
-
-#mm-help-container .aal-box #meet-icon-link {
-    background-color: #204375;
-}
-
-#mm-help-container .aal-box #visit-icon-link {
-    background-color: #dccaa0;
-}
-
-#mm-help-container .aal-box #chat-icon-link {
-    background-color: #B29D6C;
-}
-
-#mm-help-container .aal-box .aal-icon:focus,
-#mm-help-container .aal-box .aal-icon:active,
-#mm-help-container .aal-box .aal-icon:hover {
-    background-color: #31b0d5!important;
-}
-
 #mm-help-container .aal-box h4 {
     font-weight: 600;
 }
 
+@media ( max-width: 767px ) {
+    #mm-help-container .panel {
+        padding: .75rem;
+        height: auto;
+    }
+    #mm-help-aal .row:last-child {
+        padding-top: 0;
+    }
+}
+
+@media ( max-width: 424px ) {
+    #mm-help-container .aal-box .panel-body .media .media-left a.aal-icon {
+        display: none;
+    }
+    #mm-help-container .aal-box .panel-body .media .media-right {
+        padding-left: 0;
+        line-height: 1.25;
+    }
+}
 
 /* Image sprites for library thumbnails */
 .libsprite {

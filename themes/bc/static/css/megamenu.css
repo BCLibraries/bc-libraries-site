@@ -886,9 +886,6 @@
         margin-bottom: 1rem;
         height: auto;
     }
-    #mm-help-aal .panel:last-child {
-        margin-bottom: 0;
-    }
 }
 
 @media ( max-width: 424px ) {

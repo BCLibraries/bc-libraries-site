@@ -545,6 +545,86 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-weight: 600;
 }
 
+/* Ask A Librian box styles */
+.aal-box, 
+.lib-box {
+    background-color: #f8f8f8; 
+    font-size:16px;
+}
+.lib-box .panel-body .media a.lib-thumb {
+    display: block;
+}
+.aal-box p:last-child,
+.lib-box p:last-child {
+    margin-bottom: 0;
+}
+.aal-box .fa {
+    margin-left: 2px; 
+    font-weight:600;
+}
+.aal-box h3,
+.aal-box .panel h3,
+.lib-box h3,
+.lib-box .panel h3 {
+    font-size: larger; 
+    font-weight: 600;
+}
+.aal-box a.aal-icon {
+    font-size: 100px!important;
+    color:#fff;
+    display:block;
+    vertical-align:top;
+    line-height:1;
+    width:141px;
+}
+.aal-box a.aal-icon i {
+    padding:20px;
+    width:100%;
+}
+.aal-box #chat-icon-link.aal-icon {
+    background-color:#B29D6C;
+}
+.aal-box #email-icon-link.aal-icon {
+    background-color:#a25729;
+}
+.aal-box #meet-icon-link.aal-icon {
+    background-color:#204375;
+}
+.aal-box #visit-icon-link.aal-icon {
+    background-color:#dccaa0;
+}
+.aal-box .aal-icon:focus,
+.aal-box .aal-icon:active,
+.aal-box .aal-icon:hover {
+    background-color:#31b0d5!important;
+}
+.lib-box .panel-body .media img {
+    max-width: 141px!important;
+}
+
+/* Ask A Librarian small boxes */
+.lib-box-small .panel-body .media img {
+    max-width: 100px!important;
+}
+.aal-box-small,
+.lib-box-small {
+    font-size: inherit;
+}
+.aal-box-small .panel-body,
+.lib-box-small .panel-body {
+    padding: 10px 5px 10px 10px;
+}
+.aal-box-small a.aal-icon {
+    font-size: 60px!important;
+    width: 100px;
+}
+.aal-box-small h3, 
+.aal-box-small .panel h3,
+.lib-box-small h3, 
+.lib-box-small .panel h3 {
+    font-size: 15px;
+}
+
 @media ( max-width: 1199px ) {
     .homepagerefresh #db-rg-hours h2 {
         line-height: 1.3;
@@ -736,11 +816,38 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }
 }
 
+/* Ask A Librarian specific */
+@media (max-width: 424px) {
+    .aal-box .panel-body .media img,
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
+        max-width:90px!important;
+    }
+    .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon {
+        width:90px!important;
+        font-size:50px!important;
+    }
+}
+
 /* Specific to the bc-lib header */
 @media (max-width: 400px) {
     #bclib-header .link-wrapper .fa-commenting-o,
     #bclib-header .link-wrapper .fa-user {
         display: none;
+    }
+}
+
+/* Ask A Librarian specific */
+@media (max-width: 374px) {
+    .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon,
+    .aal-box .panel-body .media img,
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
+        display:none;
     }
 }
 

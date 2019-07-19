@@ -820,26 +820,26 @@
     padding-top: 10px;
 }
 
-#mm-help-container .panel {
+#mm-help-aal .panel {
     padding: .75rem .5rem .75rem .75rem;
     margin-bottom: 0;
     color: #666;
     height: 100%;
 }
 
-#mm-help-container .panel-body {
+#mm-help-aal .panel-body {
     padding: 0;
 }
 
-#mm-help-container .panel-body .media-left {
+#mm-help-aal .panel-body .media-left {
     padding: 0;
 }
 
-#mm-help-container .aal-box {
+#mm-help-aal .aal-box {
     font-size: inherit;
 }
 
-#mm-help-container .aal-box .h4style {
+#mm-help-aal .aal-box .h4style {
     color: #05506d;
     font-size: 16px;
     font-weight: 600;
@@ -849,18 +849,18 @@
     line-height: 1;
 }
 
-#mm-help-container .aal-box .fa {
+#mm-help-aal .aal-box .fa {
     margin-left: 0px; 
     font-weight:600;
 }
 
-#mm-help-container .aal-box p {
+#mm-help-aal .aal-box p {
     padding: 0;
     margin: 0;
     line-height: 1.4;
 }
 
-#mm-help-container .aal-box a.aal-icon {
+#mm-help-aal .aal-box a.aal-icon {
     font-size:35px!important;
     color: #fff;
     display: block;
@@ -868,30 +868,34 @@
     width: 55px;
 }
 
-#mm-help-container .aal-box a.aal-icon i {
+#mm-help-aal .aal-box a.aal-icon i {
     padding: 10px;
     width: 100%;
 }
 
-#mm-help-container .aal-box h4 {
+#mm-help-aal .aal-box h4 {
     font-weight: 600;
 }
 
 @media ( max-width: 767px ) {
-    #mm-help-container .panel {
-        padding: .75rem;
-        height: auto;
-    }
     #mm-help-aal .row:last-child {
         padding-top: 0;
+    }
+    #mm-help-aal .panel {
+        padding: .75rem;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+    #mm-help-aal .panel:last-child {
+        margin-bottom: 0;
     }
 }
 
 @media ( max-width: 424px ) {
-    #mm-help-container .aal-box .panel-body .media .media-left a.aal-icon {
+    #mm-help-aal .aal-box .panel-body .media .media-left a.aal-icon {
         display: none;
     }
-    #mm-help-container .aal-box .panel-body .media .media-right {
+    #mm-help-aal .aal-box .panel-body .media .media-right {
         padding-left: 0;
         line-height: 1.25;
     }

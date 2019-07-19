@@ -821,8 +821,8 @@
 }
 
 #mm-help-container .panel {
-    padding: .75rem .5rem .5rem .75rem;
-    margin-bottom: .5rem;
+    padding: .75rem .5rem .75rem .75rem;
+    margin-bottom: 0;
     color: #666;
     height: 100%;
 }
@@ -857,7 +857,7 @@
 #mm-help-container .aal-box p {
     padding: 0;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 #mm-help-container .aal-box a.aal-icon {

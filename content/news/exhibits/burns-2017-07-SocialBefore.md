@@ -13,3 +13,5 @@ Active: no
 Style: left
 
 Social media is defined as "websites and applications which enable users to create and share content or to participate in social networking." We once used telegrams, snapshots, postcards, letters, and scrapbooks to communicate with each other, organize our daily lives, and preserve memories. Drawn from John J. Burns Library archival collections, this exhibit endeavors to connect some of our legacy material culture with the apps of today.
+
+<a href="https://library.bc.edu/burns-exhibits/being-social/" class="explore" target="_blank">Explore this exhibit online</a>.

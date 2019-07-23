@@ -20,34 +20,4 @@ Style: right
 <p>The library began publication in February 1906 and four years later   500 volumes had already been published. Through two world wars and a   depression, the series finally published volume 1,000 in 1956. In 1988   the publishing company J.M. Dent was sold and eventually the Everyman   series was re-launched in the early 1990s. Though very different from   the early editions of 1906, you can still buy Everyman's Library books   through Alfred A. Knopf in the United States and Random House abroad.</p>
 <p>This exhibit has two purposes firstly, to show the changing styles of   EML throughout the many decades it was in print, and secondly to show   the variety of collections at the Burns Library that contain volumes of   the series. From the Irish collection to the Liturgy and Life   Collection, the personal libraries of authors Rex Stout and Flann   O'Brien, copies of the EML can be found in all of the major collections   in the Burns Library.</p>
 
-<!--
-
-Active:
-    Yes (will appear on Exhibit's homepage)
-    No (will not appear on Exhibit's homepage, but will appear in archives)
-
-Gallery locations: 
-    Burns Library (burns)
-    Theology and Ministry Library (tml)
-    O'Neill Level One (lvl1)
-    O'Neill Level Three (lvl3)
-    O'Neill Reading Room (reading)
-    O'Neill Reading Room Back Wall (backwall)
-    O'Neill Lobby (lobby)
-    History Dept, Stokes Hall (stokes)
-    Bapst Exhibits (bapsts)
-    Archived Bapst Exhibits (bapstsarchive)
-  
-Need spaces for:
-
-  Virtual Exhibits (virtual)
-  Tip O'Neill (tiponeill)
-
-Style:
-    Poster on left, text on right (default)
-    Poster on right, text on left (right)
-    Poster large, centered above text (middle_top)
-    Poster large, centered below text (middle_down)
-
--->
-
+<a href="https://library.bc.edu/burns-exhibits/everymans-library/" class="explore" target="_blank">Explore this exhibit online</a>.

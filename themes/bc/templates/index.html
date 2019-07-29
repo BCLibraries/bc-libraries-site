@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block pagestyles %}
-<link rel="stylesheet" href="/theme/css/stories.css"/>
+<link rel="stylesheet" href="/theme/css/news.css"/>
 {% endblock %}
 
 {% block content %}
@@ -14,19 +14,17 @@
 {%include 'homepage/header.html' %}
 
 <div id="main-body" role="main">
-    <!-- DB RG BOX START -->
+
+   <!-- QUICK LINKS and NEWS-->
     <div class="container" id="db-rg-hours">
         <div class="row nobottom">
-            {% include 'homepage/quick-links-new.html' %}
+            {% include 'homepage/quick-links.html' %}
 
-            {% include 'homepage/start-research.html' %}
 
-            {% include 'homepage/story-box.html' %}
+            {% include 'homepage/news-row.html' %}
         </div>
     </div>
-    <!-- DB RG HOURS BOX END -->
-
-    {% include 'homepage/news-row.html' %}
+    <!-- END -->
 
     {% include 'homepage/digital-scholarship-highlight.html' %}
 
@@ -38,36 +36,6 @@
 
     {% include 'homepage/special-collections-highlight.html' %}
 </div>
-<!--
-    Temporary location for inactive scripts
--->
-
-<!--script type="text/javascript" src="/theme/js/libraryinfo.js"></script-->
-
-<!-- /#contentinfo -->
-<!-- MEGA MENU SCRIPT -->
-<!--script type="text/javascript" src="/theme/js/megamenu.js"></script-->
-
-<!-- Control search tab switch. -->
-<!--script>
-$(function () {
-    $('#block_search *[role=presentation]').click(
-        function() {
-            var current_text = $('#block_search .tab-pane.active input[type=text]').val();
-            $('#block_search .tab-pane input[type=text]').val(current_text);
-        }
-    );
-});
-</script-->
-
-<!-- Script to block spam-bots. Requires JQuery. -->
-
-<!-- JS for expanding search bar
-<script src="/theme/js/classie.js"></script>
-<script src="/theme/js/uisearch.js"></script>
-<script>
-    new UISearch( document.getElementById( 'sb-search' ) );
-</script>-->
 
 {% endblock %}
 

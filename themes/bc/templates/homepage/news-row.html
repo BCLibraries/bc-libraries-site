@@ -1,16 +1,16 @@
 <!-- NEWS START -->
 
-<div class="container" id="news" data-tag="ga-tag">
+<div class="container col-md-10" id="news" data-tag="ga-tag">
 
-    <div class="row">
+    <div class="row nobottom">
 
-       {% for article in articles | most_recent_news(4) %}
+       {% for article in articles | most_recent_news(6) %}
 
             {% if article.image_thumb and article.expired != "yes" %}
 
             {# article with image #}
 
-        <div class="col-xxs col-xs-6 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-md-4">
 
             <div class="news-content">
                 <a href="{{ article.destination }}" id="{{ article.slug }}">

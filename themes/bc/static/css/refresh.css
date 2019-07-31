@@ -290,28 +290,6 @@ body {
     margin-top: -1px;
 }
 
-.homepagerefresh #db-rg-hours {margin-top: 20px;}
-.homepagerefresh #db-rg-hours .list-group-item {
-    border:none;
-}
-.homepagerefresh #db-rg-hours h2 {
-    font-size: 24px;
-    margin-top: 5px;
-}
-.homepagerefresh #db-rg-hours h2 a {
-    text-decoration: none;
-    border-bottom: 2px solid;
-}
-
-.homepagerefresh #db-rg-hours .button-wrap {
-    position: absolute;
-    bottom: -45px;
-}
-.homepagerefresh h3.list-label {
-    margin: .75em 0 .5em 0;
-    font-size: 14px;
-}
-
 /* digital scholarship highlight */
 .homepagerefresh #ds-highlight {
     display: inline-block;

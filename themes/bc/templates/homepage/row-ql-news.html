@@ -3,37 +3,50 @@
     
     <h2>Quick Links</h2>
 
-    <div class="list-group" id="quicklinks" data-tag="ga-tag">
-        <a href="https://libguides.bc.edu/ask-a-librarian" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> Ask a Librarian</a>
-        <a href="https://library.bc.edu/courses" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> Course Reserves ​</a>
-        <a href="https://libcal.bc.edu/booking/oneill" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> Find a Study Room</a>
-        <a href="https://illiad.bc.edu/illiad/bxm/logon.html" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> Interlibrary Loan</a>
-        <a href="https://libguides.bc.edu/refworks-login" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> RefWorks</a>
-        <a href="https://bc.on.worldcat.org/" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> WorldCat</a>
-    </div>
+    <ul class="list-group" id="quicklinks" data-tag="ga-tag">
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+        <li><a href="#" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>FILL</a>
+        </li>
+     </ul>
 </div>
 
 <!-- NEWS START -->
 
 <div class="container col-md-10" id="news" data-tag="ga-tag">
 
-    <div class="row nobottom">
+<h2>News & Events</h2>
 
-       {% for article in articles | most_recent_news(6) %}
+    <div class="row notop news-top">
+
+       {% for article in articles | most_recent_news(2) %}
 
             {% if article.image_thumb and article.expired != "yes" %}
 
             {# article with image #}
 
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-6 news-content">
 
-            <div class="news-content">
                 <a href="{{ article.destination }}" id="{{ article.slug }}">
                     
                     <div class="newsitem">                        
@@ -46,25 +59,44 @@
 
                     </div>
                 </a>
-            </div>
 
         </div>
 
-            {% else %}
+        {% endif %} 
 
-            {# announcement without image #}
-            <div class="announcement">
-                <p class="newslink"><a href="{{ article.destination }}" id="{{ article.slug }}">{{ article.title }}</a></p>
-                <p class="">
-                    {{ article.summary }}
-                </p>
-            </div> 
+        {% endfor %}
+    
+    </div>
 
-            {% endif %} 
+    <div class="row news-bottom">
+        {% for article in articles | most_recent_news(6) %}
 
+        {% if article.image_thumb and article.expired != "yes" %}
+
+        {# article with image #}
+
+                <div class="col-xs-12 col-md-6 news-content">
+
+                        <a href="{{ article.destination }}" id="{{ article.slug }}">
+                            
+                            <div class="newsitem">                        
+
+                                <div class="newstext">
+                                        <p class="newslink">{{ article.title }}</p>
+                                </div>
+                                
+                                <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                            </div>
+                        </a>
+
+                </div>
+
+        {% endif %} 
 
         {% endfor %}
     </div>
+
     <div class="more-news"><a href="/news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
 </div>
 <!-- NEWS END -->

@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 
-#db-rg-hours .list-group {
-	margin-bottom: 0px;
-}
-
 /* BUTTON STYLING */
 
 .content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {

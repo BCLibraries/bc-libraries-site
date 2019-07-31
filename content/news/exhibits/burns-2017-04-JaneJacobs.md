@@ -17,3 +17,5 @@ Are we headed for another "dark age" or do the moral foundations of our commerce
 Thirty years ago, on April 10, 1987, Jacobs made the first of several visits to Boston College to participate in a symposium devoted to her work. Jacobs’s encounters with faculty and students—particularly those involved with BC’s PULSE Program for Service Learning—gave new form to her writing.
 
 Please join us for an opening reception in Burns Library next Monday, April 10, at 4:30pm. BC faculty who knew Jacobs and organized her campus visits will be in attendance.
+
+<a href="https://library.bc.edu/burns-exhibits/jane-jacobs/" class="explore" target="_blank">Explore this exhibit online</a>.

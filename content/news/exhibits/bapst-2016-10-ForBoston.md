@@ -16,8 +16,9 @@ The record of Boston College’s gridiron history began before a team even took 
 
 The most dedicated chroniclers of this sport are the Athletics Department’s media relations staff, whose football media guide is an entire history of the sport at Boston College, created anew every year. Other notable authors of published works about Eagles football are alumni Nat Hasenfus ’22 and Reid Oslin ’68, and sportswriter Jack Falla.
 
-This exhibit is a sampling of records held by the Boston College Archives*. They were created by students and alumni, faculty and administrators, managers and marketers – Superfans! 
+This exhibit is a sampling of records held by the Boston College Archives(1). They were created by students and alumni, faculty and administrators, managers and marketers – Superfans! 
 
 How can you find this type of item? Much can be viewed online, including Sub Turri, The Heights, and Stylus. Many photographs are also available online; those that are not may be used by anyone, here in the Boston College Archives in the Bapst building. Collections of artifacts, programs, and correspondence are also available on request. 
+(1. For conservation reasons, many items in this display are reproductions.)
 
-*For conservation reasons, many items in this display are reproductions.
+<a href="https://library.bc.edu/burns-exhibits/for-boston-football/" class="explore" target="_blank">Explore this exhibit online</a>.

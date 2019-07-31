@@ -3,6 +3,7 @@
 <head>
     {% block head %}
 
+    <meta name="Description" content="Boston College Libraries.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %} - {{ SITENAME }}</title>
     <meta charset="utf-8"/>
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!--link rel="stylesheet" href="/theme/css/bootstrap.css"/-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/theme/bcbento/css/app.css?v=20190110"/>
     <!--link rel="stylesheet" href="/theme/css/style.css?version=2017060501"/-->
     <link rel="stylesheet" href="/theme/css/refresh.css?version=20180625"/>
@@ -23,7 +24,7 @@
     <!-- MEGA MENU AND FOOTER STYLE SHEETS -->
     <!-- MODULAR SHEETS TO QUICKLY ADD INTO LIBGUIDES  -->
     <link rel="stylesheet" href="/theme/css/megamenu.css?version=20180625"/>
-    <link rel="stylesheet" href="/theme/css/footer.css?version=20170810"/>
+    <link rel="stylesheet" href="/theme/css/footer.css"/>
     <!-- END MEGA MENU AND FOOTER STYLES -->
 
     <!-- CONTENT ROW STYLE SHEETS, CAN BE MERGED INTO MASTER STYLE SHEET LATER.-->
@@ -34,9 +35,9 @@
     <link rel="stylesheet" href="/theme/css/notification.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!--script type="text/javascript" src="https://code.jquery.com/ui/1.12.4/jquery-ui.min.js"></script-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     {% block pagestyles %}
     {% endblock %}
@@ -153,6 +154,8 @@
       ga('send', 'pageview');
 
         $(function () {
+            var $all_anchors = $('a');
+
             $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
                 var myText = $(this).find("a.menu-option").text();
                 ga('send', 'event', 'megamenu', 'hover', myText.trim());
@@ -165,25 +168,16 @@
             // HOMEPAGE only GA event triggers
             //
             // send 'outbound' event for all link clicks
-            $("a").not('#askuswidget, .search-link').click(function(e) {
-                if (!ga.q) {
-                    var url = $(this).attr("href");
-
-                    /* Bug fix to stop screen jump when clicking carousel controls */
-                    if (url.indexOf('#') !== 0) {
-                        ga("send", "event", "outbound", "click", url, {
-                            "hitCallback":
-                                function () {
-                                    document.location = url;
-                                }
-                        });
-                    }
-                    e.preventDefault();
+            $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
+                var url = $(this).attr("href");
+                /* Bug fix to stop screen jump when clicking carousel controls */
+                if (url.indexOf('#') !== 0) {
+                    ga("send", "event", "outbound", "click", url);
                 }
             });
             // send 'homepage' event for all link clicks and include sections
             // ignore news carousel and mega menu top-level links
-            $("a").not("#askuswidget, .carousel-control, li.dropdown > a.menu-option").click(function(e){
+            $all_anchors.not("#askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
                 var url = $(this).attr("href");                
                 var dataTag = $(this).parents("[data-tag=ga-tag]");
                 var dataID = "-";
@@ -283,11 +277,9 @@
     <script src="https://arc.bc.edu/notices/downtime-notices-client.js"></script>
     <script>
         // Only run in test for now.
-        if (window.location.hostname === 'libdev.bc.edu') {
-            BCLibDowntimeNotices({
-                styles: true
-            });
-        }
+        BCLibDowntimeNotices({
+            styles: true
+        });
 </script>
     {% block pagescripts %}
     {% endblock %}

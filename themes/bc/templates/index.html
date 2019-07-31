@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block pagestyles %}
-<link rel="stylesheet" href="/theme/css/news.css"/>
+<link rel="stylesheet" href="/theme/css/news-ql-row.css"/>
 {% endblock %}
 
 {% block content %}
@@ -17,11 +17,9 @@
 
    <!-- QUICK LINKS and NEWS-->
     <div class="container" id="db-rg-hours">
-        <div class="row nobottom">
-            {% include 'homepage/quick-links.html' %}
+        <div class="row nobottom notop ql-news">
+            {% include 'homepage/row-ql-news.html' %}
 
-
-            {% include 'homepage/news-row.html' %}
         </div>
     </div>
     <!-- END -->

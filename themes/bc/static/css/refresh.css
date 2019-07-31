@@ -45,8 +45,6 @@ body {
 }
 
 
-
-
 /*  boostrap overrides  */
 .row {
     padding-top: 1em;
@@ -304,9 +302,7 @@ body {
     text-decoration: none;
     border-bottom: 2px solid;
 }
-.homepagerefresh #db-rg-hours .row {
-    margin-bottom: 20px;
-}
+
 .homepagerefresh #db-rg-hours .button-wrap {
     position: absolute;
     bottom: -45px;
@@ -314,45 +310,6 @@ body {
 .homepagerefresh h3.list-label {
     margin: .75em 0 .5em 0;
     font-size: 14px;
-}
-
-/* news */
-.homepagerefresh #news {
-    padding-bottom: 2em;
-}
-.homepagerefresh #news .more-news{
-    text-align: right;
-}
-
-/* quick links */
-.homepagerefresh #quick-links {
-    background-color:#dfddcf;
-    text-align: center;
-    margin-top: 20px;
-}
-.homepagerefresh #quick-links .quick-link-block {
-    padding: 1em;
-    transition: all 0.3s ease 0s;
-    cursor: pointer
-}
-.homepagerefresh #quick-links .quick-link-block:hover {
-    background-color: #c0bda5;
-}
-.homepagerefresh #quick-links .row {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.homepagerefresh #quick-links h3 {
-    text-align: center;
-}
-.homepagerefresh #quick-links a {
-    text-decoration: none;
-    border-bottom: 1px solid;
-    font-size: 18px;
-    color: #23527c;
-}
-.homepagerefresh #quick-links p {
-    padding-top: .25em;
 }
 
 /* digital scholarship highlight */

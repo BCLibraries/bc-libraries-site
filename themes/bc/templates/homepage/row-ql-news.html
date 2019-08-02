@@ -33,11 +33,11 @@
 
 <!-- NEWS START -->
 
-<div class="container col-md-10" id="news" data-tag="ga-tag">
+<div class="col-md-10" id="news" data-tag="ga-tag">
 
 <h2>News & Events</h2>
 
-    <div class="row notop news-top">
+    <div class="news-top">
 
        {% for article in articles | most_recent_news(2) %}
 
@@ -68,14 +68,14 @@
     
     </div>
 
-    <div class="row news-bottom">
+    <div class="news-bottom">
         {% for article in articles | most_recent_news(6) %}
 
         {% if article.image_thumb and article.expired != "yes" %}
 
         {# article with image #}
 
-                <div class="col-xs-12 col-md-6 news-content">
+                <div class="col-xs-6 col-md-3 news-content">
 
                         <a href="{{ article.destination }}" id="{{ article.slug }}">
                             

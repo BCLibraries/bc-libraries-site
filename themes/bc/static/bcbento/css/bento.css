@@ -51,6 +51,11 @@
     font-weight: 600;
 }
 
+.bento-results-box h2 a, .bento-results-box h2 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
 .bento-results-box__header-row {
     display: flex;
     align-items: baseline;
@@ -181,6 +186,10 @@
 /** End Physical availability info **/
 
 /** Video results **/
+.videos-results-list {
+    padding: 0;
+}
+
 .video-results-box .see-all-link {
     clear: both;
     padding-top: 1em;
@@ -233,6 +242,7 @@
 
 img.physical-video__default_cover {
     max-height: 100px;
+    max-width: 200px;
     margin-top: 2em;
     width: 100px;
     opacity: .5;

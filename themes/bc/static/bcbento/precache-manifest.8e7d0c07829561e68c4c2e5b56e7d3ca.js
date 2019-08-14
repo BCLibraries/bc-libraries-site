@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/theme/bcbento/static/media/blank-screen.f8c2d118.svg"
   },
   {
-    "revision": "92e50514b733871a6ed8",
-    "url": "/theme/bcbento/static/js/runtime~main.c8c18500.js"
+    "revision": "b225f43aecb2bd41481a",
+    "url": "/theme/bcbento/static/js/runtime~main.70585875.js"
   },
   {
-    "revision": "e406e6fc2f0f10189491",
-    "url": "/theme/bcbento/static/js/main.767849ab.chunk.js"
+    "revision": "cf5d9f959914813e5e49",
+    "url": "/theme/bcbento/static/js/main.97fac4d3.chunk.js"
   },
   {
-    "revision": "abb72519fdea73195deb",
-    "url": "/theme/bcbento/static/js/2.962469e1.chunk.js"
+    "revision": "fc87f128a4522722ac21",
+    "url": "/theme/bcbento/static/js/2.cc389d2a.chunk.js"
   },
   {
-    "revision": "7ad6b43ae2cf5cb4d94d2462a8d93534",
+    "revision": "d86860afcd4896fce8a5abb03ef502e6",
     "url": "/theme/bcbento/index.html"
   }
 ];

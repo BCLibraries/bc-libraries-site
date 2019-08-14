@@ -137,9 +137,11 @@
                                     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
                                 })();
 
-                                $("#chat-icon-link").click(function(e){
+                                $(".chat-box").on("click", "#chat-icon-link", function(e){
                                     e.preventDefault();
-                                    var active = $(".aal-box .libraryh3lp > a").filter(":visible");
+                                    var $this = $(this);
+                                    var parent = $this.parents(".chat-box");
+                                    var active = parent.find(".media .libraryh3lp > a").filter(":visible");
                                     if (active && active.length){
                                         active.first().click();
                                     } else {
@@ -162,7 +164,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col-sm-6 col-xs-12">
-                                                        <div class="panel panel-default aal-box">
+                                                        <div class="panel panel-default aal-box chat-box">
                                                             <div class="panel-body">
                                                                 <div class="media">
                                                                     <div class="media-left">

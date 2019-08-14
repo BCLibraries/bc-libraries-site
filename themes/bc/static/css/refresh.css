@@ -559,7 +559,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     margin-bottom: 0;
 }
 .aal-box .fa {
-    margin-left: 2px; 
+    margin-left:0; 
     font-weight:600;
 }
 .aal-box h3,
@@ -592,6 +592,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 .aal-box #visit-icon-link.aal-icon {
     background-color:#dccaa0;
+}
+.aal-box #faq-icon-link.aal-icon {
+    background-color:#07625d;
 }
 .aal-box .aal-icon:focus,
 .aal-box .aal-icon:active,

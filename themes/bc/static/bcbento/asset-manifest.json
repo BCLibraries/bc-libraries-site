@@ -1,14 +1,14 @@
 {
-  "main.js": "/theme/bcbento/static/js/main.a7510364.chunk.js",
-  "main.js.map": "/theme/bcbento/static/js/main.a7510364.chunk.js.map",
-  "runtime~main.js": "/theme/bcbento/static/js/runtime~main.70585875.js",
-  "runtime~main.js.map": "/theme/bcbento/static/js/runtime~main.70585875.js.map",
-  "static/js/2.e3822f1d.chunk.js": "/theme/bcbento/static/js/2.e3822f1d.chunk.js",
-  "static/js/2.e3822f1d.chunk.js.map": "/theme/bcbento/static/js/2.e3822f1d.chunk.js.map",
-  "index.html": "/theme/bcbento/index.html",
-  "precache-manifest.4bb4da5290466a6f0ab03baf2c89b571.js": "/theme/bcbento/precache-manifest.4bb4da5290466a6f0ab03baf2c89b571.js",
-  "service-worker.js": "/theme/bcbento/service-worker.js",
-  "static/media/blank-screen.svg": "/theme/bcbento/static/media/blank-screen.f8c2d118.svg",
-  "static/media/mono-dvd-mount.svg": "/theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg",
-  "static/media/video-tape.svg": "/theme/bcbento/static/media/video-tape.38e1c445.svg"
+  "main.js": "../theme/bcbento/static/js/main.23458a11.chunk.js",
+  "main.js.map": "../theme/bcbento/static/js/main.23458a11.chunk.js.map",
+  "runtime~main.js": "../theme/bcbento/static/js/runtime~main.1cf1c718.js",
+  "runtime~main.js.map": "../theme/bcbento/static/js/runtime~main.1cf1c718.js.map",
+  "static/js/2.b9ade706.chunk.js": "../theme/bcbento/static/js/2.b9ade706.chunk.js",
+  "static/js/2.b9ade706.chunk.js.map": "../theme/bcbento/static/js/2.b9ade706.chunk.js.map",
+  "index.html": "../theme/bcbento/index.html",
+  "precache-manifest.83f3467b15bed7d1ac142b5bdb722542.js": "../theme/bcbento/precache-manifest.83f3467b15bed7d1ac142b5bdb722542.js",
+  "service-worker.js": "../theme/bcbento/service-worker.js",
+  "static/media/blank-screen.svg": "../theme/bcbento/static/media/blank-screen.f8c2d118.svg",
+  "static/media/mono-dvd-mount.svg": "../theme/bcbento/static/media/mono-dvd-mount.cb59635b.svg",
+  "static/media/video-tape.svg": "../theme/bcbento/static/media/video-tape.38e1c445.svg"
 }

@@ -23,16 +23,17 @@
     min-height: 90vh;
 }
 
-.results-row-2 {
-    margin-top: 1em;
-    background-color: #F9F7E9;
+.results-row-1 {
+    padding-bottom: 4em;
+    border-bottom: 1px solid #e2e5da;
 }
 
-.results-row-3 {
-    margin-top: 1em;
-}
-
-.results-row-4 {
+.results-row-2, .results-row-3 {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    background-color: initial;
+    border-bottom: 1px solid #e2e5da;
+    min-height: 18em;
     margin-top: 1em;
 }
 
@@ -49,6 +50,11 @@
 
 .bento-results-box__header-row h3 {
     font-weight: 600;
+}
+
+.bento-results-box h2, .best-bet-row__heading {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .bento-results-box h2 a, .bento-results-box h2 a:hover {
@@ -90,6 +96,10 @@
 
 .cover-image {
     max-width: 120px;
+}
+
+.catalog-result-item {
+    list-style: none;
 }
 
 .catalog-result-item__publisher {
@@ -184,6 +194,24 @@
 }
 
 /** End Physical availability info **/
+
+/** Best bets **/
+.best-bet-row__heading {
+    margin: .1rem 0 2rem 0;
+}
+
+.best-bet-result {
+    padding: .5rem 1rem;
+    background: #f7f7f7;
+    border: 1px solid #e4e1e5;
+    box-shadow: none;
+}
+
+.best-bet-result__title {
+    margin-top: 10px;
+}
+
+/** End best bets **/
 
 /** Video results **/
 .videos-results-list {

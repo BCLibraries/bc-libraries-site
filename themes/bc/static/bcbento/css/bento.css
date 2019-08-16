@@ -202,9 +202,10 @@
 
 .best-bet-result {
     padding: .5rem 1rem;
-    background: #f7f7f7;
-    border: 1px solid #e4e1e5;
-    box-shadow: none;
+    background: #f8f8f8;
+    border: 2px solid #e4e1e5;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+    border-radius: 3px;
 }
 
 .best-bet-result__title {

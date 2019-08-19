@@ -212,6 +212,13 @@
     margin-top: 10px;
 }
 
+.best-bet-result img {
+    float: left;
+    max-height: 200px;
+    max-width: 200px;
+    margin-right: 1em;
+}
+
 /** End best bets **/
 
 /** Video results **/

@@ -1,3 +1,17 @@
+/* NEWS ROW STUFF */
+
+#quicklinks {
+    background-color: #d7d7d7;
+
+}
+
+#quicklinks .list-group-item {
+    background-color: transparent;
+}
+
+
+/* NEWS ARCHIVE STUFF */
+
 .news_listing {
     margin-bottom: .5em;
 }

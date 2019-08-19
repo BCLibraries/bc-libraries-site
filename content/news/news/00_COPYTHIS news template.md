@@ -4,7 +4,6 @@ Date: 2010-10-01 01:01
 Tags: news, tags 
 Slug: a-nice-and-friendly-url 
 Expired: yes or no
-ShowText: yes
 Image_alt: image description
 Image_thumb: 2019-xx/FILENAME-thumb.png
 

@@ -1,0 +1,105 @@
+<!-- QUICK LINKS -->
+<div class="col-md-2 col-xs-12 ql">
+    
+    <h2>Quick Links</h2>
+
+    <ul class="list-group" id="quicklinks" data-tag="ga-tag">
+        <li><a href="https://libguides.bc.edu/az.php" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Databases</a>
+        </li>
+        <li><a href="https://libguides.bc.edu/ask-a-librarian" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Ask a Librarian</a>
+        </li>
+        <li><a href="https://library.bc.edu/courses" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Course Reserves</a>
+        </li>
+        <li><a href="https://illiad.bc.edu/illiad/bxm/logon.html" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Interlibrary Loan</a>
+        </li>
+        <li><a href="https://bc.on.worldcat.org/" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>WorldCat</a>
+        </li>
+        <li><a href="https://libcal.bc.edu/booking/oneill" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Study Rooms</a>
+        </li>
+        <li><a href="https://libguides.bc.edu/refworks-login" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Citing sources</a>
+        </li>
+        <li><a href="https://libguides.bc.edu/research_guides" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Research Guides</a>
+        </li>
+        <li><a href="https://libguides.bc.edu/subjects/course-guides" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Course Guides</a>
+        </li>
+     </ul>
+</div>
+
+<!-- NEWS START -->
+
+<div class="col-md-10 col-xs-12" id="news" data-tag="ga-tag">
+
+<h2><a href="/news">News & Events</a></h2>
+
+    <div class="news-top">
+
+       {% for article in articles | most_recent_news(2) %}
+
+            {% if article.image_thumb and article.expired != "yes" %}
+
+            {# article with image #}
+
+        <div class="col-xs-12 col-sm-6 col-md-6 news-content">
+
+                <a href="{{ article.destination }}" id="{{ article.slug }}">
+                    
+                    <div class="newsitem">                        
+
+                        <div class="newstext">
+                                <p class="newslink">{{ article.title }}</p>
+                        </div>
+                        
+                        <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                    </div>
+                </a>
+
+        </div>
+
+        {% endif %} 
+
+        {% endfor %}
+    
+    </div>
+
+    <div class="news-bottom">
+        {% for article in articles | most_recent_news(6) %}
+
+        {% if article.image_thumb and article.expired != "yes" %}
+
+        {# article with image #}
+
+                <div class="col-xs-6 col-sm-3 col-md-3 news-content">
+
+                        <a href="{{ article.destination }}" id="{{ article.slug }}">
+                            
+                            <div class="newsitem">                        
+
+                                <div class="newstext">
+                                        <p class="newslink">{{ article.title }}</p>
+                                </div>
+                                
+                                <img src="/theme/img/news/{{ article.image_thumb }}" alt="{{ article.image_alt }}">
+
+                            </div>
+                        </a>
+
+                </div>
+
+        {% endif %} 
+
+        {% endfor %}
+    </div>
+
+    <!--<div class="more-news"><a href="/news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>-->
+</div>
+<!-- NEWS END -->

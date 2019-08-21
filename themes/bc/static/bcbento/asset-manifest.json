@@ -1,0 +1,11 @@
+{
+  "main.js": "../theme/bcbento/static/js/main.fbeacde4.chunk.js",
+  "main.js.map": "../theme/bcbento/static/js/main.fbeacde4.chunk.js.map",
+  "runtime~main.js": "../theme/bcbento/static/js/runtime~main.1cf1c718.js",
+  "runtime~main.js.map": "../theme/bcbento/static/js/runtime~main.1cf1c718.js.map",
+  "static/js/2.604408d5.chunk.js": "../theme/bcbento/static/js/2.604408d5.chunk.js",
+  "static/js/2.604408d5.chunk.js.map": "../theme/bcbento/static/js/2.604408d5.chunk.js.map",
+  "index.html": "../theme/bcbento/index.html",
+  "precache-manifest.0a265bbedfeaa2f95750504c001c07d4.js": "../theme/bcbento/precache-manifest.0a265bbedfeaa2f95750504c001c07d4.js",
+  "service-worker.js": "../theme/bcbento/service-worker.js"
+}

@@ -1,17 +1,3 @@
-/*#all-results #primary, #all-results #secondary {
-    padding-right: 3em;
-}*/
-
-/** Accessible hide class. **/
-#all-results .hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
 /* Typeahead stuff - Handle with care
 ----------------------------*/
 
@@ -29,10 +15,10 @@
     margin: 2px 0 0;
     font-size: 14px;
     list-style: none;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     background-clip: padding-box;
 }
@@ -45,7 +31,7 @@
 }
 
 #newsearch .dropdown-menu .active a, #newsearch .dropdown-menu .active a:hover, #newsearch .dropdown-menu .active a:focus {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     background-color: #428bca;
     outline: 0;
@@ -87,43 +73,38 @@
 /** End typeahead stuff **/
 
 /** Start results stuff **/
-#all-results {
+#top-row {
     padding-top: 0;
-}
-
-#all-results #primary .result-container h3, #all-results #secondary .result-container h3 {
-    display: inline-block;
-    font-size: 1.25em;
-    font-weight: normalq;
+    min-height: 600px;
 }
 
 /** More results link **/
-#all-results .more-results-link {
+#top-row .more-results-link {
     display: inline-block;
 }
 
-#all-results .loading {
+#top-row .loading {
     background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
-#all-results .result-container ul {
+#top-row .result-container ul {
     padding: 0;
     margin: 0;
     clear: left;
 }
 
-#all-results .result-container li .title {
+#top-row .result-container li .title {
     text-decoration: none;
     color: #0075b0;
     font-weight: bold;
 }
 
-#all-results .result-container .creator {
+#top-row .result-container .creator {
     color: #666;
 }
 
 /** Librarian & guide results. **/
-#all-results h4 {
+#top-row h4 {
     margin: 0 !important;
 }
 
@@ -135,75 +116,49 @@
     font-size: 14px;
 }
 
-#all-results #librarian-info p, #all-results .guide-description {
+#top-row #librarian-info p, #top-row .guide-description {
     color: #666;
     font-size: 14px;
 }
 
-#tertiary .visible-also-try a {
-    font-size: 16px;
-}
-
-#all-results .result-container .publisher {
+#top-row .result-container .publisher {
     color: #888;
 }
 
-#all-results .outside-result a, #all-results .more-results-link a {
+#top-row .outside-result a, #top-row .more-results-link a {
     text-decoration: none;
     color: #0075b0;
 }
 
-#all-results .outside-result {
+#top-row .outside-result {
     clear: left;
 }
 
 /** Librarian/Subject guide results. **/
-#all-results h4 {
+#top-row h4 {
     margin: 0;
 }
 
-#all-results .librarian-subject, #all-results .guide-description {
+#top-row .librarian-subject, #top-row .guide-description {
     color: #666;
 }
 
 /** End Librarian result. **/
 
-/** Covers **/
-
-#all-results .cover-image {
-    /*width: 20%;
-    float: left;
-    padding-top: 1.5em*/
-}
-
-#all-results .catalog-text.has-cover {
-    /*width: 80%;
-    float: left;
-    padding-right: 1em*/
-}
-
-/** end covers **/
-
-#all-results .result-container ul.bento-results li {
-    overflow: hidden;
-    clear: both;
-    margin-bottom: 1em
-}
-
-#all-results .open-result-tools {
+#top-row .open-result-tools {
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
     width: .6em;
     height: .6em;
 }
 
-#all-results .open-result-tools:hover {
+#top-row .open-result-tools:hover {
     opacity: 1;
     filter: alpha(opacity=100);
     cursor: pointer;
 }
 
-#all-results .type {
+#top-row .type {
     color: #666;
 }
 
@@ -216,8 +171,6 @@
 /** Result tools opening animation **/
 
 .result-tools.ng-hide-add, .result-tools.ng-hide-remove {
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
     display: block !important;
 }
 
@@ -234,8 +187,6 @@
 /** end result tools animation **/
 
 .tt-query {
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
@@ -247,13 +198,8 @@
     margin-top: 12px;
     padding: 8px 0;
     background-color: #fff;
-    border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
@@ -266,7 +212,6 @@
 .tt-suggestion.tt-cursor {
     color: #fff;
     background-color: #430000;
-
 }
 
 .tt-suggestion p {
@@ -281,23 +226,23 @@
     color: #ddd;
 }
 
-#all-results .result-container ul li {
+#top-row .result-container ul li {
     list-style: none;
 }
 
-#all-results .result-container ul li.item-info:before {
+#top-row .result-container ul li.item-info:before {
     content: '✓';
     font-weight: bold;
     font-size: 16px;
     color: #0f7d00;
 }
 
-#all-results .result-container ul li.item-info.unavailable:before {
+#top-row .result-container ul li.item-info.unavailable:before {
     content: '✗';
     color: inherit;
 }
 
-#all-results .result-container ul li.item-info.unavailable {
+#top-row .result-container ul li.item-info.unavailable {
     color: #999;
 }
 
@@ -311,7 +256,6 @@
 
 div#didyoumean-holder {
     text-align: center;
-    /*height: 3em;*/
 }
 
 .bento-result {
@@ -322,10 +266,10 @@ div#didyoumean-holder {
 #bentoboxresults {
     min-height: 500px;
     padding-top: 0;
+    padding-bottom: 5em;
 }
 
 #bentoboxresults h2 {
-    /* font-weight: bold; */
     text-transform: none;
     font-size: 24px;
 }
@@ -358,14 +302,6 @@ div#didyoumean-holder {
     margin-bottom: 10px;
 }
 
-.results-highlight {
-    background-color: #F9F7E9;
-    border: 1px solid #dfddcf;
-    border-radius: 10px;
-    padding: .5em 1em;
-    color: black;
-}
-
 #website-results ul.guide-pages {
     padding: 4px 0 0 25px;
     list-style: circle;
@@ -386,15 +322,15 @@ div#didyoumean-holder {
     position: relative;
 }
 
-#all-results .result-container {
+#top-row .result-container {
     display: block;
 }
 
-#all-results .result-container#librarians-results ul li:last-child {
+#top-row .result-container#librarians-results ul li:last-child {
     margin-bottom: 2.5em;
 }
 
-#all-results .loading {
+#top-row .loading {
     background: #fff url(../img/loading-circle.gif) no-repeat center center;
 }
 
@@ -415,67 +351,31 @@ div#website-results {
 
 #faq-results a {
     line-height: 1.5;
-    /* margin-bottom: 1em; */
 }
 
 #faq-results li {
     margin-bottom: 1em;
 }
 
-h2#faqh3 {
-    /*margin-top: 0;*/
+div#faq-results ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
 }
 
-#tertiary .more-results-link,
-#tertiary .no-results-found {
-    padding-left: 1em;
-    margin-top: .5em;
-    margin-bottom: 2em;
-}
-#tertiary .no-results-found {
-    padding-left: 0;
-    margin-bottom: 4em;
-}
-
-#tertiary h2 {
-    /*margin-top: 0;*/
-    padding-bottom:10px;
-    border-bottom: 1px solid #ddd;
-}
-
-#tertiary h2#faqh3 {
-    padding-bottom:20px;
+.row.faq-librarian-row, .website-results {
+    background: #F9F7E9;
 }
 
 @media ( max-width: 991px ) {
-    #tertiary h2#faqh3 {
-        padding-bottom:10px;
-    }
     .librarians img {
         max-width: 150px;
     }
 }
 
-#tertiary {
-    /*margin-top: 4px;*/
-}
-
-#all-results .result-container ul.worldcat-suggestions li {
+#top-row .result-container ul.worldcat-suggestions li {
     list-style: disc;
     margin-left: 1em;
-}
-
-#all-results #primary .worldcat-results h3 {
-    margin-top: 0;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-#all-results #primary .worldcat-results {
-    background-color: #f2f2f1;
-    padding: 1em;
-    border: 1px solid #cdcccc;
-    border-radius: 10px;
 }
 
 #askus-container {
@@ -485,18 +385,13 @@ h2#faqh3 {
     margin: 2rem 0 2rem 0;
 }
 
-#bentoboxresults .bento-results {
-    margin-bottom: 5rem;
-}
-
 #bentoboxresults .bento-results-item.media {
-    border-top: 1px solid #ddd;
-    margin: 1rem 1.25rem 1rem 0;
-    padding: 2rem 0 1rem 0; 
+    margin: 0 1.25rem 3rem 0;
+    padding: 0 0 1rem 0;
 }
 
-#bentoboxresults #secondary .bento-results-item.media {
-    margin: 1rem 0 1rem 0rem;
+#bentoboxresults .bento-results-item.media:last-of-type {
+    margin-bottom: 1rem;
 }
 
 #bentoboxresults .bento-results-item.media img {
@@ -507,6 +402,10 @@ h2#faqh3 {
     color: inherit;
     text-decoration: inherit;
     font-size: 14px;
+}
+
+.available-online {
+    font-weight: 600;
 }
 
 .available-online a, .available-online a:hover {
@@ -520,4 +419,101 @@ h2#faqh3 {
 
 .avail-link .callno, .avail-link .location {
     color: #204375
+}
+
+nav.link-to-bento-bar.col-md-8 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.not-finding.col-md-4 {
+    text-align: right;
+}
+
+#video-results .bento-results-item.video {
+    padding-left: 0;
+    padding-right: 70px;
+}
+
+#video-results img {
+    max-width: 100%;
+    max-height: 160px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+#video-results .no-video-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+#video-results .no-video-cover img {
+    width: 100px;
+    border: none;
+}
+
+
+#video-results img.blank-screen {
+    width: 180px;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.video-cover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.video-thumbnail:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "\f01d";
+    font-family: "FontAwesome";
+    font-size: 50px;
+    color: rgba(255, 255, 255, .7);
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.video-thumbnail:hover:before {
+    color: #eee;
+}
+
+#bentoboxresults .result-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #585655;
+    margin-bottom: 1em;
+}
+
+#bentoboxresults h3.media-heading {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+#video-results ul.available-items {
+    list-style: none;
+    padding: 0;
+    margin-top: .25em;
+}
+
+.watch-online {
+    font-weight: 600;
+}
+
+#video-results .item-info {
+    margin-bottom: .5em;
+    line-height: 1.4;
 }

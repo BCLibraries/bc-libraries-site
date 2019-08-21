@@ -75,10 +75,12 @@
 
             var book_search_url = 'https://' + host + '/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0',
                 article_search_url = 'https://' + host + '/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0',
-                journal_search_url = 'https://' + host + '/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0';
+                journal_search_url = 'https://' + host + '/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0',
+                video_search_url = 'https://' + host + '/primo-explore/search?tab=video&search_scope=VIDEO&vid=bclib_new&lang=en_US&offset=0';
 
             linkToSearch('.book-search-link', book_search_url);
             linkToSearch('.article-search-link', article_search_url);
+            linkToSearch('.video-search-link', video_search_url);
             linkToSearch('.journal-search-link', journal_search_url, 'journals=any,~~TERM~~');
         }
 

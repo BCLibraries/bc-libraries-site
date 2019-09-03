@@ -17,7 +17,7 @@ Book_location: https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA
 ShowBook_location: yes
 Bookcover: 2019/grand-cover.jpg
 Image_alt: the book cover 
-Oneoff: yes
+Oneoff: no
 
 <em>Interviewees: James Lubben, Ph D, Professor Emeritus, Christina Matz-Costa, PhD, Associate Professor, Jacquelyn James, PhD, Faculty, Erika Sabbath, PhD, Assistant Professor, Rocío Calvo, PhD, Associate Professor,  Boston College School of Social Work</em>
 

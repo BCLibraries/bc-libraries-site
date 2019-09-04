@@ -1,4 +1,4 @@
-Title: Faculty Publication Highlight: Rowena Fong, James Luben, & Richard Barth 
+Title: Faculty Publication Highlight: Rowena Fong, James Lubben, & Richard Barth 
 Destination: https://library.bc.edu/facpub/2019/Jul/grand-challenges/
 Date: 2019-09-03 01:02
 Tags: news, tags 

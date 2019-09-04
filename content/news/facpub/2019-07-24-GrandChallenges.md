@@ -6,7 +6,7 @@ By: Edited
 Author_firstname: Rowena
 Author_lastname: Fong
 Author_position: EdD, MSW, University of Texas at Austin, School of Social Work 
-Second_author: James Luben
+Second_author: James Lubben
 Second_position: PhD, Professor Emeritu, Boston College School of Social Work 
 Third_author: Richard Barth
 Third_position:  PhD, MSW, Dean of the University of Maryland School of Social Work

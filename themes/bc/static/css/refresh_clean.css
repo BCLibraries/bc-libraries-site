@@ -504,6 +504,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-size: larger; 
     font-weight: 600;
 }
+.aal-box a {
+    /* darken to better contrast against light-gray background */
+    color: #3076AB;
+}
 .aal-box a.aal-icon {
     font-size: 100px!important;
     color:#fff;

@@ -1,0 +1,73 @@
+/* for use in LibGuides edit-mode for various custom widget */
+
+#bc-custom-bar .bc-custom-bar-item {margin: 0 0 20px 0;}
+#bc-custom-bar .ui-accordion-header {background:#d9edf7; padding: .5rem 0 .5rem 3rem; border-radius: .5rem; margin-bottom:0;}
+#bc-custom-bar .panel-content , #bc-custom-bar .panel-content .ui-accordion-content {margin-bottom: 1rem;}
+#bc-custom-bar .ui-accordion-header .ui-accordion-header-icon {}
+#bc-custom-bar .ui-accordion-content {background: #f8f8f8;}
+
+#bc-custom-bar .panel-content .ui-accordion-content 
+#bc-custom-bar .panel-content .ui-accordion-content {background-color: #f8f8f8;}
+.alert-border {outline:2px dashed red;}
+.alert-border:hover {outline: 3px dashed red;}
+.iter_list {padding-bottom:40px; border-bottom:1px solid #aaa;}
+.iter_list li {padding:4px;}
+div.alert-border {background-color:#C0C0C0;}
+#bc-custom-bar .panel-content .ui-accordion .status {display:inline-block; padding:0 2px; margin-left:5px; width: 35px;}
+#bc-custom-bar .panel-content .ui-accordion h3.ui-accordion-header { cursor:no-drop; color:gray;}
+#bc-custom-bar .panel-content .ui-accordion h3.ui-accordion-header .ui-accordion-header-icon {display:none;}
+#bc-custom-bar .panel-content .ui-accordion h3 .status:before {content: "";}
+#bc-custom-bar .panel-content .ui-accordion h3.waiting, 
+#bc-custom-bar .panel-content .ui-accordion h3.pass, 
+#bc-custom-bar .panel-content .ui-accordion h3.fail {cursor:pointer;}
+#bc-custom-bar .panel-content .ui-accordion h3.waiting .ui-accordion-header-icon, 
+#bc-custom-bar .panel-content .ui-accordion h3.pass .ui-accordion-header-icon, 
+#bc-custom-bar .panel-content .ui-accordion h3.fail .ui-accordion-header-icon {display:inline;}
+#bc-custom-bar .panel-content .ui-accordion h3.waiting .status, 
+#bc-custom-bar .panel-content .ui-accordion h3.pass .status, 
+#bc-custom-bar .panel-content .ui-accordion h3.fail .status {padding: 0 5px 0 10px; font-family: FontAwesome;}
+#bc-custom-bar .panel-content .ui-accordion h3.waiting .status:before {content: "\f1ce";}
+#bc-custom-bar .panel-content .ui-accordion h3.pass .status:before {content: "\f00c";}
+#bc-custom-bar .panel-content .ui-accordion h3.fail .status:before {content: "\f071";}
+#bc-custom-bar .panel-content .ui-accordion p.test-help {margin-top:2px;}
+#bc-custom-bar .panel-content .ui-accordion {margin-bottom:20px;}
+#bc-custom-bar .panel-content .ui-accordion .ui-accordion-header {color:#000;}
+#bc-custom-bar .panel-content .ui-accordion .ui-accordion-header.fail {background: #f2dede; color:#a94442; border-color:#ebcccc;}
+#bc-custom-bar .panel-content .ui-accordion .ui-accordion-header.pass {background: #dff0d8; color:#3c763d; border-color:#d0e9c6;}
+#bc-custom-bar .whatisthis {text-align:right;}
+#bc-custom-bar .pass-test {font-weight:600;}
+
+#bc-custom-bar .ui-state-disabled, 
+#bc-custom-bar .ui-widget-content .ui-state-disabled, 
+#bc-custom-bar .ui-widget-header .ui-state-disabled {opacity:.95; filter: Alpha(Opacity=95); color:#333;}
+
+/* added for accessibility checker - needs to move to own style sheet */
+#bc-custom-bar .ui-state-disabled, 
+#bc-custom-bar .ui-widget-content .ui-state-disabled, 
+#bc-custom-bar .ui-widget-header .ui-state-disabled {opacity:.95; filter: Alpha(Opacity=95); color:#333;}
+
+#bc-custom-bar .link-asset-warning {
+    background-color:#eee;
+    padding: .3rem .3rem .3rem .5rem;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+
+#bc-custom-bar .link-asset-warning.match-high {
+    border-color: #d9534f
+}
+#bc-custom-bar .link-asset-warning.match-medium {
+    border-color: #f0ad4e
+}
+/*#bc-custom-bar a.link-asset-link-warning:after {
+    font-family: FontAwesome;
+    content: " \f06a";
+}*/
+#bc-custom-bar .before-link {
+    background-color: #fff;
+    padding: 2px 2px 6px 2px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+#bc-custom-bar-tips h3.ui-accordion-header {background-color: #dff0d8; border-color:#d6e9c6; color: #3c763d;}

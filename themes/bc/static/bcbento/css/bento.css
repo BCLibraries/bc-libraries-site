@@ -103,7 +103,7 @@
 }
 
 .catalog-result-item__publisher {
-    color: #888;
+    color: #5B5856;
 }
 
 .catalog-result-item__type {
@@ -291,6 +291,10 @@ img.physical-video__default_cover {
 
 .librarian-results-list img {
     max-width: 100px;
+}
+
+.librarian-results-list h3 {
+    font-size: 18px;
 }
 
 /** End librarians **/

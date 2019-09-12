@@ -5,12 +5,12 @@ html {
 }
 
 .exhibit-container {
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
 .exhibit-container .breadcrumb {
     margin-bottom: 5px;
-    padding: 8px 0;
+    /*padding: 8px 0;*/
 }
 
 #exhibit, #exhibit_archive {

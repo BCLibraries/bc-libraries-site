@@ -166,6 +166,11 @@
     {# modular bc maroon header #}
     {% include 'bclib-header.html' %}
 
+    {% include 'megamenu.html' %}
+
+    {# temporary addition #}
+    {% include 'library-help-button.html' %}
+
     <h1 class="sr-only sr-only-focusable">{{ self.title() }}</h1>
 
     {% block content %}

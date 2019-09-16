@@ -209,6 +209,7 @@
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     overflow: hidden;
+    max-width: 800px;
 }
 
 .best-bet-result__title {

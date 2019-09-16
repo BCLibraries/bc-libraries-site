@@ -1,6 +1,6 @@
 Title: Primary Source Boot Camp
 Destination: https://bit.ly/BurnsBootCamp
-Date: 2019-09-03 01:01 
+Date: 2019-09-15 01:01 
 Tags: news, tags 
 Slug: burns-primary-boot
 Expired: no

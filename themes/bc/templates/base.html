@@ -157,14 +157,19 @@
     <a id="close">[close]</a>
 </div-->
 
+    <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
+
     {% if LOCAL_BUILD == True or JENKINS_BUILD == True or BAMBOO_BUILD == True %}
         {% include 'build-header.html' %}
     {% endif %}
 
-    <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
-
     {# modular bc maroon header #}
     {% include 'bclib-header.html' %}
+
+    {% include 'megamenu.html' %}
+
+    {# temporary addition #}
+    {% include 'library-help-button.html' %}
 
     <h1 class="sr-only sr-only-focusable">{{ self.title() }}</h1>
 

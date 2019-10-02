@@ -186,7 +186,7 @@
     color: #000;
 }
 
-.item-info__location, .item-info__callno {
+.item-info--check-holdings .item-info__library, .item-info__location, .item-info__callno {
     color: #204375;
 }
 

@@ -156,7 +156,7 @@
     font-weight: 600;
 }
 
-.item-info::before {
+.item-info--available::before {
     content: "✓";
     font-weight: bold;
     font-size: 16px;
@@ -174,8 +174,11 @@
     padding: 0;
 }
 
-.item-info__library {
+.item-info__instructions, .item-info__library {
     margin-right: .25em;
+}
+
+.item-info--available .item-info__library {
     color: #0f7d00;
 }
 

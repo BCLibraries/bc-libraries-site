@@ -14,11 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-<<<<<<< HEAD
-  "../theme/bcbento/precache-manifest.1778103f25c9d0db1cc927a536822c97.js"
-=======
-  "../theme/bcbento/precache-manifest.744667ca4fda307acc229b4ba9c3e4fb.js"
->>>>>>> master
+    "../theme/bcbento/precache-manifest.744667ca4fda307acc229b4ba9c3e4fb.js"
 );
 
 workbox.clientsClaim();
@@ -33,6 +29,6 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("../theme/bcbento/index.html", {
-  
+
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

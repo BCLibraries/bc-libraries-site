@@ -1,11 +1,20 @@
 {
+<<<<<<< HEAD
   "main.js": "../theme/bcbento/static/js/main.78fc499d.chunk.js",
   "main.js.map": "../theme/bcbento/static/js/main.78fc499d.chunk.js.map",
+=======
+  "main.js": "../theme/bcbento/static/js/main.b536c3cd.chunk.js",
+  "main.js.map": "../theme/bcbento/static/js/main.b536c3cd.chunk.js.map",
+>>>>>>> master
   "runtime~main.js": "../theme/bcbento/static/js/runtime~main.1cf1c718.js",
   "runtime~main.js.map": "../theme/bcbento/static/js/runtime~main.1cf1c718.js.map",
   "static/js/2.36c591c8.chunk.js": "../theme/bcbento/static/js/2.36c591c8.chunk.js",
   "static/js/2.36c591c8.chunk.js.map": "../theme/bcbento/static/js/2.36c591c8.chunk.js.map",
   "index.html": "../theme/bcbento/index.html",
+<<<<<<< HEAD
   "precache-manifest.1778103f25c9d0db1cc927a536822c97.js": "../theme/bcbento/precache-manifest.1778103f25c9d0db1cc927a536822c97.js",
+=======
+  "precache-manifest.744667ca4fda307acc229b4ba9c3e4fb.js": "../theme/bcbento/precache-manifest.744667ca4fda307acc229b4ba9c3e4fb.js",
+>>>>>>> master
   "service-worker.js": "../theme/bcbento/service-worker.js"
 }

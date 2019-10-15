@@ -3,7 +3,7 @@ Destination: https://library.bc.edu/facpub/2019/Jul/grand-challenges/
 Date: 2019-09-03 01:02
 Tags: news, tags 
 Slug: facpub-fong
-Expired:no
+Expired: yes
 Image_alt: Professor during their interview
 Image_thumb: 2019-09/fong-thumb.png
 

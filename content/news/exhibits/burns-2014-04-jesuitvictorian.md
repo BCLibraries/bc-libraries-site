@@ -18,35 +18,4 @@ Two important events will mark this celebration. An exhibition of unique items f
 
 A reception for the exhibition will be held on April 16, 4-6pm, with brief remarks by the curators: Barbara Adams Hebard, Dr. Robert A. Maryks, and Dr. Jude V. Nixon.
 
-
-<!--
-
-Active:
-    Yes (will appear on Exhibit's homepage)
-    No (will not appear on Exhibit's homepage, but will appear in archives)
-
-Gallery locations: 
-    Burns Library (burns)
-    Theology and Ministry Library (tml)
-    O'Neill Level One (lvl1)
-    O'Neill Level Three (lvl3)
-    O'Neill Reading Room (reading)
-    O'Neill Reading Room Back Wall (backwall)
-    O'Neill Lobby (lobby)
-    History Dept, Stokes Hall (stokes)
-    Bapst Exhibits (bapsts)
-    Archived Bapst Exhibits (bapstsarchive)
-  
-Need spaces for:
-
-  Virtual Exhibits (virtual)
-  Tip O'Neill (tiponeill)
-
-Style:
-    Poster on left, text on right (default)
-    Poster on right, text on left (right)
-    Poster large, centered above text (middle_top)
-    Poster large, centered below text (middle_down)
-
--->
-
+<a href="https://library.bc.edu/burns-exhibits/gmh-jesuit-victorian-poet/">Explore this exhibit online!</a>

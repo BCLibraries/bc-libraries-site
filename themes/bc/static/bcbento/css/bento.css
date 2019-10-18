@@ -383,7 +383,7 @@ ol.faq-results-list {
 }
 
 .react-autosuggest__input {
-    width: 800px;
+    width: 100%;
     font-size: 20px;
     height: 50px;
     margin: 0 auto;
@@ -397,4 +397,56 @@ ol.faq-results-list {
 
 .react-autosuggest__suggestion--highlighted {
     background-color: #e9eaea;
+}
+
+.bcbento-search-box {
+    float: left;
+    margin-bottom: 1em;
+    width: 70%;
+}
+
+.bento-search-box .btn-submit {
+    height: 50px;
+}
+
+.bento-results-page .btn.btn-default {
+    height: 50px;
+    width: 124px;
+    font-size: 20px;
+    /* padding: 0 12px; */
+    padding-left: .5em;
+}
+
+.bento-search-box .fa.fa-search {
+    margin-right: .5em;
+}
+
+/** Search textbox **/
+.bento-search-box textarea {
+    width: 800px;
+    font-size: 20px;
+    height: 150px;
+    margin: 0;
+    color: #555;
+    padding-top: 7px;
+    padding-left: 11px;
+    padding-right: 7px;
+    padding: 7px 11px;
+    display: block;
+}
+
+.bento-search-box textarea.searchbox-animate-enter {
+    width: 800px;
+    height: 50px;
+}
+
+.bento-search-box textarea.searchbox-animate-enter-active {
+    width: 800px;
+    height: 150px;
+    transition: width 100ms, height 100ms;
+}
+
+.bento-search-box textarea.searchbox-animate-enter-done {
+    width: 800px;
+    height: 150px;
 }

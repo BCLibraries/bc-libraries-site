@@ -3,7 +3,7 @@ Destination: https://ds.bc.edu/2019-fall-events/
 Date: 2019-10-29 01:01 
 Tags: news, tags 
 Slug: savedate-profhonig 
-Expired: no
+Expired: yes
 Image_alt: image description
 Image_thumb: 2019-10/honig-thumb.png
 

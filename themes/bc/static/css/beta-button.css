@@ -1,0 +1,41 @@
+#beta-container {
+    position: relative;
+}
+
+#library-beta-button {
+    position: absolute;
+    top: -1.8em;
+    right: 8em;
+}
+
+#library-beta-button a {
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    color: #322C17;
+    background: #fde073;
+    border: 1px solid #fde073;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+#library-beta-button a:hover {
+    border: 1px solid rgba(50,44,23,0.2);
+    background: hsl(47.4, 97.2%, 64.2%);
+    text-decoration: none;
+}
+
+#library-beta-button a .fa {
+    font-size: 15px;
+}
+
+@media ( max-width: 991px ) {
+    #library-beta-button {
+        top: -1.1em;
+        right: .5em;
+    }
+    #library-beta-button a {
+        padding: 0.5rem;
+    }
+}
